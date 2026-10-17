@@ -26,3 +26,5 @@ Git：使用机器已配置的真实身份。本地已有提交 ed78fe3；origin
 用户已亲自创建 GitHub 仓库，目前正在按步骤完成电脑上的登录。用户尚未授权自动推送，不重复创建仓库。
 
 2026-10-17 登录脚本修复：用户双击时报乱码，已复现 Windows PowerShell 5.1 的解析错误。三个 ps1 文件改为 UTF-8 BOM，批处理改为 CRLF 并设置代码页 65001。重新解析全部零错误，github-login.ps1 -Check 实际成功；证据见 evidence/v0.1.0/powershell-encoding.md。用户下一步关闭旧错误窗口，重新双击登录GitHub.cmd。
+
+2026-10-17 登录网络排查：用户已进入设备授权流程，但 POST /login/oauth/access_token 出现 unexpected EOF，尚未完成登录。本机代理开启于 127.0.0.1:7897；登录网页与授权端点已通过无凭据的连接探测证实可达。脚本现启用仅进程内的 HTTP/1.1 兼容设置、中文步骤和最多三次手动重试。Windows PowerShell 5.1 解析和 -Check 通过；真实成功授权待用户，证据见 evidence/v0.1.0/github-network.md。没有推送代码。
