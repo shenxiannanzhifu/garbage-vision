@@ -1,5 +1,8 @@
-param([string]$Python = "", [switch]$Cpu)
+﻿param([string]$Python = "", [switch]$Cpu)
 $ErrorActionPreference = "Stop"
+# Windows PowerShell 5.1：本文件保存为 UTF-8 BOM，子进程输出也使用 UTF-8。
+[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)
+$OutputEncoding = [Console]::OutputEncoding
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $ProjectRoot
 New-Item -ItemType Directory -Force '.tools', '.local' | Out-Null

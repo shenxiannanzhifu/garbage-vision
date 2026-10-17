@@ -1,4 +1,6 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
+[Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)
+$OutputEncoding = [Console]::OutputEncoding
 $ProjectRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $ProjectRoot
 if (!(Test-Path '.venv\Scripts\python.exe')) { throw '请先运行 scripts\install.ps1' }

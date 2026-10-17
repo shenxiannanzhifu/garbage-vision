@@ -4,7 +4,7 @@
 
 | 子任务 | 状态 | 产物 / 下一步 |
 |---|---|---|
-| P1.1 环境与仓库 | 进行中 | requirements.txt、scripts；CUDA 安装进行中 |
+| P1.1 环境与仓库 | 进行中 | CUDA 12.8 已实际运行 GPU 矩阵运算；GitHub 地址已关联，待用户登录与同步 |
 | P1.2 任务与资源确认 | 进行中 | docs/资源与规则.md；核实四分类检测覆盖 |
 | P1.3 最小网页 | 进行中 | app.py；待浏览器验证 |
 | P2.1 数据与分类规则 | 未开始 | 待固定来源与划分 |
@@ -21,4 +21,8 @@
 | P5.2 演示与个人内容 | 待外部条件 | 个人感悟必须用户填写 |
 | P5.3 最终验收与归档 | 未开始 | 不提前标记 v1.0.0 |
 
-Git：使用机器已配置的真实身份。用户已要求新建 GitHub 仓库，计划名称 garbage-vision，默认私有；登录待完成，尚未同步。
+Git：使用机器已配置的真实身份。本地已有提交 ed78fe3；origin 已关联用户创建的 https://github.com/shenxiannanzhifu/garbage-vision.git ，本地分支 main；尚未登录并核实远端内容，尚未同步。
+
+用户已亲自创建 GitHub 仓库，目前正在按步骤完成电脑上的登录。用户尚未授权自动推送，不重复创建仓库。
+
+2026-10-17 登录脚本修复：用户双击时报乱码，已复现 Windows PowerShell 5.1 的解析错误。三个 ps1 文件改为 UTF-8 BOM，批处理改为 CRLF 并设置代码页 65001。重新解析全部零错误，github-login.ps1 -Check 实际成功；证据见 evidence/v0.1.0/powershell-encoding.md。用户下一步关闭旧错误窗口，重新双击登录GitHub.cmd。
