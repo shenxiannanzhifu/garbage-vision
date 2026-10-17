@@ -1,0 +1,12 @@
+# CUDA 12.8 的 torch/torchvision 由 install.ps1 单独安装。
+torch==2.9.1
+torchvision==0.24.1
+ultralytics==8.3.222
+streamlit==1.50.0
+opencv-python==4.12.0.88
+numpy==2.2.6
+Pillow==11.3.0
+httpx==0.28.1
+pydantic==2.12.3
+python-dotenv==1.1.1
+pytest==8.4.2

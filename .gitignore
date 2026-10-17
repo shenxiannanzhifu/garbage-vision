@@ -1,0 +1,17 @@
+.venv/
+.tools/
+.local/
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+*.pyc
+weights/*
+!weights/README.md
+data/raw/
+data/cache/
+runs/
+exports/
+*.log
+.streamlit/secrets.toml
