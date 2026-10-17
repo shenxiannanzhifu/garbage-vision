@@ -1,0 +1,25 @@
+{
+  "version": "beijing-household-v1",
+  "region": "北京生活垃圾四分类",
+  "assumption": "只判断用户已经决定丢弃的生活物品；桌、地面、固定灯架、盛放容器等背景设施不作为垃圾。饮料瓶先倒空清洁；不把燃油、药品或化学品容器按普通瓶子处理。",
+  "categories": {"recyclable":"可回收物", "hazardous":"有害垃圾", "kitchen":"厨余垃圾", "other":"其他垃圾"},
+  "items": [
+    {"label":"plastic bottle","name":"塑料瓶","category":"recyclable","reason":"普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。"},
+    {"label":"glass bottle","name":"玻璃瓶","category":"recyclable","reason":"普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。"},
+    {"label":"metal can","name":"金属罐","category":"recyclable","reason":"清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。"},
+    {"label":"cardboard box","name":"纸箱","category":"recyclable","reason":"干燥且未严重污染的纸箱可回收。"},
+    {"label":"banana peel","name":"香蕉皮","category":"kitchen","reason":"日常果皮属于厨余垃圾。"},
+    {"label":"apple core","name":"果核","category":"kitchen","reason":"普通水果果核属于厨余垃圾。"},
+    {"label":"food waste","name":"食物残余","category":"kitchen","reason":"食物残余沥干后投放；先分离包装。"},
+    {"label":"vegetable peels","name":"菜皮菜叶","category":"kitchen","reason":"日常果蔬残余属于厨余垃圾。"},
+    {"label":"cigarette butt","name":"烟蒂","category":"other","reason":"烟蒂属于其他垃圾；完全熄灭后再投放。"},
+    {"label":"used tissue","name":"使用过的纸巾","category":"other","reason":"使用过的卫生纸巾难以回收，属于其他垃圾。"},
+    {"label":"compact fluorescent lamp","name":"紧凑型荧光灯","category":"hazardous","reason":"含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。"},
+    {"label":"fluorescent tube","name":"荧光灯管","category":"hazardous","reason":"含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。"},
+    {"label":"medicine pills","name":"药片","category":"hazardous","reason":"已决定丢弃的药品按有害垃圾投放；不能据图片判断是否过期或指导用药。"},
+    {"label":"battery","name":"电池","category":null,"reason":"需确认电池化学类型；不能把所有电池都归入有害垃圾。"},
+    {"label":"incandescent light bulb","name":"白炽灯泡","category":null,"reason":"需确认灯泡类型和当地回收要求。"},
+    {"label":"LED light bulb","name":"LED 灯泡","category":null,"reason":"需核对灯具类型及当地电子废弃物回收渠道。"}
+  ],
+  "background_labels": ["tree leaves","stone","wood","table","wall","floor","person","animal","container","wire","metal tool","background"]
+}

@@ -1,6 +1,7 @@
 .venv/
 .tools/
 .local/
+Ultralytics/
 .env
 .env.*
 !.env.example
