@@ -29,6 +29,7 @@ class APISettings:
     use_env_proxy: bool=False
     reasoning_effort: str='low'
     image_detail: str='high'
+    proxy_url: str=field(default='',repr=False)
 
     def problem(self):
         if not self.enabled:return '尚未启用图像理解 API；在本地 .env 中配置后启用。'
@@ -37,8 +38,13 @@ class APISettings:
         if parsed.scheme!='https' or not parsed.hostname or parsed.username or parsed.password or parsed.query or parsed.fragment:
             return 'API 地址必须为不含凭据、查询参数的 HTTPS Base URL。'
         if not self.model:return '尚未配置模型名称。'
-        if self.provider=='openai':
-            if self.base_url!='https://api.openai.com/v1':return 'OpenAI 适配器仅向官方 https://api.openai.com/v1 发送密钥。'
+        if self.proxy_url:
+            proxy=urlparse(self.proxy_url)
+            if proxy.scheme not in {'http','https'} or not proxy.hostname or proxy.username or proxy.password or proxy.query or proxy.fragment:
+                return '代理地址必须为不含凭据、查询参数的 HTTP(S) URL。'
+        if self.provider in {'openai','nexavlinks'}:
+            expected='https://api.openai.com/v1' if self.provider=='openai' else 'https://www.nexavlinks.com/v1'
+            if self.base_url!=expected:return f'{self.provider} 适配器只接受已核实的接口地址 {expected}。'
             if self.reasoning_effort not in {'low','medium','high','xhigh','max'}:return 'OpenAI reasoning effort 配置无效。'
             if self.image_detail not in {'low','high','original','auto'}:return 'OpenAI 图片 detail 配置无效。'
         return None
@@ -47,6 +53,15 @@ def api_settings():
     """每次读取本地配置，用户保存后无需重启；真实环境变量优先于 .env。"""
     values={**dotenv_values(ROOT/'.env'),**os.environ}
     provider=str(values.get('GV_API_PROVIDER') or 'openai').strip()
+    if provider=='nexavlinks':
+        return APISettings(provider=provider,base_url='https://www.nexavlinks.com/v1',
+            key=str(values.get('NEXAVLINKS_API_KEY') or '').strip(),
+            model=str(values.get('NEXAVLINKS_MODEL') or 'gpt-6-astra').strip(),
+            enabled=str(values.get('NEXAVLINKS_API_ENABLED') or '').lower()=='true',
+            timeout=max(5,min(180,float(values.get('NEXAVLINKS_TIMEOUT') or 120))),
+            max_tokens=max(256,min(4096,int(values.get('NEXAVLINKS_MAX_OUTPUT_TOKENS') or 2048))),
+            max_attempts=1,reasoning_effort='low',image_detail='high',
+            proxy_url=str(values.get('NEXAVLINKS_PROXY_URL') or '').strip())
     if provider=='openai':
         # OpenAI 使用独立字段，绝不把已有百炼密钥发送到另一个服务商。
         return APISettings(provider='openai',base_url='https://api.openai.com/v1',
@@ -94,14 +109,19 @@ def parse_response(text):
     return [Item(**x.model_dump()) for x in payload.items]
 
 
+def output_schema():
+    schema=APIResponse.model_json_schema()
+    # 字符串长度在本地校验；请求只使用已核实的 JSON Schema 子集。
+    for field_schema in schema['$defs']['APIItem']['properties'].values():
+        field_schema.pop('minLength',None);field_schema.pop('maxLength',None)
+    return schema
+
+
 def build_payload(source,settings,prompt):
     """两种协议独立适配；只发送完整 RGB 原图和规则，不发送本地预测。"""
     image_url='data:image/png;base64,'+base64.b64encode(source.png).decode()
     if settings.provider=='openai':
-        schema=APIResponse.model_json_schema()
-        # 字符串长度在本地校验；请求只使用已核实的 JSON Schema 子集。
-        for field_schema in schema['$defs']['APIItem']['properties'].values():
-            field_schema.pop('minLength',None);field_schema.pop('maxLength',None)
+        schema=output_schema()
         return '/responses',{
             'model':settings.model,'store':False,'stream':False,
             'reasoning':{'effort':settings.reasoning_effort},
@@ -114,6 +134,12 @@ def build_payload(source,settings,prompt):
     payload={'model':settings.model,'messages':[{'role':'user','content':[
         {'type':'image_url','image_url':{'url':image_url}},
         {'type':'text','text':prompt}]}],'max_tokens':settings.max_tokens,'temperature':0.1,'stream':False}
+    if settings.provider=='nexavlinks':
+        # 该平台模型卡明确列出 Chat Completions；不假设支持 Responses。
+        payload.pop('temperature');payload.pop('max_tokens')
+        payload.update(max_completion_tokens=settings.max_tokens,reasoning_effort=settings.reasoning_effort,
+            response_format={'type':'json_schema','json_schema':{'name':'garbage_items','strict':True,'schema':output_schema()}})
+        payload['messages'][0]['content'][0]['image_url']['detail']=settings.image_detail
     if settings.provider=='dashscope':payload['enable_thinking']=False
     return '/chat/completions',payload
 
@@ -171,8 +197,8 @@ def infer_api(source,settings=None,transport=None,sleeper=time.sleep):
     error='API 未返回有效结果。'
     # 国内百炼默认直连，避免继承已关闭的本机代理。需要代理的其他服务可显式启用。
     # 不在失败后切换网络重发，以免已经到达服务端的请求重复计费。
-    with httpx.Client(timeout=settings.timeout,transport=transport,follow_redirects=False,trust_env=settings.use_env_proxy) as client:
-        attempts=1 if settings.provider=='openai' else settings.max_attempts
+    with httpx.Client(timeout=settings.timeout,transport=transport,proxy=settings.proxy_url or None,follow_redirects=False,trust_env=settings.use_env_proxy) as client:
+        attempts=1 if settings.provider in {'openai','nexavlinks'} else settings.max_attempts
         for attempt in range(attempts):
             meta['attempts']=attempt+1
             try:

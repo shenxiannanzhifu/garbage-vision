@@ -1,0 +1,47 @@
+{
+  "verified_date": "2026-10-18",
+  "provider": "NexaVLinks",
+  "requested_model": "gpt-6-astra",
+  "base_url": "https://www.nexavlinks.com/v1",
+  "documented_endpoint": "/chat/completions",
+  "model_inputs": [
+    "text",
+    "image",
+    "pdf"
+  ],
+  "model_outputs": [
+    "text"
+  ],
+  "model_list_account_access_confirmed": true,
+  "model_source_independently_verified": false,
+  "price_unit": "NEX",
+  "visible_key_groups": [
+    "[自建] ASTRA专属分组",
+    "[自建] 订阅专属分组",
+    "[自建] image2.5图片生成"
+  ],
+  "astra_group_rates_per_million": {
+    "input": 3.6,
+    "output": 18,
+    "cache_write": 4.5,
+    "cache_read": 0.36
+  },
+  "subscription_group_rates_per_million": {
+    "input": 10,
+    "output": 50,
+    "cache_write": 12.5,
+    "cache_read": 1
+  },
+  "budget_authorized": {
+    "calls": 4,
+    "budget_nex": 1,
+    "first_single_image_then_review": true,
+    "automatic_retries": false
+  },
+  "sources": [
+    "https://www.nexavlinks.com/doc/endpoints-and-capabilities",
+    "https://www.nexavlinks.com/modelsmarket/gpt-6-astra",
+    "https://www.nexavlinks.com/doc/billing-balance-issues"
+  ],
+  "note": "Provider claims model identity. Gateway metadata alone does not independently prove upstream implementation. Structured-output passthrough requires actual trial."
+}

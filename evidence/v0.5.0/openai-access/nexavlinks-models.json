@@ -1,0 +1,14 @@
+{
+  "provider": "nexavlinks",
+  "endpoint": "https://www.nexavlinks.com/v1/models",
+  "generation_verified": false,
+  "image_submitted": false,
+  "http_status": 200,
+  "target_available": true,
+  "related_model_ids": [
+    "gpt-6-astra",
+    "gpt-6-luna",
+    "gpt-6-sol",
+    "gpt-6.1-sol"
+  ]
+}

@@ -76,3 +76,33 @@ def test_trial_budget_uses_dollars_and_includes_reasoning_output():
     assert estimated_usd({}) is None
     assert reservation_usd(decode_image(make_image()),config())<.25
     with pytest.raises(ValueError):reservation_usd(decode_image(make_image()),config(image_detail='original'))
+
+
+def test_nexavlinks_uses_confirmed_chat_endpoint_and_own_currency():
+    from scripts.nexavlinks_trial import reservation_nex,estimate_nex
+    source=decode_image(make_image());calls=[]
+    s=APISettings(provider='nexavlinks',model='gpt-6-astra',base_url='https://www.nexavlinks.com/v1',
+                  key='TEST-GATEWAY-KEY',enabled=True,max_attempts=2)
+    def handler(request):
+        calls.append(request);body=json.loads(request.content)
+        assert request.url.host=='www.nexavlinks.com' and request.url.path=='/v1/chat/completions'
+        assert body['max_completion_tokens']==2048 and body['reasoning_effort']=='low'
+        assert 'temperature' not in body and 'max_tokens' not in body
+        assert base64.b64decode(body['messages'][0]['content'][0]['image_url']['url'].split(',')[1])==source.png
+        assert body['response_format']['json_schema']['strict'] is True
+        return httpx.Response(200,json={'choices':[{'finish_reason':'stop','message':{'content':'{"items":[]}'}}],
+            'usage':{'prompt_tokens':100,'completion_tokens':200}})
+    result=infer_api(source,s,httpx.MockTransport(handler))
+    assert result.status=='success' and len(calls)==1
+    assert 4*reservation_nex(source,s)<1 and estimate_nex(result.metadata['usage'])==pytest.approx(.01125)
+    with pytest.raises(ValueError):
+        from scripts.openai_trial import reservation_usd
+        # Official-only trial entrypoint separately rejects a gateway provider.
+        reservation_nex(source,config())
+
+
+def test_nexavlinks_config_does_not_reuse_an_official_key():
+    with patch('garbage_vision.api.dotenv_values',return_value={
+        'GV_API_PROVIDER':'nexavlinks','OPENAI_API_KEY':'OFFICIAL-KEY','NEXAVLINKS_API_KEY':'NEXA-KEY'}),patch.dict('os.environ',{},clear=True):
+        s=api_settings()
+    assert s.key=='NEXA-KEY' and s.provider=='nexavlinks'
