@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-10-19T00:24:57+08:00",
+  "user_answer": "同意，补测22张，累计最多42次／4 NEX",
+  "authorized_shared_max_calls": 42,
+  "authorized_shared_budget_nex": 4,
+  "maximum_new_calls": 22,
+  "prior_shared_calls": 20,
+  "preserve_all_prior_results_and_failures": true,
+  "attempts_per_image": 1,
+  "reserve_full_cost_for_unknown_usage": true,
+  "continue_next_different_image_after_single_failure": true,
+  "stop_on_consecutive_failures": 2,
+  "stop_on_auth_quota_error_unresolved_request_or_insufficient_budget": true,
+  "freeze_file": "completion-freeze.json"
+}

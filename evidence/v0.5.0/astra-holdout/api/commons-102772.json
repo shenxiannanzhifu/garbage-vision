@@ -1,0 +1,99 @@
+{
+  "id": "commons-102772",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:28:59.882690+00:00",
+    "image_id": "f4d6d62e82a0297af78cbc8fdac6d80c7f2508a2e3210d77f755f56510bc0416",
+    "source_sha256": "20f8f74b352e57051fd736f96cdd074488ba7c6f3d1b9689dab5929e5230c611",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "紧凑型荧光灯（多个）",
+        "category": "hazardous",
+        "reason": "U形灯管结构及可见型号标识可辨认为紧凑型荧光灯，含汞，须保持完整投放有害垃圾。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "直管荧光灯（多个）",
+        "category": "hazardous",
+        "reason": "可见型号与标识可辨认为直管荧光灯，含汞，属于有害垃圾，应避免破碎。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "火柴",
+        "category": "other",
+        "reason": "可见单根火柴，丢弃时属于其他垃圾，须远离火源。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 36.679366900003515,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "f4d6d62e82a0297af78cbc8fdac6d80c7f2508a2e3210d77f755f56510bc0416",
+      "attempts": 1,
+      "canonical_image_sha256": "f4d6d62e82a0297af78cbc8fdac6d80c7f2508a2e3210d77f755f56510bc0416",
+      "upload_image_bytes": 1187811,
+      "upload_image_mime": "image/png",
+      "image_transport_mode": "canonical_png",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_034746cf5937f74e016ad4f3c63470819184aa36c6043200e9",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2416,
+        "completion_tokens": 171,
+        "total_tokens": 2587
+      },
+      "response_text": "{\"items\":[{\"category\":\"hazardous\",\"name\":\"紧凑型荧光灯（多个）\",\"reason\":\"U形灯管结构及可见型号标识可辨认为紧凑型荧光灯，含汞，须保持完整投放有害垃圾。\",\"uncertain\":false},{\"category\":\"hazardous\",\"name\":\"直管荧光灯（多个）\",\"reason\":\"可见型号与标识可辨认为直管荧光灯，含汞，属于有害垃圾，应避免破碎。\",\"uncertain\":false},{\"category\":\"other\",\"name\":\"火柴\",\"reason\":\"可见单根火柴，丢弃时属于其他垃圾，须远离火源。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "ab4245ce3f26e1bbaa5d7e876b12f68ef0c79617ef4c0a3a61b93c282e157e8c",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.03875,
+  "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+}

@@ -1,0 +1,24 @@
+{
+  "authorized_new_calls": 22,
+  "attempted_new_calls": 20,
+  "successful_new_calls": 18,
+  "new_failed_image_ids": [
+    "commons-90437283",
+    "commons-19792555"
+  ],
+  "pending_image_ids": [
+    "commons-27113623",
+    "commons-53453562"
+  ],
+  "stopped_reason": "Two consecutive ConnectError failures; no automatic retry or continuation.",
+  "shared_calls_used": 40,
+  "shared_calls_cap": 42,
+  "shared_budget_nex": 4,
+  "shared_conservative_accounted_nex": 2.56135,
+  "new_matched_actual_nex": 0.2010852,
+  "holdout_matched_actual_nex": 0.3685428,
+  "shared_matched_actual_nex": 0.3790224,
+  "shared_unmatched_fee_count": 5,
+  "new_success_median_seconds": 12.365337800059933,
+  "no_labels_or_inference_settings_changed": true
+}

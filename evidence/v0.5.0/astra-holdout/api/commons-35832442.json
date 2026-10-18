@@ -1,0 +1,100 @@
+{
+  "id": "commons-35832442",
+  "expected_categories": [
+    "kitchen",
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:26:15.780549+00:00",
+    "image_id": "ea170e503da1ba1bfbda65cbf5277da73f167a82a9b053a38dbccd2e5bb1a953",
+    "source_sha256": "96e151a88246ce5001aeed6aec39faf72c98afe9c7b44be209319ddd01228346",
+    "image_size": [
+      960,
+      1235
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "香蕉皮（多个）",
+        "category": "kitchen",
+        "reason": "可见的大量香蕉皮属于日常果皮，按厨余垃圾投放。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "塑料饮料瓶（多个）",
+        "category": "recyclable",
+        "reason": "普通塑料饮料瓶倒空清洁后可回收。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "塑料瓶盖",
+        "category": "recyclable",
+        "reason": "地面可见的塑料瓶盖可随清洁的饮料瓶回收。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 46.0945835999446,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "ea170e503da1ba1bfbda65cbf5277da73f167a82a9b053a38dbccd2e5bb1a953",
+      "attempts": 1,
+      "canonical_image_sha256": "ea170e503da1ba1bfbda65cbf5277da73f167a82a9b053a38dbccd2e5bb1a953",
+      "upload_image_bytes": 1886425,
+      "upload_image_mime": "image/png",
+      "image_transport_mode": "canonical_png",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_05f3ac0096081ddd016ad4f321dd8481919df9ccfdf49aa56b",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2992,
+        "completion_tokens": 135,
+        "total_tokens": 3127
+      },
+      "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"香蕉皮（多个）\",\"reason\":\"可见的大量香蕉皮属于日常果皮，按厨余垃圾投放。\",\"uncertain\":false},{\"category\":\"recyclable\",\"name\":\"塑料饮料瓶（多个）\",\"reason\":\"普通塑料饮料瓶倒空清洁后可回收。\",\"uncertain\":false},{\"category\":\"recyclable\",\"name\":\"塑料瓶盖\",\"reason\":\"地面可见的塑料瓶盖可随清洁的饮料瓶回收。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "86c379bbd67540f798acac439b38338523e40c86a4021c7b8cd178ba4e24c035",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.04415,
+  "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+}

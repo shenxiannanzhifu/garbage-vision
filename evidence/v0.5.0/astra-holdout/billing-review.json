@@ -117,13 +117,142 @@
       "input_tokens": 2380,
       "output_tokens": 38,
       "actual_cost_nex": 0.009252
+    },
+    {
+      "id": "commons-87666282",
+      "local_time": "2026-10-19 00:29:58",
+      "input_tokens": 3028,
+      "output_tokens": 55,
+      "actual_cost_nex": 0.0118908
+    },
+    {
+      "id": "commons-32438633",
+      "local_time": "2026-10-19 00:29:43",
+      "input_tokens": 3352,
+      "output_tokens": 100,
+      "actual_cost_nex": 0.0138672
+    },
+    {
+      "id": "commons-144928399",
+      "local_time": "2026-10-19 00:29:32",
+      "input_tokens": 2416,
+      "output_tokens": 74,
+      "actual_cost_nex": 0.0100296
+    },
+    {
+      "id": "commons-101290692",
+      "local_time": "2026-10-19 00:29:09",
+      "input_tokens": 2416,
+      "output_tokens": 46,
+      "actual_cost_nex": 0.0095256
+    },
+    {
+      "id": "commons-102772",
+      "local_time": "2026-10-19 00:28:59",
+      "input_tokens": 2416,
+      "output_tokens": 171,
+      "actual_cost_nex": 0.0117756
+    },
+    {
+      "id": "commons-110967099",
+      "local_time": "2026-10-19 00:28:22",
+      "input_tokens": 2308,
+      "output_tokens": 92,
+      "actual_cost_nex": 0.0099648
+    },
+    {
+      "id": "commons-82983746",
+      "local_time": "2026-10-19 00:28:14",
+      "input_tokens": 2452,
+      "output_tokens": 63,
+      "actual_cost_nex": 0.0099612
+    },
+    {
+      "id": "commons-142040226",
+      "local_time": "2026-10-19 00:28:00",
+      "input_tokens": 2632,
+      "output_tokens": 157,
+      "actual_cost_nex": 0.0123012
+    },
+    {
+      "id": "commons-102745520",
+      "local_time": "2026-10-19 00:27:46",
+      "input_tokens": 2200,
+      "output_tokens": 132,
+      "actual_cost_nex": 0.010296
+    },
+    {
+      "id": "commons-139358689",
+      "local_time": "2026-10-19 00:27:30",
+      "input_tokens": 3100,
+      "output_tokens": 57,
+      "actual_cost_nex": 0.012186
+    },
+    {
+      "id": "commons-27372712",
+      "local_time": "2026-10-19 00:27:18",
+      "input_tokens": 2668,
+      "output_tokens": 77,
+      "actual_cost_nex": 0.0109908
+    },
+    {
+      "id": "commons-16022161",
+      "local_time": "2026-10-19 00:27:08",
+      "input_tokens": 2164,
+      "output_tokens": 107,
+      "actual_cost_nex": 0.0097164
+    },
+    {
+      "id": "commons-114969819",
+      "local_time": "2026-10-19 00:26:56",
+      "input_tokens": 2200,
+      "output_tokens": 179,
+      "actual_cost_nex": 0.011142
+    },
+    {
+      "id": "commons-6215482",
+      "local_time": "2026-10-19 00:26:44",
+      "input_tokens": 3028,
+      "output_tokens": 72,
+      "actual_cost_nex": 0.0121968
+    },
+    {
+      "id": "commons-132219783",
+      "local_time": "2026-10-19 00:26:36",
+      "input_tokens": 2416,
+      "output_tokens": 78,
+      "actual_cost_nex": 0.0101016
+    },
+    {
+      "id": "commons-42032344",
+      "local_time": "2026-10-19 00:26:26",
+      "input_tokens": 2344,
+      "output_tokens": 55,
+      "actual_cost_nex": 0.0094284
+    },
+    {
+      "id": "commons-35832442",
+      "local_time": "2026-10-19 00:26:15",
+      "input_tokens": 2992,
+      "output_tokens": 135,
+      "actual_cost_nex": 0.0132012
+    },
+    {
+      "id": "commons-31284758",
+      "local_time": "2026-10-19 00:25:29",
+      "input_tokens": 3100,
+      "output_tokens": 75,
+      "actual_cost_nex": 0.01251
     }
   ],
-  "actual_total_nex": 0.1674576,
+  "actual_total_nex": 0.3685428,
   "unreconciled_image_ids": [
     "commons-95896968",
-    "commons-75295601"
+    "commons-75295601",
+    "commons-90437283",
+    "commons-19792555"
   ],
-  "note": "No matching visible bill for these two transport failures at latest signed-in UI review. Their actual cost remains unknown; full per-request reservations retained.",
-  "unrelated_account_logs_included": false
+  "note": "Latest signed-in UI matched 18 new Low Chat Completions rows by time and exact input/output counts. Four failed holdout requests have no matched visible bill; actual cost unknown and full reservations retained. Unrelated account calls excluded.",
+  "unrelated_account_logs_included": false,
+  "reviewed_at_local": "2026-10-19 00:39"
 }

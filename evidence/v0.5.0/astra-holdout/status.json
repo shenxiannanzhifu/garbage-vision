@@ -1,19 +1,31 @@
 {
-  "status": "stopped_after_transport_failure",
-  "attempted_calls": 18,
-  "successful_responses": 15,
-  "failed_requests": 3,
-  "unsubmitted_images": 22,
-  "authorized_max_calls": 40,
+  "status": "stopped_after_two_consecutive_transport_failures",
+  "attempted_calls": 38,
+  "successful_responses": 33,
+  "failed_requests": 5,
+  "unsubmitted_images": 2,
+  "shared_attempted_calls": 40,
+  "authorized_max_calls": 42,
   "authorized_budget_nex": 4,
-  "confirmed_billed_nex": 0.1674576,
-  "unknown_billing_requests": [
+  "confirmed_holdout_billed_nex": 0.3685428,
+  "confirmed_shared_billed_nex": 0.3790224,
+  "shared_conservative_accounted_nex": 2.56135,
+  "unknown_holdout_billing_requests": [
     "commons-95896968",
-    "commons-75295601"
+    "commons-75295601",
+    "commons-90437283",
+    "commons-19792555"
+  ],
+  "unknown_candidate_billing_requests": [
+    "commons-179028310"
+  ],
+  "pending_image_ids": [
+    "commons-27113623",
+    "commons-53453562"
   ],
   "no_retries": true,
-  "current_model_prompt_labels_unchanged_during_baseline": true,
-  "original_inference_commit": "11466c9",
-  "candidate_after_stop": "Lossless transport implementation and detailed transport error types; disabled by default; requires separate small-sample validation before promotion.",
-  "resume_baseline_note": "Current inference code evolved after baseline stopped. To finish exact original baseline, use archived source commit and reviewed continuation; do not bypass frozen source checks."
+  "model_prompt_labels_unchanged": true,
+  "resume_requires_review_of_triggered_stop_condition": true,
+  "original_inference_commit": "11466c90ed1085be5ad5f0ef1df10bb587df212e",
+  "completion_inference_commit": "1869e1dd4105399413d0eadb150d3c0f2bae0d9b"
 }

@@ -1,0 +1,11 @@
+{
+  "id": "commons-90437283",
+  "started_at_utc": "2026-10-18T16:29:59.097215+00:00",
+  "reserved_nex": 0.218625,
+  "attempts": 1,
+  "authorized_shared_max_calls": 42,
+  "authorized_budget_nex": 4,
+  "completion_freeze_sha256": "4325548a80da998a1c935f2afaad0f685d7d58cacee56bfc82f751bc7eab7d81",
+  "transport_route": "explicit_proxy",
+  "inference_source_commit": "1869e1dd4105399413d0eadb150d3c0f2bae0d9b"
+}

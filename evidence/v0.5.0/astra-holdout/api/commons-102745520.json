@@ -1,0 +1,85 @@
+{
+  "id": "commons-102745520",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:27:46.832244+00:00",
+    "image_id": "3ecce20886a2c6a50ce11a730817003549f3d2d4837c9bd614ba61debee0f6ed",
+    "source_sha256": "acc1ae4985c310fc67d4d76bf5e49f0d5b6b543b5c54e83180921b27f6bb2531",
+    "image_size": [
+      960,
+      540
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "碳锌干电池",
+        "category": "other",
+        "reason": "标签可见 R14、1.5V，为普通碳锌干电池，按北京规则投放其他垃圾。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "碱性干电池（多个）",
+        "category": "other",
+        "reason": "标签可见 ALKALINE，为普通碱性干电池，按北京规则投放其他垃圾。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 15.775674400036223,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "3ecce20886a2c6a50ce11a730817003549f3d2d4837c9bd614ba61debee0f6ed",
+      "attempts": 1,
+      "canonical_image_sha256": "3ecce20886a2c6a50ce11a730817003549f3d2d4837c9bd614ba61debee0f6ed",
+      "upload_image_bytes": 480647,
+      "upload_image_mime": "image/png",
+      "image_transport_mode": "canonical_png",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_06f06deaf96efff5016ad4f37da19081919c2bbd5b49f9b69d",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2200,
+        "completion_tokens": 132,
+        "total_tokens": 2332,
+        "completion_tokens_details": {
+          "reasoning_tokens": 18
+        }
+      },
+      "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"碳锌干电池\",\"reason\":\"标签可见 R14、1.5V，为普通碳锌干电池，按北京规则投放其他垃圾。\",\"uncertain\":false},{\"category\":\"other\",\"name\":\"碱性干电池（多个）\",\"reason\":\"标签可见 ALKALINE，为普通碱性干电池，按北京规则投放其他垃圾。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "d293b70582cf8d40f13f4d5cb398e7455b1aacde99d0f97aa6cadb7cdbace92b",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.0341,
+  "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+}

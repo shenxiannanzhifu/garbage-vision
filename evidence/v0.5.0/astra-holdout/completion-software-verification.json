@@ -1,0 +1,9 @@
+{
+  "checked_at_local": "2026-10-19",
+  "command": "pytest tests/test_holdout_page.py tests/test_quality_completion.py tests/test_transport_probe_budget.py -q",
+  "passed": 6,
+  "seconds": 3.66,
+  "frozen_inference_source_and_input_hashes_match": true,
+  "scope": "History review AppTest with HTTP blocked; missing-evaluation refusal; no resends after stop; count/budget reservations. Mocked fixture source revision repaired.",
+  "not_a_new_model_quality_validation": true
+}

@@ -28,10 +28,15 @@ count = report['attempted_calls']
 if not report['complete']:
     st.warning(f'复评中断：已尝试 {count}/40 张，剩余 {40-count} 张尚未请求。下列数值仅描述已尝试子集，不能代表完整正确率。')
 c1, c2, c3 = st.columns(3)
-c1.metric('同子集本地集合完全匹配', f"{round(a['exact_set_accuracy']*count)} / {count}")
-c2.metric('同子集大模型集合完全匹配', f"{round(b['exact_set_accuracy']*count)} / {count}")
+scope = '同组' if report['complete'] else '同子集'
+c1.metric(scope+'本地集合完全匹配', f"{round(a['exact_set_accuracy']*count)} / {count}")
+c2.metric(scope+'大模型集合完全匹配', f"{round(b['exact_set_accuracy']*count)} / {count}")
 c3.metric('大模型通信失败', f"{round(b['failure_rate']*count)} / {count}")
 st.caption('匹配的是图片中出现的四分类集合，不代表每个物品、理由和位置均正确。参考标签还需要独立人工复核。')
+audit_path = folder/'quality-review.json'
+audit = json.loads(audit_path.read_text(encoding='utf-8')) if audit_path.exists() else {}
+if audit:
+    st.info('已增加逐图质量复核：5张分类分歧涉及参考遗漏或规则歧义。原评分不改，也不据此宣称模型全部正确。')
 failures = {r['id'] for method in ('local','api') for r in report[method]['records'] if not r['exact_match']}
 only_differences = st.checkbox('只看任一方案与参考不一致的图片')
 rows = [r for r in frozen['images'] if r['id'] not in report['pending_image_ids'] and (not only_differences or r['id'] in failures)]
@@ -50,6 +55,9 @@ source = decode_image(path.read_bytes())
 st.image(source.image, caption='评估原图', width=650)
 st.markdown(f"[原图与许可来源]({row['source_page']}) · {row['author']} · {row['license']}")
 st.write('固定参考类别：'+cats(row['categories']))
+for note in audit.get('issues',[]) + audit.get('additional_observations',[]):
+    if note['id'] == key:
+        st.warning('质量复核（不改变原评分）：'+note['note'])
 api = json.loads((folder/'api'/(key+'.json')).read_text(encoding='utf-8'))['result']
 results = []
 # 一次创建两列，避免重复生成空列。

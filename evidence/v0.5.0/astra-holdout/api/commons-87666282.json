@@ -1,0 +1,54 @@
+{
+  "id": "commons-87666282",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:29:58.966539+00:00",
+    "image_id": "5cc4cd23860455fe56c84178e5332d070336e0a5e1c75d2472a0bb93d50ae0d3",
+    "source_sha256": "ce82aa17435238d2f392ce9d3878de4116694a7eac392c548df9442f98d7a105",
+    "image_size": [
+      960,
+      1280
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [],
+    "elapsed_seconds": 15.28632930002641,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "5cc4cd23860455fe56c84178e5332d070336e0a5e1c75d2472a0bb93d50ae0d3",
+      "attempts": 1,
+      "canonical_image_sha256": "5cc4cd23860455fe56c84178e5332d070336e0a5e1c75d2472a0bb93d50ae0d3",
+      "upload_image_bytes": 2023951,
+      "upload_image_mime": "image/png",
+      "image_transport_mode": "canonical_png",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_09d5734b67ca3663016ad4f400dc8c8191a9a8ca632a0c34cf",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 3028,
+        "completion_tokens": 55,
+        "total_tokens": 3083,
+        "completion_tokens_details": {
+          "reasoning_tokens": 40
+        }
+      },
+      "response_text": "{\"items\":[]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "eef46741adfc3a9f76294d3b78f37a45f113092ac9d44ee77c7a038a88ff09a1",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.0406,
+  "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+}

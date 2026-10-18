@@ -1,0 +1,69 @@
+{
+  "id": "commons-82983746",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:28:14.867488+00:00",
+    "image_id": "95f7a8a86c497c7b68977592c792e9858ecbf2944d964e638cdd8cf32ffa5ac6",
+    "source_sha256": "9b5581d8791d62b48038503f73d4e0efc57ffae2633cb58962b8c6167cfa92c5",
+    "image_size": [
+      960,
+      747
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "图中纸巾用于擦拭鼻部，使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 14.045242800028063,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "95f7a8a86c497c7b68977592c792e9858ecbf2944d964e638cdd8cf32ffa5ac6",
+      "attempts": 1,
+      "canonical_image_sha256": "95f7a8a86c497c7b68977592c792e9858ecbf2944d964e638cdd8cf32ffa5ac6",
+      "upload_image_bytes": 604724,
+      "upload_image_mime": "image/png",
+      "image_transport_mode": "canonical_png",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_03a4e1e5b0c14539016ad4f39c27e88191bc2b6064947a3e2e",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2452,
+        "completion_tokens": 63,
+        "total_tokens": 2515
+      },
+      "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"使用过的纸巾\",\"reason\":\"图中纸巾用于擦拭鼻部，使用过的卫生纸巾难以回收，属于其他垃圾。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "60e542ae1a0e86a5afe143a2e136c80922792d39d19c9829f928a937df6b8719",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.0338,
+  "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+}

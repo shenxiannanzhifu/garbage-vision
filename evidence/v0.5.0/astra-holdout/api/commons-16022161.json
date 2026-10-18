@@ -1,0 +1,70 @@
+{
+  "id": "commons-16022161",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:27:09.034601+00:00",
+    "image_id": "50013574719cbc666c2d41e8500a96eba829522a3760ce39441cb66325667deb",
+    "source_sha256": "148666aa70a8b2fde0cc1ab86d9af69651540c0712083f586d3eff368ee995fe",
+    "image_size": [
+      960,
+      487
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "纽扣电池（多个）",
+        "category": null,
+        "reason": "左侧可见 LR44 标识，右侧未见型号；需分别核对化学类型及当地纽扣电池投放要求。",
+        "uncertain": true,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 12.731477300054394,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "50013574719cbc666c2d41e8500a96eba829522a3760ce39441cb66325667deb",
+      "attempts": 1,
+      "canonical_image_sha256": "50013574719cbc666c2d41e8500a96eba829522a3760ce39441cb66325667deb",
+      "upload_image_bytes": 391376,
+      "upload_image_mime": "image/png",
+      "image_transport_mode": "canonical_png",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_06bc82177a5e7f0b016ad4f3585d5881919a659f392eec53fd",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2164,
+        "completion_tokens": 107,
+        "total_tokens": 2271,
+        "completion_tokens_details": {
+          "reasoning_tokens": 37
+        }
+      },
+      "response_text": "{\"items\":[{\"category\":null,\"name\":\"纽扣电池（多个）\",\"reason\":\"左侧可见 LR44 标识，右侧未见型号；需分别核对化学类型及当地纽扣电池投放要求。\",\"uncertain\":true}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "0b3428425a29dd520447b256583b15994d8529f3847e076c1fce6f9697eb5911",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.0324,
+  "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+}

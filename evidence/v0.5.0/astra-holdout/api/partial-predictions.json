@@ -1091,6 +1091,1470 @@
       },
       "estimated_cost_nex": null,
       "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-42032344",
+      "expected_categories": [
+        "other"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:26:26.934688+00:00",
+        "image_id": "f1463672026345ef0d6317cb3c328189c5e5c1dcd16df88556d5de06a9b63398",
+        "source_sha256": "96e25c3d897d9e8b5ab2dcaf7c401df5c5dd51c427fbbb9692bcf74f9afd68c7",
+        "image_size": [
+          960,
+          643
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "烟蒂（多个）",
+            "category": "other",
+            "reason": "可见燃烧后的烟蒂，属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 10.997729799943045,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "f1463672026345ef0d6317cb3c328189c5e5c1dcd16df88556d5de06a9b63398",
+          "attempts": 1,
+          "canonical_image_sha256": "f1463672026345ef0d6317cb3c328189c5e5c1dcd16df88556d5de06a9b63398",
+          "upload_image_bytes": 797706,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0f794df45e167433016ad4f32da2a4819183f2a324936cca32",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2344,
+            "completion_tokens": 55,
+            "total_tokens": 2399
+          },
+          "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"烟蒂（多个）\",\"reason\":\"可见燃烧后的烟蒂，属于其他垃圾；完全熄灭后再投放。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "8f71dfa170b5b392b0b109d6013172356802ecbcedfab51c307d8bc82933e51b",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03205,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-114969819",
+      "expected_categories": [
+        "other"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:26:56.152482+00:00",
+        "image_id": "ed28075816c1307cb435294b65177860bdcea132afc2e1d9252c25bc93dbf2ec",
+        "source_sha256": "848c880cadfe762af0b9643cfeaa17b8673646903338ad5ed2aca6a4d8ba7aaa",
+        "image_size": [
+          960,
+          540
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "烟蒂（多个）",
+            "category": "other",
+            "reason": "烟蒂属于其他垃圾，完全熄灭后再投放。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "烟灰",
+            "category": "other",
+            "reason": "烟灰属于其他垃圾，确认无余火后投放。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "纸质烟盒",
+            "category": "recyclable",
+            "reason": "纸质外盒可回收，需分离内衬及薄膜，保持干燥且无严重污染。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "零散包装纸及薄膜",
+            "category": null,
+            "reason": "可见揉皱的包装碎片，但无法确认各自材质及是否为复合包装，需分辨后分类。",
+            "uncertain": true,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 11.804975699982606,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "ed28075816c1307cb435294b65177860bdcea132afc2e1d9252c25bc93dbf2ec",
+          "attempts": 1,
+          "canonical_image_sha256": "ed28075816c1307cb435294b65177860bdcea132afc2e1d9252c25bc93dbf2ec",
+          "upload_image_bytes": 909596,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_09a899a58d2f03a4016ad4f34a40a0819191bf16472eea8798",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2200,
+            "completion_tokens": 179,
+            "total_tokens": 2379
+          },
+          "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"烟蒂（多个）\",\"reason\":\"烟蒂属于其他垃圾，完全熄灭后再投放。\",\"uncertain\":false},{\"category\":\"other\",\"name\":\"烟灰\",\"reason\":\"烟灰属于其他垃圾，确认无余火后投放。\",\"uncertain\":false},{\"category\":\"recyclable\",\"name\":\"纸质烟盒\",\"reason\":\"纸质外盒可回收，需分离内衬及薄膜，保持干燥且无严重污染。\",\"uncertain\":false},{\"category\":null,\"name\":\"零散包装纸及薄膜\",\"reason\":\"可见揉皱的包装碎片，但无法确认各自材质及是否为复合包装，需分辨后分类。\",\"uncertain\":true}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "054307e75db9728012822306e2f3dfc053cbd560e4ab02a853700d22b4d634c3",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03645,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-139358689",
+      "expected_categories": [
+        "other"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:27:30.920538+00:00",
+        "image_id": "474bfdbf896e40d4a6d22c98922bb8b106ed23fb4fa386ad9380ea8a0e3a6fd7",
+        "source_sha256": "cf57eda212171f1ba1ceddc8ab87e340c03eff7fc9f476ce36cdb35d82d1af3f",
+        "image_size": [
+          960,
+          1344
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "烟蒂（多个）",
+            "category": "other",
+            "reason": "可见多个丢弃的烟蒂，属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 12.038916200050153,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "474bfdbf896e40d4a6d22c98922bb8b106ed23fb4fa386ad9380ea8a0e3a6fd7",
+          "attempts": 1,
+          "canonical_image_sha256": "474bfdbf896e40d4a6d22c98922bb8b106ed23fb4fa386ad9380ea8a0e3a6fd7",
+          "upload_image_bytes": 1813921,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_07d1b8f6899ec42f016ad4f36f46a081919eb8e7e40e02ebf1",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 3100,
+            "completion_tokens": 57,
+            "total_tokens": 3157
+          },
+          "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"烟蒂（多个）\",\"reason\":\"可见多个丢弃的烟蒂，属于其他垃圾；完全熄灭后再投放。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "201975d5ada8469a8a7c448af38a02b6e164222f1ec3b33123cb474119402fe4",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0416,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-82983746",
+      "expected_categories": [
+        "other"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:28:14.867488+00:00",
+        "image_id": "95f7a8a86c497c7b68977592c792e9858ecbf2944d964e638cdd8cf32ffa5ac6",
+        "source_sha256": "9b5581d8791d62b48038503f73d4e0efc57ffae2633cb58962b8c6167cfa92c5",
+        "image_size": [
+          960,
+          747
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "使用过的纸巾",
+            "category": "other",
+            "reason": "图中纸巾用于擦拭鼻部，使用过的卫生纸巾难以回收，属于其他垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 14.045242800028063,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "95f7a8a86c497c7b68977592c792e9858ecbf2944d964e638cdd8cf32ffa5ac6",
+          "attempts": 1,
+          "canonical_image_sha256": "95f7a8a86c497c7b68977592c792e9858ecbf2944d964e638cdd8cf32ffa5ac6",
+          "upload_image_bytes": 604724,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_03a4e1e5b0c14539016ad4f39c27e88191bc2b6064947a3e2e",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2452,
+            "completion_tokens": 63,
+            "total_tokens": 2515
+          },
+          "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"使用过的纸巾\",\"reason\":\"图中纸巾用于擦拭鼻部，使用过的卫生纸巾难以回收，属于其他垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "60e542ae1a0e86a5afe143a2e136c80922792d39d19c9829f928a937df6b8719",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0338,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-101290692",
+      "expected_categories": [
+        "other"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:29:09.684635+00:00",
+        "image_id": "e8e26ae7a4c4495a6ad91088f51690aee639d29e7cf73c286050f4ef07371daa",
+        "source_sha256": "948c3d3081a616c1f4051f7d9debc20afd8dfe0d01faaebd861bf5a7bfe99346",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "烟蒂",
+            "category": "other",
+            "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 9.604231099947356,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "e8e26ae7a4c4495a6ad91088f51690aee639d29e7cf73c286050f4ef07371daa",
+          "attempts": 1,
+          "canonical_image_sha256": "e8e26ae7a4c4495a6ad91088f51690aee639d29e7cf73c286050f4ef07371daa",
+          "upload_image_bytes": 1217469,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0f5f8526fb887638016ad4f3d27a4c8191b10a03d217f286cd",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2416,
+            "completion_tokens": 46,
+            "total_tokens": 2462
+          },
+          "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"烟蒂\",\"reason\":\"烟蒂属于其他垃圾；完全熄灭后再投放。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "afbb04487fc87a5e5f092582fae83f3cd3f3c8eeb86469d2b0cfb9e17231244c",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0325,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-31284758",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:25:29.429575+00:00",
+        "image_id": "5f56148e6c98a12309e90e08a4678c1a3bb4c959d45c69627ea296607d01148b",
+        "source_sha256": "23e74607058b6b02c2d6116cc63983f5023483666a968894811f5c1ca7e9e3f8",
+        "image_size": [
+          960,
+          1322
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "紧凑型荧光灯",
+            "category": "hazardous",
+            "reason": "可见典型螺旋荧光灯管，属于含汞节能灯；按有害垃圾投放，保持完整、避免破碎。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 13.250345700071193,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "5f56148e6c98a12309e90e08a4678c1a3bb4c959d45c69627ea296607d01148b",
+          "attempts": 1,
+          "canonical_image_sha256": "5f56148e6c98a12309e90e08a4678c1a3bb4c959d45c69627ea296607d01148b",
+          "upload_image_bytes": 755612,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_04913f61879a722d016ad4f2f20ef48191ab1dbf6a1d65afe4",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 3100,
+            "completion_tokens": 75,
+            "total_tokens": 3175
+          },
+          "response_text": "{\"items\":[{\"category\":\"hazardous\",\"name\":\"紧凑型荧光灯\",\"reason\":\"可见典型螺旋荧光灯管，属于含汞节能灯；按有害垃圾投放，保持完整、避免破碎。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "9dd62a2d6187ed7758e7765ed4727c101fe1f36bf7946a927906e22abcb95b29",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0425,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-6215482",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:26:44.187215+00:00",
+        "image_id": "4cbea20867163dcf253e1abd985abc48cdddecf17574edb3fb2d4e565d44053e",
+        "source_sha256": "8d93eee5d4c81f252319685b7aa89cfad0cef5bcf0d235604cb44afb4cd9199b",
+        "image_size": [
+          960,
+          1269
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "紧凑型荧光灯",
+            "category": "hazardous",
+            "reason": "可辨认为螺旋管紧凑型荧光灯，属于含汞有害垃圾；应保持完整、避免破碎。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 7.311375400051475,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "4cbea20867163dcf253e1abd985abc48cdddecf17574edb3fb2d4e565d44053e",
+          "attempts": 1,
+          "canonical_image_sha256": "4cbea20867163dcf253e1abd985abc48cdddecf17574edb3fb2d4e565d44053e",
+          "upload_image_bytes": 224864,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0b9951f479a8fbe9016ad4f34122688191ac54304bfeea9835",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 3028,
+            "completion_tokens": 72,
+            "total_tokens": 3100
+          },
+          "response_text": "{\"items\":[{\"category\":\"hazardous\",\"name\":\"紧凑型荧光灯\",\"reason\":\"可辨认为螺旋管紧凑型荧光灯，属于含汞有害垃圾；应保持完整、避免破碎。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "db188addf86ef33647855294eabf475f01a74aa03a40c3966177e576f079c8a3",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.04145,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-27372712",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:27:18.615762+00:00",
+        "image_id": "6e84ef22ae3f8baab4685f23f87f3be77bb024ba41a4662b6881d5a9ad6315a2",
+        "source_sha256": "d4f5ad4aef62eadc2e16b4d5e263b170d987c8143f1e1dc5869859d00cb5927e",
+        "image_size": [
+          960,
+          960
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "紧凑型荧光灯（多个）",
+            "category": "hazardous",
+            "reason": "图中为螺旋管紧凑型荧光节能灯，含汞，属于有害垃圾；保持完整、避免破碎。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 9.414627299993299,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "6e84ef22ae3f8baab4685f23f87f3be77bb024ba41a4662b6881d5a9ad6315a2",
+          "attempts": 1,
+          "canonical_image_sha256": "6e84ef22ae3f8baab4685f23f87f3be77bb024ba41a4662b6881d5a9ad6315a2",
+          "upload_image_bytes": 522362,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_073ef60398d25a33016ad4f36235c88191813bc0230c213ecc",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2668,
+            "completion_tokens": 77,
+            "total_tokens": 2745
+          },
+          "response_text": "{\"items\":[{\"category\":\"hazardous\",\"name\":\"紧凑型荧光灯（多个）\",\"reason\":\"图中为螺旋管紧凑型荧光节能灯，含汞，属于有害垃圾；保持完整、避免破碎。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "d3011d00487125c57501a581cf1ffe711489e0d009dccdbe5f04c05203667d90",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0372,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-142040226",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:28:00.630901+00:00",
+        "image_id": "f575468711a87170b59b15ad1e7bad0997af6ac65a9f19de375278c6c7372fbd",
+        "source_sha256": "05cf56776ed0a62d244022fc0d3a34ea16eeddbd2aef85ddea5b2fca85201f7e",
+        "image_size": [
+          960,
+          922
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "白炽灯泡",
+            "category": null,
+            "reason": "可见玻璃泡内灯丝结构；按固定规则需核对当地回收要求。",
+            "uncertain": true,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "紧凑型荧光灯",
+            "category": "hazardous",
+            "reason": "中间为双管紧凑型荧光灯，含汞荧光灯属于有害垃圾，应保持完整、避免破碎。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "LED 灯泡",
+            "category": null,
+            "reason": "右侧为带散热结构的 LED 灯泡，需核对当地电子废弃物回收渠道。",
+            "uncertain": true,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 12.691759400069714,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "f575468711a87170b59b15ad1e7bad0997af6ac65a9f19de375278c6c7372fbd",
+          "attempts": 1,
+          "canonical_image_sha256": "f575468711a87170b59b15ad1e7bad0997af6ac65a9f19de375278c6c7372fbd",
+          "upload_image_bytes": 1241079,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_08b4a567cb3fe3c7016ad4f38b1264819194f43b6781a431a9",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2632,
+            "completion_tokens": 157,
+            "total_tokens": 2789
+          },
+          "response_text": "{\"items\":[{\"category\":null,\"name\":\"白炽灯泡\",\"reason\":\"可见玻璃泡内灯丝结构；按固定规则需核对当地回收要求。\",\"uncertain\":true},{\"category\":\"hazardous\",\"name\":\"紧凑型荧光灯\",\"reason\":\"中间为双管紧凑型荧光灯，含汞荧光灯属于有害垃圾，应保持完整、避免破碎。\",\"uncertain\":false},{\"category\":null,\"name\":\"LED 灯泡\",\"reason\":\"右侧为带散热结构的 LED 灯泡，需核对当地电子废弃物回收渠道。\",\"uncertain\":true}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "033a0e7f71fac0a27c0f919d8ffdef128ee67fba2969a4a309e9274e69aed447",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.04075,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-102772",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:28:59.882690+00:00",
+        "image_id": "f4d6d62e82a0297af78cbc8fdac6d80c7f2508a2e3210d77f755f56510bc0416",
+        "source_sha256": "20f8f74b352e57051fd736f96cdd074488ba7c6f3d1b9689dab5929e5230c611",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "紧凑型荧光灯（多个）",
+            "category": "hazardous",
+            "reason": "U形灯管结构及可见型号标识可辨认为紧凑型荧光灯，含汞，须保持完整投放有害垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "直管荧光灯（多个）",
+            "category": "hazardous",
+            "reason": "可见型号与标识可辨认为直管荧光灯，含汞，属于有害垃圾，应避免破碎。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "火柴",
+            "category": "other",
+            "reason": "可见单根火柴，丢弃时属于其他垃圾，须远离火源。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 36.679366900003515,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "f4d6d62e82a0297af78cbc8fdac6d80c7f2508a2e3210d77f755f56510bc0416",
+          "attempts": 1,
+          "canonical_image_sha256": "f4d6d62e82a0297af78cbc8fdac6d80c7f2508a2e3210d77f755f56510bc0416",
+          "upload_image_bytes": 1187811,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_034746cf5937f74e016ad4f3c63470819184aa36c6043200e9",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2416,
+            "completion_tokens": 171,
+            "total_tokens": 2587
+          },
+          "response_text": "{\"items\":[{\"category\":\"hazardous\",\"name\":\"紧凑型荧光灯（多个）\",\"reason\":\"U形灯管结构及可见型号标识可辨认为紧凑型荧光灯，含汞，须保持完整投放有害垃圾。\",\"uncertain\":false},{\"category\":\"hazardous\",\"name\":\"直管荧光灯（多个）\",\"reason\":\"可见型号与标识可辨认为直管荧光灯，含汞，属于有害垃圾，应避免破碎。\",\"uncertain\":false},{\"category\":\"other\",\"name\":\"火柴\",\"reason\":\"可见单根火柴，丢弃时属于其他垃圾，须远离火源。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "ab4245ce3f26e1bbaa5d7e876b12f68ef0c79617ef4c0a3a61b93c282e157e8c",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03875,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-32438633",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:29:43.373051+00:00",
+        "image_id": "f15c4c005d4414283977cf2bfeb07ba4f22d3ce3b397f4b67981fa8802aa83ee",
+        "source_sha256": "8f36e54f9d9bb4d07f40b606bff2036a9e2530cb6ff819e64c31b0aa6a21354b",
+        "image_size": [
+          960,
+          1558
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "螺旋型紧凑荧光灯",
+            "category": "hazardous",
+            "reason": "可辨认为螺旋灯管式紧凑型荧光灯，含汞，属于有害垃圾；投放时保持完整、避免破碎。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 10.354764000046998,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "f15c4c005d4414283977cf2bfeb07ba4f22d3ce3b397f4b67981fa8802aa83ee",
+          "attempts": 1,
+          "canonical_image_sha256": "f15c4c005d4414283977cf2bfeb07ba4f22d3ce3b397f4b67981fa8802aa83ee",
+          "upload_image_bytes": 1108682,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_01196d5e0e6c1047016ad4f3f30dd0819184b6f6f23080a85e",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 3352,
+            "completion_tokens": 100,
+            "total_tokens": 3452,
+            "completion_tokens_details": {
+              "reasoning_tokens": 17
+            }
+          },
+          "response_text": "{\"items\":[{\"category\":\"hazardous\",\"name\":\"螺旋型紧凑荧光灯\",\"reason\":\"可辨认为螺旋灯管式紧凑型荧光灯，含汞，属于有害垃圾；投放时保持完整、避免破碎。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "36728041b30025dfed2f318806677be0b177342eba5a02d6a8f6825804ab2f65",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0469,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-90437283",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:30:00.063033+00:00",
+        "image_id": "58d33ebde26c9cd265cca206bb6e431c0a521b3e0deaf220bc1ba25785ede622",
+        "source_sha256": "46fb29e50b0560eafb79fca12374bda9340327acda0202e3f2d7b6d1ba5c5e00",
+        "image_size": [
+          960,
+          643
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "error",
+        "items": [],
+        "elapsed_seconds": 0.9646406000247225,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": "无法连接 API，请检查网络与 HTTPS 端点。",
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "58d33ebde26c9cd265cca206bb6e431c0a521b3e0deaf220bc1ba25785ede622",
+          "attempts": 1,
+          "canonical_image_sha256": "58d33ebde26c9cd265cca206bb6e431c0a521b3e0deaf220bc1ba25785ede622",
+          "upload_image_bytes": 296032,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "transport_error_type": "ConnectError",
+          "transport_cause_type": "ConnectError"
+        }
+      },
+      "estimated_cost_nex": null,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-132219783",
+      "expected_categories": [],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:26:36.725191+00:00",
+        "image_id": "8cfc8ee26b79504abfd694aa7826c82a4c096f15a3d7bb6c69a8d24ebc18308d",
+        "source_sha256": "7f1478e0cf3638a9a792dcc63fb720aec428b33a31a431e5340a10e0750e60eb",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "碱性干电池（4节）",
+            "category": "other",
+            "reason": "标签可见为AA碱性电池，且注明未添加汞和镉；普通无汞碱性干电池按北京规则投放其他垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 9.602020299993455,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "8cfc8ee26b79504abfd694aa7826c82a4c096f15a3d7bb6c69a8d24ebc18308d",
+          "attempts": 1,
+          "canonical_image_sha256": "8cfc8ee26b79504abfd694aa7826c82a4c096f15a3d7bb6c69a8d24ebc18308d",
+          "upload_image_bytes": 836948,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_06bbea0caf321815016ad4f338b66081918a09778b68438b62",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2416,
+            "completion_tokens": 78,
+            "total_tokens": 2494
+          },
+          "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"碱性干电池（4节）\",\"reason\":\"标签可见为AA碱性电池，且注明未添加汞和镉；普通无汞碱性干电池按北京规则投放其他垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "d17e4abfded977ec6f5af054f6a77f3d93f927b3e2d51edb3137a3f105ce93ff",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0341,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-16022161",
+      "expected_categories": [],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:27:09.034601+00:00",
+        "image_id": "50013574719cbc666c2d41e8500a96eba829522a3760ce39441cb66325667deb",
+        "source_sha256": "148666aa70a8b2fde0cc1ab86d9af69651540c0712083f586d3eff368ee995fe",
+        "image_size": [
+          960,
+          487
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "纽扣电池（多个）",
+            "category": null,
+            "reason": "左侧可见 LR44 标识，右侧未见型号；需分别核对化学类型及当地纽扣电池投放要求。",
+            "uncertain": true,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 12.731477300054394,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "50013574719cbc666c2d41e8500a96eba829522a3760ce39441cb66325667deb",
+          "attempts": 1,
+          "canonical_image_sha256": "50013574719cbc666c2d41e8500a96eba829522a3760ce39441cb66325667deb",
+          "upload_image_bytes": 391376,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_06bc82177a5e7f0b016ad4f3585d5881919a659f392eec53fd",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2164,
+            "completion_tokens": 107,
+            "total_tokens": 2271,
+            "completion_tokens_details": {
+              "reasoning_tokens": 37
+            }
+          },
+          "response_text": "{\"items\":[{\"category\":null,\"name\":\"纽扣电池（多个）\",\"reason\":\"左侧可见 LR44 标识，右侧未见型号；需分别核对化学类型及当地纽扣电池投放要求。\",\"uncertain\":true}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "0b3428425a29dd520447b256583b15994d8529f3847e076c1fce6f9697eb5911",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0324,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-102745520",
+      "expected_categories": [],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:27:46.832244+00:00",
+        "image_id": "3ecce20886a2c6a50ce11a730817003549f3d2d4837c9bd614ba61debee0f6ed",
+        "source_sha256": "acc1ae4985c310fc67d4d76bf5e49f0d5b6b543b5c54e83180921b27f6bb2531",
+        "image_size": [
+          960,
+          540
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "碳锌干电池",
+            "category": "other",
+            "reason": "标签可见 R14、1.5V，为普通碳锌干电池，按北京规则投放其他垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "碱性干电池（多个）",
+            "category": "other",
+            "reason": "标签可见 ALKALINE，为普通碱性干电池，按北京规则投放其他垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 15.775674400036223,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "3ecce20886a2c6a50ce11a730817003549f3d2d4837c9bd614ba61debee0f6ed",
+          "attempts": 1,
+          "canonical_image_sha256": "3ecce20886a2c6a50ce11a730817003549f3d2d4837c9bd614ba61debee0f6ed",
+          "upload_image_bytes": 480647,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_06f06deaf96efff5016ad4f37da19081919c2bbd5b49f9b69d",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2200,
+            "completion_tokens": 132,
+            "total_tokens": 2332,
+            "completion_tokens_details": {
+              "reasoning_tokens": 18
+            }
+          },
+          "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"碳锌干电池\",\"reason\":\"标签可见 R14、1.5V，为普通碳锌干电池，按北京规则投放其他垃圾。\",\"uncertain\":false},{\"category\":\"other\",\"name\":\"碱性干电池（多个）\",\"reason\":\"标签可见 ALKALINE，为普通碱性干电池，按北京规则投放其他垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "d293b70582cf8d40f13f4d5cb398e7455b1aacde99d0f97aa6cadb7cdbace92b",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0341,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-110967099",
+      "expected_categories": [],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:28:22.991420+00:00",
+        "image_id": "bb4ab98898628f08b8478b24c67d56c1a8b627a322eb632cdd495286d299b75a",
+        "source_sha256": "0e9b11a6dc3fd5839868098f709568e82b85a58a063605c29282f1a68b4e46a7",
+        "image_size": [
+          960,
+          640
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "灯泡",
+            "category": null,
+            "reason": "需确认是白炽灯泡还是仿灯丝 LED 灯泡，并核对当地回收要求；不能按含汞荧光灯处理。",
+            "uncertain": true,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 8.013045100029558,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "bb4ab98898628f08b8478b24c67d56c1a8b627a322eb632cdd495286d299b75a",
+          "attempts": 1,
+          "canonical_image_sha256": "bb4ab98898628f08b8478b24c67d56c1a8b627a322eb632cdd495286d299b75a",
+          "upload_image_bytes": 153942,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_08e8734395010685016ad4f3a2ddb08191b7fc669814becd5b",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2308,
+            "completion_tokens": 92,
+            "total_tokens": 2400,
+            "completion_tokens_details": {
+              "reasoning_tokens": 23
+            }
+          },
+          "response_text": "{\"items\":[{\"category\":null,\"name\":\"灯泡\",\"reason\":\"需确认是白炽灯泡还是仿灯丝 LED 灯泡，并核对当地回收要求；不能按含汞荧光灯处理。\",\"uncertain\":true}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "527f04440da478769f48a1b6907844fc8846ecc3416d5f54e7f65f2416043003",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03345,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-144928399",
+      "expected_categories": [],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:29:32.724216+00:00",
+        "image_id": "e59b7e75fb3f7a9fe6ce1ca185aa486ae1acd5e6983d8223745f5deeaaa9292e",
+        "source_sha256": "f5e1206f5a7a47e8c7fb4e5e9a0b117713254eb2e1648b50ba56f291f259dd70",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "灯具电路板组件",
+            "category": null,
+            "reason": "可见灯具外壳及电子元件，需核对灯具类型和当地电子废弃物回收渠道，不能按含汞荧光灯判断。",
+            "uncertain": true,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 22.844847799977288,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "e59b7e75fb3f7a9fe6ce1ca185aa486ae1acd5e6983d8223745f5deeaaa9292e",
+          "attempts": 1,
+          "canonical_image_sha256": "e59b7e75fb3f7a9fe6ce1ca185aa486ae1acd5e6983d8223745f5deeaaa9292e",
+          "upload_image_bytes": 795226,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_05968b6969118be3016ad4f3e8d674819184e1b8bbd6d74dab",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2416,
+            "completion_tokens": 74,
+            "total_tokens": 2490
+          },
+          "response_text": "{\"items\":[{\"category\":null,\"name\":\"灯具电路板组件\",\"reason\":\"可见灯具外壳及电子元件，需核对灯具类型和当地电子废弃物回收渠道，不能按含汞荧光灯判断。\",\"uncertain\":true}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "da56d41bc30fb050c3a9ab84cabc0102a70c0bf4798661bc70430548978318bb",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0339,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-87666282",
+      "expected_categories": [],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:29:58.966539+00:00",
+        "image_id": "5cc4cd23860455fe56c84178e5332d070336e0a5e1c75d2472a0bb93d50ae0d3",
+        "source_sha256": "ce82aa17435238d2f392ce9d3878de4116694a7eac392c548df9442f98d7a105",
+        "image_size": [
+          960,
+          1280
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 15.28632930002641,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "5cc4cd23860455fe56c84178e5332d070336e0a5e1c75d2472a0bb93d50ae0d3",
+          "attempts": 1,
+          "canonical_image_sha256": "5cc4cd23860455fe56c84178e5332d070336e0a5e1c75d2472a0bb93d50ae0d3",
+          "upload_image_bytes": 2023951,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_09d5734b67ca3663016ad4f400dc8c8191a9a8ca632a0c34cf",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 3028,
+            "completion_tokens": 55,
+            "total_tokens": 3083,
+            "completion_tokens_details": {
+              "reasoning_tokens": 40
+            }
+          },
+          "response_text": "{\"items\":[]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "eef46741adfc3a9f76294d3b78f37a45f113092ac9d44ee77c7a038a88ff09a1",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0406,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-19792555",
+      "expected_categories": [],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:30:01.599763+00:00",
+        "image_id": "1e4922ab65d5556ef3ffb8a2e7a61b2e58807dccf70c6de260e4bf873f868447",
+        "source_sha256": "090e0f6b6012f35b767415b7bc99d35a80c2566a7be9d0a61d6f9efe52521a79",
+        "image_size": [
+          960,
+          638
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "error",
+        "items": [],
+        "elapsed_seconds": 1.3714352999813855,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": "无法连接 API，请检查网络与 HTTPS 端点。",
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "1e4922ab65d5556ef3ffb8a2e7a61b2e58807dccf70c6de260e4bf873f868447",
+          "attempts": 1,
+          "canonical_image_sha256": "1e4922ab65d5556ef3ffb8a2e7a61b2e58807dccf70c6de260e4bf873f868447",
+          "upload_image_bytes": 852869,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "transport_error_type": "ConnectError",
+          "transport_cause_type": "ConnectError"
+        }
+      },
+      "estimated_cost_nex": null,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+    },
+    {
+      "id": "commons-35832442",
+      "expected_categories": [
+        "kitchen",
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T16:26:15.780549+00:00",
+        "image_id": "ea170e503da1ba1bfbda65cbf5277da73f167a82a9b053a38dbccd2e5bb1a953",
+        "source_sha256": "96e151a88246ce5001aeed6aec39faf72c98afe9c7b44be209319ddd01228346",
+        "image_size": [
+          960,
+          1235
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "香蕉皮（多个）",
+            "category": "kitchen",
+            "reason": "可见的大量香蕉皮属于日常果皮，按厨余垃圾投放。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "塑料饮料瓶（多个）",
+            "category": "recyclable",
+            "reason": "普通塑料饮料瓶倒空清洁后可回收。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "塑料瓶盖",
+            "category": "recyclable",
+            "reason": "地面可见的塑料瓶盖可随清洁的饮料瓶回收。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 46.0945835999446,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "ea170e503da1ba1bfbda65cbf5277da73f167a82a9b053a38dbccd2e5bb1a953",
+          "attempts": 1,
+          "canonical_image_sha256": "ea170e503da1ba1bfbda65cbf5277da73f167a82a9b053a38dbccd2e5bb1a953",
+          "upload_image_bytes": 1886425,
+          "upload_image_mime": "image/png",
+          "image_transport_mode": "canonical_png",
+          "transport_route": "explicit_proxy",
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_05f3ac0096081ddd016ad4f321dd8481919df9ccfdf49aa56b",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2992,
+            "completion_tokens": 135,
+            "total_tokens": 3127
+          },
+          "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"香蕉皮（多个）\",\"reason\":\"可见的大量香蕉皮属于日常果皮，按厨余垃圾投放。\",\"uncertain\":false},{\"category\":\"recyclable\",\"name\":\"塑料饮料瓶（多个）\",\"reason\":\"普通塑料饮料瓶倒空清洁后可回收。\",\"uncertain\":false},{\"category\":\"recyclable\",\"name\":\"塑料瓶盖\",\"reason\":\"地面可见的塑料瓶盖可随清洁的饮料瓶回收。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "86c379bbd67540f798acac439b38338523e40c86a4021c7b8cd178ba4e24c035",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.04415,
+      "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
     }
   ],
   "api_config": {
@@ -1103,10 +2567,12 @@
     "reasoning_effort": "low",
     "image_detail": "high"
   },
-  "returned_usage_estimated_nex": 0.5378000000000001,
+  "returned_usage_estimated_nex": 1.21445,
   "records_without_returned_usage": [
     "commons-128095601",
     "commons-95896968",
-    "commons-75295601"
+    "commons-75295601",
+    "commons-90437283",
+    "commons-19792555"
   ]
 }

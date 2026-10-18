@@ -1,0 +1,67 @@
+{
+  "id": "commons-132219783",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:26:36.725191+00:00",
+    "image_id": "8cfc8ee26b79504abfd694aa7826c82a4c096f15a3d7bb6c69a8d24ebc18308d",
+    "source_sha256": "7f1478e0cf3638a9a792dcc63fb720aec428b33a31a431e5340a10e0750e60eb",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "碱性干电池（4节）",
+        "category": "other",
+        "reason": "标签可见为AA碱性电池，且注明未添加汞和镉；普通无汞碱性干电池按北京规则投放其他垃圾。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 9.602020299993455,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "8cfc8ee26b79504abfd694aa7826c82a4c096f15a3d7bb6c69a8d24ebc18308d",
+      "attempts": 1,
+      "canonical_image_sha256": "8cfc8ee26b79504abfd694aa7826c82a4c096f15a3d7bb6c69a8d24ebc18308d",
+      "upload_image_bytes": 836948,
+      "upload_image_mime": "image/png",
+      "image_transport_mode": "canonical_png",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_06bbea0caf321815016ad4f338b66081918a09778b68438b62",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2416,
+        "completion_tokens": 78,
+        "total_tokens": 2494
+      },
+      "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"碱性干电池（4节）\",\"reason\":\"标签可见为AA碱性电池，且注明未添加汞和镉；普通无汞碱性干电池按北京规则投放其他垃圾。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "d17e4abfded977ec6f5af054f6a77f3d93f927b3e2d51edb3137a3f105ce93ff",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.0341,
+  "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+}

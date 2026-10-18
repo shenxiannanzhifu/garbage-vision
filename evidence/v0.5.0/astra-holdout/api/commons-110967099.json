@@ -1,0 +1,70 @@
+{
+  "id": "commons-110967099",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:28:22.991420+00:00",
+    "image_id": "bb4ab98898628f08b8478b24c67d56c1a8b627a322eb632cdd495286d299b75a",
+    "source_sha256": "0e9b11a6dc3fd5839868098f709568e82b85a58a063605c29282f1a68b4e46a7",
+    "image_size": [
+      960,
+      640
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "灯泡",
+        "category": null,
+        "reason": "需确认是白炽灯泡还是仿灯丝 LED 灯泡，并核对当地回收要求；不能按含汞荧光灯处理。",
+        "uncertain": true,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 8.013045100029558,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "bb4ab98898628f08b8478b24c67d56c1a8b627a322eb632cdd495286d299b75a",
+      "attempts": 1,
+      "canonical_image_sha256": "bb4ab98898628f08b8478b24c67d56c1a8b627a322eb632cdd495286d299b75a",
+      "upload_image_bytes": 153942,
+      "upload_image_mime": "image/png",
+      "image_transport_mode": "canonical_png",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_08e8734395010685016ad4f3a2ddb08191b7fc669814becd5b",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2308,
+        "completion_tokens": 92,
+        "total_tokens": 2400,
+        "completion_tokens_details": {
+          "reasoning_tokens": 23
+        }
+      },
+      "response_text": "{\"items\":[{\"category\":null,\"name\":\"灯泡\",\"reason\":\"需确认是白炽灯泡还是仿灯丝 LED 灯泡，并核对当地回收要求；不能按含汞荧光灯处理。\",\"uncertain\":true}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "527f04440da478769f48a1b6907844fc8846ecc3416d5f54e7f65f2416043003",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.03345,
+  "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+}

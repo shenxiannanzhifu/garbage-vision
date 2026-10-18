@@ -1,0 +1,69 @@
+{
+  "id": "commons-139358689",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:27:30.920538+00:00",
+    "image_id": "474bfdbf896e40d4a6d22c98922bb8b106ed23fb4fa386ad9380ea8a0e3a6fd7",
+    "source_sha256": "cf57eda212171f1ba1ceddc8ab87e340c03eff7fc9f476ce36cdb35d82d1af3f",
+    "image_size": [
+      960,
+      1344
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂（多个）",
+        "category": "other",
+        "reason": "可见多个丢弃的烟蒂，属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 12.038916200050153,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "474bfdbf896e40d4a6d22c98922bb8b106ed23fb4fa386ad9380ea8a0e3a6fd7",
+      "attempts": 1,
+      "canonical_image_sha256": "474bfdbf896e40d4a6d22c98922bb8b106ed23fb4fa386ad9380ea8a0e3a6fd7",
+      "upload_image_bytes": 1813921,
+      "upload_image_mime": "image/png",
+      "image_transport_mode": "canonical_png",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_07d1b8f6899ec42f016ad4f36f46a081919eb8e7e40e02ebf1",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 3100,
+        "completion_tokens": 57,
+        "total_tokens": 3157
+      },
+      "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"烟蒂（多个）\",\"reason\":\"可见多个丢弃的烟蒂，属于其他垃圾；完全熄灭后再投放。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "201975d5ada8469a8a7c448af38a02b6e164222f1ec3b33123cb474119402fe4",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.0416,
+  "pricing_note": "Higher-group usage estimate; unknown usage retains full original reservation."
+}

@@ -5,70 +5,70 @@
   "local_source_commit": "b8399057ef314070a636041aee1355dc3c9169a9",
   "local": {
     "method": "local",
-    "images": 18,
-    "mean_per_image_precision": 0.8888888888888888,
-    "mean_per_image_recall": 0.8888888888888888,
-    "mean_per_image_f1": 0.8888888888888888,
-    "exact_set_accuracy": 0.8888888888888888,
+    "images": 38,
+    "mean_per_image_precision": 0.8552631578947368,
+    "mean_per_image_recall": 0.868421052631579,
+    "mean_per_image_f1": 0.8596491228070176,
+    "exact_set_accuracy": 0.8421052631578947,
     "failure_rate": 0,
-    "empty_prediction_rate": 0.05555555555555555,
-    "unknown_image_rate": 0.5555555555555556,
+    "empty_prediction_rate": 0.18421052631578946,
+    "unknown_image_rate": 0.7368421052631579,
     "micro": {
-      "tp": 16,
-      "fp": 1,
-      "fn": 2,
-      "precision": 0.9411764705882353,
-      "recall": 0.8888888888888888,
-      "f1": 0.9142857142857143
+      "tp": 29,
+      "fp": 6,
+      "fn": 3,
+      "precision": 0.8285714285714286,
+      "recall": 0.90625,
+      "f1": 0.8656716417910447
     },
     "per_category": {
       "recyclable": {
-        "tp": 8,
-        "fp": 0,
-        "fn": 0,
-        "support_images": 8,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0
-      },
-      "hazardous": {
-        "tp": 0,
+        "tp": 9,
         "fp": 1,
         "fn": 0,
-        "support_images": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0
+        "support_images": 9,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526315
+      },
+      "hazardous": {
+        "tp": 6,
+        "fp": 4,
+        "fn": 1,
+        "support_images": 7,
+        "precision": 0.6,
+        "recall": 0.8571428571428571,
+        "f1": 0.7058823529411765
       },
       "kitchen": {
-        "tp": 6,
+        "tp": 7,
         "fp": 0,
         "fn": 2,
-        "support_images": 8,
+        "support_images": 9,
         "precision": 1.0,
-        "recall": 0.75,
-        "f1": 0.8571428571428571
+        "recall": 0.7777777777777778,
+        "f1": 0.875
       },
       "other": {
-        "tp": 2,
-        "fp": 0,
+        "tp": 7,
+        "fp": 1,
         "fn": 0,
-        "support_images": 2,
-        "precision": 1.0,
+        "support_images": 7,
+        "precision": 0.875,
         "recall": 1.0,
-        "f1": 1.0
+        "f1": 0.9333333333333333
       }
     },
     "by_background": {
       "未标注": {
-        "images": 18,
-        "mean_per_image_f1": 0.8888888888888888,
+        "images": 38,
+        "mean_per_image_f1": 0.8596491228070176,
         "failure_rate": 0
       }
     },
     "timing": {
-      "mean_request_or_inference_seconds": 0.09012182776091827,
-      "median_request_or_inference_seconds": 0.07011944998521358,
+      "mean_request_or_inference_seconds": 0.07342029209126179,
+      "median_request_or_inference_seconds": 0.05725769995478913,
       "total_load_seconds": 15.66887749999296
     },
     "records": [
@@ -447,59 +447,458 @@
         "recall": 1.0,
         "f1": 1.0,
         "exact_match": true
+      },
+      {
+        "id": "commons-42032344",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 0.02191590005531907,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-114969819",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 3,
+        "elapsed_seconds": 0.09744889999274164,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-139358689",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 0.06227059999946505,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-82983746",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 0.03985920001287013,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-101290692",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "hazardous",
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 0.050441799918189645,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "exact_match": false
+      },
+      {
+        "id": "commons-31284758",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 2,
+        "elapsed_seconds": 0.04629430000204593,
+        "load_seconds": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "exact_match": false
+      },
+      {
+        "id": "commons-6215482",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 0.046945299953222275,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-27372712",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 5,
+        "elapsed_seconds": 0.06145709997508675,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-142040226",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 6,
+        "elapsed_seconds": 0.05105310003273189,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-102772",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 2,
+        "elapsed_seconds": 0.056273499969393015,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-32438633",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 0.040694499970413744,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-90437283",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 2,
+        "elapsed_seconds": 0.03246899996884167,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-132219783",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 12,
+        "elapsed_seconds": 0.10718699998687953,
+        "load_seconds": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-16022161",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 2,
+        "elapsed_seconds": 0.03328470000997186,
+        "load_seconds": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-102745520",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 5,
+        "elapsed_seconds": 0.045834299991838634,
+        "load_seconds": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-110967099",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 2,
+        "elapsed_seconds": 0.03285469999536872,
+        "load_seconds": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-144928399",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 7,
+        "elapsed_seconds": 0.0523406999418512,
+        "load_seconds": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-87666282",
+        "truth": [],
+        "predicted": [
+          "hazardous",
+          "other",
+          "recyclable"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 2,
+        "elapsed_seconds": 0.10902179998811334,
+        "load_seconds": 0.0,
+        "tp": 0,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "exact_match": false
+      },
+      {
+        "id": "commons-19792555",
+        "truth": [],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 0.06878660002257675,
+        "load_seconds": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "exact_match": false
+      },
+      {
+        "id": "commons-35832442",
+        "truth": [
+          "kitchen",
+          "recyclable"
+        ],
+        "predicted": [
+          "kitchen",
+          "recyclable"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 4,
+        "elapsed_seconds": 0.11134519998449832,
+        "load_seconds": 0.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
       }
     ],
     "known_only": {
       "method": "local",
-      "images": 18,
-      "mean_per_image_precision": 0.8888888888888888,
-      "mean_per_image_recall": 0.8888888888888888,
-      "mean_per_image_f1": 0.8888888888888888,
-      "exact_set_accuracy": 0.8888888888888888,
+      "images": 31,
+      "mean_per_image_precision": 0.8870967741935484,
+      "mean_per_image_recall": 0.9032258064516129,
+      "mean_per_image_f1": 0.8924731182795699,
+      "exact_set_accuracy": 0.8709677419354839,
       "failure_rate": 0,
-      "empty_prediction_rate": 0.05555555555555555,
-      "unknown_image_rate": 0.5555555555555556,
+      "empty_prediction_rate": 0.06451612903225806,
+      "unknown_image_rate": 0.6774193548387096,
       "micro": {
-        "tp": 16,
-        "fp": 1,
-        "fn": 2,
-        "precision": 0.9411764705882353,
-        "recall": 0.8888888888888888,
-        "f1": 0.9142857142857143
+        "tp": 29,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.9354838709677419,
+        "recall": 0.90625,
+        "f1": 0.9206349206349206
       },
       "per_category": {
         "recyclable": {
-          "tp": 8,
+          "tp": 9,
           "fp": 0,
           "fn": 0,
-          "support_images": 8,
+          "support_images": 9,
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0
         },
         "hazardous": {
-          "tp": 0,
-          "fp": 1,
-          "fn": 0,
-          "support_images": 0,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "tp": 6,
+          "fp": 2,
+          "fn": 1,
+          "support_images": 7,
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "f1": 0.8
         },
         "kitchen": {
-          "tp": 6,
+          "tp": 7,
           "fp": 0,
           "fn": 2,
-          "support_images": 8,
+          "support_images": 9,
           "precision": 1.0,
-          "recall": 0.75,
-          "f1": 0.8571428571428571
+          "recall": 0.7777777777777778,
+          "f1": 0.875
         },
         "other": {
-          "tp": 2,
+          "tp": 7,
           "fp": 0,
           "fn": 0,
-          "support_images": 2,
+          "support_images": 7,
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0
@@ -507,14 +906,14 @@
       },
       "by_background": {
         "未标注": {
-          "images": 18,
-          "mean_per_image_f1": 0.8888888888888888,
+          "images": 31,
+          "mean_per_image_f1": 0.8924731182795699,
           "failure_rate": 0
         }
       },
       "timing": {
-        "mean_request_or_inference_seconds": 0.09012182776091827,
-        "median_request_or_inference_seconds": 0.07011944998521358,
+        "mean_request_or_inference_seconds": 0.07550520321068864,
+        "median_request_or_inference_seconds": 0.05752879998181015,
         "total_load_seconds": 15.66887749999296
       },
       "records": [
@@ -893,77 +1292,351 @@
           "recall": 1.0,
           "f1": 1.0,
           "exact_match": true
+        },
+        {
+          "id": "commons-42032344",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 0.02191590005531907,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-114969819",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 3,
+          "elapsed_seconds": 0.09744889999274164,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-139358689",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 0.06227059999946505,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-82983746",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 0.03985920001287013,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-101290692",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "hazardous",
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 0.050441799918189645,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "exact_match": false
+        },
+        {
+          "id": "commons-31284758",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 0.04629430000204593,
+          "load_seconds": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "exact_match": false
+        },
+        {
+          "id": "commons-6215482",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 0.046945299953222275,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-27372712",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 5,
+          "elapsed_seconds": 0.06145709997508675,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-142040226",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 6,
+          "elapsed_seconds": 0.05105310003273189,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-102772",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 0.056273499969393015,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-32438633",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 0.040694499970413744,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-90437283",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 0.03246899996884167,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-35832442",
+          "truth": [
+            "kitchen",
+            "recyclable"
+          ],
+          "predicted": [
+            "kitchen",
+            "recyclable"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 4,
+          "elapsed_seconds": 0.11134519998449832,
+          "load_seconds": 0.0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
         }
       ]
     },
-    "unknown_false_positive_images": 0
+    "unknown_false_positive_images": 2
   },
   "api": {
     "method": "api",
-    "images": 18,
-    "mean_per_image_precision": 0.7777777777777778,
-    "mean_per_image_recall": 0.7777777777777778,
-    "mean_per_image_f1": 0.7777777777777778,
-    "exact_set_accuracy": 0.7777777777777778,
-    "failure_rate": 0.16666666666666666,
-    "empty_prediction_rate": 0.2222222222222222,
-    "unknown_image_rate": 0.05555555555555555,
+    "images": 38,
+    "mean_per_image_precision": 0.7631578947368421,
+    "mean_per_image_recall": 0.7894736842105263,
+    "mean_per_image_f1": 0.7719298245614035,
+    "exact_set_accuracy": 0.7368421052631579,
+    "failure_rate": 0.13157894736842105,
+    "empty_prediction_rate": 0.2631578947368421,
+    "unknown_image_rate": 0.15789473684210525,
     "micro": {
-      "tp": 14,
-      "fp": 0,
-      "fn": 4,
-      "precision": 1.0,
-      "recall": 0.7777777777777778,
-      "f1": 0.875
+      "tp": 27,
+      "fp": 4,
+      "fn": 5,
+      "precision": 0.8709677419354839,
+      "recall": 0.84375,
+      "f1": 0.8571428571428571
     },
     "per_category": {
       "recyclable": {
-        "tp": 6,
-        "fp": 0,
+        "tp": 7,
+        "fp": 1,
         "fn": 2,
-        "support_images": 8,
-        "precision": 1.0,
-        "recall": 0.75,
-        "f1": 0.8571428571428571
+        "support_images": 9,
+        "precision": 0.875,
+        "recall": 0.7777777777777778,
+        "f1": 0.8235294117647058
       },
       "hazardous": {
-        "tp": 0,
+        "tp": 6,
         "fp": 0,
-        "fn": 0,
-        "support_images": 0,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0
+        "fn": 1,
+        "support_images": 7,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.9230769230769231
       },
       "kitchen": {
-        "tp": 8,
+        "tp": 9,
         "fp": 0,
         "fn": 0,
-        "support_images": 8,
+        "support_images": 9,
         "precision": 1.0,
         "recall": 1.0,
         "f1": 1.0
       },
       "other": {
-        "tp": 0,
-        "fp": 0,
+        "tp": 5,
+        "fp": 3,
         "fn": 2,
-        "support_images": 2,
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0
+        "support_images": 7,
+        "precision": 0.625,
+        "recall": 0.7142857142857143,
+        "f1": 0.6666666666666666
       }
     },
     "by_background": {
       "未标注": {
-        "images": 18,
-        "mean_per_image_f1": 0.7777777777777778,
-        "failure_rate": 0.16666666666666666
+        "images": 38,
+        "mean_per_image_f1": 0.7719298245614035,
+        "failure_rate": 0.13157894736842105
       }
     },
     "timing": {
-      "mean_request_or_inference_seconds": 25.573008200004956,
-      "median_request_or_inference_seconds": 18.108832099998835,
+      "mean_request_or_inference_seconds": 19.505040410535386,
+      "median_request_or_inference_seconds": 13.495434050040785,
       "total_load_seconds": 0
     },
     "records": [
@@ -1336,74 +2009,472 @@
         "recall": 0.0,
         "f1": 0.0,
         "exact_match": false
+      },
+      {
+        "id": "commons-42032344",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 10.997729799943045,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-114969819",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "other",
+          "recyclable"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 11.804975699982606,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "exact_match": false
+      },
+      {
+        "id": "commons-139358689",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 12.038916200050153,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-82983746",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 14.045242800028063,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-101290692",
+        "truth": [
+          "other"
+        ],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 9.604231099947356,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-31284758",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 13.250345700071193,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-6215482",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 7.311375400051475,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-27372712",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 9.414627299993299,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-142040226",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 2,
+        "elapsed_seconds": 12.691759400069714,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-102772",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous",
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 36.679366900003515,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "exact_match": false
+      },
+      {
+        "id": "commons-32438633",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [
+          "hazardous"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 10.354764000046998,
+        "load_seconds": 0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-90437283",
+        "truth": [
+          "hazardous"
+        ],
+        "predicted": [],
+        "background": "未标注",
+        "status": "error",
+        "unknown_items": 0,
+        "elapsed_seconds": 0.9646406000247225,
+        "load_seconds": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "exact_match": false
+      },
+      {
+        "id": "commons-132219783",
+        "truth": [],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 9.602020299993455,
+        "load_seconds": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "exact_match": false
+      },
+      {
+        "id": "commons-16022161",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 12.731477300054394,
+        "load_seconds": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-102745520",
+        "truth": [],
+        "predicted": [
+          "other"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 15.775674400036223,
+        "load_seconds": 0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "exact_match": false
+      },
+      {
+        "id": "commons-110967099",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 8.013045100029558,
+        "load_seconds": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-144928399",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 22.844847799977288,
+        "load_seconds": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-87666282",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 15.28632930002641,
+        "load_seconds": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-19792555",
+        "truth": [],
+        "predicted": [],
+        "background": "未标注",
+        "status": "error",
+        "unknown_items": 0,
+        "elapsed_seconds": 1.3714352999813855,
+        "load_seconds": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "exact_match": false
+      },
+      {
+        "id": "commons-35832442",
+        "truth": [
+          "kitchen",
+          "recyclable"
+        ],
+        "predicted": [
+          "kitchen",
+          "recyclable"
+        ],
+        "background": "未标注",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 46.0945835999446,
+        "load_seconds": 0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
       }
     ],
     "known_only": {
       "method": "api",
-      "images": 18,
-      "mean_per_image_precision": 0.7777777777777778,
-      "mean_per_image_recall": 0.7777777777777778,
-      "mean_per_image_f1": 0.7777777777777778,
-      "exact_set_accuracy": 0.7777777777777778,
-      "failure_rate": 0.16666666666666666,
-      "empty_prediction_rate": 0.2222222222222222,
-      "unknown_image_rate": 0.05555555555555555,
+      "images": 31,
+      "mean_per_image_precision": 0.8064516129032258,
+      "mean_per_image_recall": 0.8387096774193549,
+      "mean_per_image_f1": 0.8172043010752689,
+      "exact_set_accuracy": 0.7741935483870968,
+      "failure_rate": 0.12903225806451613,
+      "empty_prediction_rate": 0.16129032258064516,
+      "unknown_image_rate": 0.0967741935483871,
       "micro": {
-        "tp": 14,
-        "fp": 0,
-        "fn": 4,
-        "precision": 1.0,
-        "recall": 0.7777777777777778,
-        "f1": 0.875
+        "tp": 27,
+        "fp": 2,
+        "fn": 5,
+        "precision": 0.9310344827586207,
+        "recall": 0.84375,
+        "f1": 0.8852459016393442
       },
       "per_category": {
         "recyclable": {
-          "tp": 6,
-          "fp": 0,
+          "tp": 7,
+          "fp": 1,
           "fn": 2,
-          "support_images": 8,
-          "precision": 1.0,
-          "recall": 0.75,
-          "f1": 0.8571428571428571
+          "support_images": 9,
+          "precision": 0.875,
+          "recall": 0.7777777777777778,
+          "f1": 0.8235294117647058
         },
         "hazardous": {
-          "tp": 0,
+          "tp": 6,
           "fp": 0,
-          "fn": 0,
-          "support_images": 0,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "fn": 1,
+          "support_images": 7,
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1": 0.9230769230769231
         },
         "kitchen": {
-          "tp": 8,
+          "tp": 9,
           "fp": 0,
           "fn": 0,
-          "support_images": 8,
+          "support_images": 9,
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0
         },
         "other": {
-          "tp": 0,
-          "fp": 0,
+          "tp": 5,
+          "fp": 1,
           "fn": 2,
-          "support_images": 2,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "support_images": 7,
+          "precision": 0.8333333333333334,
+          "recall": 0.7142857142857143,
+          "f1": 0.7692307692307693
         }
       },
       "by_background": {
         "未标注": {
-          "images": 18,
-          "mean_per_image_f1": 0.7777777777777778,
-          "failure_rate": 0.16666666666666666
+          "images": 31,
+          "mean_per_image_f1": 0.8172043010752689,
+          "failure_rate": 0.12903225806451613
         }
       },
       "timing": {
-        "mean_request_or_inference_seconds": 25.573008200004956,
-        "median_request_or_inference_seconds": 18.108832099998835,
+        "mean_request_or_inference_seconds": 21.147313100007935,
+        "median_request_or_inference_seconds": 13.740522400010377,
         "total_load_seconds": 0
       },
       "records": [
@@ -1776,78 +2847,353 @@
           "recall": 0.0,
           "f1": 0.0,
           "exact_match": false
+        },
+        {
+          "id": "commons-42032344",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 10.997729799943045,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-114969819",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other",
+            "recyclable"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 11.804975699982606,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "exact_match": false
+        },
+        {
+          "id": "commons-139358689",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 12.038916200050153,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-82983746",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 14.045242800028063,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-101290692",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 9.604231099947356,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-31284758",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 13.250345700071193,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-6215482",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 7.311375400051475,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-27372712",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 9.414627299993299,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-142040226",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 12.691759400069714,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-102772",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous",
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 36.679366900003515,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "exact_match": false
+        },
+        {
+          "id": "commons-32438633",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 10.354764000046998,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-90437283",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [],
+          "background": "未标注",
+          "status": "error",
+          "unknown_items": 0,
+          "elapsed_seconds": 0.9646406000247225,
+          "load_seconds": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "exact_match": false
+        },
+        {
+          "id": "commons-35832442",
+          "truth": [
+            "kitchen",
+            "recyclable"
+          ],
+          "predicted": [
+            "kitchen",
+            "recyclable"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 46.0945835999446,
+          "load_seconds": 0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
         }
       ]
     },
-    "unknown_false_positive_images": 0
+    "unknown_false_positive_images": 2
   },
   "same_successful_subset_diagnostic_only": {
     "local": {
       "method": "local",
-      "images": 15,
-      "mean_per_image_precision": 0.8666666666666667,
-      "mean_per_image_recall": 0.8666666666666667,
-      "mean_per_image_f1": 0.8666666666666667,
-      "exact_set_accuracy": 0.8666666666666667,
+      "images": 33,
+      "mean_per_image_precision": 0.8636363636363636,
+      "mean_per_image_recall": 0.8787878787878788,
+      "mean_per_image_f1": 0.8686868686868687,
+      "exact_set_accuracy": 0.8484848484848485,
       "failure_rate": 0,
-      "empty_prediction_rate": 0.06666666666666667,
-      "unknown_image_rate": 0.5333333333333333,
+      "empty_prediction_rate": 0.21212121212121213,
+      "unknown_image_rate": 0.7272727272727273,
       "micro": {
-        "tp": 13,
-        "fp": 1,
-        "fn": 2,
-        "precision": 0.9285714285714286,
-        "recall": 0.8666666666666667,
-        "f1": 0.896551724137931
+        "tp": 25,
+        "fp": 5,
+        "fn": 3,
+        "precision": 0.8333333333333334,
+        "recall": 0.8928571428571429,
+        "f1": 0.8620689655172413
       },
       "per_category": {
         "recyclable": {
-          "tp": 7,
-          "fp": 0,
-          "fn": 0,
-          "support_images": 7,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0
-        },
-        "hazardous": {
-          "tp": 0,
+          "tp": 8,
           "fp": 1,
           "fn": 0,
-          "support_images": 0,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "support_images": 8,
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "f1": 0.9411764705882353
+        },
+        "hazardous": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "support_images": 6,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
         },
         "kitchen": {
-          "tp": 6,
+          "tp": 7,
           "fp": 0,
           "fn": 2,
-          "support_images": 8,
+          "support_images": 9,
           "precision": 1.0,
-          "recall": 0.75,
-          "f1": 0.8571428571428571
+          "recall": 0.7777777777777778,
+          "f1": 0.875
         },
         "other": {
-          "tp": 0,
-          "fp": 0,
+          "tp": 5,
+          "fp": 1,
           "fn": 0,
-          "support_images": 0,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "support_images": 5,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091
         }
       },
       "by_background": {
         "未标注": {
-          "images": 15,
-          "mean_per_image_f1": 0.8666666666666667,
+          "images": 33,
+          "mean_per_image_f1": 0.8686868686868687,
           "failure_rate": 0
         }
       },
       "timing": {
-        "mean_request_or_inference_seconds": 0.08025279997382313,
-        "median_request_or_inference_seconds": 0.06204700004309416,
+        "mean_request_or_inference_seconds": 0.0687974121026469,
+        "median_request_or_inference_seconds": 0.056273499969393015,
         "total_load_seconds": 0.0
       },
       "records": [
@@ -2163,75 +3509,434 @@
           "recall": 0.0,
           "f1": 0.0,
           "exact_match": false
+        },
+        {
+          "id": "commons-42032344",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 0.02191590005531907,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-114969819",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 3,
+          "elapsed_seconds": 0.09744889999274164,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-139358689",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 0.06227059999946505,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-82983746",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 0.03985920001287013,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-101290692",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "hazardous",
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 0.050441799918189645,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "exact_match": false
+        },
+        {
+          "id": "commons-31284758",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 0.04629430000204593,
+          "load_seconds": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "exact_match": false
+        },
+        {
+          "id": "commons-6215482",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 0.046945299953222275,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-27372712",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 5,
+          "elapsed_seconds": 0.06145709997508675,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-142040226",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 6,
+          "elapsed_seconds": 0.05105310003273189,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-102772",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 0.056273499969393015,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-32438633",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 0.040694499970413744,
+          "load_seconds": 0.0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-132219783",
+          "truth": [],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 12,
+          "elapsed_seconds": 0.10718699998687953,
+          "load_seconds": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-16022161",
+          "truth": [],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 0.03328470000997186,
+          "load_seconds": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-102745520",
+          "truth": [],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 5,
+          "elapsed_seconds": 0.045834299991838634,
+          "load_seconds": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-110967099",
+          "truth": [],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 0.03285469999536872,
+          "load_seconds": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-144928399",
+          "truth": [],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 7,
+          "elapsed_seconds": 0.0523406999418512,
+          "load_seconds": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-87666282",
+          "truth": [],
+          "predicted": [
+            "hazardous",
+            "other",
+            "recyclable"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 0.10902179998811334,
+          "load_seconds": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "exact_match": false
+        },
+        {
+          "id": "commons-35832442",
+          "truth": [
+            "kitchen",
+            "recyclable"
+          ],
+          "predicted": [
+            "kitchen",
+            "recyclable"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 4,
+          "elapsed_seconds": 0.11134519998449832,
+          "load_seconds": 0.0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
         }
       ]
     },
     "api": {
       "method": "api",
-      "images": 15,
-      "mean_per_image_precision": 0.9333333333333333,
-      "mean_per_image_recall": 0.9333333333333333,
-      "mean_per_image_f1": 0.9333333333333333,
-      "exact_set_accuracy": 0.9333333333333333,
+      "images": 33,
+      "mean_per_image_precision": 0.8787878787878788,
+      "mean_per_image_recall": 0.9090909090909091,
+      "mean_per_image_f1": 0.8888888888888888,
+      "exact_set_accuracy": 0.8484848484848485,
       "failure_rate": 0,
-      "empty_prediction_rate": 0.06666666666666667,
-      "unknown_image_rate": 0.06666666666666667,
+      "empty_prediction_rate": 0.15151515151515152,
+      "unknown_image_rate": 0.18181818181818182,
       "micro": {
-        "tp": 14,
-        "fp": 0,
+        "tp": 27,
+        "fp": 4,
         "fn": 1,
-        "precision": 1.0,
-        "recall": 0.9333333333333333,
-        "f1": 0.9655172413793104
+        "precision": 0.8709677419354839,
+        "recall": 0.9642857142857143,
+        "f1": 0.9152542372881356
       },
       "per_category": {
         "recyclable": {
-          "tp": 6,
-          "fp": 0,
+          "tp": 7,
+          "fp": 1,
           "fn": 1,
-          "support_images": 7,
-          "precision": 1.0,
-          "recall": 0.8571428571428571,
-          "f1": 0.9230769230769231
+          "support_images": 8,
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875
         },
         "hazardous": {
-          "tp": 0,
+          "tp": 6,
           "fp": 0,
           "fn": 0,
-          "support_images": 0,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "support_images": 6,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
         },
         "kitchen": {
-          "tp": 8,
+          "tp": 9,
           "fp": 0,
           "fn": 0,
-          "support_images": 8,
+          "support_images": 9,
           "precision": 1.0,
           "recall": 1.0,
           "f1": 1.0
         },
         "other": {
-          "tp": 0,
-          "fp": 0,
+          "tp": 5,
+          "fp": 3,
           "fn": 0,
-          "support_images": 0,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "support_images": 5,
+          "precision": 0.625,
+          "recall": 1.0,
+          "f1": 0.7692307692307693
         }
       },
       "by_background": {
         "未标注": {
-          "images": 15,
-          "mean_per_image_f1": 0.9333333333333333,
+          "images": 33,
+          "mean_per_image_f1": 0.8888888888888888,
           "failure_rate": 0
         }
       },
       "timing": {
-        "mean_request_or_inference_seconds": 19.10491023333743,
-        "median_request_or_inference_seconds": 17.531692899996415,
+        "mean_request_or_inference_seconds": 17.124695927282147,
+        "median_request_or_inference_seconds": 13.740522400010377,
         "total_load_seconds": 0
       },
       "records": [
@@ -2547,20 +4252,386 @@
           "recall": 1.0,
           "f1": 1.0,
           "exact_match": true
+        },
+        {
+          "id": "commons-42032344",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 10.997729799943045,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-114969819",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other",
+            "recyclable"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 11.804975699982606,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "exact_match": false
+        },
+        {
+          "id": "commons-139358689",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 12.038916200050153,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-82983746",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 14.045242800028063,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-101290692",
+          "truth": [
+            "other"
+          ],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 9.604231099947356,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-31284758",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 13.250345700071193,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-6215482",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 7.311375400051475,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-27372712",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 9.414627299993299,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-142040226",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 2,
+          "elapsed_seconds": 12.691759400069714,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-102772",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous",
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 36.679366900003515,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "exact_match": false
+        },
+        {
+          "id": "commons-32438633",
+          "truth": [
+            "hazardous"
+          ],
+          "predicted": [
+            "hazardous"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 10.354764000046998,
+          "load_seconds": 0,
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-132219783",
+          "truth": [],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 9.602020299993455,
+          "load_seconds": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "exact_match": false
+        },
+        {
+          "id": "commons-16022161",
+          "truth": [],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 12.731477300054394,
+          "load_seconds": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-102745520",
+          "truth": [],
+          "predicted": [
+            "other"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 15.775674400036223,
+          "load_seconds": 0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "exact_match": false
+        },
+        {
+          "id": "commons-110967099",
+          "truth": [],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 8.013045100029558,
+          "load_seconds": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-144928399",
+          "truth": [],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 1,
+          "elapsed_seconds": 22.844847799977288,
+          "load_seconds": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-87666282",
+          "truth": [],
+          "predicted": [],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 15.28632930002641,
+          "load_seconds": 0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
+        },
+        {
+          "id": "commons-35832442",
+          "truth": [
+            "kitchen",
+            "recyclable"
+          ],
+          "predicted": [
+            "kitchen",
+            "recyclable"
+          ],
+          "background": "未标注",
+          "status": "success",
+          "unknown_items": 0,
+          "elapsed_seconds": 46.0945835999446,
+          "load_seconds": 0,
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "exact_match": true
         }
       ]
     }
   },
-  "authorized_max_calls": 40,
-  "attempted_calls": 18,
+  "authorized_max_calls": 42,
+  "attempted_calls": 38,
+  "shared_attempted_calls": 40,
+  "shared_conservative_budget_accounted_nex": 2.561349999999999,
   "authorized_budget_nex": 4,
-  "returned_usage_estimated_nex": 0.5378000000000001,
+  "returned_usage_estimated_nex": 1.21445,
   "records_without_returned_usage": [
     "commons-128095601",
     "commons-95896968",
-    "commons-75295601"
+    "commons-75295601",
+    "commons-90437283",
+    "commons-19792555"
   ],
-  "conservative_budget_accounted_nex": 1.193675,
+  "conservative_budget_accounted_nex": 2.307575,
   "billing": {
     "source": "https://www.nexavlinks.com/logs",
     "verification": "Signed-in UI filtered plus key and synchronous calls; matched endpoint/model/low and timestamps. Successful requests additionally matched input/output counts.",
@@ -2680,44 +4751,154 @@
         "input_tokens": 2380,
         "output_tokens": 38,
         "actual_cost_nex": 0.009252
+      },
+      {
+        "id": "commons-87666282",
+        "local_time": "2026-10-19 00:29:58",
+        "input_tokens": 3028,
+        "output_tokens": 55,
+        "actual_cost_nex": 0.0118908
+      },
+      {
+        "id": "commons-32438633",
+        "local_time": "2026-10-19 00:29:43",
+        "input_tokens": 3352,
+        "output_tokens": 100,
+        "actual_cost_nex": 0.0138672
+      },
+      {
+        "id": "commons-144928399",
+        "local_time": "2026-10-19 00:29:32",
+        "input_tokens": 2416,
+        "output_tokens": 74,
+        "actual_cost_nex": 0.0100296
+      },
+      {
+        "id": "commons-101290692",
+        "local_time": "2026-10-19 00:29:09",
+        "input_tokens": 2416,
+        "output_tokens": 46,
+        "actual_cost_nex": 0.0095256
+      },
+      {
+        "id": "commons-102772",
+        "local_time": "2026-10-19 00:28:59",
+        "input_tokens": 2416,
+        "output_tokens": 171,
+        "actual_cost_nex": 0.0117756
+      },
+      {
+        "id": "commons-110967099",
+        "local_time": "2026-10-19 00:28:22",
+        "input_tokens": 2308,
+        "output_tokens": 92,
+        "actual_cost_nex": 0.0099648
+      },
+      {
+        "id": "commons-82983746",
+        "local_time": "2026-10-19 00:28:14",
+        "input_tokens": 2452,
+        "output_tokens": 63,
+        "actual_cost_nex": 0.0099612
+      },
+      {
+        "id": "commons-142040226",
+        "local_time": "2026-10-19 00:28:00",
+        "input_tokens": 2632,
+        "output_tokens": 157,
+        "actual_cost_nex": 0.0123012
+      },
+      {
+        "id": "commons-102745520",
+        "local_time": "2026-10-19 00:27:46",
+        "input_tokens": 2200,
+        "output_tokens": 132,
+        "actual_cost_nex": 0.010296
+      },
+      {
+        "id": "commons-139358689",
+        "local_time": "2026-10-19 00:27:30",
+        "input_tokens": 3100,
+        "output_tokens": 57,
+        "actual_cost_nex": 0.012186
+      },
+      {
+        "id": "commons-27372712",
+        "local_time": "2026-10-19 00:27:18",
+        "input_tokens": 2668,
+        "output_tokens": 77,
+        "actual_cost_nex": 0.0109908
+      },
+      {
+        "id": "commons-16022161",
+        "local_time": "2026-10-19 00:27:08",
+        "input_tokens": 2164,
+        "output_tokens": 107,
+        "actual_cost_nex": 0.0097164
+      },
+      {
+        "id": "commons-114969819",
+        "local_time": "2026-10-19 00:26:56",
+        "input_tokens": 2200,
+        "output_tokens": 179,
+        "actual_cost_nex": 0.011142
+      },
+      {
+        "id": "commons-6215482",
+        "local_time": "2026-10-19 00:26:44",
+        "input_tokens": 3028,
+        "output_tokens": 72,
+        "actual_cost_nex": 0.0121968
+      },
+      {
+        "id": "commons-132219783",
+        "local_time": "2026-10-19 00:26:36",
+        "input_tokens": 2416,
+        "output_tokens": 78,
+        "actual_cost_nex": 0.0101016
+      },
+      {
+        "id": "commons-42032344",
+        "local_time": "2026-10-19 00:26:26",
+        "input_tokens": 2344,
+        "output_tokens": 55,
+        "actual_cost_nex": 0.0094284
+      },
+      {
+        "id": "commons-35832442",
+        "local_time": "2026-10-19 00:26:15",
+        "input_tokens": 2992,
+        "output_tokens": 135,
+        "actual_cost_nex": 0.0132012
+      },
+      {
+        "id": "commons-31284758",
+        "local_time": "2026-10-19 00:25:29",
+        "input_tokens": 3100,
+        "output_tokens": 75,
+        "actual_cost_nex": 0.01251
       }
     ],
-    "actual_total_nex": 0.1674576,
+    "actual_total_nex": 0.3685428,
     "unreconciled_image_ids": [
       "commons-95896968",
-      "commons-75295601"
+      "commons-75295601",
+      "commons-90437283",
+      "commons-19792555"
     ],
-    "note": "No matching visible bill for these two transport failures at latest signed-in UI review. Their actual cost remains unknown; full per-request reservations retained.",
-    "unrelated_account_logs_included": false
+    "note": "Latest signed-in UI matched 18 new Low Chat Completions rows by time and exact input/output counts. Four failed holdout requests have no matched visible bill; actual cost unknown and full reservations retained. Unrelated account calls excluded.",
+    "unrelated_account_logs_included": false,
+    "reviewed_at_local": "2026-10-19 00:39"
   },
   "reference_labels_changed": false,
   "api_source_commits": [
-    "11466c90ed1085be5ad5f0ef1df10bb587df212e"
+    "11466c90ed1085be5ad5f0ef1df10bb587df212e",
+    "1869e1dd4105399413d0eadb150d3c0f2bae0d9b"
   ],
   "complete": false,
   "pending_image_ids": [
-    "commons-42032344",
-    "commons-114969819",
-    "commons-139358689",
-    "commons-82983746",
-    "commons-101290692",
-    "commons-31284758",
-    "commons-6215482",
-    "commons-27372712",
-    "commons-142040226",
-    "commons-102772",
-    "commons-32438633",
-    "commons-90437283",
     "commons-27113623",
-    "commons-132219783",
-    "commons-16022161",
-    "commons-102745520",
-    "commons-110967099",
-    "commons-144928399",
-    "commons-87666282",
-    "commons-19792555",
-    "commons-53453562",
-    "commons-35832442"
+    "commons-53453562"
   ],
   "planned_images": 40
 }
