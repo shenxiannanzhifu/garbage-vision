@@ -1,0 +1,10 @@
+{
+  "source_commit": "3442a3f",
+  "port": 8502,
+  "status": 200,
+  "body": "ok",
+  "browser_opened": false,
+  "api_called": false,
+  "note": "startup confirmed; initial taskkill cleanup failed, cleanup handled separately",
+  "cleanup": "temporary server on 8502 stopped; user server on 8501 retained"
+}

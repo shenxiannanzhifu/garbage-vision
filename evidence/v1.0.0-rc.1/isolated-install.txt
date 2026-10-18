@@ -1,0 +1,183 @@
+Checked 2 packages in 8ms
+Resolved 77 packages in 6.31s
+Downloading scipy (35.0MiB)
+Downloading opencv-python (37.2MiB)
+Downloading polars-runtime-32 (51.7MiB)
+Downloading pydeck (10.9MiB)
+Downloading matplotlib (8.9MiB)
+Downloading pyarrow (27.2MiB)
+Downloading pandas (10.5MiB)
+Downloading pygments (1.2MiB)
+Downloading numpy (12.0MiB)
+Downloading pydantic-core (1.9MiB)
+Downloading fonttools (2.4MiB)
+Downloading pillow (6.7MiB)
+Downloading streamlit (9.6MiB)
+Downloading ultralytics (1.0MiB)
+ Downloaded ultralytics
+ Downloaded pygments
+ Downloaded pydantic-core
+ Downloaded fonttools
+ Downloaded pillow
+ Downloaded matplotlib
+ Downloaded streamlit
+ Downloaded pandas
+ Downloaded pydeck
+ Downloaded numpy
+ Downloaded pyarrow
+ Downloaded scipy
+ Downloaded opencv-python
+ Downloaded polars-runtime-32
+Prepared 66 packages in 24.42s
+Uninstalled 2 packages in 380ms
+Installed 66 packages in 1.74s
+ + altair==5.5.0
+ + annotated-types==0.8.0
+ + anyio==4.15.1
+ + attrs==26.1.0
+ + blinker==1.9.0
+ + cachetools==6.2.6
+ + certifi==2026.7.22
+ + charset-normalizer==3.5.2
+ + click==8.5.0
+ + colorama==0.4.6
+ + contourpy==1.4.0
+ + cycler==0.12.1
+ + fonttools==4.67.0
+ + ftfy==6.3.1
+ + gitdb==4.0.12
+ + gitpython==3.2.1
+ + h11==0.16.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + idna==3.20
+ + iniconfig==2.3.1
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + kiwisolver==1.5.1
+ + matplotlib==3.11.2
+ + narwhals==2.27.1
+ - numpy==2.5.2
+ + numpy==2.2.6
+ + opencv-python==4.12.0.88
+ + packaging==25.0
+ + pandas==2.3.3
+ - pillow==12.3.0
+ + pillow==11.3.0
+ + pluggy==1.7.0
+ + polars==2.0.0
+ + polars-runtime-32==2.0.0
+ + protobuf==6.33.6
+ + psutil==7.2.2
+ + pyarrow==26.0.0
+ + pydantic==2.12.3
+ + pydantic-core==2.41.4
+ + pydeck==0.9.3
+ + pygments==2.21.0
+ + pyparsing==3.3.3
+ + pytest==8.4.2
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.1.1
+ + pytz==2026.5
+ + pyyaml==6.0.3
+ + referencing==0.37.0
+ + regex==2026.9.29
+ + requests==2.34.2
+ + rpds-py==2026.9.1
+ + scipy==1.18.1
+ + six==1.17.0
+ + smmap==5.0.3
+ + streamlit==1.50.0
+ + tenacity==9.2.1
+ + toml==0.10.2
+ + tornado==6.5.10
+ + tqdm==4.70.1
+ + typing-inspection==0.4.4
+ + tzdata==2026.5
+ + ultralytics==8.3.222
+ + ultralytics-thop==2.2.2
+ + urllib3==2.8.0
+ + watchdog==6.0.0
+ + wcwidth==0.9.2
+Resolved 3 packages in 3.09s
+Prepared 1 package in 697ms
+Installed 1 package in 29ms
+ + wheel==0.48.0
+running bdist_wheel
+running build
+running build_py
+creating build\lib\clip
+copying clip\clip.py -> build\lib\clip
+copying clip\model.py -> build\lib\clip
+copying clip\simple_tokenizer.py -> build\lib\clip
+copying clip\__init__.py -> build\lib\clip
+running egg_info
+creating clip.egg-info
+writing clip.egg-info\PKG-INFO
+writing dependency_links to clip.egg-info\dependency_links.txt
+writing requirements to clip.egg-info\requires.txt
+writing top-level names to clip.egg-info\top_level.txt
+writing manifest file 'clip.egg-info\SOURCES.txt'
+reading manifest file 'clip.egg-info\SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'clip.egg-info\SOURCES.txt'
+copying clip\bpe_simple_vocab_16e6.txt.gz -> build\lib\clip
+C:\Users\Cipher\Documents\Codex\2026-10-17\zhe-2\work\repro-fda8ad2\.venv\Lib\site-packages\setuptools\_distutils\cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64\wheel
+creating build\bdist.win-amd64\wheel\clip
+copying build\lib\clip\bpe_simple_vocab_16e6.txt.gz -> build\bdist.win-amd64\wheel\.\clip
+copying build\lib\clip\clip.py -> build\bdist.win-amd64\wheel\.\clip
+copying build\lib\clip\model.py -> build\bdist.win-amd64\wheel\.\clip
+copying build\lib\clip\simple_tokenizer.py -> build\bdist.win-amd64\wheel\.\clip
+copying build\lib\clip\__init__.py -> build\bdist.win-amd64\wheel\.\clip
+running install_egg_info
+Copying clip.egg-info to build\bdist.win-amd64\wheel\.\clip-1.0-py3.12.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\clip-1.0.dist-info\WHEEL
+creating 'C:\\Users\\Cipher\\Documents\\Codex\\2026-10-17\\zhe-2\\work\\repro-fda8ad2\\.local\\clip-wheel\\clip-1.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
+adding 'clip/__init__.py'
+adding 'clip/bpe_simple_vocab_16e6.txt.gz'
+adding 'clip/clip.py'
+adding 'clip/model.py'
+adding 'clip/simple_tokenizer.py'
+adding 'clip-1.0.dist-info/licenses/LICENSE'
+adding 'clip-1.0.dist-info/METADATA'
+adding 'clip-1.0.dist-info/WHEEL'
+adding 'clip-1.0.dist-info/top_level.txt'
+adding 'clip-1.0.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel
+Resolved 1 package in 12ms
+WARN Retrying rename from `C:\Users\Cipher\Documents\Codex\2026-10-17\zhe-2\work\repro-fda8ad2\.local\uv-cache\.tmpfDYt5I` to `C:\Users\Cipher\Documents\Codex\2026-10-17\zhe-2\work\repro-fda8ad2\.local\uv-cache\archive-v0\75AvAPIKZ4cAGA9x` due to transient error: failed to rename file from C:\Users\Cipher\Documents\Codex\2026-10-17\zhe-2\work\repro-fda8ad2\.local\uv-cache\.tmpfDYt5I to C:\Users\Cipher\Documents\Codex\2026-10-17\zhe-2\work\repro-fda8ad2\.local\uv-cache\archive-v0\75AvAPIKZ4cAGA9x: 拒绝访问。 (os error 5)
+Prepared 1 package in 41ms
+Installed 1 package in 15ms
+ + clip==1.0 (from file:///C:/Users/Cipher/Documents/Codex/2026-10-17/zhe-2/work/repro-fda8ad2/.local/clip-wheel/clip-1.0-py3-none-any.whl)
+CLIP 固定源码构建与安装完成： 7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40
+已校验： sam2.1_t.pt
+已校验： ViT-B-32.pt
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.9.1+cu128",
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "vram_gb": 7.96,
+  "cuda_matmul": 32768.0
+}
+安装完成。运行 scripts\start.ps1 启动网页。

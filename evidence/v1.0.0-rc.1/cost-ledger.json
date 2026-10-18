@@ -1,0 +1,190 @@
+{
+  "usage_returned_requests": 26,
+  "new_batch_requests": 25,
+  "new_batch_limit": 25,
+  "budget_yuan": 1.5,
+  "estimated_total_yuan": 0.067926,
+  "billing_verified": false,
+  "unpriced_initial_connection_failure": "api-probe-20261018T074821320116Z; local proxy refused connection, no provider usage returned",
+  "records": [
+    {
+      "scope": "initial",
+      "id": "commons-179028310",
+      "estimated_yuan": 0.002266
+    },
+    {
+      "scope": "development",
+      "id": "commons-136457085",
+      "status": "success",
+      "estimated_yuan": 0.002556,
+      "attempts": 1
+    },
+    {
+      "scope": "development",
+      "id": "commons-79335127",
+      "status": "success",
+      "estimated_yuan": 0.002706,
+      "attempts": 1
+    },
+    {
+      "scope": "development",
+      "id": "commons-9690809",
+      "status": "success",
+      "estimated_yuan": 0.003006,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-16844093",
+      "status": "success",
+      "estimated_yuan": 0.002598,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-155061492",
+      "status": "success",
+      "estimated_yuan": 0.001784,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-194221567",
+      "status": "success",
+      "estimated_yuan": 0.001836,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-150481714",
+      "status": "success",
+      "estimated_yuan": 0.002846,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-183494508",
+      "status": "success",
+      "estimated_yuan": 0.002866,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-192295022",
+      "status": "success",
+      "estimated_yuan": 0.004096,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-192295023",
+      "status": "success",
+      "estimated_yuan": 0.003006,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-133246916",
+      "status": "error",
+      "estimated_yuan": 0.003896,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-1742613",
+      "status": "success",
+      "estimated_yuan": 0.002406,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-26750498",
+      "status": "error",
+      "estimated_yuan": 0.004276,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-18975566",
+      "status": "error",
+      "estimated_yuan": 0.003746,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-139914360",
+      "status": "success",
+      "estimated_yuan": 0.001956,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-181627306",
+      "status": "success",
+      "estimated_yuan": 0.002116,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-55127430",
+      "status": "success",
+      "estimated_yuan": 0.002206,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-56389070",
+      "status": "success",
+      "estimated_yuan": 0.002046,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-24681139",
+      "status": "success",
+      "estimated_yuan": 0.002106,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-129296105",
+      "status": "success",
+      "estimated_yuan": 0.002056,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-83033961",
+      "status": "success",
+      "estimated_yuan": 0.002546,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-39529354",
+      "status": "success",
+      "estimated_yuan": 0.002226,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-78060423",
+      "status": "success",
+      "estimated_yuan": 0.002116,
+      "attempts": 1
+    },
+    {
+      "scope": "test",
+      "id": "commons-25257168",
+      "status": "success",
+      "estimated_yuan": 0.002386,
+      "attempts": 1
+    },
+    {
+      "scope": "browser",
+      "id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+      "estimated_yuan": 0.002276,
+      "attempts": 1
+    }
+  ]
+}

@@ -97,6 +97,8 @@ def plot(scores, out):
     ax.set_ylim(0,1.18);ax.set_ylabel('F1');ax.set_title('四分类出现集合：按类别 F1' if font else 'Category-presence F1',fontproperties=font)
     ax.spines[['top','right']].set_visible(False);ax.grid(axis='y',alpha=.2);ax.set_axisbelow(True);ax.legend(loc='upper center',ncol=2,frameon=False)
     fig.savefig(out/'category-f1.png',dpi=180);fig.savefig(out/'category-f1.svg');plt.close(fig)
+    svg=out/'category-f1.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
 
 
 if __name__=='__main__':
