@@ -1,0 +1,16 @@
+{
+  "created_at_utc": "2026-10-18T09:35:13.343773+00:00",
+  "dev_images": 38,
+  "test_images": 40,
+  "test_distribution": {
+    "recyclable": 8,
+    "kitchen": 8,
+    "other": 7,
+    "hazardous": 8,
+    "unknown": 8,
+    "mixed": 1
+  },
+  "excluded_near_development": [],
+  "old_test_role": "Original 21-image test remains archived. No image is copied into reference features.",
+  "review_scope": "All candidate contact sheets visually inspected before model inference. Missing/unclear subjects, drawings, X-rays and ambiguous mixed scenes excluded before prediction."
+}

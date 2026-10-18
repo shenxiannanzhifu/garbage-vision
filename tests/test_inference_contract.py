@@ -32,7 +32,7 @@ def test_api_rejects_bad_structure(raw):
 
 def test_api_same_image_bounded_retry_and_no_local_predictions():
     source=decode_image(make_image());calls=[]
-    config=APISettings(key='test-only-key',base_url='https://example.invalid/v1',enabled=True)
+    config=APISettings(key='test-only-key',base_url='https://example.invalid/v1',enabled=True,max_attempts=2)
     def handler(request):
         data=json.loads(request.content);calls.append(data)
         image=data['messages'][0]['content'][0]['image_url']['url'].split(',')[1]
@@ -55,6 +55,23 @@ def test_api_nonobject_payload_is_recorded_as_failure():
         APISettings(key='test',base_url='https://example.invalid/v1',enabled=True),
         httpx.MockTransport(lambda request:httpx.Response(200,json=[])))
     assert result.status=='error' and not result.items
+
+@pytest.mark.parametrize('finish',['stop','length'])
+def test_api_invalid_output_preserved_redacted_without_retry(finish):
+    secret='sk-test-secret-12345678';calls=[]
+    def handler(request):
+        calls.append(1)
+        return httpx.Response(200,json={'id':'TEST-ONLY','choices':[{'finish_reason':finish,
+            'message':{'content':'{"items":[{"name":"'+secret+'","category":"invalid"}]}'}}],
+            'usage':{'prompt_tokens':20,'completion_tokens':10}})
+    result=infer_api(decode_image(make_image()),APISettings(key=secret,base_url='https://example.invalid/v1',enabled=True),httpx.MockTransport(handler))
+    assert result.status=='error' and len(calls)==1
+    assert result.metadata['usage']['completion_tokens']==10
+    assert '[REDACTED]' in result.metadata['response_text']
+    assert secret not in result.model_dump_json()
+    assert result.metadata['finish_reason']==finish
+    assert result.metadata['validation_error_type']
+    if finish=='stop':assert result.metadata['validation_errors']
 
 def test_unconfigured_api_does_not_request():
     def handler(request):raise AssertionError('unconfigured must not call')

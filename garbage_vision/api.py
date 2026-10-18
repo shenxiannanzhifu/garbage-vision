@@ -22,7 +22,7 @@ class APISettings:
     provider: str='dashscope'
     timeout: float=60
     max_tokens: int=2048
-    max_attempts: int=2
+    max_attempts: int=1
     enabled: bool=False
     use_env_proxy: bool=False
 
@@ -47,7 +47,7 @@ def api_settings():
         provider=str(values.get('GV_API_PROVIDER') or 'dashscope'),model=str(values.get('GV_API_MODEL') or 'qwen3-vl-plus'),
         timeout=max(5,min(180,float(values.get('GV_API_TIMEOUT') or 60))),
         max_tokens=max(256,min(4096,int(values.get('GV_API_MAX_TOKENS') or 2048))),
-        max_attempts=max(1,min(2,int(values.get('GV_API_MAX_ATTEMPTS') or 2))),
+        max_attempts=max(1,min(2,int(values.get('GV_API_MAX_ATTEMPTS') or 1))),
         enabled=str(values.get('GV_API_ENABLED') or '').lower()=='true',
         use_env_proxy=str(values.get('GV_API_USE_ENV_PROXY') or '').lower()=='true')
 
@@ -72,6 +72,17 @@ def parse_response(text):
         cleaned=match.group(1)
     payload=APIResponse.model_validate_json(cleaned)
     return [Item(**x.model_dump()) for x in payload.items]
+
+
+def response_diagnostics(text, key):
+    """保留可排错的有限响应正文；删除密钥、常见令牌及内联图片，不记录请求头。"""
+    if not isinstance(text,str):return {'response_content_type':type(text).__name__}
+    safe=text.replace(key,'[REDACTED]') if key else text
+    safe=re.sub(r'(?i)\bBearer\s+[^\s"<>]+','Bearer [REDACTED]',safe)
+    safe=re.sub(r'\bsk-[A-Za-z0-9_-]{8,}','[REDACTED]',safe)
+    safe=re.sub(r'data:image/[^;\s]+;base64,[A-Za-z0-9+/=]+','[IMAGE REDACTED]',safe)
+    return {'response_text':safe[:50000],'response_text_truncated':len(safe)>50000,
+            'response_text_sha256':hashlib.sha256(text.encode('utf-8')).hexdigest()}
 
 def infer_api(source,settings=None,transport=None,sleeper=time.sleep):
     """有界请求；429/502/503/504 最多重试一次，超时不重复付费提交。
@@ -113,14 +124,20 @@ def infer_api(source,settings=None,transport=None,sleeper=time.sleep):
                 meta.update(response_id=str(data.get('id','')),returned_model=str(data.get('model',settings.model)),
                             usage=usage)
                 choice=data['choices'][0]
+                text=choice['message']['content']
+                meta.update(response_diagnostics(text,settings.key),finish_reason=choice.get('finish_reason'))
                 if choice.get('finish_reason')=='length':raise ValueError('模型输出被截断，请缩小任务范围或增加输出上限。')
-                text=choice['message']['content'];items=parse_response(text)
-                meta['response_text']=text
+                items=parse_response(text)
                 return InferenceResult(**base,status='success',items=items,elapsed_seconds=time.perf_counter()-started,metadata=meta)
             except httpx.TimeoutException:
                 error='API 超时。为避免重复计费，没有自动重新提交；可查看服务商账单后手动重试。';break
             except httpx.RequestError:
                 error='无法连接 API，请检查网络与 HTTPS 端点。';break
-            except (ValueError,ValidationError,KeyError,IndexError,TypeError):
+            except (ValueError,ValidationError,KeyError,IndexError,TypeError) as exc:
+                meta['validation_error_type']=type(exc).__name__
+                if isinstance(exc,ValidationError):
+                    # 不存 input/context，避免错误信息带出任意响应或凭据。
+                    meta['validation_errors']=[{'location':list(e['loc']),'type':e['type']}
+                        for e in exc.errors(include_input=False,include_context=False)[:20]]
                 error='API 返回了无效、截断或不符合约定的 JSON；未把它当作识别成功。';break
     return InferenceResult(**base,status='error',error=error,elapsed_seconds=time.perf_counter()-started,metadata=meta)

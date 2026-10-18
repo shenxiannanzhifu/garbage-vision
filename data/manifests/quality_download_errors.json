@@ -1,0 +1,86 @@
+[
+  {
+    "query": "fluorescent tubes",
+    "error": "HTTPError"
+  },
+  {
+    "query": "LED light bulb",
+    "error": "HTTPError"
+  },
+  {
+    "query": "incandescent light bulbs",
+    "error": "HTTPError"
+  },
+  {
+    "query": "alkaline batteries",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-914124",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-1344688",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-6079651",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-92318057",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-114970219",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-390950",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-107014439",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-34806831",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-129139485",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-29554924",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-117916487",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-9960274",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-100015809",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-240845",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-8689967",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-26284113",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-10713896",
+    "error": "HTTPError"
+  }
+]
