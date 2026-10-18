@@ -1,0 +1,181 @@
+{
+  "created_at_utc": "2026-10-18T08:12:57.392326+00:00",
+  "split": "dev",
+  "git_commit": "fda8ad2af8915e982e9fc1fe8aec0cf6ac9a5bb4",
+  "manifest_sha256": "655a1e27452bf06454c61065e5c81035490ee3ff1cc614bc9c5a7a130aefdda5",
+  "manifest_path": "data\\manifests\\dev.json",
+  "selected_ids": [
+    "commons-136457085",
+    "commons-79335127",
+    "commons-9690809"
+  ],
+  "images": [
+    {
+      "id": "commons-136457085",
+      "source_group": "kitchen",
+      "title": "File:Food waste in a blue waste container.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Food_waste_in_a_blue_waste_container.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Food_waste_in_a_blue_waste_container.jpg/960px-Food_waste_in_a_blue_waste_container.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Food_waste_in_a_blue_waste_container.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "original_sha1": "2eaf61fc77e14df83cb9deb26c83e54361768c28",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "author": "Nick Saltmarsh",
+      "description": "Food waste in a blue waste container",
+      "review_status": "accepted",
+      "path": "data/raw/commons/commons-136457085.jpg",
+      "sha256": "b43de08a943477dd052b0b63c04d0a55b252b473ae86c97218ad63df3a196e7a",
+      "dhash": "645c5cf8e8c8c889",
+      "width": 960,
+      "height": 720,
+      "group_id": "commons-136457085",
+      "split": "dev",
+      "annotator": "Codex 依据 Commons 作者描述及逐图视觉复核；非独立真人标注，需报告此限制",
+      "reviewed_before_inference": true,
+      "categories": [
+        "kitchen"
+      ],
+      "background": "复杂",
+      "review_note": "霉变面包及蔬果残余",
+      "image_id": "81deebb690eabed6886e78cd19ad4799f8be468c2c49be90258ca432dd451ea1",
+      "image_size": [
+        960,
+        720
+      ]
+    },
+    {
+      "id": "commons-79335127",
+      "source_group": "other",
+      "title": "File:Cigarette butts in a smoke-free area.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cigarette_butts_in_a_smoke-free_area.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Cigarette_butts_in_a_smoke-free_area.jpg/960px-Cigarette_butts_in_a_smoke-free_area.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Cigarette_butts_in_a_smoke-free_area.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "original_sha1": "cad32fa25c20abb8a4caebcbbf89a620d3af32de",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "author": "quellatizia",
+      "description": "littering of cigarette butts in a smoke-free area from the University of Sydney, Sydney, NSW, AU",
+      "review_status": "accepted",
+      "path": "data/raw/commons/commons-79335127.jpg",
+      "sha256": "257f50d5a96646f15798583d98c203168a408b8f6580f58fd5c76c291b4e8de7",
+      "dhash": "5c7b737b7b1dcd27",
+      "width": 960,
+      "height": 1280,
+      "group_id": "commons-79335127",
+      "split": "dev",
+      "annotator": "Codex 依据 Commons 作者描述及逐图视觉复核；非独立真人标注，需报告此限制",
+      "reviewed_before_inference": true,
+      "categories": [
+        "other"
+      ],
+      "background": "复杂",
+      "review_note": "地面多个小烟蒂，目标很小",
+      "image_id": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+      "image_size": [
+        960,
+        1280
+      ]
+    },
+    {
+      "id": "commons-9690809",
+      "source_group": "hazardous",
+      "title": "File:02 Spiral CFL Bulb 2010-03-08 (black back).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:02_Spiral_CFL_Bulb_2010-03-08_(black_back).jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/02_Spiral_CFL_Bulb_2010-03-08_%28black_back%29.jpg/960px-02_Spiral_CFL_Bulb_2010-03-08_%28black_back%29.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/02_Spiral_CFL_Bulb_2010-03-08_%28black_back%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "original_sha1": "0b52cc2f42bbd96bdd2e6f12c75bda96b9168442",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "author": "Sun Ladder",
+      "description": "A spiral CFL bulb on a black background",
+      "review_status": "accepted",
+      "path": "data/raw/commons/commons-9690809.jpg",
+      "sha256": "9f682000dc8e33b4c779e5e8b0914e7c6c644466b61441b6f13d540bf730aaf2",
+      "dhash": "7070f0f0e8e4f0f0",
+      "width": 960,
+      "height": 1435,
+      "group_id": "commons-9690809",
+      "split": "dev",
+      "annotator": "Codex 依据 Commons 作者描述及逐图视觉复核；非独立真人标注，需报告此限制",
+      "reviewed_before_inference": true,
+      "categories": [
+        "hazardous"
+      ],
+      "background": "简单",
+      "review_note": "螺旋管荧光灯",
+      "image_id": "0913354834d433ec233729c1e7f3485552c293c7c235b9319a125332a72d22f1",
+      "image_size": [
+        960,
+        1435
+      ]
+    }
+  ],
+  "files": {
+    "garbage_vision/api.py": "a643ee69578714fd05b7c9b74a52a018fa1ddf23f7b09e467327e5b25e6d8cd6",
+    "garbage_vision/config.py": "796cb60e0fdccb998914b2dca35298175bf185b3f0675663773188e7cbc9737d",
+    "garbage_vision/evaluation.py": "992385f2ad12e58de9598cd93b1460503345da02493395245ac4df7c69f55d98",
+    "garbage_vision/experiment.py": "e1ffb039a1cd572d8e263ff256d01864e3280889510e81098901fa28b56c0ec5",
+    "garbage_vision/exports.py": "79b3795e8b159c3e5186fb933066bf0bf366f055152623145e6df7fb154dec27",
+    "garbage_vision/images.py": "519e7e79d5f33671c824a86ff06075968c68ea4330b2007ff3aa7ebf3e350637",
+    "garbage_vision/local.py": "3c971eab2718916658414ea4c51a8a97cdeb8be05f5a81d9acf40fb90d743bdb",
+    "garbage_vision/schema.py": "d2aee247d9636e290df4366df439acab1a010fdfe65223659b1eb94f3b07cadd",
+    "garbage_vision/__init__.py": "3e51a64c501bac5ac4cf4e0ac4933aa9313103f25e99716674f46353a7ac4b31",
+    "config/categories.json": "4111406e77e186cfb06cdd6598de91d1fe545b4459913aaa69d23a0733e0532a",
+    "config/local_model.json": "c250864688da83823204df6cb811e961b869e1eff6cb696f8f76cd38bc9f7472",
+    "app.py": "e54ba3e0defe8995c52b1755a445a03ca0cb13e52f62c23a18c4955c6cc373c0",
+    "prompts/classify_v1.txt": "642f30c6a7340646d2c84b336265818cd14c6d532066f457afa0da2f6d6a1afd",
+    "scripts/evaluate.py": "e1e18b52968b3ae8b97bafb9b1801e7903ff09d29e4523ce28d04255e1bdbe93",
+    "scripts/score.py": "d0d35d9f354d065d07cf9eb2344f32c07d8c582efe86f663ef85f8ca30b831e1",
+    "requirements.txt": "b1bd58cb0b364b1f408b8cfc5ea0ad92c6144e48b50ed451a0de5018e741067b",
+    "requirements-build.txt": "322e1870873766966750f3307240a7947038b4637f29b97925c8fe82505376d4"
+  },
+  "weights": {
+    "weights/sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+    "weights/ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+  },
+  "local_config": {
+    "backend": "sam2-clip",
+    "region_input": "crop",
+    "crop_n_layers": 1,
+    "max_area_fraction": 0.95,
+    "sam_weights": "weights/sam2.1_t.pt",
+    "clip_weights": "weights/ViT-B-32.pt",
+    "device": "auto",
+    "points_stride": 24,
+    "points_batch_size": 32,
+    "mask_score_min": 0.8,
+    "similarity_min": 0.28,
+    "category_margin_min": 0.018,
+    "min_box_side": 8,
+    "min_area_fraction": 0.0002,
+    "duplicate_iou": 0.7,
+    "part_mask_containment": 0.95,
+    "part_max_area_ratio": 0.25,
+    "part_similarity_gap": 0.015,
+    "max_objects": 40,
+    "crop_padding": 0.05
+  },
+  "api_config": {
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "qwen3-vl-plus",
+    "provider": "dashscope",
+    "timeout": 60.0,
+    "max_tokens": 2048,
+    "use_env_proxy": false
+  },
+  "api_max_attempts": 1,
+  "dependencies": {
+    "torch": "2.9.1+cu128",
+    "torchvision": "0.24.1+cu128",
+    "ultralytics": "8.3.222",
+    "clip": "1.0",
+    "numpy": "2.2.6",
+    "Pillow": "11.3.0",
+    "httpx": "0.28.1",
+    "pydantic": "2.12.3",
+    "python-dotenv": "1.1.1",
+    "streamlit": "1.50.0"
+  },
+  "score_unit": "per-image category presence set",
+  "reference_labels": "Commons author metadata + Codex pre-inference visual review; not independent human annotations"
+}

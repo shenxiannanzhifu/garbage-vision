@@ -1,0 +1,62 @@
+{
+  "id": "commons-79335127",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:13:52.828278+00:00",
+    "image_id": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+    "source_sha256": "257f50d5a96646f15798583d98c203168a408b8f6580f58fd5c76c291b4e8de7",
+    "image_size": [
+      960,
+      1280
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "多个烟蒂",
+        "category": "other",
+        "reason": "散落在地面上的烟蒂属于其他垃圾；需完全熄灭后再投放",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 1.923377800034359,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+      "attempts": 1,
+      "response_id": "chatcmpl-29021142-b97f-9476-976f-1756598693ac",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 2306,
+        "completion_tokens": 40,
+        "total_tokens": 2346,
+        "completion_tokens_details": {
+          "text_tokens": 40
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1202,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"多个烟蒂\",\"category\":\"other\",\"reason\":\"散落在地面上的烟蒂属于其他垃圾；需完全熄灭后再投放\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.002706,
+  "budget_accounted_yuan": 0.002706
+}

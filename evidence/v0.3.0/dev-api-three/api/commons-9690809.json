@@ -1,0 +1,62 @@
+{
+  "id": "commons-9690809",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:13:54.974772+00:00",
+    "image_id": "0913354834d433ec233729c1e7f3485552c293c7c235b9319a125332a72d22f1",
+    "source_sha256": "9f682000dc8e33b4c779e5e8b0914e7c6c644466b61441b6f13d540bf730aaf2",
+    "image_size": [
+      960,
+      1435
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "螺旋形管状结构为典型紧凑型荧光灯（CFL），含汞，属于有害垃圾；需保持完整避免破碎",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 2.084846700076014,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "0913354834d433ec233729c1e7f3485552c293c7c235b9319a125332a72d22f1",
+      "attempts": 1,
+      "response_id": "chatcmpl-f29aa857-a178-9a1f-b7cf-95f0d9fba0f9",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 2456,
+        "completion_tokens": 55,
+        "total_tokens": 2511,
+        "completion_tokens_details": {
+          "text_tokens": 55
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1352,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"紧凑型荧光灯\",\"category\":\"hazardous\",\"reason\":\"螺旋形管状结构为典型紧凑型荧光灯（CFL），含汞，属于有害垃圾；需保持完整避免破碎\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.003006,
+  "budget_accounted_yuan": 0.003006
+}

@@ -1,0 +1,160 @@
+{
+  "results": [
+    {
+      "schema_version": "1.0",
+      "created_at_utc": "2026-10-18T08:21:05.384833+00:00",
+      "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+      "source_sha256": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+      "image_size": [
+        960,
+        720
+      ],
+      "method": "local",
+      "model": "SAM2.1-tiny + CLIP ViT-B/32",
+      "status": "success",
+      "items": [
+        {
+          "name": "塑料瓶",
+          "category": "recyclable",
+          "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+          "uncertain": false,
+          "label": "plastic bottle",
+          "bbox": [
+            130.31,
+            310.31,
+            786.56,
+            664.69
+          ],
+          "detection_confidence": null,
+          "mask_quality": 0.9668863415718079,
+          "similarity": 0.31369927525520325,
+          "category_margin": 0.04149717092514038
+        }
+      ],
+      "elapsed_seconds": 15.28012720006518,
+      "load_seconds": 4.976854200009257,
+      "cache_hit": false,
+      "error": null,
+      "metadata": {
+        "device": "cuda:0",
+        "region_count": 6,
+        "candidate_count": 2,
+        "suppressed_uncertain_parts": [
+          {
+            "candidate": {
+              "name": "待确认区域",
+              "category": null,
+              "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+              "uncertain": true,
+              "label": "LED light bulb",
+              "bbox": [
+                676.87,
+                310.31,
+                785.62,
+                406.87
+              ],
+              "detection_confidence": null,
+              "mask_quality": 0.9026166796684265,
+              "similarity": 0.2860841751098633,
+              "category_margin": 0.0029063522815704346
+            },
+            "parent_label": "plastic bottle",
+            "parent_bbox": [
+              130.31,
+              310.31,
+              786.56,
+              664.69
+            ],
+            "mask_containment": 1.0,
+            "area_ratio": 0.06544920341430055,
+            "reason": "较高分的已知物体内包含的低分未知局部区域；不重复作为独立物品。"
+          }
+        ],
+        "truncated": false,
+        "weight_sha256": {
+          "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+          "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+        },
+        "config_sha256": "d5116e7d1862e276e2d28fb722fd07dbc77d0561ad28521f8eb53f19ac492638",
+        "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+        "config": {
+          "backend": "sam2-clip",
+          "category_margin_min": 0.018,
+          "clip_weights": "weights/ViT-B-32.pt",
+          "crop_n_layers": 1,
+          "crop_padding": 0.05,
+          "device": "auto",
+          "duplicate_iou": 0.7,
+          "mask_score_min": 0.8,
+          "max_area_fraction": 0.95,
+          "max_objects": 40,
+          "min_area_fraction": 0.0002,
+          "min_box_side": 8,
+          "part_mask_containment": 0.95,
+          "part_max_area_ratio": 0.25,
+          "part_similarity_gap": 0.015,
+          "points_batch_size": 32,
+          "points_stride": 24,
+          "region_input": "crop",
+          "sam_weights": "weights/sam2.1_t.pt",
+          "similarity_min": 0.28
+        },
+        "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "created_at_utc": "2026-10-18T08:21:18.776001+00:00",
+      "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+      "source_sha256": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+      "image_size": [
+        960,
+        720
+      ],
+      "method": "api",
+      "model": "qwen3-vl-plus",
+      "status": "success",
+      "items": [
+        {
+          "name": "塑料瓶",
+          "category": "recyclable",
+          "reason": "普通饮料塑料瓶倒空清洁后可回收；图中瓶身已压扁、无明显残留液体，符合投放前提",
+          "uncertain": false,
+          "label": null,
+          "bbox": null,
+          "detection_confidence": null,
+          "mask_quality": null,
+          "similarity": null,
+          "category_margin": null
+        }
+      ],
+      "elapsed_seconds": 13.387664700043388,
+      "load_seconds": 0,
+      "cache_hit": false,
+      "error": null,
+      "metadata": {
+        "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+        "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+        "endpoint_host": "dashscope.aliyuncs.com",
+        "sent_image_sha256": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+        "attempts": 1,
+        "response_id": "chatcmpl-193e0dcc-c40a-90f0-8932-8c00d0d9fcb0",
+        "returned_model": "qwen3-vl-plus",
+        "usage": {
+          "prompt_tokens": 1766,
+          "completion_tokens": 51,
+          "total_tokens": 1817,
+          "completion_tokens_details": {
+            "text_tokens": 51
+          },
+          "prompt_tokens_details": {
+            "image_tokens": 662,
+            "text_tokens": 1104,
+            "cached_tokens": 0
+          }
+        },
+        "response_text": "{\"items\":[{\"name\":\"塑料瓶\",\"category\":\"recyclable\",\"reason\":\"普通饮料塑料瓶倒空清洁后可回收；图中瓶身已压扁、无明显残留液体，符合投放前提\",\"uncertain\":false}]}"
+      }
+    }
+  ]
+}

@@ -53,7 +53,7 @@ def freeze_experiment(destination, split, ids=None):
         sources.append({**row, 'image_id': image.image_id, 'image_size': list(image.image.size)})
     code = list((ROOT / 'garbage_vision').glob('*.py')) + list((ROOT / 'config').glob('*.json'))
     code += [ROOT / p for p in ['app.py', 'prompts/classify_v1.txt', 'scripts/evaluate.py',
-                                'scripts/score.py', 'requirements.txt', 'requirements-build.txt']]
+                                'scripts/score.py', 'scripts/generate_report.py', 'requirements.txt', 'requirements-build.txt']]
     settings = local_settings()
     frozen = {'created_at_utc': datetime.now(timezone.utc).isoformat(), 'split': split,
               'git_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
@@ -63,7 +63,7 @@ def freeze_experiment(destination, split, ids=None):
               'weights': {settings[k]: weight_hash(ROOT / settings[k]) for k in ('sam_weights', 'clip_weights')},
               'local_config': settings, 'api_config': public_api_config(), 'api_max_attempts': 1,
               'dependencies': {n: version(n) for n in ('torch', 'torchvision', 'ultralytics', 'clip',
-                                'numpy', 'Pillow', 'httpx', 'pydantic', 'python-dotenv', 'streamlit')},
+                                'numpy', 'Pillow', 'httpx', 'pydantic', 'python-dotenv', 'streamlit', 'matplotlib')},
               'score_unit': 'per-image category presence set',
               'reference_labels': 'Commons author metadata + Codex pre-inference visual review; not independent human annotations'}
     destination.mkdir(parents=True, exist_ok=False)
