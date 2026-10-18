@@ -1,0 +1,22 @@
+{
+  "backend": "sam2-clip",
+  "region_input": "crop",
+  "crop_n_layers": 1,
+  "max_area_fraction": 0.95,
+  "sam_weights": "weights/sam2.1_t.pt",
+  "clip_weights": "weights/ViT-B-32.pt",
+  "device": "auto",
+  "points_stride": 24,
+  "points_batch_size": 32,
+  "mask_score_min": 0.8,
+  "similarity_min": 0.28,
+  "category_margin_min": 0.018,
+  "min_box_side": 8,
+  "min_area_fraction": 0.0002,
+  "duplicate_iou": 0.7,
+  "part_mask_containment": 0.95,
+  "part_max_area_ratio": 0.25,
+  "part_similarity_gap": 0.015,
+  "max_objects": 40,
+  "crop_padding": 0.05
+}

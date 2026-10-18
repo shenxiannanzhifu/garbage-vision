@@ -1,0 +1,171 @@
+{
+  "id": "commons-41887069",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:41:37.555844+00:00",
+    "image_id": "6e2370bc1618edaf26c2f2b127061d0baab92a7d1e172a11d9d3bd87c402d420",
+    "source_sha256": "31ea05891b324c5c1c58ffaeea90f6818d93acc78b65849a8d23e92ab034626d",
+    "image_size": [
+      960,
+      640
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：白炽灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "incandescent light bulb",
+        "bbox": [
+          83.44,
+          110.62,
+          897.19,
+          521.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9710111618041992,
+        "similarity": 0.33712852001190186,
+        "category_margin": 0.016382694244384766,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.023793500033207238,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 4,
+      "candidate_count": 1,
+      "region_diagnostics": [
+        {
+          "bbox": [
+            398.4374694824219,
+            397.4999694824219,
+            436.8749694824219,
+            430.3124694824219
+          ],
+          "mask_quality": 0.8947055339813232,
+          "similarities": [
+            0.22836977243423462,
+            0.22870202362537384,
+            0.2523025572299957,
+            0.2585216462612152,
+            0.23090921342372894,
+            0.233989417552948,
+            0.21049052476882935,
+            0.21655941009521484,
+            0.2508257031440735,
+            0.2507387399673462,
+            0.2261374592781067,
+            0.22190067172050476,
+            0.23203222453594208,
+            0.24875788390636444,
+            0.211314857006073,
+            0.22386103868484497,
+            0.20509445667266846,
+            0.25179046392440796,
+            0.23716653883457184,
+            0.2273193895816803,
+            0.2490452080965042,
+            0.24523720145225525,
+            0.2372628152370453,
+            0.2325746864080429,
+            0.2516500949859619,
+            0.24307018518447876,
+            0.2602488100528717,
+            0.2412865310907364
+          ],
+          "visual_scores": null
+        },
+        {
+          "bbox": [
+            83.43749237060547,
+            110.62499237060547,
+            897.1874389648438,
+            521.2499389648438
+          ],
+          "mask_quality": 0.9710111618041992,
+          "similarities": [
+            0.23833253979682922,
+            0.24886880815029144,
+            0.2159680426120758,
+            0.19125115871429443,
+            0.19369269907474518,
+            0.20101773738861084,
+            0.1812802404165268,
+            0.1646500825881958,
+            0.20780740678310394,
+            0.2059234380722046,
+            0.3207458257675171,
+            0.25681960582733154,
+            0.21856099367141724,
+            0.2037828117609024,
+            0.33712852001190186,
+            0.3332127630710602,
+            0.15851017832756042,
+            0.17924880981445312,
+            0.19940632581710815,
+            0.19082370400428772,
+            0.17267736792564392,
+            0.18507400155067444,
+            0.20425567030906677,
+            0.2087721824645996,
+            0.23196260631084442,
+            0.21224869787693024,
+            0.1981736421585083,
+            0.20444537699222565
+          ],
+          "visual_scores": null
+        }
+      ],
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "9c0b9b35af3b7c82893f86e9348e82e040fd8e07dc8265b92ccd2ac29ef8f980",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "diagnostic_regions": true,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

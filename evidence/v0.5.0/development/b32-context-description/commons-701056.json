@@ -1,0 +1,135 @@
+{
+  "id": "commons-701056",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:44:08.276908+00:00",
+    "image_id": "f326967dd4a3d366deba1a021b2e14ac42804af9f472611ac5a23b3631bf8369",
+    "source_sha256": "d4e7c4b99ad7739eedf23aa5ae073d1ebcc12752dbc9f4c70861640b2352cde6",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          208.12,
+          0,
+          697.5,
+          528.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8942239284515381,
+        "similarity": 0.331525593996048,
+        "category_margin": 0.034268319606781006,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.022527099936269224,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 2,
+      "candidate_count": 1,
+      "region_diagnostics": [
+        {
+          "bbox": [
+            208.12498474121094,
+            0,
+            697.4999389648438,
+            528.7499389648438
+          ],
+          "mask_quality": 0.8942239284515381,
+          "similarities": [
+            0.20583032071590424,
+            0.2155749499797821,
+            0.2279926985502243,
+            0.20968328416347504,
+            0.22798827290534973,
+            0.21946308016777039,
+            0.19534455239772797,
+            0.19128961861133575,
+            0.22271142899990082,
+            0.24270649254322052,
+            0.331525593996048,
+            0.2763483226299286,
+            0.2185504138469696,
+            0.2225172072649002,
+            0.29495540261268616,
+            0.29725727438926697,
+            0.18583311140537262,
+            0.21092109382152557,
+            0.22058740258216858,
+            0.22591954469680786,
+            0.18100190162658691,
+            0.20626677572727203,
+            0.20846238732337952,
+            0.21817821264266968,
+            0.22078189253807068,
+            0.24777071177959442,
+            0.2104724943637848,
+            0.2090110182762146
+          ],
+          "visual_scores": null
+        }
+      ],
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "c64bf7c33db625367fd9c5c1a5407ba0adc1777812376a369ddc14095253bae0",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "diagnostic_regions": true,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "id": "commons-185140035",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:23:14.169389+00:00",
+    "image_id": "c940ae78c91a53526f068c0b73a0a8e61603347663ae5a168d3b32e6761179e8",
+    "source_sha256": "2fb19710bdfdd8c5d8ea56cfd8a85476738988003db427017f2141c641fbbfd9",
+    "image_size": [
+      960,
+      747
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          0,
+          0,
+          568.12,
+          477.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.972015917301178,
+        "similarity": 0.30955174565315247,
+        "category_margin": 0.052856266498565674
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          596.25,
+          345.94,
+          771.56,
+          508.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9387827515602112,
+        "similarity": 0.2988795042037964,
+        "category_margin": 0.008578836917877197
+      },
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          641.25,
+          132.19,
+          779.06,
+          251.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9606091976165771,
+        "similarity": 0.29425767064094543,
+        "category_margin": 0.04960058629512787
+      },
+      {
+        "name": "果核",
+        "category": "kitchen",
+        "reason": "普通水果果核属于厨余垃圾。",
+        "uncertain": false,
+        "label": "apple core",
+        "bbox": [
+          61.87,
+          386.25,
+          167.81,
+          546.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9325197339057922,
+        "similarity": 0.2940432131290436,
+        "category_margin": 0.030271142721176147
+      },
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          343.12,
+          380.62,
+          614.06,
+          464.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9586155414581299,
+        "similarity": 0.29263851046562195,
+        "category_margin": 0.02767997980117798
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          403.12,
+          338.44,
+          614.06,
+          463.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9657933712005615,
+        "similarity": 0.2915991544723511,
+        "category_margin": 0.012922585010528564
+      },
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          210.0,
+          320.62,
+          315.94,
+          404.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9077298045158386,
+        "similarity": 0.28895506262779236,
+        "category_margin": 0.029049426317214966
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          596.25,
+          346.87,
+          860.62,
+          508.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9254456758499146,
+        "similarity": 0.2863302528858185,
+        "category_margin": 0.002972513437271118
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          580.31,
+          545.62,
+          691.87,
+          665.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9398441314697266,
+        "similarity": 0.284463495016098,
+        "category_margin": 0.014779359102249146
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          404.06,
+          386.25,
+          607.5,
+          463.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9039012789726257,
+        "similarity": 0.28294360637664795,
+        "category_margin": 0.006622612476348877
+      }
+    ],
+    "elapsed_seconds": 13.640643899911083,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 24,
+      "candidate_count": 10,
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "a80c58e17c928965e45b1e9221e83da82dffb29d3fc0dae33604730ed8e87e18",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ]
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

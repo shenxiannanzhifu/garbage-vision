@@ -18,6 +18,9 @@ class Item(BaseModel):
     mask_quality: float | None = None
     similarity: float | None = Field(default=None, ge=-1, le=1)
     category_margin: float | None = None
+    visual_similarity: float | None = Field(default=None,ge=-1,le=1)
+    visual_margin: float | None = None
+    classification_basis: Literal['text','visual_reference'] = 'text'
 
     @model_validator(mode='after')
     def check_uncertainty(self):

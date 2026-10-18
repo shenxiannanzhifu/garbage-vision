@@ -1,0 +1,175 @@
+{
+  "id": "commons-80933087",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:44:08.015002+00:00",
+    "image_id": "55f9892fbe11eaec94acd00c2855d9690c1743c8aa26bc2764d9fc25529a1142",
+    "source_sha256": "f74c919472eb0d0435bfa9be8de6b88178b346983ce812aed6ca77d8ae67685c",
+    "image_size": [
+      960,
+      638
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "荧光灯管",
+        "category": "hazardous",
+        "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+        "uncertain": false,
+        "label": "fluorescent tube",
+        "bbox": [
+          173.44,
+          35.62,
+          959.06,
+          505.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9279662370681763,
+        "similarity": 0.29091188311576843,
+        "category_margin": 0.0199526846408844,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.024472500081174076,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 2,
+      "candidate_count": 1,
+      "region_diagnostics": [
+        {
+          "bbox": [
+            343.1249694824219,
+            556.8749389648438,
+            371.2499694824219,
+            573.7499389648438
+          ],
+          "mask_quality": 0.8924016952514648,
+          "similarities": [
+            0.2398044317960739,
+            0.2539016902446747,
+            0.2630150020122528,
+            0.23412665724754333,
+            0.1865796446800232,
+            0.21465139091014862,
+            0.21413852274417877,
+            0.20641525089740753,
+            0.23309586942195892,
+            0.22593307495117188,
+            0.232946515083313,
+            0.22495512664318085,
+            0.22221043705940247,
+            0.25412583351135254,
+            0.2510320842266083,
+            0.2531721889972687,
+            0.19018684327602386,
+            0.24767111241817474,
+            0.21083517372608185,
+            0.22359250485897064,
+            0.23607400059700012,
+            0.21640153229236603,
+            0.23219594359397888,
+            0.22506682574748993,
+            0.26201051473617554,
+            0.22181549668312073,
+            0.23945902287960052,
+            0.25903376936912537
+          ],
+          "visual_scores": null
+        },
+        {
+          "bbox": [
+            173.43748474121094,
+            35.624996185302734,
+            959.0624389648438,
+            505.3124694824219
+          ],
+          "mask_quality": 0.9279662370681763,
+          "similarities": [
+            0.20409706234931946,
+            0.21710550785064697,
+            0.2306096851825714,
+            0.19577737152576447,
+            0.17296235263347626,
+            0.19904263317584991,
+            0.17642110586166382,
+            0.16767239570617676,
+            0.22259323298931122,
+            0.21400992572307587,
+            0.2809348404407501,
+            0.29091188311576843,
+            0.21138347685337067,
+            0.24293306469917297,
+            0.254780113697052,
+            0.25997114181518555,
+            0.14284653961658478,
+            0.20025330781936646,
+            0.18535509705543518,
+            0.20988819003105164,
+            0.18703928589820862,
+            0.18093043565750122,
+            0.2029781937599182,
+            0.20645421743392944,
+            0.22631002962589264,
+            0.22173580527305603,
+            0.27095919847488403,
+            0.2144966721534729
+          ],
+          "visual_scores": null
+        }
+      ],
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "c64bf7c33db625367fd9c5c1a5407ba0adc1777812376a369ddc14095253bae0",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "diagnostic_regions": true,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

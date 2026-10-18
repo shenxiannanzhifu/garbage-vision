@@ -1,0 +1,163 @@
+{
+  "id": "commons-97105978",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:38:03.603317+00:00",
+    "image_id": "d4689f83c12ce1e7d6269a65b27449623e0b61ab96666af9637ef894d0727ee8",
+    "source_sha256": "2d25a232edc074a6feaeae332e17fecc40ec6ddfc87260fcebcec961257b6073",
+    "image_size": [
+      960,
+      540
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": "used tissue",
+        "bbox": [
+          242.81,
+          199.69,
+          452.81,
+          310.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9055846333503723,
+        "similarity": 0.3245791494846344,
+        "category_margin": 0.048666030168533325,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 13.28417320002336,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 2,
+      "candidate_count": 1,
+      "region_diagnostics": [
+        {
+          "bbox": [
+            242.81248474121094,
+            199.68748474121094,
+            452.8124694824219,
+            310.3124694824219
+          ],
+          "mask_quality": 0.9055846333503723,
+          "similarities": [
+            0.2542717456817627,
+            0.233246847987175,
+            0.21670790016651154,
+            0.22319340705871582,
+            0.25367963314056396,
+            0.25476011633872986,
+            0.23782165348529816,
+            0.24613694846630096,
+            0.2588313817977905,
+            0.3245791494846344,
+            0.220026895403862,
+            0.19765760004520416,
+            0.22641342878341675,
+            0.22182045876979828,
+            0.21743743121623993,
+            0.20181143283843994,
+            0.21894779801368713,
+            0.2759131193161011,
+            0.2398979216814041,
+            0.22481510043144226,
+            0.21929657459259033,
+            0.2255542129278183,
+            0.22425636649131775,
+            0.24651235342025757,
+            0.24338257312774658,
+            0.2247748225927353,
+            0.2251889854669571,
+            0.23314005136489868
+          ],
+          "visual_scores": [
+            0.6594831943511963,
+            0.6086490154266357,
+            0.47913360595703125,
+            0.5398401021957397,
+            0.6916348338127136,
+            0.62491375207901,
+            0.6819556355476379,
+            -1.0,
+            0.6744141578674316,
+            -1.0,
+            0.7037697434425354,
+            0.601270854473114,
+            -1.0,
+            0.5783810019493103,
+            0.6701850891113281,
+            0.6342191696166992,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            0.4280441999435425,
+            -1.0,
+            0.44928520917892456,
+            -1.0,
+            0.6021119356155396,
+            0.5174093246459961
+          ]
+        }
+      ],
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+        "visual_support": "36074721e4cb010de1381827e04ae13860acd5f06a0c54507f9ef636a6b5b257"
+      },
+      "config_sha256": "e2d599364ad9c790a07b38135d3fb65bcb09b8ba11fe45b30b0cb57ad321381c",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "diagnostic_regions": true,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "visual_support": "weights/visual-support-b32.npz",
+        "visual_similarity_min": 0.65,
+        "visual_margin_min": 0.04
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

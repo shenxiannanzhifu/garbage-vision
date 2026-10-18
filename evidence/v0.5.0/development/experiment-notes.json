@@ -1,0 +1,15 @@
+{
+  "old_dev_baseline_f1": 0.7017543859649122,
+  "b32_pad_old_dev_f1": 0.7368421052631579,
+  "l14_pad_old_dev_f1": 0.3684210526315789,
+  "visual_reference_extended_dev_f1": 0.6140350877192983,
+  "selected": "b32-context-description",
+  "selected_old_dev_f1": 0.8245614035087719,
+  "selected_extended_dev_f1": 0.8157894736842105,
+  "support_method": "experimental only, not selected",
+  "aborted": [
+    "l14-pad-diagnostics stopped after first image to correct cache key; no aggregate score claimed"
+  ],
+  "threshold_grid_note": "Offline exploration before final candidate; no independent holdout used. Grids do not replay mask-level uncertain-part suppression, so they are approximate screening only. Selected candidate is verified by actual LocalEngine runs.",
+  "source_notes": "Initial descriptive aliases retained beside corresponding predictions; final descriptions in config/local_texts_v2.json. Timing in cached trials is not end-to-end latency."
+}

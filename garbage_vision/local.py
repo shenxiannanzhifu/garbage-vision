@@ -82,10 +82,27 @@ class LocalEngine:
         self.sam=SAM(str(sam_path))
         self.clip,self.preprocess=clip.load(str(clip_path),device=device)
         self.labels=[x['label'] for x in taxonomy['items']]+taxonomy['background_labels']
+        self.support=None;self.excluded_support_group=None
+        if settings.get('visual_support'):
+            from .visual_support import VisualSupport
+            self.support=VisualSupport(ROOT/settings['visual_support'],self.labels,device)
         with torch.inference_mode():
-            features=self.clip.encode_text(clip.tokenize(['a photo of '+x for x in self.labels]).to(device)).float()
+            templates=settings.get('text_templates',['a photo of {}'])
+            aliases=json.loads((ROOT/settings['text_aliases']).read_text(encoding='utf-8')) if settings.get('text_aliases') else {}
+            vectors=[]
+            for template in templates:
+                rows=[]
+                for label in self.labels:
+                    variants=aliases.get(label,[label])
+                    encoded=self.clip.encode_text(clip.tokenize([template.format(x) for x in variants]).to(device)).float()
+                    encoded/=encoded.norm(dim=-1,keepdim=True)
+                    rows.append(encoded.mean(dim=0))
+                features=torch.stack(rows)
+                vectors.append(features/features.norm(dim=-1,keepdim=True))
+            features=torch.stack(vectors).mean(dim=0)
             self.text_features=features/features.norm(dim=-1,keepdim=True)
         self.weight_hashes={p.name:weight_hash(p) for p in [sam_path,clip_path]}
+        if self.support:self.weight_hashes['visual_support']=weight_hash(ROOT/settings['visual_support'])
         self.load_seconds=time.perf_counter()-start
         self.calls=0
 
@@ -98,7 +115,7 @@ class LocalEngine:
             boxes=result.boxes.xyxy.cpu().tolist();qualities=result.boxes.conf.cpu().tolist()
             from PIL import Image
             import numpy as np
-            candidates=[];candidate_masks=[];crops=[];regions=[]
+            candidates=[];candidate_masks=[];crops=[];contexts=[];regions=[]
             masks=result.masks.data.cpu().numpy() if result.masks is not None else []
             for box,quality,mask in zip(boxes,qualities,masks):
                 x1,y1,x2,y2=box
@@ -113,15 +130,34 @@ class LocalEngine:
                 if settings.get('region_input')=='mask-on-gray':
                     mask_image=Image.fromarray((mask.astype(np.uint8)*255)).crop((max(0,x1-pad),max(0,y1-pad),min(width,x2+pad),min(height,y2+pad)))
                     crop=Image.composite(crop,Image.new('RGB',crop.size,(127,127,127)),mask_image)
+                # CLIP 默认中心裁剪会切掉细长物体的两端；可选等比补边保留完整区域。
+                if settings.get('clip_resize_mode')=='letterbox':
+                    from PIL import ImageOps
+                    side=int(self.clip.visual.input_resolution)
+                    crop=ImageOps.pad(crop,(side,side),method=Image.Resampling.BICUBIC,color=(127,127,127))
                 crops.append(self.preprocess(crop));regions.append(((x1,y1,x2,y2),quality,mask))
+                if settings.get('context_weight',0)>0:
+                    pad=settings.get('context_padding',.5)*max(bw,bh)
+                    context=source.image.crop((max(0,x1-pad),max(0,y1-pad),min(width,x2+pad),min(height,y2+pad)))
+                    if settings.get('clip_resize_mode')=='letterbox':context=ImageOps.pad(context,(side,side),method=Image.Resampling.BICUBIC,color=(127,127,127))
+                    contexts.append(self.preprocess(context))
             # 小批量编码防止复杂图片的区域数造成显存溢出。
-            scores=[]
-            for start in range(0,len(crops),16):
-                tensor=self.torch.stack(crops[start:start+16]).to(self.device)
+            scores=[];visual_scores=[]
+            batch_size=settings.get('clip_batch_size',16)
+            for start in range(0,len(crops),batch_size):
+                tensor=self.torch.stack(crops[start:start+batch_size]).to(self.device)
                 feature=self.clip.encode_image(tensor).float();feature/=feature.norm(dim=-1,keepdim=True)
+                if contexts:
+                    context=self.clip.encode_image(self.torch.stack(contexts[start:start+batch_size]).to(self.device)).float()
+                    context/=context.norm(dim=-1,keepdim=True)
+                    weight=settings['context_weight'];feature=(1-weight)*feature+weight*context
+                    feature/=feature.norm(dim=-1,keepdim=True)
                 scores.extend((feature@self.text_features.T).cpu().tolist())
-            for (box,quality,mask),similarities in zip(regions,scores):
-                item=classify_region(similarities,self.taxonomy,settings)
+                if self.support:visual_scores.extend(self.support.score(feature,self.excluded_support_group).cpu().tolist())
+                else:visual_scores.extend([None]*len(feature))
+            from .visual_support import classify_supported_region
+            for (box,quality,mask),similarities,visual in zip(regions,scores,visual_scores):
+                item=classify_supported_region(similarities,visual,self.taxonomy,settings,classify_region)
                 if item:
                     item.bbox=tuple(round(v,2) for v in box);item.mask_quality=quality;candidates.append(item);candidate_masks.append(mask)
             candidate_count=len(candidates)
@@ -130,12 +166,26 @@ class LocalEngine:
             kept=[]
             for item in sorted(candidates,key=lambda x:x.similarity,reverse=True):
                 if not any(box_iou(item.bbox,x.bbox)>settings['duplicate_iou'] for x in kept):kept.append(item)
+            scene_item=None
+            if settings.get('image_fallback') and not any(x.category for x in kept):
+                from PIL import ImageOps
+                side=int(self.clip.visual.input_resolution)
+                whole=ImageOps.pad(source.image,(side,side),method=Image.Resampling.BICUBIC,color=(127,127,127))
+                feature=self.clip.encode_image(self.preprocess(whole).unsqueeze(0).to(self.device)).float()
+                feature/=feature.norm(dim=-1,keepdim=True)
+                scene_item=classify_region((feature@self.text_features.T)[0].cpu().tolist(),self.taxonomy,settings)
+                if scene_item and scene_item.category:
+                    scene_item.reason+=' 整图分类结果；未获得可靠的物品定位，不用于计数。'
+                    kept.append(scene_item)
             elapsed=time.perf_counter()-started;warm=self.calls>0;self.calls+=1
             return InferenceResult(image_id=source.image_id,source_sha256=source.source_sha256,image_size=source.image.size,
-                method='local',model='SAM2.1-tiny + CLIP ViT-B/32',status='success',items=kept[:settings['max_objects']],
+                method='local',model='SAM2.1-tiny + CLIP '+settings.get('clip_model_name','ViT-B/32'),status='success',items=kept[:settings['max_objects']],
                 elapsed_seconds=elapsed,load_seconds=0 if warm else self.load_seconds,cache_hit=warm,
                 metadata={'device':self.device,'region_count':len(boxes),'candidate_count':candidate_count,
+                    **({'region_diagnostics':[{'bbox':list(box),'mask_quality':quality,'similarities':values,'visual_scores':visual}
+                        for (box,quality,_),values,visual in zip(regions,scores,visual_scores)]} if settings.get('diagnostic_regions') else {}),
                     'suppressed_uncertain_parts':suppressed,
+                    'image_fallback_used':bool(scene_item and scene_item.category),
                     'truncated':len(kept)>settings['max_objects'],'weight_sha256':self.weight_hashes,
                     'config_sha256':fingerprint(settings),'rules_sha256':fingerprint(self.taxonomy),
                     'config':settings,'score_note':'mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。'})
@@ -151,6 +201,7 @@ def infer_local(source,settings=None):
     requested=settings['device'];device=('cuda:0' if torch.cuda.is_available() else 'cpu') if requested=='auto' else requested
     def run(target):
         paths=[ROOT/settings[k] for k in ['sam_weights','clip_weights']]
+        if settings.get('visual_support'):paths.append(ROOT/settings['visual_support'])
         state=tuple((p.stat().st_size,p.stat().st_mtime_ns) if p.exists() else (0,0) for p in paths)
         with _creation_lock:
             engine=_engine(json.dumps(settings,sort_keys=True),json.dumps(taxonomy,sort_keys=True),target,state)

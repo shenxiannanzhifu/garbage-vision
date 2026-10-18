@@ -1,0 +1,149 @@
+{
+  "id": "commons-10279384",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:28:27.140025+00:00",
+    "image_id": "fb82138fc8c9d904c505bb093365052749922a9d8cdcf8eb061b18baf4bd69e2",
+    "source_sha256": "4d77a914ab81ac888d4fdc216a6a7b514a142dd2f17895bcdf641c574f4e8cfc",
+    "image_size": [
+      960,
+      1445
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-L/14",
+    "status": "success",
+    "items": [],
+    "elapsed_seconds": 0.03259810002055019,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 3,
+      "candidate_count": 0,
+      "region_diagnostics": [
+        {
+          "bbox": [
+            365.4833984375,
+            800.1123046875,
+            718.2666015625,
+            1143.017578125
+          ],
+          "mask_quality": 0.9207978248596191,
+          "similarities": [
+            0.13323692977428436,
+            0.14918746054172516,
+            0.13921065628528595,
+            0.12321307510137558,
+            0.10654908418655396,
+            0.14036765694618225,
+            0.11980929225683212,
+            0.09732946753501892,
+            0.10825785994529724,
+            0.10097313672304153,
+            0.24929924309253693,
+            0.22194021940231323,
+            0.11305428296327591,
+            0.16169805824756622,
+            0.259110689163208,
+            0.2637326121330261,
+            0.08127369731664658,
+            0.13764908909797668,
+            0.10171183943748474,
+            0.11578730493783951,
+            0.11350812762975693,
+            0.09706044942140579,
+            0.14737850427627563,
+            0.13985389471054077,
+            0.17207904160022736,
+            0.16678312420845032,
+            0.12909601628780365,
+            0.14717309176921844
+          ]
+        },
+        {
+          "bbox": [
+            365.4833984375,
+            801.5234375,
+            716.85546875,
+            1317.998046875
+          ],
+          "mask_quality": 0.9079310297966003,
+          "similarities": [
+            0.1567489057779312,
+            0.1679738461971283,
+            0.1269037276506424,
+            0.1296168863773346,
+            0.1314481645822525,
+            0.14600986242294312,
+            0.13675211369991302,
+            0.10805230587720871,
+            0.09354705363512039,
+            0.09703830629587173,
+            0.2368251532316208,
+            0.21666371822357178,
+            0.10954086482524872,
+            0.14883795380592346,
+            0.2603599429130554,
+            0.2600429654121399,
+            0.0832502692937851,
+            0.13418354094028473,
+            0.10511159896850586,
+            0.10261105000972748,
+            0.10676634311676025,
+            0.10706650465726852,
+            0.13747148215770721,
+            0.13853716850280762,
+            0.17350365221500397,
+            0.15749892592430115,
+            0.1298721879720688,
+            0.14383356273174286
+          ]
+        }
+      ],
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+      },
+      "config_sha256": "1eadbf96da8c47e7a1c6fd699283a60a87aaacbb17ae094b7df0298ddc249e68",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-L-14.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "diagnostic_regions": true,
+        "clip_resize_mode": "letterbox",
+        "clip_model_name": "ViT-L/14",
+        "clip_batch_size": 8,
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ]
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

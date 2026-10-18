@@ -1,0 +1,1728 @@
+{
+  "variant": "l14-pad",
+  "config": {
+    "backend": "sam2-clip",
+    "region_input": "crop",
+    "crop_n_layers": 1,
+    "max_area_fraction": 0.95,
+    "sam_weights": "weights/sam2.1_t.pt",
+    "clip_weights": "weights/ViT-L-14.pt",
+    "device": "auto",
+    "points_stride": 24,
+    "points_batch_size": 32,
+    "mask_score_min": 0.8,
+    "similarity_min": 0.28,
+    "category_margin_min": 0.018,
+    "min_box_side": 8,
+    "min_area_fraction": 0.0002,
+    "duplicate_iou": 0.7,
+    "part_mask_containment": 0.95,
+    "part_max_area_ratio": 0.25,
+    "part_similarity_gap": 0.015,
+    "max_objects": 40,
+    "crop_padding": 0.05,
+    "clip_resize_mode": "letterbox",
+    "clip_model_name": "ViT-L/14",
+    "clip_batch_size": 8,
+    "text_templates": [
+      "a photo of {}.",
+      "a close-up photo of {}.",
+      "a photo of one or more {}."
+    ]
+  },
+  "records": [
+    {
+      "id": "commons-79273563",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:05.595737+00:00",
+        "image_id": "99b2c11fbe3e96289f278ede70d12241aac251e44e6542392110b901664e45cb",
+        "source_sha256": "01ed14b1e695bd913b9af1c14dbd2b302b7d0a7bcf8b35aa8be67be6e0ed178d",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.5188686999026686,
+        "load_seconds": 6.72241730010137,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 46,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-5539252",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:05.709915+00:00",
+        "image_id": "e8ca41620f12beed447ebf18ac4dfd018df1509171584a9a1e221d1832f01ffc",
+        "source_sha256": "76fa0209464eabf62e4085a290ed074ab344ef706b3eb81ec33e5f1b56dd5d29",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：白炽灯泡；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "incandescent light bulb",
+            "bbox": [
+              46.87,
+              215.62,
+              144.37,
+              299.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9417245984077454,
+            "similarity": 0.30677342414855957,
+            "category_margin": 0.020681142807006836
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：白炽灯泡；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "incandescent light bulb",
+            "bbox": [
+              0,
+              315.94,
+              77.81,
+              415.31
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9477994441986084,
+            "similarity": 0.2815706133842468,
+            "category_margin": 0.024061918258666992
+          }
+        ],
+        "elapsed_seconds": 0.05209810007363558,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 4,
+          "candidate_count": 2,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-98013794",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:05.984487+00:00",
+        "image_id": "697b3e7a48816e9b4a5e9702de9dfd0ce9b0d56840d87b06017f6fed4adc2dc2",
+        "source_sha256": "afcf776382aa5ee8ee28a0a78559846de7da7c95c5d71985d47bcd5c384530b9",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              378.75,
+              328.12,
+              434.06,
+              373.12
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9265101552009583,
+            "similarity": 0.3105638027191162,
+            "category_margin": 0.05439832806587219
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              293.44,
+              492.19,
+              401.25,
+              549.37
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9473708868026733,
+            "similarity": 0.29340359568595886,
+            "category_margin": 0.07222738862037659
+          }
+        ],
+        "elapsed_seconds": 0.20824009994976223,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 22,
+          "candidate_count": 2,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-179028310",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:06.090328+00:00",
+        "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+        "source_sha256": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              676.87,
+              310.31,
+              785.62,
+              406.87
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9026166796684265,
+            "similarity": 0.2886020839214325,
+            "category_margin": 0.08067987859249115
+          }
+        ],
+        "elapsed_seconds": 0.05091340001672506,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 6,
+          "candidate_count": 1,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-10578610",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:06.424523+00:00",
+        "image_id": "5f55924d797d28009337b7cc0de932ea84acb13050bec66476fc4761b3cd861f",
+        "source_sha256": "8c7302c9eec8912e0cfd555269e18ee4d247e422375d13617b6448e833888ccb",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              505.31,
+              42.19,
+              565.31,
+              104.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9158703088760376,
+            "similarity": 0.3046092689037323,
+            "category_margin": 0.06187836825847626
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              842.81,
+              330.94,
+              959.06,
+              453.75
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9138196706771851,
+            "similarity": 0.2948903739452362,
+            "category_margin": 0.07820643484592438
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              462.19,
+              413.44,
+              510.94,
+              474.37
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9313767552375793,
+            "similarity": 0.29027384519577026,
+            "category_margin": 0.06782573461532593
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              732.19,
+              621.56,
+              959.06,
+              720.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9496895670890808,
+            "similarity": 0.28834542632102966,
+            "category_margin": 0.07662945985794067
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              59.06,
+              40.31,
+              119.06,
+              81.56
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.935286819934845,
+            "similarity": 0.2874518632888794,
+            "category_margin": 0.0623653382062912
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              687.19,
+              489.37,
+              768.75,
+              559.69
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9247803092002869,
+            "similarity": 0.2862766981124878,
+            "category_margin": 0.05754028260707855
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              533.44,
+              210.94,
+              705.0,
+              315.94
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9020906686782837,
+            "similarity": 0.28505831956863403,
+            "category_margin": 0.08211703598499298
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              120.0,
+              30.94,
+              194.06,
+              65.62
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8926833868026733,
+            "similarity": 0.2835797667503357,
+            "category_margin": 0.06643810868263245
+          }
+        ],
+        "elapsed_seconds": 0.2730996001046151,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 25,
+          "candidate_count": 8,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-91813490",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:06.566905+00:00",
+        "image_id": "3b1fd76e3a1097e57b3b3bd1f8f06f28e7bd8b1407c636850403cb98f10bef54",
+        "source_sha256": "0a1e213a7fd9d021fff1ade7e7d571164d8edaf2774df9da3d14af337937ddbb",
+        "image_size": [
+          960,
+          640
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.08900270005688071,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 9,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-136457085",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:06.909513+00:00",
+        "image_id": "81deebb690eabed6886e78cd19ad4799f8be468c2c49be90258ca432dd451ea1",
+        "source_sha256": "b43de08a943477dd052b0b63c04d0a55b252b473ae86c97218ad63df3a196e7a",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "vegetable peels",
+            "bbox": [
+              374.06,
+              380.62,
+              430.31,
+              445.31
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9258456826210022,
+            "similarity": 0.2989935278892517,
+            "category_margin": 0.00575566291809082
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "used tissue",
+            "bbox": [
+              299.06,
+              91.87,
+              497.81,
+              290.62
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9830474257469177,
+            "similarity": 0.29052501916885376,
+            "category_margin": 0.0040634870529174805
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              840.0,
+              522.19,
+              914.06,
+              675.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9497096538543701,
+            "similarity": 0.28509581089019775,
+            "category_margin": 0.04024863243103027
+          }
+        ],
+        "elapsed_seconds": 0.28080189996398985,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 29,
+          "candidate_count": 3,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-136457084",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:07.404589+00:00",
+        "image_id": "4b4b5631d62581b927bfc74323597c1cbc65bc91965f3f27beca4aea9808b91f",
+        "source_sha256": "ef93b0f13a4e96632cfea3b5c21f0b4fcc9ccd0d13198f3f56b8bbf0869b9641",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [
+          {
+            "name": "果核",
+            "category": "kitchen",
+            "reason": "普通水果果核属于厨余垃圾。",
+            "uncertain": false,
+            "label": "apple core",
+            "bbox": [
+              606.56,
+              109.69,
+              711.56,
+              185.62
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.917404055595398,
+            "similarity": 0.32092970609664917,
+            "category_margin": 0.053766101598739624
+          },
+          {
+            "name": "菜皮菜叶",
+            "category": "kitchen",
+            "reason": "日常果蔬残余属于厨余垃圾。",
+            "uncertain": false,
+            "label": "vegetable peels",
+            "bbox": [
+              838.12,
+              638.44,
+              959.06,
+              719.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9588247537612915,
+            "similarity": 0.2989164888858795,
+            "category_margin": 0.020775288343429565
+          },
+          {
+            "name": "菜皮菜叶",
+            "category": "kitchen",
+            "reason": "日常果蔬残余属于厨余垃圾。",
+            "uncertain": false,
+            "label": "vegetable peels",
+            "bbox": [
+              711.56,
+              75.0,
+              840.0,
+              194.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9103987216949463,
+            "similarity": 0.2951948642730713,
+            "category_margin": 0.04415398836135864
+          },
+          {
+            "name": "果核",
+            "category": "kitchen",
+            "reason": "普通水果果核属于厨余垃圾。",
+            "uncertain": false,
+            "label": "apple core",
+            "bbox": [
+              848.44,
+              515.62,
+              959.06,
+              606.56
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9313632249832153,
+            "similarity": 0.2923387289047241,
+            "category_margin": 0.018976271152496338
+          }
+        ],
+        "elapsed_seconds": 0.43570299993734807,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 45,
+          "candidate_count": 4,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-185140035",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:07.770806+00:00",
+        "image_id": "c940ae78c91a53526f068c0b73a0a8e61603347663ae5a168d3b32e6761179e8",
+        "source_sha256": "2fb19710bdfdd8c5d8ea56cfd8a85476738988003db427017f2141c641fbbfd9",
+        "image_size": [
+          960,
+          747
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [
+          {
+            "name": "果核",
+            "category": "kitchen",
+            "reason": "普通水果果核属于厨余垃圾。",
+            "uncertain": false,
+            "label": "apple core",
+            "bbox": [
+              61.87,
+              386.25,
+              167.81,
+              546.56
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9325197339057922,
+            "similarity": 0.29991647601127625,
+            "category_margin": 0.08476631343364716
+          }
+        ],
+        "elapsed_seconds": 0.29659599997103214,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 24,
+          "candidate_count": 1,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-48773002",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:07.948495+00:00",
+        "image_id": "b7fa34c726c3f6132584dabd458fc551b7ff5382ac77435c8aab126bec924374",
+        "source_sha256": "2447968baf12c61fb32b571c9df01841ad8eae04420b2b262868a55146d50f2a",
+        "image_size": [
+          880,
+          579
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.122895099921152,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 12,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-44824808",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:08.271256+00:00",
+        "image_id": "7412ba01effc054710d34a23b8b07312ded74e0eca9a23d27ecb2356171c6493",
+        "source_sha256": "8b2aa3c0dbda1fc7380390d9b16b141dacc137473389c146331c8f35d1144a28",
+        "image_size": [
+          960,
+          936
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [
+          {
+            "name": "菜皮菜叶",
+            "category": "kitchen",
+            "reason": "日常果蔬残余属于厨余垃圾。",
+            "uncertain": false,
+            "label": "vegetable peels",
+            "bbox": [
+              269.06,
+              318.75,
+              356.25,
+              541.87
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9431442618370056,
+            "similarity": 0.2894480526447296,
+            "category_margin": 0.06797793507575989
+          }
+        ],
+        "elapsed_seconds": 0.25063619995489717,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 26,
+          "candidate_count": 1,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-56167128",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:08.415791+00:00",
+        "image_id": "c3baeea4b5c956f7f125d3abc783f733815676df2cb7971f75ae84d376f22032",
+        "source_sha256": "6811fab5cb7b9e1a953b445cd924d03346793ff0e394b05c1c7fc304b3b20216",
+        "image_size": [
+          960,
+          636
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.09550980001222342,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 10,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-79335127",
+      "expected_categories": [
+        "other"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:08.691301+00:00",
+        "image_id": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+        "source_sha256": "257f50d5a96646f15798583d98c203168a408b8f6580f58fd5c76c291b4e8de7",
+        "image_size": [
+          960,
+          1280
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [
+          {
+            "name": "烟蒂",
+            "category": "other",
+            "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": false,
+            "label": "cigarette butt",
+            "bbox": [
+              456.25,
+              637.5,
+              618.75,
+              792.5
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9047363996505737,
+            "similarity": 0.29868435859680176,
+            "category_margin": 0.03328061103820801
+          }
+        ],
+        "elapsed_seconds": 0.18651420006062835,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 19,
+          "candidate_count": 1,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-29411619",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:08.936427+00:00",
+        "image_id": "8dd6e8f1aa05b853225262f7dde0dfc1b249ff22a5488b3bc2212cb0ba31a715",
+        "source_sha256": "d0fddef7750c0927f47b7a92dd7cfc15597b730caac316fbff4eb12b73a07bbf",
+        "image_size": [
+          960,
+          1707
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.09046560002025217,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 8,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-80933087",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:09.004659+00:00",
+        "image_id": "55f9892fbe11eaec94acd00c2855d9690c1743c8aa26bc2764d9fc25529a1142",
+        "source_sha256": "f74c919472eb0d0435bfa9be8de6b88178b346983ce812aed6ca77d8ae67685c",
+        "image_size": [
+          960,
+          638
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.024090099963359535,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 2,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-10279384",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:09.083918+00:00",
+        "image_id": "fb82138fc8c9d904c505bb093365052749922a9d8cdcf8eb061b18baf4bd69e2",
+        "source_sha256": "4d77a914ab81ac888d4fdc216a6a7b514a142dd2f17895bcdf641c574f4e8cfc",
+        "image_size": [
+          960,
+          1445
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.02973750000819564,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 3,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-9690809",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:09.224198+00:00",
+        "image_id": "0913354834d433ec233729c1e7f3485552c293c7c235b9319a125332a72d22f1",
+        "source_sha256": "9f682000dc8e33b4c779e5e8b0914e7c6c644466b61441b6f13d540bf730aaf2",
+        "image_size": [
+          960,
+          1435
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.08886579994577914,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 9,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-701056",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:09.272580+00:00",
+        "image_id": "f326967dd4a3d366deba1a021b2e14ac42804af9f472611ac5a23b3631bf8369",
+        "source_sha256": "d4e7c4b99ad7739eedf23aa5ae073d1ebcc12752dbc9f4c70861640b2352cde6",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.017277900013141334,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 2,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-39198884",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:26:09.393520+00:00",
+        "image_id": "11f5784323499985587b0dda77b1464b410c5f3449275ecdf8d3da6fc29613d0",
+        "source_sha256": "bf2e2bb063174db4202addf03222463664044ca32a973363fefe499470328bfa",
+        "image_size": [
+          960,
+          540
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-L/14",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 0.07772349996957928,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 8,
+          "candidate_count": 0,
+          "suppressed_uncertain_parts": [],
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-L-14.pt": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836"
+          },
+          "config_sha256": "87c1652344aa191dd2acf8d9ae11f42b2faccfa86961c49011b566a8efe9c9ac",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "region_input": "crop",
+            "crop_n_layers": 1,
+            "max_area_fraction": 0.95,
+            "sam_weights": "weights/sam2.1_t.pt",
+            "clip_weights": "weights/ViT-L-14.pt",
+            "device": "auto",
+            "points_stride": 24,
+            "points_batch_size": 32,
+            "mask_score_min": 0.8,
+            "similarity_min": 0.28,
+            "category_margin_min": 0.018,
+            "min_box_side": 8,
+            "min_area_fraction": 0.0002,
+            "duplicate_iou": 0.7,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "max_objects": 40,
+            "crop_padding": 0.05,
+            "clip_resize_mode": "letterbox",
+            "clip_model_name": "ViT-L/14",
+            "clip_batch_size": 8,
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    }
+  ],
+  "timing_note": "SAM regions cached from real inference; elapsed times are NOT full-pipeline benchmarks."
+}

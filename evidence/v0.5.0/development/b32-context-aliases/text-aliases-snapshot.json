@@ -1,0 +1,98 @@
+{
+  "plastic bottle": [
+    "plastic bottle",
+    "empty plastic drink bottle",
+    "crushed plastic bottle",
+    "plastic bottles for recycling"
+  ],
+  "glass bottle": [
+    "glass bottle",
+    "empty glass beverage bottle",
+    "glass beer bottles",
+    "transparent glass bottle"
+  ],
+  "metal can": [
+    "metal can",
+    "aluminum beverage can",
+    "empty soda can",
+    "crushed drink can"
+  ],
+  "cardboard box": [
+    "cardboard box",
+    "open cardboard carton",
+    "corrugated cardboard packaging",
+    "flattened cardboard box"
+  ],
+  "banana peel": [
+    "banana peel",
+    "discarded banana skin",
+    "peeled banana skin",
+    "yellow banana peel"
+  ],
+  "apple core": [
+    "apple core",
+    "eaten apple core",
+    "leftover apple core",
+    "fruit core"
+  ],
+  "food waste": [
+    "food waste",
+    "food scraps",
+    "discarded food leftovers",
+    "kitchen food waste"
+  ],
+  "vegetable peels": [
+    "vegetable peels",
+    "vegetable scraps",
+    "discarded vegetable leaves",
+    "vegetable kitchen waste"
+  ],
+  "cigarette butt": [
+    "cigarette butt",
+    "used cigarette filter",
+    "discarded cigarette stubs",
+    "cigarette butts in an ashtray"
+  ],
+  "used tissue": [
+    "used tissue",
+    "crumpled paper tissue",
+    "used toilet paper",
+    "discarded facial tissue"
+  ],
+  "compact fluorescent lamp": [
+    "compact fluorescent lamp",
+    "spiral fluorescent light bulb",
+    "energy saving fluorescent bulb",
+    "CFL light bulb"
+  ],
+  "fluorescent tube": [
+    "fluorescent tube",
+    "fluorescent light tube",
+    "long fluorescent lamp",
+    "linear fluorescent tube light"
+  ],
+  "medicine pills": [
+    "medicine pills",
+    "tablets of medicine",
+    "pharmaceutical pills",
+    "medicine capsules"
+  ],
+  "battery": [
+    "battery",
+    "AA batteries",
+    "alkaline batteries",
+    "button cell batteries"
+  ],
+  "incandescent light bulb": [
+    "incandescent light bulb",
+    "tungsten filament light bulb",
+    "clear glass incandescent bulb",
+    "traditional filament light bulb"
+  ],
+  "LED light bulb": [
+    "LED light bulb",
+    "LED lamp",
+    "white LED bulb",
+    "light emitting diode bulb"
+  ]
+}

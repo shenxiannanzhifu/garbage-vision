@@ -6,7 +6,7 @@ import urllib.request
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--split',choices=['dev','test','all'],default='dev');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--split',choices=['dev','test','quality_dev','quality_test','all'],default='dev');args=parser.parse_args()
     splits=['dev','test'] if args.split=='all' else [args.split]
     for split in splits:
         for row in json.loads((ROOT/f'data/manifests/{split}.json').read_text(encoding='utf-8')):

@@ -1,0 +1,118 @@
+{
+  "id": "commons-98013794",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:21:51.523183+00:00",
+    "image_id": "697b3e7a48816e9b4a5e9702de9dfd0ce9b0d56840d87b06017f6fed4adc2dc2",
+    "source_sha256": "afcf776382aa5ee8ee28a0a78559846de7da7c95c5d71985d47bcd5c384530b9",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "plastic bottle",
+        "bbox": [
+          293.44,
+          492.19,
+          401.25,
+          549.37
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9473708868026733,
+        "similarity": 0.3278979957103729,
+        "category_margin": 0.04440164566040039
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          689.06,
+          0,
+          740.62,
+          29.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9108710885047913,
+        "similarity": 0.2901386022567749,
+        "category_margin": 0.018674612045288086
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：荧光灯管；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "fluorescent tube",
+        "bbox": [
+          936.56,
+          82.5,
+          959.06,
+          212.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9562403559684753,
+        "similarity": 0.28748077154159546,
+        "category_margin": 0.016401678323745728
+      }
+    ],
+    "elapsed_seconds": 13.525876299943775,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 22,
+      "candidate_count": 3,
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "a80c58e17c928965e45b1e9221e83da82dffb29d3fc0dae33604730ed8e87e18",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ]
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "id": "commons-10279384",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:44:08.109921+00:00",
+    "image_id": "fb82138fc8c9d904c505bb093365052749922a9d8cdcf8eb061b18baf4bd69e2",
+    "source_sha256": "4d77a914ab81ac888d4fdc216a6a7b514a142dd2f17895bcdf641c574f4e8cfc",
+    "image_size": [
+      960,
+      1445
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          365.48,
+          801.52,
+          716.86,
+          1318.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9079310297966003,
+        "similarity": 0.34393441677093506,
+        "category_margin": 0.008298754692077637,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          365.48,
+          800.11,
+          718.27,
+          1143.02
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9207978248596191,
+        "similarity": 0.32058849930763245,
+        "category_margin": 0.031044483184814453,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.04456810001283884,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 3,
+      "candidate_count": 2,
+      "region_diagnostics": [
+        {
+          "bbox": [
+            365.4833984375,
+            800.1123046875,
+            718.2666015625,
+            1143.017578125
+          ],
+          "mask_quality": 0.9207978248596191,
+          "similarities": [
+            0.20890922844409943,
+            0.21197538077831268,
+            0.22565345466136932,
+            0.1846589893102646,
+            0.17109473049640656,
+            0.1944921314716339,
+            0.17629055678844452,
+            0.15783213078975677,
+            0.1943809539079666,
+            0.18359161913394928,
+            0.289544016122818,
+            0.25388357043266296,
+            0.22612471878528595,
+            0.2317158728837967,
+            0.3048512637615204,
+            0.32058849930763245,
+            0.1580902338027954,
+            0.1861446052789688,
+            0.1755252182483673,
+            0.19689302146434784,
+            0.1739814728498459,
+            0.18400028347969055,
+            0.19725002348423004,
+            0.1966652125120163,
+            0.24968354403972626,
+            0.2376430779695511,
+            0.2293466478586197,
+            0.21663963794708252
+          ],
+          "visual_scores": null
+        },
+        {
+          "bbox": [
+            365.4833984375,
+            801.5234375,
+            716.85546875,
+            1317.998046875
+          ],
+          "mask_quality": 0.9079310297966003,
+          "similarities": [
+            0.21651002764701843,
+            0.22270482778549194,
+            0.21646881103515625,
+            0.19275100529193878,
+            0.19897617399692535,
+            0.20587024092674255,
+            0.17447081208229065,
+            0.15288780629634857,
+            0.19603201746940613,
+            0.1838947832584381,
+            0.3356356620788574,
+            0.28453898429870605,
+            0.23304058611392975,
+            0.23258787393569946,
+            0.343324214220047,
+            0.34393441677093506,
+            0.16311028599739075,
+            0.19100721180438995,
+            0.18876202404499054,
+            0.1914045810699463,
+            0.180198535323143,
+            0.183893084526062,
+            0.2117522656917572,
+            0.21045583486557007,
+            0.23429958522319794,
+            0.24974410235881805,
+            0.23679041862487793,
+            0.22051027417182922
+          ],
+          "visual_scores": null
+        }
+      ],
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "c64bf7c33db625367fd9c5c1a5407ba0adc1777812376a369ddc14095253bae0",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "diagnostic_regions": true,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

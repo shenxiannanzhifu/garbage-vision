@@ -1,0 +1,135 @@
+{
+  "id": "commons-79335127",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:24:09.047703+00:00",
+    "image_id": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+    "source_sha256": "257f50d5a96646f15798583d98c203168a408b8f6580f58fd5c76c291b4e8de7",
+    "image_size": [
+      960,
+      1280
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          456.25,
+          637.5,
+          618.75,
+          792.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9047363996505737,
+        "similarity": 0.33197107911109924,
+        "category_margin": 0.038957417011260986
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          262.5,
+          617.5,
+          541.25,
+          943.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9479184150695801,
+        "similarity": 0.32025474309921265,
+        "category_margin": 0.020453184843063354
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          253.75,
+          610.0,
+          465.0,
+          770.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9492380023002625,
+        "similarity": 0.3167501389980316,
+        "category_margin": 0.009903967380523682
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          595.0,
+          2.5,
+          647.5,
+          38.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9396579265594482,
+        "similarity": 0.2851598262786865,
+        "category_margin": 0.012759894132614136
+      }
+    ],
+    "elapsed_seconds": 13.708463900024071,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 19,
+      "candidate_count": 4,
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "a80c58e17c928965e45b1e9221e83da82dffb29d3fc0dae33604730ed8e87e18",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ]
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

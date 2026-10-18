@@ -1,0 +1,220 @@
+{
+  "id": "commons-136457085",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:22:46.487269+00:00",
+    "image_id": "81deebb690eabed6886e78cd19ad4799f8be468c2c49be90258ca432dd451ea1",
+    "source_sha256": "b43de08a943477dd052b0b63c04d0a55b252b473ae86c97218ad63df3a196e7a",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          624.37,
+          158.44,
+          797.81,
+          335.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9775556325912476,
+        "similarity": 0.3338202238082886,
+        "category_margin": 0.05556824803352356
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          540.94,
+          38.44,
+          801.56,
+          188.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9406753778457642,
+        "similarity": 0.328927218914032,
+        "category_margin": 0.06546610593795776
+      },
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "plastic bottle",
+        "bbox": [
+          840.0,
+          522.19,
+          914.06,
+          675.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9497096538543701,
+        "similarity": 0.32068485021591187,
+        "category_margin": 0.02261105179786682
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          719.06,
+          38.44,
+          818.44,
+          251.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8851667046546936,
+        "similarity": 0.3131510317325592,
+        "category_margin": 0.04871836304664612
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          541.87,
+          59.06,
+          711.56,
+          187.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9661986231803894,
+        "similarity": 0.30349117517471313,
+        "category_margin": 0.05224648118019104
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          622.5,
+          113.44,
+          756.56,
+          203.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9564828276634216,
+        "similarity": 0.2940967082977295,
+        "category_margin": 0.03328695893287659
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：玻璃瓶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "glass bottle",
+        "bbox": [
+          374.06,
+          380.62,
+          430.31,
+          445.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9258456826210022,
+        "similarity": 0.29062920808792114,
+        "category_margin": 0.011143088340759277
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：食物残余；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "food waste",
+        "bbox": [
+          90.94,
+          285.94,
+          300.0,
+          585.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9800227880477905,
+        "similarity": 0.28247591853141785,
+        "category_margin": 0.009163498878479004
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          279.37,
+          530.62,
+          315.94,
+          570.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8965294361114502,
+        "similarity": 0.2801918685436249,
+        "category_margin": 0.033777087926864624
+      }
+    ],
+    "elapsed_seconds": 13.78089930000715,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 29,
+      "candidate_count": 9,
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "a80c58e17c928965e45b1e9221e83da82dffb29d3fc0dae33604730ed8e87e18",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ]
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}
