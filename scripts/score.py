@@ -18,7 +18,11 @@ def main():
     manifest = json.loads(raw)
     evidence = json.loads(args.predictions.read_text(encoding='utf-8'))
     manifest_hash = hashlib.sha256(raw).hexdigest()
-    if evidence['manifest_sha256'] != manifest_hash:
+    # Git 可转换 CRLF/LF；只容忍换行编码不同，原始图像字节哈希仍必须完全一致。
+    lf = raw.decode('utf-8').replace('\r\n','\n')
+    equivalent_hashes = {manifest_hash, hashlib.sha256(lf.encode()).hexdigest(),
+                         hashlib.sha256(lf.replace('\n','\r\n').encode()).hexdigest()}
+    if evidence['manifest_sha256'] not in equivalent_hashes:
         raise SystemExit('预测的清单哈希与当前清单不符，拒绝评分。')
     report = score_records(manifest, evidence['records'])
     report.update(manifest_sha256=manifest_hash,

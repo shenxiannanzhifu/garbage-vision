@@ -14,6 +14,11 @@ def file_hash(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def text_hash(path):
+    """源码按 UTF-8/LF 校验，避免 Git 的 Windows CRLF 转换导致同一提交无法复现。"""
+    return hashlib.sha256(Path(path).read_text(encoding='utf-8').encode('utf-8')).hexdigest()
+
+
 def public_api_config(settings=None):
     """显式白名单，避免把密钥、密钥摘要或完整环境变量写入证据。"""
     s = settings or api_settings()
@@ -57,9 +62,10 @@ def freeze_experiment(destination, split, ids=None):
     settings = local_settings()
     frozen = {'created_at_utc': datetime.now(timezone.utc).isoformat(), 'split': split,
               'git_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
-              'manifest_sha256': file_hash(manifest_path), 'manifest_path': str(manifest_path.relative_to(ROOT)),
+              'manifest_sha256': file_hash(manifest_path), 'manifest_text_sha256': text_hash(manifest_path),
+              'manifest_path': str(manifest_path.relative_to(ROOT)), 'text_hash_format': 'utf8-lf-v1',
               'selected_ids': [r['id'] for r in sources], 'images': sources,
-              'files': {p.relative_to(ROOT).as_posix(): file_hash(p) for p in code},
+              'files': {p.relative_to(ROOT).as_posix(): text_hash(p) for p in code},
               'weights': {settings[k]: weight_hash(ROOT / settings[k]) for k in ('sam_weights', 'clip_weights')},
               'local_config': settings, 'api_config': public_api_config(), 'api_max_attempts': 1,
               'dependencies': {n: version(n) for n in ('torch', 'torchvision', 'ultralytics', 'clip',
@@ -73,10 +79,13 @@ def freeze_experiment(destination, split, ids=None):
 
 def verify_freeze(frozen, method):
     """不接受同一实验偷偷换模型、提示词、评分实现或运行依赖。"""
+    source_hash = text_hash if frozen.get('text_hash_format') == 'utf8-lf-v1' else file_hash
     for rel, expected in frozen['files'].items():
-        if file_hash(ROOT / rel) != expected:
+        if source_hash(ROOT / rel) != expected:
             raise ValueError('冻结后文件被修改：' + rel)
-    if file_hash(ROOT / frozen['manifest_path']) != frozen['manifest_sha256']:
+    current_manifest = ROOT / frozen['manifest_path']
+    if (text_hash(current_manifest) != frozen['manifest_text_sha256'] if 'manifest_text_sha256' in frozen
+            else file_hash(current_manifest) != frozen['manifest_sha256']):
         raise ValueError('数据清单已改变。')
     for package, expected in frozen['dependencies'].items():
         if version(package) != expected:
