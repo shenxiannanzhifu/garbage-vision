@@ -22,7 +22,7 @@ def text_hash(path):
 def public_api_config(settings=None):
     """显式白名单，避免把密钥、密钥摘要或完整环境变量写入证据。"""
     s = settings or api_settings()
-    return {k: getattr(s, k) for k in ('base_url', 'model', 'provider', 'timeout', 'max_tokens', 'use_env_proxy', 'reasoning_effort', 'image_detail')}
+    return {k: getattr(s, k) for k in ('base_url', 'model', 'provider', 'timeout', 'max_tokens', 'use_env_proxy', 'reasoning_effort', 'image_detail', 'image_transport')}
 
 
 def estimate_cost(usage):

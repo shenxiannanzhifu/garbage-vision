@@ -1,0 +1,27 @@
+{
+  "command": "python -m pytest tests -q",
+  "environment": {
+    "RUN_REAL_LOCAL": "1",
+    "CODEX_TEST_TMP": "task workspace temporary directory"
+  },
+  "passed": 61,
+  "seconds": 51.43,
+  "real_gpu_test_included": true,
+  "paid_api_calls_in_test_suite": 0,
+  "source_hashes": {
+    "garbage_vision\\api.py": "14b4a3fef09e82ca1310191f2cd948bb312c868d74ca5f98f34616be9abaab6a",
+    "garbage_vision\\api_normalization.py": "ae38646dc8bba1fdfcb54deae64c0d567448d979b70dcbbc00ce6c61d196ec13",
+    "garbage_vision\\config.py": "796cb60e0fdccb998914b2dca35298175bf185b3f0675663773188e7cbc9737d",
+    "garbage_vision\\evaluation.py": "992385f2ad12e58de9598cd93b1460503345da02493395245ac4df7c69f55d98",
+    "garbage_vision\\experiment.py": "c20d55cfaefedcdc9b9706bf7e98aa0e54eb888b2522c154f76eecd9ff1ddba6",
+    "garbage_vision\\exports.py": "79b3795e8b159c3e5186fb933066bf0bf366f055152623145e6df7fb154dec27",
+    "garbage_vision\\images.py": "ec63dd0278f3f1c014f655db0861927acaddb19ce442200e7ee2def250c895ae",
+    "garbage_vision\\image_transport.py": "e2d123d05595fb416dc10c0f3da2e3e764199dd99925e338771d9622c5bdf7a4",
+    "garbage_vision\\local.py": "839733c0b457a31a356693e2dbcfd5c57a737f5c4ed3f6efbc3b684625866b58",
+    "garbage_vision\\saved_results.py": "94d7e47c10f56727f30e5b32f6bf4bae7643b89654ca638430e48d1a8279217a",
+    "garbage_vision\\schema.py": "a3e03177f6e36e61c6949f70f6dd052752932ae9de057a806920721f1ee9610b",
+    "garbage_vision\\visual_support.py": "4681e794c5941e658f145d4953d01d7dc2a58afdb1c7687dda982de141394c4d",
+    "garbage_vision\\__init__.py": "b5dc4744d4644a6130808011b5c21fd139cde32221c7bae17e22bf22b8582cbb"
+  },
+  "note": "Software verification; not evidence of optimized API compatibility, quality or latency."
+}

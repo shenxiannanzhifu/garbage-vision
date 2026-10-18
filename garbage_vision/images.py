@@ -1,5 +1,5 @@
 """图片上传边界：解码、EXIF 方向校正及统一输入，由网页和 CLI 调用。"""
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import hashlib
 from io import BytesIO
 import warnings
@@ -16,6 +16,7 @@ class ImageInput:
     png: bytes
     image_id: str
     source_sha256: str
+    original_data: bytes = field(default=b'', repr=False)
 
 def decode_image(data: bytes) -> ImageInput:
     """检查真实格式和解压尺寸，返回 RGB 图片；无效文件抛出 ValueError。"""
@@ -39,6 +40,6 @@ def decode_image(data: bytes) -> ImageInput:
         buffer = BytesIO()
         image.save(buffer, format="PNG")
         png = buffer.getvalue()
-        return ImageInput(image, png, hashlib.sha256(png).hexdigest(), hashlib.sha256(data).hexdigest())
+        return ImageInput(image, png, hashlib.sha256(png).hexdigest(), hashlib.sha256(data).hexdigest(), data)
     except (UnidentifiedImageError, OSError, Image.DecompressionBombError, Image.DecompressionBombWarning) as exc:
         raise ValueError("无法读取图片：文件损坏或图像尺寸不安全。") from exc

@@ -1,0 +1,64 @@
+{
+  "id": "commons-88121951",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T15:36:07.835702+00:00",
+    "image_id": "b59a9235a0c0b7cbad7316bbaaf2c9e2a16209bcce04c1e2070ce7fc18940908",
+    "source_sha256": "d4ed820b52feaf7ed397b50374609c46f17fdeae2d40d1b532303794ab571d65",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "苹果核",
+        "category": "kitchen",
+        "reason": "吃剩的苹果核及附着果肉属于厨余垃圾。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 14.966917600017041,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "b59a9235a0c0b7cbad7316bbaaf2c9e2a16209bcce04c1e2070ce7fc18940908",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_0566f0a456c4d7ff016ad4e75e6f208191b0e0c993ca852f81",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2416,
+        "completion_tokens": 47,
+        "total_tokens": 2463
+      },
+      "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"苹果核\",\"reason\":\"吃剩的苹果核及附着果肉属于厨余垃圾。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "578b07c838e946c5c844ae22c901f0f57020edaf91fadcc3d167bedc00a70178",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.03255,
+  "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+}

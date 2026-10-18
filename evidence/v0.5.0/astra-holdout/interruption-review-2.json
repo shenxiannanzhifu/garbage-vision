@@ -1,0 +1,49 @@
+{
+  "authorization": {
+    "max_calls": 40,
+    "budget_nex": 4,
+    "no_automatic_retries": true
+  },
+  "reviewed_failures": {
+    "commons-128095601": {
+      "result_sha256": "bfbf8ff724f5471949d4573b53b9f700e68fdbbe5746d2e83ef8bc1d298e36e2",
+      "marker_sha256": "35e01d9384c23bddba6156e15451d3da5b19fd23438370dc474b724fdc4cbaac",
+      "action": "skip_without_retry",
+      "actual_cost_nex": 0.009252,
+      "accounting": "Retain full original reservation 0.218625 NEX for budget guard. Original result and unknown usage remain unchanged.",
+      "billing_source": "https://www.nexavlinks.com/logs",
+      "billing_match": "Only Chat Completions / gpt-6-astra / low entry in request time window; no request ID was returned locally.",
+      "billing_local_time": "2026-10-18 23:22:29",
+      "timezone": "Asia/Shanghai",
+      "input_tokens": 2380,
+      "output_tokens": 38,
+      "endpoint": "/v1/chat/completions",
+      "group": "[自建] ASTRA专属分组",
+      "diagnosis": "Local httpx RequestError after 48.04s; exact transport cause unavailable. Gateway billed a matching request. Read-only models endpoint now responds via configured proxy and direct.",
+      "result_recovered": false
+    },
+    "commons-95896968": {
+      "result_sha256": "b1c81a39a7522ef40c7086831364929c7af9b71ee41d854d07a7e9bde93500b4",
+      "marker_sha256": "b0780bf383e0961cb17422188bff5b8dc1edceed4c1c149ab8e820864ba5d772",
+      "action": "skip_without_retry",
+      "actual_cost_nex": null,
+      "unknown_cost_reserved_authorized": true,
+      "diagnosis": "RequestError after 1.34 seconds. No matching platform bill visible. Exact original transport cause unavailable.",
+      "budget_handling": "Reserve full original 0.218625 NEX; never treat absent bill as free.",
+      "read_only_checks": {
+        "configured_proxy": [
+          200,
+          200
+        ],
+        "direct": [
+          200,
+          200
+        ]
+      }
+    }
+  },
+  "resume_scope": "User explicitly approved continuing only 23 unsubmitted images by direct connection, retaining both failed attempts and full reservations; max40 calls total, max4 NEX; stop again for any new failure.",
+  "model_prompt_labels_changed": false,
+  "previous_review_sha256": "03dea2d42f4a92019c585c02bbba940c6c0078546af7a53ad10c46f37b76a0df",
+  "user_reply": "按上述方式继续剩余23张，但是我要你看看能不能优化这个多模态大模型的效果效率"
+}

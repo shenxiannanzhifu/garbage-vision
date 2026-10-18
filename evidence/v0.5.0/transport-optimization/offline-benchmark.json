@@ -1,0 +1,162 @@
+{
+  "scope": "19 development images, offline only; no API requests",
+  "before_bytes": 20383105,
+  "after_bytes": 3872794,
+  "upload_bytes_reduction": 0.8099998013060326,
+  "records": [
+    {
+      "id": "commons-79273563",
+      "canonical_png_bytes": 1745362,
+      "candidate_bytes": 379138,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.016234499984420836
+    },
+    {
+      "id": "commons-5539252",
+      "canonical_png_bytes": 1404971,
+      "candidate_bytes": 232480,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.015314599964767694
+    },
+    {
+      "id": "commons-98013794",
+      "canonical_png_bytes": 1538289,
+      "candidate_bytes": 291858,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.0148661999264732
+    },
+    {
+      "id": "commons-179028310",
+      "canonical_png_bytes": 507646,
+      "candidate_bytes": 81176,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.013305399916134775
+    },
+    {
+      "id": "commons-10578610",
+      "canonical_png_bytes": 1504309,
+      "candidate_bytes": 277929,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.015677099931053817
+    },
+    {
+      "id": "commons-91813490",
+      "canonical_png_bytes": 861056,
+      "candidate_bytes": 141447,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.01310019998345524
+    },
+    {
+      "id": "commons-136457085",
+      "canonical_png_bytes": 1497889,
+      "candidate_bytes": 268657,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.015973399975337088
+    },
+    {
+      "id": "commons-136457084",
+      "canonical_png_bytes": 1375825,
+      "candidate_bytes": 233283,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.014678799896501005
+    },
+    {
+      "id": "commons-185140035",
+      "canonical_png_bytes": 1184823,
+      "candidate_bytes": 200462,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.014079399988986552
+    },
+    {
+      "id": "commons-48773002",
+      "canonical_png_bytes": 756124,
+      "candidate_bytes": 418378,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.013434399967081845
+    },
+    {
+      "id": "commons-44824808",
+      "canonical_png_bytes": 1366688,
+      "candidate_bytes": 217400,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.018528000102378428
+    },
+    {
+      "id": "commons-56167128",
+      "canonical_png_bytes": 1157864,
+      "candidate_bytes": 221075,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.012523300014436245
+    },
+    {
+      "id": "commons-79335127",
+      "canonical_png_bytes": 1614769,
+      "candidate_bytes": 306606,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.026121600065380335
+    },
+    {
+      "id": "commons-29411619",
+      "canonical_png_bytes": 1791917,
+      "candidate_bytes": 220073,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.0304366999771446
+    },
+    {
+      "id": "commons-80933087",
+      "canonical_png_bytes": 519246,
+      "candidate_bytes": 85432,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.011186999967321754
+    },
+    {
+      "id": "commons-10279384",
+      "canonical_png_bytes": 366637,
+      "candidate_bytes": 65946,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.021743000019341707
+    },
+    {
+      "id": "commons-9690809",
+      "canonical_png_bytes": 373033,
+      "candidate_bytes": 86329,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.020669099991209805
+    },
+    {
+      "id": "commons-701056",
+      "canonical_png_bytes": 240258,
+      "candidate_bytes": 35923,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.010778299998492002
+    },
+    {
+      "id": "commons-39198884",
+      "canonical_png_bytes": 576399,
+      "candidate_bytes": 109202,
+      "mime": "image/jpeg",
+      "mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "preparation_seconds": 0.009730499936267734
+    }
+  ],
+  "accuracy_or_latency_improvement_claimed": false,
+  "enabled_in_real_evaluation": false
+}

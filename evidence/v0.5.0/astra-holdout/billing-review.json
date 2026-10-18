@@ -1,0 +1,129 @@
+{
+  "source": "https://www.nexavlinks.com/logs",
+  "verification": "Signed-in UI filtered plus key and synchronous calls; matched endpoint/model/low and timestamps. Successful requests additionally matched input/output counts.",
+  "endpoint": "/v1/chat/completions",
+  "model": "gpt-6-astra",
+  "group": "[自建] ASTRA专属分组",
+  "timezone": "Asia/Shanghai",
+  "rows": [
+    {
+      "id": "commons-24364551",
+      "local_time": "2026-10-18 23:36:43",
+      "input_tokens": 2308,
+      "output_tokens": 101,
+      "actual_cost_nex": 0.0101268
+    },
+    {
+      "id": "commons-30731906",
+      "local_time": "2026-10-18 23:36:31",
+      "input_tokens": 2524,
+      "output_tokens": 78,
+      "actual_cost_nex": 0.0104904
+    },
+    {
+      "id": "commons-88121951",
+      "local_time": "2026-10-18 23:36:07",
+      "input_tokens": 2416,
+      "output_tokens": 47,
+      "actual_cost_nex": 0.0095436
+    },
+    {
+      "id": "commons-56853365",
+      "local_time": "2026-10-18 23:35:52",
+      "input_tokens": 3532,
+      "output_tokens": 41,
+      "actual_cost_nex": 0.0134532
+    },
+    {
+      "id": "commons-49531104",
+      "local_time": "2026-10-18 23:35:41",
+      "input_tokens": 2596,
+      "output_tokens": 41,
+      "actual_cost_nex": 0.0100836
+    },
+    {
+      "id": "commons-5264094",
+      "local_time": "2026-10-18 23:35:18",
+      "input_tokens": 2416,
+      "output_tokens": 41,
+      "actual_cost_nex": 0.0094356
+    },
+    {
+      "id": "commons-63297374",
+      "local_time": "2026-10-18 23:34:51",
+      "input_tokens": 2308,
+      "output_tokens": 41,
+      "actual_cost_nex": 0.0090468
+    },
+    {
+      "id": "commons-152818746",
+      "local_time": "2026-10-18 23:34:37",
+      "input_tokens": 2416,
+      "output_tokens": 41,
+      "actual_cost_nex": 0.0094356
+    },
+    {
+      "id": "commons-252201",
+      "local_time": "2026-10-18 23:34:18",
+      "input_tokens": 2452,
+      "output_tokens": 56,
+      "actual_cost_nex": 0.0098352
+    },
+    {
+      "id": "commons-138536950",
+      "local_time": "2026-10-18 23:34:08",
+      "input_tokens": 3028,
+      "output_tokens": 54,
+      "actual_cost_nex": 0.0118728
+    },
+    {
+      "id": "commons-155630545",
+      "local_time": "2026-10-18 23:33:43",
+      "input_tokens": 3244,
+      "output_tokens": 54,
+      "actual_cost_nex": 0.0126504
+    },
+    {
+      "id": "commons-111643306",
+      "local_time": "2026-10-18 23:33:22",
+      "input_tokens": 2668,
+      "output_tokens": 63,
+      "actual_cost_nex": 0.0107388
+    },
+    {
+      "id": "commons-131977339",
+      "local_time": "2026-10-18 23:33:05",
+      "input_tokens": 2416,
+      "output_tokens": 61,
+      "actual_cost_nex": 0.0097956
+    },
+    {
+      "id": "commons-71363051",
+      "local_time": "2026-10-18 23:32:21",
+      "input_tokens": 2596,
+      "output_tokens": 101,
+      "actual_cost_nex": 0.0111636
+    },
+    {
+      "id": "commons-51534756",
+      "local_time": "2026-10-18 23:32:04",
+      "input_tokens": 2416,
+      "output_tokens": 102,
+      "actual_cost_nex": 0.0105336
+    },
+    {
+      "id": "commons-128095601",
+      "local_time": "2026-10-18 23:22:29",
+      "input_tokens": 2380,
+      "output_tokens": 38,
+      "actual_cost_nex": 0.009252
+    }
+  ],
+  "actual_total_nex": 0.1674576,
+  "unreconciled_image_ids": [
+    "commons-95896968",
+    "commons-75295601"
+  ],
+  "note": "No matching visible bill for these two transport failures at latest signed-in UI review. Their actual cost remains unknown; full per-request reservations retained.",
+  "unrelated_account_logs_included": false
+}

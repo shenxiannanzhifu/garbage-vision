@@ -51,7 +51,7 @@ except (ValueError,TypeError):
 identity=(source.image_id,source.source_sha256) if source else None
 run_key=fingerprint({'image':identity,'local':settings,'rules':taxonomy,'api_model':api_config.model if api_config else '',
     'api_base':api_config.base_url if api_config else '',
-    'api_options':{k:getattr(api_config,k) for k in ['provider','max_tokens','reasoning_effort','image_detail']} if api_config else {},
+    'api_options':{k:getattr(api_config,k) for k in ['provider','max_tokens','reasoning_effort','image_detail','image_transport']} if api_config else {},
     'aliases':(ROOT/settings['text_aliases']).read_text(encoding='utf-8') if settings.get('text_aliases') else '',
     'prompt':(ROOT/PROMPT_PATH).read_text(encoding='utf-8')})
 if st.session_state.get('run_key')!=run_key:

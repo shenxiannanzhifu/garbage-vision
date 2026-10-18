@@ -1,0 +1,64 @@
+{
+  "id": "commons-63297374",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T15:34:51.970148+00:00",
+    "image_id": "98ec32d222e46feb0d3c1f9f2f37c7e15598e2847b1c74dbf58cf7d08b6c09e4",
+    "source_sha256": "d0ea9569dae00e35fe2f0910037da69c3d6e5c94e2ae85d4571e066dd8e50dc6",
+    "image_size": [
+      960,
+      640
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 13.740522400010377,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "98ec32d222e46feb0d3c1f9f2f37c7e15598e2847b1c74dbf58cf7d08b6c09e4",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_0726f344078b0e1b016ad4e71388bc819193536e733f29d8dc",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2308,
+        "completion_tokens": 41,
+        "total_tokens": 2349
+      },
+      "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"香蕉皮\",\"reason\":\"日常果皮属于厨余垃圾。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "5a8fd02536ebbcf804abf8586712578ad7366097af949207e912a840514f59aa",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.0309,
+  "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+}

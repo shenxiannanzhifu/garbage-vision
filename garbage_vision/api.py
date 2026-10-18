@@ -29,6 +29,7 @@ class APISettings:
     use_env_proxy: bool=False
     reasoning_effort: str='low'
     image_detail: str='high'
+    image_transport: str='png'
     proxy_url: str=field(default='',repr=False)
 
     def problem(self):
@@ -38,6 +39,7 @@ class APISettings:
         if parsed.scheme!='https' or not parsed.hostname or parsed.username or parsed.password or parsed.query or parsed.fragment:
             return 'API 地址必须为不含凭据、查询参数的 HTTPS Base URL。'
         if not self.model:return '尚未配置模型名称。'
+        if self.image_transport not in {'png','lossless'}:return '图片传输方式只能为 png 或 lossless。'
         if self.proxy_url:
             proxy=urlparse(self.proxy_url)
             if proxy.scheme not in {'http','https'} or not proxy.hostname or proxy.username or proxy.password or proxy.query or proxy.fragment:
@@ -61,6 +63,7 @@ def api_settings():
             timeout=max(5,min(180,float(values.get('NEXAVLINKS_TIMEOUT') or 120))),
             max_tokens=max(256,min(4096,int(values.get('NEXAVLINKS_MAX_OUTPUT_TOKENS') or 2048))),
             max_attempts=1,reasoning_effort='low',image_detail='high',
+            image_transport=str(values.get('NEXAVLINKS_IMAGE_TRANSPORT') or 'png'),
             proxy_url=str(values.get('NEXAVLINKS_PROXY_URL') or '').strip())
     if provider=='openai':
         # OpenAI 使用独立字段，绝不把已有百炼密钥发送到另一个服务商。
@@ -117,9 +120,18 @@ def output_schema():
     return schema
 
 
-def build_payload(source,settings,prompt):
+def upload_image(source,settings):
+    """默认沿用已验证PNG；无损候选逐像素验证且移除元数据后才复用JPEG。"""
+    if settings.image_transport=='lossless':
+        from .image_transport import prepare_lossless_upload
+        return prepare_lossless_upload(source.original_data or source.png,source)
+    return source.png,'image/png','canonical_png'
+
+
+def build_payload(source,settings,prompt,upload=None):
     """两种协议独立适配；只发送完整 RGB 原图和规则，不发送本地预测。"""
-    image_url='data:image/png;base64,'+base64.b64encode(source.png).decode()
+    image_bytes,mime,_=upload or upload_image(source,settings)
+    image_url='data:'+mime+';base64,'+base64.b64encode(image_bytes).decode()
     if settings.provider=='openai':
         schema=output_schema()
         return '/responses',{
@@ -186,12 +198,16 @@ def infer_api(source,settings=None,transport=None,sleeper=time.sleep):
               method='api',model=settings.model)
     problem=settings.problem()
     if problem:return InferenceResult(**base,status='not_configured',error=problem)
-    if len(source.png)>10*1024*1024:
-        return InferenceResult(**base,status='error',error='标准化 PNG 超过 10 MB，请缩小图片后重新运行两侧方案。')
+    prepared=upload_image(source,settings)
+    if len(prepared[0])>10*1024*1024:
+        return InferenceResult(**base,status='error',error='待上传图片超过 10 MB，请缩小图片后重新运行两侧方案。')
     taxonomy=rules();prompt=(ROOT/PROMPT_PATH).read_text(encoding='utf-8')+json.dumps(taxonomy,ensure_ascii=False)
-    endpoint,payload=build_payload(source,settings,prompt)
+    endpoint,payload=build_payload(source,settings,prompt,prepared)
     meta={'prompt_sha256':hashlib.sha256(prompt.encode()).hexdigest(),'rules_sha256':fingerprint(taxonomy),
-          'endpoint_host':urlparse(settings.base_url).hostname,'sent_image_sha256':source.image_id,'attempts':0,
+          'endpoint_host':urlparse(settings.base_url).hostname,'sent_image_sha256':hashlib.sha256(prepared[0]).hexdigest(),'attempts':0,
+          'canonical_image_sha256':source.image_id,'upload_image_bytes':len(prepared[0]),
+          'upload_image_mime':prepared[1],'image_transport_mode':prepared[2],
+          'transport_route':'explicit_proxy' if settings.proxy_url else 'environment' if settings.use_env_proxy else 'direct',
           'provider':settings.provider,'api_protocol':'responses' if settings.provider=='openai' else 'chat_completions',
           'prompt_path':PROMPT_PATH}
     error='API 未返回有效结果。'
@@ -220,9 +236,11 @@ def infer_api(source,settings=None,transport=None,sleeper=time.sleep):
                 items,audit=normalize_api_response(text)
                 meta['normalization']=audit
                 return InferenceResult(**base,status='success',items=items,elapsed_seconds=time.perf_counter()-started,metadata=meta)
-            except httpx.TimeoutException:
+            except httpx.TimeoutException as exc:
+                meta.update(transport_error_type=type(exc).__name__,transport_cause_type=type(exc.__cause__).__name__)
                 error='API 超时。为避免重复计费，没有自动重新提交；可查看服务商账单后手动重试。';break
-            except httpx.RequestError:
+            except httpx.RequestError as exc:
+                meta.update(transport_error_type=type(exc).__name__,transport_cause_type=type(exc.__cause__).__name__)
                 error='无法连接 API，请检查网络与 HTTPS 端点。';break
             except (ValueError,ValidationError,KeyError,IndexError,TypeError) as exc:
                 meta['validation_error_type']=type(exc).__name__

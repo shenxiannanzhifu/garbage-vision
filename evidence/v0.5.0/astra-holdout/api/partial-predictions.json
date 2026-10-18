@@ -1,0 +1,1112 @@
+{
+  "records": [
+    {
+      "id": "commons-128095601",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:22:26.817616+00:00",
+        "image_id": "22a47683cabdd64691edba618048ebf86f37288d554282dc54759c5faae0c655",
+        "source_sha256": "98e0d5998a41cc643d007ba29fe8f93ec266713fd7232e10a2cbf71ee385673f",
+        "image_size": [
+          960,
+          685
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "error",
+        "items": [],
+        "elapsed_seconds": 48.04013269999996,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": "无法连接 API，请检查网络与 HTTPS 端点。",
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "22a47683cabdd64691edba618048ebf86f37288d554282dc54759c5faae0c655",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt"
+        }
+      },
+      "estimated_cost_nex": null,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-51534756",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:32:04.350853+00:00",
+        "image_id": "bae0abe86f55cd0ed1ee2565ce3f139b24eb9fb65aec9d7dacba57f1cf9793b1",
+        "source_sha256": "8823f13db3dfccf642e1e5a4a07cedfc21b7a9af63203171636b69cf7bbf1b2f",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "棕色玻璃瓶（多个）",
+            "category": null,
+            "reason": "瓶身标有“保力达B”，需核实是否为药品包装；不能直接按普通饮料玻璃瓶分类。",
+            "uncertain": true,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 11.038983999984339,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "bae0abe86f55cd0ed1ee2565ce3f139b24eb9fb65aec9d7dacba57f1cf9793b1",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0b9546a2d3ce0a84016ad4e66f0b2c81919c32c09144d445b6",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2416,
+            "completion_tokens": 102,
+            "total_tokens": 2518,
+            "completion_tokens_details": {
+              "reasoning_tokens": 32
+            }
+          },
+          "response_text": "{\"items\":[{\"category\":null,\"name\":\"棕色玻璃瓶（多个）\",\"reason\":\"瓶身标有“保力达B”，需核实是否为药品包装；不能直接按普通饮料玻璃瓶分类。\",\"uncertain\":true}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "241bad03737cb80a3aff2f4c66cad1c6f993f66e9e80cff0c5da0b8e319a1a1a",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0353,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-71363051",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:32:22.148318+00:00",
+        "image_id": "a1a18761174c81b340507ba6624d9293c7638afccce995381d9e84fde3804328",
+        "source_sha256": "a4049e1a69b2f931bef7d09d7f3d8463facf6dbd041343437b8a76f371ad18e7",
+        "image_size": [
+          960,
+          873
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "塑料饮料瓶（多个）",
+            "category": "recyclable",
+            "reason": "可见多个普通塑料饮料瓶，倒空清洁后可回收。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "饮料易拉罐（多个）",
+            "category": "recyclable",
+            "reason": "普通金属饮料罐，倒空清洁后可回收。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 17.531692899996415,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "a1a18761174c81b340507ba6624d9293c7638afccce995381d9e84fde3804328",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0baf6e341ed6997d016ad4e682216c8191925ffc9e6f5811d3",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2596,
+            "completion_tokens": 101,
+            "total_tokens": 2697
+          },
+          "response_text": "{\"items\":[{\"category\":\"recyclable\",\"name\":\"塑料饮料瓶（多个）\",\"reason\":\"可见多个普通塑料饮料瓶，倒空清洁后可回收。\",\"uncertain\":false},{\"category\":\"recyclable\",\"name\":\"饮料易拉罐（多个）\",\"reason\":\"普通金属饮料罐，倒空清洁后可回收。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "16f9e2042a4c00c82eff4a3d464234457a2eae3e11e74bb532c2bc02abbafdee",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0375,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-131977339",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:33:05.734731+00:00",
+        "image_id": "9a1ab818077b5e44c8179334f043ee53703c38e3a284bafc8158c22dee0cae82",
+        "source_sha256": "c134d16eae5abfc8d3dcd658153b873b99a345239adf5be7a2a76a818c758c1c",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "金属饮料罐（多个）",
+            "category": "recyclable",
+            "reason": "可见多个普通饮料金属罐，倒空清洁后属于可回收物。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 43.378077600034885,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "9a1ab818077b5e44c8179334f043ee53703c38e3a284bafc8158c22dee0cae82",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0aa65f2cd8120dc0016ad4e6ae163081918991335a6adf1b86",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2416,
+            "completion_tokens": 61,
+            "total_tokens": 2477
+          },
+          "response_text": "{\"items\":[{\"category\":\"recyclable\",\"name\":\"金属饮料罐（多个）\",\"reason\":\"可见多个普通饮料金属罐，倒空清洁后属于可回收物。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "531ed30bb647885b559c1ea017d1f7a4c5f74ec48f991257e4e82ab5182c0f64",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03325,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-111643306",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:33:22.630426+00:00",
+        "image_id": "7b646562ef3c01d50bde667b867514bf03a63f9923b8c0646aa34dbace36c1a0",
+        "source_sha256": "0b5e54e392dbd19957f4b6c0bc5c67dbdfb9d394b035a2c2a50544569dcb9755",
+        "image_size": [
+          960,
+          944
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "压扁的饮料金属罐",
+            "category": "recyclable",
+            "reason": "普通饮料金属罐倒空清洁后可回收，压扁不影响分类。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 16.64440640003886,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "7b646562ef3c01d50bde667b867514bf03a63f9923b8c0646aa34dbace36c1a0",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_009d6abbf748bf0c016ad4e6be805c8191bdd050cb7b8a7924",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2668,
+            "completion_tokens": 63,
+            "total_tokens": 2731
+          },
+          "response_text": "{\"items\":[{\"category\":\"recyclable\",\"name\":\"压扁的饮料金属罐\",\"reason\":\"普通饮料金属罐倒空清洁后可回收，压扁不影响分类。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "62d92ea0378868416a960d24273b0b2002469fb7a64cc29d8ee554e99a5e5d22",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0365,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-155630545",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:33:44.012409+00:00",
+        "image_id": "b9f16334baf0ab178b273630cba2ba27872083833d84eeb01e4868e4a4b41510",
+        "source_sha256": "a8aed9f6c32838565ae9812b55ac9338b14fdc749aab4ef40eb6b7439a40233e",
+        "image_size": [
+          960,
+          1459
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "饮料易拉罐",
+            "category": "recyclable",
+            "reason": "普通饮料金属罐倒空清洁后属于可回收物。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 20.97310250008013,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "b9f16334baf0ab178b273630cba2ba27872083833d84eeb01e4868e4a4b41510",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_004451376533ba65016ad4e6d502748191b7adc6d1c1c62d35",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 3244,
+            "completion_tokens": 54,
+            "total_tokens": 3298
+          },
+          "response_text": "{\"items\":[{\"category\":\"recyclable\",\"name\":\"饮料易拉罐\",\"reason\":\"普通饮料金属罐倒空清洁后属于可回收物。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "145dfd32c7cb4de70de56b647427e8e183d288eed78fd84bf9216c6463c13c08",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.04325,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-138536950",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:34:09.044911+00:00",
+        "image_id": "7d33f49d6d0072cf4407fa0300d523f811c66d4bbcc1ca723711fc640200fedb",
+        "source_sha256": "1cd5c5016878023a376606a8f5ee00978465b08922ecb05e38575fccdb860450",
+        "image_size": [
+          960,
+          1280
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "纸箱",
+            "category": "recyclable",
+            "reason": "干燥且未严重污染的纸箱可回收，投放前宜压平。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 24.708755400031805,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "7d33f49d6d0072cf4407fa0300d523f811c66d4bbcc1ca723711fc640200fedb",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_054021534a620542016ad4e6ec39f881918c1a676ac1026cba",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 3028,
+            "completion_tokens": 54,
+            "total_tokens": 3082
+          },
+          "response_text": "{\"items\":[{\"category\":\"recyclable\",\"name\":\"纸箱\",\"reason\":\"干燥且未严重污染的纸箱可回收，投放前宜压平。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "9339f07606491e3aa6d6cbc0f7a4ed156183def0fc66bbaaadf8e5799f89934d",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.04055,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-252201",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:34:19.067197+00:00",
+        "image_id": "3b7ec05cd162e7fef12af8a9c8761080a22598e791e1ec27def6d641029dfa6c",
+        "source_sha256": "e7b1f1e6804ab689c7aba3e63c6feae1c5705557feb9bba66dc457dc3b3d2fc7",
+        "image_size": [
+          960,
+          759
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "纸箱",
+            "category": "recyclable",
+            "reason": "图中为瓦楞纸箱，干燥且未严重污染的纸箱可回收。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 9.750369600020349,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "3b7ec05cd162e7fef12af8a9c8761080a22598e791e1ec27def6d641029dfa6c",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_062732eab49170b8016ad4e6f7b8ac8191b679b14931fb8d56",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2452,
+            "completion_tokens": 56,
+            "total_tokens": 2508
+          },
+          "response_text": "{\"items\":[{\"category\":\"recyclable\",\"name\":\"纸箱\",\"reason\":\"图中为瓦楞纸箱，干燥且未严重污染的纸箱可回收。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "5c10df3903857603bc9308f2bb2fa14a953a51e209d5de79ff163482e97c069a",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03345,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-152818746",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:34:37.993244+00:00",
+        "image_id": "1fe5021f9f0437628b815fed2c81d895cf32e7aee04b5bc51d96db9245764727",
+        "source_sha256": "bb64de2d57a388e6ebd193cbdece9eed7f7ab8e5ff43c6feaa2e3a98f09a1aa8",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "香蕉皮",
+            "category": "kitchen",
+            "reason": "日常果皮属于厨余垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 18.685971300001256,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "1fe5021f9f0437628b815fed2c81d895cf32e7aee04b5bc51d96db9245764727",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0fb432f1ca994069016ad4e70acec88191a7a8cab3688a3082",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2416,
+            "completion_tokens": 41,
+            "total_tokens": 2457
+          },
+          "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"香蕉皮\",\"reason\":\"日常果皮属于厨余垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "5a8fd02536ebbcf804abf8586712578ad7366097af949207e912a840514f59aa",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03225,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-63297374",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:34:51.970148+00:00",
+        "image_id": "98ec32d222e46feb0d3c1f9f2f37c7e15598e2847b1c74dbf58cf7d08b6c09e4",
+        "source_sha256": "d0ea9569dae00e35fe2f0910037da69c3d6e5c94e2ae85d4571e066dd8e50dc6",
+        "image_size": [
+          960,
+          640
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "香蕉皮",
+            "category": "kitchen",
+            "reason": "日常果皮属于厨余垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 13.740522400010377,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "98ec32d222e46feb0d3c1f9f2f37c7e15598e2847b1c74dbf58cf7d08b6c09e4",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0726f344078b0e1b016ad4e71388bc819193536e733f29d8dc",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2308,
+            "completion_tokens": 41,
+            "total_tokens": 2349
+          },
+          "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"香蕉皮\",\"reason\":\"日常果皮属于厨余垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "5a8fd02536ebbcf804abf8586712578ad7366097af949207e912a840514f59aa",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0309,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-5264094",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:35:18.260956+00:00",
+        "image_id": "26d38b9034ecf87e17f265ecd9db3b5932d9a04b4dc21c1de59fe230d0421b4a",
+        "source_sha256": "2a406bf8423a0857a5f0cc6b97dac1305d8a78396f504b0d7c32257546261089",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "香蕉皮",
+            "category": "kitchen",
+            "reason": "日常果皮属于厨余垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 26.055881300009787,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "26d38b9034ecf87e17f265ecd9db3b5932d9a04b4dc21c1de59fe230d0421b4a",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_09dd26e223504e36016ad4e7327ad0819197f64b9fdcae2e1d",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2416,
+            "completion_tokens": 41,
+            "total_tokens": 2457
+          },
+          "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"香蕉皮\",\"reason\":\"日常果皮属于厨余垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "5a8fd02536ebbcf804abf8586712578ad7366097af949207e912a840514f59aa",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03225,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-49531104",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:35:41.455112+00:00",
+        "image_id": "66ad3aaad4ab7c3cc827c645ebc900cf29632a047915ef4973d8a00b2aa8aa5e",
+        "source_sha256": "bc9849f48ec5fc6a1bf723c3e209e420dadfc45aba17bad6fb79777cf96bc965",
+        "image_size": [
+          960,
+          870
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "香蕉皮",
+            "category": "kitchen",
+            "reason": "日常果皮属于厨余垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 22.93574779992923,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "66ad3aaad4ab7c3cc827c645ebc900cf29632a047915ef4973d8a00b2aa8aa5e",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_05b0d479a4d4636a016ad4e74a642c819194e30f5e3597b7f2",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2596,
+            "completion_tokens": 41,
+            "total_tokens": 2637
+          },
+          "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"香蕉皮\",\"reason\":\"日常果皮属于厨余垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "5a8fd02536ebbcf804abf8586712578ad7366097af949207e912a840514f59aa",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0345,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-56853365",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:35:52.697427+00:00",
+        "image_id": "2b4255d7505d68d6eba9a130322e95faed0207c35c00f1eab62e409c58741372",
+        "source_sha256": "bbc48cc21bcd75b61d0b1063d5eb0c41dcb4a82b115d8420882cb0d27a5c8b9f",
+        "image_size": [
+          960,
+          1706
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "香蕉皮",
+            "category": "kitchen",
+            "reason": "日常果皮属于厨余垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 10.759040899924003,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "2b4255d7505d68d6eba9a130322e95faed0207c35c00f1eab62e409c58741372",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_013cc6eff812d6ab016ad4e755c1dc81918f739e728f241461",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 3532,
+            "completion_tokens": 41,
+            "total_tokens": 3573
+          },
+          "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"香蕉皮\",\"reason\":\"日常果皮属于厨余垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "5a8fd02536ebbcf804abf8586712578ad7366097af949207e912a840514f59aa",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0462,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-88121951",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:36:07.835702+00:00",
+        "image_id": "b59a9235a0c0b7cbad7316bbaaf2c9e2a16209bcce04c1e2070ce7fc18940908",
+        "source_sha256": "d4ed820b52feaf7ed397b50374609c46f17fdeae2d40d1b532303794ab571d65",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "苹果核",
+            "category": "kitchen",
+            "reason": "吃剩的苹果核及附着果肉属于厨余垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 14.966917600017041,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "b59a9235a0c0b7cbad7316bbaaf2c9e2a16209bcce04c1e2070ce7fc18940908",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0566f0a456c4d7ff016ad4e75e6f208191b0e0c993ca852f81",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2416,
+            "completion_tokens": 47,
+            "total_tokens": 2463
+          },
+          "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"苹果核\",\"reason\":\"吃剩的苹果核及附着果肉属于厨余垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "578b07c838e946c5c844ae22c901f0f57020edaf91fadcc3d167bedc00a70178",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03255,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-30731906",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:36:31.683479+00:00",
+        "image_id": "8b7cb7b6080e887881d6fcc1d38fde711c6fac684dd6215b726b801e55076c67",
+        "source_sha256": "8a60dc62e161bc835976cd8be8a1422bd79cee66bef25872ec43228a5ae96a70",
+        "image_size": [
+          960,
+          809
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "果蔬残余",
+            "category": "kitchen",
+            "reason": "可见带梗的果皮果肉残余，具体品种难以确认，属于厨余垃圾。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 23.520527399959974,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "8b7cb7b6080e887881d6fcc1d38fde711c6fac684dd6215b726b801e55076c67",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_0664bf0d39b125f9016ad4e77b83908191b43407ee7fa9237b",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2524,
+            "completion_tokens": 78,
+            "total_tokens": 2602,
+            "completion_tokens_details": {
+              "reasoning_tokens": 16
+            }
+          },
+          "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"果蔬残余\",\"reason\":\"可见带梗的果皮果肉残余，具体品种难以确认，属于厨余垃圾。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "c6b7dd51c43c1782340aa3e6f51196aa8ea4601476404422db0582214c736bfc",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.03545,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-24364551",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:36:43.762474+00:00",
+        "image_id": "7f25caaaa051b89112975917358edecc6b481fc26d5f632caba8f77a279a12bc",
+        "source_sha256": "ae7a8ce62bd3e4df31d716f78ac6edd1654afdd53e874c88c81ef681313ac03f",
+        "image_size": [
+          766,
+          800
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "success",
+        "items": [
+          {
+            "name": "果蔬及食物残余",
+            "category": "kitchen",
+            "reason": "桶内可见菜叶、皮屑等食物残余，具体食材难以辨认；沥干并分离杂物后按厨余垃圾投放。",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 11.883656400023028,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "7f25caaaa051b89112975917358edecc6b481fc26d5f632caba8f77a279a12bc",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt",
+          "response_id": "resp_008080d0b034f329016ad4e78692ec819183ed7bb3c12ac94d",
+          "returned_model": "gpt-6-astra",
+          "usage": {
+            "prompt_tokens": 2308,
+            "completion_tokens": 101,
+            "total_tokens": 2409,
+            "completion_tokens_details": {
+              "reasoning_tokens": 21
+            }
+          },
+          "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"果蔬及食物残余\",\"reason\":\"桶内可见菜叶、皮屑等食物残余，具体食材难以辨认；沥干并分离杂物后按厨余垃圾投放。\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "c4d01f10177129d316af6bc36ea7abe54e9bffc2181539a8eb94bf9051fa18ae",
+          "finish_reason": "stop",
+          "normalization": []
+        }
+      },
+      "estimated_cost_nex": 0.0339,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-95896968",
+      "expected_categories": [
+        "other"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:36:45.475357+00:00",
+        "image_id": "0f4bcde2647f034f0bf3bd991f21dcb1227d73bb6ac23191f8e64d027e642c52",
+        "source_sha256": "8bdb09d79bef76d285110bdccaacc60b07441bea763ffc6e6304671dbbbccb64",
+        "image_size": [
+          960,
+          1207
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "error",
+        "items": [],
+        "elapsed_seconds": 1.3422081000171602,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": "无法连接 API，请检查网络与 HTTPS 端点。",
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "0f4bcde2647f034f0bf3bd991f21dcb1227d73bb6ac23191f8e64d027e642c52",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt"
+        }
+      },
+      "estimated_cost_nex": null,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    },
+    {
+      "id": "commons-75295601",
+      "expected_categories": [
+        "other"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T15:47:16.244452+00:00",
+        "image_id": "43feb89f65bffb998b2e6995f89e70a7292373a911f993eda9bbc5c14cdeaf14",
+        "source_sha256": "906a2d6086b428175b40b6befa19998f5fe66f20a831ee765993b8292cf692fb",
+        "image_size": [
+          960,
+          696
+        ],
+        "method": "api",
+        "model": "gpt-6-astra",
+        "status": "error",
+        "items": [],
+        "elapsed_seconds": 124.3581533000106,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": "API 超时。为避免重复计费，没有自动重新提交；可查看服务商账单后手动重试。",
+        "metadata": {
+          "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "www.nexavlinks.com",
+          "sent_image_sha256": "43feb89f65bffb998b2e6995f89e70a7292373a911f993eda9bbc5c14cdeaf14",
+          "attempts": 1,
+          "provider": "nexavlinks",
+          "api_protocol": "chat_completions",
+          "prompt_path": "prompts/classify_v2.txt"
+        }
+      },
+      "estimated_cost_nex": null,
+      "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+    }
+  ],
+  "api_config": {
+    "base_url": "https://www.nexavlinks.com/v1",
+    "model": "gpt-6-astra",
+    "provider": "nexavlinks",
+    "timeout": 120.0,
+    "max_tokens": 2048,
+    "use_env_proxy": false,
+    "reasoning_effort": "low",
+    "image_detail": "high"
+  },
+  "returned_usage_estimated_nex": 0.5378000000000001,
+  "records_without_returned_usage": [
+    "commons-128095601",
+    "commons-95896968",
+    "commons-75295601"
+  ]
+}

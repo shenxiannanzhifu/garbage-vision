@@ -1,0 +1,36 @@
+{
+  "id": "commons-128095601",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T15:22:26.817616+00:00",
+    "image_id": "22a47683cabdd64691edba618048ebf86f37288d554282dc54759c5faae0c655",
+    "source_sha256": "98e0d5998a41cc643d007ba29fe8f93ec266713fd7232e10a2cbf71ee385673f",
+    "image_size": [
+      960,
+      685
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "error",
+    "items": [],
+    "elapsed_seconds": 48.04013269999996,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": "无法连接 API，请检查网络与 HTTPS 端点。",
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "22a47683cabdd64691edba618048ebf86f37288d554282dc54759c5faae0c655",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt"
+    }
+  },
+  "estimated_cost_nex": null,
+  "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+}

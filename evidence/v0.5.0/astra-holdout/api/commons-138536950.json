@@ -1,0 +1,64 @@
+{
+  "id": "commons-138536950",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T15:34:09.044911+00:00",
+    "image_id": "7d33f49d6d0072cf4407fa0300d523f811c66d4bbcc1ca723711fc640200fedb",
+    "source_sha256": "1cd5c5016878023a376606a8f5ee00978465b08922ecb05e38575fccdb860450",
+    "image_size": [
+      960,
+      1280
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收，投放前宜压平。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 24.708755400031805,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "7d33f49d6d0072cf4407fa0300d523f811c66d4bbcc1ca723711fc640200fedb",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_054021534a620542016ad4e6ec39f881918c1a676ac1026cba",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 3028,
+        "completion_tokens": 54,
+        "total_tokens": 3082
+      },
+      "response_text": "{\"items\":[{\"category\":\"recyclable\",\"name\":\"纸箱\",\"reason\":\"干燥且未严重污染的纸箱可回收，投放前宜压平。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "9339f07606491e3aa6d6cbc0f7a4ed156183def0fc66bbaaadf8e5799f89934d",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.04055,
+  "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+}

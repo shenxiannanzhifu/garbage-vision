@@ -1,0 +1,67 @@
+{
+  "id": "commons-51534756",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T15:32:04.350853+00:00",
+    "image_id": "bae0abe86f55cd0ed1ee2565ce3f139b24eb9fb65aec9d7dacba57f1cf9793b1",
+    "source_sha256": "8823f13db3dfccf642e1e5a4a07cedfc21b7a9af63203171636b69cf7bbf1b2f",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "棕色玻璃瓶（多个）",
+        "category": null,
+        "reason": "瓶身标有“保力达B”，需核实是否为药品包装；不能直接按普通饮料玻璃瓶分类。",
+        "uncertain": true,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 11.038983999984339,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "bae0abe86f55cd0ed1ee2565ce3f139b24eb9fb65aec9d7dacba57f1cf9793b1",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_0b9546a2d3ce0a84016ad4e66f0b2c81919c32c09144d445b6",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2416,
+        "completion_tokens": 102,
+        "total_tokens": 2518,
+        "completion_tokens_details": {
+          "reasoning_tokens": 32
+        }
+      },
+      "response_text": "{\"items\":[{\"category\":null,\"name\":\"棕色玻璃瓶（多个）\",\"reason\":\"瓶身标有“保力达B”，需核实是否为药品包装；不能直接按普通饮料玻璃瓶分类。\",\"uncertain\":true}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "241bad03737cb80a3aff2f4c66cad1c6f993f66e9e80cff0c5da0b8e319a1a1a",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.0353,
+  "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+}

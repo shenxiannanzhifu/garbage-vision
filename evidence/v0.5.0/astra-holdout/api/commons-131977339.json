@@ -1,0 +1,64 @@
+{
+  "id": "commons-131977339",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T15:33:05.734731+00:00",
+    "image_id": "9a1ab818077b5e44c8179334f043ee53703c38e3a284bafc8158c22dee0cae82",
+    "source_sha256": "c134d16eae5abfc8d3dcd658153b873b99a345239adf5be7a2a76a818c758c1c",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "金属饮料罐（多个）",
+        "category": "recyclable",
+        "reason": "可见多个普通饮料金属罐，倒空清洁后属于可回收物。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 43.378077600034885,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "9a1ab818077b5e44c8179334f043ee53703c38e3a284bafc8158c22dee0cae82",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_0aa65f2cd8120dc0016ad4e6ae163081918991335a6adf1b86",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2416,
+        "completion_tokens": 61,
+        "total_tokens": 2477
+      },
+      "response_text": "{\"items\":[{\"category\":\"recyclable\",\"name\":\"金属饮料罐（多个）\",\"reason\":\"可见多个普通饮料金属罐，倒空清洁后属于可回收物。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "531ed30bb647885b559c1ea017d1f7a4c5f74ec48f991257e4e82ab5182c0f64",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.03325,
+  "pricing_note": "Conservative higher-group estimate, not actual billed amount."
+}

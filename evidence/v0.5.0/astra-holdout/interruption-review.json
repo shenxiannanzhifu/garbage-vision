@@ -1,0 +1,28 @@
+{
+  "authorization": {
+    "max_calls": 40,
+    "budget_nex": 4,
+    "no_automatic_retries": true
+  },
+  "reviewed_failures": {
+    "commons-128095601": {
+      "result_sha256": "bfbf8ff724f5471949d4573b53b9f700e68fdbbe5746d2e83ef8bc1d298e36e2",
+      "marker_sha256": "35e01d9384c23bddba6156e15451d3da5b19fd23438370dc474b724fdc4cbaac",
+      "action": "skip_without_retry",
+      "actual_cost_nex": 0.009252,
+      "accounting": "Retain full original reservation 0.218625 NEX for budget guard. Original result and unknown usage remain unchanged.",
+      "billing_source": "https://www.nexavlinks.com/logs",
+      "billing_match": "Only Chat Completions / gpt-6-astra / low entry in request time window; no request ID was returned locally.",
+      "billing_local_time": "2026-10-18 23:22:29",
+      "timezone": "Asia/Shanghai",
+      "input_tokens": 2380,
+      "output_tokens": 38,
+      "endpoint": "/v1/chat/completions",
+      "group": "[自建] ASTRA专属分组",
+      "diagnosis": "Local httpx RequestError after 48.04s; exact transport cause unavailable. Gateway billed a matching request. Read-only models endpoint now responds via configured proxy and direct.",
+      "result_recovered": false
+    }
+  },
+  "resume_scope": "Only 39 never-submitted images. Preserve failure as failure; no retry. Stop again for any new failure or unknown cost.",
+  "model_prompt_labels_changed": false
+}

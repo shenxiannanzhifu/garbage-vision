@@ -1,0 +1,11 @@
+{
+  "id": "commons-75295601",
+  "started_at_utc": "2026-10-18T15:45:11.884238+00:00",
+  "authorized_budget_nex": 4,
+  "authorized_max_calls": 40,
+  "reserved_nex": 0.218625,
+  "attempts": 1,
+  "reviewed_resume_sha256": "ab3bb339d81d26a12f1449b5efa12b24fa2c105cec5d04083e9f8bfa4a800789",
+  "reviewed_resume_file": "interruption-review-2.json",
+  "transport_route": "direct"
+}
