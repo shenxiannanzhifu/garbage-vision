@@ -1,0 +1,97 @@
+{
+  "id": "commons-18975566",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:29:42.686983+00:00",
+    "image_id": "e1d45ad41998fde9073502a3b40bfbd1ab405c447aec34b6343408a47c5a5f27",
+    "source_sha256": "4656a2dc4554be387d69572ce076e15d481eb9452d9c6044c282f83394e6d59a",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          453.75,
+          242.81,
+          594.37,
+          391.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9482563734054565,
+        "similarity": 0.296263724565506,
+        "category_margin": 0.04301697015762329
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          453.75,
+          241.87,
+          679.69,
+          391.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9015170335769653,
+        "similarity": 0.28915640711784363,
+        "category_margin": 0.0559319406747818
+      }
+    ],
+    "elapsed_seconds": 15.918066999991424,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 18,
+      "candidate_count": 2,
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "d5116e7d1862e276e2d28fb722fd07dbc77d0561ad28521f8eb53f19ac492638",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "category_margin_min": 0.018,
+        "clip_weights": "weights/ViT-B-32.pt",
+        "crop_n_layers": 1,
+        "crop_padding": 0.05,
+        "device": "auto",
+        "duplicate_iou": 0.7,
+        "mask_score_min": 0.8,
+        "max_area_fraction": 0.95,
+        "max_objects": 40,
+        "min_area_fraction": 0.0002,
+        "min_box_side": 8,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "points_batch_size": 32,
+        "points_stride": 24,
+        "region_input": "crop",
+        "sam_weights": "weights/sam2.1_t.pt",
+        "similarity_min": 0.28
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  },
+  "estimated_cost_yuan": 0,
+  "budget_accounted_yuan": 0
+}

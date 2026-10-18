@@ -1,0 +1,62 @@
+{
+  "id": "commons-1742613",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:27:50.910426+00:00",
+    "image_id": "55783cab5460c14a3da700dbfc664786c8c7d7ad18af8a526a70f36161e32444",
+    "source_sha256": "13c5d3bd51abdf7cde636739a7fb06954391eb33c9719889306cdc5137ced739",
+    "image_size": [
+      960,
+      729
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "蔬菜残余（含白菜叶、辣椒皮、黄瓜皮、番茄块等）",
+        "category": "kitchen",
+        "reason": "日常果蔬加工后剩余部分属于厨余垃圾；已分离包装，无明显非厨余混入",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 13.821778399986215,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "55783cab5460c14a3da700dbfc664786c8c7d7ad18af8a526a70f36161e32444",
+      "attempts": 1,
+      "response_id": "chatcmpl-598766db-a548-9aa9-82bb-4d15e81cefea",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 1796,
+        "completion_tokens": 61,
+        "total_tokens": 1857,
+        "completion_tokens_details": {
+          "text_tokens": 61
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 692,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"蔬菜残余（含白菜叶、辣椒皮、黄瓜皮、番茄块等）\",\"category\":\"kitchen\",\"reason\":\"日常果蔬加工后剩余部分属于厨余垃圾；已分离包装，无明显非厨余混入\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.002406,
+  "budget_accounted_yuan": 0.002406
+}

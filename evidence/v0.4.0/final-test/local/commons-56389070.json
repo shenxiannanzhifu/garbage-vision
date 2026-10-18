@@ -1,0 +1,148 @@
+{
+  "id": "commons-56389070",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:30:42.727472+00:00",
+    "image_id": "c68adbe4e83d61daa6472d73a4db120fc7d45d54f519e8793deb0de5017730e1",
+    "source_sha256": "fcc7a51638ffc8d4259c891e72c295515f78858df8f9520bcb5230a140ac5156",
+    "image_size": [
+      960,
+      640
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          517.5,
+          358.12,
+          884.06,
+          564.37
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9648182988166809,
+        "similarity": 0.3398170471191406,
+        "category_margin": 0.06278303265571594
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          368.44,
+          96.56,
+          616.87,
+          402.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9850422739982605,
+        "similarity": 0.32000812888145447,
+        "category_margin": 0.03276655077934265
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          516.56,
+          359.06,
+          884.06,
+          491.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9767390489578247,
+        "similarity": 0.3089236319065094,
+        "category_margin": 0.045080095529556274
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          189.37,
+          468.75,
+          309.37,
+          592.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9439736008644104,
+        "similarity": 0.30469053983688354,
+        "category_margin": 0.0049755871295928955
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          189.37,
+          441.56,
+          716.25,
+          592.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9563053250312805,
+        "similarity": 0.29975655674934387,
+        "category_margin": 0.019062519073486328
+      }
+    ],
+    "elapsed_seconds": 14.991344699985348,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 7,
+      "candidate_count": 5,
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "d5116e7d1862e276e2d28fb722fd07dbc77d0561ad28521f8eb53f19ac492638",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "category_margin_min": 0.018,
+        "clip_weights": "weights/ViT-B-32.pt",
+        "crop_n_layers": 1,
+        "crop_padding": 0.05,
+        "device": "auto",
+        "duplicate_iou": 0.7,
+        "mask_score_min": 0.8,
+        "max_area_fraction": 0.95,
+        "max_objects": 40,
+        "min_area_fraction": 0.0002,
+        "min_box_side": 8,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "points_batch_size": 32,
+        "points_stride": 24,
+        "region_input": "crop",
+        "sam_weights": "weights/sam2.1_t.pt",
+        "similarity_min": 0.28
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  },
+  "estimated_cost_yuan": 0,
+  "budget_accounted_yuan": 0
+}

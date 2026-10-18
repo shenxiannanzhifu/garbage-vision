@@ -1,0 +1,62 @@
+{
+  "id": "commons-192295022",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:27:29.364967+00:00",
+    "image_id": "da249472f913b9e3e1878d86d957e79efd85b4352a76f2eb7b0dcc4c9b168a86",
+    "source_sha256": "31ed4c80416f6bb671514cd109cf959997becc896a65e2ce19395ab89be3329e",
+    "image_size": [
+      960,
+      2663
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶，已倒空清洁后可回收；标签显示为无糖可乐饮料瓶，非化学品包装",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 3.291251700022258,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "da249472f913b9e3e1878d86d957e79efd85b4352a76f2eb7b0dcc4c9b168a86",
+      "attempts": 1,
+      "response_id": "chatcmpl-00c589bd-f922-9861-8da2-db72632c9ef4",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 3596,
+        "completion_tokens": 50,
+        "total_tokens": 3646,
+        "completion_tokens_details": {
+          "text_tokens": 50
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2492,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"塑料瓶\",\"category\":\"recyclable\",\"reason\":\"普通饮料塑料瓶，已倒空清洁后可回收；标签显示为无糖可乐饮料瓶，非化学品包装\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.004096,
+  "budget_accounted_yuan": 0.004096
+}

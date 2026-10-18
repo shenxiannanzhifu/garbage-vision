@@ -1,0 +1,62 @@
+{
+  "id": "commons-83033961",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:28:19.039080+00:00",
+    "image_id": "6836d5c090a5cb7b5c37c0528675e4b561bb5f075ad9d5de85709c0dc8a9fa20",
+    "source_sha256": "050fa0bea9c6f6dee611e102494675f3edb742a412e5e78ebe51720cb683b06b",
+    "image_size": [
+      960,
+      960
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "螺旋形灯管为典型紧凑型荧光灯（CFL），含汞，属于有害垃圾；需保持完整避免破碎",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 2.761170900077559,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "6836d5c090a5cb7b5c37c0528675e4b561bb5f075ad9d5de85709c0dc8a9fa20",
+      "attempts": 1,
+      "response_id": "chatcmpl-4e7885d4-64fc-903e-9f9b-6b19de7cd25e",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 2006,
+        "completion_tokens": 54,
+        "total_tokens": 2060,
+        "completion_tokens_details": {
+          "text_tokens": 54
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 902,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"紧凑型荧光灯\",\"category\":\"hazardous\",\"reason\":\"螺旋形灯管为典型紧凑型荧光灯（CFL），含汞，属于有害垃圾；需保持完整避免破碎\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.002546,
+  "budget_accounted_yuan": 0.002546
+}

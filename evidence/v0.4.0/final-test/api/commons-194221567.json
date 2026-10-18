@@ -1,0 +1,62 @@
+{
+  "id": "commons-194221567",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:26:58.950390+00:00",
+    "image_id": "387df6b74ce12518f62061ee9cefb5c3260c20665243ff0b59a9a82723b4cb8d",
+    "source_sha256": "29af7dcd2977c1b80e48ecb467d37a2a2f08f8b546f8b7bf75643c2cbfc3a39b",
+    "image_size": [
+      494,
+      498
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "蓝色塑料瓶，无明显化学品标识，假设为普通饮料瓶且已倒空清洁，符合可回收物条件",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 2.0582048000069335,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "387df6b74ce12518f62061ee9cefb5c3260c20665243ff0b59a9a82723b4cb8d",
+      "attempts": 1,
+      "response_id": "chatcmpl-0603f93a-75da-96ba-bd6b-974f36a87173",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 1346,
+        "completion_tokens": 49,
+        "total_tokens": 1395,
+        "completion_tokens_details": {
+          "text_tokens": 49
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 242,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"塑料瓶\",\"category\":\"recyclable\",\"reason\":\"蓝色塑料瓶，无明显化学品标识，假设为普通饮料瓶且已倒空清洁，符合可回收物条件\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.001836,
+  "budget_accounted_yuan": 0.001836
+}

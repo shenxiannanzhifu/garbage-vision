@@ -1,0 +1,48 @@
+{
+  "id": "commons-26750498",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:27:58.352284+00:00",
+    "image_id": "83510bd4e74faf66999fa543af01a395d7c5720cb210a70d11d26f6ac1fd43bb",
+    "source_sha256": "1637267d855642f33b9734d3dd3ccd09e0688e7973c063b26a27e8f2516f79b6",
+    "image_size": [
+      960,
+      643
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "error",
+    "items": [],
+    "elapsed_seconds": 7.37563709996175,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": "API 返回了无效、截断或不符合约定的 JSON；未把它当作识别成功。",
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "83510bd4e74faf66999fa543af01a395d7c5720cb210a70d11d26f6ac1fd43bb",
+      "attempts": 1,
+      "response_id": "chatcmpl-23ce1946-e1c0-9d6a-92ac-a4f724fc3f49",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 1706,
+        "completion_tokens": 257,
+        "total_tokens": 1963,
+        "completion_tokens_details": {
+          "text_tokens": 257
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 602,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      }
+    }
+  },
+  "estimated_cost_yuan": 0.004276,
+  "budget_accounted_yuan": 0.004276
+}

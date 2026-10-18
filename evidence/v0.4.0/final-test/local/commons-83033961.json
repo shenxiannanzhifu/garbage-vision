@@ -1,0 +1,97 @@
+{
+  "id": "commons-83033961",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:31:27.541598+00:00",
+    "image_id": "6836d5c090a5cb7b5c37c0528675e4b561bb5f075ad9d5de85709c0dc8a9fa20",
+    "source_sha256": "050fa0bea9c6f6dee611e102494675f3edb742a412e5e78ebe51720cb683b06b",
+    "image_size": [
+      960,
+      960
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          387.19,
+          432.19,
+          568.12,
+          575.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9348715543746948,
+        "similarity": 0.311097115278244,
+        "category_margin": 0.03614753484725952
+      },
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          405.0,
+          576.56,
+          549.37,
+          691.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9295083284378052,
+        "similarity": 0.3074744939804077,
+        "category_margin": 0.034452617168426514
+      }
+    ],
+    "elapsed_seconds": 14.361194400000386,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 8,
+      "candidate_count": 2,
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "d5116e7d1862e276e2d28fb722fd07dbc77d0561ad28521f8eb53f19ac492638",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "category_margin_min": 0.018,
+        "clip_weights": "weights/ViT-B-32.pt",
+        "crop_n_layers": 1,
+        "crop_padding": 0.05,
+        "device": "auto",
+        "duplicate_iou": 0.7,
+        "mask_score_min": 0.8,
+        "max_area_fraction": 0.95,
+        "max_objects": 40,
+        "min_area_fraction": 0.0002,
+        "min_box_side": 8,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "points_batch_size": 32,
+        "points_stride": 24,
+        "region_input": "crop",
+        "sam_weights": "weights/sam2.1_t.pt",
+        "similarity_min": 0.28
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  },
+  "estimated_cost_yuan": 0,
+  "budget_accounted_yuan": 0
+}

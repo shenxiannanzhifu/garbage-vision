@@ -1,0 +1,62 @@
+{
+  "id": "commons-150481714",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:27:02.222142+00:00",
+    "image_id": "b61d99e2c52dacf2e244b4a95ddf4fb3ab60ad20482293762e18748d4b523af0",
+    "source_sha256": "f34d9819ee7d7015cae1982f5b3dfa28332bd57c0efe7eac2e3503a45484688d",
+    "image_size": [
+      960,
+      1280
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "多个塑料瓶",
+        "category": "recyclable",
+        "reason": "图中为倒空清洁后的饮料塑料瓶，用于种植支架，按规则属可回收物；未见化学品残留或特殊标识",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 3.1657459000125527,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "b61d99e2c52dacf2e244b4a95ddf4fb3ab60ad20482293762e18748d4b523af0",
+      "attempts": 1,
+      "response_id": "chatcmpl-2c9761d0-ec84-91d4-93cb-c33abcf2244b",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 2306,
+        "completion_tokens": 54,
+        "total_tokens": 2360,
+        "completion_tokens_details": {
+          "text_tokens": 54
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1202,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"多个塑料瓶\",\"category\":\"recyclable\",\"reason\":\"图中为倒空清洁后的饮料塑料瓶，用于种植支架，按规则属可回收物；未见化学品残留或特殊标识\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.002846,
+  "budget_accounted_yuan": 0.002846
+}

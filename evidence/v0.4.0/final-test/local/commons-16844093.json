@@ -1,0 +1,114 @@
+{
+  "id": "commons-16844093",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:27:13.953870+00:00",
+    "image_id": "76b068cdf7076e90ad0fea79c754aa14c2d5ad8e1b6f81b46d7976b188f6b5b4",
+    "source_sha256": "e07b7b1d6319e1c347df43e7fa796f0aadefaf10e78804ab2860aec5a02943f9",
+    "image_size": [
+      823,
+      1181
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "plastic bottle",
+        "bbox": [
+          190.3,
+          107.26,
+          448.64,
+          1092.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9490519165992737,
+        "similarity": 0.3278089761734009,
+        "category_margin": 0.053792595863342285
+      },
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          547.83,
+          104.95,
+          635.48,
+          501.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9809380173683167,
+        "similarity": 0.3112412691116333,
+        "category_margin": 0.025182455778121948
+      },
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "plastic bottle",
+        "bbox": [
+          280.26,
+          104.95,
+          364.45,
+          192.6
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9772561192512512,
+        "similarity": 0.30144527554512024,
+        "category_margin": 0.018110930919647217
+      }
+    ],
+    "elapsed_seconds": 14.919553599902429,
+    "load_seconds": 4.3411389999091625,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 14,
+      "candidate_count": 3,
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "d5116e7d1862e276e2d28fb722fd07dbc77d0561ad28521f8eb53f19ac492638",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "category_margin_min": 0.018,
+        "clip_weights": "weights/ViT-B-32.pt",
+        "crop_n_layers": 1,
+        "crop_padding": 0.05,
+        "device": "auto",
+        "duplicate_iou": 0.7,
+        "mask_score_min": 0.8,
+        "max_area_fraction": 0.95,
+        "max_objects": 40,
+        "min_area_fraction": 0.0002,
+        "min_box_side": 8,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "points_batch_size": 32,
+        "points_stride": 24,
+        "region_input": "crop",
+        "sam_weights": "weights/sam2.1_t.pt",
+        "similarity_min": 0.28
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  },
+  "estimated_cost_yuan": 0,
+  "budget_accounted_yuan": 0
+}

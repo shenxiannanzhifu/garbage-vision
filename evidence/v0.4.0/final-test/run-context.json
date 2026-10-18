@@ -1,0 +1,9 @@
+{
+  "execution": "local and API batches launched concurrently on the same Windows machine",
+  "other_load": "isolated-environment installation and PyTorch/package downloads also active",
+  "timing_note": "latencies are observed end-to-end/inference times under shared load, not an isolated speed benchmark",
+  "paid_requests_limit": 21,
+  "automatic_retries": false,
+  "configuration_commit": "3442a3f2e1e6a4d0688f9ad635fc8535de51ecc7",
+  "test_tuning": false
+}

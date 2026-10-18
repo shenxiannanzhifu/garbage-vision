@@ -1,0 +1,62 @@
+{
+  "id": "commons-78060423",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:28:22.783870+00:00",
+    "image_id": "37a7f70d553236e367d42ff89c84defc1e30d408ee2eab05a9dbf52f5a90b220",
+    "source_sha256": "17a8f1080165c64c4f293be29bdfbfac28e3d9d216864735292a8a9635473068",
+    "image_size": [
+      960,
+      499
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 1.8396330999676138,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "37a7f70d553236e367d42ff89c84defc1e30d408ee2eab05a9dbf52f5a90b220",
+      "attempts": 1,
+      "response_id": "chatcmpl-06765a5e-7979-9245-bdf8-9b376c417b6d",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 1586,
+        "completion_tokens": 53,
+        "total_tokens": 1639,
+        "completion_tokens_details": {
+          "text_tokens": 53
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 482,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"紧凑型荧光灯\",\"category\":\"hazardous\",\"reason\":\"含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.002116,
+  "budget_accounted_yuan": 0.002116
+}

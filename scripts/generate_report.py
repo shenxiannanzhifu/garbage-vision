@@ -94,8 +94,8 @@ def plot(scores, out):
         bars=ax.bar([i+offset for i in x],values,width,color=color,label=label)
         ax.bar_label(bars,fmt='%.2f',padding=3,fontsize=10)
     ax.set_xticks(x,[NAMES[c] if font else c for c in CATEGORIES],fontproperties=font)
-    ax.set_ylim(0,1.12);ax.set_ylabel('F1');ax.set_title('四分类出现集合：按类别 F1' if font else 'Category-presence F1',fontproperties=font)
-    ax.spines[['top','right']].set_visible(False);ax.grid(axis='y',alpha=.2);ax.set_axisbelow(True);ax.legend(loc='upper right')
+    ax.set_ylim(0,1.18);ax.set_ylabel('F1');ax.set_title('四分类出现集合：按类别 F1' if font else 'Category-presence F1',fontproperties=font)
+    ax.spines[['top','right']].set_visible(False);ax.grid(axis='y',alpha=.2);ax.set_axisbelow(True);ax.legend(loc='upper center',ncol=2,frameon=False)
     fig.savefig(out/'category-f1.png',dpi=180);fig.savefig(out/'category-f1.svg');plt.close(fig)
 
 

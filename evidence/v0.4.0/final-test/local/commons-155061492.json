@@ -1,0 +1,131 @@
+{
+  "id": "commons-155061492",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:27:28.526820+00:00",
+    "image_id": "3f2628141a715e37963a55ba1dd8c44adacb91fcc5906ee9b06a75c60693095c",
+    "source_sha256": "cf4c79137f35281b70470dde12d5dcb2bae59aa061fafcb6b1b97904b4a11253",
+    "image_size": [
+      195,
+      588
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          0,
+          483.49,
+          194.66,
+          587.43
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9666419625282288,
+        "similarity": 0.30844658613204956,
+        "category_margin": 0.029040217399597168
+      },
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          54.55,
+          14.36,
+          129.2,
+          71.2
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9548003077507019,
+        "similarity": 0.306692510843277,
+        "category_margin": 0.023810893297195435
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：玻璃瓶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "glass bottle",
+        "bbox": [
+          0,
+          0,
+          194.66,
+          70.63
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9232902526855469,
+        "similarity": 0.29919594526290894,
+        "category_margin": 0.005606561899185181
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          12.06,
+          14.93,
+          172.84,
+          582.83
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9425228834152222,
+        "similarity": 0.29315662384033203,
+        "category_margin": 0.0543111115694046
+      }
+    ],
+    "elapsed_seconds": 14.551433000015095,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 6,
+      "candidate_count": 4,
+      "suppressed_uncertain_parts": [],
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "d5116e7d1862e276e2d28fb722fd07dbc77d0561ad28521f8eb53f19ac492638",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "category_margin_min": 0.018,
+        "clip_weights": "weights/ViT-B-32.pt",
+        "crop_n_layers": 1,
+        "crop_padding": 0.05,
+        "device": "auto",
+        "duplicate_iou": 0.7,
+        "mask_score_min": 0.8,
+        "max_area_fraction": 0.95,
+        "max_objects": 40,
+        "min_area_fraction": 0.0002,
+        "min_box_side": 8,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "points_batch_size": 32,
+        "points_stride": 24,
+        "region_input": "crop",
+        "sam_weights": "weights/sam2.1_t.pt",
+        "similarity_min": 0.28
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  },
+  "estimated_cost_yuan": 0,
+  "budget_accounted_yuan": 0
+}

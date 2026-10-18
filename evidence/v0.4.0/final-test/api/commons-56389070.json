@@ -1,0 +1,62 @@
+{
+  "id": "commons-56389070",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:28:12.172213+00:00",
+    "image_id": "c68adbe4e83d61daa6472d73a4db120fc7d45d54f519e8793deb0de5017730e1",
+    "source_sha256": "fcc7a51638ffc8d4259c891e72c295515f78858df8f9520bcb5230a140ac5156",
+    "image_size": [
+      960,
+      640
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 2.0306050999788567,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "c68adbe4e83d61daa6472d73a4db120fc7d45d54f519e8793deb0de5017730e1",
+      "attempts": 1,
+      "response_id": "chatcmpl-7d55f0f3-2dea-985f-a909-4925f054ee36",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 1706,
+        "completion_tokens": 34,
+        "total_tokens": 1740,
+        "completion_tokens_details": {
+          "text_tokens": 34
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 602,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"烟蒂\",\"category\":\"other\",\"reason\":\"烟蒂属于其他垃圾；完全熄灭后再投放。\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.002046,
+  "budget_accounted_yuan": 0.002046
+}

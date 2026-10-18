@@ -1,0 +1,62 @@
+{
+  "id": "commons-183494508",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:27:25.774832+00:00",
+    "image_id": "263a0f3e3c9fff3ab2787c5f276fcbe82ebe5d45aa43ae994752ef7b7d3a94ef",
+    "source_sha256": "ded0a9897fcd81ee5db0f47b34aa6d868b71e1ed831e3642c3503244e8f44fa1",
+    "image_size": [
+      960,
+      1280
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；图中为透明带螺纹盖塑料瓶，无化学品标识，按规则视为普通饮料瓶",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 23.464899000013247,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "263a0f3e3c9fff3ab2787c5f276fcbe82ebe5d45aa43ae994752ef7b7d3a94ef",
+      "attempts": 1,
+      "response_id": "chatcmpl-5991fcd9-355f-9d71-8abf-1a2a90581ab7",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 2306,
+        "completion_tokens": 56,
+        "total_tokens": 2362,
+        "completion_tokens_details": {
+          "text_tokens": 56
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1202,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"塑料瓶\",\"category\":\"recyclable\",\"reason\":\"普通饮料塑料瓶倒空清洁后可回收；图中为透明带螺纹盖塑料瓶，无化学品标识，按规则视为普通饮料瓶\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.002866,
+  "budget_accounted_yuan": 0.002866
+}

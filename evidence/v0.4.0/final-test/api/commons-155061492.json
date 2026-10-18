@@ -1,0 +1,62 @@
+{
+  "id": "commons-155061492",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T08:26:56.866637+00:00",
+    "image_id": "3f2628141a715e37963a55ba1dd8c44adacb91fcc5906ee9b06a75c60693095c",
+    "source_sha256": "cf4c79137f35281b70470dde12d5dcb2bae59aa061fafcb6b1b97904b4a11253",
+    "image_size": [
+      195,
+      588
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；瓶身标签显示为‘舒跑’运动饮料，无化学品标识，按规则视为普通塑料瓶",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null
+      }
+    ],
+    "elapsed_seconds": 2.114318700041622,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "3f2628141a715e37963a55ba1dd8c44adacb91fcc5906ee9b06a75c60693095c",
+      "attempts": 1,
+      "response_id": "chatcmpl-45f44cbb-9d85-94bc-bfbe-a692b30eef6b",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 1214,
+        "completion_tokens": 57,
+        "total_tokens": 1271,
+        "completion_tokens_details": {
+          "text_tokens": 57
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 110,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"塑料瓶\",\"category\":\"recyclable\",\"reason\":\"普通饮料塑料瓶倒空清洁后可回收；瓶身标签显示为‘舒跑’运动饮料，无化学品标识，按规则视为普通塑料瓶\",\"uncertain\":false}]}"
+    }
+  },
+  "estimated_cost_yuan": 0.001784,
+  "budget_accounted_yuan": 0.001784
+}
