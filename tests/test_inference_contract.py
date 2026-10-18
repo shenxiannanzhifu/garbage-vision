@@ -50,6 +50,12 @@ def test_api_timeout_not_retried():
     result=infer_api(decode_image(make_image()),APISettings(key='test',base_url='https://example.invalid/v1',enabled=True),httpx.MockTransport(handler))
     assert result.status=='error' and len(calls)==1
 
+def test_api_nonobject_payload_is_recorded_as_failure():
+    result=infer_api(decode_image(make_image()),
+        APISettings(key='test',base_url='https://example.invalid/v1',enabled=True),
+        httpx.MockTransport(lambda request:httpx.Response(200,json=[])))
+    assert result.status=='error' and not result.items
+
 def test_unconfigured_api_does_not_request():
     def handler(request):raise AssertionError('unconfigured must not call')
     result=infer_api(decode_image(make_image()),APISettings(),httpx.MockTransport(handler))
@@ -85,6 +91,7 @@ def test_real_page_run_and_image_replacement():
     assert not at.exception
     result=at.session_state['results']['local']
     assert result.status=='success' and 'recyclable' in result.categories
+    assert not any(x.label=='LED light bulb' for x in result.items), '瓶盖不能作为独立 LED 灯泡区域'
     assert result.image_id==decode_image(raw).image_id
     with patch('streamlit.file_uploader',return_value=Upload(make_image())):at.run()
     assert not at.exception and at.session_state['results']=={}

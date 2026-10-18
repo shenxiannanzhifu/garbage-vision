@@ -108,4 +108,4 @@ if source and results:
     a,b=st.columns(2)
     a.download_button('导出 JSON 实验记录',export_json(valid),file_name=f'{source.image_id[:12]}.json',mime='application/json')
     b.download_button('导出 CSV 清单',export_csv(valid),file_name=f'{source.image_id[:12]}.csv',mime='text/csv')
-st.divider();st.caption('识废 · 传统识别版开发中　/　模型输出仅供分类实验，实际投放结合当地规则')
+st.divider();st.caption('识废 · v0.2.0 · 传统识别版　/　模型输出仅供分类实验，实际投放结合当地规则')

@@ -106,14 +106,16 @@ def infer_api(source,settings=None,transport=None,sleeper=time.sleep):
                     error={401:'鉴权失败，请核对本地密钥和地域。',403:'接口拒绝访问，请核对模型开通及业务空间权限。',429:'请求限流或额度不足。'}.get(response.status_code,f'API 请求失败（HTTP {response.status_code}），请检查端点、模型及余额。')
                     meta['http_status']=response.status_code;break
                 data=response.json()
+                if not isinstance(data,dict):raise ValueError('API 顶层 JSON 必须为对象。')
+                usage=data.get('usage') or {}
+                if not isinstance(usage,dict):raise ValueError('API 用量字段无效。')
                 # 即使后续结构校验失败，也保留服务端用量：无效输出可能已经计费。
                 meta.update(response_id=str(data.get('id','')),returned_model=str(data.get('model',settings.model)),
-                            usage=data.get('usage',{}))
+                            usage=usage)
                 choice=data['choices'][0]
                 if choice.get('finish_reason')=='length':raise ValueError('模型输出被截断，请缩小任务范围或增加输出上限。')
                 text=choice['message']['content'];items=parse_response(text)
-                meta.update(response_id=str(data.get('id','')),returned_model=str(data.get('model',settings.model)),
-                            usage=data.get('usage',{}),response_text=text)
+                meta['response_text']=text
                 return InferenceResult(**base,status='success',items=items,elapsed_seconds=time.perf_counter()-started,metadata=meta)
             except httpx.TimeoutException:
                 error='API 超时。为避免重复计费，没有自动重新提交；可查看服务商账单后手动重试。';break

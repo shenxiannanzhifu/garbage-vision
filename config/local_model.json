@@ -14,6 +14,9 @@
   "min_box_side": 8,
   "min_area_fraction": 0.0002,
   "duplicate_iou": 0.7,
+  "part_mask_containment": 0.95,
+  "part_max_area_ratio": 0.25,
+  "part_similarity_gap": 0.015,
   "max_objects": 40,
   "crop_padding": 0.05
 }

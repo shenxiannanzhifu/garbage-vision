@@ -1,0 +1,19 @@
+{
+  "authorized_by": "用户在本聊天明确同意",
+  "date_local": "2026-10-18",
+  "additional_max_requests": 25,
+  "budget_yuan": 1.5,
+  "automatic_retries": false,
+  "scope": {
+    "dev_images": 3,
+    "test_images": 21,
+    "web_validation": 1
+  },
+  "budget_allocations_yuan": {
+    "dev": 0.15,
+    "test": 1.2,
+    "web_reserved": 0.05
+  },
+  "prior_success_estimate_yuan": 0.002266,
+  "billing": "免费额度与账单未核实；按实际usage估算，未知费用保留预留额"
+}

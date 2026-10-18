@@ -29,9 +29,36 @@ def classify_region(scores, taxonomy, settings):
     margin=scores[best]-rival
     known=category is not None and scores[best]>=settings['similarity_min'] and margin>=settings['category_margin_min']
     if scores[best]<settings['similarity_min']: return None
-    reason=entry['reason'] if known else '外观或类别证据不足，需人工确认。'+entry['reason']
-    return Item(name=entry['name'],label=entry['label'],category=category if known else None,
+    reason=entry['reason'] if known else '不能确认物品类型或投放类别。外观候选：'+entry['name']+'；需结合完整物品、材质和用途人工核对。'
+    return Item(name=entry['name'] if known else '待确认区域',label=entry['label'],category=category if known else None,
                 uncertain=not known,reason=reason,similarity=scores[best],category_margin=margin)
+
+
+def prune_uncertain_parts(items, masks, settings):
+    """删除完整已知物体内的低分未知碎片；用真实掩膜包含关系，不能只看外接框。
+
+    保留被过滤的原始候选供审计；不抑制确定类别的小物品和掩膜不相交的独立物品。
+    """
+    import numpy as np
+    binary=[np.asarray(mask,dtype=bool) for mask in masks]
+    areas=[int(mask.sum()) for mask in binary]
+    kept=[]; suppressed=[]
+    for i,item in enumerate(items):
+        parent=None
+        if item.category is None and areas[i]:
+            for j,whole in enumerate(items):
+                if whole.category is None or not areas[j]:continue
+                if whole.similarity-item.similarity < settings['part_similarity_gap']:continue
+                if areas[i]/areas[j] > settings['part_max_area_ratio']:continue
+                containment=float(np.count_nonzero(binary[i]&binary[j]))/areas[i]
+                if containment >= settings['part_mask_containment']:
+                    parent={'parent_label':whole.label,'parent_bbox':whole.bbox,
+                            'mask_containment':containment,'area_ratio':areas[i]/areas[j]};break
+        if parent:
+            suppressed.append({'candidate':item.model_dump(),**parent,
+                               'reason':'较高分的已知物体内包含的低分未知局部区域；不重复作为独立物品。'})
+        else:kept.append(item)
+    return kept,suppressed
 
 class LocalEngine:
     """缓存权重与文本向量；锁保护 SAM 的图像缓存，防止并发图片相互污染。"""
@@ -71,7 +98,7 @@ class LocalEngine:
             boxes=result.boxes.xyxy.cpu().tolist();qualities=result.boxes.conf.cpu().tolist()
             from PIL import Image
             import numpy as np
-            candidates=[];crops=[];regions=[]
+            candidates=[];candidate_masks=[];crops=[];regions=[]
             masks=result.masks.data.cpu().numpy() if result.masks is not None else []
             for box,quality,mask in zip(boxes,qualities,masks):
                 x1,y1,x2,y2=box
@@ -86,17 +113,19 @@ class LocalEngine:
                 if settings.get('region_input')=='mask-on-gray':
                     mask_image=Image.fromarray((mask.astype(np.uint8)*255)).crop((max(0,x1-pad),max(0,y1-pad),min(width,x2+pad),min(height,y2+pad)))
                     crop=Image.composite(crop,Image.new('RGB',crop.size,(127,127,127)),mask_image)
-                crops.append(self.preprocess(crop));regions.append(((x1,y1,x2,y2),quality))
+                crops.append(self.preprocess(crop));regions.append(((x1,y1,x2,y2),quality,mask))
             # 小批量编码防止复杂图片的区域数造成显存溢出。
             scores=[]
             for start in range(0,len(crops),16):
                 tensor=self.torch.stack(crops[start:start+16]).to(self.device)
                 feature=self.clip.encode_image(tensor).float();feature/=feature.norm(dim=-1,keepdim=True)
                 scores.extend((feature@self.text_features.T).cpu().tolist())
-            for (box,quality),similarities in zip(regions,scores):
+            for (box,quality,mask),similarities in zip(regions,scores):
                 item=classify_region(similarities,self.taxonomy,settings)
                 if item:
-                    item.bbox=tuple(round(v,2) for v in box);item.mask_quality=quality;candidates.append(item)
+                    item.bbox=tuple(round(v,2) for v in box);item.mask_quality=quality;candidates.append(item);candidate_masks.append(mask)
+            candidate_count=len(candidates)
+            candidates,suppressed=prune_uncertain_parts(candidates,candidate_masks,settings)
             # 分割可能包含同物体的整体与局部；只删除高度重合框，不声称可精确计数。
             kept=[]
             for item in sorted(candidates,key=lambda x:x.similarity,reverse=True):
@@ -105,7 +134,8 @@ class LocalEngine:
             return InferenceResult(image_id=source.image_id,source_sha256=source.source_sha256,image_size=source.image.size,
                 method='local',model='SAM2.1-tiny + CLIP ViT-B/32',status='success',items=kept[:settings['max_objects']],
                 elapsed_seconds=elapsed,load_seconds=0 if warm else self.load_seconds,cache_hit=warm,
-                metadata={'device':self.device,'region_count':len(boxes),'candidate_count':len(candidates),
+                metadata={'device':self.device,'region_count':len(boxes),'candidate_count':candidate_count,
+                    'suppressed_uncertain_parts':suppressed,
                     'truncated':len(kept)>settings['max_objects'],'weight_sha256':self.weight_hashes,
                     'config_sha256':fingerprint(settings),'rules_sha256':fingerprint(self.taxonomy),
                     'config':settings,'score_note':'mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。'})
