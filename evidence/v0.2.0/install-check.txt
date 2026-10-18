@@ -1,0 +1,109 @@
+Checked 2 packages in 194ms
+Checked 14 packages in 761ms
+Checked 2 packages in 20ms
+running bdist_wheel
+running build
+running build_py
+copying clip\clip.py -> build\lib\clip
+copying clip\model.py -> build\lib\clip
+copying clip\simple_tokenizer.py -> build\lib\clip
+copying clip\__init__.py -> build\lib\clip
+copying build\lib\clip\clip.py -> build\lib\build\lib\clip
+copying build\lib\clip\model.py -> build\lib\build\lib\clip
+copying build\lib\clip\simple_tokenizer.py -> build\lib\build\lib\clip
+copying build\lib\clip\__init__.py -> build\lib\build\lib\clip
+creating build\lib\build\lib\build\lib\clip
+copying build\lib\build\lib\clip\clip.py -> build\lib\build\lib\build\lib\clip
+copying build\lib\build\lib\clip\model.py -> build\lib\build\lib\build\lib\clip
+copying build\lib\build\lib\clip\simple_tokenizer.py -> build\lib\build\lib\build\lib\clip
+copying build\lib\build\lib\clip\__init__.py -> build\lib\build\lib\build\lib\clip
+running egg_info
+writing clip.egg-info\PKG-INFO
+writing dependency_links to clip.egg-info\dependency_links.txt
+writing requirements to clip.egg-info\requires.txt
+writing top-level names to clip.egg-info\top_level.txt
+reading manifest file 'clip.egg-info\SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+adding license file 'LICENSE'
+writing manifest file 'clip.egg-info\SOURCES.txt'
+copying clip\bpe_simple_vocab_16e6.txt.gz -> build\lib\clip
+C:\Users\Cipher\Documents\Codex\2026-10-17\zhe-2\outputs\garbage-vision\.venv\Lib\site-packages\setuptools\_distutils\cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64\wheel
+creating build\bdist.win-amd64\wheel\build
+creating build\bdist.win-amd64\wheel\build\lib
+creating build\bdist.win-amd64\wheel\build\lib\build
+creating build\bdist.win-amd64\wheel\build\lib\build\lib
+creating build\bdist.win-amd64\wheel\build\lib\build\lib\clip
+copying build\lib\build\lib\build\lib\clip\clip.py -> build\bdist.win-amd64\wheel\.\build\lib\build\lib\clip
+copying build\lib\build\lib\build\lib\clip\model.py -> build\bdist.win-amd64\wheel\.\build\lib\build\lib\clip
+copying build\lib\build\lib\build\lib\clip\simple_tokenizer.py -> build\bdist.win-amd64\wheel\.\build\lib\build\lib\clip
+copying build\lib\build\lib\build\lib\clip\__init__.py -> build\bdist.win-amd64\wheel\.\build\lib\build\lib\clip
+creating build\bdist.win-amd64\wheel\build\lib\clip
+copying build\lib\build\lib\clip\clip.py -> build\bdist.win-amd64\wheel\.\build\lib\clip
+copying build\lib\build\lib\clip\model.py -> build\bdist.win-amd64\wheel\.\build\lib\clip
+copying build\lib\build\lib\clip\simple_tokenizer.py -> build\bdist.win-amd64\wheel\.\build\lib\clip
+copying build\lib\build\lib\clip\__init__.py -> build\bdist.win-amd64\wheel\.\build\lib\clip
+creating build\bdist.win-amd64\wheel\clip
+copying build\lib\clip\bpe_simple_vocab_16e6.txt.gz -> build\bdist.win-amd64\wheel\.\clip
+copying build\lib\clip\clip.py -> build\bdist.win-amd64\wheel\.\clip
+copying build\lib\clip\model.py -> build\bdist.win-amd64\wheel\.\clip
+copying build\lib\clip\simple_tokenizer.py -> build\bdist.win-amd64\wheel\.\clip
+copying build\lib\clip\__init__.py -> build\bdist.win-amd64\wheel\.\clip
+running install_egg_info
+Copying clip.egg-info to build\bdist.win-amd64\wheel\.\clip-1.0-py3.12.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\clip-1.0.dist-info\WHEEL
+creating 'C:\\Users\\Cipher\\Documents\\Codex\\2026-10-17\\zhe-2\\outputs\\garbage-vision\\.local\\clip-wheel\\clip-1.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
+adding 'build/lib/build/lib/clip/__init__.py'
+adding 'build/lib/build/lib/clip/clip.py'
+adding 'build/lib/build/lib/clip/model.py'
+adding 'build/lib/build/lib/clip/simple_tokenizer.py'
+adding 'build/lib/clip/__init__.py'
+adding 'build/lib/clip/clip.py'
+adding 'build/lib/clip/model.py'
+adding 'build/lib/clip/simple_tokenizer.py'
+adding 'clip/__init__.py'
+adding 'clip/bpe_simple_vocab_16e6.txt.gz'
+adding 'clip/clip.py'
+adding 'clip/model.py'
+adding 'clip/simple_tokenizer.py'
+adding 'clip-1.0.dist-info/licenses/LICENSE'
+adding 'clip-1.0.dist-info/METADATA'
+adding 'clip-1.0.dist-info/WHEEL'
+adding 'clip-1.0.dist-info/top_level.txt'
+adding 'clip-1.0.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel
+Resolved 1 package in 8ms
+Prepared 1 package in 22ms
+Uninstalled 1 package in 8ms
+Installed 1 package in 17ms
+ ~ clip==1.0 (from file:///C:/Users/Cipher/Documents/Codex/2026-10-17/zhe-2/outputs/garbage-vision/.local/clip-wheel/clip-1.0-py3-none-any.whl)
+CLIP 固定源码构建与安装完成： 7ffa84b3bfa40c42ecc1c77147a855e69cb2dd40
+已校验： sam2.1_t.pt
+已校验： ViT-B-32.pt
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.9.1+cu128",
+  "cuda_runtime": "12.8",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "vram_gb": 7.96,
+  "cuda_matmul": 32768.0
+}
+安装完成。运行 scripts\start.ps1 启动网页。

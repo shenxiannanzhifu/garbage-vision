@@ -1,0 +1,36 @@
+{
+  "id": "commons-179028310",
+  "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+  "manifest_sha256": "655a1e27452bf06454c61065e5c81035490ee3ff1cc614bc9c5a7a130aefdda5",
+  "max_attempts": 1,
+  "max_output_tokens": 2048,
+  "budget_authorization_yuan": 0.1,
+  "status": "finished",
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T07:48:23.948611+00:00",
+    "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+    "source_sha256": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "error",
+    "items": [],
+    "elapsed_seconds": 2.626793000032194,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": "无法连接 API，请检查网络与 HTTPS 端点。",
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+      "attempts": 1
+    }
+  },
+  "estimated_cost_yuan": null,
+  "billing_note": "按公开价格和返回 usage 估算；以服务商账单为准。"
+}

@@ -1,0 +1,616 @@
+{
+  "model": "yolov8l-worldv2",
+  "labels": [
+    "bottle",
+    "food",
+    "cigarette",
+    "light bulb",
+    "fluorescent lamp",
+    "banana",
+    "paper",
+    "battery"
+  ],
+  "conf": 0.12,
+  "imgsz": 960,
+  "iou": 0.5,
+  "agnostic_nms": true,
+  "load_seconds": 1.6615908999810927,
+  "dev_sha256": "655a1e27452bf06454c61065e5c81035490ee3ff1cc614bc9c5a7a130aefdda5",
+  "predictions": [
+    {
+      "id": "commons-79273563",
+      "image_id": "99b2c11fbe3e96289f278ede70d12241aac251e44e6542392110b901664e45cb",
+      "objects": [],
+      "elapsed_seconds": 0.3712359999772161
+    },
+    {
+      "id": "commons-5539252",
+      "image_id": "e8ca41620f12beed447ebf18ac4dfd018df1509171584a9a1e221d1832f01ffc",
+      "objects": [
+        {
+          "label": "bottle",
+          "confidence": 0.50354,
+          "xyxy": [
+            0.03,
+            314.15,
+            118.71,
+            714.35
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.19997,
+          "xyxy": [
+            247.1,
+            0.28,
+            358.54,
+            153.0
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.18006,
+          "xyxy": [
+            381.2,
+            195.67,
+            546.23,
+            454.52
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.15464,
+          "xyxy": [
+            564.47,
+            0.9,
+            730.54,
+            177.01
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.1487,
+          "xyxy": [
+            564.77,
+            76.51,
+            668.44,
+            177.57
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.037184800021350384
+    },
+    {
+      "id": "commons-98013794",
+      "image_id": "697b3e7a48816e9b4a5e9702de9dfd0ce9b0d56840d87b06017f6fed4adc2dc2",
+      "objects": [
+        {
+          "label": "bottle",
+          "confidence": 0.55321,
+          "xyxy": [
+            17.31,
+            329.87,
+            123.96,
+            375.82
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.49287,
+          "xyxy": [
+            407.01,
+            488.65,
+            559.22,
+            604.33
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.35903,
+          "xyxy": [
+            558.58,
+            488.54,
+            685.7,
+            536.52
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.35639,
+          "xyxy": [
+            133.34,
+            546.82,
+            291.71,
+            599.9
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.34844,
+          "xyxy": [
+            414.6,
+            580.92,
+            518.92,
+            652.13
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.30475,
+          "xyxy": [
+            378.35,
+            327.6,
+            434.5,
+            374.57
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.28032,
+          "xyxy": [
+            294.18,
+            490.34,
+            407.48,
+            548.46
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.27707,
+          "xyxy": [
+            186.87,
+            495.54,
+            290.47,
+            545.35
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.27496,
+          "xyxy": [
+            70.71,
+            284.28,
+            149.39,
+            340.29
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.22518,
+          "xyxy": [
+            516.99,
+            646.11,
+            566.04,
+            719.56
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.2116,
+          "xyxy": [
+            176.09,
+            77.66,
+            230.97,
+            168.73
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.21135,
+          "xyxy": [
+            733.61,
+            430.91,
+            908.87,
+            512.56
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.20949,
+          "xyxy": [
+            892.82,
+            485.78,
+            955.43,
+            540.57
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.18691,
+          "xyxy": [
+            504.42,
+            534.04,
+            678.72,
+            597.88
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.18344,
+          "xyxy": [
+            617.58,
+            433.32,
+            683.35,
+            480.29
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.18147,
+          "xyxy": [
+            227.15,
+            599.25,
+            325.25,
+            652.18
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.1646,
+          "xyxy": [
+            675.56,
+            648.15,
+            847.3,
+            700.1
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.16213,
+          "xyxy": [
+            236.99,
+            38.35,
+            349.07,
+            141.87
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.15005,
+          "xyxy": [
+            501.86,
+            488.9,
+            736.84,
+            598.06
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.14871,
+          "xyxy": [
+            759.87,
+            90.41,
+            854.88,
+            144.28
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.14811,
+          "xyxy": [
+            789.56,
+            496.35,
+            867.74,
+            545.61
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.13878,
+          "xyxy": [
+            126.18,
+            344.89,
+            220.83,
+            487.08
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.12001,
+          "xyxy": [
+            635.17,
+            2.59,
+            730.45,
+            123.76
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03876059997128323
+    },
+    {
+      "id": "commons-179028310",
+      "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+      "objects": [
+        {
+          "label": "banana",
+          "confidence": 0.55023,
+          "xyxy": [
+            129.4,
+            307.26,
+            787.6,
+            668.22
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03620339999906719
+    },
+    {
+      "id": "commons-10578610",
+      "image_id": "5f55924d797d28009337b7cc0de932ea84acb13050bec66476fc4761b3cd861f",
+      "objects": [
+        {
+          "label": "bottle",
+          "confidence": 0.51561,
+          "xyxy": [
+            562.35,
+            434.49,
+            688.69,
+            663.49
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.24467,
+          "xyxy": [
+            657.37,
+            303.9,
+            946.69,
+            394.32
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.22824,
+          "xyxy": [
+            674.45,
+            374.91,
+            856.23,
+            486.1
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.21294,
+          "xyxy": [
+            249.19,
+            355.3,
+            385.36,
+            462.12
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.18577,
+          "xyxy": [
+            796.07,
+            244.58,
+            927.74,
+            298.55
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.16888,
+          "xyxy": [
+            891.43,
+            600.44,
+            959.91,
+            693.93
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.14342,
+          "xyxy": [
+            116.44,
+            28.87,
+            208.45,
+            67.78
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.13327,
+          "xyxy": [
+            792.34,
+            284.27,
+            903.82,
+            310.21
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.12645,
+          "xyxy": [
+            598.25,
+            104.05,
+            765.89,
+            181.41
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.12131,
+          "xyxy": [
+            731.49,
+            621.08,
+            960.0,
+            718.68
+          ]
+        },
+        {
+          "label": "bottle",
+          "confidence": 0.12119,
+          "xyxy": [
+            543.34,
+            443.98,
+            788.49,
+            719.1
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.036870300013106316
+    },
+    {
+      "id": "commons-91813490",
+      "image_id": "3b1fd76e3a1097e57b3b3bd1f8f06f28e7bd8b1407c636850403cb98f10bef54",
+      "objects": [],
+      "elapsed_seconds": 0.033378300024196506
+    },
+    {
+      "id": "commons-136457085",
+      "image_id": "81deebb690eabed6886e78cd19ad4799f8be468c2c49be90258ca432dd451ea1",
+      "objects": [
+        {
+          "label": "bottle",
+          "confidence": 0.20308,
+          "xyxy": [
+            343.64,
+            0.61,
+            445.7,
+            110.95
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.037716299993917346
+    },
+    {
+      "id": "commons-136457084",
+      "image_id": "4b4b5631d62581b927bfc74323597c1cbc65bc91965f3f27beca4aea9808b91f",
+      "objects": [],
+      "elapsed_seconds": 0.03576270001940429
+    },
+    {
+      "id": "commons-185140035",
+      "image_id": "c940ae78c91a53526f068c0b73a0a8e61603347663ae5a168d3b32e6761179e8",
+      "objects": [
+        {
+          "label": "food",
+          "confidence": 0.2657,
+          "xyxy": [
+            292.67,
+            14.18,
+            952.58,
+            663.31
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03873469994869083
+    },
+    {
+      "id": "commons-48773002",
+      "image_id": "b7fa34c726c3f6132584dabd458fc551b7ff5382ac77435c8aab126bec924374",
+      "objects": [
+        {
+          "label": "food",
+          "confidence": 0.17188,
+          "xyxy": [
+            271.91,
+            342.52,
+            583.54,
+            550.49
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.032932400004938245
+    },
+    {
+      "id": "commons-44824808",
+      "image_id": "7412ba01effc054710d34a23b8b07312ded74e0eca9a23d27ecb2356171c6493",
+      "objects": [
+        {
+          "label": "food",
+          "confidence": 0.18955,
+          "xyxy": [
+            274.48,
+            151.77,
+            960.0,
+            796.42
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.04661149997264147
+    },
+    {
+      "id": "commons-56167128",
+      "image_id": "c3baeea4b5c956f7f125d3abc783f733815676df2cb7971f75ae84d376f22032",
+      "objects": [],
+      "elapsed_seconds": 0.03205900004832074
+    },
+    {
+      "id": "commons-79335127",
+      "image_id": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+      "objects": [],
+      "elapsed_seconds": 0.039627699996344745
+    },
+    {
+      "id": "commons-29411619",
+      "image_id": "8dd6e8f1aa05b853225262f7dde0dfc1b249ff22a5488b3bc2212cb0ba31a715",
+      "objects": [],
+      "elapsed_seconds": 0.03522809996502474
+    },
+    {
+      "id": "commons-80933087",
+      "image_id": "55f9892fbe11eaec94acd00c2855d9690c1743c8aa26bc2764d9fc25529a1142",
+      "objects": [
+        {
+          "label": "battery",
+          "confidence": 0.2026,
+          "xyxy": [
+            657.15,
+            243.42,
+            756.14,
+            386.05
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03376449999632314
+    },
+    {
+      "id": "commons-10279384",
+      "image_id": "fb82138fc8c9d904c505bb093365052749922a9d8cdcf8eb061b18baf4bd69e2",
+      "objects": [],
+      "elapsed_seconds": 0.037531099980697036
+    },
+    {
+      "id": "commons-9690809",
+      "image_id": "0913354834d433ec233729c1e7f3485552c293c7c235b9319a125332a72d22f1",
+      "objects": [
+        {
+          "label": "banana",
+          "confidence": 0.17962,
+          "xyxy": [
+            111.79,
+            53.64,
+            815.32,
+            978.23
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.04095769999548793
+    },
+    {
+      "id": "commons-701056",
+      "image_id": "f326967dd4a3d366deba1a021b2e14ac42804af9f472611ac5a23b3631bf8369",
+      "objects": [
+        {
+          "label": "banana",
+          "confidence": 0.43897,
+          "xyxy": [
+            322.71,
+            129.41,
+            700.32,
+            527.74
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03727989998878911
+    },
+    {
+      "id": "commons-39198884",
+      "image_id": "11f5784323499985587b0dda77b1464b410c5f3449275ecdf8d3da6fc29613d0",
+      "objects": [],
+      "elapsed_seconds": 0.03222759999334812
+    }
+  ]
+}

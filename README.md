@@ -1,27 +1,49 @@
 # 识废 · 同图双方案垃圾识别
 
-AI 方向第二阶段考核项目。使用同一图片比较本地目标检测与多模态 API，中文页面显示识别依据与不确定性。
+AI 方向第二阶段考核项目：中文网页比较同一图片的 **SAM2.1 分割 + CLIP 区域分类** 和 **百炼 qwen3-vl-plus 图像理解**，展示北京生活垃圾四分类、依据与不确定项。
 
-当前基础运行版 v0.1.0 已验收：图片上传、原图预览、格式与大小校验、EXIF 方向校正、明确模型状态。模型识别尚未接入，页面不显示模拟预测。
+v0.1.0 已验收；传统识别、API 和双侧页面已实现。已有 19 张开发图真实本地推理、一次真实 API 成功，以及 GPU AppTest 链路检查。新版浏览器确认、正式双方案评估和视频待完成，当前不是最终交付版。
 
 ## Windows 运行
 
-在本目录打开 PowerShell：
+在项目目录打开 PowerShell：
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/install.ps1
+.venv\Scripts\python.exe scripts/download_data.py
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start.ps1
 ```
 
-安装成功后也可双击 `启动项目.cmd`。页面地址 http://127.0.0.1:8501 ，只绑定本机。
-默认 CUDA 12.8 / Python 3.12；无 NVIDIA GPU 可安装时添加 `-Cpu`。
+安装后可双击 `启动项目.cmd`，访问 http://127.0.0.1:8501 。选择上传图片或开发样例，点击“开始识别”。默认只运行本地；勾选大模型会向服务商发送当前图片并可能收费。
 
-详见 `PROJECT_STATUS.md`、`docs/你需要做的操作.md`。图片不自动上传，只有运行大模型方案才向配置的 API 发送图片。
+安装器建立 Python 3.12 环境、安装 CUDA 12.8 PyTorch、固定版本 CLIP 源码和依赖、下载校验约 432 MB 权重。无 NVIDIA GPU 可增加 `-Cpu`；CPU 性能尚未实测。实测环境为 Windows 11、Python 3.12.14、torch 2.9.1+cu128、RTX 5060 Laptop GPU 7.96 GiB。
 
-## 已验证环境与版本证据
+## 配置与输出
 
-Windows 11、Python 3.12.14、PyTorch 2.9.1+cu128、RTX 5060 Laptop GPU（7.96 GiB）。`install.ps1` 已实际运行成功；CUDA 矩阵运算成功；7 项图片边界与页面逻辑检查通过。2026-10-17 用户亲自确认浏览器上传预览正常。
+- 双击 `配置API.cmd`，只在本地 `.env` 填密钥并启用。北京公共端点的业务空间 ID 留空。详见 [API 配置](docs/API配置说明.md)。
+- `config/local_model.json`：设备和阈值；`config/categories.json`：分类映射；`prompts/classify_v1.txt`：API 提示词。
+- 输入 JPG/PNG/WebP，最大 12 MB / 2400 万像素。EXIF 校正、透明区域合成白底后统一 RGB。两侧记录同一图片哈希，API 不接收本地预测。
+- 支持 JSON、CSV 和本地标注图。SAM 掩膜质量与 CLIP 余弦相似度均不是分类准确率；API 不编造框和置信度。
 
-验证：`.venv\Scripts\python.exe -m pytest tests -q`。版本验收记录在 `evidence/v0.1.0/acceptance.md`。浏览器自动化被当前执行环境拒绝，因此网页证据明确采用用户手动确认，不声称完成自动浏览器测试。
+单图命令：`.venv\Scripts\python.exe scripts/infer.py data/raw/commons/commons-179028310.jpg --output exports/单图`。
 
-本仓库采用 AGPL-3.0；数据和模型保留各自的许可证及来源，详见 `docs/资源与规则.md`。权重、原始数据、虚拟环境和登录凭据均不进入 Git。
+## 验证与局限
+
+`evidence/v0.2.0/local-dev-crops/predictions.json` 保存全部 19 张开发图输出。四类均有成功样例，但漏识别、背景误检、物体局部分割明显，不能精确计数。开发集结果不是测试准确率；没有定位真值，未微调或计算 mAP。见 [模型选择与限制](docs/模型选择与限制.md)。
+
+数据为 19 张开发图与 21 张隔离测试图，每图均有来源/许可/哈希。标签来自作者元数据与 Codex 视觉复核，非独立真人标注；多类别混合与未知场景覆盖不足。见 [数据与分类规则](docs/数据与分类规则.md)。
+
+2026-10-18 当前环境完整重装检查通过，18 项软件检查通过，含真实 GPU 推理经过 Streamlit AppTest、换图/坏图清理。AppTest 不等于浏览器截图/录屏。已有人工浏览器验收目前仅 v0.1 上传预览。
+
+```powershell
+$env:RUN_REAL_LOCAL='1'
+.venv\Scripts\python.exe -m pytest tests -q
+```
+
+API 成功证据为 `evidence/v0.3.0/api-probe-20261018T075101382996Z/result.json`。一次成功不能代表整体准确率。免费额度和账单以百炼控制台为准。
+
+## 故障与材料
+
+缺权重时运行 `scripts/download_weights.py`；北京 API 默认直连，其他服务需要环境代理时才设 `GV_API_USE_ENV_PROXY=true`。鉴权失败核对密钥地域和模型权限。无识别框可能是低相似度、遮挡或小目标，不代表图片没有垃圾。
+
+保持 `.ps1` 的 UTF-8 BOM 和 `.cmd` 的 CRLF。进度见 [PROJECT_STATUS](PROJECT_STATUS.md)，个人操作见 [你需要做的操作](docs/你需要做的操作.md)。代码为 AGPL-3.0，模型和数据保留各自许可；权重、原图、环境和密钥不入 Git。

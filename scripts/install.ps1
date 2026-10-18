@@ -24,6 +24,12 @@ $Index = if ($Cpu) { 'https://download.pytorch.org/whl/cpu' } else { 'https://do
 if ($LASTEXITCODE -ne 0) { throw '安装 PyTorch 失败' }
 & $Uv pip install --python '.venv\Scripts\python.exe' -r requirements.txt
 if ($LASTEXITCODE -ne 0) { throw '安装项目依赖失败' }
+& $Uv pip install --python '.venv\Scripts\python.exe' -r requirements-build.txt
+if ($LASTEXITCODE -ne 0) { throw '安装构建依赖失败' }
+& '.venv\Scripts\python.exe' scripts/install_clip.py
+if ($LASTEXITCODE -ne 0) { throw '安装固定版本 CLIP 失败' }
+& '.venv\Scripts\python.exe' scripts/download_weights.py
+if ($LASTEXITCODE -ne 0) { throw '下载或校验模型失败' }
 & '.venv\Scripts\python.exe' scripts/check_environment.py
 if ($LASTEXITCODE -ne 0) { throw '环境验证失败' }
 Write-Host '安装完成。运行 scripts\start.ps1 启动网页。'

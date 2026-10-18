@@ -1,0 +1,2022 @@
+{
+  "manifest_sha256": "655a1e27452bf06454c61065e5c81035490ee3ff1cc614bc9c5a7a130aefdda5",
+  "annotator": "来源元数据 + Codex 视觉复核，非独立真人标注",
+  "torch": "2.9.1+cu128",
+  "gpu_peak_allocated_bytes": 2255367168,
+  "records": [
+    {
+      "id": "commons-79273563",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "99b2c11fbe3e96289f278ede70d12241aac251e44e6542392110b901664e45cb",
+        "source_sha256": "01ed14b1e695bd913b9af1c14dbd2b302b7d0a7bcf8b35aa8be67be6e0ed178d",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "紧凑型荧光灯",
+            "category": "hazardous",
+            "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+            "uncertain": false,
+            "label": "compact fluorescent lamp",
+            "bbox": [
+              291.56,
+              689.06,
+              320.62,
+              719.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8931703567504883,
+            "similarity": 0.2910444736480713,
+            "category_margin": 0.045608311891555786
+          }
+        ],
+        "elapsed_seconds": 12.60631929995725,
+        "load_seconds": 15.58668360003503,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 46,
+          "candidate_count": 1,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-5539252",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "e8ca41620f12beed447ebf18ac4dfd018df1509171584a9a1e221d1832f01ffc",
+        "source_sha256": "76fa0209464eabf62e4085a290ed074ab344ef706b3eb81ec33e5f1b56dd5d29",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "玻璃瓶",
+            "category": "recyclable",
+            "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "glass bottle",
+            "bbox": [
+              0,
+              315.94,
+              77.81,
+              415.31
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9477994441986084,
+            "similarity": 0.3045021593570709,
+            "category_margin": 0.03496485948562622
+          },
+          {
+            "name": "玻璃瓶",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": true,
+            "label": "glass bottle",
+            "bbox": [
+              536.25,
+              361.87,
+              619.69,
+              435.94
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9403504729270935,
+            "similarity": 0.2942838668823242,
+            "category_margin": 0.016879737377166748
+          }
+        ],
+        "elapsed_seconds": 12.094592199951876,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 4,
+          "candidate_count": 2,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-98013794",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "697b3e7a48816e9b4a5e9702de9dfd0ce9b0d56840d87b06017f6fed4adc2dc2",
+        "source_sha256": "afcf776382aa5ee8ee28a0a78559846de7da7c95c5d71985d47bcd5c384530b9",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "紧凑型荧光灯",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+            "uncertain": true,
+            "label": "compact fluorescent lamp",
+            "bbox": [
+              0,
+              0,
+              26.25,
+              719.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8949915170669556,
+            "similarity": 0.29243364930152893,
+            "category_margin": 0.013218075037002563
+          },
+          {
+            "name": "玻璃瓶",
+            "category": "recyclable",
+            "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "glass bottle",
+            "bbox": [
+              177.19,
+              78.75,
+              229.69,
+              166.87
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9420291781425476,
+            "similarity": 0.2849275767803192,
+            "category_margin": 0.05002939701080322
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              689.06,
+              0,
+              740.62,
+              29.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9108710885047913,
+            "similarity": 0.2826155722141266,
+            "category_margin": 0.03647083044052124
+          }
+        ],
+        "elapsed_seconds": 12.163458499999251,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 22,
+          "candidate_count": 3,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-179028310",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+        "source_sha256": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              130.31,
+              310.31,
+              786.56,
+              664.69
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9668863415718079,
+            "similarity": 0.31369927525520325,
+            "category_margin": 0.04149717092514038
+          },
+          {
+            "name": "LED 灯泡",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。需核对灯具类型及当地电子废弃物回收渠道。",
+            "uncertain": true,
+            "label": "LED light bulb",
+            "bbox": [
+              676.87,
+              310.31,
+              785.62,
+              406.87
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9026166796684265,
+            "similarity": 0.2860841751098633,
+            "category_margin": 0.0029063522815704346
+          }
+        ],
+        "elapsed_seconds": 12.465562199999113,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 6,
+          "candidate_count": 2,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-10578610",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "5f55924d797d28009337b7cc0de932ea84acb13050bec66476fc4761b3cd861f",
+        "source_sha256": "8c7302c9eec8912e0cfd555269e18ee4d247e422375d13617b6448e833888ccb",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              842.81,
+              330.94,
+              959.06,
+              453.75
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9138196706771851,
+            "similarity": 0.31953930854797363,
+            "category_margin": 0.0669197142124176
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              558.75,
+              50.62,
+              721.87,
+              134.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.932905912399292,
+            "similarity": 0.30333182215690613,
+            "category_margin": 0.07184337079524994
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              394.69,
+              104.06,
+              541.87,
+              210.94
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9452148675918579,
+            "similarity": 0.3001099228858948,
+            "category_margin": 0.05059044063091278
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              108.75,
+              79.69,
+              145.31,
+              122.81
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9122759103775024,
+            "similarity": 0.2958049476146698,
+            "category_margin": 0.062438517808914185
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              501.56,
+              443.44,
+              609.37,
+              513.75
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9060142040252686,
+            "similarity": 0.2885127067565918,
+            "category_margin": 0.040257036685943604
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              533.44,
+              210.94,
+              705.0,
+              315.94
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9020906686782837,
+            "similarity": 0.2866944670677185,
+            "category_margin": 0.04670785367488861
+          },
+          {
+            "name": "塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "plastic bottle",
+            "bbox": [
+              286.87,
+              29.06,
+              329.06,
+              68.44
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8910273313522339,
+            "similarity": 0.284678190946579,
+            "category_margin": 0.03160703182220459
+          }
+        ],
+        "elapsed_seconds": 12.265355199982878,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 25,
+          "candidate_count": 7,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-91813490",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "3b1fd76e3a1097e57b3b3bd1f8f06f28e7bd8b1407c636850403cb98f10bef54",
+        "source_sha256": "0a1e213a7fd9d021fff1ade7e7d571164d8edaf2774df9da3d14af337937ddbb",
+        "image_size": [
+          960,
+          640
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 12.132183799985796,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 9,
+          "candidate_count": 0,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-136457085",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "81deebb690eabed6886e78cd19ad4799f8be468c2c49be90258ca432dd451ea1",
+        "source_sha256": "b43de08a943477dd052b0b63c04d0a55b252b473ae86c97218ad63df3a196e7a",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "香蕉皮",
+            "category": "kitchen",
+            "reason": "日常果皮属于厨余垃圾。",
+            "uncertain": false,
+            "label": "banana peel",
+            "bbox": [
+              719.06,
+              38.44,
+              818.44,
+              251.25
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8851667046546936,
+            "similarity": 0.30981752276420593,
+            "category_margin": 0.055723220109939575
+          },
+          {
+            "name": "食物残余",
+            "category": "kitchen",
+            "reason": "食物残余沥干后投放；先分离包装。",
+            "uncertain": false,
+            "label": "food waste",
+            "bbox": [
+              540.94,
+              38.44,
+              801.56,
+              188.44
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9406753778457642,
+            "similarity": 0.30942484736442566,
+            "category_margin": 0.0546494722366333
+          },
+          {
+            "name": "食物残余",
+            "category": "kitchen",
+            "reason": "食物残余沥干后投放；先分离包装。",
+            "uncertain": false,
+            "label": "food waste",
+            "bbox": [
+              624.37,
+              158.44,
+              797.81,
+              335.62
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9775556325912476,
+            "similarity": 0.30064332485198975,
+            "category_margin": 0.03967076539993286
+          },
+          {
+            "name": "食物残余",
+            "category": "kitchen",
+            "reason": "食物残余沥干后投放；先分离包装。",
+            "uncertain": false,
+            "label": "food waste",
+            "bbox": [
+              541.87,
+              59.06,
+              711.56,
+              187.5
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9661986231803894,
+            "similarity": 0.29539549350738525,
+            "category_margin": 0.038709938526153564
+          },
+          {
+            "name": "果核",
+            "category": "kitchen",
+            "reason": "普通水果果核属于厨余垃圾。",
+            "uncertain": false,
+            "label": "apple core",
+            "bbox": [
+              622.5,
+              113.44,
+              756.56,
+              203.44
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9564828276634216,
+            "similarity": 0.28598716855049133,
+            "category_margin": 0.023433327674865723
+          }
+        ],
+        "elapsed_seconds": 12.220102999999654,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 29,
+          "candidate_count": 5,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-136457084",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "4b4b5631d62581b927bfc74323597c1cbc65bc91965f3f27beca4aea9808b91f",
+        "source_sha256": "ef93b0f13a4e96632cfea3b5c21f0b4fcc9ccd0d13198f3f56b8bbf0869b9641",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "果核",
+            "category": "kitchen",
+            "reason": "普通水果果核属于厨余垃圾。",
+            "uncertain": false,
+            "label": "apple core",
+            "bbox": [
+              851.25,
+              59.06,
+              959.06,
+              120.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9181917309761047,
+            "similarity": 0.28266021609306335,
+            "category_margin": 0.024231523275375366
+          }
+        ],
+        "elapsed_seconds": 12.61114739999175,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 45,
+          "candidate_count": 1,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-185140035",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "c940ae78c91a53526f068c0b73a0a8e61603347663ae5a168d3b32e6761179e8",
+        "source_sha256": "2fb19710bdfdd8c5d8ea56cfd8a85476738988003db427017f2141c641fbbfd9",
+        "image_size": [
+          960,
+          747
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "菜皮菜叶",
+            "category": "kitchen",
+            "reason": "日常果蔬残余属于厨余垃圾。",
+            "uncertain": false,
+            "label": "vegetable peels",
+            "bbox": [
+              0,
+              0,
+              568.12,
+              477.19
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.972015917301178,
+            "similarity": 0.30572929978370667,
+            "category_margin": 0.08117100596427917
+          },
+          {
+            "name": "菜皮菜叶",
+            "category": "kitchen",
+            "reason": "日常果蔬残余属于厨余垃圾。",
+            "uncertain": false,
+            "label": "vegetable peels",
+            "bbox": [
+              580.31,
+              545.62,
+              691.87,
+              665.62
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9398441314697266,
+            "similarity": 0.3014509379863739,
+            "category_margin": 0.032504647970199585
+          },
+          {
+            "name": "果核",
+            "category": "kitchen",
+            "reason": "普通水果果核属于厨余垃圾。",
+            "uncertain": false,
+            "label": "apple core",
+            "bbox": [
+              61.87,
+              386.25,
+              167.81,
+              546.56
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9325197339057922,
+            "similarity": 0.300091415643692,
+            "category_margin": 0.038961440324783325
+          },
+          {
+            "name": "烟蒂",
+            "category": "other",
+            "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": false,
+            "label": "cigarette butt",
+            "bbox": [
+              596.25,
+              345.94,
+              771.56,
+              508.12
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9387827515602112,
+            "similarity": 0.2942575514316559,
+            "category_margin": 0.023498117923736572
+          },
+          {
+            "name": "使用过的纸巾",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。使用过的卫生纸巾难以回收，属于其他垃圾。",
+            "uncertain": true,
+            "label": "used tissue",
+            "bbox": [
+              343.12,
+              380.62,
+              614.06,
+              464.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9586155414581299,
+            "similarity": 0.2931635081768036,
+            "category_margin": 0.007972568273544312
+          },
+          {
+            "name": "菜皮菜叶",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。日常果蔬残余属于厨余垃圾。",
+            "uncertain": true,
+            "label": "vegetable peels",
+            "bbox": [
+              403.12,
+              338.44,
+              614.06,
+              463.12
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9657933712005615,
+            "similarity": 0.2910018265247345,
+            "category_margin": 0.01796931028366089
+          },
+          {
+            "name": "菜皮菜叶",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。日常果蔬残余属于厨余垃圾。",
+            "uncertain": true,
+            "label": "vegetable peels",
+            "bbox": [
+              402.19,
+              384.37,
+              709.69,
+              479.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9594388604164124,
+            "similarity": 0.2828754484653473,
+            "category_margin": 0.016821682453155518
+          }
+        ],
+        "elapsed_seconds": 12.851491299981717,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 24,
+          "candidate_count": 7,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-48773002",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "b7fa34c726c3f6132584dabd458fc551b7ff5382ac77435c8aab126bec924374",
+        "source_sha256": "2447968baf12c61fb32b571c9df01841ad8eae04420b2b262868a55146d50f2a",
+        "image_size": [
+          880,
+          579
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "食物残余",
+            "category": "kitchen",
+            "reason": "食物残余沥干后投放；先分离包装。",
+            "uncertain": false,
+            "label": "food waste",
+            "bbox": [
+              271.56,
+              338.59,
+              580.08,
+              549.14
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9722867608070374,
+            "similarity": 0.31922271847724915,
+            "category_margin": 0.0658659040927887
+          },
+          {
+            "name": "食物残余",
+            "category": "kitchen",
+            "reason": "食物残余沥干后投放；先分离包装。",
+            "uncertain": false,
+            "label": "food waste",
+            "bbox": [
+              415.94,
+              187.34,
+              605.0,
+              255.23
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9718301892280579,
+            "similarity": 0.30336177349090576,
+            "category_margin": 0.023542314767837524
+          },
+          {
+            "name": "食物残余",
+            "category": "kitchen",
+            "reason": "食物残余沥干后投放；先分离包装。",
+            "uncertain": false,
+            "label": "food waste",
+            "bbox": [
+              529.38,
+              267.27,
+              792.34,
+              391.02
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9806504845619202,
+            "similarity": 0.2928856313228607,
+            "category_margin": 0.03825905919075012
+          },
+          {
+            "name": "食物残余",
+            "category": "kitchen",
+            "reason": "食物残余沥干后投放；先分离包装。",
+            "uncertain": false,
+            "label": "food waste",
+            "bbox": [
+              177.03,
+              235.47,
+              412.5,
+              345.47
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9623962044715881,
+            "similarity": 0.29160669445991516,
+            "category_margin": 0.04025447368621826
+          },
+          {
+            "name": "食物残余",
+            "category": "kitchen",
+            "reason": "食物残余沥干后投放；先分离包装。",
+            "uncertain": false,
+            "label": "food waste",
+            "bbox": [
+              420.23,
+              218.28,
+              791.48,
+              391.02
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9729279279708862,
+            "similarity": 0.28570830821990967,
+            "category_margin": 0.04480300843715668
+          }
+        ],
+        "elapsed_seconds": 12.47272050002357,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 12,
+          "candidate_count": 5,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-44824808",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "7412ba01effc054710d34a23b8b07312ded74e0eca9a23d27ecb2356171c6493",
+        "source_sha256": "8b2aa3c0dbda1fc7380390d9b16b141dacc137473389c146331c8f35d1144a28",
+        "image_size": [
+          960,
+          936
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "果核",
+            "category": "kitchen",
+            "reason": "普通水果果核属于厨余垃圾。",
+            "uncertain": false,
+            "label": "apple core",
+            "bbox": [
+              597.19,
+              237.19,
+              703.12,
+              383.44
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9485136270523071,
+            "similarity": 0.3098696172237396,
+            "category_margin": 0.06066606938838959
+          },
+          {
+            "name": "菜皮菜叶",
+            "category": "kitchen",
+            "reason": "日常果蔬残余属于厨余垃圾。",
+            "uncertain": false,
+            "label": "vegetable peels",
+            "bbox": [
+              313.12,
+              463.12,
+              509.06,
+              594.37
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9391547441482544,
+            "similarity": 0.2986854910850525,
+            "category_margin": 0.0683673769235611
+          },
+          {
+            "name": "食物残余",
+            "category": "kitchen",
+            "reason": "食物残余沥干后投放；先分离包装。",
+            "uncertain": false,
+            "label": "food waste",
+            "bbox": [
+              390.94,
+              149.06,
+              643.12,
+              302.81
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9476335048675537,
+            "similarity": 0.28797653317451477,
+            "category_margin": 0.04779256880283356
+          },
+          {
+            "name": "菜皮菜叶",
+            "category": "kitchen",
+            "reason": "日常果蔬残余属于厨余垃圾。",
+            "uncertain": false,
+            "label": "vegetable peels",
+            "bbox": [
+              269.06,
+              318.75,
+              356.25,
+              541.87
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9431442618370056,
+            "similarity": 0.28555819392204285,
+            "category_margin": 0.04596242308616638
+          },
+          {
+            "name": "玻璃瓶",
+            "category": "recyclable",
+            "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "glass bottle",
+            "bbox": [
+              224.06,
+              164.06,
+              295.31,
+              276.56
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9359795451164246,
+            "similarity": 0.28408753871917725,
+            "category_margin": 0.02095368504524231
+          }
+        ],
+        "elapsed_seconds": 12.61183179996442,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 26,
+          "candidate_count": 5,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-56167128",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "c3baeea4b5c956f7f125d3abc783f733815676df2cb7971f75ae84d376f22032",
+        "source_sha256": "6811fab5cb7b9e1a953b445cd924d03346793ff0e394b05c1c7fc304b3b20216",
+        "image_size": [
+          960,
+          636
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [],
+        "elapsed_seconds": 12.377129700034857,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 10,
+          "candidate_count": 0,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-79335127",
+      "expected_categories": [
+        "other"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+        "source_sha256": "257f50d5a96646f15798583d98c203168a408b8f6580f58fd5c76c291b4e8de7",
+        "image_size": [
+          960,
+          1280
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "烟蒂",
+            "category": "other",
+            "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": false,
+            "label": "cigarette butt",
+            "bbox": [
+              85.0,
+              732.5,
+              540.0,
+              945.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9414557814598083,
+            "similarity": 0.3384399116039276,
+            "category_margin": 0.047148704528808594
+          },
+          {
+            "name": "烟蒂",
+            "category": "other",
+            "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": false,
+            "label": "cigarette butt",
+            "bbox": [
+              456.25,
+              637.5,
+              618.75,
+              792.5
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9047363996505737,
+            "similarity": 0.32850927114486694,
+            "category_margin": 0.022431015968322754
+          },
+          {
+            "name": "烟蒂",
+            "category": "other",
+            "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": false,
+            "label": "cigarette butt",
+            "bbox": [
+              253.75,
+              610.0,
+              465.0,
+              770.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9492380023002625,
+            "similarity": 0.31995338201522827,
+            "category_margin": 0.0249040424823761
+          },
+          {
+            "name": "烟蒂",
+            "category": "other",
+            "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": false,
+            "label": "cigarette butt",
+            "bbox": [
+              262.5,
+              617.5,
+              541.25,
+              943.75
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9479184150695801,
+            "similarity": 0.3193395137786865,
+            "category_margin": 0.03196251392364502
+          },
+          {
+            "name": "烟蒂",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。烟蒂属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": true,
+            "label": "cigarette butt",
+            "bbox": [
+              291.25,
+              732.5,
+              541.25,
+              945.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.95640629529953,
+            "similarity": 0.3027113378047943,
+            "category_margin": 0.014121651649475098
+          }
+        ],
+        "elapsed_seconds": 12.189434300002176,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 19,
+          "candidate_count": 5,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-29411619",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "8dd6e8f1aa05b853225262f7dde0dfc1b249ff22a5488b3bc2212cb0ba31a715",
+        "source_sha256": "d0fddef7750c0927f47b7a92dd7cfc15597b730caac316fbff4eb12b73a07bbf",
+        "image_size": [
+          960,
+          1707
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "紧凑型荧光灯",
+            "category": "hazardous",
+            "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+            "uncertain": false,
+            "label": "compact fluorescent lamp",
+            "bbox": [
+              0,
+              0,
+              958.52,
+              830.16
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9833553433418274,
+            "similarity": 0.3312028646469116,
+            "category_margin": 0.05096679925918579
+          },
+          {
+            "name": "烟蒂",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。烟蒂属于其他垃圾；完全熄灭后再投放。",
+            "uncertain": true,
+            "label": "cigarette butt",
+            "bbox": [
+              0,
+              1121.89,
+              416.75,
+              1521.96
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9554933905601501,
+            "similarity": 0.2866052985191345,
+            "category_margin": 0.01794952154159546
+          }
+        ],
+        "elapsed_seconds": 12.159901200036984,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 8,
+          "candidate_count": 2,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-80933087",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "55f9892fbe11eaec94acd00c2855d9690c1743c8aa26bc2764d9fc25529a1142",
+        "source_sha256": "f74c919472eb0d0435bfa9be8de6b88178b346983ce812aed6ca77d8ae67685c",
+        "image_size": [
+          960,
+          638
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "荧光灯管",
+            "category": "hazardous",
+            "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+            "uncertain": false,
+            "label": "fluorescent tube",
+            "bbox": [
+              173.44,
+              35.62,
+              959.06,
+              505.31
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9279662370681763,
+            "similarity": 0.2982324957847595,
+            "category_margin": 0.03274950385093689
+          }
+        ],
+        "elapsed_seconds": 12.203353799995966,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 2,
+          "candidate_count": 1,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-10279384",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "fb82138fc8c9d904c505bb093365052749922a9d8cdcf8eb061b18baf4bd69e2",
+        "source_sha256": "4d77a914ab81ac888d4fdc216a6a7b514a142dd2f17895bcdf641c574f4e8cfc",
+        "image_size": [
+          960,
+          1445
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "LED 灯泡",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。需核对灯具类型及当地电子废弃物回收渠道。",
+            "uncertain": true,
+            "label": "LED light bulb",
+            "bbox": [
+              365.48,
+              801.52,
+              716.86,
+              1318.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9079310297966003,
+            "similarity": 0.3428060710430145,
+            "category_margin": 0.012833565473556519
+          },
+          {
+            "name": "LED 灯泡",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。需核对灯具类型及当地电子废弃物回收渠道。",
+            "uncertain": true,
+            "label": "LED light bulb",
+            "bbox": [
+              365.48,
+              800.11,
+              718.27,
+              1143.02
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9207978248596191,
+            "similarity": 0.29828161001205444,
+            "category_margin": 0.00505828857421875
+          }
+        ],
+        "elapsed_seconds": 12.345447800005786,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 3,
+          "candidate_count": 2,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-9690809",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "0913354834d433ec233729c1e7f3485552c293c7c235b9319a125332a72d22f1",
+        "source_sha256": "9f682000dc8e33b4c779e5e8b0914e7c6c644466b61441b6f13d540bf730aaf2",
+        "image_size": [
+          960,
+          1435
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "紧凑型荧光灯",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+            "uncertain": true,
+            "label": "compact fluorescent lamp",
+            "bbox": [
+              305.5,
+              999.17,
+              658.64,
+              1310.28
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9631643891334534,
+            "similarity": 0.30833199620246887,
+            "category_margin": 0.003800511360168457
+          },
+          {
+            "name": "紧凑型荧光灯",
+            "category": "hazardous",
+            "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+            "uncertain": false,
+            "label": "compact fluorescent lamp",
+            "bbox": [
+              173.77,
+              53.25,
+              742.72,
+              191.99
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9581067562103271,
+            "similarity": 0.30375540256500244,
+            "category_margin": 0.02089005708694458
+          },
+          {
+            "name": "荧光灯管",
+            "category": "hazardous",
+            "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+            "uncertain": false,
+            "label": "fluorescent tube",
+            "bbox": [
+              113.51,
+              57.46,
+              783.36,
+              346.14
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9316489100456238,
+            "similarity": 0.29398369789123535,
+            "category_margin": 0.029489636421203613
+          },
+          {
+            "name": "紧凑型荧光灯",
+            "category": "hazardous",
+            "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+            "uncertain": false,
+            "label": "compact fluorescent lamp",
+            "bbox": [
+              128.93,
+              53.25,
+              742.72,
+              238.23
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9706544280052185,
+            "similarity": 0.29108861088752747,
+            "category_margin": 0.0183427631855011
+          }
+        ],
+        "elapsed_seconds": 12.32091519999085,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 9,
+          "candidate_count": 4,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-701056",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "f326967dd4a3d366deba1a021b2e14ac42804af9f472611ac5a23b3631bf8369",
+        "source_sha256": "d4e7c4b99ad7739eedf23aa5ae073d1ebcc12752dbc9f4c70861640b2352cde6",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "LED 灯泡",
+            "category": null,
+            "reason": "外观或类别证据不足，需人工确认。需核对灯具类型及当地电子废弃物回收渠道。",
+            "uncertain": true,
+            "label": "LED light bulb",
+            "bbox": [
+              208.12,
+              0,
+              697.5,
+              528.75
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8942239284515381,
+            "similarity": 0.30849701166152954,
+            "category_margin": 0.002278923988342285
+          }
+        ],
+        "elapsed_seconds": 12.42370139999548,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 2,
+          "candidate_count": 1,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    },
+    {
+      "id": "commons-39198884",
+      "expected_categories": [
+        "hazardous"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "image_id": "11f5784323499985587b0dda77b1464b410c5f3449275ecdf8d3da6fc29613d0",
+        "source_sha256": "bf2e2bb063174db4202addf03222463664044ca32a973363fefe499470328bfa",
+        "image_size": [
+          960,
+          540
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "紧凑型荧光灯",
+            "category": "hazardous",
+            "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+            "uncertain": false,
+            "label": "compact fluorescent lamp",
+            "bbox": [
+              0,
+              171.56,
+              959.06,
+              540.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9757929444313049,
+            "similarity": 0.3220929503440857,
+            "category_margin": 0.07483768463134766
+          },
+          {
+            "name": "紧凑型荧光灯",
+            "category": "hazardous",
+            "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+            "uncertain": false,
+            "label": "compact fluorescent lamp",
+            "bbox": [
+              0,
+              0,
+              959.06,
+              186.56
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9867464900016785,
+            "similarity": 0.30605533719062805,
+            "category_margin": 0.03696146607398987
+          },
+          {
+            "name": "荧光灯管",
+            "category": "hazardous",
+            "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+            "uncertain": false,
+            "label": "fluorescent tube",
+            "bbox": [
+              421.87,
+              130.31,
+              467.81,
+              281.25
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9269351363182068,
+            "similarity": 0.2821502089500427,
+            "category_margin": 0.027374833822250366
+          }
+        ],
+        "elapsed_seconds": 12.528762799978722,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 8,
+          "candidate_count": 3,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "271d032f8f1b352efcb3dfab74bee707c2fc78d6891c0b1c81c1bc0f7ed2c8c8",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_weights": "weights/ViT-B-32.pt",
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    }
+  ]
+}

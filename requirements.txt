@@ -10,3 +10,7 @@ httpx==0.28.1
 pydantic==2.12.3
 python-dotenv==1.1.1
 pytest==8.4.2
+# 固定源码 CLIP 的运行依赖；本地 wheel 安装阶段不再联网解析。
+ftfy==6.3.1
+regex==2026.9.29
+tqdm==4.70.1

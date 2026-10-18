@@ -1,0 +1,404 @@
+{
+  "model": "yolov8l-worldv2",
+  "labels": [
+    "plastic bottle",
+    "glass bottle",
+    "metal can",
+    "cardboard box",
+    "banana peel",
+    "apple core",
+    "food waste",
+    "vegetable",
+    "cigarette",
+    "tissue paper",
+    "fluorescent light bulb",
+    "fluorescent tube",
+    "medicine pill",
+    "battery",
+    "incandescent light bulb",
+    "LED light bulb"
+  ],
+  "conf": 0.12,
+  "imgsz": 960,
+  "iou": 0.5,
+  "agnostic_nms": true,
+  "load_seconds": 1.81758540001465,
+  "dev_sha256": "655a1e27452bf06454c61065e5c81035490ee3ff1cc614bc9c5a7a130aefdda5",
+  "predictions": [
+    {
+      "id": "commons-79273563",
+      "image_id": "99b2c11fbe3e96289f278ede70d12241aac251e44e6542392110b901664e45cb",
+      "objects": [],
+      "elapsed_seconds": 0.4589714999892749
+    },
+    {
+      "id": "commons-5539252",
+      "image_id": "e8ca41620f12beed447ebf18ac4dfd018df1509171584a9a1e221d1832f01ffc",
+      "objects": [
+        {
+          "label": "glass bottle",
+          "confidence": 0.41591,
+          "xyxy": [
+            0.03,
+            314.2,
+            118.81,
+            714.36
+          ]
+        },
+        {
+          "label": "glass bottle",
+          "confidence": 0.13136,
+          "xyxy": [
+            247.28,
+            0.17,
+            358.87,
+            153.58
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.0403785000089556
+    },
+    {
+      "id": "commons-98013794",
+      "image_id": "697b3e7a48816e9b4a5e9702de9dfd0ce9b0d56840d87b06017f6fed4adc2dc2",
+      "objects": [
+        {
+          "label": "glass bottle",
+          "confidence": 0.20001,
+          "xyxy": [
+            17.29,
+            329.89,
+            124.03,
+            375.86
+          ]
+        },
+        {
+          "label": "plastic bottle",
+          "confidence": 0.17943,
+          "xyxy": [
+            558.45,
+            488.42,
+            685.74,
+            536.53
+          ]
+        },
+        {
+          "label": "plastic bottle",
+          "confidence": 0.17125,
+          "xyxy": [
+            406.68,
+            488.87,
+            559.27,
+            603.69
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.04029330000048503
+    },
+    {
+      "id": "commons-179028310",
+      "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+      "objects": [
+        {
+          "label": "banana peel",
+          "confidence": 0.19553,
+          "xyxy": [
+            129.48,
+            307.84,
+            787.65,
+            668.46
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03780629998072982
+    },
+    {
+      "id": "commons-10578610",
+      "image_id": "5f55924d797d28009337b7cc0de932ea84acb13050bec66476fc4761b3cd861f",
+      "objects": [
+        {
+          "label": "plastic bottle",
+          "confidence": 0.41652,
+          "xyxy": [
+            562.86,
+            434.41,
+            688.65,
+            663.3
+          ]
+        },
+        {
+          "label": "plastic bottle",
+          "confidence": 0.15771,
+          "xyxy": [
+            674.73,
+            375.01,
+            856.19,
+            485.95
+          ]
+        },
+        {
+          "label": "plastic bottle",
+          "confidence": 0.14723,
+          "xyxy": [
+            543.26,
+            444.24,
+            788.82,
+            719.04
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03623670001979917
+    },
+    {
+      "id": "commons-91813490",
+      "image_id": "3b1fd76e3a1097e57b3b3bd1f8f06f28e7bd8b1407c636850403cb98f10bef54",
+      "objects": [],
+      "elapsed_seconds": 0.03398799995193258
+    },
+    {
+      "id": "commons-136457085",
+      "image_id": "81deebb690eabed6886e78cd19ad4799f8be468c2c49be90258ca432dd451ea1",
+      "objects": [
+        {
+          "label": "apple core",
+          "confidence": 0.26065,
+          "xyxy": [
+            91.38,
+            450.57,
+            155.55,
+            538.07
+          ]
+        },
+        {
+          "label": "food waste",
+          "confidence": 0.13359,
+          "xyxy": [
+            66.81,
+            15.3,
+            640.02,
+            662.48
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03709749999688938
+    },
+    {
+      "id": "commons-136457084",
+      "image_id": "4b4b5631d62581b927bfc74323597c1cbc65bc91965f3f27beca4aea9808b91f",
+      "objects": [],
+      "elapsed_seconds": 0.035372800019104034
+    },
+    {
+      "id": "commons-185140035",
+      "image_id": "c940ae78c91a53526f068c0b73a0a8e61603347663ae5a168d3b32e6761179e8",
+      "objects": [],
+      "elapsed_seconds": 0.0396584999980405
+    },
+    {
+      "id": "commons-48773002",
+      "image_id": "b7fa34c726c3f6132584dabd458fc551b7ff5382ac77435c8aab126bec924374",
+      "objects": [
+        {
+          "label": "metal can",
+          "confidence": 0.12812,
+          "xyxy": [
+            516.93,
+            247.3,
+            818.11,
+            577.83
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03475370001979172
+    },
+    {
+      "id": "commons-44824808",
+      "image_id": "7412ba01effc054710d34a23b8b07312ded74e0eca9a23d27ecb2356171c6493",
+      "objects": [
+        {
+          "label": "apple core",
+          "confidence": 0.26197,
+          "xyxy": [
+            332.64,
+            0.29,
+            378.22,
+            181.97
+          ]
+        },
+        {
+          "label": "apple core",
+          "confidence": 0.17788,
+          "xyxy": [
+            50.57,
+            275.49,
+            196.47,
+            342.49
+          ]
+        },
+        {
+          "label": "apple core",
+          "confidence": 0.14883,
+          "xyxy": [
+            123.49,
+            322.6,
+            174.12,
+            429.95
+          ]
+        },
+        {
+          "label": "apple core",
+          "confidence": 0.14296,
+          "xyxy": [
+            134.51,
+            127.21,
+            181.08,
+            187.26
+          ]
+        },
+        {
+          "label": "apple core",
+          "confidence": 0.13653,
+          "xyxy": [
+            196.66,
+            450.53,
+            243.07,
+            490.69
+          ]
+        },
+        {
+          "label": "apple core",
+          "confidence": 0.13068,
+          "xyxy": [
+            198.42,
+            473.13,
+            289.6,
+            563.37
+          ]
+        },
+        {
+          "label": "apple core",
+          "confidence": 0.12981,
+          "xyxy": [
+            535.82,
+            579.33,
+            590.05,
+            650.56
+          ]
+        },
+        {
+          "label": "apple core",
+          "confidence": 0.1219,
+          "xyxy": [
+            450.09,
+            302.77,
+            643.57,
+            484.36
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.05006300000241026
+    },
+    {
+      "id": "commons-56167128",
+      "image_id": "c3baeea4b5c956f7f125d3abc783f733815676df2cb7971f75ae84d376f22032",
+      "objects": [
+        {
+          "label": "cardboard box",
+          "confidence": 0.13825,
+          "xyxy": [
+            270.02,
+            343.08,
+            647.84,
+            486.63
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03358789999037981
+    },
+    {
+      "id": "commons-79335127",
+      "image_id": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+      "objects": [
+        {
+          "label": "cardboard box",
+          "confidence": 0.16494,
+          "xyxy": [
+            384.66,
+            0.0,
+            478.59,
+            43.43
+          ]
+        },
+        {
+          "label": "cardboard box",
+          "confidence": 0.12011,
+          "xyxy": [
+            595.53,
+            1.87,
+            649.82,
+            40.25
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.04055600002175197
+    },
+    {
+      "id": "commons-29411619",
+      "image_id": "8dd6e8f1aa05b853225262f7dde0dfc1b249ff22a5488b3bc2212cb0ba31a715",
+      "objects": [],
+      "elapsed_seconds": 0.040023500041570514
+    },
+    {
+      "id": "commons-80933087",
+      "image_id": "55f9892fbe11eaec94acd00c2855d9690c1743c8aa26bc2764d9fc25529a1142",
+      "objects": [
+        {
+          "label": "battery",
+          "confidence": 0.20943,
+          "xyxy": [
+            657.08,
+            243.52,
+            756.02,
+            386.37
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.032713200023863465
+    },
+    {
+      "id": "commons-10279384",
+      "image_id": "fb82138fc8c9d904c505bb093365052749922a9d8cdcf8eb061b18baf4bd69e2",
+      "objects": [],
+      "elapsed_seconds": 0.03669380000792444
+    },
+    {
+      "id": "commons-9690809",
+      "image_id": "0913354834d433ec233729c1e7f3485552c293c7c235b9319a125332a72d22f1",
+      "objects": [],
+      "elapsed_seconds": 0.043509699986316264
+    },
+    {
+      "id": "commons-701056",
+      "image_id": "f326967dd4a3d366deba1a021b2e14ac42804af9f472611ac5a23b3631bf8369",
+      "objects": [
+        {
+          "label": "banana peel",
+          "confidence": 0.13809,
+          "xyxy": [
+            322.62,
+            129.66,
+            700.11,
+            527.26
+          ]
+        }
+      ],
+      "elapsed_seconds": 0.03759760002139956
+    },
+    {
+      "id": "commons-39198884",
+      "image_id": "11f5784323499985587b0dda77b1464b410c5f3449275ecdf8d3da6fc29613d0",
+      "objects": [],
+      "elapsed_seconds": 0.030814099998679012
+    }
+  ]
+}
