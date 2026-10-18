@@ -18,5 +18,15 @@
   "part_max_area_ratio": 0.25,
   "part_similarity_gap": 0.015,
   "max_objects": 40,
-  "crop_padding": 0.05
+  "crop_padding": 0.05,
+  "clip_resize_mode": "letterbox",
+  "text_templates": [
+    "a photo of {}.",
+    "a close-up photo of {}.",
+    "a photo of one or more {}."
+  ],
+  "text_aliases": "config/local_texts_v2.json",
+  "context_weight": 0.5,
+  "context_padding": 0.5,
+  "image_fallback": true
 }

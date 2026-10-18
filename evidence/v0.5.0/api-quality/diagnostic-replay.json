@@ -1,0 +1,54 @@
+[
+  {
+    "id": "commons-133246916",
+    "source_response_record": "evidence/v0.5.0/api-quality/diagnose/commons-133246916.json",
+    "old_status": "success",
+    "normalized_categories": [
+      "kitchen",
+      "other",
+      "recyclable"
+    ],
+    "normalizations": [],
+    "note": "Offline replay of recorded response; no new API call."
+  },
+  {
+    "id": "commons-18975566",
+    "source_response_record": "evidence/v0.5.0/api-quality/diagnose/commons-18975566.json",
+    "old_status": "error",
+    "normalized_categories": [
+      "kitchen"
+    ],
+    "normalizations": [
+      {
+        "item_index": 5,
+        "original_category": "kitchen",
+        "action": "uncertain_category_cleared",
+        "reason": "模型声明不确定，撤销矛盾的确定类别。"
+      }
+    ],
+    "note": "Offline replay of recorded response; no new API call."
+  },
+  {
+    "id": "commons-26750498",
+    "source_response_record": "evidence/v0.5.0/api-quality/diagnose/commons-26750498.json",
+    "old_status": "error",
+    "normalized_categories": [
+      "kitchen"
+    ],
+    "normalizations": [
+      {
+        "item_index": 3,
+        "original_category": "other",
+        "action": "uncertain_category_cleared",
+        "reason": "模型声明不确定，撤销矛盾的确定类别。"
+      },
+      {
+        "item_index": 4,
+        "original_category": "other",
+        "action": "uncertain_category_cleared",
+        "reason": "模型声明不确定，撤销矛盾的确定类别。"
+      }
+    ],
+    "note": "Offline replay of recorded response; no new API call."
+  }
+]

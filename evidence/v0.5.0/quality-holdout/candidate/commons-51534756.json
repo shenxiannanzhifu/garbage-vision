@@ -1,0 +1,572 @@
+{
+  "id": "commons-51534756",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:58:43.207942+00:00",
+    "image_id": "bae0abe86f55cd0ed1ee2565ce3f139b24eb9fb65aec9d7dacba57f1cf9793b1",
+    "source_sha256": "8823f13db3dfccf642e1e5a4a07cedfc21b7a9af63203171636b69cf7bbf1b2f",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          49.69,
+          326.25,
+          204.37,
+          500.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8968005776405334,
+        "similarity": 0.3142146170139313,
+        "category_margin": 0.04838830232620239,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          84.37,
+          0,
+          123.75,
+          71.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9203647971153259,
+        "similarity": 0.30801430344581604,
+        "category_margin": 0.03411465883255005,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          217.5,
+          330.0,
+          282.19,
+          532.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9134295582771301,
+        "similarity": 0.30767446756362915,
+        "category_margin": 0.047518908977508545,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          42.19,
+          69.37,
+          204.37,
+          530.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9484842419624329,
+        "similarity": 0.3060528039932251,
+        "category_margin": 0.0332547128200531,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：玻璃瓶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "glass bottle",
+        "bbox": [
+          59.06,
+          67.5,
+          125.62,
+          141.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8877131938934326,
+        "similarity": 0.30485036969184875,
+        "category_margin": 0.006002604961395264,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          806.25,
+          125.62,
+          887.81,
+          186.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8988431096076965,
+        "similarity": 0.3018098473548889,
+        "category_margin": 0.009785234928131104,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          374.06,
+          365.62,
+          439.69,
+          554.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9213207364082336,
+        "similarity": 0.30147653818130493,
+        "category_margin": 0.02519214153289795,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          0,
+          0,
+          88.12,
+          491.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9197763800621033,
+        "similarity": 0.30097174644470215,
+        "category_margin": 0.044985055923461914,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          242.81,
+          71.25,
+          310.31,
+          126.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8807840943336487,
+        "similarity": 0.3005805015563965,
+        "category_margin": 0.004149526357650757,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          373.12,
+          88.12,
+          531.56,
+          580.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9327378869056702,
+        "similarity": 0.2993290424346924,
+        "category_margin": 0.04882645606994629,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          0,
+          480.0,
+          959.06,
+          720.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9571757912635803,
+        "similarity": 0.29835569858551025,
+        "category_margin": 0.04375740885734558,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          410.62,
+          164.06,
+          494.06,
+          271.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9495013356208801,
+        "similarity": 0.29745885729789734,
+        "category_margin": 0.03595051169395447,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          185.62,
+          0,
+          959.06,
+          215.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9608871340751648,
+        "similarity": 0.2974534332752228,
+        "category_margin": 0.028098225593566895,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          244.69,
+          140.62,
+          325.31,
+          245.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9365435242652893,
+        "similarity": 0.2965584397315979,
+        "category_margin": 0.024640142917633057,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          61.87,
+          137.81,
+          147.19,
+          240.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.922516942024231,
+        "similarity": 0.2946002185344696,
+        "category_margin": 0.02167460322380066,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          787.5,
+          211.87,
+          884.06,
+          334.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8991324305534363,
+        "similarity": 0.29421529173851013,
+        "category_margin": 0.02036777138710022,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：玻璃瓶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "glass bottle",
+        "bbox": [
+          344.06,
+          331.87,
+          375.0,
+          501.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8849620223045349,
+        "similarity": 0.29353809356689453,
+        "category_margin": 0.016753822565078735,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          59.06,
+          68.44,
+          125.62,
+          117.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9141768217086792,
+        "similarity": 0.29326480627059937,
+        "category_margin": 0.004617869853973389,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          912.19,
+          390.94,
+          959.06,
+          451.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8987500071525574,
+        "similarity": 0.29300856590270996,
+        "category_margin": 0.01325872540473938,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          734.06,
+          125.62,
+          916.87,
+          669.37
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9575350880622864,
+        "similarity": 0.2917495369911194,
+        "category_margin": 0.03295791149139404,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          143.44,
+          323.44,
+          203.44,
+          501.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9006322622299194,
+        "similarity": 0.29066571593284607,
+        "category_margin": 0.034178346395492554,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          583.12,
+          195.94,
+          675.94,
+          315.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9613056778907776,
+        "similarity": 0.28910031914711,
+        "category_margin": 0.026391029357910156,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：荧光灯管；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "fluorescent tube",
+        "bbox": [
+          186.56,
+          0,
+          959.06,
+          86.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8866267800331116,
+        "similarity": 0.28737133741378784,
+        "category_margin": 0.0009723901748657227,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          216.56,
+          72.19,
+          373.12,
+          540.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9380905032157898,
+        "similarity": 0.287004679441452,
+        "category_margin": 0.03645402193069458,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          541.87,
+          117.19,
+          714.37,
+          645.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9611305594444275,
+        "similarity": 0.28419816493988037,
+        "category_margin": 0.03979392349720001,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.1205742999445647,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 26,
+      "candidate_count": 25,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

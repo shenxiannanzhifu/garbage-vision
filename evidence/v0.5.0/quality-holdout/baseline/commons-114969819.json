@@ -1,0 +1,222 @@
+{
+  "id": "commons-114969819",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:53:50.145028+00:00",
+    "image_id": "ed28075816c1307cb435294b65177860bdcea132afc2e1d9252c25bc93dbf2ec",
+    "source_sha256": "848c880cadfe762af0b9643cfeaa17b8673646903338ad5ed2aca6a4d8ba7aaa",
+    "image_size": [
+      960,
+      540
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          540.94,
+          0,
+          959.06,
+          520.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8918769359588623,
+        "similarity": 0.34054678678512573,
+        "category_margin": 0.08757033944129944,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          337.5,
+          204.37,
+          529.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9599591493606567,
+        "similarity": 0.32115572690963745,
+        "category_margin": 0.07808740437030792,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          0,
+          893.44,
+          540.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9754873514175415,
+        "similarity": 0.3197716176509857,
+        "category_margin": 0.08518502116203308,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          169.69,
+          73.12,
+          241.87,
+          171.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8945989608764648,
+        "similarity": 0.31596463918685913,
+        "category_margin": 0.05965977907180786,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          185.62,
+          210.94,
+          316.87,
+          287.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9272974133491516,
+        "similarity": 0.307438462972641,
+        "category_margin": 0.032935380935668945,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          375.94,
+          231.56,
+          447.19,
+          332.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.926861584186554,
+        "similarity": 0.29719462990760803,
+        "category_margin": 0.011213719844818115,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          114.37,
+          56.25,
+          203.44,
+          105.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9078393578529358,
+        "similarity": 0.29230716824531555,
+        "category_margin": 0.010082840919494629,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "荧光灯管",
+        "category": "hazardous",
+        "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+        "uncertain": false,
+        "label": "fluorescent tube",
+        "bbox": [
+          66.56,
+          94.69,
+          103.12,
+          214.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9308152794837952,
+        "similarity": 0.2896464467048645,
+        "category_margin": 0.037247031927108765,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 13.326217200024985,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 25,
+      "candidate_count": 8,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "d5116e7d1862e276e2d28fb722fd07dbc77d0561ad28521f8eb53f19ac492638",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

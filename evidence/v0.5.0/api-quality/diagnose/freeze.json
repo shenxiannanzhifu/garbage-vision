@@ -1,0 +1,30 @@
+{
+  "phase": "diagnose",
+  "image_ids": [
+    "commons-133246916",
+    "commons-26750498",
+    "commons-18975566"
+  ],
+  "image_hashes": {
+    "commons-133246916": "11df662a233347fb590ae97cd13e4b78b13ecc955d57bd4e183dca48b999488d",
+    "commons-26750498": "1637267d855642f33b9734d3dd3ccd09e0688e7973c063b26a27e8f2516f79b6",
+    "commons-18975566": "4656a2dc4554be387d69572ce076e15d481eb9452d9c6044c282f83394e6d59a"
+  },
+  "api_config": {
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "qwen3-vl-plus",
+    "provider": "dashscope",
+    "timeout": 60.0,
+    "max_tokens": 2048,
+    "use_env_proxy": false
+  },
+  "source": {
+    "garbage_vision/api.py": "58b682b4a9a8ef550b9790457c46fbb7e5ab7f3b4370fadf11666e267d0eb6df",
+    "garbage_vision/schema.py": "a3e03177f6e36e61c6949f70f6dd052752932ae9de057a806920721f1ee9610b",
+    "prompts/classify_v1.txt": "642f30c6a7340646d2c84b336265818cd14c6d532066f457afa0da2f6d6a1afd",
+    "config/categories.json": "4111406e77e186cfb06cdd6598de91d1fe545b4459913aaa69d23a0733e0532a"
+  },
+  "max_calls_entire_round": 47,
+  "budget_entire_round_yuan": 1.5,
+  "max_attempts": 1
+}

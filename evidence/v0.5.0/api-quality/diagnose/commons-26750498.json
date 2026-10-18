@@ -1,0 +1,58 @@
+{
+  "id": "commons-26750498",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:52:53.153677+00:00",
+    "image_id": "83510bd4e74faf66999fa543af01a395d7c5720cb210a70d11d26f6ac1fd43bb",
+    "source_sha256": "1637267d855642f33b9734d3dd3ccd09e0688e7973c063b26a27e8f2516f79b6",
+    "image_size": [
+      960,
+      643
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "error",
+    "items": [],
+    "elapsed_seconds": 6.299930899986066,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": "API 返回了无效、截断或不符合约定的 JSON；未把它当作识别成功。",
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "83510bd4e74faf66999fa543af01a395d7c5720cb210a70d11d26f6ac1fd43bb",
+      "attempts": 1,
+      "response_id": "chatcmpl-cca0492b-ff48-93fa-b61c-ee7bd7ff67bc",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 1706,
+        "completion_tokens": 225,
+        "total_tokens": 1931,
+        "completion_tokens_details": {
+          "text_tokens": 225
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 602,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"鱼骨鱼皮鱼鳞及鱼内脏等水产残余\",\"category\":\"kitchen\",\"reason\":\"已决定丢弃的生鲜水产加工残余属于厨余垃圾，需沥干后投放\",\"uncertain\":false},{\"name\":\"橙子皮及切开的橙子果肉残余\",\"category\":\"kitchen\",\"reason\":\"日常水果皮与果肉残余属于厨余垃圾\",\"uncertain\":false},{\"name\":\"菜叶菜帮及蔬菜残余\",\"category\":\"kitchen\",\"reason\":\"日常果蔬废弃部分属于厨余垃圾\",\"uncertain\":false},{\"name\":\"白色塑料叉子\",\"category\":\"other\",\"reason\":\"一次性塑料餐具（非食品级容器）属于其他垃圾；图中无法确认是否为可回收级洁净塑料\",\"uncertain\":true},{\"name\":\"带标签纸片的鱼皮或包装残留\",\"category\":\"other\",\"reason\":\"混有非食品类标签纸张的有机残余，污染后不可归入厨余；图中无法确认材质与清洁程度\",\"uncertain\":true}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "ceea6125fd372f27e509781e3af403e43412e36f282f8cdd6c08eb4f0e3e3aff",
+      "finish_reason": "stop",
+      "validation_error_type": "ValidationError",
+      "validation_errors": [
+        {
+          "location": [],
+          "type": "value_error"
+        }
+      ]
+    }
+  },
+  "estimated_cost_yuan": 0.003956
+}

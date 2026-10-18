@@ -1,0 +1,225 @@
+{
+  "records": [
+    {
+      "id": "commons-133246916",
+      "expected_categories": [
+        "recyclable"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:52:46.780453+00:00",
+        "image_id": "0a3cbc01729a88d55bd71ddd55983c7cde8920addf208560a0230c730ca595dc",
+        "source_sha256": "11df662a233347fb590ae97cd13e4b78b13ecc955d57bd4e183dca48b999488d",
+        "image_size": [
+          960,
+          1280
+        ],
+        "method": "api",
+        "model": "qwen3-vl-plus",
+        "status": "success",
+        "items": [
+          {
+            "name": "多个塑料瓶",
+            "category": "recyclable",
+            "reason": "普通饮料塑料瓶倒空清洁后可回收；瓶身标签为屈臣氏苏打水，属食品级包装，无化学品残留迹象",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "使用过的纸巾",
+            "category": "other",
+            "reason": "抽取式面巾纸已使用，属于其他垃圾；无法确认是否被食物或油污污染，按常规处理",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "小碗中的颗粒物",
+            "category": "kitchen",
+            "reason": "粉色小碗内盛放疑似谷物或种子类食物残余，属厨余垃圾；已与容器分离，符合投放前提",
+            "uncertain": false,
+            "label": null,
+            "bbox": null,
+            "detection_confidence": null,
+            "mask_quality": null,
+            "similarity": null,
+            "category_margin": null,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 15.790739099960774,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "dashscope.aliyuncs.com",
+          "sent_image_sha256": "0a3cbc01729a88d55bd71ddd55983c7cde8920addf208560a0230c730ca595dc",
+          "attempts": 1,
+          "response_id": "chatcmpl-e1707e93-4950-9fec-ab87-33a31b963696",
+          "returned_model": "qwen3-vl-plus",
+          "usage": {
+            "prompt_tokens": 2306,
+            "completion_tokens": 150,
+            "total_tokens": 2456,
+            "completion_tokens_details": {
+              "text_tokens": 150
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 1202,
+              "text_tokens": 1104,
+              "cached_tokens": 0
+            }
+          },
+          "response_text": "{\"items\":[{\"name\":\"多个塑料瓶\",\"category\":\"recyclable\",\"reason\":\"普通饮料塑料瓶倒空清洁后可回收；瓶身标签为屈臣氏苏打水，属食品级包装，无化学品残留迹象\",\"uncertain\":false},{\"name\":\"使用过的纸巾\",\"category\":\"other\",\"reason\":\"抽取式面巾纸已使用，属于其他垃圾；无法确认是否被食物或油污污染，按常规处理\",\"uncertain\":false},{\"name\":\"小碗中的颗粒物\",\"category\":\"kitchen\",\"reason\":\"粉色小碗内盛放疑似谷物或种子类食物残余，属厨余垃圾；已与容器分离，符合投放前提\",\"uncertain\":false}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "84f9c890e9373f4fb2ddf78eeeffa2aee0dc7f63b53cfe3f6725ebb18d98d273",
+          "finish_reason": "stop"
+        }
+      },
+      "estimated_cost_yuan": 0.003806
+    },
+    {
+      "id": "commons-26750498",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:52:53.153677+00:00",
+        "image_id": "83510bd4e74faf66999fa543af01a395d7c5720cb210a70d11d26f6ac1fd43bb",
+        "source_sha256": "1637267d855642f33b9734d3dd3ccd09e0688e7973c063b26a27e8f2516f79b6",
+        "image_size": [
+          960,
+          643
+        ],
+        "method": "api",
+        "model": "qwen3-vl-plus",
+        "status": "error",
+        "items": [],
+        "elapsed_seconds": 6.299930899986066,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": "API 返回了无效、截断或不符合约定的 JSON；未把它当作识别成功。",
+        "metadata": {
+          "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "dashscope.aliyuncs.com",
+          "sent_image_sha256": "83510bd4e74faf66999fa543af01a395d7c5720cb210a70d11d26f6ac1fd43bb",
+          "attempts": 1,
+          "response_id": "chatcmpl-cca0492b-ff48-93fa-b61c-ee7bd7ff67bc",
+          "returned_model": "qwen3-vl-plus",
+          "usage": {
+            "prompt_tokens": 1706,
+            "completion_tokens": 225,
+            "total_tokens": 1931,
+            "completion_tokens_details": {
+              "text_tokens": 225
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 602,
+              "text_tokens": 1104,
+              "cached_tokens": 0
+            }
+          },
+          "response_text": "{\"items\":[{\"name\":\"鱼骨鱼皮鱼鳞及鱼内脏等水产残余\",\"category\":\"kitchen\",\"reason\":\"已决定丢弃的生鲜水产加工残余属于厨余垃圾，需沥干后投放\",\"uncertain\":false},{\"name\":\"橙子皮及切开的橙子果肉残余\",\"category\":\"kitchen\",\"reason\":\"日常水果皮与果肉残余属于厨余垃圾\",\"uncertain\":false},{\"name\":\"菜叶菜帮及蔬菜残余\",\"category\":\"kitchen\",\"reason\":\"日常果蔬废弃部分属于厨余垃圾\",\"uncertain\":false},{\"name\":\"白色塑料叉子\",\"category\":\"other\",\"reason\":\"一次性塑料餐具（非食品级容器）属于其他垃圾；图中无法确认是否为可回收级洁净塑料\",\"uncertain\":true},{\"name\":\"带标签纸片的鱼皮或包装残留\",\"category\":\"other\",\"reason\":\"混有非食品类标签纸张的有机残余，污染后不可归入厨余；图中无法确认材质与清洁程度\",\"uncertain\":true}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "ceea6125fd372f27e509781e3af403e43412e36f282f8cdd6c08eb4f0e3e3aff",
+          "finish_reason": "stop",
+          "validation_error_type": "ValidationError",
+          "validation_errors": [
+            {
+              "location": [],
+              "type": "value_error"
+            }
+          ]
+        }
+      },
+      "estimated_cost_yuan": 0.003956
+    },
+    {
+      "id": "commons-18975566",
+      "expected_categories": [
+        "kitchen"
+      ],
+      "result": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-18T09:52:58.604577+00:00",
+        "image_id": "e1d45ad41998fde9073502a3b40bfbd1ab405c447aec34b6343408a47c5a5f27",
+        "source_sha256": "4656a2dc4554be387d69572ce076e15d481eb9452d9c6044c282f83394e6d59a",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "api",
+        "model": "qwen3-vl-plus",
+        "status": "error",
+        "items": [],
+        "elapsed_seconds": 5.381669500027783,
+        "load_seconds": 0,
+        "cache_hit": false,
+        "error": "API 返回了无效、截断或不符合约定的 JSON；未把它当作识别成功。",
+        "metadata": {
+          "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "endpoint_host": "dashscope.aliyuncs.com",
+          "sent_image_sha256": "e1d45ad41998fde9073502a3b40bfbd1ab405c447aec34b6343408a47c5a5f27",
+          "attempts": 1,
+          "response_id": "chatcmpl-43cea954-35cf-9ef7-a50e-e33ec085cdee",
+          "returned_model": "qwen3-vl-plus",
+          "usage": {
+            "prompt_tokens": 1766,
+            "completion_tokens": 190,
+            "total_tokens": 1956,
+            "completion_tokens_details": {
+              "text_tokens": 190
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 662,
+              "text_tokens": 1104,
+              "cached_tokens": 0
+            }
+          },
+          "response_text": "{\"items\":[{\"name\":\"香蕉皮多个\",\"category\":\"kitchen\",\"reason\":\"日常果皮属于厨余垃圾\",\"uncertain\":false},{\"name\":\"橙子皮多个\",\"category\":\"kitchen\",\"reason\":\"日常果皮属于厨余垃圾\",\"uncertain\":false},{\"name\":\"柠檬皮环多个\",\"category\":\"kitchen\",\"reason\":\"日常果皮属于厨余垃圾\",\"uncertain\":false},{\"name\":\"鸡蛋壳多个\",\"category\":\"kitchen\",\"reason\":\"蛋壳属厨余垃圾，需沥干；北京分类中蛋壳归入厨余\",\"uncertain\":false},{\"name\":\"菜叶/蔬菜残余\",\"category\":\"kitchen\",\"reason\":\"绿色蔬菜残余属厨余垃圾\",\"uncertain\":false},{\"name\":\"疑似土豆皮或根茎类残余\",\"category\":\"kitchen\",\"reason\":\"常见根茎类食物残余属厨余垃圾\",\"uncertain\":true}]}",
+          "response_text_truncated": false,
+          "response_text_sha256": "237e34f93cfb94291788304d2d88479506ae01365b0743ddae7391816ec00016",
+          "finish_reason": "stop",
+          "validation_error_type": "ValidationError",
+          "validation_errors": [
+            {
+              "location": [],
+              "type": "value_error"
+            }
+          ]
+        }
+      },
+      "estimated_cost_yuan": 0.003666
+    }
+  ],
+  "api_config": {
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "model": "qwen3-vl-plus",
+    "provider": "dashscope",
+    "timeout": 60.0,
+    "max_tokens": 2048,
+    "use_env_proxy": false
+  }
+}

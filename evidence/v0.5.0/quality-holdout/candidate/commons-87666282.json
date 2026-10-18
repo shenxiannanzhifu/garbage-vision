@@ -1,0 +1,250 @@
+{
+  "id": "commons-87666282",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:58:47.946224+00:00",
+    "image_id": "5cc4cd23860455fe56c84178e5332d070336e0a5e1c75d2472a0bb93d50ae0d3",
+    "source_sha256": "ce82aa17435238d2f392ce9d3878de4116694a7eac392c548df9442f98d7a105",
+    "image_size": [
+      960,
+      1280
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          910.0,
+          0,
+          958.75,
+          91.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9725517630577087,
+        "similarity": 0.3077400326728821,
+        "category_margin": 0.033481210470199585,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "荧光灯管",
+        "category": "hazardous",
+        "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+        "uncertain": false,
+        "label": "fluorescent tube",
+        "bbox": [
+          0,
+          197.5,
+          590.0,
+          331.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9822843074798584,
+        "similarity": 0.30582839250564575,
+        "category_margin": 0.04814252257347107,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "荧光灯管",
+        "category": "hazardous",
+        "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+        "uncertain": false,
+        "label": "fluorescent tube",
+        "bbox": [
+          0,
+          197.5,
+          588.75,
+          402.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9578296542167664,
+        "similarity": 0.30306151509284973,
+        "category_margin": 0.0633273720741272,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：荧光灯管；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "fluorescent tube",
+        "bbox": [
+          212.5,
+          97.5,
+          363.75,
+          148.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.954952597618103,
+        "similarity": 0.29595616459846497,
+        "category_margin": 0.013580799102783203,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "荧光灯管",
+        "category": "hazardous",
+        "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+        "uncertain": false,
+        "label": "fluorescent tube",
+        "bbox": [
+          522.5,
+          488.75,
+          640.0,
+          538.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9548884630203247,
+        "similarity": 0.29533883929252625,
+        "category_margin": 0.023889601230621338,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "荧光灯管",
+        "category": "hazardous",
+        "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+        "uncertain": false,
+        "label": "fluorescent tube",
+        "bbox": [
+          0,
+          322.5,
+          346.25,
+          396.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9476835131645203,
+        "similarity": 0.2872002422809601,
+        "category_margin": 0.04500280320644379,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": "used tissue",
+        "bbox": [
+          451.25,
+          115.0,
+          646.25,
+          197.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9831889271736145,
+        "similarity": 0.2852714955806732,
+        "category_margin": 0.0418374240398407,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "荧光灯管",
+        "category": "hazardous",
+        "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+        "uncertain": false,
+        "label": "fluorescent tube",
+        "bbox": [
+          0,
+          0,
+          907.5,
+          327.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9252597093582153,
+        "similarity": 0.2844487726688385,
+        "category_margin": 0.04111561179161072,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：荧光灯管；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "fluorescent tube",
+        "bbox": [
+          198.75,
+          576.25,
+          256.25,
+          810.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9541116952896118,
+        "similarity": 0.2819688022136688,
+        "category_margin": 0.009654492139816284,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.10902179998811334,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 18,
+      "candidate_count": 9,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

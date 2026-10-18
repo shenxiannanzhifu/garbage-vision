@@ -5,7 +5,7 @@ import streamlit as st
 from garbage_vision.config import ROOT, local_settings, rules, fingerprint
 from garbage_vision.images import decode_image
 from garbage_vision.local import infer_local
-from garbage_vision.api import api_settings, infer_api
+from garbage_vision.api import api_settings, infer_api, PROMPT_PATH
 from garbage_vision.schema import InferenceResult
 from garbage_vision.exports import annotate, export_json, export_csv
 
@@ -22,7 +22,7 @@ st.caption('可回收物 · 有害垃圾 · 厨余垃圾 · 其他垃圾　｜�
 taxonomy=rules(); names=taxonomy['categories']; settings=local_settings()
 with st.expander('识别范围与实验设置'):
     st.write('按北京生活垃圾四分类口径，假定主体已决定丢弃。饮料瓶先倒空清洁，食物先分离包装。灯具类型、化学残留等不能只靠图片保证。')
-    st.write('本地方案：SAM2 分割 + CLIP 区域分类。小物品、遮挡、堆积容易漏检或错分；框可能表示一个区域，不宜用于精确计数。')
+    st.write('本地方案：SAM2 分割 + CLIP 区域及上下文分类。无法定位时可能提供整图分类并明确标注。小物品、遮挡、堆积仍可能漏检或错分，不能精确计数。')
     settings['similarity_min']=st.slider('本地分类相似度下限',.20,.40,float(settings['similarity_min']),.01)
     st.caption('相似度不是准确率。修改阈值会清空旧结果；正式评估使用冻结配置。')
 uploaded=st.file_uploader('选择待识别图片',type=['jpg','jpeg','png','webp'],help='最大 12 MB / 2400 万像素')
@@ -49,7 +49,10 @@ except (ValueError,TypeError):
 # 换图、错误上传、修改规则或阈值后清空旧结果，防止图 A 的预测显示在图 B 下。
 identity=(source.image_id,source.source_sha256) if source else None
 run_key=fingerprint({'image':identity,'local':settings,'rules':taxonomy,'api_model':api_config.model if api_config else '',
-    'api_base':api_config.base_url if api_config else '', 'prompt':(ROOT/'prompts/classify_v1.txt').read_text(encoding='utf-8')})
+    'api_base':api_config.base_url if api_config else '',
+    'api_options':{k:getattr(api_config,k) for k in ['provider','max_tokens','reasoning_effort','image_detail']} if api_config else {},
+    'aliases':(ROOT/settings['text_aliases']).read_text(encoding='utf-8') if settings.get('text_aliases') else '',
+    'prompt':(ROOT/PROMPT_PATH).read_text(encoding='utf-8')})
 if st.session_state.get('run_key')!=run_key:
     st.session_state['run_key']=run_key; st.session_state['results']={}
 if source:
@@ -76,14 +79,15 @@ def render_result(result):
     st.caption(f'{result.model} · 推理/请求 {result.elapsed_seconds:.2f} 秒 · 加载 {result.load_seconds:.2f} 秒')
     if result.metadata.get('fallback'):st.warning(result.metadata['fallback'])
     if result.method=='local':
-        picture=annotate(source,result);st.image(picture,caption='真实分割区域的定位框；不保证精确计数',width='stretch')
+        picture=annotate(source,result);st.image(picture,caption='有框项来自分割区域；整图识别项没有定位框，不保证精确计数',width='stretch')
+        if result.metadata.get('image_fallback_used'):st.info('部分结果来自整图识别，未获得可靠定位。请查看清单中的“定位方式”。')
         st.download_button('下载本地标注图',picture,file_name=f'{source.image_id[:12]}-annotated.png',mime='image/png')
     if not result.items:st.info('未识别到足够确定的支持范围内物品。这不代表图片里没有垃圾。')
     else:
         rows=[]
         for index,item in enumerate(result.items,1):
             row={'序号':index,'物品':item.name,'四分类':names.get(item.category,'无法确定'),'依据 / 不确定项':item.reason}
-            if result.method=='local':row.update({'分割质量':round(item.mask_quality,3) if item.mask_quality is not None else None,'分类相似度':round(item.similarity,3) if item.similarity is not None else None})
+            if result.method=='local':row.update({'定位方式':'分割区域' if item.bbox else '整图识别，未定位','分割质量':round(item.mask_quality,3) if item.mask_quality is not None else None,'分类相似度':round(item.similarity,3) if item.similarity is not None else None})
             rows.append(row)
         st.dataframe(rows,hide_index=True,width='stretch')
     with st.expander('本次实验记录'):
@@ -96,6 +100,7 @@ with left:
     else:st.info('本地模型已接入。选择图片后点击“开始识别”。')
 with right:
     st.subheader('02  多模态大模型')
+    if api_config:st.caption(f'当前模型：{api_config.model} · 服务商：{api_config.provider}')
     if 'api' in results and source:render_result(results['api'])
     else:st.info(api_problem or 'API 已配置，尚未调用。勾选“同时运行大模型”后点击开始。')
 if source and results:
@@ -108,4 +113,4 @@ if source and results:
     a,b=st.columns(2)
     a.download_button('导出 JSON 实验记录',export_json(valid),file_name=f'{source.image_id[:12]}.json',mime='application/json')
     b.download_button('导出 CSV 清单',export_csv(valid),file_name=f'{source.image_id[:12]}.csv',mime='text/csv')
-st.divider();st.caption('识废 · v1.0.0-rc.1 · 候选交付版　/　模型输出仅供分类实验，实际投放结合当地规则')
+st.divider();st.caption('识废 · 质量改进与 OpenAI 联调中　/　模型输出仅供分类实验，实际投放结合当地规则')

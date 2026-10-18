@@ -1,0 +1,292 @@
+{
+  "id": "commons-27372712",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:58:46.686331+00:00",
+    "image_id": "6e84ef22ae3f8baab4685f23f87f3be77bb024ba41a4662b6881d5a9ad6315a2",
+    "source_sha256": "d4f5ad4aef62eadc2e16b4d5e263b170d987c8143f1e1dc5869859d00cb5927e",
+    "image_size": [
+      960,
+      960
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          699.37,
+          496.87,
+          875.62,
+          600.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9533877372741699,
+        "similarity": 0.33591920137405396,
+        "category_margin": 0.03904545307159424,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          191.25,
+          781.87,
+          316.87,
+          930.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9684911966323853,
+        "similarity": 0.3358561396598816,
+        "category_margin": 0.0062129199504852295,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          734.06,
+          740.62,
+          855.94,
+          885.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9565587639808655,
+        "similarity": 0.33110299706459045,
+        "category_margin": 1.7821788787841797e-05,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          708.75,
+          648.75,
+          884.06,
+          764.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9076259732246399,
+        "similarity": 0.3242790997028351,
+        "category_margin": 0.0034153759479522705,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          456.56,
+          275.62,
+          664.69,
+          401.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9440026879310608,
+        "similarity": 0.32042092084884644,
+        "category_margin": 0.03145506978034973,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          98.44,
+          274.69,
+          422.81,
+          433.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.94487065076828,
+        "similarity": 0.3173358738422394,
+        "category_margin": 0.040301501750946045,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          523.12,
+          754.69,
+          642.19,
+          900.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9625793695449829,
+        "similarity": 0.31672000885009766,
+        "category_margin": 0.003993093967437744,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          71.25,
+          525.94,
+          444.37,
+          628.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9361514449119568,
+        "similarity": 0.3115292489528656,
+        "category_margin": 0.02392292022705078,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          90.94,
+          345.94,
+          422.81,
+          522.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9061352610588074,
+        "similarity": 0.3101580739021301,
+        "category_margin": 0.03280666470527649,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          649.69,
+          564.37,
+          684.37,
+          608.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.954017162322998,
+        "similarity": 0.2871910333633423,
+        "category_margin": 0.0029602348804473877,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "含汞荧光灯属于有害垃圾，保持完整、避免破碎；外观相似的 LED 灯须核对。",
+        "uncertain": false,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          290.62,
+          430.31,
+          428.44,
+          529.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9663777351379395,
+        "similarity": 0.2849697768688202,
+        "category_margin": 0.02813747525215149,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.06145709997508675,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 14,
+      "candidate_count": 11,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

@@ -22,6 +22,9 @@ def main():
     if not args.confirm_single_paid_call:
         parser.error('先取得单次付费调用授权，再显式添加 --confirm-single-paid-call')
     settings = replace(api_settings(), max_attempts=1, max_tokens=2048)
+    if (settings.provider!='dashscope' or settings.model!='qwen3-vl-plus'
+            or settings.base_url!='https://dashscope.aliyuncs.com/compatible-mode/v1'):
+        raise SystemExit('此旧脚本仅适用于百炼；OpenAI 请使用 scripts/openai_trial.py 及其美元预算。')
     if settings.problem():
         raise SystemExit(settings.problem())
     manifest_path = ROOT / 'data/manifests/dev.json'

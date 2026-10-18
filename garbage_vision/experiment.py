@@ -5,7 +5,7 @@ from importlib.metadata import version
 import json
 from pathlib import Path
 import subprocess
-from .api import api_settings
+from .api import api_settings, PROMPT_PATH
 from .config import ROOT, local_settings, weight_hash
 from .images import decode_image
 
@@ -22,7 +22,7 @@ def text_hash(path):
 def public_api_config(settings=None):
     """显式白名单，避免把密钥、密钥摘要或完整环境变量写入证据。"""
     s = settings or api_settings()
-    return {k: getattr(s, k) for k in ('base_url', 'model', 'provider', 'timeout', 'max_tokens', 'use_env_proxy')}
+    return {k: getattr(s, k) for k in ('base_url', 'model', 'provider', 'timeout', 'max_tokens', 'use_env_proxy', 'reasoning_effort', 'image_detail')}
 
 
 def estimate_cost(usage):
@@ -57,7 +57,7 @@ def freeze_experiment(destination, split, ids=None):
         image = decode_image(path.read_bytes())
         sources.append({**row, 'image_id': image.image_id, 'image_size': list(image.image.size)})
     code = list((ROOT / 'garbage_vision').glob('*.py')) + list((ROOT / 'config').glob('*.json'))
-    code += [ROOT / p for p in ['app.py', 'prompts/classify_v1.txt', 'scripts/evaluate.py',
+    code += [ROOT / p for p in ['app.py', PROMPT_PATH, 'scripts/evaluate.py',
                                 'scripts/score.py', 'scripts/generate_report.py', 'requirements.txt', 'requirements-build.txt']]
     settings = local_settings()
     frozen = {'created_at_utc': datetime.now(timezone.utc).isoformat(), 'split': split,

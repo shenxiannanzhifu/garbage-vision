@@ -1,0 +1,97 @@
+{
+  "id": "commons-133246916",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:52:46.780453+00:00",
+    "image_id": "0a3cbc01729a88d55bd71ddd55983c7cde8920addf208560a0230c730ca595dc",
+    "source_sha256": "11df662a233347fb590ae97cd13e4b78b13ecc955d57bd4e183dca48b999488d",
+    "image_size": [
+      960,
+      1280
+    ],
+    "method": "api",
+    "model": "qwen3-vl-plus",
+    "status": "success",
+    "items": [
+      {
+        "name": "多个塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；瓶身标签为屈臣氏苏打水，属食品级包装，无化学品残留迹象",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "抽取式面巾纸已使用，属于其他垃圾；无法确认是否被食物或油污污染，按常规处理",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "小碗中的颗粒物",
+        "category": "kitchen",
+        "reason": "粉色小碗内盛放疑似谷物或种子类食物残余，属厨余垃圾；已与容器分离，符合投放前提",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 15.790739099960774,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "30b7495790d76c9f682c8d03cba6e7a22853b6d86c808df20250692aec0bc300",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "dashscope.aliyuncs.com",
+      "sent_image_sha256": "0a3cbc01729a88d55bd71ddd55983c7cde8920addf208560a0230c730ca595dc",
+      "attempts": 1,
+      "response_id": "chatcmpl-e1707e93-4950-9fec-ab87-33a31b963696",
+      "returned_model": "qwen3-vl-plus",
+      "usage": {
+        "prompt_tokens": 2306,
+        "completion_tokens": 150,
+        "total_tokens": 2456,
+        "completion_tokens_details": {
+          "text_tokens": 150
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 1202,
+          "text_tokens": 1104,
+          "cached_tokens": 0
+        }
+      },
+      "response_text": "{\"items\":[{\"name\":\"多个塑料瓶\",\"category\":\"recyclable\",\"reason\":\"普通饮料塑料瓶倒空清洁后可回收；瓶身标签为屈臣氏苏打水，属食品级包装，无化学品残留迹象\",\"uncertain\":false},{\"name\":\"使用过的纸巾\",\"category\":\"other\",\"reason\":\"抽取式面巾纸已使用，属于其他垃圾；无法确认是否被食物或油污污染，按常规处理\",\"uncertain\":false},{\"name\":\"小碗中的颗粒物\",\"category\":\"kitchen\",\"reason\":\"粉色小碗内盛放疑似谷物或种子类食物残余，属厨余垃圾；已与容器分离，符合投放前提\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "84f9c890e9373f4fb2ddf78eeeffa2aee0dc7f63b53cfe3f6725ebb18d98d273",
+      "finish_reason": "stop"
+    }
+  },
+  "estimated_cost_yuan": 0.003806
+}

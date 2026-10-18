@@ -1,0 +1,572 @@
+{
+  "id": "commons-75295601",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:58:45.752297+00:00",
+    "image_id": "43feb89f65bffb998b2e6995f89e70a7292373a911f993eda9bbc5c14cdeaf14",
+    "source_sha256": "906a2d6086b428175b40b6befa19998f5fe66f20a831ee765993b8292cf692fb",
+    "image_size": [
+      960,
+      696
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          0,
+          959.06,
+          324.37
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9709789752960205,
+        "similarity": 0.3672996759414673,
+        "category_margin": 0.0885884165763855,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          425.62,
+          167.81,
+          468.75,
+          200.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9238092303276062,
+        "similarity": 0.36238765716552734,
+        "category_margin": 0.07408109307289124,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          453.75,
+          480.94,
+          959.06,
+          696
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9214248061180115,
+        "similarity": 0.36167439818382263,
+        "category_margin": 0.097357839345932,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          513.75,
+          138.75,
+          694.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9488695859909058,
+        "similarity": 0.357564240694046,
+        "category_margin": 0.07780489325523376,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          394.69,
+          163.12,
+          448.12,
+          201.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9093183279037476,
+        "similarity": 0.35687270760536194,
+        "category_margin": 0.09090930223464966,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          190.31,
+          300.94,
+          298.12,
+          338.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9578200578689575,
+        "similarity": 0.3555801808834076,
+        "category_margin": 0.0769471526145935,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          447.19,
+          492.19,
+          555.0,
+          546.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.946047842502594,
+        "similarity": 0.3538821041584015,
+        "category_margin": 0.09421458840370178,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          507.19,
+          369.37,
+          555.0,
+          424.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.920498251914978,
+        "similarity": 0.3524426519870758,
+        "category_margin": 0.0794878900051117,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          330.94,
+          240.0,
+          394.69,
+          297.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9536166191101074,
+        "similarity": 0.34855884313583374,
+        "category_margin": 0.09257417917251587,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          499.69,
+          121.87,
+          532.5,
+          180.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9563252925872803,
+        "similarity": 0.34414350986480713,
+        "category_margin": 0.05964365601539612,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          577.5,
+          339.37,
+          714.37,
+          363.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9241222739219666,
+        "similarity": 0.3433305323123932,
+        "category_margin": 0.10459491610527039,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          336.56,
+          375.94,
+          428.44,
+          412.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9128437042236328,
+        "similarity": 0.33872199058532715,
+        "category_margin": 0.10901688039302826,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          49.69,
+          413.44,
+          135.0,
+          435.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9094781279563904,
+        "similarity": 0.33770036697387695,
+        "category_margin": 0.08229351043701172,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          527.81,
+          430.31,
+          569.06,
+          495.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9046837687492371,
+        "similarity": 0.3367997407913208,
+        "category_margin": 0.06813058257102966,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          518.44,
+          269.06,
+          541.87,
+          323.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.898443341255188,
+        "similarity": 0.3366372883319855,
+        "category_margin": 0.07174760103225708,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          335.62,
+          386.25,
+          418.12,
+          412.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9050779342651367,
+        "similarity": 0.3309401273727417,
+        "category_margin": 0.09195972979068756,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          453.75,
+          248.44,
+          482.81,
+          300.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9417654275894165,
+        "similarity": 0.33038800954818726,
+        "category_margin": 0.06529513001441956,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          616.87,
+          388.12,
+          711.56,
+          426.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9261482357978821,
+        "similarity": 0.32950764894485474,
+        "category_margin": 0.10773114860057831,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          156.56,
+          392.81,
+          204.37,
+          452.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9537017345428467,
+        "similarity": 0.3225118815898895,
+        "category_margin": 0.06543883681297302,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          527.81,
+          430.31,
+          553.12,
+          495.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9157429933547974,
+        "similarity": 0.3216707706451416,
+        "category_margin": 0.05538302659988403,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          215.62,
+          0,
+          959.06,
+          64.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9831641316413879,
+        "similarity": 0.3167274296283722,
+        "category_margin": 0.022986024618148804,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          603.75,
+          422.81,
+          672.19,
+          462.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9199896454811096,
+        "similarity": 0.3160945475101471,
+        "category_margin": 0.054828375577926636,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          523.12,
+          258.75,
+          570.0,
+          303.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9429585337638855,
+        "similarity": 0.31120413541793823,
+        "category_margin": 0.060382843017578125,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          63.75,
+          270.94,
+          95.62,
+          315.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.940002977848053,
+        "similarity": 0.3023245930671692,
+        "category_margin": 0.02149367332458496,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          423.75,
+          57.19,
+          450.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9296537637710571,
+        "similarity": 0.2994276285171509,
+        "category_margin": 0.02100890874862671,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.10284920001868159,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 26,
+      "candidate_count": 26,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

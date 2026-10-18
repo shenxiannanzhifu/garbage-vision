@@ -1,0 +1,212 @@
+{
+  "id": "commons-71363051",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:58:43.343124+00:00",
+    "image_id": "a1a18761174c81b340507ba6624d9293c7638afccce995381d9e84fde3804328",
+    "source_sha256": "a4049e1a69b2f931bef7d09d7f3d8463facf6dbd041343437b8a76f371ad18e7",
+    "image_size": [
+      960,
+      873
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          457.5,
+          496.87,
+          618.75,
+          645.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9037371277809143,
+        "similarity": 0.3267381489276886,
+        "category_margin": 0.03626483678817749,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          346.87,
+          532.5,
+          460.31,
+          672.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9211103320121765,
+        "similarity": 0.3095415532588959,
+        "category_margin": 0.03430742025375366,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          268.12,
+          386.25,
+          414.37,
+          556.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9253982305526733,
+        "similarity": 0.30771544575691223,
+        "category_margin": 0.03080815076828003,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          325.31,
+          0,
+          465.94,
+          167.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9552830457687378,
+        "similarity": 0.30053216218948364,
+        "category_margin": 0.01364549994468689,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：纸箱；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cardboard box",
+        "bbox": [
+          375.0,
+          0,
+          465.94,
+          166.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9580366015434265,
+        "similarity": 0.28942835330963135,
+        "category_margin": 0.0031385719776153564,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          446.25,
+          1.87,
+          596.25,
+          192.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9120328426361084,
+        "similarity": 0.28610074520111084,
+        "category_margin": 0.0021368563175201416,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          358.12,
+          163.12,
+          599.06,
+          244.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9523364305496216,
+        "similarity": 0.28530600666999817,
+        "category_margin": 0.006972819566726685,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.05752879998181015,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 14,
+      "candidate_count": 7,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

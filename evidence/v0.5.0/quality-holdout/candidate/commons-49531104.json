@@ -1,0 +1,132 @@
+{
+  "id": "commons-49531104",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T09:58:44.863287+00:00",
+    "image_id": "66ad3aaad4ab7c3cc827c645ebc900cf29632a047915ef4973d8a00b2aa8aa5e",
+    "source_sha256": "bc9849f48ec5fc6a1bf723c3e209e420dadfc45aba17bad6fb79777cf96bc965",
+    "image_size": [
+      960,
+      870
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          90.0,
+          392.81,
+          252.19,
+          706.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9560994505882263,
+        "similarity": 0.35568416118621826,
+        "category_margin": 0.11372458934783936,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          721.87,
+          504.37,
+          753.75,
+          529.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8845553398132324,
+        "similarity": 0.28710073232650757,
+        "category_margin": 0.0035618245601654053,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          537.19,
+          74.06,
+          585.94,
+          135.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9087059497833252,
+        "similarity": 0.281341552734375,
+        "category_margin": 0.008476495742797852,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.044217900023795664,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 12,
+      "candidate_count": 3,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

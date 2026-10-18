@@ -202,6 +202,7 @@ def infer_local(source,settings=None):
     def run(target):
         paths=[ROOT/settings[k] for k in ['sam_weights','clip_weights']]
         if settings.get('visual_support'):paths.append(ROOT/settings['visual_support'])
+        if settings.get('text_aliases'):paths.append(ROOT/settings['text_aliases'])
         state=tuple((p.stat().st_size,p.stat().st_mtime_ns) if p.exists() else (0,0) for p in paths)
         with _creation_lock:
             engine=_engine(json.dumps(settings,sort_keys=True),json.dumps(taxonomy,sort_keys=True),target,state)
