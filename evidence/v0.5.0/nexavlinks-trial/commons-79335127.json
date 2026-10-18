@@ -1,0 +1,64 @@
+{
+  "id": "commons-79335127",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T10:36:12.052714+00:00",
+    "image_id": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+    "source_sha256": "257f50d5a96646f15798583d98c203168a408b8f6580f58fd5c76c291b4e8de7",
+    "image_size": [
+      960,
+      1280
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂（多个）",
+        "category": "other",
+        "reason": "地面散落的烟蒂属于其他垃圾，完全熄灭后再投放。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 11.449220899958163,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "8e1a4b384d60baedd882d30e79203f01e24b5a4494f7f11466b07cd10fc08774",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_01253a36e42cd1e8016ad4a118b39c819fafe11242f56c9871",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 7142,
+        "completion_tokens": 54,
+        "total_tokens": 7196
+      },
+      "response_text": "{\"items\":[{\"category\":\"other\",\"name\":\"烟蒂（多个）\",\"reason\":\"地面散落的烟蒂属于其他垃圾，完全熄灭后再投放。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "e302ecd01616747390a26aeeeda4340518dab28c6317591f33ee00346c1ae00d",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.091975,
+  "cost_note": "Conservative upper-rate estimate; actual group billing must be checked in gateway logs."
+}

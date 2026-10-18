@@ -1,0 +1,94 @@
+{
+  "id": "commons-136457085",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T10:36:00.496539+00:00",
+    "image_id": "81deebb690eabed6886e78cd19ad4799f8be468c2c49be90258ca432dd451ea1",
+    "source_sha256": "b43de08a943477dd052b0b63c04d0a55b252b473ae86c97218ad63df3a196e7a",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "图中可见香蕉皮，日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "菜叶菜梗（多个）",
+        "category": "kitchen",
+        "reason": "可见丢弃的菜叶、菜梗等蔬菜残余，属于厨余垃圾。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "其他果蔬残余（多个）",
+        "category": "kitchen",
+        "reason": "部分残余无法辨认具体果蔬名称，但可确定为食物残余，沥干后按厨余垃圾投放。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 10.4716977000935,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "81deebb690eabed6886e78cd19ad4799f8be468c2c49be90258ca432dd451ea1",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_0164b47a67530aa2016ad4a10b54f48195addd85640843aa5e",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 6530,
+        "completion_tokens": 152,
+        "total_tokens": 6682
+      },
+      "response_text": "{\"items\":[{\"category\":\"kitchen\",\"name\":\"香蕉皮\",\"reason\":\"图中可见香蕉皮，日常果皮属于厨余垃圾。\",\"uncertain\":false},{\"category\":\"kitchen\",\"name\":\"菜叶菜梗（多个）\",\"reason\":\"可见丢弃的菜叶、菜梗等蔬菜残余，属于厨余垃圾。\",\"uncertain\":false},{\"category\":\"kitchen\",\"name\":\"其他果蔬残余（多个）\",\"reason\":\"部分残余无法辨认具体果蔬名称，但可确定为食物残余，沥干后按厨余垃圾投放。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "17c7bed9f1c80fddb93881a9350ac021e4ca925793dd14f4fd930f0b16757584",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.089225,
+  "cost_note": "Conservative upper-rate estimate; actual group billing must be checked in gateway logs."
+}

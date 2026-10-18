@@ -1,0 +1,67 @@
+{
+  "id": "commons-701056",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T10:34:56.312645+00:00",
+    "image_id": "f326967dd4a3d366deba1a021b2e14ac42804af9f472611ac5a23b3631bf8369",
+    "source_sha256": "d4e7c4b99ad7739eedf23aa5ae073d1ebcc12752dbc9f4c70861640b2352cde6",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "螺旋紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "图中为螺旋管状紧凑型荧光灯，含汞荧光灯属于有害垃圾，投放时保持完整、避免破碎。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 7.092760400031693,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "f326967dd4a3d366deba1a021b2e14ac42804af9f472611ac5a23b3631bf8369",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_010bafaf9d4896c8016ad4a0cc712481a289016fcbca42f079",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 6530,
+        "completion_tokens": 100,
+        "total_tokens": 6630,
+        "completion_tokens_details": {
+          "reasoning_tokens": 15
+        }
+      },
+      "response_text": "{\"items\":[{\"category\":\"hazardous\",\"name\":\"螺旋紧凑型荧光灯\",\"reason\":\"图中为螺旋管状紧凑型荧光灯，含汞荧光灯属于有害垃圾，投放时保持完整、避免破碎。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "0ea380bc43982176d506d4a389c57ea8ef4f05331e2cd506662737482cf16f4c",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.086625,
+  "cost_note": "Conservative upper-rate estimate; actual group billing must be checked in gateway logs."
+}

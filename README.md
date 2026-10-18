@@ -2,7 +2,7 @@
 
 AI 方向第二阶段考核项目：中文网页比较同一图片的 **SAM2.1 分割 + CLIP 区域分类** 和 **可配置的多模态图像理解 API**，展示北京生活垃圾四分类、依据与不确定项。
 
-当前进行质量改进和 OpenAI 联调。旧 v0.1.0–v0.4.0、v1.0.0-rc.1 证据保留，但不代表当前已经满足最终交付条件。用户反馈识别不足后，已升级本地模型处理方式，并按要求优先接入 `gpt-6-astra`；OpenAI 真实小样尚待本地密钥配置。
+当前进行质量改进和 OpenAI 联调。旧 v0.1.0–v0.4.0、v1.0.0-rc.1 证据保留，但不代表当前已经满足最终交付条件。用户反馈识别不足后，已升级本地模型处理方式，并按要求优先接入 `gpt-6-astra`；用户提供NexaVLinks平台密钥，已完成该平台gpt-6-astra四图真实小样；完整40图API复评待新增预算。
 
 同组新40图：本地类别集合完全正确 **26/40 → 33/40**；32张非空类别图平均F1 **0.7552 → 0.8646**；8张未知/背景图误报 **3 → 2**。这些是小规模、非独立真人标注的类别集合指标，不是定位准确率。见[质量复评报告](evidence/v0.5.0/quality-holdout/质量对比报告.md)。
 
@@ -22,7 +22,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start.ps1
 
 ## 配置与输出
 
-- 首选 OpenAI：双击 `配置API.cmd`，只填 `.env` 中 `OPENAI_API_KEY=`，小样验证前保持 `OPENAI_API_ENABLED=false`。详见 [OpenAI 接入与验证](docs/OpenAI接入与小样验证.md)。原百炼字段独立保留，不混用密钥或预算。
+- 当前NexaVLinks配置已在本机完成，使用独立 `NEXAVLINKS_API_KEY`；官方OpenAI和百炼字段保留且不混用。详见 [NexaVLinks接入与验证](docs/NexaVLinks接入与验证.md)。网页新收费调用保持关闭，四张样例可点击“查看本图已保存的大模型实测（不收费）”。
 - `config/local_model.json`：设备和阈值；`config/categories.json`：分类映射；`prompts/classify_v2.txt`：API 提示词。
 - 输入 JPG/PNG/WebP，最大 12 MB / 2400 万像素。EXIF 校正、透明区域合成白底后统一 RGB。两侧记录同一图片哈希，API 不接收本地预测。
 - 支持 JSON、CSV 和本地标注图。SAM 掩膜质量与 CLIP 余弦相似度均不是分类准确率；API 不编造框和置信度。
@@ -35,7 +35,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start.ps1
 
 旧数据为19开发/21测试；本轮新增质量划分为38开发（含原19张）/40新测试。每图有来源/许可/哈希，并按作者分组及查重。标签来自作者元数据与 Codex 视觉复核，非独立真人标注；多类别混合与未知场景仍不足。见 [数据与分类规则](docs/数据与分类规则.md)。
 
-2026-10-18 历史候选版完成隔离环境安装验证；当前质量改进与 OpenAI 适配版48项检查通过，含真实GPU推理经过Streamlit AppTest、换图/坏图清理。AppTest 不等于浏览器截图/录屏。用户已完成 v0.2 本地标注图和 v0.3 双侧结果/JSON 导出的实际浏览器验收。
+2026-10-18 历史候选版完成隔离环境安装验证；当前质量改进与 API 适配版52项检查通过，含真实GPU推理经过Streamlit AppTest、换图/坏图清理。AppTest 不等于浏览器截图/录屏。用户已完成 v0.2 本地标注图和 v0.3 双侧结果/JSON 导出的实际浏览器验收。
 
 ```powershell
 $env:RUN_REAL_LOCAL='1'
@@ -65,4 +65,4 @@ API 成功证据为 `evidence/v0.3.0/api-probe-20261018T075101382996Z/result.jso
 
 如需要重新执行模型评估，应新建实验目录，冻结当前干净提交，重新确认 API 预算；不可覆盖已有逐图证据。精确复现本次推理代码可检出 freeze.json 中记录的 3442a3f；源码哈希容忍 CRLF/LF，数据和权重仍按原始字节校验。JSON 中始终保留原始输出，不用图表代替原始记录。
 
-历史候选交付的隔离环境复现记录见 [复现记录](evidence/v1.0.0-rc.1/reproducibility.md)：全新 venv 安装、31 项检查及实际启动通过。当前还需 OpenAI 真实小样与同图复评、模型质量复核，以及本人个人感悟和视频。正式 v1.0.0 尚未创建。
+历史候选交付的隔离环境复现记录见 [复现记录](evidence/v1.0.0-rc.1/reproducibility.md)：全新 venv 安装、31 项检查及实际启动通过。当前还需 Astra 新40图同图复评、模型质量复核，以及本人个人感悟和视频。正式 v1.0.0 尚未创建。

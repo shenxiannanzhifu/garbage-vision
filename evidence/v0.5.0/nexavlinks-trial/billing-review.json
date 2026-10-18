@@ -1,0 +1,41 @@
+{
+  "source": "https://www.nexavlinks.com/logs",
+  "verification": "Signed-in UI log matched by timestamp, model, input/output tokens; actual balance deduction displayed.",
+  "model": "gpt-6-astra",
+  "group": "[自建] ASTRA专属分组",
+  "entry_endpoint": "/v1/chat/completions",
+  "timezone": "Asia/Shanghai",
+  "rows": [
+    {
+      "id": "commons-701056",
+      "local_time": "2026-10-18 18:34:56",
+      "input_tokens": 6530,
+      "output_tokens": 100,
+      "actual_cost_nex": 0.025308
+    },
+    {
+      "id": "commons-179028310",
+      "local_time": "2026-10-18 18:35:49",
+      "input_tokens": 6530,
+      "output_tokens": 142,
+      "actual_cost_nex": 0.026064
+    },
+    {
+      "id": "commons-136457085",
+      "local_time": "2026-10-18 18:36:00",
+      "input_tokens": 6530,
+      "output_tokens": 152,
+      "actual_cost_nex": 0.026244
+    },
+    {
+      "id": "commons-79335127",
+      "local_time": "2026-10-18 18:36:12",
+      "input_tokens": 7142,
+      "output_tokens": 54,
+      "actual_cost_nex": 0.0266832
+    }
+  ],
+  "actual_total_nex": 0.1042992,
+  "conservative_estimated_nex": 0.35655,
+  "unrelated_account_logs_included": false
+}

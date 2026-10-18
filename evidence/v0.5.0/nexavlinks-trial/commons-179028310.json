@@ -1,0 +1,82 @@
+{
+  "id": "commons-179028310",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T10:35:49.949006+00:00",
+    "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+    "source_sha256": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "塑料饮料瓶",
+        "category": "recyclable",
+        "reason": "普通塑料饮料瓶，清除瓶内杂物并倒空清洁后可回收。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂（多个）",
+        "category": "other",
+        "reason": "瓶内可见烟蒂，分离后按其他垃圾投放，须确保完全熄灭。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 11.217608600039966,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+      "attempts": 1,
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_02c818e05f8c3518016ad4a0ffd398819facd01d4b7807c5e6",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 6530,
+        "completion_tokens": 142,
+        "total_tokens": 6672,
+        "completion_tokens_details": {
+          "reasoning_tokens": 38
+        }
+      },
+      "response_text": "{\"items\":[{\"category\":\"recyclable\",\"name\":\"塑料饮料瓶\",\"reason\":\"普通塑料饮料瓶，清除瓶内杂物并倒空清洁后可回收。\",\"uncertain\":false},{\"category\":\"other\",\"name\":\"烟蒂（多个）\",\"reason\":\"瓶内可见烟蒂，分离后按其他垃圾投放，须确保完全熄灭。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "6547f62d291471494efdf78fda290d4d33275552282178eeee40b3acb6820d9c",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.088725,
+  "cost_note": "Conservative upper-rate estimate; actual group billing must be checked in gateway logs."
+}

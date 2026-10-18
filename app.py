@@ -7,6 +7,7 @@ from garbage_vision.images import decode_image
 from garbage_vision.local import infer_local
 from garbage_vision.api import api_settings, infer_api, PROMPT_PATH
 from garbage_vision.schema import InferenceResult
+from garbage_vision.saved_results import find_saved_api
 from garbage_vision.exports import annotate, export_json, export_csv
 
 st.set_page_config(page_title='识废 · 垃圾识别实验室', page_icon='♻', layout='wide')
@@ -59,6 +60,9 @@ if source:
     st.image(source.image,caption='原图 · 已校正拍摄方向',width=620)
     st.caption(f'图片标识：{source.image_id[:16]} · {source.image.width} × {source.image.height}')
     include_api=st.checkbox('同时运行大模型（向配置的服务商发送本图，可能产生费用）',value=False,disabled=bool(api_problem))
+    saved_api=find_saved_api(source,api_config)
+    if saved_api and st.button('查看本图已保存的大模型实测（不收费）',key='saved_api'):
+        st.session_state['results']['api']=saved_api
     if st.button('开始识别',type='primary',key='run'):
         for method in (['local','api'] if include_api else ['local']):
             started=time.perf_counter()
@@ -76,6 +80,8 @@ if source:
 def render_result(result):
     """页面与导出共用同一结果，不重新猜测类别。"""
     if result.status!='success':st.error(result.error);return
+    if result.metadata.get('display_mode')=='saved_real_api_result':
+        st.info(f'已保存的真实 API 结果，本次没有发送请求。原调用时间（UTC）：{result.created_at_utc}')
     st.caption(f'{result.model} · 推理/请求 {result.elapsed_seconds:.2f} 秒 · 加载 {result.load_seconds:.2f} 秒')
     if result.metadata.get('fallback'):st.warning(result.metadata['fallback'])
     if result.method=='local':
@@ -113,4 +119,4 @@ if source and results:
     a,b=st.columns(2)
     a.download_button('导出 JSON 实验记录',export_json(valid),file_name=f'{source.image_id[:12]}.json',mime='application/json')
     b.download_button('导出 CSV 清单',export_csv(valid),file_name=f'{source.image_id[:12]}.csv',mime='text/csv')
-st.divider();st.caption('识废 · 质量改进与 OpenAI 联调中　/　模型输出仅供分类实验，实际投放结合当地规则')
+st.divider();st.caption('识废 · 本地质量已复评，NexaVLinks / GPT-6 Astra 已完成小样验证　/　模型输出仅供分类实验')

@@ -7,3 +7,5 @@ OpenAI协议测试使用明确的MockTransport，不产生真实API请求，不�
 荧光灯和整图香蕉皮另由 scripts/verify_quality_ui.py 真实运行，见ui-regression。服务健康检查 http://127.0.0.1:8501/_stcore/health 返回200 ok。
 
 本轮本地40图运行没有失败，评分与保存原始逐图记录重算一致；不是拿软件测试数量代替分类正确率。
+
+2026-10-18 后续API适配及历史结果回显更新：完整套件 **52 passed in 34.13s**，含真实GPU与禁止历史回显发起API的检查。4次真实网关小样与替身测试分开保存，见nexavlinks-trial。

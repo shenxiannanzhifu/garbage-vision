@@ -1,0 +1,161 @@
+{
+  "method": "api",
+  "images": 4,
+  "mean_per_image_precision": 0.875,
+  "mean_per_image_recall": 1.0,
+  "mean_per_image_f1": 0.9166666666666666,
+  "exact_set_accuracy": 0.75,
+  "failure_rate": 0,
+  "empty_prediction_rate": 0,
+  "unknown_image_rate": 0,
+  "micro": {
+    "tp": 4,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1": 0.8888888888888888
+  },
+  "per_category": {
+    "recyclable": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "support_images": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "hazardous": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "support_images": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "kitchen": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "support_images": 1,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "other": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "support_images": 1,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666
+    }
+  },
+  "by_background": {
+    "复杂": {
+      "images": 2,
+      "mean_per_image_f1": 1.0,
+      "failure_rate": 0
+    },
+    "简单": {
+      "images": 2,
+      "mean_per_image_f1": 0.8333333333333333,
+      "failure_rate": 0
+    }
+  },
+  "timing": {
+    "mean_request_or_inference_seconds": 10.05782190003083,
+    "median_request_or_inference_seconds": 10.844653150066733,
+    "total_load_seconds": 0
+  },
+  "records": [
+    {
+      "id": "commons-179028310",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "other",
+        "recyclable"
+      ],
+      "background": "简单",
+      "status": "success",
+      "unknown_items": 0,
+      "elapsed_seconds": 11.217608600039966,
+      "load_seconds": 0,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "exact_match": false
+    },
+    {
+      "id": "commons-136457085",
+      "truth": [
+        "kitchen"
+      ],
+      "predicted": [
+        "kitchen"
+      ],
+      "background": "复杂",
+      "status": "success",
+      "unknown_items": 0,
+      "elapsed_seconds": 10.4716977000935,
+      "load_seconds": 0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "commons-79335127",
+      "truth": [
+        "other"
+      ],
+      "predicted": [
+        "other"
+      ],
+      "background": "复杂",
+      "status": "success",
+      "unknown_items": 0,
+      "elapsed_seconds": 11.449220899958163,
+      "load_seconds": 0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "commons-701056",
+      "truth": [
+        "hazardous"
+      ],
+      "predicted": [
+        "hazardous"
+      ],
+      "background": "简单",
+      "status": "success",
+      "unknown_items": 0,
+      "elapsed_seconds": 7.092760400031693,
+      "load_seconds": 0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    }
+  ]
+}

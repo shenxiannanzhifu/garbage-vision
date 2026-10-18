@@ -1,0 +1,44 @@
+{
+  "provider": "nexavlinks",
+  "api_config": {
+    "base_url": "https://www.nexavlinks.com/v1",
+    "model": "gpt-6-astra",
+    "provider": "nexavlinks",
+    "timeout": 120.0,
+    "max_tokens": 2048,
+    "use_env_proxy": false,
+    "reasoning_effort": "low",
+    "image_detail": "high"
+  },
+  "images": {
+    "commons-701056": "d4e7c4b99ad7739eedf23aa5ae073d1ebcc12752dbc9f4c70861640b2352cde6",
+    "commons-179028310": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+    "commons-136457085": "b43de08a943477dd052b0b63c04d0a55b252b473ae86c97218ad63df3a196e7a",
+    "commons-79335127": "257f50d5a96646f15798583d98c203168a408b8f6580f58fd5c76c291b4e8de7"
+  },
+  "sources": {
+    "garbage_vision/api.py": "ea9c3b8b3125747a4722758e5efe3da4f616885c3f94c74642dcccb7c5f2de23",
+    "garbage_vision/api_normalization.py": "ae38646dc8bba1fdfcb54deae64c0d567448d979b70dcbbc00ce6c61d196ec13",
+    "garbage_vision/config.py": "796cb60e0fdccb998914b2dca35298175bf185b3f0675663773188e7cbc9737d",
+    "garbage_vision/evaluation.py": "992385f2ad12e58de9598cd93b1460503345da02493395245ac4df7c69f55d98",
+    "garbage_vision/experiment.py": "0a3327e20c33128d404c35cb59216d71cdcefacdb8b81fb7d5773f0e813ccbb2",
+    "garbage_vision/exports.py": "79b3795e8b159c3e5186fb933066bf0bf366f055152623145e6df7fb154dec27",
+    "garbage_vision/images.py": "519e7e79d5f33671c824a86ff06075968c68ea4330b2007ff3aa7ebf3e350637",
+    "garbage_vision/local.py": "839733c0b457a31a356693e2dbcfd5c57a737f5c4ed3f6efbc3b684625866b58",
+    "garbage_vision/schema.py": "a3e03177f6e36e61c6949f70f6dd052752932ae9de057a806920721f1ee9610b",
+    "garbage_vision/visual_support.py": "4681e794c5941e658f145d4953d01d7dc2a58afdb1c7687dda982de141394c4d",
+    "garbage_vision/__init__.py": "b5dc4744d4644a6130808011b5c21fd139cde32221c7bae17e22bf22b8582cbb",
+    "prompts/classify_v2.txt": "0bad1d4ce294f89e0bb3836b5d55d77c82e16c5aaefcbbf47d9ea26ef6661980",
+    "config/categories.json": "4111406e77e186cfb06cdd6598de91d1fe545b4459913aaa69d23a0733e0532a",
+    "scripts/nexavlinks_trial.py": "c32a8121d1a809ce7eb5b7b17f02743e12084b92b3b8a585742f76e48e4936b6",
+    "scripts/openai_trial.py": "9a2f93f8d8b57ee44d835d980dbb598d4d0b24ee0b47bf42204b15bf7203817f"
+  },
+  "max_calls": 4,
+  "budget_unit": "NEX",
+  "price_source": "https://www.nexavlinks.com/modelsmarket/gpt-6-astra",
+  "conservative_rates_per_million": {
+    "input": 12.5,
+    "output": 50
+  },
+  "no_automatic_retries": true
+}
