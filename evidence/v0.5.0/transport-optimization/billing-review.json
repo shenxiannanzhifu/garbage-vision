@@ -1,0 +1,19 @@
+{
+  "source": "https://www.nexavlinks.com/logs",
+  "timezone": "Asia/Shanghai",
+  "verification": "Signed-in UI row matched timestamp, Chat Completions, gpt-6-astra, low and token counts.",
+  "rows": [
+    {
+      "id": "commons-701056",
+      "local_time": "2026-10-19 00:02:46",
+      "input_tokens": 2416,
+      "output_tokens": 99,
+      "actual_cost_nex": 0.0104796
+    }
+  ],
+  "actual_total_nex": 0.0104796,
+  "unreconciled_image_ids": [
+    "commons-179028310"
+  ],
+  "note": "No matching visible bill for ConnectError; do not assume free. Full0.218625 NEX reservation retained."
+}

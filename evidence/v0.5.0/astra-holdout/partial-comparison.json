@@ -2691,6 +2691,9 @@
     "unrelated_account_logs_included": false
   },
   "reference_labels_changed": false,
+  "api_source_commits": [
+    "11466c90ed1085be5ad5f0ef1df10bb587df212e"
+  ],
   "complete": false,
   "pending_image_ids": [
     "commons-42032344",

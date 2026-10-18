@@ -36,6 +36,6 @@
 
 网页侧栏“复评结果”显示已尝试子集，不能将其当完整40图正确率。入口 `scripts/report_astra.py --partial` 离线重算，不收费。原推理源码冻结于11466c9；中断后代码新增可选无损传输及诊断，精确继续旧基线需检出冻结源码，不能绕过校验。
 
-下一步候选说明见[多模态效果与效率优化](多模态效果与效率优化.md)：默认仍用PNG，无损候选尚未真实验证。拟从原额度使用最多4次开发图小样，需确认请求范围变更。网页付费开关继续关闭。
+无损候选实际试2图：荧光灯正确、塑料瓶连接失败后停止；未证明质量或速度提升，默认仍用PNG。共享额度当前使用20/40次，已核对累计0.1779372 NEX，另3条失败费用未知。按用户的质量优先要求，下一步拟补齐原评估22张未请求图，需将总次数调整到42、预算仍4 NEX，并批准单次失败留档后继续另一图、连续2次失败即停的新规则。网页付费开关继续关闭。见[小样结论](../evidence/v0.5.0/transport-optimization/真实小样结论.md)。
 
 资料：https://www.nexavlinks.com/doc/endpoints-and-capabilities ；https://www.nexavlinks.com/modelsmarket/gpt-6-astra ；https://www.nexavlinks.com/doc/billing-balance-issues 。

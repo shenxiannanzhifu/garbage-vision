@@ -1,0 +1,71 @@
+{
+  "id": "commons-701056",
+  "expected_categories": [
+    "hazardous"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-18T16:02:46.726952+00:00",
+    "image_id": "f326967dd4a3d366deba1a021b2e14ac42804af9f472611ac5a23b3631bf8369",
+    "source_sha256": "d4e7c4b99ad7739eedf23aa5ae073d1ebcc12752dbc9f4c70861640b2352cde6",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "api",
+    "model": "gpt-6-astra",
+    "status": "success",
+    "items": [
+      {
+        "name": "紧凑型荧光灯",
+        "category": "hazardous",
+        "reason": "图中为螺旋管式紧凑型荧光灯，含汞灯具属于有害垃圾，投放时保持完整、避免破碎。",
+        "uncertain": false,
+        "label": null,
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": null,
+        "category_margin": null,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 9.011038800003007,
+    "load_seconds": 0,
+    "cache_hit": false,
+    "error": null,
+    "metadata": {
+      "prompt_sha256": "3d8e9f04e2529357b6af3885b322780b46ffe11c8103627cf4422be313cfbfba",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "endpoint_host": "www.nexavlinks.com",
+      "sent_image_sha256": "c752c958c94e307e07f97ec6b7cb977a1fbbdb16258398ae6b8eef49bee517fc",
+      "attempts": 1,
+      "canonical_image_sha256": "f326967dd4a3d366deba1a021b2e14ac42804af9f472611ac5a23b3631bf8369",
+      "upload_image_bytes": 35923,
+      "upload_image_mime": "image/jpeg",
+      "image_transport_mode": "original_jpeg_pixel_equivalent_metadata_removed",
+      "transport_route": "explicit_proxy",
+      "provider": "nexavlinks",
+      "api_protocol": "chat_completions",
+      "prompt_path": "prompts/classify_v2.txt",
+      "response_id": "resp_0c0ec634ae87503f016ad4eda108888191b88661d82875ad11",
+      "returned_model": "gpt-6-astra",
+      "usage": {
+        "prompt_tokens": 2416,
+        "completion_tokens": 99,
+        "total_tokens": 2515,
+        "completion_tokens_details": {
+          "reasoning_tokens": 20
+        }
+      },
+      "response_text": "{\"items\":[{\"category\":\"hazardous\",\"name\":\"紧凑型荧光灯\",\"reason\":\"图中为螺旋管式紧凑型荧光灯，含汞灯具属于有害垃圾，投放时保持完整、避免破碎。\",\"uncertain\":false}]}",
+      "response_text_truncated": false,
+      "response_text_sha256": "e84b5e46898985a361598776d2f8196f835f1d99ff87f883fcdd5c33660b007a",
+      "finish_reason": "stop",
+      "normalization": []
+    }
+  },
+  "estimated_cost_nex": 0.03515
+}

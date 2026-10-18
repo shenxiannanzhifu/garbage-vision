@@ -1,0 +1,29 @@
+{
+  "status": "stopped_after_connect_error",
+  "planned_candidate_calls": 4,
+  "attempted_candidate_calls": 2,
+  "successful_responses": 1,
+  "failed_requests": 1,
+  "not_attempted_ids": [
+    "commons-136457085",
+    "commons-79335127"
+  ],
+  "shared_attempted_calls": 20,
+  "shared_limit_current": 40,
+  "shared_budget_nex": 4,
+  "shared_conservative_accounted_nex": 1.4474500000000001,
+  "candidate_confirmed_billed_nex": 0.0104796,
+  "shared_confirmed_billed_nex": 0.1779372,
+  "shared_unknown_bill_request_count": 3,
+  "quality_improvement_established": false,
+  "speed_improvement_established": false,
+  "new_candidate_quality_audit": {
+    "image": "commons-701056",
+    "object_name": "Supported by visible spiral fluorescent tube and Commons author description",
+    "category": "hazardous agrees with unchanged reference",
+    "reason": "Consistent with project rule; no unsupported expiry or medication advice",
+    "background": "Socket/ceiling not emitted as waste",
+    "audit_by": "Codex visual review, not independent human annotation"
+  },
+  "priority": "User prioritizes correctness, missing/extra objects and valid reasons over speed or small payloads."
+}

@@ -1,0 +1,29 @@
+{
+  "method": "Unauthenticated GET /v1/models; no image or generation; fresh TLS connections",
+  "checks": [
+    {
+      "route": "configured_proxy",
+      "new_connection": 1,
+      "http_status": 401,
+      "seconds": 1.966
+    },
+    {
+      "route": "configured_proxy",
+      "new_connection": 2,
+      "http_status": 401,
+      "seconds": 1.752
+    },
+    {
+      "route": "configured_proxy",
+      "new_connection": 3,
+      "http_status": 401,
+      "seconds": 1.953
+    },
+    {
+      "route": "configured_proxy",
+      "new_connection": 4,
+      "http_status": 401,
+      "seconds": 1.965
+    }
+  ]
+}

@@ -71,6 +71,7 @@ def main():
         'authorized_budget_nex':4, 'returned_usage_estimated_nex':observed_estimate,
         'records_without_returned_usage':missing_usage, 'conservative_budget_accounted_nex':budget_accounted,
         'billing':billing, 'reference_labels_changed':False}
+    data['api_source_commits']=sorted({read(DIRECTORY/'api'/(r['id']+'.started.json')).get('inference_source_commit',frozen['git_commit']) for r in rows})
     data.update(complete=not missing, pending_image_ids=missing, planned_images=40)
     (DIRECTORY/(prefix+'comparison.json')).write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
     (DIRECTORY/('api/'+prefix+'predictions.json')).write_text(json.dumps({'records':api,'api_config':frozen['api_config'],
@@ -123,7 +124,7 @@ def main():
         if row['id'] in missing:
             lines.append(f"| {row['id']} | {cats(row['categories'])} | 已有归档，未纳入当前子集统计 | 尚未请求 | — |")
     lines += ['', '## 证据与限制', '',
-        f"- API推理冻结源码：`{frozen['git_commit']}`；本地推理冻结源码：`{frozen['local_freeze_commit']}`。冻结文件含原图、提示词、分类规则和源文件哈希。",
+        f"- API推理源码："+'、'.join('`'+c+'`' for c in data['api_source_commits'])+f"；本地推理冻结源码：`{frozen['local_freeze_commit']}`。阶段冻结文件和开始标记记录各自版本；原图、模型参数、提示词、分类规则不变。",
         '- 同图独立输入：API只接收完整方向校正图片、提示词和固定规则，没有接收本地预测。',
         '- 40图：可回收8、厨余8、其他7、有害8、背景/未知8、混合1。标签来自Commons作者元数据和推理前Codex视觉复核，非独立真人标注；正式成绩保持原参考，疑似标注问题另列，不回改分数。',
         '- 样本规模小、混合和遮挡不足。本地复用了SAM区域缓存，因此其耗时不能与API网络耗时作为端到端性能排名。',
