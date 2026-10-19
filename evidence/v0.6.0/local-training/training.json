@@ -1,0 +1,430 @@
+{
+  "completed_at_utc": "2026-10-19T00:53:50.760577+00:00",
+  "parameters": {
+    "seed": 20261019,
+    "epochs": 150,
+    "learning_rate": 0.01,
+    "temperature": 20.0,
+    "anchor_strengths": [
+      10.0,
+      100.0
+    ],
+    "blend_strengths": [
+      0.25,
+      0.5
+    ],
+    "augmentations": [
+      "original",
+      "mirror",
+      "brightness_0.9",
+      "brightness_1.1"
+    ]
+  },
+  "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "independent_images": 95,
+  "augmented_views": 380,
+  "supervised_labels": 20,
+  "trainable_active_parameters": 10240,
+  "frozen": "SAM2, CLIP image and text encoders; unseen class prototypes unchanged",
+  "seconds_excluding_model_load": 26.501553100068122,
+  "histories": {
+    "10.0": [
+      {
+        "epoch": 0,
+        "objective": 2.030421733856201,
+        "cross_entropy": 2.030421733856201,
+        "anchor_penalty": 1.852949370139247e-15,
+        "training_top1": 0.7052631974220276
+      },
+      {
+        "epoch": 10,
+        "objective": 1.2608816623687744,
+        "cross_entropy": 0.8588970303535461,
+        "anchor_penalty": 0.04019846394658089,
+        "training_top1": 0.9552631974220276
+      },
+      {
+        "epoch": 20,
+        "objective": 1.187767744064331,
+        "cross_entropy": 0.7708629965782166,
+        "anchor_penalty": 0.04169047623872757,
+        "training_top1": 0.9815790057182312
+      },
+      {
+        "epoch": 30,
+        "objective": 1.1683577299118042,
+        "cross_entropy": 0.7615047693252563,
+        "anchor_penalty": 0.040685296058654785,
+        "training_top1": 0.9789474010467529
+      },
+      {
+        "epoch": 40,
+        "objective": 1.1612300872802734,
+        "cross_entropy": 0.7716525197029114,
+        "anchor_penalty": 0.03895775228738785,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 50,
+        "objective": 1.158637523651123,
+        "cross_entropy": 0.7692249417304993,
+        "anchor_penalty": 0.03894125297665596,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 60,
+        "objective": 1.1577348709106445,
+        "cross_entropy": 0.7686872482299805,
+        "anchor_penalty": 0.038904763758182526,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 70,
+        "objective": 1.1573988199234009,
+        "cross_entropy": 0.768778920173645,
+        "anchor_penalty": 0.038861989974975586,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 80,
+        "objective": 1.1572766304016113,
+        "cross_entropy": 0.7686201930046082,
+        "anchor_penalty": 0.03886563703417778,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 90,
+        "objective": 1.1572306156158447,
+        "cross_entropy": 0.7685981392860413,
+        "anchor_penalty": 0.038863249123096466,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 100,
+        "objective": 1.1572142839431763,
+        "cross_entropy": 0.768690288066864,
+        "anchor_penalty": 0.038852401077747345,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 110,
+        "objective": 1.157208800315857,
+        "cross_entropy": 0.7686278223991394,
+        "anchor_penalty": 0.03885809704661369,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 120,
+        "objective": 1.157206654548645,
+        "cross_entropy": 0.7686527371406555,
+        "anchor_penalty": 0.03885539248585701,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 130,
+        "objective": 1.1572059392929077,
+        "cross_entropy": 0.7686626315116882,
+        "anchor_penalty": 0.03885433077812195,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 140,
+        "objective": 1.1572057008743286,
+        "cross_entropy": 0.7686470150947571,
+        "anchor_penalty": 0.03885586932301521,
+        "training_top1": 0.9763158559799194
+      },
+      {
+        "epoch": 150,
+        "objective": 1.157205581665039,
+        "cross_entropy": 0.7686536312103271,
+        "anchor_penalty": 0.03885519504547119,
+        "training_top1": 0.9763158559799194
+      }
+    ],
+    "100.0": [
+      {
+        "epoch": 0,
+        "objective": 2.030421733856201,
+        "cross_entropy": 2.030421733856201,
+        "anchor_penalty": 1.852949370139247e-15,
+        "training_top1": 0.7052631974220276
+      },
+      {
+        "epoch": 10,
+        "objective": 2.6745729446411133,
+        "cross_entropy": 1.3535224199295044,
+        "anchor_penalty": 0.013210505247116089,
+        "training_top1": 0.865789532661438
+      },
+      {
+        "epoch": 20,
+        "objective": 1.9926283359527588,
+        "cross_entropy": 1.4809609651565552,
+        "anchor_penalty": 0.005116674117743969,
+        "training_top1": 0.8342105746269226
+      },
+      {
+        "epoch": 30,
+        "objective": 1.8977010250091553,
+        "cross_entropy": 1.647605538368225,
+        "anchor_penalty": 0.0025009550154209137,
+        "training_top1": 0.7894737124443054
+      },
+      {
+        "epoch": 40,
+        "objective": 1.8673375844955444,
+        "cross_entropy": 1.7024729251861572,
+        "anchor_penalty": 0.0016486465465277433,
+        "training_top1": 0.7842105627059937
+      },
+      {
+        "epoch": 50,
+        "objective": 1.8506042957305908,
+        "cross_entropy": 1.6942580938339233,
+        "anchor_penalty": 0.001563461497426033,
+        "training_top1": 0.7921053171157837
+      },
+      {
+        "epoch": 60,
+        "objective": 1.8473985195159912,
+        "cross_entropy": 1.6851158142089844,
+        "anchor_penalty": 0.0016228270251303911,
+        "training_top1": 0.7921053171157837
+      },
+      {
+        "epoch": 70,
+        "objective": 1.8456522226333618,
+        "cross_entropy": 1.6811249256134033,
+        "anchor_penalty": 0.0016452728305011988,
+        "training_top1": 0.7947368621826172
+      },
+      {
+        "epoch": 80,
+        "objective": 1.8450086116790771,
+        "cross_entropy": 1.681328535079956,
+        "anchor_penalty": 0.0016368001233786345,
+        "training_top1": 0.7921053171157837
+      },
+      {
+        "epoch": 90,
+        "objective": 1.844773530960083,
+        "cross_entropy": 1.6819946765899658,
+        "anchor_penalty": 0.0016277879476547241,
+        "training_top1": 0.7921053171157837
+      },
+      {
+        "epoch": 100,
+        "objective": 1.8446881771087646,
+        "cross_entropy": 1.6827125549316406,
+        "anchor_penalty": 0.0016197558725252748,
+        "training_top1": 0.7921053171157837
+      },
+      {
+        "epoch": 110,
+        "objective": 1.8446604013442993,
+        "cross_entropy": 1.6829452514648438,
+        "anchor_penalty": 0.0016171516617760062,
+        "training_top1": 0.7921053171157837
+      },
+      {
+        "epoch": 120,
+        "objective": 1.8446502685546875,
+        "cross_entropy": 1.6828458309173584,
+        "anchor_penalty": 0.0016180441016331315,
+        "training_top1": 0.7921053171157837
+      },
+      {
+        "epoch": 130,
+        "objective": 1.8446465730667114,
+        "cross_entropy": 1.6827170848846436,
+        "anchor_penalty": 0.0016192952170968056,
+        "training_top1": 0.7921053171157837
+      },
+      {
+        "epoch": 140,
+        "objective": 1.8446451425552368,
+        "cross_entropy": 1.6827659606933594,
+        "anchor_penalty": 0.0016187916044145823,
+        "training_top1": 0.7921053171157837
+      },
+      {
+        "epoch": 150,
+        "objective": 1.8446447849273682,
+        "cross_entropy": 1.6828479766845703,
+        "anchor_penalty": 0.0016179680824279785,
+        "training_top1": 0.7921053171157837
+      }
+    ]
+  },
+  "artifacts": [
+    {
+      "name": "anchor-10-blend-0.25",
+      "path": "weights/trained-head-v06/anchor-10-blend-0.25.npz",
+      "sha256": "4aa8022636f108ba96fe92e69dbbf8884924c5f02873e0ede33c7812dd685eed",
+      "kind": "supervised-normalized-classifier",
+      "anchor": 10.0,
+      "blend": 0.25,
+      "labels": [
+        "plastic bottle",
+        "glass bottle",
+        "metal can",
+        "cardboard box",
+        "banana peel",
+        "apple core",
+        "food waste",
+        "vegetable peels",
+        "cigarette butt",
+        "used tissue",
+        "compact fluorescent lamp",
+        "fluorescent tube",
+        "medicine pills",
+        "battery",
+        "incandescent light bulb",
+        "LED light bulb",
+        "tree leaves",
+        "stone",
+        "wood",
+        "table",
+        "wall",
+        "floor",
+        "person",
+        "animal",
+        "container",
+        "wire",
+        "metal tool",
+        "background"
+      ],
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "clip_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "training_manifest_sha256": "c694c832410f57a87959c0afc628cd9aa43ff4c5217f2b77c89e12ce70b8cba1",
+      "base_vectors_sha256": "e35de2a969d182dfe19faec87721e1f9e811bccdd7224cd54f6332cfbb752a88"
+    },
+    {
+      "name": "anchor-10-blend-0.5",
+      "path": "weights/trained-head-v06/anchor-10-blend-0.5.npz",
+      "sha256": "bbbea57ebc4a79480ba1b334c5ab8dabce0e57dbf9e8dff56c7cfb5bff9b5db1",
+      "kind": "supervised-normalized-classifier",
+      "anchor": 10.0,
+      "blend": 0.5,
+      "labels": [
+        "plastic bottle",
+        "glass bottle",
+        "metal can",
+        "cardboard box",
+        "banana peel",
+        "apple core",
+        "food waste",
+        "vegetable peels",
+        "cigarette butt",
+        "used tissue",
+        "compact fluorescent lamp",
+        "fluorescent tube",
+        "medicine pills",
+        "battery",
+        "incandescent light bulb",
+        "LED light bulb",
+        "tree leaves",
+        "stone",
+        "wood",
+        "table",
+        "wall",
+        "floor",
+        "person",
+        "animal",
+        "container",
+        "wire",
+        "metal tool",
+        "background"
+      ],
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "clip_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "training_manifest_sha256": "c694c832410f57a87959c0afc628cd9aa43ff4c5217f2b77c89e12ce70b8cba1",
+      "base_vectors_sha256": "e35de2a969d182dfe19faec87721e1f9e811bccdd7224cd54f6332cfbb752a88"
+    },
+    {
+      "name": "anchor-100-blend-0.25",
+      "path": "weights/trained-head-v06/anchor-100-blend-0.25.npz",
+      "sha256": "c0d90fc1665ae4eef65e5b3d119aa3d14b5e883170bc0ba79e881714e0042c30",
+      "kind": "supervised-normalized-classifier",
+      "anchor": 100.0,
+      "blend": 0.25,
+      "labels": [
+        "plastic bottle",
+        "glass bottle",
+        "metal can",
+        "cardboard box",
+        "banana peel",
+        "apple core",
+        "food waste",
+        "vegetable peels",
+        "cigarette butt",
+        "used tissue",
+        "compact fluorescent lamp",
+        "fluorescent tube",
+        "medicine pills",
+        "battery",
+        "incandescent light bulb",
+        "LED light bulb",
+        "tree leaves",
+        "stone",
+        "wood",
+        "table",
+        "wall",
+        "floor",
+        "person",
+        "animal",
+        "container",
+        "wire",
+        "metal tool",
+        "background"
+      ],
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "clip_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "training_manifest_sha256": "c694c832410f57a87959c0afc628cd9aa43ff4c5217f2b77c89e12ce70b8cba1",
+      "base_vectors_sha256": "e35de2a969d182dfe19faec87721e1f9e811bccdd7224cd54f6332cfbb752a88"
+    },
+    {
+      "name": "anchor-100-blend-0.5",
+      "path": "weights/trained-head-v06/anchor-100-blend-0.5.npz",
+      "sha256": "150e80bdae53d3fad8bd15ae85ab59f8a1cc29d63f5c2dcccd88bc8ed8790dc2",
+      "kind": "supervised-normalized-classifier",
+      "anchor": 100.0,
+      "blend": 0.5,
+      "labels": [
+        "plastic bottle",
+        "glass bottle",
+        "metal can",
+        "cardboard box",
+        "banana peel",
+        "apple core",
+        "food waste",
+        "vegetable peels",
+        "cigarette butt",
+        "used tissue",
+        "compact fluorescent lamp",
+        "fluorescent tube",
+        "medicine pills",
+        "battery",
+        "incandescent light bulb",
+        "LED light bulb",
+        "tree leaves",
+        "stone",
+        "wood",
+        "table",
+        "wall",
+        "floor",
+        "person",
+        "animal",
+        "container",
+        "wire",
+        "metal tool",
+        "background"
+      ],
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "clip_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "training_manifest_sha256": "c694c832410f57a87959c0afc628cd9aa43ff4c5217f2b77c89e12ce70b8cba1",
+      "base_vectors_sha256": "e35de2a969d182dfe19faec87721e1f9e811bccdd7224cd54f6332cfbb752a88"
+    }
+  ]
+}

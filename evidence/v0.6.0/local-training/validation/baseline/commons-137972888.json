@@ -1,0 +1,412 @@
+{
+  "id": "commons-137972888",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-19T00:57:12.525998+00:00",
+    "image_id": "626e92b337a45aae879d049962682433abf51febe87c94b9a7c0915c82f38f98",
+    "source_sha256": "1bd128111f1c08ca4e12b85b66590761071a6c22a520a7375842b4e4f6d65a9b",
+    "image_size": [
+      960,
+      1279
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          72.44,
+          770.65,
+          728.18,
+          1277.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9485657215118408,
+        "similarity": 0.35021257400512695,
+        "category_margin": 0.06743869185447693,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          266.04,
+          627.01,
+          398.44,
+          701.95
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9573530554771423,
+        "similarity": 0.34578943252563477,
+        "category_margin": 0.06281214952468872,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          0,
+          643.25,
+          557.06,
+          1277.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9475507736206055,
+        "similarity": 0.3364681601524353,
+        "category_margin": 0.06281429529190063,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          73.69,
+          770.65,
+          373.46,
+          1277.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9893310070037842,
+        "similarity": 0.33617258071899414,
+        "category_margin": 0.06296893954277039,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          286.03,
+          706.95,
+          345.98,
+          778.14
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9332573413848877,
+        "similarity": 0.3352334797382355,
+        "category_margin": 0.07093065977096558,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          309.76,
+          628.26,
+          398.44,
+          701.95
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9624999761581421,
+        "similarity": 0.32232391834259033,
+        "category_margin": 0.06852230429649353,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          291.02,
+          706.95,
+          343.48,
+          753.16
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9549093842506409,
+        "similarity": 0.320541113615036,
+        "category_margin": 0.054984480142593384,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          514.6,
+          781.89,
+          569.55,
+          825.6
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8979148864746094,
+        "similarity": 0.31419259309768677,
+        "category_margin": 0.06319981813430786,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          0,
+          874.32,
+          537.08,
+          1277.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.959402859210968,
+        "similarity": 0.31324058771133423,
+        "category_margin": 0.03730824589729309,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          450.9,
+          803.12,
+          482.12,
+          860.58
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9451080560684204,
+        "similarity": 0.29442647099494934,
+        "category_margin": 0.0354289710521698,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          433.41,
+          628.26,
+          482.12,
+          665.73
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.949966311454773,
+        "similarity": 0.2943045496940613,
+        "category_margin": 0.050244227051734924,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          0,
+          650.74,
+          182.36,
+          1277.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9656945466995239,
+        "similarity": 0.29359710216522217,
+        "category_margin": 0.02525794506072998,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          479.62,
+          810.62,
+          522.09,
+          853.08
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9383586049079895,
+        "similarity": 0.29238274693489075,
+        "category_margin": 0.0484040230512619,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          399.69,
+          645.75,
+          434.66,
+          673.22
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9198414087295532,
+        "similarity": 0.2914685308933258,
+        "category_margin": 0.029826760292053223,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          262.29,
+          781.89,
+          297.27,
+          818.11
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9333264827728271,
+        "similarity": 0.28830450773239136,
+        "category_margin": 0.044449687004089355,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          209.84,
+          12.49,
+          244.81,
+          44.96
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9024359583854675,
+        "similarity": 0.2812291979789734,
+        "category_margin": 0.0010123252868652344,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          181.11,
+          0,
+          214.83,
+          31.23
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.913227379322052,
+        "similarity": 0.28001847863197327,
+        "category_margin": 0.006585597991943359,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 18.044268499943428,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 55,
+      "candidate_count": 17,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

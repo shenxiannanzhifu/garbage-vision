@@ -1,0 +1,136 @@
+{
+  "id": "commons-69288328",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-19T01:08:51.265195+00:00",
+    "image_id": "080a1ed8ecc1be0cacdd3525880113ea90f948d8e6ac923eb682e4a261ae4544",
+    "source_sha256": "422877003c6fef832736087b1d2c064994dcd3d5f8e9387452dd2df0d88d5b37",
+    "image_size": [
+      960,
+      676
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32 + supervised classifier",
+    "status": "success",
+    "items": [
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          686.25,
+          303.75,
+          897.19,
+          614.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9415470361709595,
+        "similarity": 0.3205525279045105,
+        "category_margin": 0.026283353567123413,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          0,
+          81.56,
+          959.06,
+          676
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9878590703010559,
+        "similarity": 0.3130473792552948,
+        "category_margin": 0.0061953067779541016,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：食物残余；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "food waste",
+        "bbox": [
+          311.25,
+          291.56,
+          896.25,
+          614.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9363649487495422,
+        "similarity": 0.29804956912994385,
+        "category_margin": 0.014939963817596436,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.1114845999982208,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 7,
+      "candidate_count": 4,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "与监督训练后归一化分类向量的余弦相似度，不是概率；SAM 未训练。",
+      "experimental_classifier": {
+        "name": "anchor-100-blend-0.5",
+        "sha256": "150e80bdae53d3fad8bd15ae85ab59f8a1cc29d63f5c2dcccd88bc8ed8790dc2"
+      }
+    }
+  }
+}

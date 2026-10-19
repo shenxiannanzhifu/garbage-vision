@@ -1,0 +1,174 @@
+{
+  "id": "commons-129795561",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-19T01:00:20.755884+00:00",
+    "image_id": "ea7cab5b26db70ee34d643241419a9f99d0fabf378f506c5ad68d17036cb8d65",
+    "source_sha256": "2ecc70b4d3898464f2e903d09befc34a3ef7b23af4a4dabc277a89db0448fbc2",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32 + supervised classifier",
+    "status": "success",
+    "items": [
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          0,
+          540.0,
+          15.0,
+          573.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9308234453201294,
+        "similarity": 0.3112226724624634,
+        "category_margin": 0.025641530752182007,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "荧光灯管",
+        "category": "hazardous",
+        "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+        "uncertain": false,
+        "label": "fluorescent tube",
+        "bbox": [
+          347.81,
+          0,
+          650.62,
+          36.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9696780443191528,
+        "similarity": 0.3038422167301178,
+        "category_margin": 0.030090630054473877,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：纸箱；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cardboard box",
+        "bbox": [
+          0,
+          503.44,
+          15.0,
+          537.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8908432126045227,
+        "similarity": 0.29582706093788147,
+        "category_margin": 0.01264461874961853,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "荧光灯管",
+        "category": "hazardous",
+        "reason": "含汞荧光灯管属于有害垃圾；需确认不是外观相似的 LED 灯管。",
+        "uncertain": false,
+        "label": "fluorescent tube",
+        "bbox": [
+          181.87,
+          0,
+          552.19,
+          179.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9016772508621216,
+        "similarity": 0.2886536717414856,
+        "category_margin": 0.04432249069213867,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：纸箱；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cardboard box",
+        "bbox": [
+          248.44,
+          692.81,
+          279.37,
+          719.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8970183730125427,
+        "similarity": 0.28278645873069763,
+        "category_margin": 0.0010469555854797363,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.12574649997986853,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 14,
+      "candidate_count": 5,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "与监督训练后归一化分类向量的余弦相似度，不是概率；SAM 未训练。",
+      "experimental_classifier": {
+        "name": "anchor-10-blend-0.25",
+        "sha256": "4aa8022636f108ba96fe92e69dbbf8884924c5f02873e0ede33c7812dd685eed"
+      }
+    }
+  }
+}

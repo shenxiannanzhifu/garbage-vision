@@ -1,0 +1,476 @@
+{
+  "id": "commons-34194155",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-19T01:00:23.588745+00:00",
+    "image_id": "640f0a1c40c866dd3ceb6589c6221215d2e7e3cb435d8fe25f95f0e0faa82ad1",
+    "source_sha256": "ce8778e3354552f0b5497b890dfc13455da594f07ff156e33c88a75fa8428389",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32 + supervised classifier",
+    "status": "success",
+    "items": [
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          792.19,
+          401.25,
+          929.06,
+          689.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.936634361743927,
+        "similarity": 0.3494625687599182,
+        "category_margin": 0.064348965883255,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          571.87,
+          434.06,
+          631.87,
+          617.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9002110958099365,
+        "similarity": 0.33882272243499756,
+        "category_margin": 0.05447956919670105,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          0,
+          152.81,
+          62.81,
+          258.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9467675685882568,
+        "similarity": 0.3237915635108948,
+        "category_margin": 0.031140506267547607,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          617.81,
+          191.25,
+          652.5,
+          225.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.921922504901886,
+        "similarity": 0.3208637535572052,
+        "category_margin": 0.06482374668121338,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          71.25,
+          285.0,
+          120.94,
+          441.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9190149903297424,
+        "similarity": 0.3193986415863037,
+        "category_margin": 0.04207736253738403,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          498.75,
+          272.81,
+          538.12,
+          301.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9105598330497742,
+        "similarity": 0.3185769319534302,
+        "category_margin": 0.04778781533241272,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          0,
+          510.0,
+          959.06,
+          720
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9862548112869263,
+        "similarity": 0.30646464228630066,
+        "category_margin": 0.020610928535461426,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          0,
+          107.81,
+          137.81,
+          249.37
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9663002490997314,
+        "similarity": 0.3061191737651825,
+        "category_margin": 0.03492474555969238,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          148.12,
+          197.81,
+          175.31,
+          254.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9052881002426147,
+        "similarity": 0.30383387207984924,
+        "category_margin": 0.03539803624153137,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          152.81,
+          345.94,
+          195.0,
+          371.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9268648624420166,
+        "similarity": 0.3033153712749481,
+        "category_margin": 0.0353962779045105,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          698.44,
+          633.75,
+          749.06,
+          679.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9166777729988098,
+        "similarity": 0.3031504154205322,
+        "category_margin": 0.019767284393310547,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          347.81,
+          132.19,
+          412.5,
+          179.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9441360235214233,
+        "similarity": 0.3030131459236145,
+        "category_margin": 0.026720494031906128,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          825.94,
+          162.19,
+          959.06,
+          345.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9634723663330078,
+        "similarity": 0.3028249144554138,
+        "category_margin": 0.022148460149765015,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          736.87,
+          227.81,
+          780.0,
+          268.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.96721351146698,
+        "similarity": 0.2957964539527893,
+        "category_margin": 0.028119802474975586,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          569.06,
+          537.19,
+          599.06,
+          581.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.923005998134613,
+        "similarity": 0.29345932602882385,
+        "category_margin": 0.03583782911300659,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          799.69,
+          209.06,
+          826.87,
+          266.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9337189793586731,
+        "similarity": 0.2922901213169098,
+        "category_margin": 0.027459561824798584,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          413.44,
+          196.87,
+          436.87,
+          239.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.933764636516571,
+        "similarity": 0.29135507345199585,
+        "category_margin": 0.02859392762184143,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          645.94,
+          332.81,
+          679.69,
+          357.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9154029488563538,
+        "similarity": 0.2902466356754303,
+        "category_margin": 0.025523632764816284,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：纸箱；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cardboard box",
+        "bbox": [
+          0,
+          32.81,
+          376.87,
+          152.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9640576839447021,
+        "similarity": 0.2890547215938568,
+        "category_margin": 0.01279500126838684,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：纸箱；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cardboard box",
+        "bbox": [
+          447.19,
+          249.37,
+          460.31,
+          269.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9079365134239197,
+        "similarity": 0.28108155727386475,
+        "category_margin": 0.0037690699100494385,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.24845139996614307,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 26,
+      "candidate_count": 20,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "与监督训练后归一化分类向量的余弦相似度，不是概率；SAM 未训练。",
+      "experimental_classifier": {
+        "name": "anchor-10-blend-0.25",
+        "sha256": "4aa8022636f108ba96fe92e69dbbf8884924c5f02873e0ede33c7812dd685eed"
+      }
+    }
+  }
+}

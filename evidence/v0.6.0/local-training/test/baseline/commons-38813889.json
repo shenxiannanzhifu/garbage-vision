@@ -1,0 +1,392 @@
+{
+  "id": "commons-38813889",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-19T01:07:51.893513+00:00",
+    "image_id": "c18f3fe077c57b6773045c7b38023f580dfcec774d3cb94a87d5acad57c91bbb",
+    "source_sha256": "8dfcdef837c8eb04857bb94bd822369269d53fc6f5c473ba09229c661023617a",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          321.56,
+          0,
+          436.87,
+          169.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9239955544471741,
+        "similarity": 0.3360438346862793,
+        "category_margin": 0.06003767251968384,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          0,
+          463.12,
+          317.81,
+          719.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.93760085105896,
+        "similarity": 0.334615021944046,
+        "category_margin": 0.067725270986557,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          60.0,
+          0,
+          348.75,
+          120.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9680479764938354,
+        "similarity": 0.327281653881073,
+        "category_margin": 0.03654664754867554,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          0,
+          0,
+          257.81,
+          117.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9400061964988708,
+        "similarity": 0.3226489722728729,
+        "category_margin": 0.0715368390083313,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "果核",
+        "category": "kitchen",
+        "reason": "普通水果果核属于厨余垃圾。",
+        "uncertain": false,
+        "label": "apple core",
+        "bbox": [
+          609.37,
+          102.19,
+          661.87,
+          245.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9607303142547607,
+        "similarity": 0.32000240683555603,
+        "category_margin": 0.061806172132492065,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          262.5,
+          507.19,
+          472.5,
+          646.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9647334218025208,
+        "similarity": 0.3198011815547943,
+        "category_margin": 0.03557237982749939,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          556.87,
+          375.94,
+          833.44,
+          719.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9161697626113892,
+        "similarity": 0.31723761558532715,
+        "category_margin": 0.06549721956253052,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "果核",
+        "category": "kitchen",
+        "reason": "普通水果果核属于厨余垃圾。",
+        "uncertain": false,
+        "label": "apple core",
+        "bbox": [
+          388.12,
+          94.69,
+          548.44,
+          225.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9687132239341736,
+        "similarity": 0.31477734446525574,
+        "category_margin": 0.03288966417312622,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          839.06,
+          524.06,
+          959.06,
+          720.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8971216082572937,
+        "similarity": 0.3081428110599518,
+        "category_margin": 0.05106639862060547,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "果核",
+        "category": "kitchen",
+        "reason": "普通水果果核属于厨余垃圾。",
+        "uncertain": false,
+        "label": "apple core",
+        "bbox": [
+          651.56,
+          67.5,
+          787.5,
+          252.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9799628257751465,
+        "similarity": 0.3051086366176605,
+        "category_margin": 0.04023692011833191,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          593.44,
+          225.94,
+          799.69,
+          485.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9742564558982849,
+        "similarity": 0.3009776473045349,
+        "category_margin": 0.04951319098472595,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": "used tissue",
+        "bbox": [
+          258.75,
+          0,
+          345.94,
+          27.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9182022213935852,
+        "similarity": 0.3007897436618805,
+        "category_margin": 0.040366947650909424,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          336.56,
+          637.5,
+          411.56,
+          719.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9565050005912781,
+        "similarity": 0.2948361337184906,
+        "category_margin": 0.011322617530822754,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          192.19,
+          549.37,
+          321.56,
+          719.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9562922716140747,
+        "similarity": 0.294006884098053,
+        "category_margin": 0.01627969741821289,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          621.56,
+          24.37,
+          655.31,
+          90.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9396586418151855,
+        "similarity": 0.28780457377433777,
+        "category_margin": 0.021428197622299194,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          0,
+          0,
+          90.0,
+          118.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9680154323577881,
+        "similarity": 0.28538060188293457,
+        "category_margin": 0.042493194341659546,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 16.824684699997306,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 21,
+      "candidate_count": 16,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

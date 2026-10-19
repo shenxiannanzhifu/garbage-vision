@@ -1,0 +1,18 @@
+{
+  "verified_at_utc": "2026-10-19T01:28:30.997343+00:00",
+  "software_command": "CODEX_TEST_TMP=<workspace temp>; RUN_REAL_LOCAL=1; python -m pytest tests -q",
+  "software_result": "69 passed in 58.16s",
+  "real_integration": "RTX 5060 local inference through Streamlit AppTest; plastic bottle, image replacement and bad-image clearing",
+  "test_limit": "AppTest is not browser recording; network APIs mocked for software tests, not quality evidence",
+  "streamlit_health": "HTTP 200 ok at http://127.0.0.1:8501/_stcore/health",
+  "default_config_matches_training_baseline": true,
+  "frozen_sources_and_backbone_weights_unchanged": true,
+  "four_training_artifact_hashes_verified": true,
+  "actual_model_api_requests_this_round": 0,
+  "manual_api_enabled": true,
+  "manual_api_config_valid": true,
+  "api_provider": "nexavlinks",
+  "api_connectivity_not_retested": true,
+  "raw_data_and_secret_env_not_tracked": true,
+  "stage": "Training/evaluation round finished; candidate rejected; wait for user direction before further stages"
+}

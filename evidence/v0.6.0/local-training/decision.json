@@ -1,0 +1,104 @@
+{
+  "completed_at_utc": "2026-10-19T01:08:51.611629+00:00",
+  "promote": false,
+  "checks": {
+    "validation_improved": false,
+    "test_exact_count_improved": false,
+    "test_mean_f1_improved": false,
+    "no_additional_unknown_false_positives": false,
+    "no_category_tp_regression": true,
+    "no_inference_failure": true
+  },
+  "baseline": {
+    "images": 25,
+    "exact_count": 20,
+    "mean_per_image_f1": 0.8533333333333333,
+    "unknown_false_positive_images": 1,
+    "failure_rate": 0,
+    "per_category": {
+      "recyclable": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 2,
+        "support_images": 8,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "hazardous": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 0,
+        "support_images": 2,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "kitchen": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 0,
+        "support_images": 4,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.8888888888888888
+      },
+      "other": {
+        "tp": 3,
+        "fp": 2,
+        "fn": 0,
+        "support_images": 3,
+        "precision": 0.6,
+        "recall": 1.0,
+        "f1": 0.75
+      }
+    }
+  },
+  "trained_candidate": {
+    "images": 25,
+    "exact_count": 18,
+    "mean_per_image_f1": 0.8,
+    "unknown_false_positive_images": 2,
+    "failure_rate": 0,
+    "per_category": {
+      "recyclable": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 2,
+        "support_images": 8,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571428571428571
+      },
+      "hazardous": {
+        "tp": 2,
+        "fp": 2,
+        "fn": 0,
+        "support_images": 2,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "kitchen": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "support_images": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "other": {
+        "tp": 3,
+        "fp": 3,
+        "fn": 0,
+        "support_images": 3,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      }
+    }
+  },
+  "candidate_name": "anchor-100-blend-0.5",
+  "claim_limits": "25 new images; source-group split; small convenience sample, no independent human labels, no mAP or general deployment accuracy claim."
+}

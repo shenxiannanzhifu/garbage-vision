@@ -1,0 +1,414 @@
+{
+  "id": "commons-11771871",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-19T01:00:26.379877+00:00",
+    "image_id": "886b8af6b9a7f87b2ba0fa93f8a74dc36414760316cfc74b679d373b81af67bc",
+    "source_sha256": "41b93f4925f5fe13240607d4b9d94dcbb9a35d0ffeba53bfec101927162bfc53",
+    "image_size": [
+      960,
+      546
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32 + supervised classifier",
+    "status": "success",
+    "items": [
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          613.12,
+          343.12,
+          765.0,
+          491.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9134124517440796,
+        "similarity": 0.4014812707901001,
+        "category_margin": 0.03426283597946167,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          642.19,
+          294.37,
+          727.5,
+          352.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9435227513313293,
+        "similarity": 0.3835827708244324,
+        "category_margin": 0.004990577697753906,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          641.25,
+          75.94,
+          776.25,
+          269.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9603310823440552,
+        "similarity": 0.3801251947879791,
+        "category_margin": 0.024393737316131592,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          499.69,
+          97.5,
+          639.37,
+          345.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9716443419456482,
+        "similarity": 0.37754619121551514,
+        "category_margin": 0.027097344398498535,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          668.44,
+          195.94,
+          756.56,
+          269.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9093344807624817,
+        "similarity": 0.36966124176979065,
+        "category_margin": 0.024199873208999634,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          157.5,
+          41.25,
+          436.87,
+          304.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9682334661483765,
+        "similarity": 0.36951303482055664,
+        "category_margin": 0.032450348138809204,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          787.5,
+          204.37,
+          930.0,
+          378.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9524268507957458,
+        "similarity": 0.3633289039134979,
+        "category_margin": 0.025589704513549805,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          0,
+          147.19,
+          292.5,
+          498.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9241806864738464,
+        "similarity": 0.36265015602111816,
+        "category_margin": 0.02813035249710083,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          375.94,
+          225.0,
+          490.31,
+          374.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9386952519416809,
+        "similarity": 0.3619723320007324,
+        "category_margin": 0.026524722576141357,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          0,
+          97.5,
+          393.75,
+          498.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9003304839134216,
+        "similarity": 0.35817351937294006,
+        "category_margin": 0.032866477966308594,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          654.37,
+          293.44,
+          709.69,
+          321.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9150180220603943,
+        "similarity": 0.35626959800720215,
+        "category_margin": 0.015199810266494751,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          157.5,
+          40.31,
+          486.56,
+          360.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9577462077140808,
+        "similarity": 0.35607239603996277,
+        "category_margin": 0.03389754891395569,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          23.44,
+          40.31,
+          483.75,
+          479.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9331729412078857,
+        "similarity": 0.35601380467414856,
+        "category_margin": 0.03461006283760071,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          543.75,
+          96.56,
+          594.37,
+          126.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9364404082298279,
+        "similarity": 0.35412922501564026,
+        "category_margin": 0.006170690059661865,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          682.5,
+          75.0,
+          724.69,
+          99.37
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9278677105903625,
+        "similarity": 0.34398558735847473,
+        "category_margin": 0.015672624111175537,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          300.94,
+          385.31,
+          358.12,
+          445.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9297385811805725,
+        "similarity": 0.33414068818092346,
+        "category_margin": 0.0011188387870788574,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：白炽灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "incandescent light bulb",
+        "bbox": [
+          261.56,
+          209.06,
+          285.94,
+          233.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8898734450340271,
+        "similarity": 0.31245705485343933,
+        "category_margin": 0.0018640756607055664,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.2282740999944508,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 17,
+      "candidate_count": 17,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "与监督训练后归一化分类向量的余弦相似度，不是概率；SAM 未训练。",
+      "experimental_classifier": {
+        "name": "anchor-10-blend-0.5",
+        "sha256": "bbbea57ebc4a79480ba1b334c5ab8dabce0e57dbf9e8dff56c7cfb5bff9b5db1"
+      }
+    }
+  }
+}

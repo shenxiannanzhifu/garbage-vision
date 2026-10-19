@@ -1,0 +1,396 @@
+{
+  "id": "commons-33255950",
+  "expected_categories": [
+    "kitchen"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-19T01:08:49.334459+00:00",
+    "image_id": "ebfb11277bd04b7c37553f15de05f0e325605c45f0d96166b3dcba74f9bf4852",
+    "source_sha256": "f3cc94119ebb38653ee0b0edce9c3b72d5c2ac3616e1f973f039492c2cb9a07e",
+    "image_size": [
+      960,
+      540
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32 + supervised classifier",
+    "status": "success",
+    "items": [
+      {
+        "name": "果核",
+        "category": "kitchen",
+        "reason": "普通水果果核属于厨余垃圾。",
+        "uncertain": false,
+        "label": "apple core",
+        "bbox": [
+          355.31,
+          36.56,
+          437.81,
+          118.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9315162301063538,
+        "similarity": 0.30729442834854126,
+        "category_margin": 0.023725271224975586,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          10.31,
+          292.5,
+          175.31,
+          447.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9627739191055298,
+        "similarity": 0.3051149845123291,
+        "category_margin": 0.005040556192398071,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          545.62,
+          0,
+          705.0,
+          88.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9654526114463806,
+        "similarity": 0.3028874099254608,
+        "category_margin": 0.0025533735752105713,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          214.69,
+          216.56,
+          266.25,
+          256.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8835753798484802,
+        "similarity": 0.3014741837978363,
+        "category_margin": 0.010470539331436157,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          355.31,
+          44.06,
+          398.44,
+          117.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.911227285861969,
+        "similarity": 0.29980504512786865,
+        "category_margin": 0.0025774240493774414,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          623.44,
+          495.94,
+          661.87,
+          539.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9082420468330383,
+        "similarity": 0.2963441014289856,
+        "category_margin": 0.012072324752807617,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          246.56,
+          125.62,
+          309.37,
+          227.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9204251170158386,
+        "similarity": 0.29548636078834534,
+        "category_margin": 0.014011949300765991,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "果核",
+        "category": "kitchen",
+        "reason": "普通水果果核属于厨余垃圾。",
+        "uncertain": false,
+        "label": "apple core",
+        "bbox": [
+          417.19,
+          171.56,
+          497.81,
+          251.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9671078324317932,
+        "similarity": 0.2952193021774292,
+        "category_margin": 0.044838398694992065,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "食物残余",
+        "category": "kitchen",
+        "reason": "食物残余沥干后投放；先分离包装。",
+        "uncertain": false,
+        "label": "food waste",
+        "bbox": [
+          259.69,
+          26.25,
+          338.44,
+          102.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9530333280563354,
+        "similarity": 0.29519373178482056,
+        "category_margin": 0.029280662536621094,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          888.75,
+          73.12,
+          952.5,
+          132.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.89399254322052,
+        "similarity": 0.2904069423675537,
+        "category_margin": 0.005732804536819458,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          888.75,
+          352.5,
+          959.06,
+          429.37
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9568340182304382,
+        "similarity": 0.2888350784778595,
+        "category_margin": 0.0038280189037323,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          456.56,
+          272.81,
+          506.25,
+          317.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.893406093120575,
+        "similarity": 0.28870919346809387,
+        "category_margin": 0.007820546627044678,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          810.0,
+          437.81,
+          827.81,
+          474.37
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8850722908973694,
+        "similarity": 0.2882406711578369,
+        "category_margin": 0.006915837526321411,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：食物残余；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "food waste",
+        "bbox": [
+          343.12,
+          490.31,
+          391.87,
+          538.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9025179147720337,
+        "similarity": 0.28451865911483765,
+        "category_margin": 0.01476365327835083,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          436.87,
+          47.81,
+          539.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.925187349319458,
+        "similarity": 0.28324201703071594,
+        "category_margin": 0.007399886846542358,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          356.25,
+          406.87,
+          370.31,
+          420.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8932489156723022,
+        "similarity": 0.28094813227653503,
+        "category_margin": 0.010715693235397339,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.1979018000420183,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 21,
+      "candidate_count": 16,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "与监督训练后归一化分类向量的余弦相似度，不是概率；SAM 未训练。",
+      "experimental_classifier": {
+        "name": "anchor-100-blend-0.5",
+        "sha256": "150e80bdae53d3fad8bd15ae85ab59f8a1cc29d63f5c2dcccd88bc8ed8790dc2"
+      }
+    }
+  }
+}

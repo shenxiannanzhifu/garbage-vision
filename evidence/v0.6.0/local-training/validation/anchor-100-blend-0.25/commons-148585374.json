@@ -1,0 +1,336 @@
+{
+  "id": "commons-148585374",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-19T01:00:34.951593+00:00",
+    "image_id": "4822be8f1d9437d29b4247713391621375ed19c635b505232fee592742fb1934",
+    "source_sha256": "ae650d2bd2edeb117a97cddbb5885033db2d7f43c318396ab8dd3df2dac734f8",
+    "image_size": [
+      960,
+      718
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32 + supervised classifier",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          798.75,
+          464.06,
+          959.06,
+          545.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9571620225906372,
+        "similarity": 0.3259793221950531,
+        "category_margin": 0.029994189739227295,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          700.31,
+          607.5,
+          723.75,
+          626.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9197559952735901,
+        "similarity": 0.32373565435409546,
+        "category_margin": 0.020100802183151245,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          841.87,
+          591.56,
+          927.19,
+          628.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.922544538974762,
+        "similarity": 0.3094339370727539,
+        "category_margin": 0.009198963642120361,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          844.69,
+          630.94,
+          959.06,
+          717.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.954208493232727,
+        "similarity": 0.30925676226615906,
+        "category_margin": 0.018323302268981934,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          174.37,
+          267.19,
+          200.62,
+          283.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9071956872940063,
+        "similarity": 0.3067333400249481,
+        "category_margin": 0.006802588701248169,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          262.5,
+          639.37,
+          406.87,
+          717.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.960321843624115,
+        "similarity": 0.3046945631504059,
+        "category_margin": 0.019866198301315308,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          410.62,
+          637.5,
+          555.0,
+          717.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9412192106246948,
+        "similarity": 0.303661048412323,
+        "category_margin": 0.01324412226676941,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          553.12,
+          638.44,
+          864.37,
+          717.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9834875464439392,
+        "similarity": 0.3009907901287079,
+        "category_margin": 0.02305734157562256,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          0,
+          959.06,
+          63.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9788079261779785,
+        "similarity": 0.3002775013446808,
+        "category_margin": 0.007358431816101074,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          197.81,
+          15.94,
+          218.44,
+          31.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.937024712562561,
+        "similarity": 0.29888471961021423,
+        "category_margin": 0.0031977295875549316,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          640.31,
+          272.81,
+          717.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9851930141448975,
+        "similarity": 0.2986520826816559,
+        "category_margin": 0.01223406195640564,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：荧光灯管；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "fluorescent tube",
+        "bbox": [
+          702.19,
+          382.5,
+          959.06,
+          436.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9243505597114563,
+        "similarity": 0.29721659421920776,
+        "category_margin": 0.006651341915130615,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          183.75,
+          603.75,
+          215.62,
+          622.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8805345892906189,
+        "similarity": 0.292860746383667,
+        "category_margin": 0.016444504261016846,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.2254564999602735,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 22,
+      "candidate_count": 13,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "与监督训练后归一化分类向量的余弦相似度，不是概率；SAM 未训练。",
+      "experimental_classifier": {
+        "name": "anchor-100-blend-0.25",
+        "sha256": "c0d90fc1665ae4eef65e5b3d119aa3d14b5e883170bc0ba79e881714e0042c30"
+      }
+    }
+  }
+}

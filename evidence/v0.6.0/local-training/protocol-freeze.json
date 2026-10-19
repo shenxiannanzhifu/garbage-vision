@@ -1,0 +1,93 @@
+{
+  "created_at_utc": "2026-10-19T00:52:29.926289+00:00",
+  "git_commit": "b5d4cfd88cfef3a3dffc22432bf287a20000c697",
+  "settings": {
+    "backend": "sam2-clip",
+    "region_input": "crop",
+    "crop_n_layers": 1,
+    "max_area_fraction": 0.95,
+    "sam_weights": "weights/sam2.1_t.pt",
+    "clip_weights": "weights/ViT-B-32.pt",
+    "device": "auto",
+    "points_stride": 24,
+    "points_batch_size": 32,
+    "mask_score_min": 0.8,
+    "similarity_min": 0.28,
+    "category_margin_min": 0.018,
+    "min_box_side": 8,
+    "min_area_fraction": 0.0002,
+    "duplicate_iou": 0.7,
+    "part_mask_containment": 0.95,
+    "part_max_area_ratio": 0.25,
+    "part_similarity_gap": 0.015,
+    "max_objects": 40,
+    "crop_padding": 0.05,
+    "clip_resize_mode": "letterbox",
+    "text_templates": [
+      "a photo of {}.",
+      "a close-up photo of {}.",
+      "a photo of one or more {}."
+    ],
+    "text_aliases": "config/local_texts_v2.json",
+    "context_weight": 0.5,
+    "context_padding": 0.5,
+    "image_fallback": true
+  },
+  "parameters": {
+    "seed": 20261019,
+    "epochs": 150,
+    "learning_rate": 0.01,
+    "temperature": 20.0,
+    "anchor_strengths": [
+      10.0,
+      100.0
+    ],
+    "blend_strengths": [
+      0.25,
+      0.5
+    ],
+    "augmentations": [
+      "original",
+      "mirror",
+      "brightness_0.9",
+      "brightness_1.1"
+    ]
+  },
+  "files": {
+    "garbage_vision/api.py": "14b4a3fef09e82ca1310191f2cd948bb312c868d74ca5f98f34616be9abaab6a",
+    "garbage_vision/api_normalization.py": "ae38646dc8bba1fdfcb54deae64c0d567448d979b70dcbbc00ce6c61d196ec13",
+    "garbage_vision/config.py": "796cb60e0fdccb998914b2dca35298175bf185b3f0675663773188e7cbc9737d",
+    "garbage_vision/evaluation.py": "992385f2ad12e58de9598cd93b1460503345da02493395245ac4df7c69f55d98",
+    "garbage_vision/experiment.py": "c20d55cfaefedcdc9b9706bf7e98aa0e54eb888b2522c154f76eecd9ff1ddba6",
+    "garbage_vision/exports.py": "79b3795e8b159c3e5186fb933066bf0bf366f055152623145e6df7fb154dec27",
+    "garbage_vision/images.py": "ec63dd0278f3f1c014f655db0861927acaddb19ce442200e7ee2def250c895ae",
+    "garbage_vision/image_transport.py": "e2d123d05595fb416dc10c0f3da2e3e764199dd99925e338771d9622c5bdf7a4",
+    "garbage_vision/local.py": "839733c0b457a31a356693e2dbcfd5c57a737f5c4ed3f6efbc3b684625866b58",
+    "garbage_vision/saved_results.py": "94d7e47c10f56727f30e5b32f6bf4bae7643b89654ca638430e48d1a8279217a",
+    "garbage_vision/schema.py": "a3e03177f6e36e61c6949f70f6dd052752932ae9de057a806920721f1ee9610b",
+    "garbage_vision/visual_support.py": "4681e794c5941e658f145d4953d01d7dc2a58afdb1c7687dda982de141394c4d",
+    "garbage_vision/__init__.py": "b5dc4744d4644a6130808011b5c21fd139cde32221c7bae17e22bf22b8582cbb",
+    "config/local_model.json": "d9e2c7eb20d9f1f37f9beb26d87a3166a64c48504b20e7eeaea9fb32bdb3e1c6",
+    "config/local_texts_v2.json": "2b9d0de3aaf0d0a9794a43edf52e6fd01a372b0d7adaf315617b28596ba8ee7b",
+    "config/categories.json": "4111406e77e186cfb06cdd6598de91d1fe545b4459913aaa69d23a0733e0532a",
+    "scripts/experiments/train_classifier.py": "2cee280e9601f39b3a96f44983f7f1539cbdec93661e1a87468efd665f33d00f",
+    "scripts/experiments/compare_encoders.py": "9ec20fa5bc4e005250ba5b5b356c10dea14eaaf0a4d5371d03e6a52f593912ce",
+    "scripts/experiments/prepare_training_split.py": "8fdc29372866996a6bbfba89f10b1baac4e83081d2fdfeff442e6209ca8f3112",
+    "data/manifests/training_train_v06.json": "c694c832410f57a87959c0afc628cd9aa43ff4c5217f2b77c89e12ce70b8cba1",
+    "data/manifests/training_validation_v06.json": "4615bae795b50574cbbbc6f146058964173d89da8c97000a05c261f8aefe49a6",
+    "data/manifests/training_test_v06.json": "003bc32d344022db7d7b0f9fb163e287a9bf5309b5192467b0c6096c2637c532"
+  },
+  "weights": {
+    "weights/ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+    "weights/sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3"
+  },
+  "selection": "Validation only. Prefer candidates with no extra unknown/background false positives. Maximize exact-set count, then mean F1; ties prefer stronger anchor then lower blend. If none beats baseline, still test best trained candidate but forbid promotion.",
+  "promotion": "Validation eligibility plus test exact-set count strictly improves, mean F1 strictly improves, unknown/background false positives do not increase, every known-category TP does not decrease, and no inference failures.",
+  "annotation": "Author metadata and Codex visual review before inference; no independent human verification or box labels.",
+  "timing": "Real SAM regions may be reused across heads. Cached timings cannot establish end-to-end speed improvement.",
+  "counts": {
+    "train": 95,
+    "validation": 17,
+    "test": 25
+  }
+}
