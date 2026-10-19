@@ -1,0 +1,82 @@
+[
+  {
+    "query": "cigarette litter",
+    "error": "HTTPError"
+  },
+  {
+    "query": "used tissue paper",
+    "error": "HTTPError"
+  },
+  {
+    "query": "compact fluorescent lamp bulb",
+    "error": "HTTPError"
+  },
+  {
+    "query": "fluorescent tube lamp",
+    "error": "HTTPError"
+  },
+  {
+    "query": "battery cells",
+    "error": "HTTPError"
+  },
+  {
+    "query": "LED light bulb",
+    "error": "HTTPError"
+  },
+  {
+    "query": "incandescent light bulb",
+    "error": "HTTPError"
+  },
+  {
+    "query": "empty ashtray",
+    "error": "HTTPError"
+  },
+  {
+    "query": "empty recycling bins",
+    "error": "HTTPError"
+  },
+  {
+    "query": "stone pavement",
+    "error": "HTTPError"
+  },
+  {
+    "query": "empty desk",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-17492052",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-113529442",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-47390604",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-4977573",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-169794640",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-13353745",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-13521309",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-130215614",
+    "error": "HTTPError"
+  },
+  {
+    "id": "commons-390950",
+    "error": "HTTPError"
+  }
+]
