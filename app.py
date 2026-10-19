@@ -1,6 +1,7 @@
 """中文网页：同一图片的独立推理、错误隔离与结果导出。"""
 import json
 import time
+from dataclasses import replace
 import streamlit as st
 from garbage_vision.config import ROOT, local_settings, rules, fingerprint
 from garbage_vision.images import decode_image
@@ -45,6 +46,10 @@ except (ValueError,OSError) as exc:
     st.error(str(exc))
 try:
     api_config=api_settings(); api_problem=api_config.problem()
+    # 关闭调用开关不等于丢失密钥，避免已配置的用户被引导重复填密钥。
+    if not api_config.enabled:
+        setup_problem=replace(api_config,enabled=True).problem()
+        api_problem=setup_problem or 'API 已完成本地配置；网页新请求当前暂停，已保存结果仍可查看。'
 except (ValueError,TypeError):
     api_config=None; api_problem='API 配置中的数字或业务空间 ID 无效，请检查本地 .env。'
 # 换图、错误上传、修改规则或阈值后清空旧结果，防止图 A 的预测显示在图 B 下。
@@ -109,6 +114,8 @@ with right:
     if api_config:st.caption(f'当前模型：{api_config.model} · 服务商：{api_config.provider}')
     if 'api' in results and source:render_result(results['api'])
     else:st.info(api_problem or 'API 已配置，尚未调用。勾选“同时运行大模型”后点击开始。')
+    if not api_problem:
+        st.caption('每次由你勾选并点击“开始识别”后发送图片，按服务商计费；失败不会自动重试。')
 if source and results:
     valid=list(results.values())
     if all(k in results and results[k].status=='success' for k in ['local','api']):

@@ -25,6 +25,7 @@ def test_review_page_keeps_failure_and_changes_image_without_network():
         assert not at.exception
         complete = (report_astra.DIRECTORY/'comparison.json').exists()
         assert any('复评中断' in x.value for x in at.warning) == (not complete)
+        assert any('成功返回的同 33 张' in x.value and '28/33' in x.value for x in at.markdown)
         assert any('无法连接 API' in x.value for x in at.error)
         at.selectbox[0].select('commons-24364551').run()
         assert not at.exception and not at.error

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-19",
+  "configured_provider": "nexavlinks",
+  "configured_model": "gpt-6-astra",
+  "local_manual_api_enabled": true,
+  "secrets_included": false,
+  "real_generation_calls_made": 0,
+  "batch_evaluation_resumed": false,
+  "connection_stability_verified": false,
+  "command": "pytest tests/test_api_manual_ui.py tests/test_holdout_page.py tests/test_saved_results.py -q",
+  "tests_passed": 6,
+  "seconds": 6.14,
+  "checks": [
+    "Configured but paused is distinguished from missing credentials.",
+    "Page load, upload, local-only click, checkbox toggle and subsequent rerun do not trigger API calls.",
+    "Explicit checkbox selection plus run invokes the mocked API exactly once, with HTTP prohibited.",
+    "Historical review shows both end-to-end and same-successful-subset metrics without network.",
+    "Saved real-response display remains separate from new generation."
+  ],
+  "limitations": "Mocked software verification does not establish model accuracy or live API availability."
+}

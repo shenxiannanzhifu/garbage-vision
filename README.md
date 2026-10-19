@@ -24,7 +24,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start.ps1
 
 ## 配置与输出
 
-- 当前NexaVLinks配置已在本机完成，使用独立 `NEXAVLINKS_API_KEY`；官方OpenAI和百炼字段保留且不混用。详见 [NexaVLinks接入与验证](docs/NexaVLinks接入与验证.md)。网页新收费调用保持关闭，四张样例可点击“查看本图已保存的大模型实测（不收费）”。
+- 当前NexaVLinks配置已在本机完成，使用独立 `NEXAVLINKS_API_KEY`；官方OpenAI和百炼字段保留且不混用。详见 [NexaVLinks接入与验证](docs/NexaVLinks接入与验证.md)。网页手动调用已恢复，默认不勾选大模型；由用户勾选并点击“开始识别”后发送图片，可能计费，不自动重试。四张样例也可查看已保存实测（不收费）。批量评估仍保持停止。
 - `config/local_model.json`：设备和阈值；`config/categories.json`：分类映射；`prompts/classify_v2.txt`：API 提示词。
 - 输入 JPG/PNG/WebP，最大 12 MB / 2400 万像素。EXIF 校正、透明区域合成白底后统一 RGB。两侧记录同一图片哈希，API 不接收本地预测。
 - 支持 JSON、CSV 和本地标注图。SAM 掩膜质量与 CLIP 余弦相似度均不是分类准确率；API 不编造框和置信度。

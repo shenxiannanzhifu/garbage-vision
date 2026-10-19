@@ -32,6 +32,12 @@ scope = '同组' if report['complete'] else '同子集'
 c1.metric(scope+'本地集合完全匹配', f"{round(a['exact_set_accuracy']*count)} / {count}")
 c2.metric(scope+'大模型集合完全匹配', f"{round(b['exact_set_accuracy']*count)} / {count}")
 c3.metric('大模型通信失败', f"{round(b['failure_rate']*count)} / {count}")
+st.caption('上方为使用结果：通信失败也计入未匹配，反映实际可用性。')
+paired = report.get('same_successful_subset_diagnostic_only',{})
+if paired:
+    successful_count=paired['api']['images']
+    st.write(f"仅比较大模型成功返回的同 {successful_count} 张：本地匹配 {round(paired['local']['exact_set_accuracy']*successful_count)}/{successful_count}，大模型匹配 {round(paired['api']['exact_set_accuracy']*successful_count)}/{successful_count}。")
+    st.caption('这是排查识别差异的辅助统计，不能代替包含失败的使用结果，也不能证明任一模型的整体识别能力更强。')
 st.caption('匹配的是图片中出现的四分类集合，不代表每个物品、理由和位置均正确。参考标签还需要独立人工复核。')
 audit_path = folder/'quality-review.json'
 audit = json.loads(audit_path.read_text(encoding='utf-8')) if audit_path.exists() else {}

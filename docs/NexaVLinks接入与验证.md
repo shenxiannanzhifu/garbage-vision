@@ -12,7 +12,7 @@
 - 接口固定为 `https://www.nexavlinks.com/v1/chat/completions`，模型目录确认支持image输入。
 - 请求为完整方向校正RGB图片、版本化分类规则和严格JSON Schema。输出限制2048 token、low推理强度、关闭自动重试。
 - `NEXAVLINKS_PROXY_URL` 仅本地配置为已存在且验证可用的代理；不自动切换网络重发。
-- `NEXAVLINKS_API_ENABLED=false`：当前网页不发起新收费请求，已授权的小样由脚本完成。
+- `NEXAVLINKS_API_ENABLED=true`：本机已恢复网页手动使用；默认不勾选大模型，用户勾选并点击“开始识别”才发送图片。批量脚本保持停止，恢复网页开关不代表连接问题已解决。
 
 密钥、环境和原始图片不进入Git。最初官方地址返回401，是因为用户持有第三方平台密钥；没有产生图片生成请求。第三方模型列表返回200且包含gpt-6-astra。
 
