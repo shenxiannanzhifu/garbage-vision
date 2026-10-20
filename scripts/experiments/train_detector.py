@@ -54,8 +54,19 @@ def train():
     frozen=verify()
     if (OUT/'training.json').exists():raise ValueError('Training evidence already exists')
     os.environ['YOLO_CONFIG_DIR']=str(ROOT/'.local/ultralytics');os.environ['YOLO_AUTOINSTALL']='false'
+    os.environ['MPLCONFIGDIR']=str(ROOT/'.local/matplotlib')
+    (ROOT/'.local/matplotlib').mkdir(parents=True,exist_ok=True)
     import torch
     from ultralytics import YOLO
+    # Windows sandbox does not permit multiprocessing's named pipes, even for
+    # its ThreadPool. Verify the exact same labels sequentially; no IPC needed.
+    import ultralytics.data.dataset as dataset
+    class SequentialPool:
+        def __init__(self,*args,**kwargs):pass
+        def __enter__(self):return self
+        def __exit__(self,*args):pass
+        def imap(self,func,iterable):return map(func,iterable)
+    dataset.ThreadPool=SequentialPool
     torch.set_num_threads(4)
     model=YOLO(str(ROOT/'data/cache/taco-source/yolov8n.pt'))
     start=time.perf_counter()
