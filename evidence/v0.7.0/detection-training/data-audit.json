@@ -1,6 +1,16 @@
 {
   "excluded": [
     {
+      "id": "taco-0925",
+      "split": "train",
+      "reason": "Visual review: source boxes use unrotated coordinates despite EXIF=3; exclude inconsistent annotation convention."
+    },
+    {
+      "id": "taco-0942",
+      "split": "train",
+      "reason": "Visual review: source boxes use unrotated coordinates despite EXIF=3; exclude inconsistent annotation convention."
+    },
+    {
       "id": "taco-1110",
       "split": "train",
       "reason": "exact/dhash<=4 overlap",
@@ -20,12 +30,12 @@
   "counts": {
     "test": 124,
     "validation": 100,
-    "train": 709
+    "train": 707
   },
   "objects": {
     "test": 320,
     "validation": 283,
-    "train": 2223
+    "train": 2221
   },
   "warning": "Batch separation is not proven photographer independence. dHash is only a heuristic. No four-category labels inferred from TACO."
 }

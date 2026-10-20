@@ -27,3 +27,13 @@ def test_binary_supplements_only_use_prior_training_images():
             w,h=row['image_size']
             for x1,y1,x2,y2 in row['boxes_xyxy']:
                 assert 0<=x1<x2<=w and 0<=y1<y2<=h
+
+@pytest.mark.parametrize('size,orientation,target', [((4,2),3,(3,1)),((4,4),6,(3,0))])
+def test_exif_is_applied_even_when_dimensions_do_not_change(size,orientation,target):
+    from PIL import Image
+    from io import BytesIO
+    im=Image.new('RGB',size,'black');im.putpixel((0,0),(255,0,0))
+    exif=Image.Exif();exif[274]=orientation;buf=BytesIO();im.save(buf,format='PNG',exif=exif)
+    oriented,flag=module.oriented_taco_image(buf.getvalue(),size)
+    assert oriented.getpixel(target)==(255,0,0) and flag==orientation
+    assert oriented.getpixel((0,0))==(0,0,0)

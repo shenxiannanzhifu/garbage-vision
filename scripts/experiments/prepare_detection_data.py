@@ -22,6 +22,12 @@ def write(path,value):
 def read(path):return json.loads(path.read_text(encoding='utf-8'))
 def sha(data):return hashlib.sha256(data).hexdigest()
 
+def oriented_taco_image(data,expected):
+    im=Image.open(io.BytesIO(data));orientation=im.getexif().get(274,1)
+    im=ImageOps.exif_transpose(im)
+    if im.size!=tuple(expected):raise ValueError('Oriented image disagrees with annotation dimensions')
+    return im.convert('RGB'),orientation
+
 def yolo_box(box,width,height):
     x,y,w,h=map(float,box)
     if min(w,h)<=0 or min(x,y)<-1 or x+w>width+1 or y+h>height+1:
@@ -81,12 +87,11 @@ def download(extend_supported_test=False):
                     break
                 except Exception as exc:last=exc;time.sleep(attempt+1)
             else:raise last
-            im=Image.open(io.BytesIO(data));orientation=im.getexif().get(274,1)
             expected=(row['width'],row['height'])
-            if im.size==expected:transform='annotation-coordinate raster; EXIF removed'
-            else:
-                im=ImageOps.exif_transpose(im);assert im.size==expected
-                transform='EXIF transposed to match annotation dimensions'
+            # 180-degree rotations and square images preserve dimensions; size
+            # equality cannot establish orientation. Always apply EXIF first.
+            im,orientation=oriented_taco_image(data,expected)
+            transform='EXIF transposed before annotation-coordinate normalization'
             im=im.convert('RGB');im.thumbnail((1600,1600),Image.Resampling.LANCZOS)
             path=ROOT/f'data/raw/taco-v07/{image_id}.jpg';path.parent.mkdir(parents=True,exist_ok=True)
             im.save(path,quality=95,subsampling=0)
@@ -119,6 +124,9 @@ def finalize():
     # Preserve holdouts: remove lower-priority duplicates before model inference.
     priority={'test':0,'validation':1,'train':2};kept=[]
     for row in sorted(rows,key=lambda r:(priority[r['split']],r['id'])):
+        if row['id'] in {'taco-0925','taco-0942'}:
+            excluded.append({'id':row['id'],'split':row['split'],'reason':'Visual review: source boxes use unrotated coordinates despite EXIF=3; exclude inconsistent annotation convention.'})
+            continue
         matches=[r['id'] for r in old+kept if (r.get('sha256')==row['sha256'] or
             (r.get('dhash') and (int(r['dhash'],16)^int(row['dhash'],16)).bit_count()<=4))]
         if matches:excluded.append({'id':row['id'],'split':row['split'],'reason':'exact/dhash<=4 overlap','matches':matches})

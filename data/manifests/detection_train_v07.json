@@ -4915,10 +4915,10 @@
     "id": "taco-0082",
     "taco_id": 82,
     "path": "data/raw/taco-v07/taco-0082.jpg",
-    "sha256": "29dfba83a8bac216d21cf5b888c8d32480b4c8301c01c49b258e7ed8197ce745",
+    "sha256": "b846694f60c9d3461b810c8ed966a776a87628a548ec62c3f30e32011ad328d6",
     "original_sha256": "c917b212e0ea965a48485ca98e97a91e33bcd6d6b5e74168288e1730dd5c062c",
     "archive_crc32": 3794098185,
-    "dhash": "3753593d94cb434f",
+    "dhash": "0d3c0c5643653113",
     "split": "train",
     "width": 1600,
     "height": 1200,
@@ -4927,7 +4927,7 @@
       2448
     ],
     "original_exif_orientation": 3,
-    "transform": "annotation-coordinate raster; EXIF removed",
+    "transform": "EXIF transposed before annotation-coordinate normalization",
     "source_page": "https://zenodo.org/records/3587843",
     "source_file": "batch_1/000104.JPG",
     "flickr_url": "https://farm66.staticflickr.com/65535/47855536111_52ebed4191_o.png",
@@ -20984,53 +20984,6 @@
     "annotation_scope": "All official litter instances; binary object detection only"
   },
   {
-    "id": "taco-0925",
-    "taco_id": 925,
-    "path": "data/raw/taco-v07/taco-0925.jpg",
-    "sha256": "3b83c783f58785dd81397333ebec67a89f4ae123a744bfd6b3a853d2a8cf654b",
-    "original_sha256": "3ed8dd919637858cd5c78ceef4a0dbfe8fea3510e28babaa5b9583e5ef6ad601",
-    "archive_crc32": 1651695211,
-    "dhash": "c46642606067348e",
-    "split": "train",
-    "width": 1600,
-    "height": 1200,
-    "original_size": [
-      3264,
-      2448
-    ],
-    "original_exif_orientation": 3,
-    "transform": "annotation-coordinate raster; EXIF removed",
-    "source_page": "https://zenodo.org/records/3587843",
-    "source_file": "batch_4/000055.JPG",
-    "flickr_url": "https://farm66.staticflickr.com/65535/46939832265_836afa2e5f_o.png",
-    "license": "CC BY 4.0",
-    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
-    "boxes_yolo": [
-      [
-        0.4106924019607843,
-        0.6323529411764706,
-        0.12959558823529413,
-        0.5138888888888888
-      ]
-    ],
-    "original_labels": [
-      "Rope & strings"
-    ],
-    "annotations": [
-      {
-        "id": 2839,
-        "bbox": [
-          1129.0,
-          919.0,
-          423.0,
-          1258.0
-        ],
-        "category": "Rope & strings"
-      }
-    ],
-    "annotation_scope": "All official litter instances; binary object detection only"
-  },
-  {
     "id": "taco-0926",
     "taco_id": 926,
     "path": "data/raw/taco-v07/taco-0926.jpg",
@@ -21496,53 +21449,6 @@
           648.0
         ],
         "category": "Styrofoam piece"
-      }
-    ],
-    "annotation_scope": "All official litter instances; binary object detection only"
-  },
-  {
-    "id": "taco-0942",
-    "taco_id": 942,
-    "path": "data/raw/taco-v07/taco-0942.jpg",
-    "sha256": "00f9e745baa973de2099d48b9e11bea45ade4b51344326f48c93394985dff953",
-    "original_sha256": "d4b31fadf708c13a30a969cf5efc30585e9190b5f185962f4a5c397c3139a5e5",
-    "archive_crc32": 1544741333,
-    "dhash": "926c5cb1e36b53ac",
-    "split": "train",
-    "width": 1600,
-    "height": 1200,
-    "original_size": [
-      3264,
-      2448
-    ],
-    "original_exif_orientation": 3,
-    "transform": "annotation-coordinate raster; EXIF removed",
-    "source_page": "https://zenodo.org/records/3587843",
-    "source_file": "batch_4/000074.JPG",
-    "flickr_url": "https://farm66.staticflickr.com/65535/33978809298_918877e383_o.png",
-    "license": "CC BY 4.0",
-    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
-    "boxes_yolo": [
-      [
-        0.6453737745098039,
-        0.4483251633986928,
-        0.02849264705882353,
-        0.04044117647058824
-      ]
-    ],
-    "original_labels": [
-      "Plastic bottle cap"
-    ],
-    "annotations": [
-      {
-        "id": 2859,
-        "bbox": [
-          2060.0,
-          1048.0,
-          93.0,
-          99.0
-        ],
-        "category": "Plastic bottle cap"
       }
     ],
     "annotation_scope": "All official litter instances; binary object detection only"
@@ -23194,10 +23100,10 @@
     "id": "taco-0976",
     "taco_id": 976,
     "path": "data/raw/taco-v07/taco-0976.jpg",
-    "sha256": "cf3418f242c94a0c41cfde592489cf42dd7d67dd726f76f7a3acfc28d3ef250f",
+    "sha256": "4d3f9ca8c94ea53ab66c4b649be43e0faeb4718a277e01e235658e75d6d9ee03",
     "original_sha256": "3a8e43469d1d704928f4236f0725b66e1b13ffd5f19bbaf0fa159545d2777323",
     "archive_crc32": 814018532,
-    "dhash": "e68e1df5a7743101",
+    "dhash": "3f73d11850468e98",
     "split": "train",
     "width": 1600,
     "height": 1200,
@@ -23206,7 +23112,7 @@
       2448
     ],
     "original_exif_orientation": 3,
-    "transform": "annotation-coordinate raster; EXIF removed",
+    "transform": "EXIF transposed before annotation-coordinate normalization",
     "source_page": "https://zenodo.org/records/3587843",
     "source_file": "batch_5/000085.JPG",
     "flickr_url": "https://farm66.staticflickr.com/65535/32912020677_04307671cd_o.png",
@@ -33766,10 +33672,10 @@
     "id": "taco-1119",
     "taco_id": 1119,
     "path": "data/raw/taco-v07/taco-1119.jpg",
-    "sha256": "dc474d98c10e78e3526895bf4629483857d681db0b9153377abfde6c5404781b",
+    "sha256": "1d4b2298a356fd7c15d1416db7e4a295b0848e2a738322b737775c862b25bc72",
     "original_sha256": "6ad0ec0da26b398febae919c2b4579ee14f498b08933756745deba8b6f5bd872",
     "archive_crc32": 3916335143,
-    "dhash": "1f1f131b383c7f20",
+    "dhash": "7301c3e323370707",
     "split": "train",
     "width": 1600,
     "height": 1200,
@@ -33778,7 +33684,7 @@
       2448
     ],
     "original_exif_orientation": 3,
-    "transform": "annotation-coordinate raster; EXIF removed",
+    "transform": "EXIF transposed before annotation-coordinate normalization",
     "source_page": "https://zenodo.org/records/3587843",
     "source_file": "batch_6/000059.JPG",
     "flickr_url": "https://farm66.staticflickr.com/65535/47066782704_0d578a36a6_o.png",
@@ -33945,10 +33851,10 @@
     "id": "taco-1121",
     "taco_id": 1121,
     "path": "data/raw/taco-v07/taco-1121.jpg",
-    "sha256": "e8083134f99adbf96ba19490e259c6a983bf9b65350111cfa30b1cd70985f8b2",
+    "sha256": "c7dc4c35ba34b9c6c2bdc76eaf6c1fa4f214340ed6a8566455c23314d725808e",
     "original_sha256": "3c772b1cda3cfa5763e31b4021fc2b8fe00021a4fd4d5b5e865d499b747abb67",
     "archive_crc32": 4221824101,
-    "dhash": "1c0c101850909280",
+    "dhash": "76b6f675e7f7c783",
     "split": "train",
     "width": 1600,
     "height": 1200,
@@ -33957,7 +33863,7 @@
       2448
     ],
     "original_exif_orientation": 3,
-    "transform": "annotation-coordinate raster; EXIF removed",
+    "transform": "EXIF transposed before annotation-coordinate normalization",
     "source_page": "https://zenodo.org/records/3587843",
     "source_file": "batch_6/000056.JPG",
     "flickr_url": "https://farm66.staticflickr.com/65535/47066783694_e124995508_o.png",
@@ -34572,10 +34478,10 @@
     "id": "taco-1134",
     "taco_id": 1134,
     "path": "data/raw/taco-v07/taco-1134.jpg",
-    "sha256": "dc1aef430d3863dbb017d3d7bf651c3b9711fad780ad48c543d37975d987e650",
+    "sha256": "98ec2a38cb05656c782a69d9ce69d654baafaeb34daa03976f6c811d5d34843b",
     "original_sha256": "43d8ecb6682da24acbd2a45449f4875ea16717f9a25863c35fdabdf62de8c32a",
     "archive_crc32": 3452837894,
-    "dhash": "17b5938a87878fae",
+    "dhash": "8a0e1e1eae365217",
     "split": "train",
     "width": 1600,
     "height": 1200,
@@ -34584,7 +34490,7 @@
       2448
     ],
     "original_exif_orientation": 3,
-    "transform": "annotation-coordinate raster; EXIF removed",
+    "transform": "EXIF transposed before annotation-coordinate normalization",
     "source_page": "https://zenodo.org/records/3587843",
     "source_file": "batch_6/000043.JPG",
     "flickr_url": "https://farm66.staticflickr.com/65535/46939979195_ea795fcdf0_o.png",
@@ -36550,10 +36456,10 @@
     "id": "taco-1171",
     "taco_id": 1171,
     "path": "data/raw/taco-v07/taco-1171.jpg",
-    "sha256": "0f4533ca6e9260df3ccd2aa00aaf6a40956efda585471c05a269ee878240dbea",
+    "sha256": "b916c7e432d4b04c4f7ac4697ec34d194d7463f756cba2a37d7d639a7662b94f",
     "original_sha256": "798fe9e4cc2f945a17334e28d3b4fb46ca235df26464a4645334934cde58883a",
     "archive_crc32": 22559907,
-    "dhash": "3b000062650c0c00",
+    "dhash": "ffcfcf59397f6703",
     "split": "train",
     "width": 1600,
     "height": 1200,
@@ -36562,7 +36468,7 @@
       2448
     ],
     "original_exif_orientation": 3,
-    "transform": "annotation-coordinate raster; EXIF removed",
+    "transform": "EXIF transposed before annotation-coordinate normalization",
     "source_page": "https://zenodo.org/records/3587843",
     "source_file": "batch_6/000002.JPG",
     "flickr_url": "https://farm66.staticflickr.com/65535/47856271681_632bcfb6da_o.png",
@@ -42187,10 +42093,10 @@
     "id": "taco-1245",
     "taco_id": 1245,
     "path": "data/raw/taco-v07/taco-1245.jpg",
-    "sha256": "89c2b1538b6fec253be17b72089aa4ded3ab7b130e372fcacd4b523913da55ef",
+    "sha256": "604b06245727698a89cc62c83e7db132bd4fe11a073eb06e03b2b8f880466060",
     "original_sha256": "5d789da040c780ee16ed6fad547436b7b7ee2ecb2665f7d586b9a6368e2dbe19",
     "archive_crc32": 1986453297,
-    "dhash": "041d1d9959716165",
+    "dhash": "3b3b73c9e8fcbdac",
     "split": "train",
     "width": 1600,
     "height": 1600,
@@ -42199,7 +42105,7 @@
       2448
     ],
     "original_exif_orientation": 6,
-    "transform": "annotation-coordinate raster; EXIF removed",
+    "transform": "EXIF transposed before annotation-coordinate normalization",
     "source_page": "https://zenodo.org/records/3587843",
     "source_file": "batch_7/000084.JPG",
     "flickr_url": "https://farm66.staticflickr.com/65535/47066863934_9cfdebf1ce_o.png",
@@ -43145,10 +43051,10 @@
     "id": "taco-1252",
     "taco_id": 1252,
     "path": "data/raw/taco-v07/taco-1252.jpg",
-    "sha256": "b1bb16a4e2d1f5a67ce3a0bb7464cca2289d889f8293be8fd52301b17e5d78e3",
+    "sha256": "4c649eedf5bd4ae699f1b7770e6dc16682c70d96c1f16b9e29b185a9a49f81e2",
     "original_sha256": "652fbe1cd58ae5d966134ffc4c1ad97980f760be0009f7bf4bbb0edcd1b2f334",
     "archive_crc32": 1151396180,
-    "dhash": "52335bdbfb7f6727",
+    "dhash": "1b19012024253395",
     "split": "train",
     "width": 1600,
     "height": 1200,
@@ -43157,7 +43063,7 @@
       2448
     ],
     "original_exif_orientation": 3,
-    "transform": "annotation-coordinate raster; EXIF removed",
+    "transform": "EXIF transposed before annotation-coordinate normalization",
     "source_page": "https://zenodo.org/records/3587843",
     "source_file": "batch_7/000091.JPG",
     "flickr_url": "https://farm66.staticflickr.com/65535/46940062245_4af8a7d9b6_o.png",

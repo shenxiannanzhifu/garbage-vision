@@ -1,0 +1,65 @@
+"""Summarize frozen real results without rewriting reference labels or decisions."""
+import csv,json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+OUT=ROOT/'evidence/v0.7.0/detection-training'
+def read(p):return json.loads(p.read_text(encoding='utf-8'))
+
+def main():
+    training=read(OUT/'training.json');decision=read(OUT/'decision.json');selection=read(OUT/'selection.json')
+    data=read(OUT/'data-audit.json');category=read(OUT/'category-label-audit.json')
+    curves=list(csv.DictReader((OUT/'training-curves.csv').open(encoding='utf-8')))
+    curves=[{k.strip():v.strip() for k,v in r.items()} for r in curves]
+    lines=['# 垃圾定位监督训练：真实结果与停止决定','',
+        '2026-10-20。用户要求双线并行；本轮完成本地真实训练与多模态离线诊断。新增付费识图请求为 0。','',
+        '**候选通过预声明门槛，尚待向用户报告。**' if decision['eligible_for_promotion'] else '**候选未通过预声明门槛。本轮停止，网页保留原模型；不自动开始下一项优化或收费大模型实验。**','',
+        '## 实际训练内容','',
+        f"在 {training['device']} 上微调 YOLOv8n 二值垃圾定位器，实际完成 {training['actual_epochs']} 轮，耗时 {training['elapsed_seconds']/60:.1f} 分钟。检测框提示 SAM 产生真实掩膜，再由原 CLIP 与分类规则判断类别。SAM 和 CLIP 权重未更新。",
+        f"训练 {data['counts']['train']} 图/{data['objects']['train']} 个标注物品；检测验证 {data['counts']['validation']} 图；新检测测试 {data['counts']['test']} 图。11 张补充训练图片来自上一轮训练集，标签依据实际视觉标框；两个感知近重复训练图已排除。",
+        'Windows 命名管道限制使第一次启动在数据扫描阶段退出，尚无梯度更新。改为顺序检查后，又在训练数据复核中发现 10 张 EXIF 方向处理错误，立即中断已运行 14 轮的无效实验。修正原图方向并逐图检查框后，从同一初始权重重启，超参数及选优条件不变；保留全部修复前协议及无效曲线，不把该曲线算成候选结果。','',
+        '| 训练指标 | 首轮 | 最后轮 |','|---|---:|---:|']
+    for key,name in [('train/box_loss','框回归损失'),('train/cls_loss','前景分类损失'),('metrics/mAP50(B)','检测验证 mAP50'),('metrics/mAP50-95(B)','检测验证 mAP50–95')]:
+        lines.append(f"| {name} | {float(curves[0][key]):.4f} | {float(curves[-1][key]):.4f} |")
+    lines+=['','损失下降和检测 mAP 只能描述训练/定位，不直接等于垃圾四分类正确率。','',
+        '## 同图四分类对照','',
+        '比较每图确定类别的集合是否完全相同；无法确定不会自动归为其他垃圾。该指标不保证每个物品名称、数量、框和理由都正确。','',
+        '| 数据用途 | 图片数 | 原模型正确 | 训练候选正确 | 原模型平均 F1 | 候选平均 F1 |','|---|---:|---:|---:|---:|---:|']
+    groups={'保留验证（选阈值）':{'baseline':selection['baseline'],'candidate':selection['chosen']['metrics']},
+        '新 TACO 场景（仅两类）':decision['results']['fresh'],'历史 Commons 回归（四类及未知）':decision['results']['regression']}
+    for name,g in groups.items():
+        a,b=g['baseline'],g['candidate'];lines.append(f"| {name} | {a['images']} | {a['exact_count']} | {b['exact_count']} | {a['mean_per_image_f1']:.4f} | {b['mean_per_image_f1']:.4f} |")
+    lines+=['',f"验证选定 `{selection['chosen']['name']}`，检测阈值 {selection['chosen']['threshold']}，整图兜底 {selection['chosen']['image_fallback']}。六个候选均只在 17 张保留验证图上选择；新测试结果没有用于修改候选。",'',
+        '## 改对与改错','']
+    for group,title in [('fresh','新场景'),('regression','历史回归')]:
+        a,b=decision['results'][group]['baseline'],decision['results'][group]['candidate'];before={r['id']:r for r in a['records']}
+        gains=[r['id'] for r in b['records'] if r['exact_match'] and not before[r['id']]['exact_match']]
+        losses=[r['id'] for r in b['records'] if not r['exact_match'] and before[r['id']]['exact_match']]
+        lines += [f"- {title}：从错变对 {len(gains)} 张；从对变错 {len(losses)} 张。",
+            f"  - 改对：{', '.join(gains) or '无'}。",f"  - 改错：{', '.join(losses) or '无'}。"]
+    lines+=['','## 门槛逐项核对','','| 预声明门槛 | 结果 |','|---|---|']
+    names={'validation_exact_improves':'验证完全正确数增加','fresh_at_least_two_more_exact':'新图至少多对两张','fresh_mean_f1_improves':'新图平均 F1 提高',
+        'regression_exact_no_drop':'历史回归正确数不降','regression_f1_no_drop':'历史回归 F1 不降','regression_category_tp_no_drop':'历史各类别 TP 不降',
+        'unknown_background_no_extra_fp':'未知/背景误报不增加','no_inference_failures':'无推理失败'}
+    for name,value in decision['gates'].items():lines.append(f"| {names[name]} | {'通过' if value else '未通过'} |")
+    det=OUT/'detection-test.json'
+    if det.exists():
+        values=read(det)['metrics'];lines+=['',f"二值检测新测试：mAP50 {values.get('metrics/mAP50(B)',0):.4f}，mAP50–95 {values.get('metrics/mAP50-95(B)',0):.4f}。该分数不能替代以上分类门槛。"]
+    lines+=['','## 能说明什么','',
+        f"新类别评测共 {category['images']} 张，支持数为 {category['category_support']}。来自户外垃圾图，只有可回收和其他两类；缺少新有害/厨余及纯背景测试，不能声称四类全面提升。历史 25 图已用于诊断，只是回归证据。",
+        'TACO 按拍摄批次隔离并作图像哈希/感知近重复检查，但没有证明作者独立；公开预训练模型的全部预训练图片也无法排除与公开数据重叠。参考由公开实例标注与 Codex 视觉复核确定，非独立多人金标准。',
+        '小样本上正确数的变化不足以证明统计显著性或日常部署可靠。缓存了真实 SAM 掩膜以比较阈值，记录中的耗时不能用于端到端提速宣传。',
+        '训练框定位与类别判别仍是两项不同能力。若定位学到了物品，分类器仍可能无法从局部外观判断灯泡类型、污染、用途和投放规则；本次结果不等于所有优化手段已经耗尽。','',
+        '## 多模态并行结果','',
+        '只完成历史结果离线审计：38 次已尝试请求中 33 次有效，5 次通信失败；含失败口径 API 28/38、本地 32/38；同 33 张成功响应子集双方均 28/33。成功子集不能代替完整使用成功率，五张分歧也不能自动算对。',
+        '现有第三方接口尚未核实可训练远程权重的能力；离线提示词与连接诊断准备不称为远端模型训练。本轮没有新增 API 调用。若本地门槛未过，按用户要求停止，不执行预备的大模型实验。','',
+        '## 证据','',
+        '- `protocol-freeze.json` / `protocol-before-startup-repair.json`：冻结参数、代码与数据哈希及启动修复。',
+        '- `training.json` / `training-curves.csv`：硬件、训练次数、真实曲线、最佳权重哈希。',
+        '- `selection.json`：六个验证候选与唯一选择。',
+        '- `test-freeze.json` / `test/`：测试前冻结与逐图真实结果。',
+        '- `decision.json`：全部门槛与决定；原图及权重保存在本机，不上传 Git。','']
+    (OUT/'训练与测试报告.md').write_text('\n'.join(lines),encoding='utf-8')
+    print('Report written.')
+
+if __name__=='__main__':main()

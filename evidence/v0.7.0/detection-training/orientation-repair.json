@@ -1,0 +1,17 @@
+{
+  "affected_train_ids": [
+    "taco-0925",
+    "taco-1171",
+    "taco-1119",
+    "taco-1245",
+    "taco-0976",
+    "taco-0082",
+    "taco-1134",
+    "taco-1252",
+    "taco-0942",
+    "taco-1121"
+  ],
+  "reason": "Dimension equality missed EXIF 180-degree and square rotation; real bbox overlays exposed misalignment.",
+  "action": "Interrupted run, retain invalid curves, re-download original 10 images and apply EXIF before resizing. Restart from original pretrained weights with same parameters; no test predictions inspected.",
+  "not_a_candidate": "Interrupted weights excluded from selection and promotion."
+}
