@@ -1,0 +1,162 @@
+{
+  "id": "commons-133213919",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:04:54.279287+00:00",
+    "image_id": "601606fcf6c2a811e62e709553b5f9d62e521b9cd201db43565da9e300a2ad3c",
+    "source_sha256": "7582e5e5d0fbaafa9ca893a35d9e2f3eec0adf518412c7c28f5e936364ed4853",
+    "image_size": [
+      368,
+      816
+    ],
+    "method": "local",
+    "model": "YOLOv8n + SAM2 + CLIP with conservative SAM supplementation",
+    "status": "success",
+    "items": [
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          128.0,
+          0.0,
+          322.0,
+          451.0
+        ],
+        "detection_confidence": 0.37268009781837463,
+        "mask_quality": 0.9900168776512146,
+        "similarity": 0.29108721017837524,
+        "category_margin": 0.0464412122964859,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          129.0,
+          127.0,
+          315.0,
+          451.0
+        ],
+        "detection_confidence": 0.5745353698730469,
+        "mask_quality": 0.9522870182991028,
+        "similarity": 0.2804441452026367,
+        "category_margin": 0.03999905288219452,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.17814480001106858,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 2,
+      "candidate_count": 2,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。",
+      "detector_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+      "detector_threshold": 0.15,
+      "proposal_method": "supervised binary detector -> real SAM box-prompt masks",
+      "detector_regions": [
+        {
+          "bbox": [
+            129.0,
+            127.0,
+            315.0,
+            451.0
+          ],
+          "detection_confidence": 0.5745353698730469
+        },
+        {
+          "bbox": [
+            128.0,
+            0.0,
+            322.0,
+            451.0
+          ],
+          "detection_confidence": 0.37268009781837463
+        }
+      ],
+      "experimental": true,
+      "timing_note": "Replay of genuine archived components; not an end-to-end speed measurement.",
+      "recall_supplement": {
+        "mode": "uncovered",
+        "margin_min": 0.04,
+        "added_count": 0,
+        "added": [],
+        "rejected_overlap": [
+          {
+            "bbox": [
+              126.7,
+              0.0,
+              321.94,
+              448.64
+            ],
+            "label": "glass bottle",
+            "reason": "overlaps confirmed detector region"
+          }
+        ],
+        "automatic_config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+        "automatic_weight_sha256": {
+          "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+          "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+        },
+        "truncated": false,
+        "score_note": "CLIP category margin is not calibrated probability."
+      }
+    }
+  }
+}

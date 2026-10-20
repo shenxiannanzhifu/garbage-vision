@@ -1,0 +1,326 @@
+{
+  "id": "commons-34194155",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:04:55.559302+00:00",
+    "image_id": "640f0a1c40c866dd3ceb6589c6221215d2e7e3cb435d8fe25f95f0e0faa82ad1",
+    "source_sha256": "ce8778e3354552f0b5497b890dfc13455da594f07ff156e33c88a75fa8428389",
+    "image_size": [
+      960,
+      720
+    ],
+    "method": "local",
+    "model": "YOLOv8n + SAM2 + CLIP with conservative SAM supplementation",
+    "status": "success",
+    "items": [
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          792.0,
+          401.0,
+          954.0,
+          689.0
+        ],
+        "detection_confidence": 0.2122534066438675,
+        "mask_quality": 0.9389033913612366,
+        "similarity": 0.323310524225235,
+        "category_margin": 0.03580579161643982,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          466.0,
+          120.0,
+          556.0,
+          152.0
+        ],
+        "detection_confidence": 0.1932993084192276,
+        "mask_quality": 0.9241829514503479,
+        "similarity": 0.30220580101013184,
+        "category_margin": 0.01331186294555664,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：纸箱；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cardboard box",
+        "bbox": [
+          0.0,
+          267.0,
+          158.0,
+          521.0
+        ],
+        "detection_confidence": 0.5006870031356812,
+        "mask_quality": 0.8290839791297913,
+        "similarity": 0.29657161235809326,
+        "category_margin": 0.011289834976196289,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：纸箱；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cardboard box",
+        "bbox": [
+          110.0,
+          281.0,
+          140.0,
+          305.0
+        ],
+        "detection_confidence": 0.17410878837108612,
+        "mask_quality": 0.8369548320770264,
+        "similarity": 0.28171780705451965,
+        "category_margin": 0.013813257217407227,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。 自动分割补充区域；检测器未给出覆盖该区域的确定分类，需人工核对。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          571.87,
+          434.06,
+          631.87,
+          617.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9002110958099365,
+        "similarity": 0.31771743297576904,
+        "category_margin": 0.04124933481216431,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "纸箱",
+        "category": "recyclable",
+        "reason": "干燥且未严重污染的纸箱可回收。 自动分割补充区域；检测器未给出覆盖该区域的确定分类，需人工核对。",
+        "uncertain": false,
+        "label": "cardboard box",
+        "bbox": [
+          617.81,
+          191.25,
+          652.5,
+          225.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.921922504901886,
+        "similarity": 0.3013308346271515,
+        "category_margin": 0.05493322014808655,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.2754842999856919,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 8,
+      "candidate_count": 4,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。",
+      "detector_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+      "detector_threshold": 0.15,
+      "proposal_method": "supervised binary detector -> real SAM box-prompt masks",
+      "detector_regions": [
+        {
+          "bbox": [
+            0.0,
+            267.0,
+            158.0,
+            521.0
+          ],
+          "detection_confidence": 0.5006870031356812
+        },
+        {
+          "bbox": [
+            447.0,
+            250.0,
+            461.0,
+            269.0
+          ],
+          "detection_confidence": 0.28846025466918945
+        },
+        {
+          "bbox": [
+            491.0,
+            177.0,
+            742.0,
+            269.0
+          ],
+          "detection_confidence": 0.2515295445919037
+        },
+        {
+          "bbox": [
+            792.0,
+            401.0,
+            954.0,
+            689.0
+          ],
+          "detection_confidence": 0.2122534066438675
+        },
+        {
+          "bbox": [
+            466.0,
+            120.0,
+            556.0,
+            152.0
+          ],
+          "detection_confidence": 0.1932993084192276
+        },
+        {
+          "bbox": [
+            110.0,
+            281.0,
+            140.0,
+            305.0
+          ],
+          "detection_confidence": 0.17410878837108612
+        },
+        {
+          "bbox": [
+            698.0,
+            635.0,
+            748.0,
+            680.0
+          ],
+          "detection_confidence": 0.17166122794151306
+        },
+        {
+          "bbox": [
+            177.0,
+            300.0,
+            212.0,
+            338.0
+          ],
+          "detection_confidence": 0.15604636073112488
+        }
+      ],
+      "experimental": true,
+      "timing_note": "Replay of genuine archived components; not an end-to-end speed measurement.",
+      "recall_supplement": {
+        "mode": "uncovered",
+        "margin_min": 0.04,
+        "added_count": 2,
+        "added": [
+          {
+            "name": "纸箱",
+            "category": "recyclable",
+            "reason": "干燥且未严重污染的纸箱可回收。 自动分割补充区域；检测器未给出覆盖该区域的确定分类，需人工核对。",
+            "uncertain": false,
+            "label": "cardboard box",
+            "bbox": [
+              571.87,
+              434.06,
+              631.87,
+              617.81
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9002110958099365,
+            "similarity": 0.31771743297576904,
+            "category_margin": 0.04124933481216431,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "纸箱",
+            "category": "recyclable",
+            "reason": "干燥且未严重污染的纸箱可回收。 自动分割补充区域；检测器未给出覆盖该区域的确定分类，需人工核对。",
+            "uncertain": false,
+            "label": "cardboard box",
+            "bbox": [
+              617.81,
+              191.25,
+              652.5,
+              225.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.921922504901886,
+            "similarity": 0.3013308346271515,
+            "category_margin": 0.05493322014808655,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "rejected_overlap": [],
+        "automatic_config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+        "automatic_weight_sha256": {
+          "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+          "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+        },
+        "truncated": false,
+        "score_note": "CLIP category margin is not calibrated probability."
+      }
+    }
+  }
+}

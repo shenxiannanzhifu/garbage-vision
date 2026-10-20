@@ -1,0 +1,80 @@
+{
+  "created_at_utc": "2026-10-20T09:06:34.970397+00:00",
+  "choices": [
+    {
+      "name": "empty-only-0.03",
+      "mode": "empty-only",
+      "margin_min": 0.03
+    },
+    {
+      "name": "empty-only-0.04",
+      "mode": "empty-only",
+      "margin_min": 0.04
+    },
+    {
+      "name": "empty-only-0.05",
+      "mode": "empty-only",
+      "margin_min": 0.05
+    },
+    {
+      "name": "uncovered-0.03",
+      "mode": "uncovered",
+      "margin_min": 0.03
+    },
+    {
+      "name": "uncovered-0.04",
+      "mode": "uncovered",
+      "margin_min": 0.04
+    },
+    {
+      "name": "uncovered-0.05",
+      "mode": "uncovered",
+      "margin_min": 0.05
+    }
+  ],
+  "files": {
+    "garbage_vision/recall.py": "9878c13682bd21834ad80568ba6c03b33ae3621bfd29f24b03fef0d884a38864",
+    "scripts/experiments/evaluate_recall.py": "7c50b0a53621adfed520b255fa5cea3b465248d36eea14acfe17206eacd34590",
+    "data/manifests/training_validation_v06.json": "05e86c257f4a54579ce6ac4faa81054366c97679efe1749409c4934b13b95de2",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-115645860.json": "8efedcee5b6e7e25bef87750ae6faa120a844b0f75ba3ed92114d96beca0e656",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-11771871.json": "5e943158f3d96340b7a61720d34bf884a6fc02c4e667aaf14d5d84050c0d5228",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-129795561.json": "8f49885726312ffc97dd5845fb73329adfd3a4755c8ae1abf33b8f0d3b9baefd",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-133213919.json": "24d4c32d2bca020421e47059600d5ed95030046883bb9f034614716a3a37b0de",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-137972888.json": "2c1aac2c629ab7f8ca570f9e346b0186f5f805c08252c4e1aad1e4b39c5e8fb2",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-143847970.json": "9233ae357fe0c7c441a9a2069501f457cdfe79681f3cd53abca459a47fca7347",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-148585374.json": "f00848d430ca11a6efa19979bb4471c4494cfe4107aa797afb0e3f2354584d1a",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-15708973.json": "ac97a6791b5324e4c8a9d1a23669c499b8e32ec2a9a202eb754b26c67181a12b",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-34194155.json": "399d3093595b402fadad3d1629003feacb76cbbff15fb10ba25a8df2b5be98c5",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-36853662.json": "6f0b82f636ed978c15b7bb45133ea554fe75366bd333abd5302d84f81378ac20",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-36853788.json": "4f60a474d5a8a74ad9b12a0cb6c125bcc46596fe3dcab1ed2e39bce07489edf5",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-45320258.json": "8bf2903ad3a8cedea7b23f48cea600d1d0e4e747028910e2235492eedf030ec7",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-5559269.json": "03aaa072cf08901dfb3ad3b814d09b6a29670e5dbe70225af11773257c04f1f1",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-56878983.json": "1a6c2cc9e533e4ce9ac64ca32e688b5c8e3a1ca800b92afc53bd877c9a8e8754",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-62068994.json": "8df937a2b67ba62f01f7942f0e2e8edf4458c13c62c32403b71f15fa44c30c20",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-65946910.json": "6898e1e2e31931fc520ec08e1ca8b569d7f6ff53ca5c50fdd26bb3ff8aee395c",
+    "evidence/v0.7.0/detection-training/validation/baseline/commons-85152572.json": "1b12c2b94063134fa2a039570a478b679b787319b89c8271aaa864ac46acc9a1",
+    "evidence/v0.7.0/detection-training/validation/baseline/metrics.json": "520a515c68d647699b66e3c8d7012efdb85767ed267d4d6a108d85f34a74f4b1",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-115645860.json": "43de0c41078ed88094aee5d5a7514a44f94914525c267516c3992bd0501a4d65",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-11771871.json": "037e74a89ced1bcd50a44930969679d46c1e46a3fefa4f5b0654e4e2599f97bd",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-129795561.json": "c067c1bafed8955a9d7744ff1bcf57774fcd8d52dfc8effe9d610955b0e93669",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-133213919.json": "d3beb83f7eed76a11906e0b5860495f4d9e1a1a7af35b72e996ce825b09b4107",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-137972888.json": "3f20e983c87d8c1fb8d07dc6192eb22a4630aebf898829105c78af79e0aeb665",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-143847970.json": "0e8eaee3d5f9299cc1ba5b584d11f12afdac642005ed2673cfec260547522ed1",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-148585374.json": "972b69cd2061c6b85970b2c1df8da85247da5cafe987a70ff5da9d2046b4bbc2",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-15708973.json": "b3f856c808304cb78ddc839652d131c8cfe4e53eb51472754f88517d8d87e58b",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-34194155.json": "cc2cd31267a95c2205b16beca130daf4bac7b44b65dfb7e1abd68acb625c07e9",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-36853662.json": "d1b4285671bba4bca88d3bd6330f11e23242700179cc985afaba80828191a48b",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-36853788.json": "7cbd10cf14acf2abc3233d1984b0d727af342c88543996a56251d333f80f2da1",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-45320258.json": "d301193311f70ecf3b858102143f77f57a3440857161c9007707ada74fa513ae",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-5559269.json": "42cd21708478cb3d3f4b8295c6affe4e8ed6bbc89d4cc767f42c269b67e69141",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-56878983.json": "2376012e06f43fa5499a898ffb1bba9b59b0a3123734f384b636ca5d7f075030",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-62068994.json": "e003952275aa97f7349aadf2945f8c6b70aea537779aa71124f898d144b7ed15",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-65946910.json": "97b881826d7880ebe1425d873802f667f79e61b610f8ecbf65588b1980998119",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/commons-85152572.json": "137727cbbf5c3b3321ea0a05b7976f92def15d82cf8fe9378154117bdbeb64ef",
+    "evidence/v0.7.0/detection-training/validation/conf-0.15-fallback-true/metrics.json": "10d4f89b4fe234fc14d2afca71b54feb5c0289d6a33a01969654ee9d8c03d432"
+  },
+  "selection": "Only old 17-image validation now used as development. Max exact count then mean F1 then fewer empty-reference false positives; ties prefer empty-only then larger margin.",
+  "regression_gate": "Compare selected candidate once on historical 29 TACO +25 Commons. Must retain detector candidate gains, not reduce baseline category TP or add empty-reference false positives. No per-image routing. Old tests are regression only.",
+  "fresh_gate": "New images and labels frozen before inference. Candidate exact/F1 must not decrease vs baseline and prior detector; no new unknown/background false positives or inference errors. These limited images cannot establish full four-class reliability.",
+  "promotion": "Only offer experimental mode if gates pass. No automatic production replacement; report optimization before next project phase."
+}

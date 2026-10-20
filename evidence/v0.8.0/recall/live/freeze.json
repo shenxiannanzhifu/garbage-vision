@@ -1,0 +1,17 @@
+{
+  "ids": [
+    "commons-36853788",
+    "commons-23153953",
+    "taco-0685",
+    "taco-0309"
+  ],
+  "images": {
+    "commons-36853788": "61f1ca17d8aaf3708e968eefcf37a78a15862f122db7a455bcee2bcef30e09fb",
+    "commons-23153953": "00d37702cc3a6c0f8e4ae8c96f8542fd396884d6f838216fb3492cf47c675fff",
+    "taco-0685": "c208372dbb8a8120a5f3b86a5af2d56d0ff01ab50a1dbd2e02ff071f78206d22",
+    "taco-0309": "3507f634bb909110ffc4160d9cbad2327abef448521e13aba3ea5ddceedf85f8"
+  },
+  "selection_sha256": "30bbced093dc798e5e863f91cbe1b94136557e3f56eaf1edb753e262a78f7696",
+  "weights_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+  "purpose": "Fresh GPU execution of historical cases, no archived segmentation reused; not unseen accuracy."
+}

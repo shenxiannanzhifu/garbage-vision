@@ -1,0 +1,290 @@
+{
+  "id": "taco-0546",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:15:43.724171+00:00",
+    "image_id": "b14f0893f25d11329add0c7b1b76a7695a43f4bdc09cea2ef18bd829cb76ff1c",
+    "source_sha256": "3520d8bc41d958e1db25a524d46a9f2a81ec9e664fd1b259f8e5411c65492d04",
+    "image_size": [
+      1200,
+      1600
+    ],
+    "method": "local",
+    "model": "YOLOv8n + SAM2 + CLIP with conservative SAM supplementation",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          464.0,
+          916.0,
+          559.0,
+          1045.0
+        ],
+        "detection_confidence": 0.2440776824951172,
+        "mask_quality": 0.94967120885849,
+        "similarity": 0.3379218578338623,
+        "category_margin": 0.05010142922401428,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          263.0,
+          1054.0,
+          371.0,
+          1184.0
+        ],
+        "detection_confidence": 0.7852566838264465,
+        "mask_quality": 0.9372671246528625,
+        "similarity": 0.3208906054496765,
+        "category_margin": 0.05111032724380493,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          1062.0,
+          1041.0,
+          1117.0,
+          1093.0
+        ],
+        "detection_confidence": 0.31264886260032654,
+        "mask_quality": 0.9345533847808838,
+        "similarity": 0.3028718829154968,
+        "category_margin": 0.025908291339874268,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "果核",
+        "category": "kitchen",
+        "reason": "普通水果果核属于厨余垃圾。",
+        "uncertain": false,
+        "label": "apple core",
+        "bbox": [
+          696.0,
+          1448.0,
+          806.0,
+          1564.0
+        ],
+        "detection_confidence": 0.31647053360939026,
+        "mask_quality": 0.9660496115684509,
+        "similarity": 0.30229151248931885,
+        "category_margin": 0.050054192543029785,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 15.086796700023115,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 13,
+      "candidate_count": 4,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。",
+      "detector_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+      "detector_threshold": 0.15,
+      "proposal_method": "supervised binary detector -> real SAM box-prompt masks",
+      "detector_regions": [
+        {
+          "bbox": [
+            263.0,
+            1054.0,
+            371.0,
+            1184.0
+          ],
+          "detection_confidence": 0.7852566838264465
+        },
+        {
+          "bbox": [
+            662.0,
+            986.0,
+            750.0,
+            1056.0
+          ],
+          "detection_confidence": 0.6696693301200867
+        },
+        {
+          "bbox": [
+            836.0,
+            1251.0,
+            918.0,
+            1345.0
+          ],
+          "detection_confidence": 0.5018277168273926
+        },
+        {
+          "bbox": [
+            1134.0,
+            82.0,
+            1164.0,
+            116.0
+          ],
+          "detection_confidence": 0.42559340596199036
+        },
+        {
+          "bbox": [
+            197.0,
+            1329.0,
+            228.0,
+            1362.0
+          ],
+          "detection_confidence": 0.3991621434688568
+        },
+        {
+          "bbox": [
+            102.0,
+            986.0,
+            139.0,
+            1034.0
+          ],
+          "detection_confidence": 0.35850614309310913
+        },
+        {
+          "bbox": [
+            869.0,
+            190.0,
+            923.0,
+            249.0
+          ],
+          "detection_confidence": 0.3202301859855652
+        },
+        {
+          "bbox": [
+            696.0,
+            1448.0,
+            806.0,
+            1564.0
+          ],
+          "detection_confidence": 0.31647053360939026
+        },
+        {
+          "bbox": [
+            1062.0,
+            1041.0,
+            1117.0,
+            1093.0
+          ],
+          "detection_confidence": 0.31264886260032654
+        },
+        {
+          "bbox": [
+            41.0,
+            545.0,
+            95.0,
+            590.0
+          ],
+          "detection_confidence": 0.3062589466571808
+        },
+        {
+          "bbox": [
+            193.0,
+            556.0,
+            228.0,
+            596.0
+          ],
+          "detection_confidence": 0.28773126006126404
+        },
+        {
+          "bbox": [
+            464.0,
+            916.0,
+            559.0,
+            1045.0
+          ],
+          "detection_confidence": 0.2440776824951172
+        },
+        {
+          "bbox": [
+            1143.0,
+            276.0,
+            1178.0,
+            312.0
+          ],
+          "detection_confidence": 0.2187008261680603
+        }
+      ],
+      "experimental": true,
+      "timing_note": "Replay of genuine archived components; not an end-to-end speed measurement.",
+      "recall_supplement": {
+        "mode": "empty-only",
+        "margin_min": 0.05,
+        "added_count": 0,
+        "added": [],
+        "rejected_overlap": [],
+        "automatic_config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+        "automatic_weight_sha256": {
+          "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+          "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+        },
+        "truncated": false,
+        "score_note": "CLIP category margin is not calibrated probability."
+      }
+    }
+  }
+}

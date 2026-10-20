@@ -1,0 +1,483 @@
+{
+  "baseline": {
+    "method": "local",
+    "images": 4,
+    "mean_per_image_precision": 0.875,
+    "mean_per_image_recall": 1.0,
+    "mean_per_image_f1": 0.9166666666666666,
+    "exact_set_accuracy": 0.75,
+    "failure_rate": 0,
+    "empty_prediction_rate": 0,
+    "unknown_image_rate": 1,
+    "micro": {
+      "tp": 5,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1": 0.9090909090909091
+    },
+    "per_category": {
+      "recyclable": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "support_images": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "hazardous": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support_images": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "kitchen": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "support_images": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "other": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "support_images": 1,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      }
+    },
+    "by_background": {
+      "outdoor natural or built background": {
+        "images": 2,
+        "mean_per_image_f1": 0.8333333333333333,
+        "failure_rate": 0
+      },
+      "未按背景复杂度分层": {
+        "images": 2,
+        "mean_per_image_f1": 1.0,
+        "failure_rate": 0
+      }
+    },
+    "timing": {
+      "mean_request_or_inference_seconds": 12.802934600011213,
+      "median_request_or_inference_seconds": 12.685112149978522,
+      "total_load_seconds": 16.356678599957377
+    },
+    "records": [
+      {
+        "id": "commons-36853788",
+        "truth": [
+          "kitchen"
+        ],
+        "predicted": [
+          "kitchen"
+        ],
+        "background": "未按背景复杂度分层",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 13.194414400029927,
+        "load_seconds": 16.356678599957377,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-23153953",
+        "truth": [
+          "recyclable"
+        ],
+        "predicted": [
+          "recyclable"
+        ],
+        "background": "未按背景复杂度分层",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 12.647099700057879,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "taco-0685",
+        "truth": [
+          "other",
+          "recyclable"
+        ],
+        "predicted": [
+          "other",
+          "recyclable"
+        ],
+        "background": "outdoor natural or built background",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 12.671777899959125,
+        "load_seconds": 0.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "taco-0309",
+        "truth": [
+          "recyclable"
+        ],
+        "predicted": [
+          "other",
+          "recyclable"
+        ],
+        "background": "outdoor natural or built background",
+        "status": "success",
+        "unknown_items": 11,
+        "elapsed_seconds": 12.69844639999792,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "exact_match": false
+      }
+    ]
+  },
+  "detector": {
+    "method": "local",
+    "images": 4,
+    "mean_per_image_precision": 0.5,
+    "mean_per_image_recall": 0.375,
+    "mean_per_image_f1": 0.41666666666666663,
+    "exact_set_accuracy": 0.25,
+    "failure_rate": 0,
+    "empty_prediction_rate": 0.5,
+    "unknown_image_rate": 0.25,
+    "micro": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.5714285714285714
+    },
+    "per_category": {
+      "recyclable": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 1,
+        "support_images": 3,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      },
+      "hazardous": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support_images": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "kitchen": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "support_images": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "other": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "support_images": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "by_background": {
+      "outdoor natural or built background": {
+        "images": 2,
+        "mean_per_image_f1": 0.8333333333333333,
+        "failure_rate": 0
+      },
+      "未按背景复杂度分层": {
+        "images": 2,
+        "mean_per_image_f1": 0.0,
+        "failure_rate": 0
+      }
+    },
+    "timing": {
+      "mean_request_or_inference_seconds": 0.15098367500468157,
+      "median_request_or_inference_seconds": 0.13761819998035207,
+      "total_load_seconds": 2.1457928000018
+    },
+    "records": [
+      {
+        "id": "commons-36853788",
+        "truth": [
+          "kitchen"
+        ],
+        "predicted": [],
+        "background": "未按背景复杂度分层",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 0.12086520006414503,
+        "load_seconds": 2.1457928000018,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "exact_match": false
+      },
+      {
+        "id": "commons-23153953",
+        "truth": [
+          "recyclable"
+        ],
+        "predicted": [],
+        "background": "未按背景复杂度分层",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 0.05541160004213452,
+        "load_seconds": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "exact_match": false
+      },
+      {
+        "id": "taco-0685",
+        "truth": [
+          "other",
+          "recyclable"
+        ],
+        "predicted": [
+          "recyclable"
+        ],
+        "background": "outdoor natural or built background",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 0.2732867000158876,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "exact_match": false
+      },
+      {
+        "id": "taco-0309",
+        "truth": [
+          "recyclable"
+        ],
+        "predicted": [
+          "recyclable"
+        ],
+        "background": "outdoor natural or built background",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 0.15437119989655912,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      }
+    ]
+  },
+  "recall": {
+    "method": "local",
+    "images": 4,
+    "mean_per_image_precision": 1.0,
+    "mean_per_image_recall": 0.875,
+    "mean_per_image_f1": 0.9166666666666666,
+    "exact_set_accuracy": 0.75,
+    "failure_rate": 0,
+    "empty_prediction_rate": 0,
+    "unknown_image_rate": 0.25,
+    "micro": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8888888888888888
+    },
+    "per_category": {
+      "recyclable": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "support_images": 3,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "hazardous": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support_images": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "kitchen": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "support_images": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "other": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "support_images": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "by_background": {
+      "outdoor natural or built background": {
+        "images": 2,
+        "mean_per_image_f1": 0.8333333333333333,
+        "failure_rate": 0
+      },
+      "未按背景复杂度分层": {
+        "images": 2,
+        "mean_per_image_f1": 1.0,
+        "failure_rate": 0
+      }
+    },
+    "timing": {
+      "mean_request_or_inference_seconds": 12.953918275015894,
+      "median_request_or_inference_seconds": 12.898941099934746,
+      "total_load_seconds": 18.502471399959177
+    },
+    "records": [
+      {
+        "id": "commons-36853788",
+        "truth": [
+          "kitchen"
+        ],
+        "predicted": [
+          "kitchen"
+        ],
+        "background": "未按背景复杂度分层",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 13.315279600094073,
+        "load_seconds": 18.502471399959177,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "commons-23153953",
+        "truth": [
+          "recyclable"
+        ],
+        "predicted": [
+          "recyclable"
+        ],
+        "background": "未按背景复杂度分层",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 12.702511300100014,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      },
+      {
+        "id": "taco-0685",
+        "truth": [
+          "other",
+          "recyclable"
+        ],
+        "predicted": [
+          "recyclable"
+        ],
+        "background": "outdoor natural or built background",
+        "status": "success",
+        "unknown_items": 1,
+        "elapsed_seconds": 12.945064599975012,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "exact_match": false
+      },
+      {
+        "id": "taco-0309",
+        "truth": [
+          "recyclable"
+        ],
+        "predicted": [
+          "recyclable"
+        ],
+        "background": "outdoor natural or built background",
+        "status": "success",
+        "unknown_items": 0,
+        "elapsed_seconds": 12.852817599894479,
+        "load_seconds": 0.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "exact_match": true
+      }
+    ]
+  }
+}

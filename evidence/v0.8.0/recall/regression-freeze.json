@@ -1,0 +1,8 @@
+{
+  "selection_sha256": "30bbced093dc798e5e863f91cbe1b94136557e3f56eaf1edb753e262a78f7696",
+  "choice": {
+    "name": "empty-only-0.05",
+    "mode": "empty-only",
+    "margin_min": 0.05
+  }
+}

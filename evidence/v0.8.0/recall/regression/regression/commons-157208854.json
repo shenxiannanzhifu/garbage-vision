@@ -1,0 +1,678 @@
+{
+  "id": "commons-157208854",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:15:52.183196+00:00",
+    "image_id": "8971506e24802a9ea9dae8ad010eecd393986a68aa7b0b2b7db1ad7161bdf3ac",
+    "source_sha256": "babf4b5c2eafef9fd21bf5ddf7929635621b74e90b513b9ec9eb7377c07993c0",
+    "image_size": [
+      960,
+      640
+    ],
+    "method": "local",
+    "model": "YOLOv8n + SAM2 + CLIP with conservative SAM supplementation",
+    "status": "success",
+    "items": [
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          527.0,
+          399.0,
+          638.0,
+          448.0
+        ],
+        "detection_confidence": 0.19975712895393372,
+        "mask_quality": 0.8492898344993591,
+        "similarity": 0.32189512252807617,
+        "category_margin": 0.056944429874420166,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          643.0,
+          207.0,
+          742.0,
+          448.0
+        ],
+        "detection_confidence": 0.5116479992866516,
+        "mask_quality": 0.962600827217102,
+        "similarity": 0.31154245138168335,
+        "category_margin": 0.05888095498085022,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          551.0,
+          402.0,
+          621.0,
+          426.0
+        ],
+        "detection_confidence": 0.16602875292301178,
+        "mask_quality": 0.8041752576828003,
+        "similarity": 0.31027814745903015,
+        "category_margin": 0.03005722165107727,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          214.0,
+          158.0,
+          324.0,
+          384.0
+        ],
+        "detection_confidence": 0.5555379390716553,
+        "mask_quality": 0.9304782152175903,
+        "similarity": 0.30752888321876526,
+        "category_margin": 0.06145329773426056,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          590.0,
+          161.0,
+          661.0,
+          308.0
+        ],
+        "detection_confidence": 0.7396228909492493,
+        "mask_quality": 0.9343540072441101,
+        "similarity": 0.3058381676673889,
+        "category_margin": 0.053307682275772095,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          56.0,
+          197.0,
+          116.0,
+          296.0
+        ],
+        "detection_confidence": 0.7338351607322693,
+        "mask_quality": 0.9621006846427917,
+        "similarity": 0.3040764331817627,
+        "category_margin": 0.054118990898132324,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          232.0,
+          159.0,
+          301.0,
+          305.0
+        ],
+        "detection_confidence": 0.20140652358531952,
+        "mask_quality": 0.9417138695716858,
+        "similarity": 0.29490727186203003,
+        "category_margin": 0.06622697412967682,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          221.0,
+          320.0,
+          320.0,
+          354.0
+        ],
+        "detection_confidence": 0.16333208978176117,
+        "mask_quality": 0.9456612467765808,
+        "similarity": 0.29183995723724365,
+        "category_margin": 0.046679168939590454,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          471.0,
+          500.0,
+          497.0,
+          639.0
+        ],
+        "detection_confidence": 0.23291686177253723,
+        "mask_quality": 0.9391651153564453,
+        "similarity": 0.2898421883583069,
+        "category_margin": 0.03293284773826599,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          111.0,
+          392.0,
+          174.0,
+          465.0
+        ],
+        "detection_confidence": 0.17472346127033234,
+        "mask_quality": 0.9329232573509216,
+        "similarity": 0.2873981297016144,
+        "category_margin": 0.030184954404830933,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          0.0,
+          222.0,
+          49.0,
+          450.0
+        ],
+        "detection_confidence": 0.18126420676708221,
+        "mask_quality": 0.94294673204422,
+        "similarity": 0.2869948148727417,
+        "category_margin": 0.02181941270828247,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          221.0,
+          381.0,
+          324.0,
+          456.0
+        ],
+        "detection_confidence": 0.41813889145851135,
+        "mask_quality": 0.9520629644393921,
+        "similarity": 0.2868305742740631,
+        "category_margin": 0.0383114367723465,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          0.0,
+          222.0,
+          39.0,
+          357.0
+        ],
+        "detection_confidence": 0.1650770902633667,
+        "mask_quality": 0.9117604494094849,
+        "similarity": 0.28510236740112305,
+        "category_margin": 0.024101227521896362,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          470.0,
+          498.0,
+          525.0,
+          639.0
+        ],
+        "detection_confidence": 0.16966979205608368,
+        "mask_quality": 0.8783658146858215,
+        "similarity": 0.28371620178222656,
+        "category_margin": 0.026693493127822876,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "玻璃瓶",
+        "category": "recyclable",
+        "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "glass bottle",
+        "bbox": [
+          12.0,
+          395.0,
+          215.0,
+          477.0
+        ],
+        "detection_confidence": 0.2660927474498749,
+        "mask_quality": 0.8097973465919495,
+        "similarity": 0.2812667191028595,
+        "category_margin": 0.026234060525894165,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.446788499946706,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 28,
+      "candidate_count": 17,
+      "suppressed_uncertain_parts": [
+        {
+          "candidate": {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              56.0,
+              197.0,
+              101.0,
+              222.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9007899165153503,
+            "similarity": 0.285182923078537,
+            "category_margin": 0.014663249254226685,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          "parent_label": "glass bottle",
+          "parent_bbox": [
+            56.0,
+            197.0,
+            116.0,
+            296.0
+          ],
+          "mask_containment": 0.975991649269311,
+          "area_ratio": 0.2320736434108527,
+          "reason": "较高分的已知物体内包含的低分未知局部区域；不重复作为独立物品。"
+        }
+      ],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。",
+      "detector_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+      "detector_threshold": 0.15,
+      "proposal_method": "supervised binary detector -> real SAM box-prompt masks",
+      "detector_regions": [
+        {
+          "bbox": [
+            590.0,
+            161.0,
+            661.0,
+            308.0
+          ],
+          "detection_confidence": 0.7396228909492493
+        },
+        {
+          "bbox": [
+            56.0,
+            197.0,
+            116.0,
+            296.0
+          ],
+          "detection_confidence": 0.7338351607322693
+        },
+        {
+          "bbox": [
+            133.0,
+            253.0,
+            191.0,
+            303.0
+          ],
+          "detection_confidence": 0.6063126921653748
+        },
+        {
+          "bbox": [
+            214.0,
+            158.0,
+            324.0,
+            384.0
+          ],
+          "detection_confidence": 0.5555379390716553
+        },
+        {
+          "bbox": [
+            111.0,
+            476.0,
+            191.0,
+            562.0
+          ],
+          "detection_confidence": 0.5381432771682739
+        },
+        {
+          "bbox": [
+            643.0,
+            207.0,
+            742.0,
+            448.0
+          ],
+          "detection_confidence": 0.5116479992866516
+        },
+        {
+          "bbox": [
+            221.0,
+            381.0,
+            324.0,
+            456.0
+          ],
+          "detection_confidence": 0.41813889145851135
+        },
+        {
+          "bbox": [
+            157.0,
+            352.0,
+            186.0,
+            388.0
+          ],
+          "detection_confidence": 0.3828889727592468
+        },
+        {
+          "bbox": [
+            648.0,
+            205.0,
+            742.0,
+            402.0
+          ],
+          "detection_confidence": 0.2901919186115265
+        },
+        {
+          "bbox": [
+            56.0,
+            197.0,
+            101.0,
+            222.0
+          ],
+          "detection_confidence": 0.2705487906932831
+        },
+        {
+          "bbox": [
+            12.0,
+            395.0,
+            215.0,
+            477.0
+          ],
+          "detection_confidence": 0.2660927474498749
+        },
+        {
+          "bbox": [
+            471.0,
+            500.0,
+            497.0,
+            639.0
+          ],
+          "detection_confidence": 0.23291686177253723
+        },
+        {
+          "bbox": [
+            513.0,
+            477.0,
+            524.0,
+            497.0
+          ],
+          "detection_confidence": 0.2324203997850418
+        },
+        {
+          "bbox": [
+            20.0,
+            240.0,
+            33.0,
+            253.0
+          ],
+          "detection_confidence": 0.2149174064397812
+        },
+        {
+          "bbox": [
+            232.0,
+            159.0,
+            301.0,
+            305.0
+          ],
+          "detection_confidence": 0.20140652358531952
+        },
+        {
+          "bbox": [
+            527.0,
+            399.0,
+            638.0,
+            448.0
+          ],
+          "detection_confidence": 0.19975712895393372
+        },
+        {
+          "bbox": [
+            0.0,
+            221.0,
+            14.0,
+            233.0
+          ],
+          "detection_confidence": 0.18818451464176178
+        },
+        {
+          "bbox": [
+            251.0,
+            405.0,
+            302.0,
+            451.0
+          ],
+          "detection_confidence": 0.1829252541065216
+        },
+        {
+          "bbox": [
+            0.0,
+            222.0,
+            49.0,
+            450.0
+          ],
+          "detection_confidence": 0.18126420676708221
+        },
+        {
+          "bbox": [
+            172.0,
+            406.0,
+            212.0,
+            451.0
+          ],
+          "detection_confidence": 0.17971521615982056
+        },
+        {
+          "bbox": [
+            111.0,
+            392.0,
+            174.0,
+            465.0
+          ],
+          "detection_confidence": 0.17472346127033234
+        },
+        {
+          "bbox": [
+            513.0,
+            346.0,
+            529.0,
+            366.0
+          ],
+          "detection_confidence": 0.17210905253887177
+        },
+        {
+          "bbox": [
+            470.0,
+            498.0,
+            525.0,
+            639.0
+          ],
+          "detection_confidence": 0.16966979205608368
+        },
+        {
+          "bbox": [
+            551.0,
+            402.0,
+            621.0,
+            426.0
+          ],
+          "detection_confidence": 0.16602875292301178
+        },
+        {
+          "bbox": [
+            0.0,
+            222.0,
+            39.0,
+            357.0
+          ],
+          "detection_confidence": 0.1650770902633667
+        },
+        {
+          "bbox": [
+            221.0,
+            320.0,
+            320.0,
+            354.0
+          ],
+          "detection_confidence": 0.16333208978176117
+        },
+        {
+          "bbox": [
+            20.0,
+            240.0,
+            33.0,
+            253.0
+          ],
+          "detection_confidence": 0.16314758360385895
+        },
+        {
+          "bbox": [
+            480.0,
+            404.0,
+            511.0,
+            424.0
+          ],
+          "detection_confidence": 0.1626874953508377
+        }
+      ],
+      "experimental": true,
+      "timing_note": "Replay of genuine archived components; not an end-to-end speed measurement.",
+      "recall_supplement": {
+        "mode": "empty-only",
+        "margin_min": 0.05,
+        "added_count": 0,
+        "added": [],
+        "rejected_overlap": [],
+        "automatic_config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+        "automatic_weight_sha256": {
+          "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+          "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+        },
+        "truncated": false,
+        "score_note": "CLIP category margin is not calibrated probability."
+      }
+    }
+  }
+}

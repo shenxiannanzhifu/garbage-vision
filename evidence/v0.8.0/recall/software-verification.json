@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-20T09:34:43.277688+00:00",
+  "software_tests": "86 passed in 24.62s",
+  "command": "CODEX_TEST_TMP=<workspace>; RUN_REAL_LOCAL=1; python -m pytest -q --junitxml=evidence/v0.8.0/recall/software-tests.xml",
+  "includes_real_gpu_streamlit_apptest": true,
+  "protocol_source_and_component_hashes_match": true,
+  "selected_rule_and_live_image_weight_hashes_match": true,
+  "production_code_and_settings_unchanged_from_prior_commit": true,
+  "baseline_commit": "368015530d467308b16102b5fbe8e5aa8ff8441b",
+  "local_app_health_http_status": 200,
+  "saved_bottle_api_record_available_in_current_config": true,
+  "personal_placeholders_preserved": 6,
+  "candidate_promoted": false,
+  "new_independent_holdout_run": false,
+  "live_historical_diagnostic_images": 4,
+  "new_paid_api_calls": 0,
+  "remote_connectivity_retested": false,
+  "personal_video_and_submission_complete": false,
+  "limitations": "Historical regression and four selected GPU cases are not new independent accuracy. All regression gates did not pass; fresh gate not executed. No speed gain established."
+}
