@@ -1,0 +1,7813 @@
+[
+  {
+    "id": "taco-0102",
+    "taco_id": 102,
+    "path": "data/raw/taco-v07/taco-0102.jpg",
+    "sha256": "2f31e63789d1b2ad2af61d9cf3f5c1c8d9569b324c8477e65e49c4be293971f1",
+    "original_sha256": "40f6c659443cd6792cadacda3eda377d832d5e5a3f4b0441d212fef0485d70ef",
+    "archive_crc32": 1232796635,
+    "dhash": "5aded1f171b35a7c",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000001.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48700809463_d7b3a97f5e_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.119,
+        0.16449978344298244,
+        0.1145,
+        0.21820174890350874
+      ],
+      [
+        0.071375,
+        0.2533155701754386,
+        0.01925,
+        0.03837719298245614
+      ],
+      [
+        0.099125,
+        0.07623223958333333,
+        0.05075,
+        0.07017543311403508
+      ],
+      [
+        0.2705,
+        0.4616489035087719,
+        0.1065,
+        0.13596491228070176
+      ],
+      [
+        0.236625,
+        0.4627453947368421,
+        0.04775,
+        0.10197368421052631
+      ],
+      [
+        0.590625,
+        0.5148287280701755,
+        0.06575,
+        0.11293859649122813
+      ],
+      [
+        0.6196131,
+        0.5077015350877193,
+        0.02075,
+        0.0581140350877193
+      ],
+      [
+        0.6652738,
+        0.27003706140350875,
+        0.042,
+        0.0762061403508772
+      ],
+      [
+        0.7597738,
+        0.4970107456140351,
+        0.016,
+        0.0356359649122807
+      ],
+      [
+        0.7427738,
+        0.4791927631578947,
+        0.008,
+        0.006578947368421052
+      ],
+      [
+        0.34542860000000003,
+        0.8914734649122807,
+        0.014,
+        0.03070175438596491
+      ],
+      [
+        0.2725893,
+        0.37858969298245615,
+        0.01425,
+        0.03234649122807018
+      ],
+      [
+        0.8321488,
+        0.2546861842105263,
+        0.01575,
+        0.010416666666666666
+      ]
+    ],
+    "original_labels": [
+      "Other plastic bottle",
+      "Plastic bottle cap",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Squeezable tube",
+      "Unlabeled litter",
+      "Clear plastic bottle",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 310,
+        "bbox": [
+          247.0,
+          101.04761,
+          458.0,
+          397.99998999999997
+        ],
+        "category": "Other plastic bottle"
+      },
+      {
+        "id": 311,
+        "bbox": [
+          247.0,
+          427.0476,
+          77.0,
+          70.0
+        ],
+        "category": "Plastic bottle cap"
+      },
+      {
+        "id": 312,
+        "bbox": [
+          295.0,
+          75.04761,
+          203.0,
+          127.99998999999998
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 313,
+        "bbox": [
+          869.0,
+          718.0476,
+          426.0,
+          248.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 314,
+        "bbox": [
+          851.0,
+          751.0476,
+          191.0,
+          186.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 315,
+        "bbox": [
+          2231.0,
+          836.0476,
+          263.0,
+          206.0000000000001
+        ],
+        "category": "Squeezable tube"
+      },
+      {
+        "id": 316,
+        "bbox": [
+          2436.9524,
+          873.0476,
+          83.0,
+          106.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 317,
+        "bbox": [
+          2577.0952,
+          423.0476,
+          168.0,
+          139.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 318,
+        "bbox": [
+          3007.0952,
+          874.0476,
+          64.0,
+          65.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 319,
+        "bbox": [
+          2955.0952,
+          868.0476,
+          32.0,
+          12.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 320,
+        "bbox": [
+          1353.7144,
+          1598.0476,
+          56.0,
+          56.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 321,
+        "bbox": [
+          1061.8572,
+          661.0476,
+          57.0,
+          59.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 322,
+        "bbox": [
+          3297.0952,
+          455.0476,
+          63.0,
+          19.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0103",
+    "taco_id": 103,
+    "path": "data/raw/taco-v07/taco-0103.jpg",
+    "sha256": "9a07d3aab9ed512b8dc6a6f51e4f646f4def97905143589bea71650c7e85e701",
+    "original_sha256": "701a1ccd84c3191223115d84074e3a5b38981d61a08caf0da1c5a69545a49d80",
+    "archive_crc32": 3148733515,
+    "dhash": "0e536659c34b4d8c",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000002.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48701146481_dac7937893_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.17525,
+        0.31606359649122806,
+        0.029,
+        0.027960526315789474
+      ],
+      [
+        0.07875,
+        0.7675438596491229,
+        0.029,
+        0.015350877192982455
+      ],
+      [
+        0.35675,
+        0.5997807017543859,
+        0.1015,
+        0.10964912280701754
+      ],
+      [
+        0.310125,
+        0.6455592105263158,
+        0.00825,
+        0.020285087719298246
+      ],
+      [
+        0.321625,
+        0.2513706140350877,
+        0.03475,
+        0.03234649122807021
+      ],
+      [
+        0.0145,
+        0.40021929824561403,
+        0.0255,
+        0.044956140350877194
+      ]
+    ],
+    "original_labels": [
+      "Unlabeled litter",
+      "Other plastic",
+      "Clear plastic bottle",
+      "Plastic bottle cap",
+      "Unlabeled litter",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 323,
+        "bbox": [
+          643.0,
+          551.0,
+          116.0,
+          51.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 324,
+        "bbox": [
+          257.0,
+          1386.0,
+          116.0,
+          28.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 325,
+        "bbox": [
+          1224.0,
+          994.0,
+          406.0,
+          200.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 326,
+        "bbox": [
+          1224.0,
+          1159.0,
+          33.0,
+          37.0
+        ],
+        "category": "Plastic bottle cap"
+      },
+      {
+        "id": 327,
+        "bbox": [
+          1217.0,
+          429.0,
+          139.0,
+          59.00000000000006
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 328,
+        "bbox": [
+          7.0,
+          689.0,
+          102.0,
+          82.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0105",
+    "taco_id": 105,
+    "path": "data/raw/taco-v07/taco-0105.jpg",
+    "sha256": "a1a6a6fb49dd674f0764d4b45bcc9538069e58a6fd56575d0a3f0a465347a1d7",
+    "original_sha256": "0683d05cbf279543d4678a96023feb3ec4f99a52c5309be653746016d3fa5354",
+    "archive_crc32": 3809171930,
+    "dhash": "e3432325078392b1",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000004.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48701316142_b5a43b20c6_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.3418311403508772,
+        0.57725,
+        0.08168859649122807,
+        0.046
+      ],
+      [
+        0.659265350877193,
+        0.608875,
+        0.2669956140350877,
+        0.06725
+      ],
+      [
+        0.7552083333333334,
+        0.659375,
+        0.047697368421052634,
+        0.01875
+      ],
+      [
+        0.6463815789473685,
+        0.93275,
+        0.21710526315789475,
+        0.0475
+      ],
+      [
+        0.9416118421052632,
+        0.856875,
+        0.06633771929824561,
+        0.02225
+      ],
+      [
+        0.4043311403508772,
+        0.786625,
+        0.047697368421052634,
+        0.02775
+      ],
+      [
+        0.9353070175438597,
+        0.641,
+        0.12828947368421054,
+        0.0595
+      ],
+      [
+        0.9862938596491229,
+        0.87325,
+        0.023026315789473683,
+        0.037
+      ],
+      [
+        0.8481359649122807,
+        0.574375,
+        0.17982456140350878,
+        0.02775
+      ],
+      [
+        0.7609649122807017,
+        0.473875,
+        0.04824561403508772,
+        0.01875
+      ],
+      [
+        0.9325657894736842,
+        0.523125,
+        0.05043859649122807,
+        0.02025
+      ]
+    ],
+    "original_labels": [
+      "Single-use carrier bag",
+      "Plastic film",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Plastic film",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Plastic film",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 343,
+        "bbox": [
+          549.0,
+          2217.0,
+          149.0,
+          184.0
+        ],
+        "category": "Single-use carrier bag"
+      },
+      {
+        "id": 344,
+        "bbox": [
+          959.0,
+          2301.0,
+          487.0,
+          269.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 345,
+        "bbox": [
+          1334.0,
+          2600.0,
+          87.0,
+          75.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 346,
+        "bbox": [
+          981.0,
+          3636.0,
+          396.0,
+          190.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 347,
+        "bbox": [
+          1657.0,
+          3383.0,
+          121.0,
+          89.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 348,
+        "bbox": [
+          694.0,
+          3091.0,
+          87.0,
+          111.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 349,
+        "bbox": [
+          1589.0,
+          2445.0,
+          234.0,
+          238.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 350,
+        "bbox": [
+          1778.0,
+          3419.0,
+          42.0,
+          148.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 351,
+        "bbox": [
+          1383.0,
+          2242.0,
+          328.0,
+          111.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 352,
+        "bbox": [
+          1344.0,
+          1858.0,
+          88.0,
+          75.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 353,
+        "bbox": [
+          1655.0,
+          2052.0,
+          92.0,
+          81.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0107",
+    "taco_id": 107,
+    "path": "data/raw/taco-v07/taco-0107.jpg",
+    "sha256": "d2d5067948b64fd4c083f5f1189d36d82ca583b3c53acfe4a52aa832e9a91982",
+    "original_sha256": "b9fdca4a45a7f822b73b247d89ece298b08e6229bc47257d551584c6ce79368b",
+    "archive_crc32": 3755744250,
+    "dhash": "5a1b1c1a181c8c1e",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000006.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48701315167_b89e562ef3_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.6112938596491229,
+        0.38925,
+        0.2225877192982456,
+        0.161
+      ],
+      [
+        0.7190241228070176,
+        0.416875,
+        0.1836622807017544,
+        0.09775
+      ],
+      [
+        0.8618421052631579,
+        0.204625,
+        0.06798245614035088,
+        0.04425
+      ],
+      [
+        0.9802631578947368,
+        0.562375,
+        0.03399122807017544,
+        0.03525
+      ]
+    ],
+    "original_labels": [
+      "Single-use carrier bag",
+      "Single-use carrier bag",
+      "Other plastic",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 363,
+        "bbox": [
+          912.0,
+          1235.0,
+          406.0,
+          644.0
+        ],
+        "category": "Single-use carrier bag"
+      },
+      {
+        "id": 364,
+        "bbox": [
+          1144.0,
+          1472.0,
+          335.0,
+          391.0
+        ],
+        "category": "Single-use carrier bag"
+      },
+      {
+        "id": 365,
+        "bbox": [
+          1510.0,
+          730.0,
+          124.0,
+          177.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 366,
+        "bbox": [
+          1757.0,
+          2179.0,
+          62.0,
+          141.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0108",
+    "taco_id": 108,
+    "path": "data/raw/taco-v07/taco-0108.jpg",
+    "sha256": "68f1ce73ee921cb4059da183b2de7c20f6a197b0a0e7a88409c4d495c6a97a4e",
+    "original_sha256": "dbb767d92a6e3a52b1efafad9d4054391f2e9e665af8663300c9f38bfd487a60",
+    "archive_crc32": 993883730,
+    "dhash": "4b7b099a2e6793a9",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000007.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48700806873_f6c603b2a8_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.14720394736842105,
+        0.674375,
+        0.12664473684210525,
+        0.03825
+      ],
+      [
+        0.04824561403508772,
+        0.0445,
+        0.09429824561403509,
+        0.016
+      ]
+    ],
+    "original_labels": [
+      "Other plastic container",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 367,
+        "bbox": [
+          153.0,
+          2621.0,
+          231.0,
+          153.0
+        ],
+        "category": "Other plastic container"
+      },
+      {
+        "id": 368,
+        "bbox": [
+          2.0,
+          146.0,
+          172.0,
+          64.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0110",
+    "taco_id": 110,
+    "path": "data/raw/taco-v07/taco-0110.jpg",
+    "sha256": "65f66dfea909db4da27aa9f5e962e53afbd1ea448f992a9f625b3c4e2a9d4d48",
+    "original_sha256": "14a5e9e12bc2bdef6ead4db36e137c44f436d7334533bd3acadef375a0e2de81",
+    "archive_crc32": 250526420,
+    "dhash": "d335a4a55cd8f3d6",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000009.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48700805793_e1abb7029f_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.58075,
+        0.46326754385964913,
+        0.033,
+        0.06140350877192982
+      ],
+      [
+        0.962875,
+        0.6186951754385965,
+        0.07175,
+        0.14199561403508773
+      ]
+    ],
+    "original_labels": [
+      "Single-use carrier bag",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 372,
+        "bbox": [
+          2257.0,
+          789.0,
+          132.0,
+          112.0
+        ],
+        "category": "Single-use carrier bag"
+      },
+      {
+        "id": 373,
+        "bbox": [
+          3708.0,
+          999.0,
+          287.0,
+          259.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0113",
+    "taco_id": 113,
+    "path": "data/raw/taco-v07/taco-0113.jpg",
+    "sha256": "cec88d010bebb6cb60d9586a2c0e091aad108e3a039e6972f29f58a0926820da",
+    "original_sha256": "f17f4b2bee7d17530b68b8ed405972579563fa15e349fc4be7d8449d425c4a74",
+    "archive_crc32": 2571500596,
+    "dhash": "ed739119050636b3",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000012.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693809453_0886efc298_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.8360745614035088,
+        0.6205,
+        0.10471491228070176,
+        0.0345
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle"
+    ],
+    "annotations": [
+      {
+        "id": 390,
+        "bbox": [
+          1429.5,
+          2413.0,
+          191.0,
+          138.0
+        ],
+        "category": "Clear plastic bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0114",
+    "taco_id": 114,
+    "path": "data/raw/taco-v07/taco-0114.jpg",
+    "sha256": "e3d99973582c074abd71d5ef9fe99c23db46102a8631ad1bace5bd2e16d3ba3e",
+    "original_sha256": "193053bd912eea3ffb8f672fd4a7d06644ffd85f159bcd7bc94301fd8d25f46a",
+    "archive_crc32": 1604769111,
+    "dhash": "27383a2faf9f9c97",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000013.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694323672_76d2059158_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.57425,
+        0.44106359649122806,
+        0.045,
+        0.03344298245614041
+      ],
+      [
+        0.87675,
+        0.959703947368421,
+        0.0335,
+        0.07839912280701766
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle",
+      "Glass bottle"
+    ],
+    "annotations": [
+      {
+        "id": 391,
+        "bbox": [
+          2207.0,
+          774.0,
+          180.0,
+          61.000000000000114
+        ],
+        "category": "Glass bottle"
+      },
+      {
+        "id": 392,
+        "bbox": [
+          3440.0,
+          1678.9999999999998,
+          134.0,
+          143.00000000000023
+        ],
+        "category": "Glass bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0115",
+    "taco_id": 115,
+    "path": "data/raw/taco-v07/taco-0115.jpg",
+    "sha256": "95ab37194a084759b45db9cc4334faa2cd7d931373735460b9947c3e6515150f",
+    "original_sha256": "b0a73a036a18b786d778ed11885712978533583affdae623c17e190b8f29a6ed",
+    "archive_crc32": 2184763864,
+    "dhash": "82a044501cc1416f",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000014.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694149021_baa452c488_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.609875,
+        0.4862938596491228,
+        0.05225,
+        0.037280701754386025
+      ],
+      [
+        0.576625,
+        0.5145285087719298,
+        0.01875,
+        0.04331140350877206
+      ],
+      [
+        0.678,
+        0.6077302631578947,
+        0.023,
+        0.024671052631578948
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle",
+      "Tissues",
+      "Tissues"
+    ],
+    "annotations": [
+      {
+        "id": 393,
+        "bbox": [
+          2335.0,
+          853.0,
+          209.0,
+          68.00000000000011
+        ],
+        "category": "Glass bottle"
+      },
+      {
+        "id": 394,
+        "bbox": [
+          2269.0,
+          898.9999999999999,
+          75.0,
+          79.00000000000023
+        ],
+        "category": "Tissues"
+      },
+      {
+        "id": 395,
+        "bbox": [
+          2666.0,
+          1086.0,
+          92.0,
+          45.0
+        ],
+        "category": "Tissues"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0116",
+    "taco_id": 116,
+    "path": "data/raw/taco-v07/taco-0116.jpg",
+    "sha256": "94c2d1289ad0083d366fe5b369186d655d37a3bd91cdcea5c4482051921a9bfb",
+    "original_sha256": "b87834b6acce54664a6b26058385261a2a4a94c568f15d122697b73f6151c09d",
+    "archive_crc32": 391073738,
+    "dhash": "f93c098ced6171c3",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000015.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694148816_296f5b8c77_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.6639254385964912,
+        0.381625,
+        0.02412280701754386,
+        0.00925
+      ],
+      [
+        0.6995614035087719,
+        0.384,
+        0.02631578947368421,
+        0.0065
+      ],
+      [
+        0.18887061403508773,
+        0.641375,
+        0.07072368421052631,
+        0.00975
+      ],
+      [
+        0.2563048245614035,
+        0.636375,
+        0.052083333333333336,
+        0.02375
+      ],
+      [
+        0.5120614035087719,
+        0.79525,
+        0.05043859649122807,
+        0.033
+      ]
+    ],
+    "original_labels": [
+      "Drink can",
+      "Drink can",
+      "Glass bottle",
+      "Clear plastic bottle",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 396,
+        "bbox": [
+          1189.0,
+          1508.0,
+          44.0,
+          37.0
+        ],
+        "category": "Drink can"
+      },
+      {
+        "id": 397,
+        "bbox": [
+          1252.0,
+          1523.0,
+          48.0,
+          26.0
+        ],
+        "category": "Drink can"
+      },
+      {
+        "id": 398,
+        "bbox": [
+          280.0,
+          2546.0,
+          129.0,
+          39.0
+        ],
+        "category": "Glass bottle"
+      },
+      {
+        "id": 399,
+        "bbox": [
+          420.0,
+          2498.0,
+          95.0,
+          95.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 400,
+        "bbox": [
+          888.0,
+          3115.0,
+          92.0,
+          132.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0117",
+    "taco_id": 117,
+    "path": "data/raw/taco-v07/taco-0117.jpg",
+    "sha256": "37a0778f206dc8e48686b6e33490071f3b3b34a6ee3cc8dadcd35e1b08823e9a",
+    "original_sha256": "d9d877ee6c2646ac0ae6a23339008ce53d60028a04bbb82172ca35831bbfad51",
+    "archive_crc32": 2650644638,
+    "dhash": "a4d888b230387818",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000016.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693808013_3f2bc4367a_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.659,
+        0.768640350877193,
+        0.0605,
+        0.1425438596491228
+      ]
+    ],
+    "original_labels": [
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 401,
+        "bbox": [
+          2515.0,
+          1272.0,
+          242.0,
+          260.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0119",
+    "taco_id": 119,
+    "path": "data/raw/taco-v07/taco-0119.jpg",
+    "sha256": "61430c6b66112143038765bf01b10d05075eb37a7f5bd8bd0a2101722794db8a",
+    "original_sha256": "094a306a78abc15c93a6ac5b752c9bc1a82872a7579512f4d06baf698d85e192",
+    "archive_crc32": 1603774755,
+    "dhash": "eec66c8b8b9b1e16",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000018.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693807503_b0a2ede6b3_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.63,
+        0.671875,
+        0.049,
+        0.054276315789473686
+      ]
+    ],
+    "original_labels": [
+      "Aluminium foil"
+    ],
+    "annotations": [
+      {
+        "id": 403,
+        "bbox": [
+          2422.0,
+          1176.0,
+          196.0,
+          99.0
+        ],
+        "category": "Aluminium foil"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0120",
+    "taco_id": 120,
+    "path": "data/raw/taco-v07/taco-0120.jpg",
+    "sha256": "bb3abac08f470f65933d689f3c878216d36399aa1a73225e312aa7288c46b7cf",
+    "original_sha256": "11e09ff2396240543fc66888799ba6f6cc11b44be296987363e14aaa63f03292",
+    "archive_crc32": 454595583,
+    "dhash": "3bf8e6c462939c6d",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000019.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694147321_c7db92af60_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.41502192982456143,
+        0.64625,
+        0.10307017543859649,
+        0.0765
+      ]
+    ],
+    "original_labels": [
+      "Normal paper"
+    ],
+    "annotations": [
+      {
+        "id": 404,
+        "bbox": [
+          663.0,
+          2432.0,
+          188.0,
+          306.0
+        ],
+        "category": "Normal paper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0122",
+    "taco_id": 122,
+    "path": "data/raw/taco-v07/taco-0122.jpg",
+    "sha256": "0126410f8259ccb11c7caa0986f507673d17873627572bf9ada6d982bdc2b9fe",
+    "original_sha256": "a917e00ddc25e3c759e9f607f7e289a6234b02c0a6ee2b8483ff8d4cc0acf2db",
+    "archive_crc32": 2999227371,
+    "dhash": "a5e5e1011030f2b3",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000021.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694320812_b895473d56_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.52725,
+        0.42406798245614036,
+        0.0235,
+        0.13322368421052633
+      ],
+      [
+        0.737125,
+        0.6998355263157895,
+        0.00975,
+        0.02138157894736842
+      ],
+      [
+        0.89925,
+        0.6663925438596491,
+        0.014,
+        0.01699561403508772
+      ],
+      [
+        0.33425,
+        0.9194078947368421,
+        0.016,
+        0.01206140350877193
+      ],
+      [
+        0.35425,
+        0.6768092105263158,
+        0.015,
+        0.010416666666666666
+      ],
+      [
+        0.162125,
+        0.9087171052631579,
+        0.01375,
+        0.012609649122807017
+      ],
+      [
+        0.89175,
+        0.6387061403508771,
+        0.009,
+        0.023026315789473683
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 416,
+        "bbox": [
+          2062.0,
+          652.0,
+          94.0,
+          243.0
+        ],
+        "category": "Glass bottle"
+      },
+      {
+        "id": 417,
+        "bbox": [
+          2929.0,
+          1257.0,
+          39.0,
+          39.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 418,
+        "bbox": [
+          3569.0,
+          1200.0,
+          56.0,
+          31.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 419,
+        "bbox": [
+          1305.0,
+          1666.0,
+          64.0,
+          22.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 420,
+        "bbox": [
+          1387.0,
+          1225.0,
+          60.0,
+          19.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 421,
+        "bbox": [
+          621.0,
+          1646.0,
+          55.0,
+          23.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 422,
+        "bbox": [
+          3549.0,
+          1144.0,
+          36.0,
+          42.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0125",
+    "taco_id": 125,
+    "path": "data/raw/taco-v07/taco-0125.jpg",
+    "sha256": "b67354bd1887403e825a5e1b6ac8ba95e0e15a0d4534a7f0ea31cf2f16c3b3a2",
+    "original_sha256": "86301699a83361dff08151a667048d0dd820de28140beda01ccbef164894cffe",
+    "archive_crc32": 1418519804,
+    "dhash": "a80a725b82d41488",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000024.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694145881_516caa08a8_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.7749451754385965,
+        0.41125,
+        0.13103070175438597,
+        0.014
+      ]
+    ],
+    "original_labels": [
+      "Shoe"
+    ],
+    "annotations": [
+      {
+        "id": 428,
+        "bbox": [
+          1294.0,
+          1617.0,
+          239.0,
+          56.0
+        ],
+        "category": "Shoe"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0126",
+    "taco_id": 126,
+    "path": "data/raw/taco-v07/taco-0126.jpg",
+    "sha256": "fd446e4661ce07f058159ce6713878c9f6cdcb0b2e533bd9b78159fad3d93856",
+    "original_sha256": "885a8b47ea02fc1d882dd0f325f7e718ad3168656702c1010fa6aea2e7ca1a47",
+    "archive_crc32": 4053254435,
+    "dhash": "b639030b1b923f0f",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000025.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694320037_054edcd0fe_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.7014802631578947,
+        0.612875,
+        0.14089912280701755,
+        0.04775
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 429,
+        "bbox": [
+          1151.0,
+          2356.0,
+          257.0,
+          191.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0128",
+    "taco_id": 128,
+    "path": "data/raw/taco-v07/taco-0128.jpg",
+    "sha256": "aec56e5cdd18084dc1684cae511000b53113b697d9f363323330c6407d4573e7",
+    "original_sha256": "44e503a6731379320fc99c365db6f51f69c5683b05ec3f2ad35056968ea9a58a",
+    "archive_crc32": 636395936,
+    "dhash": "6a0bfcffb75e99aa",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000027.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694318172_7e810920f6_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5032894736842105,
+        0.409625,
+        0.05921052631578941,
+        0.03475000000000006
+      ],
+      [
+        0.5233004385964912,
+        0.427,
+        0.006030701754385903,
+        0.005500000000000057
+      ],
+      [
+        0.8900767543859649,
+        0.49925,
+        0.02905701754385965,
+        0.005500000000000057
+      ],
+      [
+        0.759046052631579,
+        0.47125,
+        0.0356359649122807,
+        0.019
+      ]
+    ],
+    "original_labels": [
+      "Drink carton",
+      "Plastic straw",
+      "Cigarette",
+      "Other plastic"
+    ],
+    "annotations": [
+      {
+        "id": 433,
+        "bbox": [
+          864.0000000000001,
+          1569.0,
+          107.99999999999989,
+          139.00000000000023
+        ],
+        "category": "Drink carton"
+      },
+      {
+        "id": 434,
+        "bbox": [
+          949.0000000000001,
+          1697.0,
+          10.999999999999886,
+          22.000000000000227
+        ],
+        "category": "Plastic straw"
+      },
+      {
+        "id": 435,
+        "bbox": [
+          1597.0,
+          1986.0,
+          53.0,
+          22.000000000000227
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 436,
+        "bbox": [
+          1352.0,
+          1847.0,
+          65.0,
+          76.0
+        ],
+        "category": "Other plastic"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0129",
+    "taco_id": 129,
+    "path": "data/raw/taco-v07/taco-0129.jpg",
+    "sha256": "4f05820be6754357f1a924e8c743a5a60f5f9f58f6ecebaad104ae42124387cd",
+    "original_sha256": "37b75ee19c2287c2b47f2634c2c61951462b95ff5dfa8c817537b812aa86614e",
+    "archive_crc32": 1523939577,
+    "dhash": "49f26c1b6c18081b",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000028.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694143796_244d475e7d_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.24369517543859648,
+        0.463625,
+        0.047697368421052634,
+        0.00575
+      ]
+    ],
+    "original_labels": [
+      "Other plastic"
+    ],
+    "annotations": [
+      {
+        "id": 437,
+        "bbox": [
+          401.0,
+          1843.0,
+          87.0,
+          23.0
+        ],
+        "category": "Other plastic"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0132",
+    "taco_id": 132,
+    "path": "data/raw/taco-v07/taco-0132.jpg",
+    "sha256": "c86690beafe542f1fa53c32b555756bc8b4967d52ded48e6d377833a0aa31cf5",
+    "original_sha256": "bc18313ce9131694f0f07596d605709e0c6a847564f6bcfa75a3b091d9d46e43",
+    "archive_crc32": 381765838,
+    "dhash": "c5e566a330c8d5f6",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000031.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694143076_1196fcef46_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.6726973684210527,
+        0.457875,
+        0.6535087719298246,
+        0.16175
+      ],
+      [
+        0.2754934210526316,
+        0.471,
+        0.022478070175438597,
+        0.006
+      ]
+    ],
+    "original_labels": [
+      "Corrugated carton",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 443,
+        "bbox": [
+          631.0,
+          1508.0,
+          1192.0,
+          647.0
+        ],
+        "category": "Corrugated carton"
+      },
+      {
+        "id": 444,
+        "bbox": [
+          482.0,
+          1872.0,
+          41.0,
+          24.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0135",
+    "taco_id": 135,
+    "path": "data/raw/taco-v07/taco-0135.jpg",
+    "sha256": "e297a8ca5b25dbf5726810b84c9176d71ad70b340457abf8461c3df37cc4f73f",
+    "original_sha256": "818c7d5f832d56cdd7be42400f5b4b4ab7cbaa201109c04fd521dc989a768d78",
+    "archive_crc32": 1419409438,
+    "dhash": "da3d7772fefceec8",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000034.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693802113_1e11414081_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5005482456140351,
+        0.0455,
+        0.0668859649122807,
+        0.012499999999999994
+      ],
+      [
+        0.5041118421052632,
+        0.46725,
+        0.11019736842105263,
+        0.0235
+      ],
+      [
+        0.5416666666666666,
+        0.49275,
+        0.00877192982456134,
+        0.010999999999999944
+      ],
+      [
+        0.6600877192982456,
+        0.47700000000000004,
+        0.02412280701754386,
+        0.009
+      ],
+      [
+        0.26535087719298245,
+        0.57325,
+        0.013157894736842105,
+        0.013
+      ],
+      [
+        0.37417763157894735,
+        0.61825,
+        0.030153508771929825,
+        0.0105
+      ],
+      [
+        0.3774671052631579,
+        0.622125,
+        0.020285087719298246,
+        0.00725
+      ],
+      [
+        0.20531798245614036,
+        0.7255,
+        0.05098684210526313,
+        0.008
+      ],
+      [
+        0.22341008771929824,
+        0.712875,
+        0.02138157894736842,
+        0.01475
+      ],
+      [
+        0.12033991228070176,
+        0.79225,
+        0.022478070175438597,
+        0.019
+      ],
+      [
+        0.3588267543859649,
+        0.950625,
+        0.044407894736842105,
+        0.015750000000000115
+      ],
+      [
+        0.6916118421052632,
+        0.93725,
+        0.03125,
+        0.015
+      ],
+      [
+        0.2532894736842105,
+        0.572,
+        0.01206140350877193,
+        0.0095
+      ],
+      [
+        0.5748355263157895,
+        0.463375,
+        0.015899122807017545,
+        0.00975
+      ],
+      [
+        0.6288377192982456,
+        0.39525,
+        0.010964912280701754,
+        0.006
+      ],
+      [
+        0.6392543859649122,
+        0.078625,
+        0.01425438596491228,
+        0.00325
+      ],
+      [
+        0.9449013157894737,
+        0.95775,
+        0.04111842105263171,
+        0.035999999999999886
+      ],
+      [
+        0.5287828947368421,
+        0.798375,
+        0.03453947368421053,
+        0.02825
+      ],
+      [
+        0.08141447368421052,
+        0.731375,
+        0.042214912280701754,
+        0.02475
+      ],
+      [
+        0.2362938596491228,
+        0.7465,
+        0.06359649122807018,
+        0.0175
+      ],
+      [
+        0.02275219298245614,
+        0.767125,
+        0.024671052631578948,
+        0.01125
+      ]
+    ],
+    "original_labels": [
+      "Normal paper",
+      "Drink can",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Other plastic wrapper"
+    ],
+    "annotations": [
+      {
+        "id": 449,
+        "bbox": [
+          852.0,
+          157.0,
+          122.0,
+          49.99999999999997
+        ],
+        "category": "Normal paper"
+      },
+      {
+        "id": 450,
+        "bbox": [
+          819.0,
+          1822.0,
+          201.0,
+          94.0
+        ],
+        "category": "Drink can"
+      },
+      {
+        "id": 451,
+        "bbox": [
+          980.0000000000001,
+          1949.0000000000002,
+          15.999999999999886,
+          43.99999999999977
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 452,
+        "bbox": [
+          1182.0,
+          1890.0000000000002,
+          44.0,
+          36.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 453,
+        "bbox": [
+          472.0,
+          2267.0,
+          24.0,
+          52.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 454,
+        "bbox": [
+          655.0,
+          2452.0,
+          55.0,
+          42.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 455,
+        "bbox": [
+          670.0,
+          2474.0,
+          37.0,
+          29.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 456,
+        "bbox": [
+          328.0,
+          2886.0,
+          92.99999999999994,
+          32.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 457,
+        "bbox": [
+          388.0,
+          2822.0,
+          39.0,
+          59.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 458,
+        "bbox": [
+          199.0,
+          3131.0,
+          41.0,
+          76.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 459,
+        "bbox": [
+          614.0,
+          3771.0,
+          81.0,
+          63.000000000000455
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 460,
+        "bbox": [
+          1233.0,
+          3719.0,
+          57.0,
+          60.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 461,
+        "bbox": [
+          451.0,
+          2269.0,
+          22.0,
+          38.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 462,
+        "bbox": [
+          1034.0,
+          1834.0,
+          29.0,
+          39.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 463,
+        "bbox": [
+          1137.0,
+          1569.0,
+          20.0,
+          24.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 464,
+        "bbox": [
+          1153.0,
+          308.0,
+          26.0,
+          13.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 465,
+        "bbox": [
+          1685.9999999999998,
+          3759.0000000000005,
+          75.00000000000023,
+          143.99999999999955
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 466,
+        "bbox": [
+          933.0,
+          3137.0,
+          63.0,
+          113.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 467,
+        "bbox": [
+          110.0,
+          2876.0,
+          77.0,
+          99.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 468,
+        "bbox": [
+          373.0,
+          2951.0,
+          116.0,
+          70.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 469,
+        "bbox": [
+          19.0,
+          3046.0,
+          45.0,
+          45.0
+        ],
+        "category": "Other plastic wrapper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0139",
+    "taco_id": 139,
+    "path": "data/raw/taco-v07/taco-0139.jpg",
+    "sha256": "2ba05e2e58d22d26f357d81756a40cc28b8afb9afd7623a1deb270f93d75e45f",
+    "original_sha256": "d63ec59ffca12dfe452131da4fd15c91eb32bc86c735625681ff2ec09ef62b23",
+    "archive_crc32": 3527182795,
+    "dhash": "1e7e98f8e4e4d450",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000038.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694140996_986fb38cbd_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.05180921052631579,
+        0.554875,
+        0.1025219298245614,
+        0.06325
+      ],
+      [
+        0.12445175438596491,
+        0.4575,
+        0.24780701754385964,
+        0.154
+      ],
+      [
+        0.5893640350877193,
+        0.454,
+        0.15899122807017543,
+        0.0825
+      ],
+      [
+        0.47176535087719296,
+        0.713375,
+        0.07182017543859649,
+        0.04875
+      ]
+    ],
+    "original_labels": [
+      "Normal paper",
+      "Magazine paper",
+      "Drink carton",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 507,
+        "bbox": [
+          1.0,
+          2093.0,
+          187.0,
+          253.0
+        ],
+        "category": "Normal paper"
+      },
+      {
+        "id": 508,
+        "bbox": [
+          1.0,
+          1522.0,
+          452.0,
+          616.0
+        ],
+        "category": "Magazine paper"
+      },
+      {
+        "id": 509,
+        "bbox": [
+          930.0,
+          1651.0,
+          290.0,
+          330.0
+        ],
+        "category": "Drink carton"
+      },
+      {
+        "id": 510,
+        "bbox": [
+          795.0,
+          2756.0,
+          131.0,
+          195.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0141",
+    "taco_id": 141,
+    "path": "data/raw/taco-v07/taco-0141.jpg",
+    "sha256": "956252b4558770029864cea285f81f30ed13ae2ca4dc610ede20908c18c387f2",
+    "original_sha256": "d6b45b79d656c13bb64a7bf5a6b235921a609f00a0d5649702e3c7aba9ffce91",
+    "archive_crc32": 530787076,
+    "dhash": "b662ce89e1e17171",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000040.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694128116_c295cf55d0_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.43461905,
+        0.5364844298245613,
+        0.0155,
+        0.0400219298245614
+      ],
+      [
+        0.35619639999999997,
+        0.41367741228070176,
+        0.06375,
+        0.15186403508771928
+      ]
+    ],
+    "original_labels": [
+      "Unlabeled litter",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 512,
+        "bbox": [
+          1707.4762,
+          942.0476,
+          62.0,
+          73.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 513,
+        "bbox": [
+          1297.2856,
+          616.0476,
+          255.0,
+          277.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0142",
+    "taco_id": 142,
+    "path": "data/raw/taco-v07/taco-0142.jpg",
+    "sha256": "173c69f5875c8e67b9fc4872937c9264c1cbf5d86a545ebe3b2ae139ce897d33",
+    "original_sha256": "9154973a411900f1536986160c5945730dab1d46a32f40c4359c82c78ab9a935",
+    "archive_crc32": 3749104915,
+    "dhash": "8898e8f0baebcd6b",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000041.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694127886_fee8f2515b_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.9013157894736842,
+        0.40075,
+        0.016447368421052756,
+        0.011
+      ],
+      [
+        0.7807017543859649,
+        0.64175,
+        0.19956140350877194,
+        0.1085
+      ],
+      [
+        0.4317434210526316,
+        0.717,
+        0.09265350877192977,
+        0.039
+      ],
+      [
+        0.834703947368421,
+        0.47,
+        0.08278508771929824,
+        0.044
+      ],
+      [
+        0.7574013157894737,
+        0.48825,
+        0.16063596491228072,
+        0.0475
+      ]
+    ],
+    "original_labels": [
+      "Cigarette",
+      "Plastic film",
+      "Plastic film",
+      "Plastic film",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 514,
+        "bbox": [
+          1628.9999999999998,
+          1581.0,
+          30.000000000000227,
+          44.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 515,
+        "bbox": [
+          1242.0,
+          2350.0,
+          364.0,
+          434.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 516,
+        "bbox": [
+          703.0,
+          2790.0,
+          168.9999999999999,
+          156.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 517,
+        "bbox": [
+          1447.0,
+          1792.0,
+          151.0,
+          176.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 518,
+        "bbox": [
+          1235.0,
+          1858.0,
+          293.0,
+          190.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0144",
+    "taco_id": 144,
+    "path": "data/raw/taco-v07/taco-0144.jpg",
+    "sha256": "7493c4ed300bf661176766d486b9329b776a6f822a300217cb208023fd6ea88e",
+    "original_sha256": "aaee2d2aeb3f07d6e4498b91e723226e8a15e6ff5763cb4bcb69080b485f2cd8",
+    "archive_crc32": 3147451655,
+    "dhash": "10799dd0a184efe7",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000043.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693787693_c6e9a06ae0_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.31414473684210525,
+        0.08125,
+        0.03179824561403509,
+        0.005
+      ],
+      [
+        0.5674342105263158,
+        0.074125,
+        0.015350877192982455,
+        0.02175
+      ],
+      [
+        0.7552083333333334,
+        0.12125,
+        0.015899122807017545,
+        0.019
+      ],
+      [
+        0.7779605263157895,
+        0.134625,
+        0.03070175438596491,
+        0.00675
+      ],
+      [
+        0.4300986842105263,
+        0.4515,
+        0.06524122807017543,
+        0.0355
+      ],
+      [
+        0.2768640350877193,
+        0.717875,
+        0.13486842105263158,
+        0.06925
+      ],
+      [
+        0.7752192982456141,
+        0.935,
+        0.0800438596491228,
+        0.0405
+      ]
+    ],
+    "original_labels": [
+      "Cigarette",
+      "Cigarette",
+      "Cigarette",
+      "Plastic film",
+      "Plastic film",
+      "Plastic film",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 522,
+        "bbox": [
+          544.0,
+          315.0,
+          58.0,
+          20.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 523,
+        "bbox": [
+          1021.0,
+          253.0,
+          28.0,
+          87.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 524,
+        "bbox": [
+          1363.0,
+          447.0,
+          29.0,
+          76.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 525,
+        "bbox": [
+          1391.0,
+          525.0,
+          56.0,
+          27.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 526,
+        "bbox": [
+          725.0,
+          1735.0,
+          119.0,
+          142.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 527,
+        "bbox": [
+          382.0,
+          2733.0,
+          246.0,
+          277.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 528,
+        "bbox": [
+          1341.0,
+          3659.0,
+          146.0,
+          162.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0147",
+    "taco_id": 147,
+    "path": "data/raw/taco-v07/taco-0147.jpg",
+    "sha256": "38abbbcc7a796adda783aa097535140272e521fa7cb40d0a2c8ca98dd3959493",
+    "original_sha256": "07da2136326017eab38347be431a4a92e4dd4b8936a9e1485e08c1ce7141c263",
+    "archive_crc32": 2266297937,
+    "dhash": "c773194cc5a48626",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000046.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694126861_a3bbcf6bf3_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.46408991228070173,
+        0.233375,
+        0.10581140350877193,
+        0.03675
+      ]
+    ],
+    "original_labels": [
+      "Other carton"
+    ],
+    "annotations": [
+      {
+        "id": 531,
+        "bbox": [
+          750.0,
+          860.0,
+          193.0,
+          147.0
+        ],
+        "category": "Other carton"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0148",
+    "taco_id": 148,
+    "path": "data/raw/taco-v07/taco-0148.jpg",
+    "sha256": "6e743b3123b4ba4b7902f363a195a721b8f652bd7a9886877e246504c4ab2913",
+    "original_sha256": "1d37cb580ea733e6337157e34516a84fbeeac455c867737fd6b42c23044e82b1",
+    "archive_crc32": 1881087782,
+    "dhash": "8f7cf9e39819cb39",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000047.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694300517_5dfa59ba1a_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.44819078947368424,
+        0.4755,
+        0.0893640350877193,
+        0.0365
+      ],
+      [
+        0.3201754385964912,
+        0.3645,
+        0.03289473684210526,
+        0.0085
+      ],
+      [
+        0.26535087719298245,
+        0.399125,
+        0.029605263157894735,
+        0.00575
+      ],
+      [
+        0.8415570175438597,
+        0.116125,
+        0.01206140350877193,
+        0.00525
+      ],
+      [
+        0.7042214912280702,
+        0.224125,
+        0.0356359649122807,
+        0.00675
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 532,
+        "bbox": [
+          736.0,
+          1829.0,
+          163.0,
+          146.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 533,
+        "bbox": [
+          554.0,
+          1441.0,
+          60.0,
+          34.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 534,
+        "bbox": [
+          457.0,
+          1585.0,
+          54.0,
+          23.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 535,
+        "bbox": [
+          1524.0,
+          454.0,
+          22.0,
+          21.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 536,
+        "bbox": [
+          1252.0,
+          883.0,
+          65.0,
+          27.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0149",
+    "taco_id": 149,
+    "path": "data/raw/taco-v07/taco-0149.jpg",
+    "sha256": "bfc479428334326902d9248ddbe4d5acf35f3d8acbbe45aa5dcfdb0f435c46d6",
+    "original_sha256": "71f1292c613eee1b5068f0c33b023930433974e0e45ab6ee2275f8cfcc882386",
+    "archive_crc32": 714372867,
+    "dhash": "70e1b118b46c192f",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000048.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693786348_2633a70041_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.10800438596491228,
+        0.442625,
+        0.05592105263157895,
+        0.02825
+      ],
+      [
+        0.6880482456140351,
+        0.492875,
+        0.08662280701754387,
+        0.02975
+      ],
+      [
+        0.6260964912280702,
+        0.516,
+        0.03618421052631579,
+        0.009
+      ],
+      [
+        0.48218201754385964,
+        0.404875,
+        0.18914473684210525,
+        0.03925
+      ],
+      [
+        0.7335526315789473,
+        0.387125,
+        0.03728070175438596,
+        0.02425
+      ]
+    ],
+    "original_labels": [
+      "Unlabeled litter",
+      "Broken glass",
+      "Broken glass",
+      "Plastic film",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 537,
+        "bbox": [
+          146.0,
+          1714.0,
+          102.0,
+          113.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 538,
+        "bbox": [
+          1176.0,
+          1912.0,
+          158.0,
+          119.0
+        ],
+        "category": "Broken glass"
+      },
+      {
+        "id": 539,
+        "bbox": [
+          1109.0,
+          2046.0,
+          66.0,
+          36.0
+        ],
+        "category": "Broken glass"
+      },
+      {
+        "id": 540,
+        "bbox": [
+          707.0,
+          1541.0,
+          345.0,
+          157.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 541,
+        "bbox": [
+          1304.0,
+          1500.0,
+          68.0,
+          97.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0152",
+    "taco_id": 152,
+    "path": "data/raw/taco-v07/taco-0152.jpg",
+    "sha256": "7f9b6da2bc1d4bdb8c0bd6f8e053b96d4967441eb7a1de7a06e4f5c67f68d40a",
+    "original_sha256": "7c98b0b006c307ce3251553653408a1d0f16876710c8190425d86924433725b0",
+    "archive_crc32": 358695434,
+    "dhash": "a339481313715fd7",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000051.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693785163_b739df76c9_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.40225,
+        0.6134868421052632,
+        0.0765,
+        0.10526315789473684
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 554,
+        "bbox": [
+          1456.0,
+          1023.0,
+          306.0,
+          192.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0153",
+    "taco_id": 153,
+    "path": "data/raw/taco-v07/taco-0153.jpg",
+    "sha256": "cf76f04001ef4e2fc8ab9543afc9e95e5795f9aeb2d40d7a15eff519c914d37a",
+    "original_sha256": "42de8b22a19fd548a3121542a317b2bc8f35a561b4519aa33c42e66bea54249e",
+    "archive_crc32": 3453911677,
+    "dhash": "71767269e9dd9ba3",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000052.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694124921_28c19480da_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.390875,
+        0.45166299342105265,
+        0.03925,
+        0.05537280701754386
+      ]
+    ],
+    "original_labels": [
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 555,
+        "bbox": [
+          1485.0,
+          773.3333,
+          157.0,
+          101.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0154",
+    "taco_id": 154,
+    "path": "data/raw/taco-v07/taco-0154.jpg",
+    "sha256": "dc03aef23f2adec4879aec19b8891e33656dd680e471cd60293d0b071181b03f",
+    "original_sha256": "a2cfb5c6824b13b3c1f4838c53e1bf2fa741a570033318d46e780ee86d79b774",
+    "archive_crc32": 1869630910,
+    "dhash": "5951a3a18ba3e5cc",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000053.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694298392_c71cdab7d4_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.2065,
+        0.4758771929824561,
+        0.068,
+        0.16666666666666666
+      ]
+    ],
+    "original_labels": [
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 556,
+        "bbox": [
+          690.0,
+          716.0,
+          272.0,
+          304.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0155",
+    "taco_id": 155,
+    "path": "data/raw/taco-v07/taco-0155.jpg",
+    "sha256": "d4f7b08e9c05fb1ff945ea0f6ef7d76317992836de95f700d94299456d1eb565",
+    "original_sha256": "26da0b499ea74239cf9d02df30e6a5e22e6a51893883beec03b1ebaa78dfb0e3",
+    "archive_crc32": 3053882867,
+    "dhash": "bd51d494968c6c3a",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000054.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694123876_c16053ce36_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.6324013157894737,
+        0.645875,
+        0.08607456140350878,
+        0.02325
+      ],
+      [
+        0.18612938596491227,
+        0.209125,
+        0.00932017543859649,
+        0.00625
+      ]
+    ],
+    "original_labels": [
+      "Plastic film",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 557,
+        "bbox": [
+          1075.0,
+          2537.0,
+          157.0,
+          93.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 558,
+        "bbox": [
+          331.0,
+          824.0,
+          17.0,
+          25.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0157",
+    "taco_id": 157,
+    "path": "data/raw/taco-v07/taco-0157.jpg",
+    "sha256": "89e86ae4e9ac89448dc47ac74805f6dfb8b48911e5bd18ca6e30e89f1dbb6749",
+    "original_sha256": "26d834e620f1983aefd550c86c6e134db7a7663f4adfed8301a07381c95d2704",
+    "archive_crc32": 834958154,
+    "dhash": "5565ee4c59302426",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000056.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693783338_c4e0696a7e_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.511625,
+        0.3832236842105263,
+        0.03425,
+        0.09210526315789473
+      ]
+    ],
+    "original_labels": [
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 560,
+        "bbox": [
+          1978.0,
+          615.0,
+          137.0,
+          168.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0158",
+    "taco_id": 158,
+    "path": "data/raw/taco-v07/taco-0158.jpg",
+    "sha256": "4bd0615038ff0f4f13df293a1aea82e1174241e5868939ae6b6856a8746bd081",
+    "original_sha256": "38ae1adfcd20ee3a6ee4ad821d4618d0049ec08d3383be4bc35b86a3bc6fdd94",
+    "archive_crc32": 3438228503,
+    "dhash": "3c3e3e8666f31fc7",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000057.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693783218_01a308c197_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.6230811403508771,
+        0.706958325,
+        0.31853070175438597,
+        0.12725
+      ],
+      [
+        0.05756578947368421,
+        0.667625,
+        0.03508771929824561,
+        0.01875
+      ]
+    ],
+    "original_labels": [
+      "Plastic film",
+      "Other plastic"
+    ],
+    "annotations": [
+      {
+        "id": 561,
+        "bbox": [
+          846.0,
+          2573.3333,
+          581.0,
+          509.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 562,
+        "bbox": [
+          73.0,
+          2633.0,
+          64.0,
+          75.0
+        ],
+        "category": "Other plastic"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0160",
+    "taco_id": 160,
+    "path": "data/raw/taco-v07/taco-0160.jpg",
+    "sha256": "bbb0760fd54773a4230743442cd713f43ba18489eec42e60c487a5df110f51c1",
+    "original_sha256": "d2a4640960e5cf290c262f89f5a94cfe6cbf7b58734aac244a35ecda6dc432f0",
+    "archive_crc32": 1528327105,
+    "dhash": "aad6deb2b6c2ded8",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000059.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694122111_80382f6a29_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.7848135964912281,
+        0.592125,
+        0.11348684210526316,
+        0.06675
+      ],
+      [
+        0.5756578947368421,
+        0.856625,
+        0.03070175438596491,
+        0.03625
+      ]
+    ],
+    "original_labels": [
+      "Plastic film",
+      "Other plastic"
+    ],
+    "annotations": [
+      {
+        "id": 564,
+        "bbox": [
+          1328.0,
+          2235.0,
+          207.0,
+          267.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 565,
+        "bbox": [
+          1022.0,
+          3354.0,
+          56.0,
+          145.0
+        ],
+        "category": "Other plastic"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0163",
+    "taco_id": 163,
+    "path": "data/raw/taco-v07/taco-0163.jpg",
+    "sha256": "fa45063443cd6e6ed42ece99d169b213943cf1b1907aca4ce251da9a583f4567",
+    "original_sha256": "b37c4c8517b30beebc2671ddd46b9d2190cd8cd274f725363ad4d9505b92899e",
+    "archive_crc32": 188703820,
+    "dhash": "8852de58cbac68ae",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000062.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694295157_6a6ba8fe6a_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.368625,
+        0.19764254385964913,
+        0.05375,
+        0.13651315789473684
+      ],
+      [
+        0.35625,
+        0.3157894736842105,
+        0.0295,
+        0.03179824561403509
+      ],
+      [
+        0.600375,
+        0.2617872807017544,
+        0.05775,
+        0.12554824561403508
+      ]
+    ],
+    "original_labels": [
+      "Plastic film",
+      "Unlabeled litter",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 568,
+        "bbox": [
+          1367.0,
+          236.0,
+          215.0,
+          249.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 569,
+        "bbox": [
+          1366.0,
+          547.0,
+          118.0,
+          58.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 570,
+        "bbox": [
+          2286.0,
+          363.0,
+          231.0,
+          229.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0164",
+    "taco_id": 164,
+    "path": "data/raw/taco-v07/taco-0164.jpg",
+    "sha256": "c363293b6faec3e48cebdc92692b9b801b69199da39eb0ecc15af0743a761982",
+    "original_sha256": "40011ccdfcfc9e90222c79185833f10b1fab12179c7efc4954f0ace7568b67c7",
+    "archive_crc32": 2014876743,
+    "dhash": "272b89b8d6c361ac",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000063.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694120661_82710bc62e_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.393625,
+        0.5060307017543859,
+        0.10075,
+        0.09758771929824561
+      ],
+      [
+        0.47725,
+        0.4605263157894737,
+        0.0685,
+        0.21271929824561403
+      ]
+    ],
+    "original_labels": [
+      "Plastic film",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 571,
+        "bbox": [
+          1373.0,
+          834.0,
+          403.0,
+          178.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 572,
+        "bbox": [
+          1772.0,
+          646.0,
+          274.0,
+          388.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0166",
+    "taco_id": 166,
+    "path": "data/raw/taco-v07/taco-0166.jpg",
+    "sha256": "48157ef6ab1c74f44e011582c43568e4f16217a1d73d456d342633ddf555be60",
+    "original_sha256": "6a016dc2039c7db1f89f0d2bbb37fa5f3455616fc5444f9fe15bdab1bdcbe3a5",
+    "archive_crc32": 2464475849,
+    "dhash": "1948ccb8a86668a9",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000065.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693779858_4591bce6ec_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5652412280701754,
+        0.43575,
+        0.2730263157894737,
+        0.031499999999999945
+      ]
+    ],
+    "original_labels": [
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 574,
+        "bbox": [
+          782.0,
+          1680.0,
+          498.0,
+          125.99999999999977
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0168",
+    "taco_id": 168,
+    "path": "data/raw/taco-v07/taco-0168.jpg",
+    "sha256": "05862ece42b57e2a45642524df6d14adae0401921dea728efd5cb38f5b34cc5c",
+    "original_sha256": "a820296b10bab16db7691a437e1fa632552c13d2ecd79bc5792c03326bbadbb3",
+    "archive_crc32": 1957858782,
+    "dhash": "965555a968365122",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000067.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694293422_024ef2c9b7_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.60925,
+        0.26644736842105265,
+        0.0435,
+        0.07675438596491228
+      ]
+    ],
+    "original_labels": [
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 576,
+        "bbox": [
+          2350.0,
+          416.0,
+          174.0,
+          140.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0170",
+    "taco_id": 170,
+    "path": "data/raw/taco-v07/taco-0170.jpg",
+    "sha256": "a5d3300dca10e4b65364dd9ba031ad25e8627b7434f5088d8a8144402fa0e1a6",
+    "original_sha256": "b8fe00ce03a23c8c20726e9cf79e9c5fffd75cb4c2b06b07daac896c896ade52",
+    "archive_crc32": 3630965885,
+    "dhash": "ada1563ea74d7433",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000069.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694118586_120d823fc1_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.187,
+        0.5095942982456141,
+        0.0365,
+        0.06853070175438597
+      ]
+    ],
+    "original_labels": [
+      "Rope & strings"
+    ],
+    "annotations": [
+      {
+        "id": 578,
+        "bbox": [
+          675.0,
+          867.0,
+          146.0,
+          125.0
+        ],
+        "category": "Rope & strings"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0173",
+    "taco_id": 173,
+    "path": "data/raw/taco-v07/taco-0173.jpg",
+    "sha256": "ecca0d713d624752274802aefe688373121687737ce7b5a393660a5da28f8b13",
+    "original_sha256": "a150cef1bcec85b8e163d8e64b34a605cbda1d6432ba6050b7bbf8a82639d444",
+    "archive_crc32": 2306581067,
+    "dhash": "47d5b15c5c696d51",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000072.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693777473_c09ced10aa_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.425625,
+        0.20531798245614036,
+        0.02975,
+        0.0400219298245614
+      ],
+      [
+        0.31075,
+        0.5786732456140351,
+        0.0365,
+        0.044407894736842105
+      ]
+    ],
+    "original_labels": [
+      "Other plastic",
+      "Rope & strings"
+    ],
+    "annotations": [
+      {
+        "id": 583,
+        "bbox": [
+          1643.0,
+          338.0,
+          119.0,
+          73.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 584,
+        "bbox": [
+          1170.0,
+          1015.0,
+          146.0,
+          81.0
+        ],
+        "category": "Rope & strings"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0175",
+    "taco_id": 175,
+    "path": "data/raw/taco-v07/taco-0175.jpg",
+    "sha256": "4a7c5cea70c3892d66e5c173beb16ffac0042b30c162c407664a74726c8ef6c9",
+    "original_sha256": "9bdf48308ce83ef13f4ad8cf010f199a5f2dbae0da4ee30ce5700545bef8051e",
+    "archive_crc32": 2525134159,
+    "dhash": "4d1126669b3961e6",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000074.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693776523_00f111b724_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.7538377192982456,
+        0.380125,
+        0.10307017543859649,
+        0.06375
+      ]
+    ],
+    "original_labels": [
+      "Other plastic"
+    ],
+    "annotations": [
+      {
+        "id": 586,
+        "bbox": [
+          1281.0,
+          1393.0,
+          188.0,
+          255.0
+        ],
+        "category": "Other plastic"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0176",
+    "taco_id": 176,
+    "path": "data/raw/taco-v07/taco-0176.jpg",
+    "sha256": "6d38f7c4df8211866809a63e77f66ccf4c4664e9cbb143febd5ca0b8c202e4cd",
+    "original_sha256": "04fe6731089983a42d4ac259bbc5cf7cc7c2de7d8d82e4364a97def717e6d624",
+    "archive_crc32": 1767830281,
+    "dhash": "0f2722221c9464f2",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000075.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694110611_ebca02ff39_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5137061403508771,
+        0.42225,
+        0.02631578947368421,
+        0.0155
+      ],
+      [
+        0.5271381578947368,
+        0.424875,
+        0.022478070175438597,
+        0.01075
+      ],
+      [
+        0.0200109649122807,
+        0.869875,
+        0.03892543859649123,
+        0.00775
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle",
+      "Clear plastic bottle",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 587,
+        "bbox": [
+          913.0,
+          1658.0,
+          48.0,
+          62.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 588,
+        "bbox": [
+          941.0,
+          1678.0,
+          41.0,
+          43.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 589,
+        "bbox": [
+          1.0,
+          3464.0,
+          71.0,
+          31.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0178",
+    "taco_id": 178,
+    "path": "data/raw/taco-v07/taco-0178.jpg",
+    "sha256": "983caf8d93109c4e318650e32a3363fd3e1e0db93d0f54f6487024c712e49efb",
+    "original_sha256": "156fbce1c742f8a55d37ca5f37e750fced580363b1ee3209058b630a7168975b",
+    "archive_crc32": 754350439,
+    "dhash": "ce2e41fc9c199c9c",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000077.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693769563_1fe44a0cfb_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.21271929824561403,
+        0.154125,
+        0.02631578947368421,
+        0.01525
+      ],
+      [
+        0.662828947368421,
+        0.63625,
+        0.12828947368421054,
+        0.036
+      ]
+    ],
+    "original_labels": [
+      "Cigarette",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 594,
+        "bbox": [
+          364.0,
+          586.0,
+          48.0,
+          61.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 595,
+        "bbox": [
+          1092.0,
+          2473.0,
+          234.0,
+          144.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0179",
+    "taco_id": 179,
+    "path": "data/raw/taco-v07/taco-0179.jpg",
+    "sha256": "9c82d38e862f8202580030e2dfb5a8f66f0d18002f14179044859ce543782bd2",
+    "original_sha256": "55dec33711ae6e740fae8809d883c2a39d50eb44cfdc287b4d32d6bb9ce83d1b",
+    "archive_crc32": 2781045204,
+    "dhash": "7638b80d14d38889",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000078.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694282832_9599474c7a_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5753837719298246,
+        0.60725,
+        0.1025219298245614,
+        0.034
+      ]
+    ],
+    "original_labels": [
+      "Other plastic"
+    ],
+    "annotations": [
+      {
+        "id": 596,
+        "bbox": [
+          956.0,
+          2361.0,
+          187.0,
+          136.0
+        ],
+        "category": "Other plastic"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0182",
+    "taco_id": 182,
+    "path": "data/raw/taco-v07/taco-0182.jpg",
+    "sha256": "58c535c097a073f03a9432c59970988751b0ad21a58457bb79570548c9000b32",
+    "original_sha256": "ebcfda1db6a419783fbd444277d43afa6f7109eac41c0acb568a6a78589bf75e",
+    "archive_crc32": 4183170213,
+    "dhash": "cbc9c9e9f9f9f9f8",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000081.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694282352_424aa2ca6a_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.494375,
+        0.4136513157894737,
+        0.08525,
+        0.0893640350877193
+      ],
+      [
+        0.553625,
+        0.3736293859649123,
+        0.01675,
+        0.018092105263157895
+      ],
+      [
+        0.5605,
+        0.0962171052631579,
+        0.011,
+        0.014802631578947368
+      ],
+      [
+        0.306125,
+        0.22889254385964913,
+        0.01125,
+        0.00932017543859649
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle",
+      "Unlabeled litter",
+      "Cigarette",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 600,
+        "bbox": [
+          1807.0,
+          673.0,
+          341.0,
+          163.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 601,
+        "bbox": [
+          2181.0,
+          665.0,
+          67.0,
+          33.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 602,
+        "bbox": [
+          2220.0,
+          162.0,
+          44.0,
+          27.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 603,
+        "bbox": [
+          1202.0,
+          409.0,
+          45.0,
+          17.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0183",
+    "taco_id": 183,
+    "path": "data/raw/taco-v07/taco-0183.jpg",
+    "sha256": "c6395b7274ee798d1d9fe4bbd98e7da212945ce72c225837b3cf08ee6535713b",
+    "original_sha256": "99fc824c78665410e13ae293821db5714ca5018143ea60c3e793219b306c6a07",
+    "archive_crc32": 2162452111,
+    "dhash": "8dc9dbcf6e6e26a8",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000082.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694282192_beb66aef5f_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.492,
+        0.4706688596491228,
+        0.039,
+        0.13651315789473684
+      ]
+    ],
+    "original_labels": [
+      "Other plastic"
+    ],
+    "annotations": [
+      {
+        "id": 604,
+        "bbox": [
+          1890.0,
+          734.0,
+          156.0,
+          249.0
+        ],
+        "category": "Other plastic"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0186",
+    "taco_id": 186,
+    "path": "data/raw/taco-v07/taco-0186.jpg",
+    "sha256": "1a0046ab71256a59cfc591e29583533748e031e63ed10af91219e29d3b87631a",
+    "original_sha256": "91ebd273d33c7f453b48b2e20790cc5dd273fb67b0ff29f877f41bc8d1b1daf8",
+    "archive_crc32": 935516735,
+    "dhash": "cfc2c263a6f6b22b",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000085.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694281772_8c09f3d71e_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.2817982456140351,
+        0.403,
+        0.05263157894736842,
+        0.02
+      ],
+      [
+        0.14309210526315788,
+        0.472125,
+        0.05921052631578947,
+        0.02725
+      ],
+      [
+        0.3612938596491228,
+        0.3515,
+        0.15350877192982457,
+        0.04
+      ],
+      [
+        0.4608004385964912,
+        0.395375,
+        0.05646929824561404,
+        0.02825
+      ],
+      [
+        0.8859649122807017,
+        0.427375,
+        0.03289473684210526,
+        0.01325
+      ],
+      [
+        0.8511513157894737,
+        0.517,
+        0.024671052631578948,
+        0.0175
+      ],
+      [
+        0.9402412280701754,
+        0.542375,
+        0.0625,
+        0.02675
+      ],
+      [
+        0.9895833333333334,
+        0.51925,
+        0.017543859649122806,
+        0.0165
+      ],
+      [
+        0.7757675438596491,
+        0.40625,
+        0.4133771929824561,
+        0.109
+      ]
+    ],
+    "original_labels": [
+      "Metal lid",
+      "Metal lid",
+      "Plastic film",
+      "Other plastic wrapper",
+      "Unlabeled litter",
+      "Broken glass",
+      "Metal lid",
+      "Metal bottle cap",
+      "Corrugated carton"
+    ],
+    "annotations": [
+      {
+        "id": 615,
+        "bbox": [
+          466.0,
+          1572.0,
+          96.0,
+          80.0
+        ],
+        "category": "Metal lid"
+      },
+      {
+        "id": 616,
+        "bbox": [
+          207.0,
+          1834.0,
+          108.0,
+          109.0
+        ],
+        "category": "Metal lid"
+      },
+      {
+        "id": 617,
+        "bbox": [
+          519.0,
+          1326.0,
+          280.0,
+          160.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 618,
+        "bbox": [
+          789.0,
+          1525.0,
+          103.0,
+          113.0
+        ],
+        "category": "Other plastic wrapper"
+      },
+      {
+        "id": 619,
+        "bbox": [
+          1586.0,
+          1683.0,
+          60.0,
+          53.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 620,
+        "bbox": [
+          1530.0,
+          2033.0,
+          45.0,
+          70.0
+        ],
+        "category": "Broken glass"
+      },
+      {
+        "id": 621,
+        "bbox": [
+          1658.0,
+          2116.0,
+          114.0,
+          107.0
+        ],
+        "category": "Metal lid"
+      },
+      {
+        "id": 622,
+        "bbox": [
+          1789.0,
+          2044.0,
+          32.0,
+          66.0
+        ],
+        "category": "Metal bottle cap"
+      },
+      {
+        "id": 623,
+        "bbox": [
+          1038.0,
+          1407.0,
+          754.0,
+          436.0
+        ],
+        "category": "Corrugated carton"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0189",
+    "taco_id": 189,
+    "path": "data/raw/taco-v07/taco-0189.jpg",
+    "sha256": "b00716eec9e9b4e8247e0951a1d3c343c27c48c6fef65e1d41cd9f132aeffbbe",
+    "original_sha256": "8ac0d89283b5709381e6aae24fe5a6fcb044e5a6519eb4d89cdc3763679bd8ef",
+    "archive_crc32": 3307267140,
+    "dhash": "bfbfbfd36333efe7",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000088.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694107146_44476e55eb_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.6737938596491229,
+        0.4405,
+        0.1206140350877193,
+        0.061
+      ],
+      [
+        0.6609100877192983,
+        0.437375,
+        0.23739035087719298,
+        0.09675
+      ]
+    ],
+    "original_labels": [
+      "Tissues",
+      "Other carton"
+    ],
+    "annotations": [
+      {
+        "id": 634,
+        "bbox": [
+          1119.0,
+          1640.0,
+          220.0,
+          244.0
+        ],
+        "category": "Tissues"
+      },
+      {
+        "id": 635,
+        "bbox": [
+          989.0,
+          1556.0,
+          433.0,
+          387.0
+        ],
+        "category": "Other carton"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0190",
+    "taco_id": 190,
+    "path": "data/raw/taco-v07/taco-0190.jpg",
+    "sha256": "49d07f60c2c09ed5f8777b67ad341aa2ecac0357e583aa00a3d482fcdb59b3bb",
+    "original_sha256": "e04e65229065b108ac204ff5d3534e0faa13b019b71d63c64d5253b60fd2e97e",
+    "archive_crc32": 38703199,
+    "dhash": "89b1b2d9d80cd704",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000089.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694107166_73969cc1f2_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.6992872807017544,
+        0.517875,
+        0.0805921052631579,
+        0.04175
+      ],
+      [
+        0.6981907894736842,
+        0.44025,
+        0.07510964912280702,
+        0.0295
+      ],
+      [
+        0.5833333333333334,
+        0.408875,
+        0.03070175438596491,
+        0.01025
+      ],
+      [
+        0.48081140350877194,
+        0.449625,
+        0.07346491228070176,
+        0.02375
+      ],
+      [
+        0.9851973684210527,
+        0.804875,
+        0.02850877192982456,
+        0.02775
+      ]
+    ],
+    "original_labels": [
+      "Disposable plastic cup",
+      "Disposable plastic cup",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Rope & strings"
+    ],
+    "annotations": [
+      {
+        "id": 636,
+        "bbox": [
+          1202.0,
+          1988.0,
+          147.0,
+          167.0
+        ],
+        "category": "Disposable plastic cup"
+      },
+      {
+        "id": 637,
+        "bbox": [
+          1205.0,
+          1702.0,
+          137.0,
+          118.0
+        ],
+        "category": "Disposable plastic cup"
+      },
+      {
+        "id": 638,
+        "bbox": [
+          1036.0,
+          1615.0,
+          56.0,
+          41.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 639,
+        "bbox": [
+          810.0,
+          1751.0,
+          134.0,
+          95.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 640,
+        "bbox": [
+          1771.0,
+          3164.0,
+          52.0,
+          111.0
+        ],
+        "category": "Rope & strings"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0195",
+    "taco_id": 195,
+    "path": "data/raw/taco-v07/taco-0195.jpg",
+    "sha256": "12c775ca0ce18f1c98870fe4d0f0e55a9ebd5ff7940c5b8b1b05ff06ac4c7abe",
+    "original_sha256": "b229c150911169e35f34a653ae0d5b765191411cc0d0f1f0d71d3a5d33082a73",
+    "archive_crc32": 252685650,
+    "dhash": "0698c8ecfc7efb0f",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000094.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693735823_46e44e0483_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.27439692982456143,
+        0.538,
+        0.06524122807017543,
+        0.0265
+      ],
+      [
+        0.37774122807017546,
+        0.6105,
+        0.01864035087719298,
+        0.007
+      ],
+      [
+        0.8911732456140351,
+        0.97275,
+        0.13760964912280702,
+        0.054
+      ],
+      [
+        0.45668859649122806,
+        0.573625,
+        0.0416666666666666,
+        0.03625
+      ],
+      [
+        0.8141447368421053,
+        0.936375,
+        0.0537280701754386,
+        0.03925
+      ],
+      [
+        0.5679824561403509,
+        0.821875,
+        0.0800438596491228,
+        0.01575
+      ]
+    ],
+    "original_labels": [
+      "Disposable plastic cup",
+      "Metal bottle cap",
+      "Aluminium blister pack",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 666,
+        "bbox": [
+          441.0,
+          2099.0,
+          119.0,
+          106.0
+        ],
+        "category": "Disposable plastic cup"
+      },
+      {
+        "id": 667,
+        "bbox": [
+          672.0,
+          2428.0,
+          34.0,
+          28.0
+        ],
+        "category": "Metal bottle cap"
+      },
+      {
+        "id": 668,
+        "bbox": [
+          1500.0,
+          3783.0,
+          251.0,
+          216.0
+        ],
+        "category": "Aluminium blister pack"
+      },
+      {
+        "id": 669,
+        "bbox": [
+          795.0,
+          2222.0,
+          75.99999999999989,
+          145.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 670,
+        "bbox": [
+          1436.0,
+          3667.0,
+          98.0,
+          157.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 671,
+        "bbox": [
+          963.0,
+          3256.0,
+          146.0,
+          63.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0197",
+    "taco_id": 197,
+    "path": "data/raw/taco-v07/taco-0197.jpg",
+    "sha256": "e12780df27197943f110ca4de6f0ddcd11016f2559051e5c0ad8cad8ce46d2a5",
+    "original_sha256": "429cceca4025286b4a201eec1e4a9f1977476e4d2fabe5e08a3e07c6b0e606e5",
+    "archive_crc32": 2148588138,
+    "dhash": "7373dd9e2fbf972d",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3000,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000096.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694074286_06d624fb18_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.40016666666666667,
+        0.42375,
+        0.07766666666666666,
+        0.047500000000000056
+      ],
+      [
+        0.4625,
+        0.419125,
+        0.021666666666666667,
+        0.0067499999999999435
+      ],
+      [
+        0.6525,
+        0.989375,
+        0.021666666666666744,
+        0.01625
+      ],
+      [
+        0.7533333333333333,
+        0.613875,
+        0.019333333333333334,
+        0.00875
+      ],
+      [
+        0.15466666666666667,
+        0.328125,
+        0.058,
+        0.02725
+      ],
+      [
+        0.3001666666666667,
+        0.40925,
+        0.027666666666666666,
+        0.0165
+      ]
+    ],
+    "original_labels": [
+      "Disposable plastic cup",
+      "Cigarette",
+      "Broken glass",
+      "Cigarette",
+      "Unlabeled litter",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 674,
+        "bbox": [
+          1084.0,
+          1600.0,
+          233.0,
+          190.00000000000023
+        ],
+        "category": "Disposable plastic cup"
+      },
+      {
+        "id": 675,
+        "bbox": [
+          1355.0,
+          1663.0,
+          65.0,
+          26.999999999999773
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 676,
+        "bbox": [
+          1925.0,
+          3925.0,
+          65.00000000000023,
+          65.0
+        ],
+        "category": "Broken glass"
+      },
+      {
+        "id": 677,
+        "bbox": [
+          2231.0,
+          2438.0,
+          58.0,
+          35.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 678,
+        "bbox": [
+          377.0,
+          1258.0,
+          174.0,
+          109.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 679,
+        "bbox": [
+          859.0,
+          1604.0,
+          83.0,
+          66.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0200",
+    "taco_id": 200,
+    "path": "data/raw/taco-v07/taco-0200.jpg",
+    "sha256": "342c213edd5d075aae162775ddb197a33a8c721f94595951c315bb398a27c326",
+    "original_sha256": "fb0b3b01e0d5ee1d22500274b616740e432129d7c819942bda15066c58e09311",
+    "archive_crc32": 2306567555,
+    "dhash": "89c8c1d30323270e",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_10/000099.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694212917_579129461a_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5619517543859649,
+        0.551875,
+        0.2642543859649123,
+        0.09624999999999995
+      ]
+    ],
+    "original_labels": [
+      "Other plastic wrapper"
+    ],
+    "annotations": [
+      {
+        "id": 685,
+        "bbox": [
+          784.0,
+          2015.0000000000002,
+          482.0,
+          384.9999999999998
+        ],
+        "category": "Other plastic wrapper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0201",
+    "taco_id": 201,
+    "path": "data/raw/taco-v07/taco-0201.jpg",
+    "sha256": "c67ea83640580a446eb55afa96a026401ac4347b6f80981c1580f786c39fdefd",
+    "original_sha256": "322bee852cd1d8dd6efc220d364487baad5944075cdb5ec3e5fea8e48c1ab35e",
+    "archive_crc32": 360082523,
+    "dhash": "b0b233879e46cfd1",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000000.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694212567_1b0faf5af8_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.549625,
+        0.6392543859649122,
+        0.43775,
+        0.48355263157894735
+      ],
+      [
+        0.549375,
+        0.4292763157894737,
+        0.43425,
+        0.16447368421052633
+      ],
+      [
+        0.7185,
+        0.793859649122807,
+        0.034,
+        0.06798245614035088
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece",
+      "Corrugated carton",
+      "Corrugated carton"
+    ],
+    "annotations": [
+      {
+        "id": 686,
+        "bbox": [
+          1323.0,
+          725.0,
+          1751.0,
+          882.0
+        ],
+        "category": "Styrofoam piece"
+      },
+      {
+        "id": 687,
+        "bbox": [
+          1329.0,
+          633.0,
+          1737.0,
+          300.0
+        ],
+        "category": "Corrugated carton"
+      },
+      {
+        "id": 688,
+        "bbox": [
+          2806.0,
+          1386.0,
+          136.0,
+          124.0
+        ],
+        "category": "Corrugated carton"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0203",
+    "taco_id": 203,
+    "path": "data/raw/taco-v07/taco-0203.jpg",
+    "sha256": "54f121e7299a42ac0c1cf387dabc61ee1dde6bc118df2ea584a0411547adc50c",
+    "original_sha256": "941f1b3b827b63806acc5859b32867634fc9e109cd334b06e84efe5ff00b5623",
+    "archive_crc32": 3462354152,
+    "dhash": "d9d9fbbbf39a0188",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000002.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694211877_ef9246b4b0_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5553728070175439,
+        0.549375,
+        0.48355263157894735,
+        0.28625
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 692,
+        "bbox": [
+          572.0,
+          1625.0,
+          882.0,
+          1145.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0205",
+    "taco_id": 205,
+    "path": "data/raw/taco-v07/taco-0205.jpg",
+    "sha256": "4ed3bf32acdd318101a40164552a8f47e12894fab9d129e68f9174e5675339b0",
+    "original_sha256": "e411d79e8e727923f22f64bb5b5cc770eae94e8ac01c2f91a8d2e9f262eed3da",
+    "archive_crc32": 2755975863,
+    "dhash": "e17c4c0ccdc80818",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000004.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48693697238_ce2c2fa0da_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.31359649122807015,
+        0.501,
+        0.6260964912280702,
+        0.8955
+      ],
+      [
+        0.8081140350877193,
+        0.487875,
+        0.3815789473684211,
+        0.29425
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece",
+      "Corrugated carton"
+    ],
+    "annotations": [
+      {
+        "id": 698,
+        "bbox": [
+          1.0,
+          213.0,
+          1142.0,
+          3582.0
+        ],
+        "category": "Styrofoam piece"
+      },
+      {
+        "id": 699,
+        "bbox": [
+          1126.0,
+          1363.0,
+          696.0,
+          1177.0
+        ],
+        "category": "Corrugated carton"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0206",
+    "taco_id": 206,
+    "path": "data/raw/taco-v07/taco-0206.jpg",
+    "sha256": "36fce997c8b28d448ed55ab9e11881c3ea1eeb4d64cf50ae269dbf77fe10fc09",
+    "original_sha256": "0ed739e2c1cab12bc0b5079811db8c90f93d061c85142bcf53887e3e364b792d",
+    "archive_crc32": 3714073441,
+    "dhash": "0d7f3c1c2c8e8060",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000005.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694037361_913cfbbaa0_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.45093201754385964,
+        0.508375,
+        0.899671052631579,
+        0.41325
+      ],
+      [
+        0.3237390350877193,
+        0.578625,
+        0.6452850877192983,
+        0.20925
+      ]
+    ],
+    "original_labels": [
+      "Corrugated carton",
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 700,
+        "bbox": [
+          2.0,
+          1207.0,
+          1641.0,
+          1653.0
+        ],
+        "category": "Corrugated carton"
+      },
+      {
+        "id": 701,
+        "bbox": [
+          2.0,
+          1896.0,
+          1177.0,
+          837.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0209",
+    "taco_id": 209,
+    "path": "data/raw/taco-v07/taco-0209.jpg",
+    "sha256": "ec0ffbcbcdd141f6a7bf25e93db3f781b443f20714df00e0a63c86700cb551f5",
+    "original_sha256": "34ad60f00f941cbceef5617f35812e7a7b82dc751778f60ed1967b3805464ed7",
+    "archive_crc32": 948986344,
+    "dhash": "0d0d0e0606000043",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000008.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694211097_b206655baa_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.3706140350877193,
+        0.295375,
+        0.7412280701754386,
+        0.59075
+      ],
+      [
+        0.3900767543859649,
+        0.917,
+        0.7779605263157895,
+        0.16550000000000012
+      ],
+      [
+        0.49657534246575347,
+        0.47421875,
+        0.9931506849315069,
+        0.9484375
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece",
+      "Corrugated carton",
+      "Corrugated carton"
+    ],
+    "annotations": [
+      {
+        "id": 707,
+        "bbox": [
+          0.0,
+          -1.0,
+          1352.0,
+          2364.0
+        ],
+        "category": "Styrofoam piece"
+      },
+      {
+        "id": 708,
+        "bbox": [
+          2.0,
+          3336.9999999999995,
+          1419.0,
+          662.0000000000005
+        ],
+        "category": "Corrugated carton"
+      },
+      {
+        "id": 709,
+        "bbox": [
+          0.0,
+          0.0,
+          1811.5068493150686,
+          3793.75
+        ],
+        "category": "Corrugated carton"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0212",
+    "taco_id": 212,
+    "path": "data/raw/taco-v07/taco-0212.jpg",
+    "sha256": "80f419399a3ceac24a52725f5356ddd66762ec5ec3c85df21ab51e5abd043bbb",
+    "original_sha256": "f18b51aa42e18c2277c4997a97a7424ecc7ca3130b26b4e1b79eb4670cf2a5c8",
+    "archive_crc32": 4102218637,
+    "dhash": "d0f00cc7e286c207",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000011.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694210407_65e9de586c_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.49643640350877194,
+        0.4680119,
+        0.6441885964912281,
+        0.2819999999999999
+      ],
+      [
+        0.5515481304824561,
+        0.9062083375,
+        0.8904291776315789,
+        0.18710712499999999
+      ],
+      [
+        0.6776576754385965,
+        0.9608512,
+        0.5932539473684211,
+        0.07782139999999993
+      ]
+    ],
+    "original_labels": [
+      "Pizza box",
+      "Corrugated carton",
+      "Corrugated carton"
+    ],
+    "annotations": [
+      {
+        "id": 717,
+        "bbox": [
+          318.0,
+          1308.0476,
+          1175.0,
+          1127.9999999999998
+        ],
+        "category": "Pizza box"
+      },
+      {
+        "id": 718,
+        "bbox": [
+          193.95238,
+          3250.6191,
+          1624.14282,
+          748.4285
+        ],
+        "category": "Corrugated carton"
+      },
+      {
+        "id": 719,
+        "bbox": [
+          695.0,
+          3687.762,
+          1082.0952,
+          311.2855999999997
+        ],
+        "category": "Corrugated carton"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0215",
+    "taco_id": 215,
+    "path": "data/raw/taco-v07/taco-0215.jpg",
+    "sha256": "ef843f7cbbf0e0320d1f12b33cac8e5f24312a2275d50c180c41f1a1fdf59a6f",
+    "original_sha256": "21eb15fc38486ccb9aa8129bb8267b350290f35c9d9121c481141cfc927f8ede",
+    "archive_crc32": 529909924,
+    "dhash": "e20b9918cf3a9e49",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000014.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694209992_d656af41e0_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5221125822368421,
+        0.5791309625,
+        0.753289528508772,
+        0.280452425
+      ],
+      [
+        0.30473316885964913,
+        0.6585595,
+        0.32730263157894735,
+        0.142
+      ]
+    ],
+    "original_labels": [
+      "Corrugated carton",
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 724,
+        "bbox": [
+          265.3333,
+          1755.619,
+          1374.0001,
+          1121.8097
+        ],
+        "category": "Corrugated carton"
+      },
+      {
+        "id": 725,
+        "bbox": [
+          257.3333,
+          2350.238,
+          597.0,
+          568.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0216",
+    "taco_id": 216,
+    "path": "data/raw/taco-v07/taco-0216.jpg",
+    "sha256": "bee71bbca7322cb8ffe46ef9ee1ec489a39fa9beeb4aa1b7193793eef114f464",
+    "original_sha256": "8ac41535c3bcc72998c1d42c5f958f78b36d356b8963a159013b9747f6acba81",
+    "archive_crc32": 3219433547,
+    "dhash": "290968c3cbc8cac9",
+    "split": "validation",
+    "width": 730,
+    "height": 1600,
+    "original_size": [
+      1824,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000015.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694035426_4f8a93ba7b_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5668859649122807,
+        0.539,
+        0.20942982456140352,
+        0.1445
+      ],
+      [
+        0.5794956140350878,
+        0.4695,
+        0.6206140350877193,
+        0.2925
+      ],
+      [
+        0.6400767543859649,
+        0.372,
+        0.011513157894736841,
+        0.0115
+      ],
+      [
+        0.9322916666666666,
+        0.524375,
+        0.052083333333333336,
+        0.00525
+      ],
+      [
+        0.2069627192982456,
+        0.313875,
+        0.027960526315789474,
+        0.00675
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece",
+      "Styrofoam piece",
+      "Cigarette",
+      "Cigarette",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 726,
+        "bbox": [
+          843.0,
+          1867.0,
+          382.0,
+          578.0
+        ],
+        "category": "Styrofoam piece"
+      },
+      {
+        "id": 727,
+        "bbox": [
+          491.0,
+          1293.0,
+          1132.0,
+          1170.0
+        ],
+        "category": "Styrofoam piece"
+      },
+      {
+        "id": 728,
+        "bbox": [
+          1157.0,
+          1465.0,
+          21.0,
+          46.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 729,
+        "bbox": [
+          1653.0,
+          2087.0,
+          95.0,
+          21.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 730,
+        "bbox": [
+          352.0,
+          1242.0,
+          51.0,
+          27.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0217",
+    "taco_id": 217,
+    "path": "data/raw/taco-v07/taco-0217.jpg",
+    "sha256": "4a2e57af42985a07c483eeeab4a94597e28d52c6da2070a348a598b3d066cde4",
+    "original_sha256": "6491ea545ca4a5218ba9074266d061cf29dfb3f56aa4af8c30e61e72eb1f37d5",
+    "archive_crc32": 4067283112,
+    "dhash": "0c3c3a3ab6f4343c",
+    "split": "validation",
+    "width": 1600,
+    "height": 730,
+    "original_size": [
+      4000,
+      1824
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000016.jpg",
+    "flickr_url": "https://farm66.staticflickr.com/65535/48694035346_6a5f7ae33a_o.png",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.285875,
+        0.33689692982456143,
+        0.28275,
+        0.43146929824561403
+      ],
+      [
+        0.665875,
+        0.6055372807017544,
+        0.20325,
+        0.787828947368421
+      ]
+    ],
+    "original_labels": [
+      "Corrugated carton",
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 731,
+        "bbox": [
+          578.0,
+          221.0,
+          1131.0,
+          787.0
+        ],
+        "category": "Corrugated carton"
+      },
+      {
+        "id": 732,
+        "bbox": [
+          2257.0,
+          386.0,
+          813.0,
+          1437.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0223",
+    "taco_id": 223,
+    "path": "data/raw/taco-v07/taco-0223.jpg",
+    "sha256": "266d9ed0ace51eb88114bb30c270105a6eb8a951da3b6326592bef54d0de6bf2",
+    "original_sha256": "223bb8cfeab17327b4c2b92e54f9ae8ee733c150f33018ebf900430028f2c33a",
+    "archive_crc32": 875788473,
+    "dhash": "5e8c861703323939",
+    "split": "validation",
+    "width": 1600,
+    "height": 1067,
+    "original_size": [
+      6000,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000022.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/1048/tihZflr2KFQ13YENqImY9fhjXuTnQeSp1eAN8DSs.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5761666666666667,
+        0.39586854812499994,
+        0.5143333333333333,
+        0.78723005375
+      ]
+    ],
+    "original_labels": [
+      "Spread tub"
+    ],
+    "annotations": [
+      {
+        "id": 747,
+        "bbox": [
+          1914.0,
+          9.014085,
+          3086.0,
+          3148.920215
+        ],
+        "category": "Spread tub"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0224",
+    "taco_id": 224,
+    "path": "data/raw/taco-v07/taco-0224.jpg",
+    "sha256": "98506e8bb1ee1c7bc2edcf76cf6c75e67764a057ef4240b5c2642e0ca0b69562",
+    "original_sha256": "5b836353dfe25bfcca87269e7203989278936118ee38ff40e4e44199c067bf68",
+    "archive_crc32": 144047834,
+    "dhash": "d999b1b13f2b242b",
+    "split": "validation",
+    "width": 1600,
+    "height": 1067,
+    "original_size": [
+      6000,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000023.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/1048/wv2JOQm3Hp3M5NUDkjedyIga4MZRhXJGbTq9c5sZ.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.41909521666666666,
+        0.46952974999999997,
+        0.08533333333333333,
+        0.08425
+      ]
+    ],
+    "original_labels": [
+      "Plastic bottle cap"
+    ],
+    "annotations": [
+      {
+        "id": 748,
+        "bbox": [
+          2258.5713,
+          1709.619,
+          512.0,
+          337.0
+        ],
+        "category": "Plastic bottle cap"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0226",
+    "taco_id": 226,
+    "path": "data/raw/taco-v07/taco-0226.jpg",
+    "sha256": "65f1ec1f84d3d23c86e89cb2d75b2d0e0b734dca3a28a338d6f69b9105e8adde",
+    "original_sha256": "e221e357a0e575d0a018e782ff8a2aa7929f90f429c36462b536ab807748152d",
+    "archive_crc32": 894279809,
+    "dhash": "9239b4ece0646de3",
+    "split": "validation",
+    "width": 1600,
+    "height": 1067,
+    "original_size": [
+      6000,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000025.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/1048/Uirpb6RGHwv2z7T94NkzoDJHbf4BcoeCkBXVHNLq.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.53825,
+        0.44043630500000003,
+        0.4721666666666667,
+        0.40966728999999996
+      ]
+    ],
+    "original_labels": [
+      "Shoe"
+    ],
+    "annotations": [
+      {
+        "id": 750,
+        "bbox": [
+          1813.0,
+          942.41064,
+          2833.0,
+          1638.66916
+        ],
+        "category": "Shoe"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0227",
+    "taco_id": 227,
+    "path": "data/raw/taco-v07/taco-0227.jpg",
+    "sha256": "db080bd8623a80c963c167327bda387f4dd75d1fe3bb93fb302809c133626845",
+    "original_sha256": "1a1a3f45a9011713e43fd6129f84a589ee42ed720fdd763306a3a47a784fdc2d",
+    "archive_crc32": 647069365,
+    "dhash": "665499888a292b09",
+    "split": "validation",
+    "width": 1600,
+    "height": 1067,
+    "original_size": [
+      6000,
+      4000
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000026.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/1048/NGJChI8EE2bifY13rXYHC8OVoIZ6PpdVpZvNRYBq.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.49291666666666667,
+        0.48906507499999996,
+        0.16616666666666666,
+        0.26414705
+      ],
+      [
+        0.5523333333333333,
+        0.5871768500000001,
+        0.04766666666666667,
+        0.06842670000000009
+      ],
+      [
+        0.5234166666666666,
+        0.39486580000000004,
+        0.1615,
+        0.11962349999999998
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle",
+      "Plastic bottle cap",
+      "Plastic straw"
+    ],
+    "annotations": [
+      {
+        "id": 751,
+        "bbox": [
+          2459.0,
+          1427.9662,
+          997.0,
+          1056.5882
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 752,
+        "bbox": [
+          3171.0,
+          2211.854,
+          286.0,
+          273.7068000000004
+        ],
+        "category": "Plastic bottle cap"
+      },
+      {
+        "id": 753,
+        "bbox": [
+          2656.0,
+          1340.2162,
+          969.0,
+          478.4939999999999
+        ],
+        "category": "Plastic straw"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0231",
+    "taco_id": 231,
+    "path": "data/raw/taco-v07/taco-0231.jpg",
+    "sha256": "9b2d0a3802415a42fd905cd2ef79b295aadb548207140ac452e86654dc073381",
+    "original_sha256": "64ee49a7763b86028f7e50a10ed8006d6070c2acd80718ee7f8c585343ad3f9a",
+    "archive_crc32": 1991027627,
+    "dhash": "88f2739a3727c6c6",
+    "split": "validation",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2322,
+      4128
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000030.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/07/25/B18ir7xqzn5oHTMBEdm5CghRaJLfYBbINKTWlExg.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5917312661498708,
+        0.6167635658914729,
+        0.2532299741602067,
+        0.05813953488372093
+      ]
+    ],
+    "original_labels": [
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 768,
+        "bbox": [
+          1080.0,
+          2426.0,
+          588.0,
+          240.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0233",
+    "taco_id": 233,
+    "path": "data/raw/taco-v07/taco-0233.jpg",
+    "sha256": "7af4a76ab1a2253afc591dde0b5fb501d54be9eccb0d210919944136e1006349",
+    "original_sha256": "e7aeb1cc575f0bba61a6eec2fcdfdcfc819a031b4afe61dc6ef4ba60888bad53",
+    "archive_crc32": 3689716506,
+    "dhash": "9ac6e76d3cbfffff",
+    "split": "validation",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2322,
+      4128
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000032.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/07/24/WYw6KN5IiVTjyNOTVAraYODJyplxyYaB5dGihl9W.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5583548664944014,
+        0.3528343023255814,
+        0.2054263565891473,
+        0.17078488372093023
+      ]
+    ],
+    "original_labels": [
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 770,
+        "bbox": [
+          1058.0,
+          1104.0,
+          477.0,
+          705.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0235",
+    "taco_id": 235,
+    "path": "data/raw/taco-v07/taco-0235.jpg",
+    "sha256": "dc88a1c8bc5eb3a1f29aab9c4044b33e2de17865fe4d09db186022f5735a181a",
+    "original_sha256": "a921b52efd8aa87d4a83b503c528006d9fae1ef61eda420a7879a48f73349110",
+    "archive_crc32": 634716873,
+    "dhash": "1e9b97c7cccee7fc",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      2448,
+      3264
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000034.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/1043/GT9QQVorw1u1OkGEPJcZmM4ti3kp4hVYP8FMRB7e.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.494281045751634,
+        0.49831495098039214,
+        0.9411764705882353,
+        0.7693014705882353
+      ]
+    ],
+    "original_labels": [
+      "Other plastic bottle"
+    ],
+    "annotations": [
+      {
+        "id": 772,
+        "bbox": [
+          58.0,
+          371.0,
+          2304.0,
+          2511.0
+        ],
+        "category": "Other plastic bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0236",
+    "taco_id": 236,
+    "path": "data/raw/taco-v07/taco-0236.jpg",
+    "sha256": "710d5d1eab2a0044d9d468181df335b6ef86100c854230a45ea453f2b924ebcc",
+    "original_sha256": "2ad056e708f8d52a7af719a2ba86393c26cda0598d29864c886bef6439668432",
+    "archive_crc32": 2720743437,
+    "dhash": "8fa69e9e9ef4e8f9",
+    "split": "validation",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      3264,
+      2448
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000035.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/1043/UQ0Qx6JWYG8EXTV0NhoAqSOGQ000VrpKhjCw9DTe.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5159313725490197,
+        0.5428921568627451,
+        0.5128676470588235,
+        0.5661764705882353
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 773,
+        "bbox": [
+          847.0,
+          636.0,
+          1674.0,
+          1386.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0237",
+    "taco_id": 237,
+    "path": "data/raw/taco-v07/taco-0237.jpg",
+    "sha256": "6dd28aa62945ca7717d1090fe285200b5953c4da4dcfdc7ab2c900596264c7ce",
+    "original_sha256": "e23cc92e2d4415dcc1ba65a0f8145b75bc941646231324fba927fa9ad0f636d1",
+    "archive_crc32": 555659831,
+    "dhash": "7dfccecedce4f07d",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      2448,
+      3264
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000036.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/1043/LrnhyQKzpgHndB5I5XVTWh1t20cmsDkjhOShFWfQ.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.477124183006536,
+        0.5202205882352942,
+        0.9044117647058824,
+        0.7322303921568627
+      ]
+    ],
+    "original_labels": [
+      "Other plastic bottle"
+    ],
+    "annotations": [
+      {
+        "id": 774,
+        "bbox": [
+          61.0,
+          503.0,
+          2214.0,
+          2390.0
+        ],
+        "category": "Other plastic bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0238",
+    "taco_id": 238,
+    "path": "data/raw/taco-v07/taco-0238.jpg",
+    "sha256": "902b3608ec74b252d37f67c5eb3f67f0bcea756d4951a4543326d9885cc05128",
+    "original_sha256": "089d11ce3437764a087f4d7a5c5b4a30ca4ab5c1211a812edf6c99ea2c16a1b7",
+    "archive_crc32": 4140416912,
+    "dhash": "1a8d8b132f078b2a",
+    "split": "validation",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      4618,
+      3463
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000037.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/21/kuVLcQK7NTbx0Zqyka28KXql49v7BPUuK8SC3w2y.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5587916847119966,
+        0.579844065838868,
+        0.11671719359029883,
+        0.07854461449610164
+      ]
+    ],
+    "original_labels": [
+      "Magazine paper"
+    ],
+    "annotations": [
+      {
+        "id": 775,
+        "bbox": [
+          2311.0,
+          1872.0,
+          539.0,
+          272.0
+        ],
+        "category": "Magazine paper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0244",
+    "taco_id": 244,
+    "path": "data/raw/taco-v07/taco-0244.jpg",
+    "sha256": "fa9d26c1b26c220b601484ad96fe6c5380c61371cc24fd56b49f39037a488df9",
+    "original_sha256": "35c27064ee83cf3807944c43c83b93620e3ee3423f481728a08e3a4ddbf12dcb",
+    "archive_crc32": 2279261084,
+    "dhash": "9bd960d2cb4ddb1a",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000043.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/21/oIh01CKvlYrPrwiMtq7jTXnKFsD4NvaKdi0YUmT2.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.534775641025641,
+        0.5938701923076923,
+        0.11442307692307692,
+        0.08677884615384615
+      ]
+    ],
+    "original_labels": [
+      "Other plastic wrapper"
+    ],
+    "annotations": [
+      {
+        "id": 786,
+        "bbox": [
+          1490.0,
+          2290.0,
+          357.0,
+          361.0
+        ],
+        "category": "Other plastic wrapper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0245",
+    "taco_id": 245,
+    "path": "data/raw/taco-v07/taco-0245.jpg",
+    "sha256": "48c23f4d38d1d83c85b637e10dcccf1c62ef0359dd07458ddbd5304e8844169d",
+    "original_sha256": "af97bf2a6dffae3bf16199b21028420cbda95fd361289fe9f695a654d90160a6",
+    "archive_crc32": 3678531632,
+    "dhash": "d0c0d4ca31c61d16",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000044.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/21/hRO6WHRuEMELQzlhzLeZImTlpC1QUqLvSZhxmpkc.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.45753205128205127,
+        0.4503605769230769,
+        0.44198717948717947,
+        0.14783653846153846
+      ],
+      [
+        0.34294871794871795,
+        0.540625,
+        0.10512820512820513,
+        0.06346153846153846
+      ],
+      [
+        0.48701923076923076,
+        0.4768028846153846,
+        0.12724358974358974,
+        0.062259615384615385
+      ]
+    ],
+    "original_labels": [
+      "Garbage bag",
+      "Plastic film",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 787,
+        "bbox": [
+          738.0,
+          1566.0,
+          1379.0,
+          615.0
+        ],
+        "category": "Garbage bag"
+      },
+      {
+        "id": 788,
+        "bbox": [
+          906.0,
+          2117.0,
+          328.0,
+          264.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 789,
+        "bbox": [
+          1321.0,
+          1854.0,
+          397.0,
+          259.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0246",
+    "taco_id": 246,
+    "path": "data/raw/taco-v07/taco-0246.jpg",
+    "sha256": "f2a2643efd6d6ff54ae37c1da01827b24f1d5612b657a92fd5c3df1280086519",
+    "original_sha256": "b94e190a36f1677dc4c418217d4e15e6aee42ea15083a92749faeb8174e1460e",
+    "archive_crc32": 2869403932,
+    "dhash": "01b7f8b0240f4538",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000045.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/21/pc0xezfNnlYkVQZHIPS0PON4TW8cOynqoj1vl34k.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4754807692307692,
+        0.4831730769230769,
+        0.11634615384615385,
+        0.09903846153846153
+      ]
+    ],
+    "original_labels": [
+      "Other plastic wrapper"
+    ],
+    "annotations": [
+      {
+        "id": 790,
+        "bbox": [
+          1302.0,
+          1804.0,
+          363.0,
+          412.0
+        ],
+        "category": "Other plastic wrapper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0247",
+    "taco_id": 247,
+    "path": "data/raw/taco-v07/taco-0247.jpg",
+    "sha256": "a149193ce3ee4ecdcecfca959741a8ff92751d1272a9afd083ad6147d60f7ad3",
+    "original_sha256": "f9208db187e0e78fe206be29b029cafed6c424eb745eb44781c2094b8e4dc48e",
+    "archive_crc32": 2937184583,
+    "dhash": "b43080ac3c605431",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3456,
+      4608
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000046.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/06/15/U6ozxGi9P6rziGr9wXJ4m0IeWbCsNlfNGYa6g1hq.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.1535011574074074,
+        0.732421875,
+        0.14322916666666666,
+        0.10633680555555555
+      ],
+      [
+        0.5366030092592593,
+        0.2823350694444444,
+        0.0685763888888889,
+        0.07508680555555555
+      ]
+    ],
+    "original_labels": [
+      "Paper cup",
+      "Other plastic wrapper"
+    ],
+    "annotations": [
+      {
+        "id": 791,
+        "bbox": [
+          283.0,
+          3130.0,
+          495.0,
+          490.0
+        ],
+        "category": "Paper cup"
+      },
+      {
+        "id": 792,
+        "bbox": [
+          1736.0,
+          1128.0,
+          237.0,
+          346.0
+        ],
+        "category": "Other plastic wrapper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0248",
+    "taco_id": 248,
+    "path": "data/raw/taco-v07/taco-0248.jpg",
+    "sha256": "affbf3c1b86192d5df88c71dd695b3e1e51122aa86c8ce0ef95da478447841be",
+    "original_sha256": "08faf28295dad074bfc5de813fc83ba960e4f95e7b33b65599b39f17bb53a7b5",
+    "archive_crc32": 458901318,
+    "dhash": "3325e4b88d8b8bf3",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000047.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/82KEoSsnK771HDACsz58KrO4EltCFMaXOcVfVGeY.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.45902777777777776,
+        0.5859375,
+        0.16874999999999998,
+        0.18437499999999996
+      ]
+    ],
+    "original_labels": [
+      "Other plastic wrapper"
+    ],
+    "annotations": [
+      {
+        "id": 793,
+        "bbox": [
+          1132.95,
+          1990.8,
+          510.29999999999995,
+          743.3999999999999
+        ],
+        "category": "Other plastic wrapper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0254",
+    "taco_id": 254,
+    "path": "data/raw/taco-v07/taco-0254.jpg",
+    "sha256": "f5e7990ff661ed0935b9546b5f1d77763c60946e912c999ca40e8aca4e8d2246",
+    "original_sha256": "58791f1355974229c92528d083cb5c08738b4530f04d6e48996cfe9c69619a22",
+    "archive_crc32": 1895439192,
+    "dhash": "1161482819307151",
+    "split": "validation",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      4032,
+      3024
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000053.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/PGIfCEn9zpZbmmYq9Awjh1Dwiw6tpQSI6R5dnqKw.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4001736111111111,
+        0.4482473544973545,
+        0.3583829365079365,
+        0.4348544973544973
+      ],
+      [
+        0.3236607142857143,
+        0.5049603174603174,
+        0.20535714285714285,
+        0.3220899470899471
+      ]
+    ],
+    "original_labels": [
+      "Other carton",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 801,
+        "bbox": [
+          891.0,
+          698.0,
+          1445.0,
+          1315.0
+        ],
+        "category": "Other carton"
+      },
+      {
+        "id": 802,
+        "bbox": [
+          891.0,
+          1040.0,
+          828.0,
+          974.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0256",
+    "taco_id": 256,
+    "path": "data/raw/taco-v07/taco-0256.jpg",
+    "sha256": "410b0aeb86e54fb0fca09d2ec4c4d567e816be461428965869dda901ff276efc",
+    "original_sha256": "03b401bbed5375d643e4adf4d5d6f04e380c99d05aa278aa35c6c691dc2c4448",
+    "archive_crc32": 783421417,
+    "dhash": "8984a410190819d8",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000055.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/IXw9vStOuoi6WrFp032YvqTUk9recvYVcbmWM2Vo.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.46924603174603174,
+        0.6233878968253969,
+        0.32605820105820105,
+        0.15550595238095238
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 805,
+        "bbox": [
+          926.0,
+          2200.0,
+          986.0,
+          627.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0257",
+    "taco_id": 257,
+    "path": "data/raw/taco-v07/taco-0257.jpg",
+    "sha256": "8be3c59e79b5fa6964b34671a3f2838e406382dbe4c1a41b0aabefa7b8395f55",
+    "original_sha256": "50b5262c454d9bbfe4b25b07bbefb6b59d49e9984b8bc49abe398bf2b99f5aed",
+    "archive_crc32": 3486985076,
+    "dhash": "66a033302c784dc4",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000056.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/xnkOAz5AqHS3e7PJJWzsXozT20FgPeoW1BCozaO5.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5026455026455027,
+        0.5735367063492064,
+        0.39814814814814814,
+        0.21006944444444445
+      ]
+    ],
+    "original_labels": [
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 806,
+        "bbox": [
+          918.0,
+          1889.0,
+          1204.0,
+          847.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0259",
+    "taco_id": 259,
+    "path": "data/raw/taco-v07/taco-0259.jpg",
+    "sha256": "8e2962b1b59dfba186f9d267d4a620c968cf2c0b28644bd4f90c060aef06ab73",
+    "original_sha256": "84badbaa330759c01593f3dad6e24ecf4ebde5f881efd5c9d49c1fae85acaadd",
+    "archive_crc32": 2123490436,
+    "dhash": "7e767d75cfce999b",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000058.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/3Vm45FkFRpwPRqMZNSpfj2byrJLTnM1m7DrlGoEu.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4938586474867725,
+        0.6330723214285714,
+        0.30901994047619047,
+        0.20858134920634921
+      ]
+    ],
+    "original_labels": [
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 808,
+        "bbox": [
+          1026.1904,
+          2132.0476,
+          934.4763,
+          841.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0261",
+    "taco_id": 261,
+    "path": "data/raw/taco-v07/taco-0261.jpg",
+    "sha256": "74f38ffd359c9bd3e9f9b2d7204c51feb0647868f9e8976da27a612a58619bb5",
+    "original_sha256": "1cbde11f1f63dae738d13f1683115dab5d407a5c9dd0849fcfe7f6e9d0f97a71",
+    "archive_crc32": 1611661964,
+    "dhash": "8f9b362ee6c6ddf8",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000060.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/eRWseaOmaQxv5FkPSi6vBRKhDytuRC1oYSWlzHB1.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5226521164021164,
+        0.7340029761904762,
+        0.40244708994708994,
+        0.3167162698412698
+      ],
+      [
+        0.597718253968254,
+        0.26574900793650796,
+        0.03670634920634921,
+        0.01711309523809524
+      ]
+    ],
+    "original_labels": [
+      "Polypropylene bag",
+      "Other plastic"
+    ],
+    "annotations": [
+      {
+        "id": 812,
+        "bbox": [
+          972.0,
+          2321.0,
+          1217.0,
+          1277.0
+        ],
+        "category": "Polypropylene bag"
+      },
+      {
+        "id": 813,
+        "bbox": [
+          1752.0,
+          1037.0,
+          111.0,
+          69.0
+        ],
+        "category": "Other plastic"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0263",
+    "taco_id": 263,
+    "path": "data/raw/taco-v07/taco-0263.jpg",
+    "sha256": "da97d3fd86373deaee9d5c11c80a9247f8ad0994999e94b9f6bb152b4088ac6d",
+    "original_sha256": "85dd171ff32037726dd532c7d6041c4fdf9ccca84e652709c29a28a6a949ba98",
+    "archive_crc32": 190683738,
+    "dhash": "74f0221019dbc60c",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000062.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/UrlJiDv1qEqWy2TCg9scXKzx08qYpaZ4tVPr0fjz.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.435515873015873,
+        0.5541914682539683,
+        0.23015873015873015,
+        0.1609623015873016
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 816,
+        "bbox": [
+          969.0,
+          1910.0,
+          696.0,
+          649.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0268",
+    "taco_id": 268,
+    "path": "data/raw/taco-v07/taco-0268.jpg",
+    "sha256": "387a7909a953b2d356b08c9a6e09ffe5ff1b08df6efa36d4d0ac5f8361b7c868",
+    "original_sha256": "1e3981ebfae4d442eba60e9ff98a248b1666068c2bfacf9b9339b30e3a12438e",
+    "archive_crc32": 969101257,
+    "dhash": "bfcfe9bc8ac9cc5c",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000067.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/DPDoVKAZBXm0HjTTZ5T1rSvaBQH6VOpZXmVqH2u6.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4675925925925926,
+        0.5936259920634921,
+        0.16666666666666666,
+        0.20014880952380953
+      ],
+      [
+        0.47453703703703703,
+        0.4868551587301587,
+        0.028439153439153438,
+        0.026785714285714284
+      ]
+    ],
+    "original_labels": [
+      "Drink carton",
+      "Plastic straw"
+    ],
+    "annotations": [
+      {
+        "id": 825,
+        "bbox": [
+          1162.0,
+          1990.0,
+          504.0,
+          807.0
+        ],
+        "category": "Drink carton"
+      },
+      {
+        "id": 826,
+        "bbox": [
+          1392.0,
+          1909.0,
+          86.0,
+          108.0
+        ],
+        "category": "Plastic straw"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0269",
+    "taco_id": 269,
+    "path": "data/raw/taco-v07/taco-0269.jpg",
+    "sha256": "5d9b5d12f69a6b05af9078f0f2ad18b5e833478b24141ca83d50f13614e1c148",
+    "original_sha256": "f044b9eee7215a6514cd254785e1039feca683f13eb4ec49273030b2491403d3",
+    "archive_crc32": 3918342350,
+    "dhash": "f4fdce960e85bcb4",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000068.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/6jMcLZEmw1SpFB29sTZLRc7HGSM61L3MroiMGqOp.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4681201058201058,
+        0.4922997023809524,
+        0.5579648148148147,
+        0.38144841269841273
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 827,
+        "bbox": [
+          571.9524,
+          1215.9524,
+          1687.2855999999997,
+          1538.0000000000002
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0270",
+    "taco_id": 270,
+    "path": "data/raw/taco-v07/taco-0270.jpg",
+    "sha256": "88f51459197be8afa99ae78aa77d8a8a018b3957f9531b721155c397b4ac407d",
+    "original_sha256": "20757c0102afc694d4f0fd7e156683d7124c9067c2a43f6a1f69f9730f394585",
+    "archive_crc32": 599637437,
+    "dhash": "e53018c8859636b6",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000069.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/2r2u7uAZpRKOk4RPsXaXbEg9JJawGZtSTef2Gj04.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.33035714285714285,
+        0.3342013888888889,
+        0.30886243386243384,
+        0.11284722222222222
+      ],
+      [
+        0.6102843915343915,
+        0.6254960317460317,
+        0.2820767195767196,
+        0.16021825396825398
+      ]
+    ],
+    "original_labels": [
+      "Plastic film",
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 828,
+        "bbox": [
+          532.0,
+          1120.0,
+          934.0,
+          455.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 829,
+        "bbox": [
+          1419.0,
+          2199.0,
+          853.0,
+          646.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0272",
+    "taco_id": 272,
+    "path": "data/raw/taco-v07/taco-0272.jpg",
+    "sha256": "149da4ddb54f363355e6fdcbdef009a2d55ce28f6dfedc7885d2085b5b16370b",
+    "original_sha256": "17e64979f88ca3ceeb0862c1cf4897670016171a1f724978739cae5c959170ad",
+    "archive_crc32": 3301114551,
+    "dhash": "3e3633373c208809",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000071.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/qBahtIWmqEcp41ZUGtQUPDUBgS6FBr2u71pv8SJ4.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.6526124338624338,
+        0.3923611111111111,
+        0.22916666666666666,
+        0.2524801587301587
+      ],
+      [
+        0.4408068783068783,
+        0.39632936507936506,
+        0.0205026455026455,
+        0.01984126984126984
+      ],
+      [
+        0.9313822751322751,
+        0.09176587301587301,
+        0.09887566137566138,
+        0.04861111111111111
+      ],
+      [
+        0.6162367724867724,
+        0.7667410714285714,
+        0.144510582010582,
+        0.13913690476190477
+      ],
+      [
+        0.2144510582010582,
+        0.43539186507936506,
+        0.22056878306878308,
+        0.08556547619047619
+      ],
+      [
+        0.09126984126984126,
+        0.4547371031746032,
+        0.03968253968253968,
+        0.0220734126984127
+      ],
+      [
+        0.2113095238095238,
+        0.4660218253968254,
+        0.028439153439153438,
+        0.02132936507936508
+      ]
+    ],
+    "original_labels": [
+      "Plastic film",
+      "Plastic film",
+      "Styrofoam piece",
+      "Plastic film",
+      "Plastic film",
+      "Plastic film",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 832,
+        "bbox": [
+          1627.0,
+          1073.0,
+          693.0,
+          1018.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 833,
+        "bbox": [
+          1302.0,
+          1558.0,
+          62.0,
+          80.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 834,
+        "bbox": [
+          2667.0,
+          272.0,
+          299.0,
+          196.0
+        ],
+        "category": "Styrofoam piece"
+      },
+      {
+        "id": 835,
+        "bbox": [
+          1645.0,
+          2811.0,
+          437.0,
+          561.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 836,
+        "bbox": [
+          315.0,
+          1583.0,
+          667.0,
+          345.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 837,
+        "bbox": [
+          216.0,
+          1789.0,
+          120.0,
+          89.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 838,
+        "bbox": [
+          596.0,
+          1836.0,
+          86.0,
+          86.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0276",
+    "taco_id": 276,
+    "path": "data/raw/taco-v07/taco-0276.jpg",
+    "sha256": "acd63c2baafafb061c05ec6831a3d6d76418dcbfb4f2848f9a1ed18d2e649a0d",
+    "original_sha256": "e8ece86daf3dae0678c5cf12edf0a8506d4dbee681397a8e3076ebf9051ed698",
+    "archive_crc32": 1087671637,
+    "dhash": "67f5de9a4d0d7e9b",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000075.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/XC4teyYg9zr5jq505ivm8Z9JmIZp5zLoYOe9ePtW.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.3740079365079365,
+        0.41294642857142855,
+        0.2671957671957672,
+        0.12251984126984126
+      ],
+      [
+        0.5595238095238095,
+        0.48053075396825395,
+        0.19246031746031747,
+        0.12475198412698413
+      ],
+      [
+        0.47867063492063494,
+        0.5302579365079365,
+        0.02943121693121693,
+        0.025297619047619048
+      ],
+      [
+        0.71875,
+        0.9099702380952381,
+        0.11276455026455026,
+        0.13343253968253968
+      ],
+      [
+        0.7893518518518519,
+        0.5288938492063492,
+        0.0205026455026455,
+        0.012648809523809524
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece",
+      "Clear plastic bottle",
+      "Plastic bottle cap",
+      "Plastic film",
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 851,
+        "bbox": [
+          727.0,
+          1418.0,
+          808.0,
+          494.0
+        ],
+        "category": "Styrofoam piece"
+      },
+      {
+        "id": 852,
+        "bbox": [
+          1401.0,
+          1686.0,
+          582.0,
+          503.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 853,
+        "bbox": [
+          1403.0,
+          2087.0,
+          89.0,
+          102.0
+        ],
+        "category": "Plastic bottle cap"
+      },
+      {
+        "id": 854,
+        "bbox": [
+          2003.0,
+          3400.0,
+          341.0,
+          538.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 855,
+        "bbox": [
+          2356.0,
+          2107.0,
+          62.0,
+          51.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0277",
+    "taco_id": 277,
+    "path": "data/raw/taco-v07/taco-0277.jpg",
+    "sha256": "43285c653571fbeda9885387ef0f774b176cffc90107574c02df034f904be7c6",
+    "original_sha256": "198a8f211f9b1df6a85d770487f3c8d6be7cd624d929f1d329f9125735ef4219",
+    "archive_crc32": 641621390,
+    "dhash": "a6b4d7631d3de2cc",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000076.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/p8nQudgTH5RWCp8sMlaTsWhAlegTTzuQBT1dSUTJ.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4656084656084656,
+        0.5531994047619048,
+        0.6190476190476191,
+        0.2690972222222222
+      ],
+      [
+        0.6924603174603174,
+        0.3943452380952381,
+        0.11044973544973545,
+        0.06398809523809523
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece",
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 856,
+        "bbox": [
+          472.0,
+          1688.0,
+          1872.0,
+          1085.0
+        ],
+        "category": "Styrofoam piece"
+      },
+      {
+        "id": 857,
+        "bbox": [
+          1927.0,
+          1461.0,
+          334.0,
+          258.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0280",
+    "taco_id": 280,
+    "path": "data/raw/taco-v07/taco-0280.jpg",
+    "sha256": "943fd0419214f5829c33b6941ebc25715348c16f3ac83989878e2eea5cf3f30f",
+    "original_sha256": "c29908f72a331147fbff9dba6d1606249a0d2d6ff59aa01a1b3e14ff2e4a8b98",
+    "archive_crc32": 1792480611,
+    "dhash": "ae2679dcf4e9d96b",
+    "split": "validation",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      4032,
+      3024
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000079.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/L0zYSVPU59wUM3KamHCfDYyYDIkIFk8MlZorPnzm.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.13702876984126985,
+        0.6727843915343915,
+        0.16939484126984128,
+        0.1173941798941799
+      ],
+      [
+        0.6775793650793651,
+        0.46296296296296297,
+        0.597718253968254,
+        0.4470899470899471
+      ],
+      [
+        0.2926587301587302,
+        0.591765873015873,
+        0.5833333333333334,
+        0.15773809523809523
+      ],
+      [
+        0.7410714285714286,
+        0.7620701058201058,
+        0.08333333333333333,
+        0.07903439153439154
+      ],
+      [
+        0.9794146825396826,
+        0.5282738095238095,
+        0.040674603174603176,
+        0.054563492063492064
+      ],
+      [
+        0.6953125,
+        0.23743386243386244,
+        0.12078373015873016,
+        0.09457671957671958
+      ],
+      [
+        0.7842261904761905,
+        0.1691468253968254,
+        0.13095238095238096,
+        0.19477513227513227
+      ],
+      [
+        0.23772321428571427,
+        0.1744378306878307,
+        0.045882936507936505,
+        0.07506613756613757
+      ],
+      [
+        0.10317460317460317,
+        0.7572751322751323,
+        0.026785714285714284,
+        0.031084656084656083
+      ]
+    ],
+    "original_labels": [
+      "Plastic film",
+      "Other plastic",
+      "Other plastic",
+      "Other plastic",
+      "Other plastic",
+      "Other plastic",
+      "Other plastic",
+      "Other plastic",
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 861,
+        "bbox": [
+          211.0,
+          1857.0,
+          683.0,
+          355.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 862,
+        "bbox": [
+          1527.0,
+          724.0,
+          2410.0,
+          1352.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 863,
+        "bbox": [
+          4.0,
+          1551.0,
+          2352.0,
+          477.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 864,
+        "bbox": [
+          2820.0,
+          2185.0,
+          336.0,
+          239.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 865,
+        "bbox": [
+          3867.0,
+          1515.0,
+          164.0,
+          165.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 866,
+        "bbox": [
+          2560.0,
+          575.0,
+          487.0,
+          286.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 867,
+        "bbox": [
+          2898.0,
+          217.0,
+          528.0,
+          589.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 868,
+        "bbox": [
+          866.0,
+          414.0,
+          185.0,
+          227.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 869,
+        "bbox": [
+          362.0,
+          2243.0,
+          108.0,
+          94.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0281",
+    "taco_id": 281,
+    "path": "data/raw/taco-v07/taco-0281.jpg",
+    "sha256": "1d2e823f049f0d0e72897312ff9c826bfc2a99c7b9b845a2c7da2d71f45cbcb5",
+    "original_sha256": "4aa988de27da74aa0df4e98577fb7102dba11fca6cad8e7dc4635a559cfbc706",
+    "archive_crc32": 2968820416,
+    "dhash": "36e6c432a999650d",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000080.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/K5aE0f67u9cHKjLUPG3mg7Dys5BMM4yMluF3Bzt2.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.24272486772486773,
+        0.4495287698412698,
+        0.1712962962962963,
+        0.10342261904761904
+      ],
+      [
+        0.5443121693121693,
+        0.5787450396825397,
+        0.45105820105820105,
+        0.30481150793650796
+      ]
+    ],
+    "original_labels": [
+      "Plastic film",
+      "Garbage bag"
+    ],
+    "annotations": [
+      {
+        "id": 870,
+        "bbox": [
+          475.0,
+          1604.0,
+          518.0,
+          417.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 871,
+        "bbox": [
+          964.0,
+          1719.0,
+          1364.0,
+          1229.0
+        ],
+        "category": "Garbage bag"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0282",
+    "taco_id": 282,
+    "path": "data/raw/taco-v07/taco-0282.jpg",
+    "sha256": "4293810e505074019d77820fe5bd7a8ad2961763a325f210c9b530fb6a73abb5",
+    "original_sha256": "917aff7346828a1cae5af38e46dbe4cde961450f2f76b7eb7c25b756a5028759",
+    "archive_crc32": 461043084,
+    "dhash": "79dba3650713cece",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000081.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/3bo67pwhfOm9Z4IGxqwKClmJ9Gu9P0go4Wk8F4Zx.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.40922619047619047,
+        0.5646081349206349,
+        0.48313492063492064,
+        0.15997023809523808
+      ]
+    ],
+    "original_labels": [
+      "Styrofoam piece"
+    ],
+    "annotations": [
+      {
+        "id": 872,
+        "bbox": [
+          507.0,
+          1954.0,
+          1461.0,
+          645.0
+        ],
+        "category": "Styrofoam piece"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0285",
+    "taco_id": 285,
+    "path": "data/raw/taco-v07/taco-0285.jpg",
+    "sha256": "92bd31449f469d03f4931f1eb07b03d59792e7a7191c65755e358d3e3e2e4832",
+    "original_sha256": "b1f30ce7c6c3e114d4ec8c3fce794afc941da9b60ec8fd2d9d95a7c48f225723",
+    "archive_crc32": 697620727,
+    "dhash": "870d1b5f3be76b01",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000084.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/18/Ucab2QufozqOMLmyUebCOxSLd7okOACJVEiBaxM3.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5011574074074074,
+        0.6129712301587301,
+        0.6286375661375662,
+        0.2562003968253968
+      ]
+    ],
+    "original_labels": [
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 877,
+        "bbox": [
+          565.0,
+          1955.0,
+          1901.0,
+          1033.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0287",
+    "taco_id": 287,
+    "path": "data/raw/taco-v07/taco-0287.jpg",
+    "sha256": "a48503a237aae5984d128d0f3098e450863ad13f9a32ebfc671b9971671914ce",
+    "original_sha256": "08c76181ce587fee202a1a6f78e8a13f103b3bfbc9e1ad02f9bb2d2815f40c15",
+    "archive_crc32": 1137011446,
+    "dhash": "d6f34200098a4ba1",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000086.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/19/IjdS6QlmUds9lvdwOxsFkkHyWequ9GTTS0dqRFvU.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4661044973544973,
+        0.7115575396825397,
+        0.2490079365079365,
+        0.17956349206349206
+      ]
+    ],
+    "original_labels": [
+      "Other plastic wrapper"
+    ],
+    "annotations": [
+      {
+        "id": 879,
+        "bbox": [
+          1033.0,
+          2507.0,
+          753.0,
+          724.0
+        ],
+        "category": "Other plastic wrapper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0288",
+    "taco_id": 288,
+    "path": "data/raw/taco-v07/taco-0288.jpg",
+    "sha256": "3988523cfd0bd3300623be22b704f8f0ba583644b2ca98e5983623613b2db138",
+    "original_sha256": "7c617ae772398b2938bb58bdebd09ca5ccfc481c5469dd0079c5a08ad1050ccc",
+    "archive_crc32": 2912660677,
+    "dhash": "9279781e1d7c5038",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000087.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/19/K8PTb07EqHgO5uhNtgrttOHmwWcFwBs2nE7neFT1.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4323743386243386,
+        0.5260416666666666,
+        0.4930555555555556,
+        0.18303571428571427
+      ]
+    ],
+    "original_labels": [
+      "Plastic film"
+    ],
+    "annotations": [
+      {
+        "id": 880,
+        "bbox": [
+          562.0,
+          1752.0,
+          1491.0,
+          738.0
+        ],
+        "category": "Plastic film"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0291",
+    "taco_id": 291,
+    "path": "data/raw/taco-v07/taco-0291.jpg",
+    "sha256": "fff3615567f6413f28d916f04886ac9bf497242e5739318974c7ebc358ed2984",
+    "original_sha256": "2c45511fee9ee6bf3e6b14329e5f41b9fe05d99e16136db9c6f433675a8b9c0e",
+    "archive_crc32": 517829530,
+    "dhash": "8e1f1f4f0667657f",
+    "split": "validation",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      3264,
+      2448
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000090.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/23/B9tCqeVD5IoBNUgQeZttm8GtVOUae5ve6SUlCMjw.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.60390625,
+        0.5114583333333333,
+        0.44218750000000007,
+        0.26875
+      ],
+      [
+        0.10508578431372549,
+        0.40645424836601307,
+        0.0392156862745098,
+        0.08006535947712418
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 885,
+        "bbox": [
+          1249.5,
+          923.1,
+          1443.3000000000002,
+          657.9
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 886,
+        "bbox": [
+          279.0,
+          897.0,
+          128.0,
+          196.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0292",
+    "taco_id": 292,
+    "path": "data/raw/taco-v07/taco-0292.jpg",
+    "sha256": "5f9e545cb7751bda6f30debdc9b8c755df29015de7afcdb646d01ca0d4ffd0e7",
+    "original_sha256": "98a35224fb0eec0b239315b6627fe21f75543989bc0138ddee76dcc1e41b7e66",
+    "archive_crc32": 1053222354,
+    "dhash": "d49492d092c2d191",
+    "split": "validation",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      2448,
+      3264
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000091.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/05/28/JKgs4pofWaiAwhhoIcGpQ5tOard7jT7ZyHpirncX.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5316584967320261,
+        0.5055147058823529,
+        0.07393790849673203,
+        0.029411764705882353
+      ]
+    ],
+    "original_labels": [
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 887,
+        "bbox": [
+          1211.0,
+          1602.0,
+          181.0,
+          96.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0293",
+    "taco_id": 293,
+    "path": "data/raw/taco-v07/taco-0293.jpg",
+    "sha256": "7ee3170a3a2fdd1478a92630dc2cb740e908e50615a401410363a108b1ebb0bd",
+    "original_sha256": "628c5fb858ab5dfbefb93401c26017aa10d2666e34098cf71e984e7a21cefd50",
+    "archive_crc32": 2925144271,
+    "dhash": "e149470e8c386478",
+    "split": "validation",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      3264,
+      2448
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000092.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/09/v6V23VNwEsZuefipNnRqPAdUD9neBRg3rELh7BNy.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5215992647058824,
+        0.46854575163398693,
+        0.10692401960784313,
+        0.1576797385620915
+      ],
+      [
+        0.15916053921568626,
+        0.7673611111111112,
+        0.05116421568627451,
+        0.05106209150326797
+      ]
+    ],
+    "original_labels": [
+      "Other plastic wrapper",
+      "Other plastic wrapper"
+    ],
+    "annotations": [
+      {
+        "id": 888,
+        "bbox": [
+          1528.0,
+          954.0,
+          349.0,
+          386.0
+        ],
+        "category": "Other plastic wrapper"
+      },
+      {
+        "id": 889,
+        "bbox": [
+          436.0,
+          1816.0,
+          167.0,
+          125.0
+        ],
+        "category": "Other plastic wrapper"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0296",
+    "taco_id": 296,
+    "path": "data/raw/taco-v07/taco-0296.jpg",
+    "sha256": "e2c089d02fbf157732f1303a7e915e214b2fe5fa5503f0283b4fbb649017327a",
+    "original_sha256": "36ac46a4f8b16688ab9dec22adbc80e82bb2a39f84848febb34da02f780c1b87",
+    "archive_crc32": 4279713426,
+    "dhash": "fec3cb46d68b1f0d",
+    "split": "validation",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2988,
+      5312
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000095.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/03/31/BJDDNwumFrPp7fI43zddmdEzSHlM7rNafD00Wx2Z.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.6171352074966533,
+        0.5322853915662651,
+        0.12315930388219545,
+        0.18279367469879518
+      ],
+      [
+        0.6318607764390897,
+        0.6172816265060241,
+        0.05622489959839357,
+        0.012424698795180723
+      ],
+      [
+        0.8994310575635877,
+        0.6746046686746988,
+        0.023092369477911646,
+        0.029555722891566265
+      ],
+      [
+        0.7520080321285141,
+        0.5287085843373494,
+        0.10508701472556894,
+        0.0182605421686747
+      ],
+      [
+        0.9268741633199464,
+        0.5208960843373494,
+        0.05254350736278447,
+        0.03953313253012048
+      ],
+      [
+        0.6974564926372155,
+        0.3525978915662651,
+        0.049531459170013385,
+        0.046686746987951805
+      ],
+      [
+        0.9049531459170014,
+        0.5001882530120482,
+        0.03681392235609103,
+        0.013177710843373495
+      ],
+      [
+        0.7846385542168675,
+        0.46714984939759036,
+        0.03112449799196787,
+        0.010353915662650603
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle",
+      "Plastic bottle cap",
+      "Other plastic",
+      "Plastic film",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter",
+      "Unlabeled litter"
+    ],
+    "annotations": [
+      {
+        "id": 893,
+        "bbox": [
+          1660.0,
+          2342.0,
+          368.0,
+          971.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 894,
+        "bbox": [
+          1804.0,
+          3246.0,
+          168.0,
+          66.0
+        ],
+        "category": "Plastic bottle cap"
+      },
+      {
+        "id": 895,
+        "bbox": [
+          2653.0,
+          3505.0,
+          69.0,
+          157.0
+        ],
+        "category": "Other plastic"
+      },
+      {
+        "id": 896,
+        "bbox": [
+          2090.0,
+          2760.0,
+          314.0,
+          97.0
+        ],
+        "category": "Plastic film"
+      },
+      {
+        "id": 897,
+        "bbox": [
+          2691.0,
+          2662.0,
+          157.0,
+          210.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 898,
+        "bbox": [
+          2010.0,
+          1749.0,
+          148.0,
+          248.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 899,
+        "bbox": [
+          2649.0,
+          2622.0,
+          110.0,
+          70.0
+        ],
+        "category": "Unlabeled litter"
+      },
+      {
+        "id": 900,
+        "bbox": [
+          2298.0,
+          2454.0,
+          93.0,
+          55.0
+        ],
+        "category": "Unlabeled litter"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0297",
+    "taco_id": 297,
+    "path": "data/raw/taco-v07/taco-0297.jpg",
+    "sha256": "ad0018503ac92635f4b3c4caff27ed02b681d3b2e46db65a7f370436b4bf88b7",
+    "original_sha256": "e65549aa4f61736b6c384071f7dde7640c54d817fdcfddf3b3db4ec54ae8f44b",
+    "archive_crc32": 547618371,
+    "dhash": "108f3d6d4fdd8511",
+    "split": "validation",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2988,
+      5312
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000096.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/03/31/mCew0F6gRCgyUi8aMrwC36dStu7shs1VHzLSjADa.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5643765729585006,
+        0.5676411144578314,
+        0.11947791164658635,
+        0.07172439759036145
+      ],
+      [
+        0.5018406961178046,
+        0.5428948042168674,
+        0.036479250334672024,
+        0.004894578313253012
+      ],
+      [
+        0.32770763052208834,
+        0.6299618222891566,
+        0.03547523427041499,
+        0.009600903614457831
+      ],
+      [
+        0.5341684069611781,
+        0.6610997740963855,
+        0.02610441767068273,
+        0.012801204819277108
+      ]
+    ],
+    "original_labels": [
+      "Drink carton",
+      "Plastic straw",
+      "Cigarette",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 901,
+        "bbox": [
+          1507.8572,
+          2824.8096,
+          357.0,
+          381.0
+        ],
+        "category": "Drink carton"
+      },
+      {
+        "id": 902,
+        "bbox": [
+          1445.0,
+          2870.8572,
+          109.0,
+          26.0
+        ],
+        "category": "Plastic straw"
+      },
+      {
+        "id": 903,
+        "bbox": [
+          926.1904,
+          3320.8572,
+          106.0,
+          51.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 904,
+        "bbox": [
+          1557.0952,
+          3477.762,
+          78.0,
+          68.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  },
+  {
+    "id": "taco-0300",
+    "taco_id": 300,
+    "path": "data/raw/taco-v07/taco-0300.jpg",
+    "sha256": "80ab269d642362ec27e9bc4104af35a6aefe97aa1515ccdfaec220e50b40c089",
+    "original_sha256": "101ba5f0d38e186ab97479686431ea54c3e054745b70158293c6c0627fee7f62",
+    "archive_crc32": 3814592777,
+    "dhash": "18e75b06cc182129",
+    "split": "validation",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2988,
+      5312
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_11/000099.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/01/y5A3l6LUzhWEkRac2NfxIYAlhFnA8HSzDl8nyqsZ.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5605756358768407,
+        0.5067771084337349,
+        0.1285140562248996,
+        0.08170180722891567
+      ],
+      [
+        0.5090361445783133,
+        0.5405685240963856,
+        0.024765729585006693,
+        0.013742469879518071
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle",
+      "Plastic bottle cap"
+    ],
+    "annotations": [
+      {
+        "id": 919,
+        "bbox": [
+          1483.0,
+          2475.0,
+          384.0,
+          434.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 920,
+        "bbox": [
+          1484.0,
+          2835.0,
+          74.0,
+          73.0
+        ],
+        "category": "Plastic bottle cap"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only"
+  }
+]

@@ -1,0 +1,1735 @@
+[
+  {
+    "id": "taco-0304",
+    "taco_id": 304,
+    "path": "data/raw/taco-v07/taco-0304.jpg",
+    "sha256": "15f164b52a8160896ff24d9be57f3810d3a61039b31a9eeb4f68ac36e5c66f84",
+    "original_sha256": "bc64e0adf850e814e31585b119900b7c1db4707c0f199bde63f914607d6cd3a6",
+    "archive_crc32": 2180188661,
+    "dhash": "e1e107279d1bc0c9",
+    "split": "test",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2988,
+      5312
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_12/000003.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/07/PgdjCbWyH2fCALoatEDAU9InfAjilf1r6OUuIvZ4.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.44745649263721554,
+        0.6189759036144579,
+        0.3654618473895582,
+        0.10730421686746988
+      ]
+    ],
+    "original_labels": [
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 930,
+        "bbox": [
+          791.0,
+          3003.0,
+          1092.0,
+          570.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "other"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0309",
+    "taco_id": 309,
+    "path": "data/raw/taco-v07/taco-0309.jpg",
+    "sha256": "3507f634bb909110ffc4160d9cbad2327abef448521e13aba3ea5ddceedf85f8",
+    "original_sha256": "5eef73b831db338471df701b8f4892097c5b6c1093f3d2c4240fde82317a4771",
+    "archive_crc32": 368446444,
+    "dhash": "2564cecaa22c068a",
+    "split": "test",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2988,
+      5312
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_12/000008.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/08/jC7mIEj0Q1TEXNHCXJahUqhIEqPjGwBpTmN5BsRK.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5684404283801874,
+        0.4432417168674699,
+        0.46285140562248994,
+        0.43091114457831325
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 937,
+        "bbox": [
+          1007.0,
+          1210.0,
+          1383.0,
+          2289.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0313",
+    "taco_id": 313,
+    "path": "data/raw/taco-v07/taco-0313.jpg",
+    "sha256": "8179c8d557e8fb963c8bf2f61e9a96c9feffc14d6c41a754cd2f5a56b9194783",
+    "original_sha256": "a7ff386f1080c8533f81a037aaf005e76c7069ed0e106abcdb85dbce7d09c8d6",
+    "archive_crc32": 1621148554,
+    "dhash": "e191191889db9f3f",
+    "split": "test",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2988,
+      5312
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_12/000012.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/08/vQjykKRIF1U4SCZJsQVCDS1DqNHIUTFCfO5yXADu.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4421017402945114,
+        0.41782756024096385,
+        0.42771084337349397,
+        0.39213102409638556
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle"
+    ],
+    "annotations": [
+      {
+        "id": 947,
+        "bbox": [
+          682.0,
+          1178.0,
+          1278.0,
+          2083.0
+        ],
+        "category": "Clear plastic bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0319",
+    "taco_id": 319,
+    "path": "data/raw/taco-v07/taco-0319.jpg",
+    "sha256": "9a8c20963762ecd04626fa056ba4dea780042d6a5f5abf544a41668210520889",
+    "original_sha256": "fb5beb2b60e8b8996dbeb25c10f5a5584564a558ce1b06a63e1af0ba5e264c73",
+    "archive_crc32": 3968698927,
+    "dhash": "170d331f1f0e4f47",
+    "split": "test",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2988,
+      5312
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_12/000018.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/04/13/656GdKw6pywKLWJTHhC7Jlk72f5ZH55u49M94NDA.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5048527443105756,
+        0.4581137048192771,
+        0.24263721552878179,
+        0.09770331325301204
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 958,
+        "bbox": [
+          1146.0,
+          2174.0,
+          725.0,
+          519.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0345",
+    "taco_id": 345,
+    "path": "data/raw/taco-v07/taco-0345.jpg",
+    "sha256": "b93eee6a3f3dab58cf9eb72c653b3632b12c84e4534ab20b98968a12a4b65138",
+    "original_sha256": "12d3fcebd546642ec2d036d1f264f3d8c8aa50a0747b36f9a9eea7317ff8c095",
+    "archive_crc32": 422693800,
+    "dhash": "47a3d9f06c7e767c",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_12/000044.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/01/GVv3AjOxiREYhmu2i58w8dCjKEk69mAAUgGj4ckN.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4646164021164021,
+        0.6432291666666666,
+        0.08597883597883597,
+        0.0835813492063492
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 1135,
+        "bbox": [
+          1275.0,
+          2425.0,
+          260.0,
+          337.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0354",
+    "taco_id": 354,
+    "path": "data/raw/taco-v07/taco-0354.jpg",
+    "sha256": "6916dd72f27ca005dcd33bad57b843db0ebcda33e585d04360a3f99ac7584525",
+    "original_sha256": "b471bde94773608cc4e7e9a75852bb121e0b5822278796c9b74d9fe047fac556",
+    "archive_crc32": 2218065893,
+    "dhash": "a6bc9d033b608355",
+    "split": "test",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2988,
+      5312
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_12/000053.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/08/28/zGSwGdiiq3gIybROf1HU71pBu6ry2VftipIDjzlO.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4168340026773762,
+        0.5475338855421686,
+        0.6971218206157965,
+        0.3213478915662651
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 1195,
+        "bbox": [
+          204.0,
+          2055.0,
+          2083.0,
+          1707.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0369",
+    "taco_id": 369,
+    "path": "data/raw/taco-v07/taco-0369.jpg",
+    "sha256": "fb7c5fb497e25e49c9b3286602f465de1e10a80ea0007c8834e288078edb2ff7",
+    "original_sha256": "c1ab2f6c80c45ff3c34e836026f198dcb2e360c8cd05dd2669cfd9dd164669df",
+    "archive_crc32": 1811030062,
+    "dhash": "2f8a61326e88b3f3",
+    "split": "test",
+    "width": 900,
+    "height": 1600,
+    "original_size": [
+      2368,
+      4208
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_12/000068.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/07/05/5wrQyPMnIQHPksW0xTYd8fSCkvLsnjXFSoFy2L5v.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4790694995777027,
+        0.46625475285171103,
+        0.8169128589527027,
+        0.2067490494296578
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle"
+    ],
+    "annotations": [
+      {
+        "id": 1309,
+        "bbox": [
+          167.21175,
+          1527.0,
+          1934.44965,
+          870.0
+        ],
+        "category": "Glass bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0377",
+    "taco_id": 377,
+    "path": "data/raw/taco-v07/taco-0377.jpg",
+    "sha256": "cc88236a6aba978e9201c670ff570281d6d2b6db37254a70d3802a76b0bc0e5f",
+    "original_sha256": "362ca27590d58050003006606ea46e17d08b90d1e1f8f05f4015b6b5f5851f20",
+    "archive_crc32": 2856121323,
+    "dhash": "c192034a7ab8dc55",
+    "split": "test",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      4160,
+      3120
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_12/000076.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/07/13/6KznAc1i8oqtNsBhMt9jGaZstNw9LMjg73OV1ZIN.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5871394230769231,
+        0.4517628205128205,
+        0.3391826923076923,
+        0.2503205128205128
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 1326,
+        "bbox": [
+          1737.0,
+          1019.0,
+          1411.0,
+          781.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0378",
+    "taco_id": 378,
+    "path": "data/raw/taco-v07/taco-0378.jpg",
+    "sha256": "e7df2453a241d8927a15cc9ccbecdd84a51b7666711520ba24cb1bca4a20580b",
+    "original_sha256": "d93e38954104ddf2227b502b0d61f9de007d3eff8c3a8129f93bc34a7ef273dc",
+    "archive_crc32": 3685786671,
+    "dhash": "26bc3a3e8672be0e",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_12/000077.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/07/13/En9fAOM6gMuB2OdTQAZm1HrUlQjsfXzBEmXI2VZY.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4424679487179487,
+        0.8760817307692308,
+        0.41955128205128206,
+        0.20697115384615383
+      ],
+      [
+        0.4309294871794872,
+        0.18533653846153847,
+        0.421474358974359,
+        0.20096153846153847
+      ]
+    ],
+    "original_labels": [
+      "Drink can",
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 1327,
+        "bbox": [
+          726.0,
+          3214.0,
+          1309.0,
+          861.0
+        ],
+        "category": "Drink can"
+      },
+      {
+        "id": 1328,
+        "bbox": [
+          687.0,
+          353.0,
+          1315.0,
+          836.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0438",
+    "taco_id": 438,
+    "path": "data/raw/taco-v07/taco-0438.jpg",
+    "sha256": "cb074a600ad197d7c5c166e62e2b5cc54eb56ac5a0d1b4ba107bcfb9a64930ce",
+    "original_sha256": "683ccac93291c4f31f5728906a0c401226f6d43ed8bb9f7ee40f4daef3f79f21",
+    "archive_crc32": 1228004202,
+    "dhash": "628c8cede9686173",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_13/000037.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/05/05/KZmAacU0Ys2XPmG4IAzJFPDVwSBO95MkgvE2IKXi.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4842998717948718,
+        0.572629951923077,
+        0.18269230769230768,
+        0.3649038461538462
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 1564,
+        "bbox": [
+          1226.0156,
+          1623.1406,
+          570.0,
+          1518.0000000000002
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0443",
+    "taco_id": 443,
+    "path": "data/raw/taco-v07/taco-0443.jpg",
+    "sha256": "df96989eb9a5d50784f80cb1dea712ff18a0527ad13ecdd63872e9962d1e89e0",
+    "original_sha256": "389cb1d67ea076e9edcdf204a3311ac125bb5552f638aadcf6539a8e55b00c18",
+    "archive_crc32": 2726335808,
+    "dhash": "0f21cdcc9e1a0b35",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_13/000042.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/05/05/Gb5sE4mb3DZWXHF5WGmY9mFadmwLx95UuZsLAngj.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4547084775641026,
+        0.5436069230769232,
+        0.2862179166666666,
+        0.5399611538461538
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle"
+    ],
+    "annotations": [
+      {
+        "id": 1571,
+        "bbox": [
+          972.1905,
+          1138.2856,
+          892.9998999999999,
+          2246.2384
+        ],
+        "category": "Clear plastic bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0468",
+    "taco_id": 468,
+    "path": "data/raw/taco-v07/taco-0468.jpg",
+    "sha256": "cd0f4b4fd329d923006ced619e6696818e57ec67a8a1029d981a778ca74fa8f9",
+    "original_sha256": "5c425b59e8a72531410086c9e4660df342a09c29d8771404a0242951c243f0c8",
+    "archive_crc32": 2238067545,
+    "dhash": "89cbe40719ea9dcd",
+    "split": "test",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      4160,
+      3120
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_13/000067.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/09/07/5SeDJrh3kZ0Me00wyJEIDEY5L49LZip3OuE99rfI.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5466346153846153,
+        0.49775641025641026,
+        0.9033653846153846,
+        0.33397435897435895
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle"
+    ],
+    "annotations": [
+      {
+        "id": 1645,
+        "bbox": [
+          395.0,
+          1032.0,
+          3758.0,
+          1042.0
+        ],
+        "category": "Glass bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0483",
+    "taco_id": 483,
+    "path": "data/raw/taco-v07/taco-0483.jpg",
+    "sha256": "c18fdd5794c169d37a7dfd3235d5b408b2849d207339aace505e6764701edecb",
+    "original_sha256": "6272e8017de98358f74b2ce9e71b95dc4b3e0907db27028f0cf33951fcc63d69",
+    "archive_crc32": 3378400350,
+    "dhash": "180c8cc58fcdc942",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_13/000082.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/09/20/cHh1GNgWOouPPlPkGnA6WKqGruLShzjl9jnQYqRx.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.47692307692307695,
+        0.5032451923076923,
+        0.3814102564102564,
+        0.6069711538461539
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 1662,
+        "bbox": [
+          893.0,
+          831.0,
+          1190.0,
+          2525.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0487",
+    "taco_id": 487,
+    "path": "data/raw/taco-v07/taco-0487.jpg",
+    "sha256": "6ee097016afc0797a39278af7911f2e94f7850754360aa3bdad17ae862f6cc5c",
+    "original_sha256": "7342fdf48732e2df83c976c32f21ca6dc9f71fa67a4377b11270a2281d52eec7",
+    "archive_crc32": 3436569324,
+    "dhash": "e34d4e46e6b61d0e",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_13/000086.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/10/20/jBeYE4Wpn4QCr3ae93lPE3Zw4cep79bRZtyhcCf2.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5352564102564102,
+        0.44182692307692306,
+        0.4358974358974359,
+        0.5817307692307693
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle"
+    ],
+    "annotations": [
+      {
+        "id": 1677,
+        "bbox": [
+          990.0,
+          628.0,
+          1360.0,
+          2420.0
+        ],
+        "category": "Clear plastic bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0489",
+    "taco_id": 489,
+    "path": "data/raw/taco-v07/taco-0489.jpg",
+    "sha256": "2bfaa21ecde9cd9f179700ffec5f19c35dc8d6f880c7adce0b1af419c9555c62",
+    "original_sha256": "fec8bd3678a1853c1b3bde41fe884888edddd8cd839cda4113bd52f68f3a0230",
+    "archive_crc32": 596655183,
+    "dhash": "47392f0ecfd9b99e",
+    "split": "test",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      4160,
+      3120
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_13/000088.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/09/04/OQbTQ4L7ov6EgcOMOruR7kdodyjV9IN96EVSPzuH.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4640625,
+        0.366025641025641,
+        0.5401442307692308,
+        0.40384615384615385
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 1681,
+        "bbox": [
+          807.0,
+          512.0,
+          2247.0,
+          1260.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0490",
+    "taco_id": 490,
+    "path": "data/raw/taco-v07/taco-0490.jpg",
+    "sha256": "bac648d115f95b692516f66e3f44c0b342630870dbd4cb908c632b1d04d08d9b",
+    "original_sha256": "1c4c8fa68536f7c1c093ffb7b9ea5bc5edc22f51641ca040a7dda5a87b22ac39",
+    "archive_crc32": 2230503402,
+    "dhash": "3099de706066a62e",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_13/000089.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/09/04/OcGZJJYKaC0EVlQwATf3v2xH6vMgkzniLg1HFtDj.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.3974358974358974,
+        0.24014423076923078,
+        0.11858974358974358,
+        0.07692307692307693
+      ],
+      [
+        0.5641025641025641,
+        0.7227163461538462,
+        0.1371794871794872,
+        0.07716346153846154
+      ]
+    ],
+    "original_labels": [
+      "Cigarette",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 1682,
+        "bbox": [
+          1055.0,
+          839.0,
+          370.0,
+          320.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 1683,
+        "bbox": [
+          1546.0,
+          2846.0,
+          428.0,
+          321.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "other"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0494",
+    "taco_id": 494,
+    "path": "data/raw/taco-v07/taco-0494.jpg",
+    "sha256": "c6e370c0d428eec58f1dcb452b245a434226ef4957d95843934a844cada1eafc",
+    "original_sha256": "25bd7ac836c25e26e9439784752891949542fa24222425429d3a56a3499007d9",
+    "archive_crc32": 1251471897,
+    "dhash": "9826676526716972",
+    "split": "test",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      4160,
+      3120
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_13/000093.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/10/06/6pfV9U9ltKWx76dMSj0uopUQeb8XWs9jTE04DahQ.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4528846153846154,
+        0.3842948717948718,
+        0.8865384615384615,
+        0.48012820512820514
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle"
+    ],
+    "annotations": [
+      {
+        "id": 1689,
+        "bbox": [
+          40.0,
+          450.0,
+          3688.0,
+          1498.0
+        ],
+        "category": "Clear plastic bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0512",
+    "taco_id": 512,
+    "path": "data/raw/taco-v07/taco-0512.jpg",
+    "sha256": "67fe8ef328f70f69b692904ecca8cf914311312fa00430a31e7d54563cc982f0",
+    "original_sha256": "3b7e843bb234f194323bb053345a6be72c7ccdf7e8756d67a5de2f7644febdbc",
+    "archive_crc32": 3178913055,
+    "dhash": "27278f9edfef2f93",
+    "split": "test",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      4160,
+      3120
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_14/000011.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/10/30/3tsMjfZjCUitiPXEzCmQdjWosCP5iHM7ikkhvF9a.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4967548076923077,
+        0.3458333333333333,
+        0.39447115384615383,
+        0.3326923076923077
+      ]
+    ],
+    "original_labels": [
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 1716,
+        "bbox": [
+          1246.0,
+          560.0,
+          1641.0,
+          1038.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "other"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0517",
+    "taco_id": 517,
+    "path": "data/raw/taco-v07/taco-0517.jpg",
+    "sha256": "0dfcd192792ed97fe17d89facdef6028dbf9fb4b57392cae9803598aaf07aaf4",
+    "original_sha256": "7e095b155268c47bfebe1333a818e60e6af1435da9b74c06836579bbc3f161a8",
+    "archive_crc32": 1410843876,
+    "dhash": "b966979c8d8d8a3a",
+    "split": "test",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      4160,
+      3120
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_14/000016.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/09/24/Zi2hljTvM1oIqzMeHy41GLoZPX30EgIzPl6ZlJ0S.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4518028846153846,
+        0.4855769230769231,
+        0.4444711538461538,
+        0.7878205128205128
+      ]
+    ],
+    "original_labels": [
+      "Tissues"
+    ],
+    "annotations": [
+      {
+        "id": 1724,
+        "bbox": [
+          955.0,
+          286.0,
+          1849.0,
+          2458.0
+        ],
+        "category": "Tissues"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "other"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0525",
+    "taco_id": 525,
+    "path": "data/raw/taco-v07/taco-0525.jpg",
+    "sha256": "7982e0b72705b81d2104f6c73745f2ae7f05912daa14286476b8ba8bb96b86a2",
+    "original_sha256": "5e97f970c77cdccdb5e85f95da585572912fafcdaaccd5a7e97519108a7b60d1",
+    "archive_crc32": 3520207326,
+    "dhash": "b76925b14acc94d8",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3120,
+      4160
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_14/000024.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/12/02/lfkSqW2Rty5f3ClVo0gpzW3ktQdUeGhftSPjcA6a.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5205128205128206,
+        0.6420673076923077,
+        0.25833333333333336,
+        0.24759615384615385
+      ]
+    ],
+    "original_labels": [
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 1741,
+        "bbox": [
+          1221.0,
+          2156.0,
+          806.0,
+          1030.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0539",
+    "taco_id": 539,
+    "path": "data/raw/taco-v07/taco-0539.jpg",
+    "sha256": "af6f913403c242a2439f12378e80dd418032fbb45d6b57ca257d9d1d051dc1a1",
+    "original_sha256": "4fcdc55f9f79b586f9e8371792cccf1da9cc5cd318979897f102dfdf69c9507f",
+    "archive_crc32": 3711103670,
+    "dhash": "731b599d1dee3636",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 8,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_14/000038.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/700/EGesxEIpnYlkkKoJGqPxMiHycvlYhaWVZ5j5alOj.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4732772652116402,
+        0.49665771329365077,
+        0.36706345899470894,
+        0.20089280753968256
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle"
+    ],
+    "annotations": [
+      {
+        "id": 1760,
+        "bbox": [
+          876.1905,
+          1597.524,
+          1109.9998999999998,
+          809.9998
+        ],
+        "category": "Glass bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0540",
+    "taco_id": 540,
+    "path": "data/raw/taco-v07/taco-0540.jpg",
+    "sha256": "3168ba83a19cec15490be587e97baef01088d2587bf9020e17932c3850ea9638",
+    "original_sha256": "236e32b4a2c3b7d5e3db16797ea652d55c9ff5882ff209fcb69a7670bfaa223e",
+    "archive_crc32": 3132503052,
+    "dhash": "8eae7e74ecdad296",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_14/000039.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/700/GTlX6yKUDeVu5q9vKln6hi9NsP5hbeA3tLrWdIW5.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.48115079365079366,
+        0.5641121031746031,
+        0.39880952380952384,
+        0.2785218253968254
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle"
+    ],
+    "annotations": [
+      {
+        "id": 1761,
+        "bbox": [
+          852.0,
+          1713.0,
+          1206.0,
+          1123.0
+        ],
+        "category": "Glass bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0546",
+    "taco_id": 546,
+    "path": "data/raw/taco-v07/taco-0546.jpg",
+    "sha256": "3520d8bc41d958e1db25a524d46a9f2a81ec9e664fd1b259f8e5411c65492d04",
+    "original_sha256": "8ea3b052ee47054c600fcbe4dbdd480036d3563bada1b486e94bc8f30a65e6c0",
+    "archive_crc32": 4218121182,
+    "dhash": "1d3da7e7d3777397",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_14/000045.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/700/ejfodcWNTCzGurzrLgUOvcNAh3VL5r5hSUrgt7Vz.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4270833333333333,
+        0.6127232142857143,
+        0.08035714285714286,
+        0.08159722222222222
+      ],
+      [
+        0.2647156084656085,
+        0.6989087301587301,
+        0.0916005291005291,
+        0.0818452380952381
+      ]
+    ],
+    "original_labels": [
+      "Cigarette",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 1770,
+        "bbox": [
+          1170.0,
+          2306.0,
+          243.0,
+          329.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 1771,
+        "bbox": [
+          662.0,
+          2653.0,
+          277.0,
+          330.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "other"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0597",
+    "taco_id": 597,
+    "path": "data/raw/taco-v07/taco-0597.jpg",
+    "sha256": "0a51810aac242e053bf507b0a4c4b53bd06f437a27c0b384fe4c4655d7cd1d5a",
+    "original_sha256": "926adf5343b5cdf5b34efd03e6f8afe244ca23a085b4c0baf64293356c082ee3",
+    "archive_crc32": 1843070697,
+    "dhash": "b31bb323a6868fed",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 6,
+    "transform": "EXIF transposed to match annotation dimensions",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_14/000096.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/764/nk6kkJjUVtD58kaq1G7JKHZtHhsFQ40QZribBtuX.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.45866402116402116,
+        0.8334573412698413,
+        0.2996031746031746,
+        0.14558531746031747
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle"
+    ],
+    "annotations": [
+      {
+        "id": 1850,
+        "bbox": [
+          934.0,
+          3067.0,
+          906.0,
+          587.0
+        ],
+        "category": "Glass bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0631",
+    "taco_id": 631,
+    "path": "data/raw/taco-v07/taco-0631.jpg",
+    "sha256": "ad3d7d316000a827a4b1a24c614a0c8b551f89a6cca867ca8d5b60e611124ee8",
+    "original_sha256": "9ed28dc812613b8607c9bf5473c24b95899913225b0d0d4e433af32028c074b4",
+    "archive_crc32": 2316766103,
+    "dhash": "d1f296fb63a746cc",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      1536,
+      2048
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_15/000030.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2019/01/26/aUbWTQHr17Y0HnmIM86Tm1gCNAvDHbMjVAaQIPoE.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.06477864583333333,
+        0.16748046875,
+        0.054036458333333336,
+        0.0283203125
+      ],
+      [
+        0.5247395833333334,
+        0.461669921875,
+        0.15234375,
+        0.13525390625
+      ]
+    ],
+    "original_labels": [
+      "Cigarette",
+      "Drink can"
+    ],
+    "annotations": [
+      {
+        "id": 2049,
+        "bbox": [
+          58.0,
+          314.0,
+          83.0,
+          58.0
+        ],
+        "category": "Cigarette"
+      },
+      {
+        "id": 2050,
+        "bbox": [
+          689.0,
+          807.0,
+          234.0,
+          277.0
+        ],
+        "category": "Drink can"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "other",
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0642",
+    "taco_id": 642,
+    "path": "data/raw/taco-v07/taco-0642.jpg",
+    "sha256": "a26e9bfd469fe6fc59cee1277982b13f8a067557f26b275b8c9f64592f457480",
+    "original_sha256": "a678f4e37df16ebaca9259104d8d2462a5833c8d47f74835766ce3a081bcf01d",
+    "archive_crc32": 4028306124,
+    "dhash": "4e675309cd623335",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_15/000041.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/10/30/Jz1jjhGuyBrFtm5f5i4SQ4lx6UXVpYJOBweCkjjR.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.40343915343915343,
+        0.5695566468253969,
+        0.12764550264550265,
+        0.07911706349206349
+      ],
+      [
+        0.6053634259259258,
+        0.8317094246031747,
+        0.0205026455026455,
+        0.014632936507936508
+      ]
+    ],
+    "original_labels": [
+      "Tissues",
+      "Cigarette"
+    ],
+    "annotations": [
+      {
+        "id": 2086,
+        "bbox": [
+          1027.0,
+          2136.9524,
+          386.0,
+          319.0
+        ],
+        "category": "Tissues"
+      },
+      {
+        "id": 2087,
+        "bbox": [
+          1799.619,
+          3323.9524,
+          62.0,
+          59.0
+        ],
+        "category": "Cigarette"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "other"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0651",
+    "taco_id": 651,
+    "path": "data/raw/taco-v07/taco-0651.jpg",
+    "sha256": "32e33528caca671ccdd052a7352ee6de2375b53884657fd20594a689173987a0",
+    "original_sha256": "fc0c230f6afdb88a86eddaae2d39cc6fd5185b61cde5f1d9cadf8b4cd3c7a0b7",
+    "archive_crc32": 3286944506,
+    "dhash": "10003032b23333b3",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      3024,
+      4032
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_15/000050.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/10/30/nbuKLysZAnbRsXrehCklCbbryXVsb2TFhfoSzV2e.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.4798280423280423,
+        0.5846974206349206,
+        0.21296296296296297,
+        0.5473710317460317
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle"
+    ],
+    "annotations": [
+      {
+        "id": 2103,
+        "bbox": [
+          1129.0,
+          1254.0,
+          644.0,
+          2207.0
+        ],
+        "category": "Glass bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0673",
+    "taco_id": 673,
+    "path": "data/raw/taco-v07/taco-0673.jpg",
+    "sha256": "519767afcef8e7c9b97e2929ca9fc34bb0b8b948b202c6391f5fe8243930ded9",
+    "original_sha256": "6df3311265954f51dfa9934df07295f55fe1e95dd797990e31b5061f253eee20",
+    "archive_crc32": 2013054465,
+    "dhash": "8ddd18395cd99335",
+    "split": "test",
+    "width": 1200,
+    "height": 1600,
+    "original_size": [
+      1536,
+      2048
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_15/000072.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/12/12/iFNAA7JnYGdx9tx315GcZQZUf6dH0E7khiRjkfJO.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.5231119791666666,
+        0.5283203125,
+        0.318359375,
+        0.125
+      ],
+      [
+        0.20540364583333334,
+        0.649169921875,
+        0.216796875,
+        0.18896484375
+      ]
+    ],
+    "original_labels": [
+      "Clear plastic bottle",
+      "Clear plastic bottle"
+    ],
+    "annotations": [
+      {
+        "id": 2164,
+        "bbox": [
+          559.0,
+          954.0,
+          489.0,
+          256.0
+        ],
+        "category": "Clear plastic bottle"
+      },
+      {
+        "id": 2165,
+        "bbox": [
+          149.0,
+          1136.0,
+          333.0,
+          387.0
+        ],
+        "category": "Clear plastic bottle"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  },
+  {
+    "id": "taco-0685",
+    "taco_id": 685,
+    "path": "data/raw/taco-v07/taco-0685.jpg",
+    "sha256": "c208372dbb8a8120a5f3b86a5af2d56d0ff01ab50a1dbd2e02ff071f78206d22",
+    "original_sha256": "1db36a6d09d0570d589673921198461a7fd798d4d1316f5cebe4f511409f3b61",
+    "archive_crc32": 628741313,
+    "dhash": "9a879586879f97ea",
+    "split": "test",
+    "width": 1600,
+    "height": 1200,
+    "original_size": [
+      3264,
+      2448
+    ],
+    "original_exif_orientation": 1,
+    "transform": "annotation-coordinate raster; EXIF removed",
+    "source_page": "https://zenodo.org/records/3587843",
+    "source_file": "batch_15/000084.jpg",
+    "flickr_url": "https://olm-s3.s3.eu-west-1.amazonaws.com/2018/09/08/5cFkc7QtoCLrBvfMwwsY5VHbjZBJVic9zk2qlj7W.jpeg",
+    "license": "CC BY 4.0",
+    "author": "Pedro F. Proença and Pedro Simões / TACO contributors",
+    "boxes_yolo": [
+      [
+        0.37714460784313725,
+        0.5294117647058824,
+        0.1053921568627451,
+        0.4877450980392157
+      ],
+      [
+        0.5654105392156863,
+        0.3827614379084967,
+        0.13082107843137256,
+        0.5196078431372549
+      ],
+      [
+        0.569546568627451,
+        0.5833333333333334,
+        0.17708333333333334,
+        0.17401960784313725
+      ]
+    ],
+    "original_labels": [
+      "Glass bottle",
+      "Glass bottle",
+      "Tissues"
+    ],
+    "annotations": [
+      {
+        "id": 2194,
+        "bbox": [
+          1059.0,
+          699.0,
+          344.0,
+          1194.0
+        ],
+        "category": "Glass bottle"
+      },
+      {
+        "id": 2195,
+        "bbox": [
+          1632.0,
+          301.0,
+          427.0,
+          1272.0
+        ],
+        "category": "Glass bottle"
+      },
+      {
+        "id": 2196,
+        "bbox": [
+          1570.0,
+          1215.0,
+          578.0,
+          426.0
+        ],
+        "category": "Tissues"
+      }
+    ],
+    "annotation_scope": "All official litter instances; binary object detection only",
+    "categories": [
+      "other",
+      "recyclable"
+    ],
+    "background": "outdoor natural or built background",
+    "review_status": "accepted",
+    "reviewed_before_inference": true,
+    "reviewer": "Codex visual review plus official TACO instance annotations, not independent human consensus",
+    "review_note": "All visible supported disposal subjects considered; fixed facilities and natural leaves ignored. Ordinary beverage containers classified under empty/clean-before-disposal assumption. Tiny or occluded instances remain in scoring."
+  }
+]

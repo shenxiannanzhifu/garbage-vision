@@ -1,0 +1,322 @@
+{
+  "annotation_type": "binary object boxes, XYXY on EXIF-oriented image",
+  "images": [
+    {
+      "id": "commons-10279384",
+      "image_size": [
+        960,
+        1445
+      ],
+      "sha256": "4d77a914ab81ac888d4fdc216a6a7b514a142dd2f17895bcdf641c574f4e8cfc",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          355,
+          159,
+          730,
+          1373
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-29411619",
+      "image_size": [
+        960,
+        1707
+      ],
+      "sha256": "d0fddef7750c0927f47b7a92dd7cfc15597b730caac316fbff4eb12b73a07bbf",
+      "review_status": "excluded",
+      "boxes_xyxy": [],
+      "review_note": "Excluded: attached fixture, ambiguous additional objects, or densely overlapping instances.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-39198884",
+      "image_size": [
+        960,
+        540
+      ],
+      "sha256": "bf2e2bb063174db4202addf03222463664044ca32a973363fefe499470328bfa",
+      "review_status": "excluded",
+      "boxes_xyxy": [],
+      "review_note": "Excluded: attached fixture, ambiguous additional objects, or densely overlapping instances.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-27242152",
+      "image_size": [
+        960,
+        541
+      ],
+      "sha256": "bac79dba5dfbba049f65cd0a3a783e9c22b50a9b24bf77e0a7c89cdd2f205a32",
+      "review_status": "excluded",
+      "boxes_xyxy": [],
+      "review_note": "Excluded: attached fixture, ambiguous additional objects, or densely overlapping instances.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-56666824",
+      "image_size": [
+        960,
+        1707
+      ],
+      "sha256": "5f9a13a182333b787dc7ec1434cdeaf9c4882a6d2616b1001ed46bd8b95aa32a",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          221,
+          34,
+          432,
+          1536
+        ],
+        [
+          490,
+          34,
+          778,
+          1502
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-80933087",
+      "image_size": [
+        960,
+        638
+      ],
+      "sha256": "f74c919472eb0d0435bfa9be8de6b88178b346983ce812aed6ca77d8ae67685c",
+      "review_status": "excluded",
+      "boxes_xyxy": [],
+      "review_note": "Excluded: attached fixture, ambiguous additional objects, or densely overlapping instances.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-26461093",
+      "image_size": [
+        960,
+        647
+      ],
+      "sha256": "d7b1c8557bcec2b6565b0b85b8c5cb8eb8c3bfd44a4b150ba084304b161211b4",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          24,
+          45,
+          931,
+          582
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-1834893",
+      "image_size": [
+        800,
+        900
+      ],
+      "sha256": "713f9d09a43c7a40fe4dc7541323cacb9f3e45108582afd8f11e56783cd30b0a",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          80,
+          40,
+          728,
+          846
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-97105978",
+      "image_size": [
+        960,
+        540
+      ],
+      "sha256": "2d25a232edc074a6feaeae332e17fecc40ec6ddfc87260fcebcec961257b6073",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          235,
+          194,
+          451,
+          329
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-14923187",
+      "image_size": [
+        960,
+        720
+      ],
+      "sha256": "97d9c1c0cc8779f1766e54952cca8dcee966b0e8002847efcfef739d2dc03516",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          106,
+          115,
+          758,
+          655
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-19371511",
+      "image_size": [
+        960,
+        720
+      ],
+      "sha256": "76048d4a420c441f8c2fabbe49fb7b0f7c2e8f47238e88a9e9dca2a38e549e17",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          250,
+          151,
+          672,
+          518
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-29428919",
+      "image_size": [
+        960,
+        720
+      ],
+      "sha256": "f1b06191f0b1472d0d232c75f51459773bbf883459da57f4870227ffa612742d",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          240,
+          187,
+          682,
+          554
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-242907",
+      "image_size": [
+        768,
+        1276
+      ],
+      "sha256": "f0edcced73a9c054f0b8a12dabfd9dcc7438e71b39928a1841241fbdd5c34540",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          4,
+          6,
+          766,
+          1273
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-50998026",
+      "image_size": [
+        960,
+        1280
+      ],
+      "sha256": "78cc94166142aafb3b825e005bff0944a6d8a69af59a2c8b01a28864c34a6ba0",
+      "review_status": "excluded",
+      "boxes_xyxy": [],
+      "review_note": "Excluded: attached fixture, ambiguous additional objects, or densely overlapping instances.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-75939774",
+      "image_size": [
+        960,
+        640
+      ],
+      "sha256": "e115aad8c2c536fb5ba8f8b65cef2811292f0abe93daf4aeeb96c6419a01e622",
+      "review_status": "excluded",
+      "boxes_xyxy": [],
+      "review_note": "Excluded: attached fixture, ambiguous additional objects, or densely overlapping instances.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-161583411",
+      "image_size": [
+        960,
+        720
+      ],
+      "sha256": "cb82156042d5bfa53bc2ba234b0a0d5ca27458cdbf44eb112238c32cd9b182b9",
+      "review_status": "excluded",
+      "boxes_xyxy": [],
+      "review_note": "Excluded: attached fixture, ambiguous additional objects, or densely overlapping instances.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-177957290",
+      "image_size": [
+        960,
+        320
+      ],
+      "sha256": "b8d9fdd3ed2461b4d9d2c5a0c0fee7828927f88939bd06b12854ce7ed97ab91e",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          34,
+          48,
+          926,
+          298
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    },
+    {
+      "id": "commons-177957295",
+      "image_size": [
+        960,
+        328
+      ],
+      "sha256": "877907dd173c38b1a2dfc3d2fe29cb24f0f18422dff5bbe8ac2ec77f19b445b7",
+      "review_status": "accepted",
+      "boxes_xyxy": [
+        [
+          34,
+          52,
+          931,
+          298
+        ]
+      ],
+      "review_note": "Isolated complete disposal subject; each visible subject boxed. Existing train split only.",
+      "reviewer": "Codex visual review of image raster; not independent human annotation",
+      "reviewed_before_training": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "created_at_utc": "2026-10-20T07:34:42.205798+00:00",
+  "images": 29,
+  "excluded": [
+    {
+      "id": "taco-0346",
+      "reason": "Distant object in water: ordinary beverage-bottle identity cannot be visually verified."
+    }
+  ],
+  "manifest_sha256": "86f27607de475e48b6670ec3d65e943a2e04a4534c06bff8f81f26bbbbc801c8",
+  "category_support": {
+    "recyclable": 23,
+    "other": 8,
+    "kitchen": 0,
+    "hazardous": 0
+  },
+  "warning": "Pre-inference convenience subset of held-out batches. Only recyclable and other classes represented. Not an all-four-class generalization estimate."
+}

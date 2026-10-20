@@ -1,0 +1,717 @@
+{
+  "audit_kind": "offline_recomputation_of_historical_evidence",
+  "generation_calls_made": 0,
+  "reference_labels_changed": false,
+  "new_model_quality_claimed": false,
+  "planned_images": 40,
+  "attempted_images": 38,
+  "successful_images": 33,
+  "outcomes": {
+    "not_attempted": 2,
+    "success_disagreement": 5,
+    "success_match": 28,
+    "transport_failure": 5
+  },
+  "same_attempted_subset": {
+    "images": 38,
+    "api_exact_matches": 28,
+    "local_exact_matches": 32,
+    "failed_requests_count_as_incorrect": true
+  },
+  "same_successful_subset_diagnostic_only": {
+    "images": 33,
+    "api_exact_matches": 28,
+    "local_exact_matches": 28
+  },
+  "successful_disagreements_with_existing_reference_or_scope_issues": 5,
+  "successful_disagreements_without_existing_review": 0,
+  "limits": [
+    "Successful category-set agreement is not instance-level recognition accuracy.",
+    "An ambiguity tag does not prove the model is right or alter its score.",
+    "No instance-level ground truth exists here; missed/hallucinated objects cannot be counted reliably.",
+    "Transport failures do not identify which hop failed or imply zero billing.",
+    "Historical images already reviewed are regression evidence, not a fresh holdout."
+  ],
+  "records": [
+    {
+      "id": "commons-128095601",
+      "reference_categories": [
+        "recyclable"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": false,
+      "api_status": "error",
+      "elapsed_seconds": 48.04013269999996,
+      "usage_returned": false,
+      "transport_error_type": null,
+      "outcome": "transport_failure",
+      "failure_evidence": "archived_user_message_only"
+    },
+    {
+      "id": "commons-51534756",
+      "reference_categories": [
+        "recyclable"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": false,
+      "api_status": "success",
+      "elapsed_seconds": 11.038983999984339,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_disagreement",
+      "predicted_categories": [],
+      "normalization_actions": 0,
+      "review_issue_kind": "包装用途与参考歧义",
+      "review_is_not_relabeling": true
+    },
+    {
+      "id": "commons-71363051",
+      "reference_categories": [
+        "recyclable"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 17.531692899996415,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "recyclable"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-131977339",
+      "reference_categories": [
+        "recyclable"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 43.378077600034885,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "recyclable"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-111643306",
+      "reference_categories": [
+        "recyclable"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 16.64440640003886,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "recyclable"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-155630545",
+      "reference_categories": [
+        "recyclable"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 20.97310250008013,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "recyclable"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-138536950",
+      "reference_categories": [
+        "recyclable"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 24.708755400031805,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "recyclable"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-252201",
+      "reference_categories": [
+        "recyclable"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 9.750369600020349,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "recyclable"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-152818746",
+      "reference_categories": [
+        "kitchen"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 18.685971300001256,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "kitchen"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-63297374",
+      "reference_categories": [
+        "kitchen"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 13.740522400010377,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "kitchen"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-5264094",
+      "reference_categories": [
+        "kitchen"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 26.055881300009787,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "kitchen"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-49531104",
+      "reference_categories": [
+        "kitchen"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 22.93574779992923,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "kitchen"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-56853365",
+      "reference_categories": [
+        "kitchen"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 10.759040899924003,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "kitchen"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-88121951",
+      "reference_categories": [
+        "kitchen"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 14.966917600017041,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "kitchen"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-30731906",
+      "reference_categories": [
+        "kitchen"
+      ],
+      "local_exact_match": false,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 23.520527399959974,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "kitchen"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-24364551",
+      "reference_categories": [
+        "kitchen"
+      ],
+      "local_exact_match": false,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 11.883656400023028,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "kitchen"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-95896968",
+      "reference_categories": [
+        "other"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": false,
+      "api_status": "error",
+      "elapsed_seconds": 1.3422081000171602,
+      "usage_returned": false,
+      "transport_error_type": null,
+      "outcome": "transport_failure",
+      "failure_evidence": "archived_user_message_only"
+    },
+    {
+      "id": "commons-75295601",
+      "reference_categories": [
+        "other"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": false,
+      "api_status": "error",
+      "elapsed_seconds": 124.3581533000106,
+      "usage_returned": false,
+      "transport_error_type": null,
+      "outcome": "transport_failure",
+      "failure_evidence": "archived_user_message_only"
+    },
+    {
+      "id": "commons-42032344",
+      "reference_categories": [
+        "other"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 10.997729799943045,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "other"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-114969819",
+      "reference_categories": [
+        "other"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": false,
+      "api_status": "success",
+      "elapsed_seconds": 11.804975699982606,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_disagreement",
+      "predicted_categories": [
+        "other",
+        "recyclable"
+      ],
+      "normalization_actions": 0,
+      "review_issue_kind": "参考可能漏标与污染前提",
+      "review_is_not_relabeling": true
+    },
+    {
+      "id": "commons-139358689",
+      "reference_categories": [
+        "other"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 12.038916200050153,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "other"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-82983746",
+      "reference_categories": [
+        "other"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 14.045242800028063,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "other"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-101290692",
+      "reference_categories": [
+        "other"
+      ],
+      "local_exact_match": false,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 9.604231099947356,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "other"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-31284758",
+      "reference_categories": [
+        "hazardous"
+      ],
+      "local_exact_match": false,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 13.250345700071193,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "hazardous"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-6215482",
+      "reference_categories": [
+        "hazardous"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 7.311375400051475,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "hazardous"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-27372712",
+      "reference_categories": [
+        "hazardous"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 9.414627299993299,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "hazardous"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-142040226",
+      "reference_categories": [
+        "hazardous"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 12.691759400069714,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "hazardous"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-102772",
+      "reference_categories": [
+        "hazardous"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": false,
+      "api_status": "success",
+      "elapsed_seconds": 36.679366900003515,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_disagreement",
+      "predicted_categories": [
+        "hazardous",
+        "other"
+      ],
+      "normalization_actions": 0,
+      "review_issue_kind": "待丢弃范围不明确",
+      "review_is_not_relabeling": true
+    },
+    {
+      "id": "commons-32438633",
+      "reference_categories": [
+        "hazardous"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 10.354764000046998,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "hazardous"
+      ],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-90437283",
+      "reference_categories": [
+        "hazardous"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": false,
+      "api_status": "error",
+      "elapsed_seconds": 0.9646406000247225,
+      "usage_returned": false,
+      "transport_error_type": "ConnectError",
+      "outcome": "transport_failure",
+      "failure_evidence": "typed_transport_diagnostic"
+    },
+    {
+      "id": "commons-27113623",
+      "reference_categories": [
+        "hazardous"
+      ],
+      "local_exact_match": false,
+      "outcome": "not_attempted",
+      "api_exact_match": null
+    },
+    {
+      "id": "commons-132219783",
+      "reference_categories": [],
+      "local_exact_match": true,
+      "api_exact_match": false,
+      "api_status": "success",
+      "elapsed_seconds": 9.602020299993455,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_disagreement",
+      "predicted_categories": [
+        "other"
+      ],
+      "normalization_actions": 0,
+      "review_issue_kind": "固定规则与可读标签不一致",
+      "review_is_not_relabeling": true
+    },
+    {
+      "id": "commons-16022161",
+      "reference_categories": [],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 12.731477300054394,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-102745520",
+      "reference_categories": [],
+      "local_exact_match": true,
+      "api_exact_match": false,
+      "api_status": "success",
+      "elapsed_seconds": 15.775674400036223,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_disagreement",
+      "predicted_categories": [
+        "other"
+      ],
+      "normalization_actions": 0,
+      "review_issue_kind": "固定规则覆盖不足",
+      "review_is_not_relabeling": true
+    },
+    {
+      "id": "commons-110967099",
+      "reference_categories": [],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 8.013045100029558,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-144928399",
+      "reference_categories": [],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 22.844847799977288,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-87666282",
+      "reference_categories": [],
+      "local_exact_match": false,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 15.28632930002641,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [],
+      "normalization_actions": 0
+    },
+    {
+      "id": "commons-19792555",
+      "reference_categories": [],
+      "local_exact_match": false,
+      "api_exact_match": false,
+      "api_status": "error",
+      "elapsed_seconds": 1.3714352999813855,
+      "usage_returned": false,
+      "transport_error_type": "ConnectError",
+      "outcome": "transport_failure",
+      "failure_evidence": "typed_transport_diagnostic"
+    },
+    {
+      "id": "commons-53453562",
+      "reference_categories": [],
+      "local_exact_match": true,
+      "outcome": "not_attempted",
+      "api_exact_match": null
+    },
+    {
+      "id": "commons-35832442",
+      "reference_categories": [
+        "kitchen",
+        "recyclable"
+      ],
+      "local_exact_match": true,
+      "api_exact_match": true,
+      "api_status": "success",
+      "elapsed_seconds": 46.0945835999446,
+      "usage_returned": true,
+      "transport_error_type": null,
+      "outcome": "success_match",
+      "predicted_categories": [
+        "kitchen",
+        "recyclable"
+      ],
+      "normalization_actions": 0
+    }
+  ],
+  "source_sha256": {
+    "evidence/v0.5.0/astra-holdout/freeze.json": "5d76870afdd16e4bff5b98e95e1af757855d7fb6a361e97876b9ee8e2eed0066",
+    "evidence/v0.5.0/quality-holdout/candidate/predictions.json": "c5a345f4b6da957472904987c20b5dd6eceb9dc327908b0cf73910dbed5c263a",
+    "evidence/v0.5.0/astra-holdout/quality-review.json": "2aa045122de789ba5b5339a783204eca8f4f95c2b45e8ccd04c7d0534f2cfecc",
+    "evidence/v0.5.0/astra-holdout/api/commons-101290692.json": "64264092f29dbb95470a88d9d28969f34272a0b1c1ec04220f0604d284c6e28f",
+    "evidence/v0.5.0/astra-holdout/api/commons-102745520.json": "9df949c9aafdcb1596c234d0ec7c02b25289c0d95980204a1aa9fb1b5cc7b394",
+    "evidence/v0.5.0/astra-holdout/api/commons-102772.json": "964d36249df3ca70276c54c83eeb333017b64e84f81734bb5eefee8777e5a19c",
+    "evidence/v0.5.0/astra-holdout/api/commons-110967099.json": "6228df1013b18b8517131a93f369e61d1dced9a7ee331e186ec304c1e9e498c9",
+    "evidence/v0.5.0/astra-holdout/api/commons-111643306.json": "b473d15540400642341e295b204d95ff930c804da3d29bded7ab663246b3aa7f",
+    "evidence/v0.5.0/astra-holdout/api/commons-114969819.json": "93ed0a5c48368b46b312842b04b426d42ea369e268e9541b653dd1a3e9ca7b02",
+    "evidence/v0.5.0/astra-holdout/api/commons-128095601.json": "bfbf8ff724f5471949d4573b53b9f700e68fdbbe5746d2e83ef8bc1d298e36e2",
+    "evidence/v0.5.0/astra-holdout/api/commons-131977339.json": "1b7e9b64da5ef64940bd14f6d99bc074e19f5be5f9fc2a7f186f136f6bd982f2",
+    "evidence/v0.5.0/astra-holdout/api/commons-132219783.json": "6f760863cb0490b3d6a8a2c716eb3b589e7cd07007ad459324ca862d34fdb0e5",
+    "evidence/v0.5.0/astra-holdout/api/commons-138536950.json": "5dda7563ccba43494aa06111a31792a34bc0a2dbb4fcab7136b2f1a44eb926ec",
+    "evidence/v0.5.0/astra-holdout/api/commons-139358689.json": "75368633d33692b3a928830551f0fa84d07cf93546d11cf6d2211b089f6a23dc",
+    "evidence/v0.5.0/astra-holdout/api/commons-142040226.json": "8f1ebec4cf2ed749a884beec3f06b3d7d37df331bbd3a6949ef349c8129eea0d",
+    "evidence/v0.5.0/astra-holdout/api/commons-144928399.json": "948262850e072cdfa06aadcb3a835e719462e78bbc9bc0a804116ad6d81dcdb7",
+    "evidence/v0.5.0/astra-holdout/api/commons-152818746.json": "6c904ce24bf6242a368fc485c6f4fd91272c2d55435ea29ae29dc50beeccab76",
+    "evidence/v0.5.0/astra-holdout/api/commons-155630545.json": "9ab91c2c39e233489976250f711d277a81aa9097d2876c44ef6b4ef6b2274e4d",
+    "evidence/v0.5.0/astra-holdout/api/commons-16022161.json": "b60ad69c350be70e722a9091b3dc0861ed96f3013d7640c5b642ca6729f28c39",
+    "evidence/v0.5.0/astra-holdout/api/commons-19792555.json": "01bde2a355647018fb0283d1e32a2142589c575b66336b32f2f42a6810b54cdb",
+    "evidence/v0.5.0/astra-holdout/api/commons-24364551.json": "2000a4983e288d3abe343d271250ef9db878c6206a97bd66673dae0720a70fa4",
+    "evidence/v0.5.0/astra-holdout/api/commons-252201.json": "8f289145334caee047ec44536280ae796518e0e01a2795243bcce0c93e431d26",
+    "evidence/v0.5.0/astra-holdout/api/commons-27372712.json": "3273e85d66498cc13d48fa521ee92b62007a8eb09acf19ed5c5777c5137af1f5",
+    "evidence/v0.5.0/astra-holdout/api/commons-30731906.json": "60a4499840167229144156cc851c6b9d58bebafea6fcedf77ac350b557b1dbf8",
+    "evidence/v0.5.0/astra-holdout/api/commons-31284758.json": "9ac752fd40562e76f1d81188f42948ef8e014af336ec968db1150233527fe1b0",
+    "evidence/v0.5.0/astra-holdout/api/commons-32438633.json": "c36fb9cca8e0b8359873589860a535db4a77bd45c8316f46cb3c5cb0665e41ff",
+    "evidence/v0.5.0/astra-holdout/api/commons-35832442.json": "767f26e6d0060d645769534899cb885a87764686c7501d714948618077cd0907",
+    "evidence/v0.5.0/astra-holdout/api/commons-42032344.json": "333010febff0d07d2cd18dd7989898bc420d3720acecdec0719cab98615952c6",
+    "evidence/v0.5.0/astra-holdout/api/commons-49531104.json": "785f36df2aa3e0607451bb68179704d79870dc81edde926d747faaf292a98227",
+    "evidence/v0.5.0/astra-holdout/api/commons-51534756.json": "ce036357a4e958f246fde8f88450a461ce2380832ddf6c73065322dbbfb81f1c",
+    "evidence/v0.5.0/astra-holdout/api/commons-5264094.json": "d5ffedfb105cbc827b9767442daf7747009330078528d3291e836b7c4d28f044",
+    "evidence/v0.5.0/astra-holdout/api/commons-56853365.json": "0c1643ca7726e210644c84a144eacf08dadd507428e1844f7c08abb4c0c46f38",
+    "evidence/v0.5.0/astra-holdout/api/commons-6215482.json": "03d0c268a2e6ce91d7788763717261ce92b979bd71bbef653aea0e1b538f7684",
+    "evidence/v0.5.0/astra-holdout/api/commons-63297374.json": "f779c96535e01edc573794061f12ca50bd07c410c8f776fb158cb72531a0cd26",
+    "evidence/v0.5.0/astra-holdout/api/commons-71363051.json": "c0effb7bf37760a2190f8617b824e555308714af09347cb0198ad4018b2becfd",
+    "evidence/v0.5.0/astra-holdout/api/commons-75295601.json": "49a4f8a888b32ebdb4a7742e6c2d2294cbcfe794a720ec5e77f0512cbef4da07",
+    "evidence/v0.5.0/astra-holdout/api/commons-82983746.json": "ad7fa9a2e868921f7939603a147c0020fa2ef59f9518d191f0ca77a8df393dfa",
+    "evidence/v0.5.0/astra-holdout/api/commons-87666282.json": "24b1efacaf5328f0bf82245ea0621fc6fde7664210d8b65e78239cd97a4cd40f",
+    "evidence/v0.5.0/astra-holdout/api/commons-88121951.json": "791bebffefe481cdba67f94c21c4e3fa3f74fcb19afc35707bc157e0dd809cb5",
+    "evidence/v0.5.0/astra-holdout/api/commons-90437283.json": "8423b37b285a363158dd3c872852ae55b668a86e77d4dca79b6797fe021691e3",
+    "evidence/v0.5.0/astra-holdout/api/commons-95896968.json": "b1c81a39a7522ef40c7086831364929c7af9b71ee41d854d07a7e9bde93500b4"
+  }
+}

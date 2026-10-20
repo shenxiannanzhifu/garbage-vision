@@ -1,0 +1,31 @@
+{
+  "excluded": [
+    {
+      "id": "taco-1110",
+      "split": "train",
+      "reason": "exact/dhash<=4 overlap",
+      "matches": [
+        "taco-1081"
+      ]
+    },
+    {
+      "id": "taco-1305",
+      "split": "train",
+      "reason": "exact/dhash<=4 overlap",
+      "matches": [
+        "taco-1173"
+      ]
+    }
+  ],
+  "counts": {
+    "test": 124,
+    "validation": 100,
+    "train": 709
+  },
+  "objects": {
+    "test": 320,
+    "validation": 283,
+    "train": 2223
+  },
+  "warning": "Batch separation is not proven photographer independence. dHash is only a heuristic. No four-category labels inferred from TACO."
+}
