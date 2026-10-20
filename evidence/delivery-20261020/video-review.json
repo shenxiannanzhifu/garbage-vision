@@ -1,0 +1,57 @@
+{
+  "filename": "20261020-1131-59.3530068.mp4",
+  "bytes": 442234426,
+  "sha256": "34df40f3b9a8e6f98d26af7ca7cb59c88ad9b44998c0b82ca366489a15dc6533",
+  "width": 1416,
+  "height": 1492,
+  "fps": 30.0,
+  "frames": 23762,
+  "duration_seconds": 792.0666666666667,
+  "sampled_seconds": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180,
+    210,
+    240,
+    270,
+    300,
+    330,
+    360,
+    390,
+    420,
+    450,
+    480,
+    510,
+    540,
+    570,
+    600,
+    630,
+    660,
+    690,
+    720,
+    750,
+    780,
+    791
+  ],
+  "audio_tracks": [
+    {
+      "timescale": 30000,
+      "duration_seconds": 792.0666333333334,
+      "handler": "vide"
+    },
+    {
+      "timescale": 48000,
+      "duration_seconds": 791.9146458333333,
+      "handler": "soun"
+    }
+  ],
+  "review_method": "28 timestamp samples plus 3 full-resolution keyframes; full sequential video decode recorded separately.",
+  "audio_listened": false,
+  "transcript_reviewed": false,
+  "assessment": "Main visual demonstration present; user must confirm audible narration and reviewer repository access.",
+  "new_assistant_paid_calls": 0
+}
