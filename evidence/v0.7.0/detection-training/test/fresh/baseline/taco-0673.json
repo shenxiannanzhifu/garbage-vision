@@ -1,0 +1,292 @@
+{
+  "id": "taco-0673",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:15:22.611215+00:00",
+    "image_id": "92e34f3fb563e5ec8054211181fbba1ef9a796c700f1dca3f69da7649de6e2be",
+    "source_sha256": "519767afcef8e7c9b97e2929ca9fc34bb0b8b948b202c6391f5fe8243930ded9",
+    "image_size": [
+      1200,
+      1600
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "plastic bottle",
+        "bbox": [
+          437.5,
+          745.31,
+          725.0,
+          942.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9636527895927429,
+        "similarity": 0.31397515535354614,
+        "category_margin": 0.04458734393119812,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "plastic bottle",
+        "bbox": [
+          507.81,
+          795.31,
+          753.12,
+          928.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9499186277389526,
+        "similarity": 0.3050210177898407,
+        "category_margin": 0.041364043951034546,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "plastic bottle",
+        "bbox": [
+          507.81,
+          834.38,
+          734.38,
+          917.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9714405536651611,
+        "similarity": 0.2994321882724762,
+        "category_margin": 0.023602962493896484,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "塑料瓶",
+        "category": "recyclable",
+        "reason": "普通饮料塑料瓶倒空清洁后可回收；化学品包装须另行确认。",
+        "uncertain": false,
+        "label": "plastic bottle",
+        "bbox": [
+          360.94,
+          845.31,
+          534.38,
+          1129.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9753068089485168,
+        "similarity": 0.29491889476776123,
+        "category_margin": 0.022767066955566406,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          1025.0,
+          696.88,
+          1078.12,
+          767.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9265812635421753,
+        "similarity": 0.2926484942436218,
+        "category_margin": 0.0138072669506073,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          570.31,
+          26.56,
+          681.25,
+          140.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9412419199943542,
+        "similarity": 0.2897064685821533,
+        "category_margin": 0.007658332586288452,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          0,
+          851.56,
+          20.31,
+          915.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9487013220787048,
+        "similarity": 0.2838071584701538,
+        "category_margin": 0.004780679941177368,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          189.06,
+          43.75,
+          243.75,
+          73.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9414822459220886,
+        "similarity": 0.2831747233867645,
+        "category_margin": 0.009634703397750854,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          176.56,
+          956.25,
+          312.5,
+          1034.38
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9651747941970825,
+        "similarity": 0.2826838493347168,
+        "category_margin": 0.001963883638381958,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          0,
+          1046.88,
+          145.31,
+          1123.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9682626128196716,
+        "similarity": 0.2826462686061859,
+        "category_margin": 0.011045843362808228,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：塑料瓶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "plastic bottle",
+        "bbox": [
+          754.69,
+          781.25,
+          965.62,
+          895.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9683440923690796,
+        "similarity": 0.28179800510406494,
+        "category_margin": 0.016620784997940063,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 14.521246700081974,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 70,
+      "candidate_count": 11,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

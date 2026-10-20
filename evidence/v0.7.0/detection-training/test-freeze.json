@@ -1,0 +1,7 @@
+{
+  "selected": "conf-0.15-fallback-true",
+  "selection_sha256": "c2926d62cc27e48e05c9c1bb54bf89463e8a8ac7f1e889aafbac0c0df6cfcbcc",
+  "test_manifest_sha256": "86f27607de475e48b6670ec3d65e943a2e04a4534c06bff8f81f26bbbbc801c8",
+  "weights_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+  "production_settings_sha256": "d0ce73a8bbd172dc1c3af487f93d583303c8d82cb810f6ff463454ba8768a0be"
+}

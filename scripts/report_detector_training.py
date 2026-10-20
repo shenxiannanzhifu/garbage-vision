@@ -37,6 +37,10 @@ def main():
         losses=[r['id'] for r in b['records'] if not r['exact_match'] and before[r['id']]['exact_match']]
         lines += [f"- {title}：从错变对 {len(gains)} 张；从对变错 {len(losses)} 张。",
             f"  - 改对：{', '.join(gains) or '无'}。",f"  - 改错：{', '.join(losses) or '无'}。"]
+    lines+=['',
+        '历史 `commons-23153953`：原模型产生 26 个分割区域并识别出金属罐；候选经检测与掩膜质量过滤后留下 0 个区域，整图兜底也没有确定类别，导致漏检。',
+        '新图 `taco-0685`：候选只保留可回收类别，漏掉原参考中的其他垃圾。原模型虽然类别集合匹配，但曾把非烟蒂区域命名为烟蒂；因此这里的“原来正确”只指类别集合，并不表示逐物品内容正确。',
+        '改进主要体现在减少多余类别与部分背景误报；更少的候选区域也可能漏掉小物体。验证中背景图 `commons-129795561` 改对，而厨余图 `commons-36853788` 从对变错，总数相抵。这是未启用候选的重要原因。']
     lines+=['','## 门槛逐项核对','','| 预声明门槛 | 结果 |','|---|---|']
     names={'validation_exact_improves':'验证完全正确数增加','fresh_at_least_two_more_exact':'新图至少多对两张','fresh_mean_f1_improves':'新图平均 F1 提高',
         'regression_exact_no_drop':'历史回归正确数不降','regression_f1_no_drop':'历史回归 F1 不降','regression_category_tp_no_drop':'历史各类别 TP 不降',

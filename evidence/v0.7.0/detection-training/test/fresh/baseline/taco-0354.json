@@ -1,0 +1,152 @@
+{
+  "id": "taco-0354",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:10:18.147768+00:00",
+    "image_id": "96587950a9d1eddef32e83c5361783db9ad22db6c954610e1d521a8aabae9a8b",
+    "source_sha256": "6916dd72f27ca005dcd33bad57b843db0ebcda33e585d04360a3f99ac7584525",
+    "image_size": [
+      900,
+      1600
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          64.06,
+          620.31,
+          689.06,
+          1128.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9246820211410522,
+        "similarity": 0.32265329360961914,
+        "category_margin": 0.06387528777122498,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          637.5,
+          435.94,
+          898.44,
+          734.38
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9574350118637085,
+        "similarity": 0.3120424747467041,
+        "category_margin": 0.02579447627067566,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          837.5,
+          1023.44,
+          898.44,
+          1153.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9085979461669922,
+        "similarity": 0.2954477369785309,
+        "category_margin": 0.005499094724655151,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          95.31,
+          292.19,
+          135.94,
+          401.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8946713805198669,
+        "similarity": 0.28765788674354553,
+        "category_margin": 0.01025119423866272,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 13.0656042000046,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 10,
+      "candidate_count": 4,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

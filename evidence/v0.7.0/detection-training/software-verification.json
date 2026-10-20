@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-10-20T08:39:16.843449+00:00",
+  "software_tests": "80 passed in 35.04s",
+  "command": "CODEX_TEST_TMP=<workspace>; RUN_REAL_LOCAL=1; python -m pytest -q",
+  "includes": "Real GPU baseline inference via Streamlit AppTest and image replacement; EXIF 180/square rotation tests; annotation geometry/train isolation; multimodal offline audit.",
+  "frozen_source_and_manifest_hashes_match": true,
+  "initial_production_settings_preserved": true,
+  "selected_weight_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+  "data_files_match_manifests": true,
+  "test_labels_and_candidate_selection_frozen_before_inference": true,
+  "new_paid_image_api_calls": 0,
+  "candidate_promoted": false,
+  "next_optimization_started": false,
+  "limitations": "No new remote generation connectivity test. Offline successful historical subset is not full API success rate. New category holdout covers only recyclable/other."
+}

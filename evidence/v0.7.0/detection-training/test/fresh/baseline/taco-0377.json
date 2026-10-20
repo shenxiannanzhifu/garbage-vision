@@ -1,0 +1,292 @@
+{
+  "id": "taco-0377",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:10:46.372338+00:00",
+    "image_id": "e1329f05960815a8f976ff848c50f80f966f3afa5344ae39e6414e1866c4428e",
+    "source_sha256": "cc88236a6aba978e9201c670ff570281d6d2b6db37254a70d3802a76b0bc0e5f",
+    "image_size": [
+      1600,
+      1200
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          4.69,
+          239.06,
+          98.44,
+          335.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9427279233932495,
+        "similarity": 0.297010213136673,
+        "category_margin": 8.004903793334961e-05,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          628.12,
+          278.12,
+          667.19,
+          310.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9452462792396545,
+        "similarity": 0.29073870182037354,
+        "category_margin": 0.0161515474319458,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          231.25,
+          787.5,
+          265.62,
+          910.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9391491413116455,
+        "similarity": 0.28966912627220154,
+        "category_margin": 0.01794615387916565,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "果核",
+        "category": "kitchen",
+        "reason": "普通水果果核属于厨余垃圾。",
+        "uncertain": false,
+        "label": "apple core",
+        "bbox": [
+          460.94,
+          442.19,
+          514.06,
+          518.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9474236965179443,
+        "similarity": 0.2876184284687042,
+        "category_margin": 0.019700080156326294,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          634.38,
+          164.06,
+          693.75,
+          214.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9577661156654358,
+        "similarity": 0.28689518570899963,
+        "category_margin": 0.012245982885360718,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          328.12,
+          378.12,
+          417.19,
+          435.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9574972987174988,
+        "similarity": 0.2857252061367035,
+        "category_margin": 0.008725881576538086,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          637.5,
+          217.19,
+          681.25,
+          264.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9604324102401733,
+        "similarity": 0.28471440076828003,
+        "category_margin": 0.001659780740737915,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          601.56,
+          396.88,
+          696.88,
+          462.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9632526636123657,
+        "similarity": 0.28350114822387695,
+        "category_margin": 0.001896500587463379,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          528.12,
+          398.44,
+          584.38,
+          489.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9537315964698792,
+        "similarity": 0.28251102566719055,
+        "category_margin": 0.010068416595458984,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：菜皮菜叶；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "vegetable peels",
+        "bbox": [
+          381.25,
+          443.75,
+          450.0,
+          518.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9706074595451355,
+        "similarity": 0.2820597290992737,
+        "category_margin": 0.008356750011444092,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          900.0,
+          915.62,
+          951.56,
+          978.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9181385040283203,
+        "similarity": 0.2808895707130432,
+        "category_margin": 0.01556667685508728,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 14.40469390002545,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 68,
+      "candidate_count": 11,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

@@ -1,0 +1,865 @@
+{
+  "id": "taco-0517",
+  "expected_categories": [
+    "other"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:13:13.946601+00:00",
+    "image_id": "1aa807cede584367f2de88ebecfef151a034fc1498de6bdaf2f19cd99cb950a0",
+    "source_sha256": "0dfcd192792ed97fe17d89facdef6028dbf9fb4b57392cae9803598aaf07aaf4",
+    "image_size": [
+      1600,
+      1200
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": "used tissue",
+        "bbox": [
+          1001.56,
+          0,
+          1093.75,
+          659.38
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9524935483932495,
+        "similarity": 0.349222332239151,
+        "category_margin": 0.05388188362121582,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": "used tissue",
+        "bbox": [
+          365.62,
+          112.5,
+          1075.0,
+          1054.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9767749905586243,
+        "similarity": 0.3443237543106079,
+        "category_margin": 0.05482083559036255,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": "used tissue",
+        "bbox": [
+          484.38,
+          271.88,
+          676.56,
+          392.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9561042189598083,
+        "similarity": 0.34055402874946594,
+        "category_margin": 0.03912737965583801,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          617.19,
+          131.25,
+          798.44,
+          200.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9262991547584534,
+        "similarity": 0.3305116295814514,
+        "category_margin": 0.030528128147125244,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          1014.06,
+          0,
+          1095.31,
+          368.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9586784243583679,
+        "similarity": 0.3232865631580353,
+        "category_margin": 0.018623828887939453,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          1435.94,
+          429.69,
+          1564.06,
+          534.38
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9613886475563049,
+        "similarity": 0.3171473443508148,
+        "category_margin": 0.015432685613632202,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          931.25,
+          790.62,
+          1034.38,
+          975.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9227893352508545,
+        "similarity": 0.3159383237361908,
+        "category_margin": 0.007921099662780762,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          29.69,
+          867.19,
+          185.94,
+          1010.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9551368951797485,
+        "similarity": 0.31547579169273376,
+        "category_margin": 0.022410929203033447,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          1226.56,
+          220.31,
+          1354.69,
+          307.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9299947023391724,
+        "similarity": 0.31263041496276855,
+        "category_margin": 0.012445956468582153,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": "used tissue",
+        "bbox": [
+          484.38,
+          271.88,
+          617.19,
+          392.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9507552981376648,
+        "similarity": 0.3107811212539673,
+        "category_margin": 0.030080795288085938,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          728.12,
+          0,
+          868.75,
+          181.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9042920470237732,
+        "similarity": 0.3098512589931488,
+        "category_margin": 0.014875739812850952,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          1082.81,
+          135.94,
+          1198.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9646496772766113,
+        "similarity": 0.30888885259628296,
+        "category_margin": 0.005568206310272217,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          173.44,
+          276.56,
+          257.81,
+          417.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8957822322845459,
+        "similarity": 0.30840083956718445,
+        "category_margin": 0.027959972620010376,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          1190.62,
+          1039.06,
+          1320.31,
+          1132.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9265964031219482,
+        "similarity": 0.30830395221710205,
+        "category_margin": 0.020904123783111572,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          1195.31,
+          550.0,
+          1334.38,
+          667.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9363954663276672,
+        "similarity": 0.30659276247024536,
+        "category_margin": 0.020955383777618408,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          1478.12,
+          990.62,
+          1543.75,
+          1110.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9499739408493042,
+        "similarity": 0.3052961230278015,
+        "category_margin": 0.011810332536697388,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          1123.44,
+          348.44,
+          1221.88,
+          509.38
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.892193078994751,
+        "similarity": 0.3046289086341858,
+        "category_margin": 0.01838657259941101,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "香蕉皮",
+        "category": "kitchen",
+        "reason": "日常果皮属于厨余垃圾。",
+        "uncertain": false,
+        "label": "banana peel",
+        "bbox": [
+          246.88,
+          768.75,
+          421.88,
+          1198.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9765515327453613,
+        "similarity": 0.3016186058521271,
+        "category_margin": 0.05498868227005005,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          548.44,
+          906.25,
+          651.56,
+          954.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9420063495635986,
+        "similarity": 0.30133482813835144,
+        "category_margin": 0.00752982497215271,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          1375.0,
+          732.81,
+          1498.44,
+          818.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9187337756156921,
+        "similarity": 0.3002672493457794,
+        "category_margin": 0.01402747631072998,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          114.06,
+          92.19,
+          171.88,
+          217.19
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9540688991546631,
+        "similarity": 0.29978540539741516,
+        "category_margin": 0.013157755136489868,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "apple core",
+        "bbox": [
+          1514.06,
+          465.62,
+          1589.06,
+          593.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9182623028755188,
+        "similarity": 0.2995252013206482,
+        "category_margin": 0.0016418993473052979,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          1226.56,
+          445.31,
+          1306.25,
+          578.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9316511154174805,
+        "similarity": 0.29509320855140686,
+        "category_margin": 0.007489651441574097,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          0,
+          121.88,
+          65.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9437010884284973,
+        "similarity": 0.2934197783470154,
+        "category_margin": 0.003172457218170166,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          62.5,
+          218.75,
+          109.38,
+          254.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8951632380485535,
+        "similarity": 0.292689710855484,
+        "category_margin": 0.007339984178543091,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          248.44,
+          795.31,
+          331.25,
+          860.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9271160364151001,
+        "similarity": 0.2926531434059143,
+        "category_margin": 0.008411496877670288,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          931.25,
+          18.75,
+          1040.62,
+          143.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9479241371154785,
+        "similarity": 0.29245468974113464,
+        "category_margin": 0.002232581377029419,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          537.5,
+          1140.62,
+          689.06,
+          1198.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9348049759864807,
+        "similarity": 0.2917826175689697,
+        "category_margin": 0.00920906662940979,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          1356.25,
+          612.5,
+          1400.0,
+          707.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9471111297607422,
+        "similarity": 0.28963685035705566,
+        "category_margin": 0.0014450550079345703,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          123.44,
+          1087.5,
+          195.31,
+          1198.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9474111795425415,
+        "similarity": 0.2887212634086609,
+        "category_margin": 0.006538093090057373,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          176.56,
+          1017.19,
+          220.31,
+          1150.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.935548722743988,
+        "similarity": 0.2886890172958374,
+        "category_margin": 0.00773581862449646,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          1007.81,
+          40.62,
+          1045.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9016045331954956,
+        "similarity": 0.2886393666267395,
+        "category_margin": 0.01785781979560852,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          1106.25,
+          171.88,
+          1164.06,
+          231.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9319809079170227,
+        "similarity": 0.285015732049942,
+        "category_margin": 0.01375114917755127,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "banana peel",
+        "bbox": [
+          278.12,
+          184.38,
+          342.19,
+          218.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9175565838813782,
+        "similarity": 0.2846934199333191,
+        "category_margin": 0.01221930980682373,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          1110.94,
+          671.88,
+          1203.12,
+          720.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.942648708820343,
+        "similarity": 0.2839980125427246,
+        "category_margin": 0.008863061666488647,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          1076.56,
+          282.81,
+          1153.12,
+          326.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9366068840026855,
+        "similarity": 0.2814767062664032,
+        "category_margin": 0.015079885721206665,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          1501.56,
+          1145.31,
+          1598.44,
+          1198.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.880287230014801,
+        "similarity": 0.2803608179092407,
+        "category_margin": 0.0017437338829040527,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          48.44,
+          59.38,
+          78.12,
+          90.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9081616401672363,
+        "similarity": 0.28017377853393555,
+        "category_margin": 0.0029203295707702637,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 13.828726600040682,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 75,
+      "candidate_count": 39,
+      "suppressed_uncertain_parts": [
+        {
+          "candidate": {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：果核；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "apple core",
+            "bbox": [
+              823.44,
+              479.69,
+              856.25,
+              525.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9270905256271362,
+            "similarity": 0.2987690567970276,
+            "category_margin": 0.0017295479774475098,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          "parent_label": "used tissue",
+          "parent_bbox": [
+            365.62,
+            112.5,
+            1075.0,
+            1054.69
+          ],
+          "mask_containment": 1.0,
+          "area_ratio": 0.003007393174888267,
+          "reason": "较高分的已知物体内包含的低分未知局部区域；不重复作为独立物品。"
+        }
+      ],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

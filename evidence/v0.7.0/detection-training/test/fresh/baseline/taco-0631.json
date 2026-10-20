@@ -1,0 +1,353 @@
+{
+  "id": "taco-0631",
+  "expected_categories": [
+    "other",
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:14:39.515195+00:00",
+    "image_id": "ad824534bb8423ff79b8d741fb551d2820ebaf407bd68fe0d4716f859b58b9b5",
+    "source_sha256": "ad3d7d316000a827a4b1a24c614a0c8b551f89a6cca867ca8d5b60e611124ee8",
+    "image_size": [
+      1200,
+      1600
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          1140.62,
+          625.0,
+          1175.0,
+          653.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9054775238037109,
+        "similarity": 0.32059571146965027,
+        "category_margin": 0.032785892486572266,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          46.88,
+          246.88,
+          109.38,
+          289.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9320622682571411,
+        "similarity": 0.3176855742931366,
+        "category_margin": 0.043046653270721436,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          537.5,
+          742.19,
+          621.88,
+          845.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9419136047363281,
+        "similarity": 0.31563976407051086,
+        "category_margin": 0.03612196445465088,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          537.5,
+          629.69,
+          718.75,
+          846.88
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.96344393491745,
+        "similarity": 0.31406933069229126,
+        "category_margin": 0.04664027690887451,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": "used tissue",
+        "bbox": [
+          110.94,
+          479.69,
+          176.56,
+          526.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9120585918426514,
+        "similarity": 0.3062207102775574,
+        "category_margin": 0.033837586641311646,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "使用过的纸巾",
+        "category": "other",
+        "reason": "使用过的卫生纸巾难以回收，属于其他垃圾。",
+        "uncertain": false,
+        "label": "used tissue",
+        "bbox": [
+          537.5,
+          670.31,
+          570.31,
+          701.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9377163648605347,
+        "similarity": 0.29931655526161194,
+        "category_margin": 0.02416980266571045,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          117.19,
+          364.06,
+          140.62,
+          385.94
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8922918438911438,
+        "similarity": 0.2972117066383362,
+        "category_margin": 0.005834698677062988,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": [
+          284.38,
+          1221.88,
+          310.94,
+          1264.06
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.884870171546936,
+        "similarity": 0.29631346464157104,
+        "category_margin": 0.027000874280929565,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          595.31,
+          457.81,
+          615.62,
+          478.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.881393313407898,
+        "similarity": 0.29106172919273376,
+        "category_margin": 0.0015429556369781494,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          1126.56,
+          487.5,
+          1153.12,
+          587.5
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9076235294342041,
+        "similarity": 0.289228230714798,
+        "category_margin": 0.015418767929077148,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          537.5,
+          775.0,
+          621.88,
+          845.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.947348952293396,
+        "similarity": 0.2864147424697876,
+        "category_margin": 0.02182072401046753,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          0,
+          931.25,
+          18.75,
+          965.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9007653594017029,
+        "similarity": 0.28487008810043335,
+        "category_margin": 0.0023314356803894043,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "菜皮菜叶",
+        "category": "kitchen",
+        "reason": "日常果蔬残余属于厨余垃圾。",
+        "uncertain": false,
+        "label": "vegetable peels",
+        "bbox": [
+          620.31,
+          0,
+          667.19,
+          25.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8932313323020935,
+        "similarity": 0.2846314311027527,
+        "category_margin": 0.024529337882995605,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          309.38,
+          1159.38,
+          329.69,
+          1182.81
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.90131014585495,
+        "similarity": 0.2831290364265442,
+        "category_margin": 0.01533469557762146,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 14.184677599929273,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 32,
+      "candidate_count": 14,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

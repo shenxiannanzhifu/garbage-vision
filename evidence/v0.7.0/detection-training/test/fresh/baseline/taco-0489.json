@@ -1,0 +1,337 @@
+{
+  "id": "taco-0489",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:12:19.998501+00:00",
+    "image_id": "375a10877ffa50f5c5c591b3c511b5b97f0dc842d5af4dd271e8b5bb7c1459d7",
+    "source_sha256": "2bfaa21ecde9cd9f179700ffec5f19c35dc8d6f880c7adce0b1af419c9555c62",
+    "image_size": [
+      1600,
+      1200
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          309.38,
+          198.44,
+          1173.44,
+          803.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9902676939964294,
+        "similarity": 0.32845988869667053,
+        "category_margin": 0.04756101965904236,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          309.38,
+          198.44,
+          1173.44,
+          1134.38
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9623574614524841,
+        "similarity": 0.3238981068134308,
+        "category_margin": 0.04158911108970642,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "金属罐",
+        "category": "recyclable",
+        "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+        "uncertain": false,
+        "label": "metal can",
+        "bbox": [
+          309.38,
+          218.75,
+          365.62,
+          568.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9566476345062256,
+        "similarity": 0.3089405596256256,
+        "category_margin": 0.034267932176589966,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          242.19,
+          484.38,
+          281.25,
+          520.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8959442973136902,
+        "similarity": 0.297105997800827,
+        "category_margin": 0.011120200157165527,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          37.5,
+          567.19,
+          70.31,
+          604.69
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8910588622093201,
+        "similarity": 0.2968907356262207,
+        "category_margin": 0.009188801050186157,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          281.25,
+          268.75,
+          317.19,
+          293.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9183424115180969,
+        "similarity": 0.2902195453643799,
+        "category_margin": 0.011116564273834229,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          651.56,
+          1096.88,
+          810.94,
+          1176.56
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9261362552642822,
+        "similarity": 0.2842823565006256,
+        "category_margin": 0.00021058320999145508,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          126.56,
+          135.94,
+          146.88,
+          159.38
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9089820384979248,
+        "similarity": 0.28410160541534424,
+        "category_margin": 0.004078567028045654,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "metal can",
+        "bbox": [
+          148.44,
+          6.25,
+          184.38,
+          31.25
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9290573000907898,
+        "similarity": 0.2828202247619629,
+        "category_margin": 0.010527282953262329,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          114.06,
+          612.5,
+          140.62,
+          640.62
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.8851098418235779,
+        "similarity": 0.28019845485687256,
+        "category_margin": 0.0014608204364776611,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 13.188456700067036,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 18,
+      "candidate_count": 12,
+      "suppressed_uncertain_parts": [
+        {
+          "candidate": {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：香蕉皮；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "banana peel",
+            "bbox": [
+              712.5,
+              654.69,
+              1059.38,
+              803.12
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9673699140548706,
+            "similarity": 0.30876532196998596,
+            "category_margin": 0.0055359601974487305,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          "parent_label": "metal can",
+          "parent_bbox": [
+            309.38,
+            198.44,
+            1173.44,
+            1134.38
+          ],
+          "mask_containment": 0.9702990301724138,
+          "area_ratio": 0.04309889408144901,
+          "reason": "较高分的已知物体内包含的低分未知局部区域；不重复作为独立物品。"
+        },
+        {
+          "candidate": {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              1064.06,
+              395.31,
+              1126.56,
+              454.69
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9511720538139343,
+            "similarity": 0.2976056933403015,
+            "category_margin": 0.0048182010650634766,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          "parent_label": "metal can",
+          "parent_bbox": [
+            309.38,
+            198.44,
+            1173.44,
+            803.12
+          ],
+          "mask_containment": 1.0,
+          "area_ratio": 0.010061563371832283,
+          "reason": "较高分的已知物体内包含的低分未知局部区域；不重复作为独立物品。"
+        }
+      ],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

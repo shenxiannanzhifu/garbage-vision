@@ -1,0 +1,696 @@
+{
+  "method": "local",
+  "images": 29,
+  "mean_per_image_precision": 0.6551724137931034,
+  "mean_per_image_recall": 0.8275862068965517,
+  "mean_per_image_f1": 0.7114942528735632,
+  "exact_set_accuracy": 0.4827586206896552,
+  "failure_rate": 0,
+  "empty_prediction_rate": 0.034482758620689655,
+  "unknown_image_rate": 0.8620689655172413,
+  "micro": {
+    "tp": 26,
+    "fp": 16,
+    "fn": 5,
+    "precision": 0.6190476190476191,
+    "recall": 0.8387096774193549,
+    "f1": 0.7123287671232876
+  },
+  "per_category": {
+    "recyclable": {
+      "tp": 18,
+      "fp": 0,
+      "fn": 5,
+      "support_images": 23,
+      "precision": 1.0,
+      "recall": 0.782608695652174,
+      "f1": 0.8780487804878049
+    },
+    "hazardous": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "support_images": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "kitchen": {
+      "tp": 0,
+      "fp": 9,
+      "fn": 0,
+      "support_images": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "other": {
+      "tp": 8,
+      "fp": 7,
+      "fn": 0,
+      "support_images": 8,
+      "precision": 0.5333333333333333,
+      "recall": 1.0,
+      "f1": 0.6956521739130435
+    }
+  },
+  "by_background": {
+    "outdoor natural or built background": {
+      "images": 29,
+      "mean_per_image_f1": 0.7114942528735632,
+      "failure_rate": 0
+    }
+  },
+  "timing": {
+    "mean_request_or_inference_seconds": 13.62469844483963,
+    "median_request_or_inference_seconds": 13.382076099980623,
+    "total_load_seconds": 4.578177800052799
+  },
+  "records": [
+    {
+      "id": "taco-0304",
+      "truth": [
+        "other"
+      ],
+      "predicted": [
+        "other"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 9,
+      "elapsed_seconds": 14.343177699949592,
+      "load_seconds": 4.578177800052799,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0309",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "other",
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 11,
+      "elapsed_seconds": 14.529475699993782,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0313",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 10,
+      "elapsed_seconds": 13.332555199973285,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0319",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 1,
+      "elapsed_seconds": 13.101064699934795,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0345",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 2,
+      "elapsed_seconds": 12.88330660003703,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0354",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "kitchen",
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 2,
+      "elapsed_seconds": 13.0656042000046,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0369",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "other"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 16,
+      "elapsed_seconds": 13.543348399922252,
+      "load_seconds": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0377",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "kitchen"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 10,
+      "elapsed_seconds": 14.40469390002545,
+      "load_seconds": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0378",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "kitchen",
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 19,
+      "elapsed_seconds": 13.723012099973857,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0438",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 13,
+      "elapsed_seconds": 13.18026589998044,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0443",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 0,
+      "elapsed_seconds": 12.819877900066786,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0468",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 2,
+      "elapsed_seconds": 13.137267800047994,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0483",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "other",
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 12,
+      "elapsed_seconds": 13.315858100075275,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0487",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 4,
+      "elapsed_seconds": 13.15545360010583,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0489",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 7,
+      "elapsed_seconds": 13.188456700067036,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0490",
+      "truth": [
+        "other"
+      ],
+      "predicted": [
+        "kitchen",
+        "other"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 12,
+      "elapsed_seconds": 13.158223300008103,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0494",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "kitchen",
+        "other",
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 4,
+      "elapsed_seconds": 12.985119000077248,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0512",
+      "truth": [
+        "other"
+      ],
+      "predicted": [
+        "other"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 14,
+      "elapsed_seconds": 13.382076099980623,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0517",
+      "truth": [
+        "other"
+      ],
+      "predicted": [
+        "kitchen",
+        "other"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 26,
+      "elapsed_seconds": 13.828726600040682,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0525",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 0,
+      "elapsed_seconds": 12.96624249999877,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0539",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "other"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 1,
+      "elapsed_seconds": 13.61023909994401,
+      "load_seconds": 0.0,
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0540",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 0,
+      "elapsed_seconds": 13.875763699994422,
+      "load_seconds": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0546",
+      "truth": [
+        "other"
+      ],
+      "predicted": [
+        "kitchen",
+        "other"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 24,
+      "elapsed_seconds": 14.79224650003016,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0597",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "kitchen",
+        "other"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 22,
+      "elapsed_seconds": 15.046256500063464,
+      "load_seconds": 0.0,
+      "tp": 0,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0631",
+      "truth": [
+        "other",
+        "recyclable"
+      ],
+      "predicted": [
+        "kitchen",
+        "other",
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 5,
+      "elapsed_seconds": 14.184677599929273,
+      "load_seconds": 0.0,
+      "tp": 2,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0642",
+      "truth": [
+        "other"
+      ],
+      "predicted": [
+        "other"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 0,
+      "elapsed_seconds": 13.99434990005102,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0651",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "other",
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 1,
+      "elapsed_seconds": 14.061089399969205,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "exact_match": false
+    },
+    {
+      "id": "taco-0673",
+      "truth": [
+        "recyclable"
+      ],
+      "predicted": [
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 7,
+      "elapsed_seconds": 14.521246700081974,
+      "load_seconds": 0.0,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    },
+    {
+      "id": "taco-0685",
+      "truth": [
+        "other",
+        "recyclable"
+      ],
+      "predicted": [
+        "other",
+        "recyclable"
+      ],
+      "background": "outdoor natural or built background",
+      "status": "success",
+      "unknown_items": 1,
+      "elapsed_seconds": 12.986579500022344,
+      "load_seconds": 0.0,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": true
+    }
+  ],
+  "exact_count": 14,
+  "unknown_false_positive_images": 0
+}

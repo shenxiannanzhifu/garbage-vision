@@ -1,0 +1,12 @@
+{
+  "elapsed_seconds": 817.2211505000014,
+  "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "torch": "2.9.1+cu128",
+  "best_weights": "runs/detection-v07/binary-waste3/weights/best.pt",
+  "best_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+  "initial_sha256": "31e20dde3def09e2cf938c7be6fe23d9150bbbe503982af13345706515f2ef95",
+  "actual_epochs": 37,
+  "trainable_parameters": 3011043,
+  "note": "Supervised detector weights updated using real bounding boxes; SAM and CLIP remain frozen.",
+  "parameter_count_note": "trainable_parameters field reports total parameter count; framework startup recorded 3,011,027 gradient-enabled parameters and 16 fixed DFL parameters."
+}

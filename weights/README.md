@@ -9,4 +9,4 @@
 
 下载地址固定在脚本中。两者约 432 MB，权重不入 Git。只加载可信来源；自定义 PyTorch 权重可能包含可执行反序列化内容。
 
-本地模型没有针对本项目微调。YOLO-World s/l 及 YOLOE 候选的开发集结果保留在 evidence/v0.2.0 中，但不是当前默认模型；候选额外权重不属于运行必需项。
+当前网页默认的 SAM2 与 CLIP 骨干没有针对本项目微调。v0.6.0 训练了分类向量但候选退步；v0.7.0 用真实框微调 YOLOv8n 定位器，局部改善但未通过全部替换门槛，均未启用。最新候选保存在 `runs/detection-v07/binary-waste3/weights/best.pt`，SHA-256 `373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129`，仅用于本地实验且被 Git 忽略。YOLO-World s/l 及 YOLOE 的更早实验保留在 evidence/v0.2.0 中；候选额外权重不属于运行必需项。

@@ -1,0 +1,188 @@
+{
+  "id": "taco-0597",
+  "expected_categories": [
+    "recyclable"
+  ],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:15:44.130367+00:00",
+    "image_id": "2b551cbf2b3d02cfe067d79b7cf2ee697269d99e290e18b743dbb95c3d75e561",
+    "source_sha256": "0a51810aac242e053bf507b0a4c4b53bd06f437a27c0b384fe4c4655d7cd1d5a",
+    "image_size": [
+      1200,
+      1600
+    ],
+    "method": "local",
+    "model": "YOLOv8n waste detector + prompted SAM2.1-tiny + frozen CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          756.0,
+          646.0,
+          854.0,
+          727.0
+        ],
+        "detection_confidence": 0.5446178913116455,
+        "mask_quality": 0.9283716082572937,
+        "similarity": 0.28893357515335083,
+        "category_margin": 0.005866974592208862,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：使用过的纸巾；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "used tissue",
+        "bbox": [
+          1133.0,
+          320.0,
+          1187.0,
+          356.0
+        ],
+        "detection_confidence": 0.15532130002975464,
+        "mask_quality": 0.881965160369873,
+        "similarity": 0.28515517711639404,
+        "category_margin": 0.0009496212005615234,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "烟蒂",
+        "category": "other",
+        "reason": "烟蒂属于其他垃圾；完全熄灭后再投放。 整图分类结果；未获得可靠的物品定位，不用于计数。",
+        "uncertain": false,
+        "label": "cigarette butt",
+        "bbox": null,
+        "detection_confidence": null,
+        "mask_quality": null,
+        "similarity": 0.335740327835083,
+        "category_margin": 0.059255123138427734,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.22835270001087338,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 6,
+      "candidate_count": 2,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": true,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。",
+      "detector_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+      "detector_threshold": 0.15,
+      "proposal_method": "supervised binary detector -> real SAM box-prompt masks",
+      "detector_regions": [
+        {
+          "bbox": [
+            756.0,
+            646.0,
+            854.0,
+            727.0
+          ],
+          "detection_confidence": 0.5446178913116455
+        },
+        {
+          "bbox": [
+            345.0,
+            1213.0,
+            726.0,
+            1447.0
+          ],
+          "detection_confidence": 0.4808386266231537
+        },
+        {
+          "bbox": [
+            531.0,
+            397.0,
+            673.0,
+            505.0
+          ],
+          "detection_confidence": 0.33763206005096436
+        },
+        {
+          "bbox": [
+            272.0,
+            783.0,
+            328.0,
+            829.0
+          ],
+          "detection_confidence": 0.20779640972614288
+        },
+        {
+          "bbox": [
+            0.0,
+            1246.0,
+            132.0,
+            1386.0
+          ],
+          "detection_confidence": 0.2014819085597992
+        },
+        {
+          "bbox": [
+            1133.0,
+            320.0,
+            1187.0,
+            356.0
+          ],
+          "detection_confidence": 0.15532130002975464
+        }
+      ],
+      "experimental": true,
+      "timing_note": "Real mask cache; not a full runtime benchmark"
+    }
+  }
+}

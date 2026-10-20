@@ -1,0 +1,310 @@
+{
+  "id": "commons-101149487",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:15:46.629956+00:00",
+    "image_id": "fa102d5ba2f2ab69c3a776dbfb41490f2f7fca5c589939aec4dfe748dd26f2b8",
+    "source_sha256": "bfab7ea49dc872e7923748dff4d4957d97e50140a07eaf97d99681758b04d94a",
+    "image_size": [
+      960,
+      640
+    ],
+    "method": "local",
+    "model": "SAM2.1-tiny + CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          750.94,
+          215.62,
+          889.69,
+          443.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9097312092781067,
+        "similarity": 0.3305370807647705,
+        "category_margin": 0.0016486644744873047,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          16.87,
+          44.06,
+          889.69,
+          615.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.936257004737854,
+        "similarity": 0.3213389813899994,
+        "category_margin": 0.017044544219970703,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          559.69,
+          357.19,
+          589.69,
+          388.12
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9123655557632446,
+        "similarity": 0.3084610402584076,
+        "category_margin": 0.022496938705444336,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          375.0,
+          209.06,
+          404.06,
+          248.44
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9303722381591797,
+        "similarity": 0.30507713556289673,
+        "category_margin": 0.01122942566871643,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：白炽灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "incandescent light bulb",
+        "bbox": [
+          407.81,
+          170.62,
+          435.0,
+          210.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9286887645721436,
+        "similarity": 0.30104684829711914,
+        "category_margin": 0.012762397527694702,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：电池；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "battery",
+        "bbox": [
+          565.31,
+          297.19,
+          592.5,
+          325.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9364724159240723,
+        "similarity": 0.30048733949661255,
+        "category_margin": 0.012434542179107666,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：白炽灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "incandescent light bulb",
+        "bbox": [
+          385.31,
+          425.62,
+          415.31,
+          460.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9311590790748596,
+        "similarity": 0.2994496524333954,
+        "category_margin": 0.003981173038482666,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：电池；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "battery",
+        "bbox": [
+          477.19,
+          246.56,
+          532.5,
+          273.75
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9296096563339233,
+        "similarity": 0.28536635637283325,
+        "category_margin": 0.009396463632583618,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：电池；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "battery",
+        "bbox": [
+          346.87,
+          267.19,
+          472.5,
+          361.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9552190899848938,
+        "similarity": 0.2841759920120239,
+        "category_margin": 0.016987532377243042,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          360.0,
+          378.75,
+          391.87,
+          415.31
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9364886283874512,
+        "similarity": 0.28329187631607056,
+        "category_margin": 0.018038123846054077,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：烟蒂；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "cigarette butt",
+        "bbox": [
+          551.25,
+          232.5,
+          584.06,
+          270.0
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9284659624099731,
+        "similarity": 0.28272005915641785,
+        "category_margin": 0.0002377033233642578,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：白炽灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "incandescent light bulb",
+        "bbox": [
+          490.31,
+          160.31,
+          517.5,
+          196.87
+        ],
+        "detection_confidence": null,
+        "mask_quality": 0.9180960655212402,
+        "similarity": 0.2819402515888214,
+        "category_margin": 0.01904389262199402,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.09048330003861338,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 17,
+      "candidate_count": 12,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": true
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+    }
+  }
+}

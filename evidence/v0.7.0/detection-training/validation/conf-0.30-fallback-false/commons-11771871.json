@@ -1,0 +1,385 @@
+{
+  "id": "commons-11771871",
+  "expected_categories": [],
+  "result": {
+    "schema_version": "1.0",
+    "created_at_utc": "2026-10-20T08:05:00.740907+00:00",
+    "image_id": "886b8af6b9a7f87b2ba0fa93f8a74dc36414760316cfc74b679d373b81af67bc",
+    "source_sha256": "41b93f4925f5fe13240607d4b9d94dcbb9a35d0ffeba53bfec101927162bfc53",
+    "image_size": [
+      960,
+      546
+    ],
+    "method": "local",
+    "model": "YOLOv8n waste detector + prompted SAM2.1-tiny + frozen CLIP ViT-B/32",
+    "status": "success",
+    "items": [
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          613.0,
+          293.0,
+          765.0,
+          489.0
+        ],
+        "detection_confidence": 0.9350444078445435,
+        "mask_quality": 0.9868190288543701,
+        "similarity": 0.3430866599082947,
+        "category_margin": 0.020907878875732422,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          788.0,
+          251.0,
+          929.0,
+          377.0
+        ],
+        "detection_confidence": 0.8520390391349792,
+        "mask_quality": 0.98589688539505,
+        "similarity": 0.3362920582294464,
+        "category_margin": 0.02783757448196411,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          500.0,
+          98.0,
+          640.0,
+          279.0
+        ],
+        "detection_confidence": 0.6282044053077698,
+        "mask_quality": 0.9710569977760315,
+        "similarity": 0.3352310061454773,
+        "category_margin": 0.007514506578445435,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          526.0,
+          228.0,
+          621.0,
+          345.0
+        ],
+        "detection_confidence": 0.708972692489624,
+        "mask_quality": 0.9773367047309875,
+        "similarity": 0.33367735147476196,
+        "category_margin": 0.02582600712776184,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          641.0,
+          76.0,
+          777.0,
+          268.0
+        ],
+        "detection_confidence": 0.811604917049408,
+        "mask_quality": 0.9915299415588379,
+        "similarity": 0.33233925700187683,
+        "category_margin": 0.012653648853302002,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          668.0,
+          194.0,
+          757.0,
+          269.0
+        ],
+        "detection_confidence": 0.47682562470436096,
+        "mask_quality": 0.9772550463676453,
+        "similarity": 0.330826997756958,
+        "category_margin": 0.02332821488380432,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          157.0,
+          40.0,
+          437.0,
+          304.0
+        ],
+        "detection_confidence": 0.7762554287910461,
+        "mask_quality": 0.9852131009101868,
+        "similarity": 0.3253713548183441,
+        "category_margin": 0.0197029709815979,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          376.0,
+          225.0,
+          490.0,
+          371.0
+        ],
+        "detection_confidence": 0.9053146243095398,
+        "mask_quality": 0.9755932092666626,
+        "similarity": 0.3247468173503876,
+        "category_margin": 0.014593183994293213,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：紧凑型荧光灯；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "compact fluorescent lamp",
+        "bbox": [
+          544.0,
+          97.0,
+          594.0,
+          125.0
+        ],
+        "detection_confidence": 0.4370129108428955,
+        "mask_quality": 0.9486086368560791,
+        "similarity": 0.3241378962993622,
+        "category_margin": 0.003523409366607666,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      },
+      {
+        "name": "待确认区域",
+        "category": null,
+        "reason": "不能确认物品类型或投放类别。外观候选：LED 灯泡；需结合完整物品、材质和用途人工核对。",
+        "uncertain": true,
+        "label": "LED light bulb",
+        "bbox": [
+          347.0,
+          371.0,
+          569.0,
+          468.0
+        ],
+        "detection_confidence": 0.9322602152824402,
+        "mask_quality": 0.9726791977882385,
+        "similarity": 0.3208490014076233,
+        "category_margin": 0.013690680265426636,
+        "visual_similarity": null,
+        "visual_margin": null,
+        "classification_basis": "text"
+      }
+    ],
+    "elapsed_seconds": 0.057961200014688075,
+    "load_seconds": 0.0,
+    "cache_hit": true,
+    "error": null,
+    "metadata": {
+      "device": "cuda:0",
+      "region_count": 12,
+      "candidate_count": 10,
+      "suppressed_uncertain_parts": [],
+      "image_fallback_used": false,
+      "truncated": false,
+      "weight_sha256": {
+        "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+        "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+      },
+      "config_sha256": "2d7080ca980f37aa096cf18615fff03af757f66437d014ad5b85beba16cd48bf",
+      "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+      "config": {
+        "backend": "sam2-clip",
+        "region_input": "crop",
+        "crop_n_layers": 1,
+        "max_area_fraction": 0.95,
+        "sam_weights": "weights/sam2.1_t.pt",
+        "clip_weights": "weights/ViT-B-32.pt",
+        "device": "auto",
+        "points_stride": 24,
+        "points_batch_size": 32,
+        "mask_score_min": 0.8,
+        "similarity_min": 0.28,
+        "category_margin_min": 0.018,
+        "min_box_side": 8,
+        "min_area_fraction": 0.0002,
+        "duplicate_iou": 0.7,
+        "part_mask_containment": 0.95,
+        "part_max_area_ratio": 0.25,
+        "part_similarity_gap": 0.015,
+        "max_objects": 40,
+        "crop_padding": 0.05,
+        "clip_resize_mode": "letterbox",
+        "text_templates": [
+          "a photo of {}.",
+          "a close-up photo of {}.",
+          "a photo of one or more {}."
+        ],
+        "text_aliases": "config/local_texts_v2.json",
+        "context_weight": 0.5,
+        "context_padding": 0.5,
+        "image_fallback": false
+      },
+      "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。",
+      "detector_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+      "detector_threshold": 0.3,
+      "proposal_method": "supervised binary detector -> real SAM box-prompt masks",
+      "detector_regions": [
+        {
+          "bbox": [
+            613.0,
+            293.0,
+            765.0,
+            489.0
+          ],
+          "detection_confidence": 0.9350444078445435
+        },
+        {
+          "bbox": [
+            347.0,
+            371.0,
+            569.0,
+            468.0
+          ],
+          "detection_confidence": 0.9322602152824402
+        },
+        {
+          "bbox": [
+            79.0,
+            147.0,
+            185.0,
+            305.0
+          ],
+          "detection_confidence": 0.9221825003623962
+        },
+        {
+          "bbox": [
+            376.0,
+            225.0,
+            490.0,
+            371.0
+          ],
+          "detection_confidence": 0.9053146243095398
+        },
+        {
+          "bbox": [
+            788.0,
+            251.0,
+            929.0,
+            377.0
+          ],
+          "detection_confidence": 0.8520390391349792
+        },
+        {
+          "bbox": [
+            641.0,
+            76.0,
+            777.0,
+            268.0
+          ],
+          "detection_confidence": 0.811604917049408
+        },
+        {
+          "bbox": [
+            157.0,
+            40.0,
+            437.0,
+            304.0
+          ],
+          "detection_confidence": 0.7762554287910461
+        },
+        {
+          "bbox": [
+            526.0,
+            228.0,
+            621.0,
+            345.0
+          ],
+          "detection_confidence": 0.708972692489624
+        },
+        {
+          "bbox": [
+            0.0,
+            310.0,
+            293.0,
+            498.0
+          ],
+          "detection_confidence": 0.6966488361358643
+        },
+        {
+          "bbox": [
+            500.0,
+            98.0,
+            640.0,
+            279.0
+          ],
+          "detection_confidence": 0.6282044053077698
+        },
+        {
+          "bbox": [
+            668.0,
+            194.0,
+            757.0,
+            269.0
+          ],
+          "detection_confidence": 0.47682562470436096
+        },
+        {
+          "bbox": [
+            544.0,
+            97.0,
+            594.0,
+            125.0
+          ],
+          "detection_confidence": 0.4370129108428955
+        }
+      ],
+      "experimental": true,
+      "timing_note": "Real mask cache; not a full runtime benchmark"
+    }
+  }
+}

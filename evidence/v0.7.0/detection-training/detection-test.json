@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "metrics/precision(B)": 0.5836938792608387,
+    "metrics/recall(B)": 0.4381516867639658,
+    "metrics/mAP50(B)": 0.4496623467276813,
+    "metrics/mAP50-95(B)": 0.26713870847964344,
+    "fitness": 0.26713870847964344
+  },
+  "weights_sha256": "373b67a3feb8e8aed12b2b258c1eab182cd10d2df7df4d83a5e6e99a8382b129",
+  "note": "Binary localization metric only; cannot establish four-category classification improvement."
+}
