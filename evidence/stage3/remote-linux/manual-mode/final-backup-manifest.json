@@ -1,0 +1,12 @@
+{
+  "service.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tasks.sqlite3": "7dc9de719a730585a0ed7820dfc1a529e0a22c55952e0fc3558028e6bd208942",
+  "tasks/9d5e595d-8bea-4d4b-b18b-a4536886bdcf/input.bin": "01ed14b1e695bd913b9af1c14dbd2b302b7d0a7bcf8b35aa8be67be6e0ed178d",
+  "tasks/9d5e595d-8bea-4d4b-b18b-a4536886bdcf/image.png": "d07eae08cd07fbf2fed078c32e5d73f4e67dbeea5a8cec4faf315698bbc52f1f",
+  "tasks/ba20a0b3-fd5f-46d0-8fc7-ab428e463d58/input.bin": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+  "tasks/ba20a0b3-fd5f-46d0-8fc7-ab428e463d58/image.png": "f8dac64dfd0df858dd72d3a16395f50b00e4eeed84d18214b8f045eae1911099",
+  "tasks/ac69f574-a2e9-431f-95ed-d6de47a73102/input.bin": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+  "tasks/ac69f574-a2e9-431f-95ed-d6de47a73102/image.png": "f8dac64dfd0df858dd72d3a16395f50b00e4eeed84d18214b8f045eae1911099",
+  "tasks/72be22f7-9e7a-4799-a6fc-ab4e22d6d4a4/input.bin": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+  "tasks/72be22f7-9e7a-4799-a6fc-ab4e22d6d4a4/image.png": "f8dac64dfd0df858dd72d3a16395f50b00e4eeed84d18214b8f045eae1911099"
+}

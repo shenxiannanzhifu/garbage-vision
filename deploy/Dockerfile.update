@@ -1,5 +1,5 @@
 # Reuse an already verified dependency image; deploy_update.sh checks its exact ID.
-ARG BASE_IMAGE
+ARG BASE_IMAGE=garbage-vision-stage3:gpu-0051dd2d290e
 FROM ${BASE_IMAGE}
 COPY garbage_vision /app/garbage_vision
 COPY config /app/config

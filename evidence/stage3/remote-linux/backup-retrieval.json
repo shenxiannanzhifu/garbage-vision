@@ -1,0 +1,10 @@
+{
+  "retrieved_at": "2026-10-22",
+  "archive_sha256": "f0992e87993b40e787710eedde7b3307f62aaa45e150ddb6cb9959bf7ba11340",
+  "archive_bytes": 12327180,
+  "remote_sha256_matches": true,
+  "data_files_verified": 8,
+  "private_configuration_saved": true,
+  "location": "ignored .local/remote-session; never publish this private backup",
+  "original_service_running": true
+}

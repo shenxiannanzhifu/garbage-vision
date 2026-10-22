@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.36",
+  "restored_tasks": 4,
+  "task_results_and_images_match": true,
+  "inference_calls": 0,
+  "original_data_modified": false
+}

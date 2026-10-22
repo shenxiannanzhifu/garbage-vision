@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "archive_sha256": "374134d648d6c882ce7a20660b0bf0c1d42a2c28926d29d1bb2970db182a839f",
+  "archive_bytes": 18843026,
+  "private_archive": ".local/remote-session/server-final-4tasks-937529b.tar.gz",
+  "contains_secrets": true,
+  "not_for_public_distribution": true,
+  "restored_task_count": 4,
+  "all_backup_file_hashes_match": true,
+  "new_paid_calls": 0,
+  "application_commit": "937529b79755e592d9516b99d23c62b35e73e871"
+}

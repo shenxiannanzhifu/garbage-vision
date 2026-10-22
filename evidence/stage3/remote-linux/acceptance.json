@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-22",
+  "scope": "remote Alibaba Cloud Hong Kong A10 Linux server",
+  "application_commit": "0051dd2d290ef33c113653fd08d7069ffaf6716c",
+  "image": "garbage-vision-stage3:gpu-0051dd2d290e",
+  "real_cuda_compute_passed": true,
+  "dual_tasks": [
+    {
+      "sample": "commons-179028310.jpg",
+      "task_id": "72be22f7-9e7a-4799-a6fc-ab4e22d6d4a4",
+      "status": "succeeded",
+      "local_device": "cuda:0",
+      "local_seconds": 8.895,
+      "local_load_seconds": 4.987,
+      "api_seconds": 14.412,
+      "same_image_verified": true,
+      "export_matches": true,
+      "api_attempts": 1
+    },
+    {
+      "sample": "commons-79273563.jpg",
+      "task_id": "9d5e595d-8bea-4d4b-b18b-a4536886bdcf",
+      "status": "succeeded",
+      "local_device": "cuda:0",
+      "local_seconds": 8.702,
+      "local_load_seconds": 0.0,
+      "api_seconds": 22.126,
+      "same_image_verified": true,
+      "export_matches": true,
+      "api_attempts": 1
+    }
+  ],
+  "paid_calls": 2,
+  "paid_budget_nex": 1,
+  "actual_billed_total_nex": 0.0617103,
+  "billing_matches_source": "provider logs matched by server source IP, timestamps and token counts",
+  "browser_created_local_task": "ac69f574-a2e9-431f-95ed-d6de47a73102",
+  "browser_json_export_matches": true,
+  "container_recreation_history_count": 3,
+  "isolated_restore_passed": true,
+  "private_backup_download_and_hashes_passed": true,
+  "remaining": [
+    "user video and personal reflection",
+    "user confirmation of final main merge/tag and reviewer access",
+    "user final submission and server release decision"
+  ],
+  "limitation": "Only two development samples; not a new accuracy benchmark. Runtime source unchanged from local preflight.",
+  "current_application_commit": "937529b79755e592d9516b99d23c62b35e73e871",
+  "current_paid_mode": "manual",
+  "manual_mode_validation": "manual-mode/final-verification.json",
+  "final_backup_task_count": 4
+}

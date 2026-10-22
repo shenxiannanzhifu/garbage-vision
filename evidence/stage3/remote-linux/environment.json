@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-22T12:06:48.724991+00:00",
+  "scope": "remote Alibaba Cloud ECS; no model verification yet",
+  "os": "Ubuntu 24.04.4 LTS",
+  "kernel": "6.8.0-138-generic",
+  "machine": "x86_64",
+  "gpu": "NVIDIA A10, 23028 MiB, 580.126.09",
+  "docker_server": "29.8.0",
+  "compose": "5.5.1",
+  "nvidia_container_toolkit": "1.17.8-1",
+  "docker_runtimes": [
+    "io.containerd.runc.v2",
+    "nvidia",
+    "runc"
+  ],
+  "ssh_host_key_verified_against_console": true,
+  "external_model_calls": 0
+}

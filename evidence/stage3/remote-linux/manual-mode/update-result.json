@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "application_commit": "937529b79755e592d9516b99d23c62b35e73e871",
+  "image": "garbage-vision-stage3:gpu-937529b79755",
+  "base_image_id": "sha256:cc3f2bc00c28e582c8dfe6b8b2fa8ba16c00ffe0fcae8ecbf756f799e2b84d46",
+  "source_archive_sha256": "31c6e8d87e380168d67b3350cb33c60b7a1ab59e5303e4bc69b6ef9b32d9a9ef",
+  "paid_mode": "manual",
+  "new_paid_calls_during_update": 0,
+  "previous_authorizations": [
+    [
+      "stage3-remote-20261022-two-images",
+      2,
+      2
+    ]
+  ],
+  "history_matches": true,
+  "isolated_restore_passed": true,
+  "runtime_sha256": {
+    "garbage_vision/service.py": "19d885597631a9e4135a1c90967c0e1064f371207a5239e051fa91b0f8e0a4e5",
+    "stage3_app.py": "6dc59b5630a64069d7e4387c44b03ce47355d84f27757744748fdf8a7cca1e3a"
+  }
+}

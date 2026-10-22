@@ -1,0 +1,15 @@
+{
+  "provider": "nexavlinks",
+  "sample": "commons-179028310.jpg",
+  "task_id": "72be22f7-9e7a-4799-a6fc-ab4e22d6d4a4",
+  "log_time_local": "2026-10-22 20:22:00",
+  "actual_cost_nex": 0.0279765,
+  "group": "[Azure官key] 限量0.3x",
+  "match_basis": [
+    "server source IP",
+    "model",
+    "request time",
+    "3 uncached + 7246 cache-write input tokens, 53 output tokens"
+  ],
+  "source": "https://www.nexavlinks.com/logs"
+}

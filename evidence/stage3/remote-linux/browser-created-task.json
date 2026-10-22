@@ -1,0 +1,9 @@
+{
+  "task_id": "ac69f574-a2e9-431f-95ed-d6de47a73102",
+  "created_through_browser": true,
+  "sample": "commons-179028310.jpg",
+  "status": "succeeded",
+  "local_inference_seconds": 8.66,
+  "api_status": "skipped",
+  "source_sha256": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097"
+}

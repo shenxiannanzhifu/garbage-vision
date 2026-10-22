@@ -1,0 +1,26 @@
+{
+  "completed_at_local": "2026-10-22T20:17:00+08:00",
+  "transport": "SFTP over host-key-verified SSH",
+  "total_bytes": 5146425373,
+  "sha256_all_match": true,
+  "files": {
+    "deploy_prebuilt.sh": {
+      "bytes": 3614,
+      "sha256": "028ba2a3f60a88469c578e86cc1325bc581457783f27f96feccd8dcf5912c30f"
+    },
+    "images.tar.gz": {
+      "bytes": 4736270382,
+      "sha256": "b41852d4cbdbad053e28d395c2e95037ca0bd460cc16b2f5c7b4d5461f714e04"
+    },
+    "runtime-assets.tar.gz": {
+      "bytes": 401078275,
+      "sha256": "92abe3e8b2d11c5669b056f68c4eb790ba21be65e504fb695b41e19e67d96952"
+    },
+    "source.tar.gz": {
+      "bytes": 9073102,
+      "sha256": "91f3aa76b4519ada1c068ecd29911d3dac3e745e5c8fec63dd77fe85e138442d"
+    }
+  },
+  "application_commit": "0051dd2d290ef33c113653fd08d7069ffaf6716c",
+  "remote_application_verified": false
+}

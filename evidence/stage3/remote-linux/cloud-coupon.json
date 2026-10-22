@@ -1,0 +1,9 @@
+{
+  "observed_date": "2026-10-22",
+  "source": "Alibaba Cloud coupon deduction detail UI, searched current coupon",
+  "transaction_time_beijing": "2026-10-22 20:35:00",
+  "product": "ECS pay-as-you-go",
+  "deducted_cny": 5.8628478195,
+  "records_visible": 1,
+  "limitation": "Posted bill only; not a current total cost or proof that every future charge will be covered."
+}

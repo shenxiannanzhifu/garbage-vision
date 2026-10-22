@@ -1,0 +1,11 @@
+{
+  "ready_for_tasks": true,
+  "missing_weights": [],
+  "model_loaded": false,
+  "note": "\u6743\u91cd\u6587\u4ef6\u5b58\u5728\u4e0d\u7b49\u4e8e\u771f\u5b9e\u6a21\u578b\u63a8\u7406\u901a\u8fc7\uff1b\u8bf7\u67e5\u770b\u5b9e\u9645\u4efb\u52a1\u8bb0\u5f55\u3002",
+  "paid_calls_enabled": true,
+  "paid_calls_remaining": null,
+  "paid_calls_mode": "manual",
+  "execution": "single_process_background",
+  "max_pending": 8
+}

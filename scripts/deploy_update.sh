@@ -22,8 +22,9 @@ tar -xzf "$archive" -C "$release"
 for file in requirements.txt requirements-stage3.txt requirements-build.txt Dockerfile; do
     cmp "$old/$file" "$release/$file"
 done
-cp -a "$old/weights" "$release/weights"
-cp -a "$old/data/raw" "$release/data/raw"
+mkdir -p "$release/weights" "$release/data/raw"
+cp -a "$old/weights/." "$release/weights/"
+cp -a "$old/data/raw/." "$release/data/raw/"
 cp -a "$old/.env" "$old/.env.stage3" "$release/"
 mkdir -p "$release/.local"
 image="garbage-vision-stage3:gpu-${revision:0:12}"
@@ -77,7 +78,7 @@ docker run --rm --user 0 --network none \
     --mount "type=bind,src=$out/restore-copy,dst=/data" \
     --mount "type=bind,src=$release/scripts/verify_container_restore.py,dst=/verify_restore.py,readonly" \
     -e PYTHONPATH=/app "$image" python /verify_restore.py
-client "$release" python -c 'import json; from pathlib import Path; from garbage_vision.service_client import request; r=request("GET","/health/ready").json(); assert r["paid_calls_mode"]=="manual" and r["paid_calls_enabled"] and r["paid_calls_remaining"] is None; Path("/out/capabilities.json").write_text(json.dumps(r,indent=2)); print("Manual mode enabled; verification created no tasks.")'
+client "$release" python -c 'import json; from pathlib import Path; from garbage_vision.service_client import request; r=request("GET","/health/ready").json(); assert r["ready_for_tasks"] and not r["missing_weights"]; assert r["paid_calls_mode"]=="manual" and r["paid_calls_enabled"] and r["paid_calls_remaining"] is None; Path("/out/capabilities.json").write_text(json.dumps(r,indent=2)); print("Model weights available and manual mode enabled; verification created no tasks.")'
 python3 - "$release" "$out" "$revision" "$image" "$base_id" "$archive_sha" <<'PY'
 import hashlib,json,sqlite3,sys
 from pathlib import Path

@@ -1,0 +1,19 @@
+{
+  "authorized_at_utc": "2026-10-22T12:10:23.350284+00:00",
+  "authorization_id": "stage3-remote-20261022-two-images",
+  "provider": "nexavlinks",
+  "model": "gpt-6-astra",
+  "samples": [
+    "commons-179028310.jpg",
+    "commons-79273563.jpg"
+  ],
+  "max_calls": 2,
+  "budget_nex": 1,
+  "source": "User approved the explicit two-image recommendation in this task",
+  "no_automatic_retries": true,
+  "existing_project_key_transfer_to_user_server_authorized": true,
+  "price_checked_date": "2026-10-22",
+  "price_source": "https://www.nexavlinks.com/modelsmarket/gpt-6-astra",
+  "conservative_reserved_per_call_nex": 0.218625,
+  "current_step": "completed two calls; call limit exhausted; no further generation authorized"
+}

@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "task_id": "ba20a0b3-fd5f-46d0-8fc7-ab428e463d58",
+  "created_through_browser": true,
+  "device": "cuda:0",
+  "paid_calls": 0,
+  "export_matches": true,
+  "application_commit": "937529b79755e592d9516b99d23c62b35e73e871",
+  "local_seconds": 8.90769900899977,
+  "load_seconds": 4.945397125999989,
+  "history_count": 4
+}

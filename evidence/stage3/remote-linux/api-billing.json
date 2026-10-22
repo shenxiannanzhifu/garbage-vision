@@ -1,0 +1,20 @@
+{
+  "provider": "nexavlinks",
+  "source": "https://www.nexavlinks.com/logs",
+  "group": "[Azure官key] 限量0.3x",
+  "calls": [
+    {
+      "task_id": "72be22f7-9e7a-4799-a6fc-ab4e22d6d4a4",
+      "time_local": "2026-10-22 20:22:00",
+      "actual_cost_nex": 0.0279765
+    },
+    {
+      "task_id": "9d5e595d-8bea-4d4b-b18b-a4536886bdcf",
+      "time_local": "2026-10-22 20:26:53",
+      "actual_cost_nex": 0.0337338
+    }
+  ],
+  "actual_total_nex": 0.0617103,
+  "authorized_max_nex": 1,
+  "no_automatic_retries": true
+}
