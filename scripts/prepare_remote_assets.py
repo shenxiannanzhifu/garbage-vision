@@ -32,6 +32,43 @@ def check():
     return {'weights_verified': list(WEIGHTS), 'samples_present': SAMPLES}
 
 
+def portable_identity(archive_path, image, commit):
+    """Docker classic uses config IDs; containerd can expose OCI index IDs."""
+    with tarfile.open(archive_path, 'r:') as archive:
+        records = json.load(archive.extractfile('manifest.json'))
+        record, = [r for r in records if image in r.get('RepoTags', [])]
+        raw = archive.extractfile(record['Config']).read()
+        config_digest = 'sha256:' + hashlib.sha256(raw).hexdigest()
+        config = json.loads(raw)
+        assert config['architecture'] == 'amd64' and config['os'] == 'linux'
+        assert config['config']['Labels']['org.opencontainers.image.revision'] == commit
+        ids = {config_digest}
+
+        def walk(descriptor):
+            digest = descriptor['digest']
+            if not re.fullmatch(r'sha256:[0-9a-f]{64}', digest):
+                raise ValueError('Unsupported OCI digest')
+            payload = archive.extractfile('blobs/sha256/' + digest.split(':')[1]).read()
+            assert 'sha256:' + hashlib.sha256(payload).hexdigest() == digest
+            node = json.loads(payload)
+            matches = node.get('config', {}).get('digest') == config_digest
+            for child in node.get('manifests', []):
+                matches = walk(child) or matches
+            if matches:
+                ids.add(digest)
+            return matches
+
+        if 'index.json' in archive.getnames():
+            for descriptor in json.load(archive.extractfile('index.json'))['manifests']:
+                # Only traverse the selected app reference; other images may have
+                # descriptors for platforms absent from this single-platform save.
+                reference = descriptor.get('annotations', {}).get('io.containerd.image.name', '')
+                if reference.endswith('/' + image) or reference == image:
+                    walk(descriptor)
+        return {'accepted_image_ids': sorted(ids), 'config_digest': config_digest,
+                'rootfs_diff_ids': config['rootfs']['diff_ids']}
+
+
 def pack(out, commit, image):
     if not re.fullmatch(r'[0-9a-f]{40}', commit):
         raise ValueError('Expected full Git commit')
@@ -41,6 +78,9 @@ def pack(out, commit, image):
     identity = json.loads((out/'image-identity.json').read_text(encoding='utf-8-sig'))
     if not re.fullmatch(r'sha256:[0-9a-f]{64}', identity['image_id']):
         raise ValueError('Invalid image identity')
+    portable = portable_identity(out/'images.tar', image, commit)
+    if identity['image_id'] not in portable['accepted_image_ids']:
+        raise ValueError('Export does not match the locally verified image')
     summary = json.loads((out/'summary.json').read_text(encoding='utf-8'))
     if len(summary['tasks']) != 2 or any(
         t['status'] != 'succeeded' or t['device'] != 'cuda:0' for t in summary['tasks']
@@ -62,6 +102,7 @@ def pack(out, commit, image):
     files = {p.name: {'bytes': p.stat().st_size, 'sha256': sha(p)}
              for p in sorted(bundle.iterdir()) if p.is_file()}
     manifest = {'schema': 1, 'commit': commit, 'image': image, 'image_id': identity['image_id'],
+                'portable_identity': portable,
                 'platform': 'linux/amd64', 'device': 'cuda:0', 'paid_call_limit': 0,
                 'local_gpu_verified': True, 'remote_verified': False, 'files': files,
                 'total_bytes': sum(v['bytes'] for v in files.values())}

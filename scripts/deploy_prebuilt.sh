@@ -25,7 +25,10 @@ python3 - <<'PY'
 import json, subprocess
 m=json.load(open('manifest.json'))
 actual=json.loads(subprocess.check_output(['docker','image','inspect',m['image']]))[0]
-assert actual['Id']==m['image_id'], 'Image identity mismatch'
+identity=m['portable_identity']
+assert m['image_id'] in identity['accepted_image_ids']
+assert actual['Id'] in identity['accepted_image_ids'], 'Image identity mismatch'
+assert actual['RootFS']['Layers']==identity['rootfs_diff_ids'], 'Image layers mismatch'
 assert actual['Architecture']=='amd64' and actual['Os']=='linux'
 assert actual['Config']['Labels']['org.opencontainers.image.revision']==m['commit']
 print('Loaded Linux image matches the locally verified source and image ID.')

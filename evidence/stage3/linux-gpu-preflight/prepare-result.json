@@ -1,0 +1,43 @@
+﻿{
+    "complete":  true,
+    "scope":  "local GPU preflight only",
+    "remote_verified":  false,
+    "paid_calls":  0,
+    "checks":  [
+                   {
+                       "name":  "Build independent CUDA image",
+                       "exit_code":  0
+                   },
+                   {
+                       "name":  "Check dependencies",
+                       "exit_code":  0
+                   },
+                   {
+                       "name":  "Check CUDA execution",
+                       "exit_code":  0
+                   },
+                   {
+                       "name":  "Start isolated GPU API on 8082",
+                       "exit_code":  0
+                   },
+                   {
+                       "name":  "Validate Linux bootstrap syntax",
+                       "exit_code":  0
+                   },
+                   {
+                       "name":  "Ensure nginx image is available",
+                       "exit_code":  0
+                   },
+                   {
+                       "name":  "Export app and nginx images",
+                       "exit_code":  0
+                   },
+                   {
+                       "name":  "Remove this isolated preflight container",
+                       "exit_code":  0
+                   }
+               ],
+    "commit":  "0051dd2d290ef33c113653fd08d7069ffaf6716c",
+    "image":  "garbage-vision-stage3:gpu-0051dd2d290e",
+    "image_id":  "sha256:cc3f2bc00c28e582c8dfe6b8b2fa8ba16c00ffe0fcae8ecbf756f799e2b84d46"
+}

@@ -1,0 +1,29 @@
+{
+  "verification": "real HTTP + original local model; no paid API calls",
+  "tasks": [
+    {
+      "task_id": "b0f92a4a-3b8a-4b07-ad5d-137733d8682f",
+      "sample": "commons-179028310.jpg",
+      "status": "succeeded",
+      "device": "cuda:0",
+      "verification_seconds": 22.162,
+      "task_elapsed_seconds": 21.042,
+      "image_id": "f8dac64dfd0df858dd72d3a16395f50b00e4eeed84d18214b8f045eae1911099",
+      "canonical_pixels_match_client": true,
+      "item_count": 2,
+      "duplicate_submission_reused": true
+    },
+    {
+      "task_id": "71e9aafb-c73f-4e05-a83a-53811042b283",
+      "sample": "commons-79273563.jpg",
+      "status": "succeeded",
+      "device": "cuda:0",
+      "verification_seconds": 13.736,
+      "task_elapsed_seconds": 12.668,
+      "image_id": "d07eae08cd07fbf2fed078c32e5d73f4e67dbeea5a8cec4faf315698bbc52f1f",
+      "canonical_pixels_match_client": true,
+      "item_count": 24,
+      "duplicate_submission_reused": true
+    }
+  ]
+}

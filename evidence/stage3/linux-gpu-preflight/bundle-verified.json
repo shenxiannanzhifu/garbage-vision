@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "scope": "local bundle file hashes and portable identity fixtures",
+  "remote_verified": false,
+  "files_verified": [
+    "deploy_prebuilt.sh",
+    "images.tar.gz",
+    "runtime-assets.tar.gz",
+    "source.tar.gz"
+  ],
+  "identity_fixture_cases": 5
+}
