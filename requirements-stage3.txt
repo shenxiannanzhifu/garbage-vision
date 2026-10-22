@@ -1,0 +1,6 @@
+-r requirements.txt
+fastapi==0.159.1
+uvicorn==0.54.0
+SQLAlchemy==2.1.6
+python-multipart==0.0.32
+filelock==4.2.4

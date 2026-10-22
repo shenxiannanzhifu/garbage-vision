@@ -1,0 +1,48 @@
+name: garbage-vision-stage3
+services:
+  api:
+    image: garbage-vision-stage3:local
+    build:
+      context: .
+      args:
+        TORCH_INDEX: ${GV_TORCH_INDEX:-https://download.pytorch.org/whl/cpu}
+    env_file:
+      - .env
+      - .env.stage3
+    environment:
+      GV_S3_DATA_DIR: /data
+      GV_S3_DEVICE: ${GV_CONTAINER_DEVICE:-cpu}
+      OMP_NUM_THREADS: '4'
+      MKL_NUM_THREADS: '4'
+      MPLCONFIGDIR: /app/.local/matplotlib
+      YOLO_CONFIG_DIR: /app/.local/ultralytics
+    volumes:
+      - ./.local/container-data:/data
+      - ./weights:/app/weights:ro
+    healthcheck:
+      test: ['CMD', 'python', '-c', "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/live', timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+      start_period: 30s
+    restart: unless-stopped
+  web:
+    image: garbage-vision-stage3:local
+    command: ['python','-m','streamlit','run','stage3_app.py','--server.address=0.0.0.0','--server.port=8501','--browser.gatherUsageStats=false']
+    env_file: [.env.stage3]
+    environment:
+      GV_S3_API_URL: http://api:8000
+    volumes:
+      - ./data/raw:/app/data/raw:ro
+      - ./evidence:/app/evidence:ro
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+  nginx:
+    image: nginx:1.28-alpine
+    ports: ['127.0.0.1:8080:80']
+    volumes:
+      - ./deploy/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on: [web,api]
+    restart: unless-stopped

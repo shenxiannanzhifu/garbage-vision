@@ -1,0 +1,13 @@
+{
+  "verified_at_utc": "2026-10-22T05:58:57.906056+00:00",
+  "complete": true,
+  "scope": "local Linux CPU browser create and historical download",
+  "created_task_id": "9fb31dcf-a058-4850-987e-cb462d6aa5da",
+  "created_task_status": "succeeded",
+  "historical_download_task": "8288a550-90e2-40c0-8429-aac1ff6a278d",
+  "download_matches_api": true,
+  "download_sha256": "317ec907b082178ca37e488725cfd6f364b1fb3510a678aa5a587b5555b2f587",
+  "selection_after_download": "8288a550-90e2-40c0-8429-aac1ff6a278d",
+  "paid_requests": 0,
+  "other_session_tasks_preserved": true
+}

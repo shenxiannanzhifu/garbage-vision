@@ -5,6 +5,7 @@ Ultralytics/
 .env
 .env.*
 !.env.example
+!.env.stage3.example
 __pycache__/
 .pytest_cache/
 *.pyc
@@ -15,4 +16,5 @@ data/cache/
 runs/
 exports/
 *.log
+evidence/stage3/**/verification-progress.json
 .streamlit/secrets.toml

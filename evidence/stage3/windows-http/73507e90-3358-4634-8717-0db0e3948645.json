@@ -1,0 +1,160 @@
+{
+  "schema_version": "stage3-task-v1",
+  "task": {
+    "id": "73507e90-3358-4634-8717-0db0e3948645",
+    "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+    "source_sha256": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+    "created_at": "2026-10-22T00:50:39.088670+00:00",
+    "updated_at": "2026-10-22T00:51:29.399612+00:00",
+    "status": "succeeded",
+    "local_status": "success",
+    "api_status": "skipped",
+    "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+    "error": null,
+    "options": {
+      "include_api": false,
+      "similarity_min": 0.28
+    },
+    "results": {
+      "local": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-22T00:51:29.391091+00:00",
+        "image_id": "c08ee16be6df4afec01290450d15aa421196dfa7486826df67e8d5370126f402",
+        "source_sha256": "6ec639c03b4dd88d2be00ac24d2196c70a4822c4d7a9da0820dbddaf2905b097",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "玻璃瓶",
+            "category": "recyclable",
+            "reason": "普通玻璃饮料瓶倒空清洁后可回收；化学品包装须另行确认。",
+            "uncertain": false,
+            "label": "glass bottle",
+            "bbox": [
+              130.31,
+              310.31,
+              786.56,
+              664.69
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9668863415718079,
+            "similarity": 0.3165641129016876,
+            "category_margin": 0.04933971166610718,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              764.06,
+              5.62,
+              947.81,
+              265.31
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9352483153343201,
+            "similarity": 0.2854737341403961,
+            "category_margin": 0.005005389451980591,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 13.566201700000192,
+        "load_seconds": 25.74863069999992,
+        "cache_hit": false,
+        "error": null,
+        "metadata": {
+          "device": "cuda:0",
+          "region_count": 6,
+          "candidate_count": 3,
+          "suppressed_uncertain_parts": [
+            {
+              "candidate": {
+                "name": "待确认区域",
+                "category": null,
+                "reason": "不能确认物品类型或投放类别。外观候选：塑料瓶；需结合完整物品、材质和用途人工核对。",
+                "uncertain": true,
+                "label": "plastic bottle",
+                "bbox": [
+                  676.87,
+                  310.31,
+                  785.62,
+                  406.87
+                ],
+                "detection_confidence": null,
+                "mask_quality": 0.9026166796684265,
+                "similarity": 0.29292210936546326,
+                "category_margin": 0.014143586158752441,
+                "visual_similarity": null,
+                "visual_margin": null,
+                "classification_basis": "text"
+              },
+              "parent_label": "glass bottle",
+              "parent_bbox": [
+                130.31,
+                310.31,
+                786.56,
+                664.69
+              ],
+              "mask_containment": 1.0,
+              "area_ratio": 0.06544920341430055,
+              "reason": "较高分的已知物体内包含的低分未知局部区域；不重复作为独立物品。"
+            }
+          ],
+          "image_fallback_used": false,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "6428595c929103d1f80cea3da0f6bb6c6b5ee06432725f0f4c5200d96ed75457",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_resize_mode": "letterbox",
+            "clip_weights": "weights/ViT-B-32.pt",
+            "context_padding": 0.5,
+            "context_weight": 0.5,
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "auto",
+            "duplicate_iou": 0.7,
+            "image_fallback": true,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28,
+            "text_aliases": "config/local_texts_v2.json",
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    }
+  }
+}

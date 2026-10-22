@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-22",
+  "command": ".venv/Scripts/python.exe -m pytest tests/test_stage3_service.py -q",
+  "passed": 9,
+  "failed": 0,
+  "seconds": 1.05,
+  "model_execution": "explicit test doubles; no paid calls",
+  "warning": "Starlette TestClient httpx deprecation; tests passed"
+}

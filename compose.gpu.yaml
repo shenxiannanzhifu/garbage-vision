@@ -1,0 +1,9 @@
+# 与compose.yaml一起使用；不会为Windows安装第二套Docker Engine。
+services:
+  api:
+    build:
+      args:
+        TORCH_INDEX: https://download.pytorch.org/whl/cu128
+    environment:
+      GV_S3_DEVICE: cuda:0
+    gpus: all

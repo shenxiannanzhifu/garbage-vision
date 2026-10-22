@@ -1,0 +1,33 @@
+﻿{
+    "started_at":  "2026-10-22T01:28:39.4508190Z",
+    "mode":  "cpu",
+    "complete":  false,
+    "checks":  [
+                   {
+                       "name":  "Compose configuration validation (no secret output)",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Build Linux application image",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Start API, Web and nginx on localhost:8080",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Record container identity and status",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Verify Python environment inside Linux application container",
+                       "exit_code":  1,
+                       "passed":  false
+                   }
+               ],
+    "error":  "Verify Python environment inside Linux application container 失败；请把末尾错误发给助手，完整记录保存在D盘。"
+}

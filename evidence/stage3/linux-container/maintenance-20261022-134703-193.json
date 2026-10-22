@@ -1,0 +1,55 @@
+﻿{
+    "started_at":  "2026-10-22T05:47:03.2008762Z",
+    "mode":  "cpu",
+    "complete":  true,
+    "maintenance":  true,
+    "checks":  [
+                   {
+                       "name":  "Preserve previous image for rollback",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Compose configuration validation (no secret output)",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Build Linux application image",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Stop API before consistent backup",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Resume API after backup",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Recreate services with persistent data",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Record container identity and status",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Verify Python environment inside Linux application container",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Check installed Python dependencies",
+                       "exit_code":  0,
+                       "passed":  true
+                   }
+               ],
+    "rollback_image":  "garbage-vision-stage3:before-20261022-134703-193",
+    "maintenance_dir":  "D:\\灵境竞赛组\\stage3\\garbage-vision\\.local\\maintenance\\20261022-134703-193"
+}

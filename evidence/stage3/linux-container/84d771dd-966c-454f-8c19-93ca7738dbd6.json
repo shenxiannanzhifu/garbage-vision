@@ -1,0 +1,567 @@
+{
+  "schema_version": "stage3-task-v1",
+  "task": {
+    "id": "84d771dd-966c-454f-8c19-93ca7738dbd6",
+    "image_id": "d07eae08cd07fbf2fed078c32e5d73f4e67dbeea5a8cec4faf315698bbc52f1f",
+    "source_sha256": "01ed14b1e695bd913b9af1c14dbd2b302b7d0a7bcf8b35aa8be67be6e0ed178d",
+    "created_at": "2026-10-22T01:39:11.251586+00:00",
+    "updated_at": "2026-10-22T01:41:11.351718+00:00",
+    "status": "succeeded",
+    "local_status": "success",
+    "api_status": "skipped",
+    "config_sha256": "5694fcacd33156a9d35067ccc5232950a187a72c93cc81e2e7bd0c2ae835f3b9",
+    "error": null,
+    "options": {
+      "include_api": false,
+      "similarity_min": 0.28
+    },
+    "results": {
+      "local": {
+        "schema_version": "1.0",
+        "created_at_utc": "2026-10-22T01:41:11.339157+00:00",
+        "image_id": "d07eae08cd07fbf2fed078c32e5d73f4e67dbeea5a8cec4faf315698bbc52f1f",
+        "source_sha256": "01ed14b1e695bd913b9af1c14dbd2b302b7d0a7bcf8b35aa8be67be6e0ed178d",
+        "image_size": [
+          960,
+          720
+        ],
+        "method": "local",
+        "model": "SAM2.1-tiny + CLIP ViT-B/32",
+        "status": "success",
+        "items": [
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              619.69,
+              124.69,
+              654.37,
+              164.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9446097612380981,
+            "similarity": 0.31833723187446594,
+            "category_margin": 0.02628093957901001,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              368.44,
+              359.06,
+              402.19,
+              394.69
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.923727810382843,
+            "similarity": 0.3122832179069519,
+            "category_margin": 0.024119257926940918,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              362.81,
+              90.94,
+              391.87,
+              197.81
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8852785229682922,
+            "similarity": 0.3071848750114441,
+            "category_margin": 0.025440573692321777,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              645.94,
+              162.19,
+              670.31,
+              195.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8969234228134155,
+            "similarity": 0.3052377700805664,
+            "category_margin": 0.031142055988311768,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              97.5,
+              0.0,
+              179.06,
+              40.31
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8891181945800781,
+            "similarity": 0.3033110499382019,
+            "category_margin": 0.02207466959953308,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              382.5,
+              629.06,
+              430.31,
+              719.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9388362765312195,
+            "similarity": 0.30285102128982544,
+            "category_margin": 0.007453441619873047,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              483.75,
+              99.37,
+              524.06,
+              178.12
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9556786417961121,
+            "similarity": 0.30202025175094604,
+            "category_margin": 0.0235157310962677,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              121.87,
+              89.06,
+              163.12,
+              147.19
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.931556224822998,
+            "similarity": 0.30164939165115356,
+            "category_margin": 0.03366446495056152,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              708.75,
+              142.5,
+              742.5,
+              185.62
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9455251097679138,
+            "similarity": 0.30158621072769165,
+            "category_margin": 0.020529717206954956,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              523.12,
+              289.69,
+              544.69,
+              327.19
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9311740398406982,
+            "similarity": 0.3014881908893585,
+            "category_margin": 0.01541706919670105,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              904.69,
+              356.25,
+              959.06,
+              525.94
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8940129280090332,
+            "similarity": 0.3006332814693451,
+            "category_margin": 0.015342950820922852,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              586.87,
+              67.5,
+              614.06,
+              99.37
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9509285092353821,
+            "similarity": 0.296019583940506,
+            "category_margin": 0.027662426233291626,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              885.0,
+              270.0,
+              959.06,
+              360.94
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8823379874229431,
+            "similarity": 0.29532361030578613,
+            "category_margin": 0.004171282052993774,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              720.0,
+              0.0,
+              776.25,
+              77.81
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9239679574966431,
+            "similarity": 0.2947506308555603,
+            "category_margin": 0.01976647973060608,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              275.62,
+              77.81,
+              298.12,
+              110.62
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9195061922073364,
+            "similarity": 0.29415303468704224,
+            "category_margin": 0.012757599353790283,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              583.12,
+              105.0,
+              618.75,
+              154.69
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9611905813217163,
+            "similarity": 0.2940489947795868,
+            "category_margin": 0.021182984113693237,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              0.0,
+              153.75,
+              18.75,
+              181.87
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9037463665008545,
+            "similarity": 0.2931639552116394,
+            "category_margin": 0.015680581331253052,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              150.0,
+              162.19,
+              179.06,
+              198.75
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9482105374336243,
+            "similarity": 0.2872721254825592,
+            "category_margin": 0.021142810583114624,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              291.56,
+              689.06,
+              320.62,
+              719.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8931791186332703,
+            "similarity": 0.2870085537433624,
+            "category_margin": 0.004213929176330566,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：金属罐；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "metal can",
+            "bbox": [
+              361.87,
+              448.12,
+              402.19,
+              570.0
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.918528139591217,
+            "similarity": 0.2869243025779724,
+            "category_margin": 0.014198273420333862,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              195.94,
+              0.0,
+              279.38,
+              125.62
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9564385414123535,
+            "similarity": 0.28658705949783325,
+            "category_margin": 0.03289663791656494,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：电池；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "battery",
+            "bbox": [
+              914.06,
+              532.5,
+              959.06,
+              582.19
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9363406896591187,
+            "similarity": 0.28657206892967224,
+            "category_margin": 0.00860452651977539,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "待确认区域",
+            "category": null,
+            "reason": "不能确认物品类型或投放类别。外观候选：电池；需结合完整物品、材质和用途人工核对。",
+            "uncertain": true,
+            "label": "battery",
+            "bbox": [
+              883.12,
+              410.62,
+              911.25,
+              446.25
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.9163801670074463,
+            "similarity": 0.28370988368988037,
+            "category_margin": 0.002844095230102539,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          },
+          {
+            "name": "金属罐",
+            "category": "recyclable",
+            "reason": "清洁的普通饮料或食品金属罐可回收；油漆及化学品罐不适用。",
+            "uncertain": false,
+            "label": "metal can",
+            "bbox": [
+              420.94,
+              0.0,
+              435.0,
+              14.06
+            ],
+            "detection_confidence": null,
+            "mask_quality": 0.8908281326293945,
+            "similarity": 0.281127005815506,
+            "category_margin": 0.019456028938293457,
+            "visual_similarity": null,
+            "visual_margin": null,
+            "classification_basis": "text"
+          }
+        ],
+        "elapsed_seconds": 119.95213778999982,
+        "load_seconds": 0.0,
+        "cache_hit": true,
+        "error": null,
+        "metadata": {
+          "device": "cpu",
+          "region_count": 46,
+          "candidate_count": 24,
+          "suppressed_uncertain_parts": [],
+          "image_fallback_used": false,
+          "truncated": false,
+          "weight_sha256": {
+            "sam2.1_t.pt": "3c1e81ca9b037dd39d70a014ddb9a813d6c4c4e12555420db7eaff31689bd4e3",
+            "ViT-B-32.pt": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+          },
+          "config_sha256": "5694fcacd33156a9d35067ccc5232950a187a72c93cc81e2e7bd0c2ae835f3b9",
+          "rules_sha256": "f6f0036767ee3f800eebc96857811e36ed3d75124a87b73367f910a92911cfb3",
+          "config": {
+            "backend": "sam2-clip",
+            "category_margin_min": 0.018,
+            "clip_resize_mode": "letterbox",
+            "clip_weights": "weights/ViT-B-32.pt",
+            "context_padding": 0.5,
+            "context_weight": 0.5,
+            "crop_n_layers": 1,
+            "crop_padding": 0.05,
+            "device": "cpu",
+            "duplicate_iou": 0.7,
+            "image_fallback": true,
+            "mask_score_min": 0.8,
+            "max_area_fraction": 0.95,
+            "max_objects": 40,
+            "min_area_fraction": 0.0002,
+            "min_box_side": 8,
+            "part_mask_containment": 0.95,
+            "part_max_area_ratio": 0.25,
+            "part_similarity_gap": 0.015,
+            "points_batch_size": 32,
+            "points_stride": 24,
+            "region_input": "crop",
+            "sam_weights": "weights/sam2.1_t.pt",
+            "similarity_min": 0.28,
+            "text_aliases": "config/local_texts_v2.json",
+            "text_templates": [
+              "a photo of {}.",
+              "a close-up photo of {}.",
+              "a photo of one or more {}."
+            ]
+          },
+          "score_note": "mask_quality 为 SAM 预测掩膜质量；similarity 为 CLIP 余弦相似度。均非垃圾类别概率。"
+        }
+      }
+    }
+  }
+}
