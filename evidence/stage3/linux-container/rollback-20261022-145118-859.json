@@ -1,0 +1,75 @@
+﻿{
+    "started_at":  "2026-10-22T06:51:18.8612670Z",
+    "complete":  true,
+    "scope":  "isolated local Linux version switch",
+    "checks":  [
+                   {
+                       "name":  "Preserve current application image",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Validate current",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Switch isolated services to current",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Validate rollback",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Switch isolated services to rollback",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Validate return-current",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Switch isolated services to return-current",
+                       "exit_code":  0,
+                       "passed":  true
+                   },
+                   {
+                       "name":  "Remove only isolated test containers and network",
+                       "exit_code":  0,
+                       "passed":  true
+                   }
+               ],
+    "phases":  [
+                   {
+                       "name":  "current",
+                       "image":  "garbage-vision-stage3:rollback-test-current-20261022-145118-859",
+                       "image_id":  "sha256:72c1cb8e39e51547c42a1d6a22b6b40cba26a2b2f9c0203b93c8d246347c6c75",
+                       "api_and_web_image_match":  true,
+                       "history_results_images_match":  true
+                   },
+                   {
+                       "name":  "rollback",
+                       "image":  "garbage-vision-stage3:before-20261022-134703-193",
+                       "image_id":  "sha256:41345a3123a7cc84f262009b16972ab12456d84a13d25585197f8eed44a60868",
+                       "api_and_web_image_match":  true,
+                       "history_results_images_match":  true
+                   },
+                   {
+                       "name":  "return-current",
+                       "image":  "garbage-vision-stage3:rollback-test-current-20261022-145118-859",
+                       "image_id":  "sha256:72c1cb8e39e51547c42a1d6a22b6b40cba26a2b2f9c0203b93c8d246347c6c75",
+                       "api_and_web_image_match":  true,
+                       "history_results_images_match":  true
+                   }
+               ],
+    "inference_requests_sent":  0,
+    "original_service_modified":  false,
+    "old_image":  "garbage-vision-stage3:before-20261022-134703-193",
+    "new_image":  "garbage-vision-stage3:rollback-test-current-20261022-145118-859",
+    "backup_source":  "D:\\灵境竞赛组\\stage3\\garbage-vision\\.local\\maintenance\\20261022-134703-193"
+}
