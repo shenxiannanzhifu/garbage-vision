@@ -27,7 +27,7 @@ def show_task(task):
             st.write('状态：'+task[method+'_status'])
             raw=task.get('results',{}).get(method)
             if not raw:
-                if method=='api' and task['api_status']=='skipped':st.info('此任务未调用大模型。新的收费授权尚未配置时只能运行本地模型。')
+                if method=='api' and task['api_status']=='skipped':st.info('此任务未调用大模型。')
                 continue
             result=InferenceResult.model_validate(raw)
             st.caption(f'{result.model} ｜ 推理/请求 {result.elapsed_seconds:.2f}秒 ｜ 加载 {result.load_seconds:.2f}秒')
@@ -83,8 +83,11 @@ if mode=='新建任务':
         try:source=decode_image(data)
         except ValueError as exc:st.error(str(exc))
     similarity=st.slider('本地相似度下限',.20,.40,.28,.01)
-    paid=st.checkbox('同时运行大模型：向服务商发送本图，消耗一次已批准次数并可能计费',False,
+    manual_paid=ready.get('paid_calls_mode')=='manual'
+    paid_label='同时运行大模型：向服务商发送本图并按实际用量计费' if manual_paid else '同时运行大模型：向服务商发送本图，消耗一次已批准次数并可能计费'
+    paid=st.checkbox(paid_label,False,
                      disabled=not ready['paid_calls_enabled'])
+    if manual_paid:st.caption('已取消测试次数上限。仅在你勾选并创建任务时调用；查看历史不收费。')
     identity=(source.source_sha256 if source else None,similarity,paid)
     if st.session_state.get('s3_identity')!=identity:
         st.session_state['s3_identity']=identity

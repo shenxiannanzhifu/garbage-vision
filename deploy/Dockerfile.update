@@ -1,0 +1,10 @@
+# Reuse an already verified dependency image; deploy_update.sh checks its exact ID.
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+COPY garbage_vision /app/garbage_vision
+COPY config /app/config
+COPY prompts /app/prompts
+COPY pages /app/pages
+COPY data/manifests /app/data/manifests
+COPY .streamlit/config.toml /app/.streamlit/config.toml
+COPY stage3_app.py /app/stage3_app.py

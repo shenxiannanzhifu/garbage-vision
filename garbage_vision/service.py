@@ -76,13 +76,15 @@ class ServiceSettings:
     paid_limit: int = 0
     authorization_id: str = ''
     max_pending: int = 8
+    paid_manual: bool = False
 
     @classmethod
     def from_env(cls):
         return cls(Path(os.getenv('GV_S3_DATA_DIR', str(ROOT/'.local/stage3-data'))),
                    os.getenv('GV_S3_ACCESS_TOKEN', ''), os.getenv('GV_S3_DEVICE', 'auto'),
                    int(os.getenv('GV_S3_PAID_CALL_LIMIT', '0')),
-                   os.getenv('GV_S3_AUTHORIZATION_ID', ''), int(os.getenv('GV_S3_MAX_PENDING', '8')))
+                   os.getenv('GV_S3_AUTHORIZATION_ID', ''), int(os.getenv('GV_S3_MAX_PENDING', '8')),
+                   os.getenv('GV_S3_PAID_MODE', 'limited') == 'manual')
 
 
 class TaskService:
@@ -175,9 +177,10 @@ class TaskService:
     def capabilities(self):
         with self.lock, Session(self.engine) as db:
             grant = db.get(Budget, self.settings.authorization_id) if self.settings.authorization_id else None
-            remaining = max(0, self.settings.paid_limit - (grant.reserved if grant else 0))
-        return {'paid_calls_enabled': bool(self.settings.token and self.settings.authorization_id and remaining),
+            remaining = None if self.settings.paid_manual else max(0, self.settings.paid_limit - (grant.reserved if grant else 0))
+        return {'paid_calls_enabled': bool(self.settings.token and self.settings.authorization_id and (self.settings.paid_manual or remaining)),
                 'paid_calls_remaining': remaining if self.settings.authorization_id else 0,
+                'paid_calls_mode': 'manual' if self.settings.paid_manual else 'limited',
                 'execution': 'single_process_background', 'max_pending': self.settings.max_pending}
 
     def submit(self, data, request_key, include_api=False, similarity=.28):
@@ -207,18 +210,20 @@ class TaskService:
             configured = None
             if include_api:
                 cfg = self.settings
-                if not cfg.token or not cfg.authorization_id or cfg.paid_limit <= 0:
+                # 手动模式由用户显式启用；每项任务仍须include_api=true，并保留调用计数。
+                call_limit = -1 if cfg.paid_manual else cfg.paid_limit
+                if not cfg.token or not cfg.authorization_id or call_limit == 0:
                     raise HTTPException(403, '本阶段尚未配置新的收费调用授权；当前仅可运行本地模型。')
                 configured = api_settings()
                 if configured.problem():
                     raise HTTPException(409, '多模态接口本地配置不完整；请在本机配置文件中核对。')
                 grant = db.get(Budget, cfg.authorization_id)
                 if grant is None:
-                    grant = Budget(id=cfg.authorization_id, call_limit=cfg.paid_limit, reserved=0)
+                    grant = Budget(id=cfg.authorization_id, call_limit=call_limit, reserved=0)
                     db.add(grant)
-                if grant.call_limit != cfg.paid_limit:
+                if grant.call_limit != call_limit:
                     raise HTTPException(409, '已有授权次数不可在原授权编号下改写')
-                if grant.reserved >= grant.call_limit:
+                if grant.call_limit >= 0 and grant.reserved >= grant.call_limit:
                     raise HTTPException(403, '本次授权次数已用完或已预留；不会自动追加或重试。')
                 grant.reserved += 1
             settings = local_settings()

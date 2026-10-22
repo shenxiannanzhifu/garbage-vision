@@ -182,3 +182,56 @@ def test_missing_prompt_does_not_create_task_or_reserve_budget(tmp_path, monkeyp
         with Session(client.app.state.service.engine) as db:
             assert db.get(Budget, settings.authorization_id) is None
     assert not calls
+
+
+def test_manual_calls_require_opt_in_and_keep_idempotency_and_history(tmp_path, monkeypatch):
+    from garbage_vision.api import APISettings
+    monkeypatch.setattr('garbage_vision.service.api_settings', lambda: APISettings(
+        provider='nexavlinks', key='TEST-ONLY-FAKE', base_url='https://www.nexavlinks.com/v1', enabled=True))
+    calls = []
+    def api(source, settings):
+        calls.append(source.image_id)
+        return fake_local(source, settings).model_copy(update={'method': 'api'})
+    cfg = ServiceSettings(tmp_path, token='test-token', authorization_id='TEST-MANUAL', paid_manual=True)
+    with TestClient(create_app(cfg, local_runner=fake_local, api_runner=api)) as c:
+        assert c.get('/v1/tasks').status_code == 401
+        c.headers['Authorization'] = 'Bearer test-token'
+        ready = c.get('/health/ready').json()
+        assert ready['paid_calls_enabled'] and ready['paid_calls_remaining'] is None
+        local_id = submit(c).json()['id']
+        assert finished(c, local_id)['api_status'] == 'skipped' and not calls
+        # More than the former two-call allowance works, only with explicit opt-in.
+        for _ in range(3):
+            key = str(uuid4())
+            r = submit(c, key=key, include_api='true'); assert r.status_code == 202
+            task_id = r.json()['id']; assert finished(c, task_id)['status'] == 'succeeded'
+            duplicate = submit(c, key=key, include_api='true').json()
+            assert duplicate['id'] == task_id and duplicate['created'] is False
+        with Session(c.app.state.service.engine) as db:
+            grant = db.get(Budget, cfg.authorization_id)
+            assert grant.call_limit == -1 and grant.reserved == 3
+    with TestClient(create_app(cfg, local_runner=fake_local, api_runner=api)) as c:
+        c.headers['Authorization'] = 'Bearer test-token'
+        assert len(c.get('/v1/tasks').json()['tasks']) == 4
+        assert c.get('/v1/tasks/'+task_id).json()['status'] == 'succeeded'
+    assert len(calls) == 3  # Restart/history/duplicate submission did not call again.
+
+
+def test_manual_mode_cannot_rewrite_a_finite_authorization(tmp_path, monkeypatch):
+    from garbage_vision.api import APISettings
+    monkeypatch.setattr('garbage_vision.service.api_settings', lambda: APISettings(
+        provider='nexavlinks', key='TEST-ONLY-FAKE', base_url='https://www.nexavlinks.com/v1', enabled=True))
+    cfg = ServiceSettings(tmp_path, token='test-token', authorization_id='TEST-FINITE', paid_manual=True)
+    calls = []
+    def forbidden(*args):
+        calls.append(True)
+        raise AssertionError('must not call')
+    with TestClient(create_app(cfg, local_runner=forbidden, api_runner=forbidden)) as c:
+        with Session(c.app.state.service.engine) as db:
+            db.add(Budget(id=cfg.authorization_id, call_limit=2, reserved=2)); db.commit()
+        c.headers['Authorization'] = 'Bearer test-token'
+        assert submit(c, include_api='true').status_code == 409
+        with Session(c.app.state.service.engine) as db:
+            grant = db.get(Budget, cfg.authorization_id)
+            assert grant.call_limit == grant.reserved == 2
+    assert not calls
