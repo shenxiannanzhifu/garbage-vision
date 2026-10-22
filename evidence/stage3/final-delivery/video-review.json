@@ -1,0 +1,135 @@
+{
+  "filename": "三阶段运行演示.mp4",
+  "bytes": 284048252,
+  "sha256": "a78a1d9a93be1dd423a17e5b1eb54148ba896be545e3fd35d03a228be9c1eb24",
+  "width": 1418,
+  "height": 1522,
+  "fps": 30.0,
+  "frames": 17111,
+  "duration_seconds": 570.3666666666667,
+  "tracks": [
+    {
+      "timescale": 30000,
+      "duration_seconds": 570.3666333333333,
+      "handler": "vide"
+    },
+    {
+      "timescale": 48000,
+      "duration_seconds": 570.3253125,
+      "handler": "soun"
+    }
+  ],
+  "sampled_seconds": [
+    0,
+    20,
+    40,
+    60,
+    80,
+    100,
+    120,
+    140,
+    160,
+    180,
+    200,
+    220,
+    240,
+    260,
+    280,
+    300,
+    320,
+    340,
+    360,
+    380,
+    400,
+    420,
+    440,
+    460,
+    480,
+    500,
+    520,
+    540,
+    560,
+    569
+  ],
+  "audio_listened": false,
+  "original_filename": "屏幕录制 2026-10-23 001808.mp4",
+  "reviewed_at": "2026-10-23T00:48:56+08:00",
+  "full_video_decode": {
+    "decoded_frames": 17111,
+    "expected_frames": 17111,
+    "complete": true,
+    "elapsed_seconds": 139.97
+  },
+  "audio_decode": {
+    "codec": "aac",
+    "source_rate": 48000,
+    "source_channels": 2,
+    "source_layout": "stereo",
+    "decoded_seconds": 570.3253125,
+    "decode_complete": true,
+    "samples": 9125205,
+    "overall_rms_dbfs": -39.88,
+    "clipped_fraction": 0.0,
+    "auditory_content_reviewed": false
+  },
+  "audio_listened_by_assistant": false,
+  "narration_transcript_reviewed": false,
+  "user_audio_confirmation": "声音清楚",
+  "user_audio_confirmed_on": "2026-10-23",
+  "visual_review": "30 timestamp samples plus 5 original-resolution keyframes; full sequential frame decode separately verified",
+  "coverage": [
+    {
+      "seconds": [
+        0,
+        20
+      ],
+      "content": "project webpage introduction"
+    },
+    {
+      "seconds": [
+        40,
+        100
+      ],
+      "content": "remote Inspect, A10 and Linux Docker environment"
+    },
+    {
+      "seconds": [
+        100,
+        200
+      ],
+      "content": "Status then Restart, containers stopped/started and healthy"
+    },
+    {
+      "seconds": [
+        240,
+        340
+      ],
+      "content": "history after restart, new sample submission and local model success"
+    },
+    {
+      "seconds": [
+        360,
+        420
+      ],
+      "content": "saved dual-result tasks 72be22f7 and 9d5e595d"
+    },
+    {
+      "seconds": [
+        440,
+        460
+      ],
+      "content": "JSON download and exported JSON opened"
+    },
+    {
+      "seconds": [
+        520,
+        569
+      ],
+      "content": "personal reflection document"
+    }
+  ],
+  "assessment": "Required visual demonstration present; audio decodes fully and clarity confirmed by user. No retake required for the inspected coverage.",
+  "limitations": "Visual sampling is not frame-by-frame semantic review. Narration was not heard or transcribed by the assistant. Some result-table text extends beyond the visible table area, but both model panels, statuses and key results are readable.",
+  "new_assistant_inference_calls": 0,
+  "new_assistant_paid_calls": 0
+}

@@ -1,0 +1,46 @@
+{
+  "read_only": true,
+  "ready_for_tasks": true,
+  "paid_calls_mode": "manual",
+  "history_count": 6,
+  "tasks": [
+    {
+      "id": "2fa6db78-d216-4220-898d-734e1def97a2",
+      "status": "succeeded",
+      "local_status": "success",
+      "api_status": "skipped"
+    },
+    {
+      "id": "74078fe7-4ea6-4a33-9bdd-dadf7e6d41b8",
+      "status": "succeeded",
+      "local_status": "success",
+      "api_status": "success"
+    },
+    {
+      "id": "ba20a0b3-fd5f-46d0-8fc7-ab428e463d58",
+      "status": "succeeded",
+      "local_status": "success",
+      "api_status": "skipped"
+    },
+    {
+      "id": "ac69f574-a2e9-431f-95ed-d6de47a73102",
+      "status": "succeeded",
+      "local_status": "success",
+      "api_status": "skipped"
+    },
+    {
+      "id": "9d5e595d-8bea-4d4b-b18b-a4536886bdcf",
+      "status": "succeeded",
+      "local_status": "success",
+      "api_status": "success"
+    },
+    {
+      "id": "72be22f7-9e7a-4799-a6fc-ab4e22d6d4a4",
+      "status": "succeeded",
+      "local_status": "success",
+      "api_status": "success"
+    }
+  ],
+  "new_inference_calls": 0,
+  "new_paid_calls": 0
+}

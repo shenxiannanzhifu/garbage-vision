@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "created_at_utc": "20261022T164309Z",
+  "archive_name": "server-after-recording-6tasks-20261022T164309Z.tar.gz",
+  "archive_bytes": 5254402,
+  "archive_sha256": "29d7d58d6e8e955c85435f21978f1d3e3f44c419fb3ff242f7e3f72bcb2074ea",
+  "contains_secrets": true,
+  "not_for_public_distribution": true,
+  "task_count": 6,
+  "application_commit": "937529b79755e592d9516b99d23c62b35e73e871",
+  "persistence": {
+    "complete": true,
+    "task_count": 6,
+    "full_task_results_unchanged": true,
+    "image_hashes_unchanged": true,
+    "inference_requests_sent": 0
+  },
+  "restore": {
+    "complete": true,
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.36",
+    "restored_tasks": 6,
+    "task_results_and_images_match": true,
+    "inference_calls": 0,
+    "original_data_modified": false
+  },
+  "new_inference_calls": 0,
+  "new_paid_calls": 0,
+  "maintenance_relative_path": "evidence/stage3/remote-linux/maintenance-20261022T164257Z",
+  "local_archive_sha256_verified": true,
+  "all_backup_file_hashes_verified": true,
+  "verified_backup_files": 14,
+  "shell_transport_note": "Maintenance, restore and archive succeeded; a trailing CR after the completed script caused the wrapper exit code to be nonzero. Archive and contents were independently verified after download."
+}
