@@ -1,0 +1,17 @@
+{
+  "confirmed_at": "2026-10-23T08:28:26+08:00",
+  "provider": "Alibaba Cloud ECS",
+  "region": "cn-hongkong",
+  "instance_name": "gv-stage3-gpu",
+  "user_authorized_release": true,
+  "user_requires_online_review": false,
+  "release_complete": true,
+  "released_instances": 1,
+  "released_disks": 1,
+  "released_snapshots": 0,
+  "confirmation_source": "ECS console success message: 1 instance and 1 associated disk released successfully",
+  "pre_release_history_count": 6,
+  "backup_retrieved_and_restore_verified_before_release": true,
+  "former_cloud_tunnel_available": false,
+  "final_billing_total_verified": false
+}
